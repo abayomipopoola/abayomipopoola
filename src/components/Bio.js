@@ -28,7 +28,7 @@ class Bio extends React.Component {
         />
         <p>
           Written by <strong>Abayomi Popoola</strong> who lives and works in Lagos
-          building useful things.{' '}
+          building amazing things.{' '}
           <a href="https://twitter.com/abayomipopoola">
             Follow him on Twitter
           </a>
