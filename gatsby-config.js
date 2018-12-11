@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Rants',
+    title: 'Abayomi Popoola',
     author: 'Abayomi Popoola',
     description: 'A blog about my rants.',
     siteUrl: '',
@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rants`,
-        short_name: `Rants`,
+        name: `abayomipopoola`,
+        short_name: `abayomipopoola`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#0075cf`,
