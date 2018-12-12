@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 
 class Footer extends React.Component {
@@ -12,11 +13,9 @@ class Footer extends React.Component {
         }}
       >
         <div style={{ float: 'right' }}>
-          <a
-            href="http://getinformed.com.ng/ap"
-            target="_blank"
-            rel="noopener noreferrer"
-          >portfolio</a>
+          <Link style={{ boxShadow: 'none' }} to='/me'>
+          view my portfolio{' '}<span>&#187;</span>
+          </Link>
         </div>
         <a
           href="https://mobile.twitter.com/abayomipopoola"

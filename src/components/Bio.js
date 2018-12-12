@@ -5,6 +5,7 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 
 import profilePic from './profile-pic.jpg'
+import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
@@ -29,9 +30,13 @@ class Bio extends React.Component {
         <p>
           Written by <strong>Abayomi Popoola</strong> who lives and works in Lagos
           building amazing things.{' '}
-          <a href="https://twitter.com/abayomipopoola">
+          <a href="https://twitter.com/abayomipopoola" target="_blank">
             Follow him on Twitter
           </a>
+          {' '} &bull; {' '} 
+          <Link style={{ boxShadow: 'none' }} to='/me'>
+            View My Portfolio{' '}<span>&#187;</span>
+          </Link>
         </p>
       </div>
     )
