@@ -31,7 +31,7 @@ class Bio extends React.Component {
           Written by <strong>Abayomi Popoola</strong> who lives and works in Lagos
           building amazing things.{' '}
           <a href="https://twitter.com/abayomipopoola" target="_blank">
-            Follow him on Twitter
+            Twitter
           </a>
           {' '} &bull; {' '} 
           <Link style={{ boxShadow: 'none' }} to='/me'>

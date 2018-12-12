@@ -28,8 +28,8 @@ class PortfolioPage extends React.Component {
 
         <div>
             <h3>Latest Projects</h3>
-            <div className="flex-container" style={{background: 'rgb(236, 236, 236)', padding: '30px', marginBottom: '30px'}}>
-                <div className="ant-card" style={{width: '55%'}}>
+            <div className="flex-container">
+                <div className="ant-card">
                     <div className="ant-card-head">
                         <div className="ant-card-head-wrapper">
                             <div className="ant-card-head-title">
@@ -45,13 +45,13 @@ class PortfolioPage extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="flex-item" style={{width: '45%'}}>
+                <div className="flex-item">
                     <img className="project-image" width='100%' src={project6} alt="TimeMap web app" />
                 </div>
             </div>
 
-            <div className="flex-container" style={{background: 'rgb(236, 236, 236)', padding: '30px', marginBottom: '30px'}}>
-                <div className="ant-card" style={{width: '55%'}}>
+            <div className="flex-container">
+                <div className="ant-card">
                     <div className="ant-card-head">
                         <div className="ant-card-head-wrapper">
                             <div className="ant-card-head-title">
@@ -67,13 +67,13 @@ class PortfolioPage extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="flex-item" style={{width: '45%'}}>
+                <div className="flex-item">
                     <img className="project-image" width='100%' src={project5} alt="TimeMap mobile app" />
                 </div>
             </div>
 
-            <div className="flex-container" style={{background: 'rgb(236, 236, 236)', padding: '30px', marginBottom: '30px'}}>
-                <div className="ant-card" style={{width: '55%'}}>
+            <div className="flex-container">
+                <div className="ant-card">
                     <div className="ant-card-head">
                         <div className="ant-card-head-wrapper">
                             <div className="ant-card-head-title">
@@ -90,13 +90,13 @@ class PortfolioPage extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="flex-item" style={{width: '45%'}}>
+                <div className="flex-item">
                     <img className="project-image" width='100%' src={project4} alt="#FCMBFlexxtern Contest" />
                 </div>
             </div>
             
-            <div className="flex-container" style={{background: 'rgb(236, 236, 236)', padding: '30px', marginBottom: '30px'}}>
-                <div className="ant-card" style={{width: '55%'}}>
+            <div className="flex-container">
+                <div className="ant-card">
                     <div className="ant-card-head">
                         <div className="ant-card-head-wrapper">
                             <div className="ant-card-head-title">
@@ -113,13 +113,13 @@ class PortfolioPage extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="flex-item" style={{width: '45%'}}>
+                <div className="flex-item">
                     <img className="project-image" width='100%' src={project3} alt="FlexxCareerSeries" />
                 </div>
             </div>
             
-            <div className="flex-container" style={{background: 'rgb(236, 236, 236)', padding: '30px', marginBottom: '30px'}}>
-                <div className="ant-card" style={{width: '55%'}}>
+            <div className="flex-container">
+                <div className="ant-card">
                     <div className="ant-card-head">
                         <div className="ant-card-head-wrapper">
                             <div className="ant-card-head-title">
@@ -134,13 +134,13 @@ class PortfolioPage extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="flex-item" style={{width: '45%'}}>
+                <div className="flex-item">
                     <img className="project-image" width='100%' src={project2} alt="Greyfield Realty" />
                 </div>
             </div>
 
-            <div className="flex-container" style={{background: 'rgb(236, 236, 236)', padding: '30px', marginBottom: '30px'}}>
-                <div className="ant-card" style={{width: '55%'}}>
+            <div className="flex-container">
+                <div className="ant-card">
                     <div className="ant-card-head">
                         <div className="ant-card-head-wrapper">
                             <div className="ant-card-head-title">
@@ -155,7 +155,7 @@ class PortfolioPage extends React.Component {
                         </p>
                     </div>
                 </div>
-                <div className="flex-item" style={{width: '45%'}}>
+                <div className="flex-item">
                     <img className="project-image" width='100%' src={project1} alt="MOB website" />
                 </div>
             </div>

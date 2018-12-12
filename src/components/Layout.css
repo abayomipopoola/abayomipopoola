@@ -1,4 +1,5 @@
 .ant-card {
+  width: 55%;
   font-size: 14px;
   font-variant: tabular-nums;
   line-height: 1.5;
@@ -34,16 +35,38 @@
 }
 
 .flex-container {
+  background: rgb(236, 236, 236);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
-.flex-item {}
+.flex-item {
+  width: 45%
+}
 
 .project-image {
   padding-left: 30px;
   margin-bottom: 0
+}
+
+@media only screen and (max-width: 600px) {
+  .ant-card {
+    width: 90%;
+  }
+  .flex-item {
+    width: 90%
+  }
+  .flex-container {
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+
+  .project-image {
+    padding-left: 0;
+    margin-bottom: 0
+  }
 }
