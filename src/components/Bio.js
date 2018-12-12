@@ -28,7 +28,7 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Abayomi Popoola</strong> who lives and works in Lagos
+          Random write-ups by Abayomi Popoola who lives and works in Lagos
           building amazing things.{' '}
           <a href="https://twitter.com/abayomipopoola" target="_blank">
             Twitter
