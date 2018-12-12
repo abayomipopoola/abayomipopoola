@@ -38,7 +38,7 @@ class PortfolioPage extends React.Component {
                         </div>
                     </div>
                     <div className="ant-card-body">
-                        <p>TimeMap is a real-time tracking application that tells you when and what your employees are working on.
+                        <p>TimeMap is a tracking system that tells you when, where and what your employees are working on.
                            Effectively track Your business field activities.</p>
                         <p>
                             <a href="https://timemap.rovedana.com" target="_blank">view project <span>&#187;</span></a>
@@ -60,8 +60,7 @@ class PortfolioPage extends React.Component {
                         </div>
                     </div>
                     <div className="ant-card-body">
-                        <p>TimeMap mobile app allows for effective tracking of business activities by making
-                        the following possible with Personnel tracking and GPS tracking options.</p>
+                        <p>The mobile app works with the TimeMap tracking system for effective tracking of business activities; it allows employees to capture an attendance instance on the go.</p>
                         <p>
                             <a href="https://play.google.com/store/apps/details?id=com.timeMap" target="_blank">view project <span>&#187;</span></a>
                         </p>
