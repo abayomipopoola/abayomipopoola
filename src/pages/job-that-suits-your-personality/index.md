@@ -3,6 +3,8 @@ title: It’s important that your job matches your personality
 date: "2018-12-13T22:40:32.169Z"
 ---
 
+![personality](./personality.jpg)
+
 Your personality will partially determine how good you are at your job, especially if your job requires more than rote behavior. So are you and your job a good fit? Creative people prefer jobs that allow them to try new things—***openness***—one of the 'Big Five personality traits'; these guys are more likely to succeed at jobs that require novel solutions over efficient ones. On the contrary, some people are ***conscientious***—another 'Big Five personality trait', and they're likely to be better off in a management or administrative position.
 
 This article is based on a BigThink video by Jordan Peterson; he started by suggesting a job categorisation scheme that’s rather general.
@@ -42,5 +44,5 @@ So there’s this terrible tension in organizations, and Peterson think what gen
 Now you might think, “Well I don’t want my company to die.” It’s like okay then, you need to understand the difference between these two kinds of people—which you probably won’t and you probably won’t admit to even if you knew. And then you have to figure out how to get the balance right. And that’s extraordinarily complicated.
 
 
-###### Ref. video link <***bit.ly/2PzUeTn***>, by Jordan Peterson
+###### Ref. image, scientopia.org; video link <***bit.ly/2PzUeTn***>, by Jordan Peterson
 
