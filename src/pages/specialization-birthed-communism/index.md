@@ -3,7 +3,7 @@ title: A fiction of how specialization birthed communism
 date: "2018-07-07T23:46:37.121Z"
 ---
 
-![work station](./manifesto.jpg)
+![manifesto](https://www.dropbox.com/s/8d9kutj59ejstf1/manifesto.jpg?raw=1)
 
 Karl Marx got tired of the ‘concept of specialization’ that the Scottish economist, philosopher and author, Adam Smith, preached and asked himself that why should he do the same thing for the most part of his adult life just because it increases throughput and enriches private enterprises?
 

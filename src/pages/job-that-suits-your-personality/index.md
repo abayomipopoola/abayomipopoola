@@ -3,7 +3,7 @@ title: It’s important that your job matches your personality
 date: "2018-12-13T22:40:32.169Z"
 ---
 
-![personality](./personality.jpg)
+![personality](https://www.dropbox.com/s/vn1de31xgd0g7mf/personality.jpg?raw=1)
 
 Your personality will partially determine how good you are at your job, especially if your job requires more than rote behavior. So are you and your job a good fit? Creative people prefer jobs that allow them to try new things—***openness***—one of the 'Big Five personality traits'; these guys are more likely to succeed at jobs that require novel solutions over efficient ones. On the contrary, some people are ***conscientious***—another 'Big Five personality trait', and they're likely to be better off in a management or administrative position.
 

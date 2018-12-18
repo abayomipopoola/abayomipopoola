@@ -3,7 +3,7 @@ title: How’s the mind different from the brain?
 date: "2018-11-20T22:40:32.169Z"
 ---
 
-![drawing the consciousness](./mind.jpg)
+![drawing the consciousness](https://www.dropbox.com/s/td2epunpedk73hi/mind.jpg?raw=1)
 
 Just like programming a computer—as the program comes to the electrical computer from without; the same is true of each biological computers (the human brains): Purpose comes to it from outside its own mechanism.
 

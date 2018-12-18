@@ -3,7 +3,7 @@ title: How to be a Rebel!
 date: "2018-07-05T23:46:37.121Z"
 ---
 
-![how to be a rebel](./book.png)
+![how to be a rebel](https://www.dropbox.com/s/0s3xm548kzolyux/book.png?raw=1)
 
 The whiff of coffee quickened me to a whole new possibilities this beautiful morning.
 

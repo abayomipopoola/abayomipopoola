@@ -3,7 +3,7 @@ title: The cult of the genius
 date: "2018-05-28T22:40:32.169Z"
 ---
 
-![Cult of genius](./cult.png)
+![Cult of genius](https://www.dropbox.com/s/qlxg7cf7v0zrixr/cult.png?raw=1)
 
 We do not ask how it came to be. Instead, we rejoice in the present fact as though it came out of the ground by magic. -Nietzsche
 
