@@ -5,7 +5,7 @@ date: "2018-12-18T22:40:32.169Z"
 
 ![regression analysis](https://www.dropbox.com/s/piu6otxpg3gij58/regression.png?raw=1)
 
-Regression analysis is a ubiquitous tool of scientific/statistical research, but what is it and how simply can it be explained? It's safe to define it as a method of measuring the link between two or more phenomena — establishing a correlation between phenomena.
+Regression analysis is a ubiquitous tool of scientific/statistical research, but what is it and how can it be explained simply? It's safe to define it as a method of measuring the link between two or more phenomena — establishing a correlation between phenomena.
 
 #### Correlation
 
