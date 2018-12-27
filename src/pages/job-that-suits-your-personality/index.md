@@ -44,5 +44,5 @@ So there’s this terrible tension in organizations, and Peterson think what gen
 Now you might think, “Well I don’t want my company to die.” It’s like okay then, you need to understand the difference between these two kinds of people—which you probably won’t and you probably won’t admit to even if you knew. And then you have to figure out how to get the balance right. And that’s extraordinarily complicated.
 
 
-###### Ref. image, scientopia.org; video link <***bit.ly/2PzUeTn***>, by Jordan Peterson
+###### Ref. image, scientopia.org; video link <a href="http://bit.ly/2PzUeTn" target="_blank">here</a>, by Jordan Peterson
 

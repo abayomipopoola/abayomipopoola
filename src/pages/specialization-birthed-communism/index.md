@@ -19,4 +19,4 @@ What if I preach a political theory that favors collectivism (giving a group pri
 
 Marx continues to tinker on his newly created ideology, and as fate would have it—Friedrich Engels, his contemporary also shares the same ideology. In 1848, they wrote and publish a book, titled: The Communist Manifesto.
 
-In the book, they painted the business owners as the bad guys—call them exploiters of workers and whatnot.... People took to it and the rest as we know it, is history (read more here: stanford.io/2omgZzx).
+In the book, they painted the business owners as the bad guys—call them exploiters of workers and whatnot.... People took to it and the rest as we know it, is history (read more <a href="http://stanford.io/2omgZzx" target="_blank">here</a>).
