@@ -26,6 +26,9 @@ class PortfolioPage extends React.Component {
             my selected projects. Please feel free to send <a href="mailto:abayomipopoola@gmail.com">an email</a>
         </p>
 
+        <p> View my <a href="/cv">résumé</a>
+        </p>
+
         <div>
             <h3>Latest Projects</h3>
             <div className="flex-container">
