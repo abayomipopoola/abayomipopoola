@@ -7,11 +7,11 @@ date: "2019-04-27T22:40:32.169Z"
 
 In recent years, new members are joining the bitcoin/altcoins and blockchain technology community, not for an ideological reason but for practical ones.
 
-Whether or not bitcoin/altcoin will be worth millions isn’t the main question for computer scientists, investors, and hackers; to them, Satoshi Nakamoto real invention is the blockchain technology—a global open ledger which can be used to share more than just money.
+Whether or not bitcoin/altcoin will be worth millions isn’t the main question for many computer scientists, investors, and hackers, to them Satoshi Nakamoto’s real invention is the Blockchain Technology—a global open ledger which can be used to share much more than just money.
 
-Bitcoin isn’t just another way to pay for items online, rather a denomination used to pave the tool to put stuff on a global ledger. Registering things that make up the entire fabric of our civilisation: timestamp of birth/death, properties, financial transactions, votes, etc.—makes blockchain one of the most profound human innovation of our time. Because having a massive global ledger as a public utility can completely reorganise the way we run our society.
+Bitcoin isn’t just another way to pay for items online, rather it's a denomination used to pave the tool to put stuff on a global ledger. Timestamp recordings of birth/death, properties, financial transactions, votes, etc., make up the entire fabric of our civilisation—which makes the Blockchain one of the most profound human innovation of our time. Because having a massive global ledger as a public utility can completely reorganise the way we run our society.
 
-You see, one of the problems we have in an increasingly globalised system is that everyone is operating their systems in their local standard, and getting people to do everything in a uniform way, that benefits all of us: like bringing in a metric system—is really hard. Blockchain offers an opportunity to start new exciting technological industries from a standard that is globalised and potentially uniform.
+You see, one of the problems we have in an increasingly globalised system is that everyone is operating their systems on their own local standard, and getting people to do everything in a uniform way, that benefits all of us: like bringing in the metric system—is really hard. Blockchain offers an opportunity to start new exciting technological industries from a standard that is globalised and potentially uniform.
 
 #### Bitcoin
 
@@ -60,4 +60,4 @@ We've seen major banks, e-commerce giants and other industries experimenting wit
 Just like all good things, Blockchain too has got some challenges, viz. it requires high computing resources/power to operate; and in the case of bitcoin/altcoins, it's important you secure your wallet ID, as revealing it to a third party means losing control over your coin value, and also, if you forget your wallet ID it cannot be recovered and the funds secured by it are lost forever.
 
 
-###### Ref. image from adexchanger.com 
+###### Ref. image from adexchanger.com
