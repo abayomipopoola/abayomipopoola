@@ -60,4 +60,4 @@ We've seen major banks, e-commerce giants and other industries experimenting wit
 Just like all good things, Blockchain too has got some challenges, viz. it requires high computing resources/power to operate; and in the case of bitcoin/altcoins, it's important you secure your wallet ID, as revealing it to a third party means losing control over your coin value, and also, if you forget your wallet ID it cannot be recovered and the funds secured by it are lost forever.
 
 
-###### Ref. image from adexchanger.com
+###### Ref.: Blockchain videos on youtube; image from adexchanger.com
