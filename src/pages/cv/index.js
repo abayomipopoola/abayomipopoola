@@ -15,7 +15,7 @@ class CvPage extends React.Component {
 
         <div>
             <div className="flex-container">
-                <img width='100%' src="https://www.dropbox.com/s/yaposi5yrx8mepz/0001.jpg?raw=1" alt="resume page 1" />
+                <img width='100%' src="https://www.dropbox.com/s/ej8qm2ijg18mvsk/0001.jpg?raw=1" alt="resume page 1" />
             </div>
         </div>
 
