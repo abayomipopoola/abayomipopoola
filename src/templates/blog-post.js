@@ -11,7 +11,10 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = post.excerpt
-    const { previous, next } = this.props.pageContext
+    const { previous, next, slug } = this.props.pageContext
+    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
+      `https://www.abayomipopoola.com${slug}`
+    )}`;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -20,18 +23,31 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <main>
+          <article>
+            <header>
+              <h1>{post.frontmatter.title}</h1>
+              <p
+                style={{
+                  ...scale(-1 / 5),
+                  display: 'block',
+                  marginBottom: rhythm(1),
+                  marginTop: rhythm(-1),
+                }}
+              >
+                {post.frontmatter.date}
+              </p>
+            </header>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <footer>
+                  <p>
+                    <a href={discussUrl} target="_blank" rel="noopener noreferrer">
+                      Got a comment? Discuss on Twitter
+                    </a>
+                  </p>
+            </footer>
+          </article>
+        </main>
         <hr
           style={{
             marginBottom: rhythm(1),
