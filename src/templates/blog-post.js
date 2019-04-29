@@ -42,7 +42,7 @@ class BlogPostTemplate extends React.Component {
             <footer>
                   <p>
                     <a href={discussUrl} target="_blank" rel="noopener noreferrer">
-                      Got a comment? Discuss on Twitter
+                      Got comments? Discuss on Twitter
                     </a>
                   </p>
             </footer>
