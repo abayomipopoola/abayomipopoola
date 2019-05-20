@@ -5,7 +5,7 @@ date: "2019-05-20T22:06:03.284Z"
 
 ![The life we live in](https://www.dropbox.com/s/k5att9w1bnb5orq/feynman.jpeg?raw=1)
 
-Here is part-two of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky"  (read summarised article <a href="/how-to-get-rich-without-getting-lucky-summary">here</a>).
+Here is part two of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky"  (read summarised article <a href="/how-to-get-rich-without-getting-lucky-summary">here</a>).
 
 #### Pick an industry where you can play long term games with long term people.
 
