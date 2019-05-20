@@ -5,7 +5,7 @@ date: "2019-05-20T22:12:03.284Z"
 
 ![The life we live in](https://www.dropbox.com/s/k5att9w1bnb5orq/feynman.jpeg?raw=1)
 
-Here are the summarised note on the Naval’s expanded points from his "How to Get Rich" tweetstorm (read expanded series <a href="/how-to-get-rich-without-getting-lucky">here</a>).
+Here is the summarised note on the Naval’s expanded points from his "How to Get Rich" tweetstorm (read expanded series <a href="/how-to-get-rich-without-getting-lucky">here</a>).
 
 Let's get to it.
 
