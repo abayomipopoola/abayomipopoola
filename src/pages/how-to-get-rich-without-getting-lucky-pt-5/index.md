@@ -5,10 +5,7 @@ date: "2019-05-20T22:09:03.284Z"
 
 ![The life we live in](https://www.dropbox.com/s/k5att9w1bnb5orq/feynman.jpeg?raw=1)
 
-You probably have come across the viral "How To Get Rich" tweetstorm from Naval—He’s kinda famous on Twitter, and also he's the co-founder of AngelList. He’s a prolific tech investor in companies like Twitter, Uber, and many more.
-
-Here are Naval’s expanded points from his tweetstorm in detail (read summarised article 
-<a href="/how-to-get-rich-without-getting-lucky-summary">here</a>).
+Here is part-five of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky"  (read summarised article <a href="/how-to-get-rich-without-getting-lucky-summary">here</a>).
 
 #### There’s No Actual Skill Called “Business”
 
