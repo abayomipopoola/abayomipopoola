@@ -45,9 +45,9 @@ A graph that connects different contexts, is called a context map. For each cont
 
 ![Context map](https://www.dropbox.com/s/2pqcl6x5ht34b90/contextmapping.jpg?raw=1)
 
-The image aboce depict a very simple Context Map: drawing contours around portions of domain model shows the areas where conceptual integrity is preserved (https://www.infoq.com/articles/ddd-contextmapping).
+The image above depict a very simple Context Map: drawing contours around portions of the domain model shows the areas where conceptual integrity is preserved (<a href="https://www.infoq.com/articles/ddd-contextmapping" target="_blank">Read more</a>).
 
-In this case the two contexts have some logical overlapping area: the concept of banking account is used in different ways in different portions of the application, meaning that we'll have different models in play. However, the two models are probably going to interact closely. Besides preserving conceptual integrity of the model within the context boundaries, the context map helps us focus on what's happening between the different contexts. In this case, assuming that the same team is working on both contexts, we need everybody in the team to be aware of the two different contexts, eventually sharing a translation map, for the terms and concepts that appear in both models.
+In this case, the two contexts have some logical overlapping area: the concept of banking account is used in different ways in different portions of the application, meaning that we’ll have different models in play. However, the two models are probably going to interact closely. Besides preserving the conceptual integrity of the model within the context boundaries, the context map helps us focus on what’s happening between the different contexts. In this case, assuming that the same team is working on both contexts, we need everybody in the team to be aware of the two different contexts, eventually sharing a translation map, for the terms and concepts that appear in both models.
 
 #### An over-simplified version of Eric's book
 
@@ -59,5 +59,5 @@ In summary, these are the main concept of Eric's book:
 * Supple design, Refactoring towards deeper insight 
 * Strategic design (bounded context, context map, core domain, subdomains).
 Although you'll most likely have to read the book to understand most of the jargons. My writeup is merely a brief introduction to the DDD concept. 
-https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215.
+<a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Get the book here</a>.
 
