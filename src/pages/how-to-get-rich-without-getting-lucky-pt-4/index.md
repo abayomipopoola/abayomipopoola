@@ -1,6 +1,6 @@
 ---
 title: How to Get Rich (without getting lucky) pt. 4
-date: "2019-05-20T22:08:03.284Z"
+date: "2018-08-20T22:08:03.284Z"
 ---
 
 ![The life we live in](https://www.dropbox.com/s/k5att9w1bnb5orq/feynman.jpeg?raw=1)
