@@ -169,7 +169,7 @@ class CvPage extends React.Component {
                   
                   <H2>Kudi.com <span>Senior Backend Engineer – Jan, 2019 - Jun, 2019</span></H2>
                   <Ul>
-                      <li>Design and architectect software; write application in an agile environment using Domain-driven and Test-driven development approach.</li>
+                      <li>Design and architect software; write application in an agile environment using Domain-driven and Test-driven development approach.</li>
                       <li>Utilises the speed and effectiveness of Apache Kafka to scale transactions in a fault-tolerant manner.</li>
                       <li><strong>Technologies</strong>: Java, Golang, Spring, Dropwizard, NodeJS, Python, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
                   </Ul> 
