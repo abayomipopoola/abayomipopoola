@@ -176,11 +176,11 @@ class CvPage extends React.Component {
                   
                   <H2>Jobberman.com <span>Head of Engineering – Dec, 2017 - Sep, 2018</span></H2>
                   <P>
-                    Jobberman is an online career portal from Nigeria. They connects employers to employees seeking job opportunities.
+                    Jobberman is an online career portal from Nigeria. They connect employers to employees seeking job opportunities.
                   </P>
                   <Ul>
                       <li>Head team of developers and Sys. Admin in maintaining and deploying new features on all Jobberman (Nigeria & Ghana) platforms.</li>
-                      <li>Designed and coded application in an agile environment utilizing a test-driven development approach.</li>
+                      <li>Designed and coded application in an agile environment utilising a test-driven development approach.</li>
                       <li>Development and maintenance of search service using Elasticsearch. Rest API development and performance improvements. Ensure application security for all Jobberman websites and web services. Ensure rapid deployment of bug fixes. Deployment of products and features across countries (Nigeria & Ghana).</li>
                       <li>Handling platform infrastructure and servers management and administration. DevOps, continuous integration, enforcing testing and code review.</li>
                       <li>Reduced AWS cost by optimising codes thereby reducing the amount of compute cost.</li>
@@ -193,7 +193,7 @@ class CvPage extends React.Component {
                   </P>
                   <Ul>
                       <li>Worked remotely with the Jobs core team of ROAM, supporting Jobberman (NG & GH) and Brightermonday (KE, UG & TZ)</li>
-                      <li>Designed and coded application in an agile environment utilizing a test-driven development approach.</li>
+                      <li>Designed and coded application in an agile environment utilising a test-driven development approach.</li>
                       <li>I worked on the backend, supporting a multi-domain system, and helping to scale it across Africa.</li>
                       <li>Integrated elasticsearch functionality to the existing Talent search module; this creates a better search experience, as it's used on a large pool of data.</li>
                       <li>Integrated Xero accounting software with the system; this helps the accounting department for easy account reconciliation</li>
@@ -205,7 +205,7 @@ class CvPage extends React.Component {
                     Engineered software products, handling complex analysis and core programming to meet project requirements of new products.
                   </P>
                   <Ul>
-                      <li>Designed and coded application in an agile environment utilizing a test-driven development approach.</li>
+                      <li>Designed and coded application in an agile environment utilising a test-driven development approach.</li>
                       <li>Full stack development.</li>
                       <li>Maintaining an existing codebase, also refactoring old code structure.</li>
                       <li>Setup a continuous integration development system using Jenkins.</li>
