@@ -100,7 +100,7 @@ class CvPage extends React.Component {
                   
           <div id="objective">
               <P>
-                  I am a result-driven software engineer with 6+ years experience developing Service-Orientated Architecture (SOA) for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company. And I ensure that projects are completed to specification, within an established time frame and budget.
+                  I am a result-driven software engineer with 6+ years experience in developing Service-Orientated Architecture (SOA) for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
               </P>
           </div>
           
@@ -114,7 +114,7 @@ class CvPage extends React.Component {
                         <div>
                           <strong>Web Dev.</strong>
                           <Ps>
-                            HTML5 & CSS3, Bootstrap, JavaScript, ES6, TypeScript, React.js & Redux, React Native, Webpack.
+                            HTML5 & CSS3, Bootstrap, JavaScript, ES6, FlowJS, ReactJS & Redux, React Native, Webpack.
                           </Ps>
                         </div>
                       </div>
@@ -138,7 +138,7 @@ class CvPage extends React.Component {
                         <div>
                          <strong> Web Servers</strong>
                           <Ps>
-                            Apache Tomcat, Jetty, Nginx, Amazon Web Services, Apache Kafka
+                            Apache Tomcat, Jetty, Nginx, Amazon Web Services, Apache Kafka.
                           </Ps>
                         </div>
                       </div>
@@ -156,9 +156,9 @@ class CvPage extends React.Component {
               
               <Dt>Experience</Dt>
               <Dd>
-                  <H2>Kudi.com <span>Technical Project Manager – JUL, 2019 - Present</span></H2>
+                  <H2>Kudi.com <span>Technical Project Manager – Jul, 2019 - Present</span></H2>
                   <P>
-                    Kudi.ai is a financial technology company that is enabling Africans to send money and Pay bills through digital channels like Messaging, Mobile, Web, USSD and physically through an Agent network.
+                    Kudi.com is a financial technology company that is enabling Africans to send money/pay bills through digital channels, viz, messaging app., mobile, web, USSD, and also through an Agent network.
                   </P>
                   <Ul>
                       <li>I currently lead the platform engineering team. I am responsible for leading the technical design of systems and services.</li>
@@ -167,7 +167,7 @@ class CvPage extends React.Component {
                       <li><strong>Technologies</strong>: Agile/Scrum, Jira, Java, Spring, Dropwizard, NodeJS, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
                   </Ul>
                   
-                  <H2>Kudi.com <span>Senior Backend Engineer – JAN, 2019 - JUN, 2019</span></H2>
+                  <H2>Kudi.com <span>Senior Backend Engineer – Jan, 2019 - Jun, 2019</span></H2>
                   <Ul>
                       <li>Design and architectect software; write application in an agile environment using Domain-driven and Test-driven development approach.</li>
                       <li>Utilises the speed and effectiveness of Apache Kafka to scale transactions in a fault-tolerant manner.</li>
@@ -176,7 +176,7 @@ class CvPage extends React.Component {
                   
                   <H2>Jobberman.com <span>Head of Engineering – Dec, 2017 - Sep, 2018</span></H2>
                   <P>
-                    Jobberman is job site, that connect employers to employee seeking job opportunities.
+                    Jobberman is an online career portal from Nigeria. They connects employers to employees seeking job opportunities.
                   </P>
                   <Ul>
                       <li>Head team of developers and Sys. Admin in maintaining and deploying new features on all Jobberman (Nigeria & Ghana) platforms.</li>
@@ -200,7 +200,7 @@ class CvPage extends React.Component {
                       <li><strong>Technologies</strong>:  PHP, Laravel, Java, Python, MySQL, Nginx, Elasticsearch, PHPUnit & Behat testsuits, AWS.</li>
                   </Ul> 
                   
-                  <H2>Jobberman.com <span>Lead Software Engineer – JAN, 2019 - JUN, 2019</span></H2>
+                  <H2>Jobberman.com <span>Lead Software Engineer – Jan, 2019 - Jun, 2019</span></H2>
                   <P>
                     Engineered software products, handling complex analysis and core programming to meet project requirements of new products.
                   </P>
@@ -214,7 +214,7 @@ class CvPage extends React.Component {
                   
                   <H2>Teamapt.com <span>Software Engineer – Dec, 2015 - Aug, 2016</span></H2>
                   <P>
-                    TeamApt is a financial technology company focused on developing Digital Banking, Digital Business solutions and Payments Infrastructure by rethinking the needs of consumers, businesses and the financial industry.
+                    TeamApt is a financial technology company focused on developing digital banking/business solutions, and payments infrastructure.
                   </P>
                   <Ul>
                       <li>Led programming tasks including developments, enhancements, maintenance and support for clients’ applications.</li>
