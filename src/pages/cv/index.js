@@ -100,7 +100,7 @@ class CvPage extends React.Component {
                   
           <div id="objective">
               <P>
-                  I am a result-driven software engineer with 6+ years’ experience developing Service-Orientated Architecture (SOA) for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company. And I ensure that projects are completed to specification, within an established time frame and budget.
+                  I am a result-driven software engineer with 6+ years experience developing Service-Orientated Architecture (SOA) for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company. And I ensure that projects are completed to specification, within an established time frame and budget.
               </P>
           </div>
           
