@@ -9,7 +9,7 @@ import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const siteDescription = data.site.siteMetadata.description
     const posts = data.allMarkdownRemark.edges
@@ -18,8 +18,13 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription },
-               {name: 'google-site-verification', content: '9eUxpEKdvKhZSybNt2afo62X7OhPd1Nnam_sp2ZmJgA'}]}
+          meta={[
+            { name: 'description', content: siteDescription },
+            {
+              name: 'google-site-verification',
+              content: '9eUxpEKdvKhZSybNt2afo62X7OhPd1Nnam_sp2ZmJgA',
+            },
+          ]}
           title={siteTitle}
         />
         <Bio />
@@ -36,9 +41,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>
-              {node.frontmatter.date}
-              </small>
+              <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )

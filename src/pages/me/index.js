@@ -19,14 +19,14 @@ class PortfolioPage extends React.Component {
           </Link>
         </div>
         <h1>Hello!</h1>
-        <p> I am Abayomi, a full-stack software engineer based in Lagos. 
-            In brief, I help bootstrap software products that scale.
+        <p> My name is Abayomi, a software engineering manager, and a wannabe economist that dabbles in entrepreneurship.
+            I help bootstrap software products that scale.
         </p>
-        <p> Welcome to my online portfolio! Here is the collection of 
+        <p> Welcome to my portfolio! Here is a collection of 
             my selected projects. Please feel free to send <a href="mailto:abayomipopoola@gmail.com">an email</a>
         </p>
 
-        <p> View my <a href="/cv">résumé</a>
+        <p> You can also view my <a href="/cv">résumé</a>
         </p>
 
         <div>

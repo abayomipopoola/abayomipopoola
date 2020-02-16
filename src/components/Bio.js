@@ -25,11 +25,12 @@ class Bio extends React.Component {
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
+            borderRadius: '50%',
           }}
         />
         <p>
-          Random write-ups by Abayomi Popoola who lives and works in Lagos
-          building amazing things.{' '}
+          I write about topics I find interesting—mostly things that are worth sharing.
+          A contriver.{' '}
           <a href="https://twitter.com/abayomipopoola" target="_blank">
             Twitter
           </a>
