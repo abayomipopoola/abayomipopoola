@@ -11,7 +11,7 @@ This article is based on a BigThink video by Jordan Peterson; he started by sugg
 
 #### Simplified Job Categorisation
 
-So the first dimension of Peterson categorisation is complexity. Jobs range from simple to complex. A simple job is one that you can learn and then repeat. You don’t need high levels of cognitive function for a simple job. If you have high levels of cognitive function you’ll learn the job faster, but once you learn it you won’t necessarily do it better.
+So the first dimension of Peterson's categorisation is complexity. Jobs range from simple to complex. A simple job is one that you can learn and then repeat. You don’t need high levels of cognitive function for a simple job. If you have high levels of cognitive function you’ll learn the job faster, but once you learn it you won’t necessarily do it better.
 
 A complex job on the other hand is one where the requirements change on an ongoing basis. So most managerial and executive jobs are like that in that they requires a high level of general cognitive ability. That’s the best predictor of success in complex jobs. So that’s axis number one of the category.
 
