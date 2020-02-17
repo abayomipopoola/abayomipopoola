@@ -11,7 +11,7 @@ This article is based on a BigThink video by Jordan Peterson; he started by sugg
 
 #### Simplified Job Categorisation
 
-So the first dimension of his categorisation is complexity. Jobs range from simple to complex. A simple job is one that you can learn and then repeat. You don’t need high levels of cognitive function for a simple job. If you have high levels of cognitive function you’ll learn the job faster, but once you learn it you won’t necessarily do it better.
+So the first dimension of Peterson categorisation is complexity. Jobs range from simple to complex. A simple job is one that you can learn and then repeat. You don’t need high levels of cognitive function for a simple job. If you have high levels of cognitive function you’ll learn the job faster, but once you learn it you won’t necessarily do it better.
 
 A complex job on the other hand is one where the requirements change on an ongoing basis. So most managerial and executive jobs are like that in that they requires a high level of general cognitive ability. That’s the best predictor of success in complex jobs. So that’s axis number one of the category.
 
@@ -23,7 +23,7 @@ And for managerial/administrative bit, whose jobs are more algorithmic—So imag
 
 Let's say your organisation already has a laid plan on how to achieve a goal, what you need is conscientious people. Because if you know what you’re doing you should just do it as efficiently as you can. But the problem you'll face is that the world changes around you unexpectedly. And so if you don’t have people who can think divergently when the marketplace shifts on you—which it most certainly will—then you don’t have anybody who can figure out where to lay new tracks. Now it’s really, really difficult for people, for corporations to get the balance between the entrepreneurial/creative types and the managerial/administrative types correct.
 
-Peterson think what eventually happens—although research on this isn’t clear yet—What seems to happen is that when a company originates, the creative/entrepreneurial types predominate, and they have to be flexible and move laterally to get the company established to begin with and take risks and break rules and do all sorts of things that conscientious people are much less likely to be able to tolerate (let alone think up).
+Peterson thinks that what eventually happens—although research on this isn’t clear yet—What seems to happen is that when a company originates, the creative/entrepreneurial types predominate, and they have to be flexible and move laterally to get the company established to begin with and take risks and break rules and do all sorts of things that conscientious people are much less likely to be able to tolerate (let alone think up).
 But as the company establishes itself the managerial/administrative types pour in and take over. But if they take over too much then the company gets so rigid it has no flexibility.
 
 > One important thing you need to do to manage a large enterprise is to understand that you're working with 
@@ -39,9 +39,9 @@ And then the scores are plotted. The plotted distribution doesn't show a normal 
 
 #### Capitalism
 
-So there’s this terrible tension in organizations, and Peterson think what generally happens is all the creative people are there at the beginning. They get chased out until you have nothing but managers and administrators. Then the environment shifts, then the company dies. And so the way that capitalism solves the problem of the tension between the creative types and the managerial types is it just lets companies die.
+So there’s this terrible tension in organizations, and Peterson thinks what generally happens is all the creative people that are there at the beginning—get chased out until you have nothing but managers and administrators. Then the environment shifts, then the company dies. And so the way that capitalism solves the problem of the tension between the creative types and the managerial types is it just lets companies die.
 
-Now you might think, “Well I don’t want my company to die.” It’s like okay then, you need to understand the difference between these two kinds of people—which you probably won’t and you probably won’t admit to even if you knew. And then you have to figure out how to get the balance right. And that’s extraordinarily complicated.
+Now you might think, “Well I don’t want my company to die.” Of course, who would? So you need to understand the difference between these two kinds of people—which you probably won’t and you probably won’t admit to even if you knew. And then you have to figure out how to get the balance right. And that’s extraordinarily complicated.
 
 
 ###### Ref. image, scientopia.org; video link <a href="http://bit.ly/2PzUeTn" target="_blank">here</a>, by Jordan Peterson
