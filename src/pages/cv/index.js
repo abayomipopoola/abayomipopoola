@@ -156,10 +156,15 @@ class CvPage extends React.Component {
               
               <Dt>Experience</Dt>
               <Dd>
-                  <H2>Kudi.com <span>Technical Project Manager – Jul, 2019 - Present</span></H2>
+                  <H2>Kudi.com <span>Software Engineering Manager – Jan, 2020 - Present</span></H2>
                   <P>
                     Kudi.com is a financial technology company that is enabling Africans to send money/pay bills through digital channels, viz, messaging app., mobile, web, USSD, and also through an Agent network.
                   </P>
+                  <Ul>
+                      <li>I ensure that key projects and engineering duties are fulfilled.</li>
+                  </Ul>
+
+                  <H2>Kudi.com <span>Platform Tech Lead – Jul, 2019 - Jan, 2020</span></H2>
                   <Ul>
                       <li>I currently lead the platform engineering team. I am responsible for leading the technical design of systems and services.</li>
                       <li>I provide project planning and management for established initiatives within the company.</li>
@@ -167,7 +172,7 @@ class CvPage extends React.Component {
                       <li><strong>Technologies</strong>: Agile/Scrum, Jira, Java, Spring, Dropwizard, NodeJS, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
                   </Ul>
                   
-                  <H2>Kudi.com <span>Senior Backend Engineer – Jan, 2019 - Jun, 2019</span></H2>
+                  <H2>Kudi.com <span>Senior Platform Engineer – Jan, 2019 - Jun, 2019</span></H2>
                   <Ul>
                       <li>Design and architect software; write application in an agile environment using Domain-driven and Test-driven development approach.</li>
                       <li>Utilises the speed and effectiveness of Apache Kafka to scale transactions in a fault-tolerant manner.</li>
