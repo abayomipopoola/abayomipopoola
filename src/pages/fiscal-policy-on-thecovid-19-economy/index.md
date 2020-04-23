@@ -7,7 +7,7 @@ date: "2020-04-23T11:00:03.284Z"
 
 China, the epicentre of the virus was responsible for around $0.78 trillion out of the $1.66 trillion 2019 global economic growth. That’s about half the global economic growth. Same China sits at the heart of global supply chains that keep the world economy humming... large economies such as the US and Japan get more than a third of their intermediate goods from China. Then COVID-19 strikes.
 
-Until there is a better sense of when and how the COVID-19 crisis will be resolved and when a vaccine would be made availbale, economists are yet to predict the end of the incipient recession.
+Until there is a better sense of when and how the COVID-19 crisis will be resolved and when a vaccine would be made available, economists are yet to predict the end of the incipient recession.
 
 The National Bureau of Economic Research (NBER) defines a recession as "a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in the real gross domestic product (GDP), real income, employment, industrial production, and wholesale-retail sales."
 
@@ -21,7 +21,7 @@ Fiscal policy is the use of government purchases, transfer payments (including w
 
 >Fiscal policy is largely based on the ideas of British economist John Maynard Keynes (1883-1946), who argued that economic recessions are due to a deficiency in the consumption spending and business investment components of aggregate demand. Keynes believed that governments could stabilize the business cycle and regulate economic output by adjusting spending and tax policies to make up for the shortfalls of the private sector. His theories were developed in response to the Great Depression, which defied classical economics' assumptions that economic swings were self-correcting (<a href="https://www.investopedia.com/terms/f/fiscalpolicy.asp" target="_blank">Read more</a>).
 
-To understand how fiscal policy can help with during recession, we need to understand the _The Aggregate Demand-Supply Model_ macroeconomic concept. Let's start by defining some underlying concepts.
+To understand how fiscal policy can help with during recession, we need to understand the _Aggregate Demand-Supply Model_ macroeconomic concept. Let's start by defining some underlying concepts.
 
 ##### Key Terms
 * Aggregate: A mass, assemblage, or sum of particulars; something consisting of elements but considered as a whole.
@@ -62,7 +62,7 @@ The figure below illustrates the _Expansionary Fiscal Policy_. The original equi
 
 ####<p align="center">•••</p>
 
-The economists have basically said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don’t foreclose on loans, don’t put people off jobs, especially  if you can hold on to them, or if the government or the public can fund you to keep those jobs—because there’s this reality that once something goes under, be it a company, a job—and people leave, that it’s very hard to rebuild.
+The economists have said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don’t foreclose on loans, don’t put people off jobs, especially  if you can hold on to them, or if the government or the public can fund you to keep those jobs—because there’s this reality that once something goes under, be it a company, a job—and people leave, that it’s very hard to rebuild.
 
 #### Hope For Better Days?
 Here are some things you can do to get yourself ready for the better days ahead:
