@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Import typefaces
-import 'typeface-montserrat'
+import 'typeface-libre-baskerville'
 import 'typeface-merriweather'
 
 import profilePic from './profile-pic.jpg'
@@ -28,7 +28,7 @@ class Bio extends React.Component {
             borderRadius: '50%',
           }}
         />
-        <p>
+        <p style={{ color: '#333333'}}>
           I write about topics I find interesting—mostly things that are worth sharing.
           A contriver.{' '}
           <a href="https://twitter.com/abayomipopoola" target="_blank">

@@ -4,12 +4,16 @@ import { Link, graphql } from 'gatsby'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
+import ShareButtons from '../components/ShareButtons';
+import Disqus from 'gatsby-plugin-disqus'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
+    const siteUrl = this.props.data.site.siteMetadata.siteUrl
+    const twitterHandle = this.props.data.site.siteMetadata.twitterHandle
     const siteDescription = post.excerpt
     const { previous, next, slug } = this.props.pageContext
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
@@ -26,25 +30,72 @@ class BlogPostTemplate extends React.Component {
         <main>
           <article>
             <header>
-              <h1>{post.frontmatter.title}</h1>
-              <p
+              <h1
                 style={{
-                  ...scale(-1 / 5),
-                  display: 'block',
-                  marginBottom: rhythm(1),
-                  marginTop: rhythm(-1),
+                  fontFamily: 'Libre Baskerville, georgia, times, serif',
+                  color: '#121212',
                 }}
               >
-                {post.frontmatter.date}
-              </p>
+                {post.frontmatter.title}
+              </h1>
+              <div className="share-flex-container">
+                <div className="flex-item">
+                  <p
+                    style={{
+                      ...scale(-1 / 5),
+                      display: 'block',
+                      color: '#333333',
+                      marginBottom: rhythm(1),
+                      marginTop: rhythm(-1),
+                    }}
+                  >
+                    {post.frontmatter.date}
+                  </p>
+                </div>
+                <span></span>
+                <div className="flex-item">
+                  <p
+                    style={{
+                      ...scale(-1 / 5),
+                      display: 'block',
+                      color: '#333333',
+                      marginBottom: rhythm(1),
+                      marginTop: rhythm(-1),
+                    }}
+                  >
+                    <ShareButtons
+                      twitterHandle={twitterHandle}
+                      url={siteUrl}
+                      title={siteTitle}
+                    />
+                  </p>
+                </div>
+              </div>
             </header>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className='post' dangerouslySetInnerHTML={{ __html: post.html }} />
             <footer>
+              <div className="share-flex-container">
+                <div className="flex-item">
                   <p>
                     <a href={discussUrl} target="_blank" rel="noopener noreferrer">
                       Got comments? Discuss on Twitter
                     </a>
                   </p>
+                </div>
+                <span></span>
+                <div className="flex-item">
+                  <ShareButtons
+                    twitterHandle={twitterHandle}
+                    url={siteUrl}
+                    title={siteTitle}
+                  />
+                </div>
+              </div>
+              <Disqus
+                identifier={post.id}
+                title={siteTitle}
+                url={siteUrl}
+              />
             </footer>
           </article>
         </main>
@@ -55,7 +106,7 @@ class BlogPostTemplate extends React.Component {
         />
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
+            fontFamily: 'Libre Baskerville, georgia, times, serif',
             marginTop: rhythm(0.25),
           }}
         >
@@ -63,7 +114,7 @@ class BlogPostTemplate extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: '#007acc',
+              color: '#326891',
             }}
             to={'/'}
           >
@@ -111,6 +162,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
+        twitterHandle
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

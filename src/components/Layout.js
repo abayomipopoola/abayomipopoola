@@ -15,6 +15,7 @@ class Layout extends React.Component {
         <h1
           style={{
             ...scale(1.0),
+            fontFamily: 'Libre Baskerville, georgia, times, serif',
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
@@ -23,7 +24,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'inherit',
+              color: '#121212',
             }}
             to={'/'}
           >
@@ -35,7 +36,7 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
+            fontFamily: 'Libre Baskerville, georgia, times, serif',
             marginTop: 0,
             marginBottom: rhythm(-1),
           }}
@@ -44,7 +45,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: '#007acc',
+              color: '#326891',
             }}
             to={'/'}
           >

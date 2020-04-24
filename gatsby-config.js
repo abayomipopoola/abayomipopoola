@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     title: 'Abayomi Popoola',
     author: 'Abayomi Popoola',
+    twitterHandle: 'abayomipopoola',
     description: 'A blog about my rants.',
-    siteUrl: '',
+    siteUrl: 'https://abayomipopoola.com/',
   },
   pathPrefix: '/',
   plugins: [
@@ -64,6 +65,12 @@ module.exports = {
       options: {
         pathToConfigModule: 'src/utils/typography',
       },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `abayomi_disqus`
+      }
     },
   ],
 }
