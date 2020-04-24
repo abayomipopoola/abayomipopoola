@@ -12,25 +12,12 @@ class Footer extends React.Component {
           paddingTop: rhythm(1),
         }}
       >
+        <div style={{clear: 'both'}}></div>
         <div style={{ float: 'right' }}>
-          <Link style={{ boxShadow: 'none' }} to='/me'>
-          view my portfolio{' '}<span>&#187;</span>
+          <Link style={{ boxShadow: 'none' }} to='/'>
+            <span>&#8593;</span>{' '}top
           </Link>
         </div>
-        <a
-          href="https://mobile.twitter.com/abayomipopoola"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          twitter
-        </a> &bull;{' '}
-        <a
-          href="https://github.com/abayomipopoola"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          github
-        </a>
       </footer>
     )
   }

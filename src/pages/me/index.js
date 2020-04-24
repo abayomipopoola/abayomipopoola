@@ -18,11 +18,11 @@ class PortfolioPage extends React.Component {
           <span>&#8592;</span>{' '}back
           </Link>
         </div>
-        <h1>Hello!</h1>
+        <h2>Hello!</h2>
         <p> My name is Abayomi, a software engineering manager, and a wannabe economist that dabbles in entrepreneurship.
             I help bootstrap software products that scale.
         </p>
-        <p> Welcome to my portfolio! Here is a collection of 
+        <p> Welcome to my portfolio! Here is a collection of
             my selected projects. Please feel free to send <a href="mailto:abayomipopoola@gmail.com">an email</a>
         </p>
 
@@ -84,8 +84,8 @@ class PortfolioPage extends React.Component {
                         </div>
                     </div>
                     <div className="ant-card-body">
-                        <p>Flexxtern is a video contest. 
-                        Participants are required to upload a 45-sec video on why they should be the next #flexxtern; 
+                        <p>Flexxtern is a video contest.
+                        Participants are required to upload a 45-sec video on why they should be the next #flexxtern;
                         they also are asked to invite friends to vote.</p>
                         <p>
                             <a href="https://apply.fcmb.com/flexxtern" target="_blank">view project <span>&#187;</span></a>
@@ -96,7 +96,7 @@ class PortfolioPage extends React.Component {
                     <img className="project-image" width='100%' src={project4} alt="#FCMBFlexxtern Contest" />
                 </div>
             </div>
-            
+
             <div className="flex-container">
                 <div className="ant-card">
                     <div className="ant-card-head">
@@ -107,8 +107,8 @@ class PortfolioPage extends React.Component {
                         </div>
                     </div>
                     <div className="ant-card-body">
-                        <p>A capacity building initiative in form of short videos tagged "#FlexxCareerSeries". 
-                        In the series, young Flexxers get a chance to listen to top-notch HR professionals from 
+                        <p>A capacity building initiative in form of short videos tagged "#FlexxCareerSeries".
+                        In the series, young Flexxers get a chance to listen to top-notch HR professionals from
                         leading Nigerian firms to provide guidance on how to prepare throughout the job application process.</p>
                         <p>
                             <a href="http://flexxzone.fcmb.com/flexxcareers" target="_blank">view project <span>&#187;</span></a>
@@ -119,7 +119,7 @@ class PortfolioPage extends React.Component {
                     <img className="project-image" width='100%' src={project3} alt="FlexxCareerSeries" />
                 </div>
             </div>
-            
+
             <div className="flex-container">
                 <div className="ant-card">
                     <div className="ant-card-head">
