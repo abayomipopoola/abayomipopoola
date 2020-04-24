@@ -38,39 +38,17 @@ class BlogPostTemplate extends React.Component {
               >
                 {post.frontmatter.title}
               </h1>
-              <div className="share-flex-container">
-                <div className="flex-item">
-                  <p
-                    style={{
-                      ...scale(-1 / 5),
-                      display: 'block',
-                      color: '#333333',
-                      marginBottom: rhythm(1),
-                      marginTop: rhythm(-1),
-                    }}
-                  >
-                    {post.frontmatter.date}
-                  </p>
-                </div>
-                <span></span>
-                <div className="flex-item">
-                  <div
-                    style={{
-                      ...scale(-1 / 5),
-                      display: 'block',
-                      color: '#333333',
-                      marginBottom: rhythm(1),
-                      marginTop: rhythm(-1),
-                    }}
-                  >
-                    <ShareButtons
-                      twitterHandle={twitterHandle}
-                      url={`${siteUrl+slug}`}
-                      title={`${post.frontmatter.title}`}
-                    />
-                  </div>
-                </div>
-              </div>
+              <p
+                style={{
+                  ...scale(-1 / 5),
+                  display: 'block',
+                  color: '#333333',
+                  marginBottom: rhythm(1),
+                  marginTop: rhythm(-1),
+                }}
+              >
+                {post.frontmatter.date}
+              </p>
             </header>
             <div className='post' dangerouslySetInnerHTML={{ __html: post.html }} />
             <footer>
