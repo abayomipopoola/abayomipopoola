@@ -11,24 +11,6 @@ a {
   color: #121212
 }
 
-.share-flex-container {
-  display:flex;
-  flex-direction:row;
-}
-
-.share-flex-container > span {
-  flex-grow:1;
-}
-
-.share-flex-container > .flex-item {
-  flex-grow:0;
-}
-
-.share-button {
-  margin-right: 10px;
-  text-align: center;
-}
-
 #not-found {
   display: table;
   width: 100%;

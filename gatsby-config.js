@@ -3,7 +3,7 @@ module.exports = {
     title: 'Abayomi Popoola',
     author: 'Abayomi Popoola',
     twitterHandle: 'abayomipopoola',
-    description: 'A blog about my rants.',
+    description: 'A blog about ideas worth sharing.',
     siteUrl: 'https://abayomipopoola.com',
   },
   pathPrefix: '/',

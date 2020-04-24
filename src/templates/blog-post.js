@@ -4,7 +4,6 @@ import { Link, graphql } from 'gatsby'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
-import ShareButtons from '../components/ShareButtons';
 import Disqus from 'gatsby-plugin-disqus'
 import { rhythm, scale } from '../utils/typography'
 
@@ -13,7 +12,6 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteUrl = this.props.data.site.siteMetadata.siteUrl
-    const twitterHandle = this.props.data.site.siteMetadata.twitterHandle
     const siteDescription = post.excerpt
     const { previous, next, slug } = this.props.pageContext
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
@@ -52,26 +50,14 @@ class BlogPostTemplate extends React.Component {
             </header>
             <div className='post' dangerouslySetInnerHTML={{ __html: post.html }} />
             <footer>
-              <div className="share-flex-container">
-                <div className="flex-item">
-                  <p>
-                    <a href={discussUrl} target="_blank" rel="noopener noreferrer">
-                      Got comments? Discuss on Twitter
-                    </a>
-                  </p>
-                </div>
-                <span></span>
-                <div className="flex-item">
-                  <ShareButtons
-                    twitterHandle={twitterHandle}
-                    url={`${siteUrl+slug}`}
-                    title={`${post.frontmatter.title}`}
-                  />
-                </div>
-              </div>
+              <p>
+                <a href={discussUrl} target="_blank" rel="noopener noreferrer">
+                  Discuss on Twitter.
+                </a>
+              </p>
               <Disqus
                 identifier={post.id}
-                title={`${post.title}`}
+                title={post.frontmatter.title}
                 url={`${siteUrl+slug}`}
               />
             </footer>
