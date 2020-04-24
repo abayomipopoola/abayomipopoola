@@ -4,7 +4,7 @@ module.exports = {
     author: 'Abayomi Popoola',
     twitterHandle: 'abayomipopoola',
     description: 'A blog about my rants.',
-    siteUrl: 'https://abayomipopoola.com/',
+    siteUrl: 'https://abayomipopoola.com',
   },
   pathPrefix: '/',
   plugins: [
@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `abayomi_disqus`
+        shortname: `https-www-abayomipopoola-com`
       }
     },
   ],

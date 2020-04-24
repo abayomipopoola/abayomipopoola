@@ -54,7 +54,7 @@ class BlogPostTemplate extends React.Component {
                 </div>
                 <span></span>
                 <div className="flex-item">
-                  <p
+                  <div
                     style={{
                       ...scale(-1 / 5),
                       display: 'block',
@@ -65,10 +65,10 @@ class BlogPostTemplate extends React.Component {
                   >
                     <ShareButtons
                       twitterHandle={twitterHandle}
-                      url={siteUrl}
-                      title={siteTitle}
+                      url={`${siteUrl+slug}`}
+                      title={`${post.frontmatter.title}`}
                     />
-                  </p>
+                  </div>
                 </div>
               </div>
             </header>
@@ -86,15 +86,15 @@ class BlogPostTemplate extends React.Component {
                 <div className="flex-item">
                   <ShareButtons
                     twitterHandle={twitterHandle}
-                    url={siteUrl}
-                    title={siteTitle}
+                    url={`${siteUrl+slug}`}
+                    title={`${post.frontmatter.title}`}
                   />
                 </div>
               </div>
               <Disqus
                 identifier={post.id}
-                title={siteTitle}
-                url={siteUrl}
+                title={`${post.title}`}
+                url={`${siteUrl+slug}`}
               />
             </footer>
           </article>
