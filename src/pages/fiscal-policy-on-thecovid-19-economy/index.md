@@ -21,7 +21,7 @@ Fiscal policy is the use of government purchases, transfer payments (including w
 
 >Fiscal policy is largely based on the ideas of British economist John Maynard Keynes (1883-1946), who argued that economic recessions are due to a deficiency in the consumption spending and business investment components of aggregate demand. Keynes believed that governments could stabilize the business cycle and regulate economic output by adjusting spending and tax policies to make up for the shortfalls of the private sector. His theories were developed in response to the Great Depression, which defied classical economics' assumptions that economic swings were self-correcting (<a href="https://www.investopedia.com/terms/f/fiscalpolicy.asp" target="_blank">Read more</a>).
 
-To understand how fiscal policy can help with during recession, we need to understand the _Aggregate Demand-Supply Model_ macroeconomic concept. Let's start by defining some underlying concepts.
+To understand how fiscal policy can help during recession, we need to understand the _Aggregate Demand-Supply Model_ macroeconomic concept. Let's start by defining some underlying concepts.
 
 ##### Key Terms
 * Aggregate: A mass, assemblage, or sum of particulars; something consisting of elements but considered as a whole.
@@ -64,7 +64,7 @@ The figure below illustrates the _Expansionary Fiscal Policy_. The original equi
 
 The economists have said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don’t foreclose on loans, don’t put people off jobs, especially  if you can hold on to them, or if the government or the public can fund you to keep those jobs—because there’s this reality that once something goes under, be it a company, a job—and people leave, that it’s very hard to rebuild.
 
-#### Hope For Better Days?
+#### Plan For The Better Days
 Here are some things you can do to get yourself ready for the better days ahead:
 * Understanding your expenses and where you’re able to reduce costs.
 * Business owners should create an effective plan for their business to remain profitable--easier said than done, but possible.
