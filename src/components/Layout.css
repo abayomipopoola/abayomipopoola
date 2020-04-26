@@ -91,6 +91,7 @@ a {
   box-sizing: border-box;
   padding: 1px 8px 1px 6px;
   margin-right: 8px;
+  border-color: transparent;
   color: #fff;
   border-radius: 3px;
   font-weight: 500;
