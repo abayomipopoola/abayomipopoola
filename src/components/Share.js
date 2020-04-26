@@ -25,7 +25,7 @@ const Share = ({ socialConfig }) => (
           <span className="icon">
             <FontAwesomeIcon icon={['fab', 'twitter']}/>
           </span>
-          <span className="text">&nbsp;Twitter</span>
+          <span className="text">Tweet</span>
         </TwitterShareButton>
       </li>
       <li>
@@ -33,7 +33,7 @@ const Share = ({ socialConfig }) => (
           <span className="icon">
             <FontAwesomeIcon icon={['fab', 'facebook-f']}/>
           </span>
-          <span className="text">&nbsp;Facebook</span>
+          <span className="text">Share</span>
         </FacebookShareButton>
       </li>
       <li>
@@ -41,7 +41,7 @@ const Share = ({ socialConfig }) => (
           <span className="icon">
             <FontAwesomeIcon icon={['fab', 'linkedin-in']}/>
           </span>
-          <span className="text">&nbsp;LinkedIn</span>
+          <span className="text">Share</span>
         </LinkedinShareButton>
       </li>
       <li>
@@ -49,7 +49,7 @@ const Share = ({ socialConfig }) => (
           <span className="icon">
             <FontAwesomeIcon icon={['fab', 'whatsapp']}/>
           </span>
-          <span className="text">&nbsp;WhatsApp</span>
+          <span className="text">Share</span>
         </WhatsappShareButton>
       </li>
     </ul>
