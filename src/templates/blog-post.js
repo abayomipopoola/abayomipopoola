@@ -6,17 +6,16 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import Disqus from 'gatsby-plugin-disqus'
 import { rhythm, scale } from '../utils/typography'
+import Share from '../components/Share';
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteUrl = this.props.data.site.siteMetadata.siteUrl
+    const twitterHandle = this.props.data.site.siteMetadata.twitterHandle
     const siteDescription = post.excerpt
     const { previous, next, slug } = this.props.pageContext
-    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://www.abayomipopoola.com${slug}`
-    )}`;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -50,15 +49,14 @@ class BlogPostTemplate extends React.Component {
             </header>
             <div className='post' dangerouslySetInnerHTML={{ __html: post.html }} />
             <footer>
-              <p>
-                <a href={discussUrl} target="_blank" rel="noopener noreferrer">
-                  Discuss on Twitter.
-                </a>
-              </p>
-              <Disqus
-                identifier={post.id}
-                title={post.frontmatter.title}
-                url={`${siteUrl+slug}`}
+              <Share
+                socialConfig={{
+                  twitterHandle,
+                  config: {
+                    url: `${siteUrl+slug}`,
+                    title: post.frontmatter.title,
+                  },
+                }}
               />
             </footer>
           </article>
@@ -72,8 +70,7 @@ class BlogPostTemplate extends React.Component {
           style={{
             fontFamily: 'Libre Baskerville, georgia, times, serif',
             marginTop: rhythm(0.25),
-          }}
-        >
+          }}>
           <Link
             style={{
               boxShadow: 'none',
@@ -86,13 +83,13 @@ class BlogPostTemplate extends React.Component {
           </Link>
         </h3>
         <Bio />
-
         <ul
           style={{
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'space-between',
             listStyle: 'none',
+            marginTop: rhythm(-2),
             padding: 0,
           }}
         >
@@ -113,6 +110,11 @@ class BlogPostTemplate extends React.Component {
             }
           </li>
         </ul>
+        <Disqus
+          identifier={post.id}
+          title={post.frontmatter.title}
+          url={`${siteUrl+slug}`}
+        />
       </Layout>
     )
   }

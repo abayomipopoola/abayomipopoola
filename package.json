@@ -7,6 +7,9 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "gatsby": "^2.0.19",
     "gatsby-plugin-disqus": "^1.1.4",
     "gatsby-plugin-feed": "^2.0.8",
@@ -28,6 +31,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-share": "^4.1.0",
     "react-typography": "^0.16.13",
     "styled-components": "^4.4.1",
     "typeface-libre-baskerville": "0.0.72",
