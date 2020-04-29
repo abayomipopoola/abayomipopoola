@@ -1,5 +1,6 @@
 body {
   font-family: 'Noto Serif', serif;
+  font-size: 17px;
 }
 
 a {
@@ -8,7 +9,7 @@ a {
 
 .post {
   color: #333333;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .post h1, h2, h3, h4, h5, h6 {

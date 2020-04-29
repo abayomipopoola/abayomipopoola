@@ -3,7 +3,7 @@ title: The Search for "God Particle" with Big Data
 date: "2018-12-27T22:40:32.169Z"
 ---
 
-![regression analysis](https://www.dropbox.com/s/2cag1oysw49lu06/bigdata.png?raw=1)
+![regression analysis](https://www.dropbox.com/s/fk8ue65io2bvbzk/bigdata.jpg?raw=1)
 
 The Higgs Boson, mostly called "the God particle", is what holds the fabric of our universe together. In order to isolate this particles, scientist utilises the Large Hadron Collider (LHC) that creates 600,000,000 collisions among 3,000,000,000,000,000 protons every second. In the same time, over 50,000,000,000,000 byte of data are being analysed to prove the particle's existence.
 

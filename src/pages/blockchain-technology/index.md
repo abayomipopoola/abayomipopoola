@@ -55,7 +55,7 @@ Blockchain technology brings everyone to the highest degree of accountability. W
 
 We've seen major banks, e-commerce giants and other industries experimenting with blockchain for money transfers, keeping records, and other complex backend functions. As an un-alterable ledger in real time, it enables them to track documentation and authenticate ownership of assets digitally.
 
-#### ...
+####<p align="center">•••</p>
 
 Just like all good things, Blockchain too has got some challenges, viz. it requires high computing resources/power to operate; and in the case of bitcoin/altcoins, it's important you secure your wallet ID, as revealing it to a third party means losing control over your coin value, and also, if you forget your wallet ID it cannot be recovered and the funds secured by it are lost forever.
 
