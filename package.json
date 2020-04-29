@@ -35,7 +35,7 @@
     "react-typography": "^0.16.13",
     "styled-components": "^4.4.1",
     "typeface-libre-baskerville": "0.0.72",
-    "typeface-merriweather": "0.0.72",
+    "typeface-noto-serif": "0.0.72",
     "typography": "^0.16.17",
     "typography-theme-wordpress-2016": "^0.15.10"
   },

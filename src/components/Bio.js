@@ -2,7 +2,7 @@ import React from 'react'
 
 // Import typefaces
 import 'typeface-libre-baskerville'
-import 'typeface-merriweather'
+import 'typeface-noto-serif'
 
 import profilePic from './profile-pic.jpg'
 import { Link } from 'gatsby'
@@ -34,7 +34,7 @@ class Bio extends React.Component {
           <a href="https://twitter.com/abayomipopoola" target="_blank">
             Twitter
           </a>
-          {' '} &bull; {' '} 
+          {' '} &bull; {' '}
           <Link style={{ boxShadow: 'none' }} to='/me'>
             View My Portfolio{' '}<span>&#187;</span>
           </Link>
