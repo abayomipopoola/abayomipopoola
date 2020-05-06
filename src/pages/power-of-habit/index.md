@@ -1,6 +1,7 @@
 ---
 title: The Power of Habit
 date: "2018-06-28T23:46:37.121Z"
+spoiler: Develop good habits and make them stick.
 ---
 
 ![work station](https://www.dropbox.com/s/948vweca512an6f/workstation.jpg?raw=1)

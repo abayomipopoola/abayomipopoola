@@ -1,6 +1,7 @@
 ---
 title: Domain-Driven Design
 date: "2019-12-30T11:00:03.284Z"
+spoiler: Tackling software complexities by connecting its related pieces into an ever-evolving business model and processes.
 ---
 
 ![Domain drivien design](https://www.dropbox.com/s/3tmdekqjt18ie7y/ddd.png?raw=1)

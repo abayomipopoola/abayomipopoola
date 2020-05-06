@@ -1,6 +1,7 @@
 ---
 title: How to Get Rich (without getting lucky) pt. 1
 date: "2018-08-20T22:05:03.284Z"
+spoiler: Part one of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
 ---
 
 ![The life we live in](https://www.dropbox.com/s/k5att9w1bnb5orq/feynman.jpeg?raw=1)

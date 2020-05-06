@@ -1,6 +1,7 @@
 ---
 title: How’s the mind different from the brain?
 date: "2018-11-20T22:40:32.169Z"
+spoiler: The mind, and the brain.
 ---
 
 ![drawing the consciousness](https://www.dropbox.com/s/td2epunpedk73hi/mind.jpg?raw=1)

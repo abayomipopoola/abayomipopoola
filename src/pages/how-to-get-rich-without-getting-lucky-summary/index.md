@@ -1,6 +1,7 @@
 ---
 title: How to Get Rich (without getting lucky) summarised.
 date: "2018-08-20T22:12:03.284Z"
+spoiler: Summarised note on the Naval’s expanded points from his “How To Get Rich Without Getting Lucky” tweetstorm.
 ---
 
 ![The life we live in](https://www.dropbox.com/s/k5att9w1bnb5orq/feynman.jpeg?raw=1)

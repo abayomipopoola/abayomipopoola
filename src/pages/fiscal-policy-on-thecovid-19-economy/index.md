@@ -1,6 +1,7 @@
 ---
 title: Fiscal Policy on the COVID-19 Economy
 date: "2020-04-23T11:00:03.284Z"
+spoiler: Why expansionary fiscal policy is the most appropriate when an economy is in recession and producing below its potential GDP.
 ---
 
 ![Fiscal Policy on the COVID-19 Economy](https://www.dropbox.com/s/q2wy56hjl88h6gv/social-distancing.jpg?raw=1)

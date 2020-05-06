@@ -1,6 +1,7 @@
 ---
 title: How to be a Rebel!
 date: "2018-07-05T23:46:37.121Z"
+spoiler: Rebelling against negative, unrealistic, and the unworkable state of the mind.
 ---
 
 ![how to be a rebel](https://www.dropbox.com/s/0s3xm548kzolyux/book.png?raw=1)

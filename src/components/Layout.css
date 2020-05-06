@@ -65,6 +65,12 @@ blockquote p {
 }
 
 /*Share button*/
+.share {
+  margin:0 auto;
+  width:240px;
+  text-align:center;
+}
+
 .list-inline {
   margin-top: 1.2em;
   margin-bottom: 0.5em;
@@ -98,31 +104,34 @@ blockquote p {
 }
 
 .btn-share-twitter {
-  background-color: #00aced;
+  /*background-color: #00aced;*/
+  background-color: #eeeeee;
 }
 
 .btn-share-facebook {
-  background-color: #3b5998;
+  /*background-color: #3b5998;*/
+  background-color: #eeeeee;
 }
 
 .btn-share-linkedin {
-  background-color: #007bb5;
+  /*background-color: #007bb5;*/
+  background-color: #eeeeee;
 }
 
 .btn-share-whatsapp {
-  background-color: #128c7e;
+  /*background-color: #128c7e;*/
+  background-color: #eeeeee;
 }
 
 .btn {
   position: relative;
-  font-size: 12px;
-  height: 25px;
+  font-size: 15px;
+  height: 30px;
   box-sizing: border-box;
-  padding: 1px 8px 1px 6px;
   margin-right: 8px;
-  border-color: transparent;
-  color: #fff;
-  border-radius: 3px;
+  color: black;
+  border-radius: 100%;
+  border: 1px #eee solid;
   font-weight: 500;
   cursor: pointer;
 }
@@ -130,15 +139,11 @@ blockquote p {
 .btn .icon {
   position: relative;
   display: inline-block;
-  width: 14px;
-  height: 14px;
-}
-
-.btn .text {
-  margin-left: 3px;
-  white-space: nowrap;
+  width: 15px;
+  height: 15px;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  border: 1px #777777 solid;
+  background-color: #fff;
 }
