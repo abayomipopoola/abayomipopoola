@@ -127,10 +127,10 @@ blockquote p {
   position: relative;
   font-size: 15px;
   height: 30px;
-  box-sizing: border-box;
+  width: 30px;
   margin-right: 8px;
   color: black;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 1px #eee solid;
   font-weight: 500;
   cursor: pointer;
