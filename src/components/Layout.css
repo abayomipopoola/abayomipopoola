@@ -106,6 +106,7 @@ blockquote p {
 .btn {
   position: relative;
   font-size: 15px;
+  text-align: left;
   height: 30px;
   width: 30px;
   margin-right: 8px;
@@ -118,7 +119,6 @@ blockquote p {
 }
 
 .btn .icon {
-  padding: 0;
   width: 15px;
   height: 15px;
 }
