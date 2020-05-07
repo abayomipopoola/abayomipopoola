@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 function isMobileOrTablet() {
-  return /(android|iphone|ipad|mobile)/i.test(navigator.userAgent);
+  return /(android|iphone|ipad|mobile)/i.test(typeof window !== 'undefined' && window.navigator.userAgent);
 }
 
 library.add(faFacebookF, faLinkedinIn, faTwitter, faWhatsapp);
