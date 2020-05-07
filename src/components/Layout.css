@@ -103,26 +103,6 @@ blockquote p {
   }
 }
 
-.btn-share-twitter {
-  /*background-color: #00aced;*/
-  background-color: #eeeeee;
-}
-
-.btn-share-facebook {
-  /*background-color: #3b5998;*/
-  background-color: #eeeeee;
-}
-
-.btn-share-linkedin {
-  /*background-color: #007bb5;*/
-  background-color: #eeeeee;
-}
-
-.btn-share-whatsapp {
-  /*background-color: #128c7e;*/
-  background-color: #eeeeee;
-}
-
 .btn {
   position: relative;
   font-size: 15px;
@@ -130,6 +110,7 @@ blockquote p {
   width: 30px;
   margin-right: 8px;
   color: black;
+  background-color: #eeeeee;
   border-radius: 50%;
   border: 1px #eee solid;
   font-weight: 500;
@@ -137,8 +118,6 @@ blockquote p {
 }
 
 .btn .icon {
-  position: relative;
-  display: inline-block;
   width: 15px;
   height: 15px;
 }
@@ -146,4 +125,14 @@ blockquote p {
 .btn:hover {
   border: 1px #777777 solid;
   background-color: #fff;
+}
+
+#search-button {
+  width: 50px;
+  height: 50px;
+}
+
+#search-button svg {
+  width: 25px;
+  height: 25px;
 }
