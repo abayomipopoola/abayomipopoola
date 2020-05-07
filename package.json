@@ -31,7 +31,6 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
-    "react-share": "^4.1.0",
     "react-typography": "^0.16.13",
     "styled-components": "^4.4.1",
     "typeface-libre-baskerville": "0.0.72",
