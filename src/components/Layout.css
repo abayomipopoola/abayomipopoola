@@ -84,9 +84,10 @@ blockquote p {
   width: 30px;
   margin-right: 8px;
   display: inline-block;
-  background-color: #eeeeee;
-  border-radius: 50%;
+  background-color: #eee;
   border: 1px #eee solid;
+  box-shadow: none;
+  border-radius: 50%;
   color: black;
   text-decoration: none;
   transition: opacity 0.15s linear;
