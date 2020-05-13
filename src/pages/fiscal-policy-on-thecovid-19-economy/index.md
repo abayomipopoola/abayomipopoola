@@ -14,13 +14,13 @@ The National Bureau of Economic Research (NBER) defines a recession as "a signif
 
 Every financial shock is different. In 1930 central banks let banks fail. In 2008-09 it was the subprime mortgages crisis. Now, COVID-19, the cause of the incipient recession has left the economy vulnerable to yet another economic shocks. 
 
-The contraction in the global economy is much worse than the 2008-09 financial crisis, as one top IMF official stated while urging the governments to take swift concerted action with fiscal tools taking a prime role to contain the COVID-19 spread and limit the damage to livelihoods (<a href="https://economictimes.indiatimes.com/news/international/world-news/covid-19-pandemic-worse-than-2008-09- financial-crisis-imf/articleshow/75161296.cms?utmsource=contentofinterest&utm_medium=text&utm_campaign=cppst" target="_blank">Read more</a>).
+The contraction in the global economy is much worse than the 2008-09 financial crisis, as one top IMF official stated while urging the governments to take swift concerted action with fiscal tools taking a prime role to contain the COVID-19 spread and limit the damage to livelihoods <a href="https://economictimes.indiatimes.com/news/international/world-news/covid-19-pandemic-worse-than-2008-09- financial-crisis-imf/articleshow/75161296.cms?utmsource=contentofinterest&utm_medium=text&utm_campaign=cppst" target="_blank" class="read-more">_(Read more)_</a>.
 
 #### Using Fiscal Policy as a tool to Fight Recession
 
 Fiscal policy is the use of government purchases, transfer payments (including welfare programs), and taxes to influence the level of economic activity, especially macroeconomic conditions including aggregate demand for goods and services, employment, inflation, and economic growth.
 
->Fiscal policy is largely based on the ideas of British economist John Maynard Keynes (1883-1946), who argued that economic recessions are due to a deficiency in the consumption spending and business investment components of aggregate demand. Keynes believed that governments could stabilize the business cycle and regulate economic output by adjusting spending and tax policies to make up for the shortfalls of the private sector. His theories were developed in response to the Great Depression, which defied classical economics' assumptions that economic swings were self-correcting (<a href="https://www.investopedia.com/terms/f/fiscalpolicy.asp" target="_blank">Read more</a>).
+>Fiscal policy is largely based on the ideas of British economist John Maynard Keynes (1883-1946), who argued that economic recessions are due to a deficiency in the consumption spending and business investment components of aggregate demand. Keynes believed that governments could stabilize the business cycle and regulate economic output by adjusting spending and tax policies to make up for the shortfalls of the private sector. His theories were developed in response to the Great Depression, which defied classical economics' assumptions that economic swings were self-correcting <a href="https://www.investopedia.com/terms/f/fiscalpolicy.asp" target="_blank" class="read-more">_(Read more)_</a>.
 
 To understand how fiscal policy can help during recession, we need to understand the _Aggregate Demand-Supply Model_ macroeconomic concept. Let's start by defining some underlying concepts.
 
@@ -31,7 +31,6 @@ To understand how fiscal policy can help during recession, we need to understand
 
 ##### Economic Equilibrium
 In economics, equilibrium is a state where economic forces (supply and demand) are balanced. Without any external influences, price and quantity will remain at the equilibrium value.
-
 
 ![supply demand equilibrium](https://www.dropbox.com/s/rucfsdtetj9koab/supply-demand-equilibrium.png?raw=1)
 
@@ -54,7 +53,7 @@ The logic behind this approach is that when people pay lower taxes, they have mo
 
 The above concept is called _<b>expansionary fiscal policy</b>_: a tool the government use to boost growth to a healthy economic level, which is needed during the contractionary phase of the business cycle. The government wants to reduce unemployment, increase consumer demand, and seeks to end the recession.
 
-Corporate tax cuts put more money into businesses' hands, which the government hopes will be put toward new investments and increasing employment. In that way, tax cuts create jobs, but if the company already has enough cash, it may use the cut to buy back stocks or purchase new companies. The theory of supply-side economics recommends lowering corporate taxes instead of income taxes, and advocates for lower capital gains taxes to increase business investment (<a href="https://www.thebalance.com/expansionary-fiscal-policy-purpose-examples-how-it-works-3305792" target="_blank">Read more</a>).
+Corporate tax cuts put more money into businesses' hands, which the government hopes will be put toward new investments and increasing employment. In that way, tax cuts create jobs, but if the company already has enough cash, it may use the cut to buy back stocks or purchase new companies. The theory of supply-side economics recommends lowering corporate taxes instead of income taxes, and advocates for lower capital gains taxes to increase business investment <a href="https://www.thebalance.com/expansionary-fiscal-policy-purpose-examples-how-it-works-3305792" target="_blank" class="read-more">_(Read more)_</a>.
 
 
 The figure below illustrates the _Expansionary Fiscal Policy_. The original equilibrium (E0) represents a recession, occurring at a quantity of output (Y0) below potential GDP. However, a shift of aggregate demand from AD0 to AD1, enacted through an expansionary fiscal policy, can move the economy to a new equilibrium output of E1 at the level of potential GDP which is shown by the LRAS curve. Since the economy was originally producing below potential GDP, any inflationary increase in the price level from P0 to P1 that results should be relatively small.

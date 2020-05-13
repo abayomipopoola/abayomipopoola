@@ -46,7 +46,7 @@ A graph that connects different contexts, is called a context map. For each cont
 
 ![Context map](https://www.dropbox.com/s/2pqcl6x5ht34b90/contextmapping.jpg?raw=1)
 
-The image above depicts a very simple Context Map: drawing contours around portions of the domain model shows the areas where conceptual integrity is preserved (<a href="https://www.infoq.com/articles/ddd-contextmapping" target="_blank">Read more</a>).
+The image above depicts a very simple Context Map: drawing contours around portions of the domain model shows the areas where conceptual integrity is preserved <a href="https://www.infoq.com/articles/ddd-contextmapping" target="_blank" class="read-more">_(Read more)_</a>.
 
 In this case, the two contexts have some logical overlapping area: the concept of banking account is used in different ways in different portions of the application, meaning that we’ll have different models in play. However, the two models are probably going to interact closely. Besides preserving the conceptual integrity of the model within the context boundaries, the context map helps us focus on what’s happening between the different contexts. In this case, assuming that the same team is working on both contexts, we need everybody in the team to be aware of the two different contexts, eventually sharing a translation map, for the terms and concepts that appear in both models.
 

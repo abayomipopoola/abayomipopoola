@@ -6,7 +6,7 @@ spoiler: Part five of the Naval’s expanded points from his viral tweetstorm, �
 
 ![The life we live in](https://www.dropbox.com/s/k5att9w1bnb5orq/feynman.jpeg?raw=1)
 
-Here is part five of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky"  (read summarised article <a href="/how-to-get-rich-without-getting-lucky-summary">here</a>).
+Here is part five of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised article here)_</a>.
 
 #### There’s No Actual Skill Called “Business”
 

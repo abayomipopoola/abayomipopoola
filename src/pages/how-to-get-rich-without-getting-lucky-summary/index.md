@@ -6,7 +6,7 @@ spoiler: Summarised note on the Naval’s expanded points from his “How To Get
 
 ![The life we live in](https://www.dropbox.com/s/k5att9w1bnb5orq/feynman.jpeg?raw=1)
 
-Here is the summarised note on the Naval’s expanded points from his "How to Get Rich" tweetstorm (read expanded series <a href="/how-to-get-rich-without-getting-lucky-pt-1">here</a>).
+Here is the summarised note on the Naval’s expanded points from his "How to Get Rich" tweetstorm  <a href="/how-to-get-rich-without-getting-lucky-pt-1" class="read-more">_(Read expanded series here)_</a>.
 
 Let's get to it.
 

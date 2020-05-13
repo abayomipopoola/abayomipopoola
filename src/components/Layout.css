@@ -7,6 +7,10 @@ a {
   color: #326891;
 }
 
+a.read-more {
+  font-size: 14px;
+}
+
 .post {
   color: #333333;
   font-size: 18px;
@@ -17,8 +21,16 @@ a {
   color: #121212;
 }
 
+.post h4 {
+  font-size: 1.3rem;
+}
+
 .post h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.post img {
+
 }
 
 blockquote {
