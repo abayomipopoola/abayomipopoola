@@ -12,7 +12,7 @@ Here is part five of the Naval’s expanded points from his viral tweetstorm, "H
 
 In that sense, business to me is bottom of the barrel. There’s no actual skill called business, it’s too generic. It’s like a skill called “relating.” Like “relating to humans.” That’s not a skill, it’s too broad.
 
-A lot of what goes on in business schools, and there is some very intelligent stuff taught in business schools — I don’t mean to detract from them completely — some of the things taught in business school are just anecdotes. They call them “case studies.”
+A lot of what goes on in business schools, and there is some very intelligent stuff taught in business schools--I don’t mean to detract from them completely--some of the things taught in business school are just anecdotes. They call them “case studies.”
 
 But they’re just anecdotes, and they’re trying to help you pattern match by throwing lots of data points at you, but the reality is, you will never understand them fully until you’re actually in that position yourself. 
 

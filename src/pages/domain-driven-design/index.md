@@ -8,13 +8,13 @@ spoiler: Tackling software complexities by connecting its related pieces into an
 
 An old chess saying goes as thus: "tactics is knowing what to do when there's something to do, while strategy is knowing what to do when there's nothing to do". Although it's slightly exaggerated, a more granular difference might be that tactics are the actual means used to gain an objective, while strategy is the overall campaign plan, which may involve complex operational patterns, activity, and decision-making that govern tactical execution (wiki).
 
-Building software without starting with the end in mind is synonymous to not having a strategy in place. Most developers tend to focus more on the technical details than solving the actual business needs–tactics without strategy.
+Building software without starting with the end in mind is synonymous to not having a strategy in place. Most developers tend to focus more on the technical details than solving the actual business needs--tactics without strategy.
 
 >Why though? Of course, because strategy is hard, tactics are easier, and people prefer easier tasks.
 
 ![strategy-tactics](https://www.dropbox.com/s/if0buzo32q102px/visionstrategytactics.png?raw=1)
 
-Enter Domain-Driven Design (DDD), an approach to software development first described by Eric Evans–a collection of principles and patterns that help developers craft elegant object systems. Properly applied it can lead to software abstractions called domain models. These models encapsulate complex business logic, closing the gap between business reality and code.
+Enter Domain-Driven Design (DDD), an approach to software development first described by Eric Evans--a collection of principles and patterns that help developers craft elegant object systems. Properly applied it can lead to software abstractions called domain models. These models encapsulate complex business logic, closing the gap between business reality and code.
 
 In a simple term, DDD helps to make software deeply reflect a real-world system or process. For example, let's try and model a bank saving account.
 
@@ -24,9 +24,9 @@ Without DDD, a naive developer might model a savings account as a calculator, wh
 
 In an actual sense, what a savings account is, is a process that does an iteration over an audit trail of database transactions, of deposits and interest gatherings, and other shifts of the money. It's not like it's some money sitting on the shelf on a bank somewhere... There are these relatively intricate structures in the foundations of a banking system to support the tax people, the actuaries, etc, that the developers cannot think of beforehand.
 
-To create good software, you have to know what that software is all about. You cannot create a banking software system unless you have a good understanding of what banking is all about–understanding the banking domain. The banking system is very well understood by bankers, thus you need their help. DDD helps us create models of a problem domain. And the model here is a set of just enough concepts selected to be implemented by the developer as software artefacts. 
+To create good software, you have to know what that software is all about. You cannot create a banking software system unless you have a good understanding of what banking is all about--understanding the banking domain. The banking system is very well understood by bankers, thus you need their help. DDD helps us create models of a problem domain. And the model here is a set of just enough concepts selected to be implemented by the developer as software artefacts. 
 
-To accomplish this, DDD advocates that the domain experts–the banker in our case–and the developer consciously communicate the domain in other to build a model. This is done in a way that the domain experts don’t ask for what he wants to see in the implementation, like describing a new user story in terms of a field on a screen or a menu item, and whatnot; they talk about the underlying property or behaviour that’s required on a domain object. Similarly, the developers don’t talk about new instance variables of a class or columns in a database table. 
+To accomplish this, DDD advocates that the domain experts--the banker in our case--and the developer consciously communicate the domain in other to build a model. This is done in a way that the domain experts don’t ask for what he wants to see in the implementation, like describing a new user story in terms of a field on a screen or a menu item, and whatnot; they talk about the underlying property or behaviour that’s required on a domain object. Similarly, the developers don’t talk about new instance variables of a class or columns in a database table. 
 
 >A Domain Model is an Object Model describing the problem domain. They include the domain objects in the problem domain and describe the attributes, behaviour and relationships between them.
 
@@ -38,7 +38,7 @@ Once the domain expert and the developer are done discussing the domain subject,
 
 #### Models and Context
 
-A model is always within a context of a sort; the context is a setting that determines the meaning of a statement–they're mostly inferred by the end-user that use the system. For the savings account system, the tellers relate to some concepts/terminologies of the modelled domain in a different way than regular customers can grasp. This is referred to as bounded context in DDD. 
+A model is always within a context of a sort; the context is a setting that determines the meaning of a statement--they're mostly inferred by the end-user that use the system. For the savings account system, the tellers relate to some concepts/terminologies of the modelled domain in a different way than regular customers can grasp. This is referred to as bounded context in DDD. 
 
 The Bounded context (BC) is the context in which the ubiquitous language and the corresponding models are valid. It gives the team a clear understanding of what has to be consistent and what can develop independently. Every domain model lives in precisely one BC, and a BC contains precisely one domain model. 
 

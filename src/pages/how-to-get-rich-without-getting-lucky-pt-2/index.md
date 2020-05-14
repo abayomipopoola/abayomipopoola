@@ -108,8 +108,8 @@ Summary:
 
 * The Internet has massively broadened the possible space of careers, by allowing you to scale any niche obsession.
 * Before the Internet there was no way to find all the people in the world who were interested in your obsession. Now you can.
-* Escape competition through authenticity—when you’re competing with people it’s because you’re copying them.
-* No one can compete with you on being you. Before the Internet, this was useless advice—now it’s a career.
+* Escape competition through authenticity--when you’re competing with people it’s because you’re copying them.
+* No one can compete with you on being you. Before the Internet, this was useless advice--now it’s a career.
 
 
 ####  Play iterated games. 
@@ -125,7 +125,7 @@ It’s true in health and fitness. You know, the fitter you are, the easier it i
 
 Summary:
 
-* All returns in life come from compound interest over many turns of long-term games—and they usually come at the end.
+* All returns in life come from compound interest over many turns of long-term games--and they usually come at the end.
 * People are fair with each other when they know there will be more turns of the game. Friction goes down with each turn, so you can do bigger and bigger things together.
 
 

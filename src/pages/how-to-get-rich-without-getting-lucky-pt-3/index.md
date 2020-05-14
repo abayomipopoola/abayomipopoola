@@ -160,7 +160,7 @@ And Graham said, “Actually, you’re overpriced, free is overpriced.” And Gr
 
 Specific knowledge also tends to be technical and creative. It’s on the bleeding edge of technology, on the bleeding edge of art, on the bleeding edge of communication.
 
-Even today, for example, there are probably meme lords out there on the Internet who can create incredible memes that will spread the idea to millions of people. Or are very persuasive – Scott Adams is a good example of this. He is essentially becoming one of the most credible people in the world by making accurate predictions through persuasive arguments and videos.
+Even today, for example, there are probably meme lords out there on the Internet who can create incredible memes that will spread the idea to millions of people. Or are very persuasive--Scott Adams is a good example of this. He is essentially becoming one of the most credible people in the world by making accurate predictions through persuasive arguments and videos.
 
 And that is specific knowledge that he has built up over the years because he got obsessed with hypnosis when he was young, he learned how to communicate through cartooning, he embraced Periscope early, so he’s been practicing lots of conversation, he’s read all the books on the topic, he’s employed in his everyday life. If you look at his girlfriend, she’s this beautiful young Instagram model.
 

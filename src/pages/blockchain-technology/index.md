@@ -8,7 +8,7 @@ spoiler: A distributed ledger at the heart of bitcoin and other virtual currenci
 
 In recent years, new members are joining the _Bitcoin/Altcoins_ community, not for any ideological reason but practical ones. 
 Whether or not bitcoin will be worth millions isn’t the main question for many computer scientists, investors, and entrepreneurs. 
-To them, Satoshi Nakamoto’s real invention is the _Blockchain Technology_—a global open ledger which can be used to share much more than just money.
+To them, Satoshi Nakamoto’s real invention is the _Blockchain Technology_--a global open ledger which can be used to share much more than just money.
 
 While the original purpose of the blockchain technology is powering bitcoin, it is capable of so much more. 
 Blockchain is a suite of distributed ledger that can be programmed to record and track anything of value, 
@@ -31,11 +31,11 @@ a complex mathematical problem that, if solved, will reward its solvers with a n
 > There’re only twenty-one million Bitcoins to be mined.
 
 Bitcoin mining is the process of adding transaction records to bitcoin’s public ledger of past transactions, 
-called the blockchain (chain of blocks)—a shared public ledger on which the entire decentralised distributed peer-to-peer 
+called the blockchain (chain of blocks)--a shared public ledger on which the entire decentralised distributed peer-to-peer 
 bitcoin network relies. All the bitcoin used in the world are connected and together they constitute a network that processes 
 and check all bitcoin transactions in a public ledger. 
 
-Satoshi Nakamoto designed the blockchain in such a way that users can create a free and anonymous bitcoin account number—a wallet. 
+Satoshi Nakamoto designed the blockchain in such a way that users can create a free and anonymous bitcoin account number--a wallet. 
 This eliminates the need for a central bank because all the users constitute the bank.
 
 
@@ -49,13 +49,13 @@ Historically, the government would mint coins out of valuable materials, such a
 be redeemed for a set amount of gold or silver. 
 
 Because fiat money is not linked to physical reserves, such as a national stockpile of gold or silver, 
-it risks losing value due to inflation or even becoming worthless in the event of hyperinflation—Zimbabwe as a perfect example.
+it risks losing value due to inflation or even becoming worthless in the event of hyperinflation--Zimbabwe as a perfect example.
 
 Although if you created an entire society that is reliant on bitcoin, you’d have massive inequalities, 
-it’s imperative that it forms a counterpart to the existing banking system—that bank on the fiat monetary system.
+it’s imperative that it forms a counterpart to the existing banking system--that bank on the fiat monetary system.
 
 Right now, the banking system has moved to the concept of cashless-society, meaning that every single payment you make goes 
-via a commercial bank—so every single transaction is being monitored and recorded in a database. And you’ll always pay some 
+via a commercial bank--so every single transaction is being monitored and recorded in a database. And you’ll always pay some 
 kind of fees to the commercial banks/credit card companies.
 
 Bitcoin made the cashless society possible without the need for a third-party.
@@ -63,7 +63,7 @@ Bitcoin made the cashless society possible without the need for a third-party.
 #### Blockchain
 
 > The blockchain is an incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value.” 
-> – Don & Alex Tapscott, authors Blockchain Revolution (2016).
+> -- Don & Alex Tapscott, authors Blockchain Revolution (2016).
 
 ##### How Blockchain Works
 
@@ -105,8 +105,8 @@ Here are some real-world examples of blockchain technology in action:
  active when certain conditions have been met, which means automated payments can be released when parties in a transaction agree 
  that their conditions have been met.
 
- * **Smarter supply chains**: Knowing the status, condition and provenance of every product on your supply chain is key for businesses 
- – and, for consumers, provenance is becoming an increasingly important issue. DeBeers is planning to use blockchain technology to 
+ * **Smarter supply chains**: Knowing the status, condition and provenance of every product on your supply chain is key for 
+ businesses--and, for consumers, provenance is becoming an increasingly important issue. DeBeers is planning to use blockchain technology to 
  trace diamonds all the way from the mine to the end customer, which will increase transparency and allow customers to verify that 
  their diamonds are free from conflict <a href="https://bernardmarr.com/default.asp?contentID=1788" target="_blank" class="read-more">_(Read more applications here)_</a>.
 

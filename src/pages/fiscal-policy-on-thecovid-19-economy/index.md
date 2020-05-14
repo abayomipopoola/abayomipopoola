@@ -62,7 +62,7 @@ The figure below illustrates the _Expansionary Fiscal Policy_. The original equi
 
 ####<p align="center">•••</p>
 
-The economists have said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don’t foreclose on loans, don’t put people off jobs, especially  if you can hold on to them, or if the government or the public can fund you to keep those jobs—because there’s this reality that once something goes under, be it a company, a job—and people leave, that it’s very hard to rebuild.
+The economists have said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don’t foreclose on loans, don’t put people off jobs, especially  if you can hold on to them, or if the government or the public can fund you to keep those jobs--because there’s this reality that once something goes under, be it a company, a job--and people leave, that it’s very hard to rebuild.
 
 #### Plan For The Better Days
 Here are some things you can do to get yourself ready for the better days ahead:
