@@ -93,7 +93,7 @@ class CvPage extends React.Component {
           <div id="contact-info" class="vcard">
               <H2>Software Engineering Manager</H2>
               <P>
-                  Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</span><br />
+                  Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</A><br />
                   Email: <A class="email" href="mailto:abayomipopoola@gmail.com">abayomipopoola@gmail.com</A>
               </P>
           </div>
@@ -146,7 +146,7 @@ class CvPage extends React.Component {
                         <div>
                           <strong>Project Mgt.</strong>
                           <Ps>
-                            Agile/Scrum, Resource planning & Scheduling, Requirement gathering, Proficient communicator.
+                            Agile/Scrum & Kanban, Resource planning & Scheduling, Requirement gathering, Proficient communicator.
                           </Ps>
                         </div>
                       </div>
