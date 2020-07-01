@@ -31,7 +31,7 @@ class Bio extends React.Component {
         <p style={{ color: '#333333'}}>
           I write about topics I find interesting—mostly things that are worth sharing.
           A contriver.{' '}
-          <a href="https://twitter.com/abayomipopoola" target="_blank">
+          <a href="https://twitter.com/abayomip_" target="_blank">
             Twitter
           </a>
           {' '} &bull; {' '}
