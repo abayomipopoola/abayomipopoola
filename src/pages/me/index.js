@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
 
@@ -13,6 +14,11 @@ class PortfolioPage extends React.Component {
   render() {
     return (
       <Layout location={this.props.location}>
+        <Helmet
+          htmlAttributes={{ lang: 'en' }}
+          meta={[{ name: 'description', content: "My Portfolio" }]}
+          title="My Portfolio"
+        />
         <div style={{ float: 'right' }}>
           <Link style={{ boxShadow: 'none' }} to='/'>
           <span>&#8592;</span>{' '}back

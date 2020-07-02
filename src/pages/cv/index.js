@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styled from 'styled-components';
 import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
@@ -81,6 +82,11 @@ class CvPage extends React.Component {
   render() {
     return (
       <Layout location={this.props.location}>
+        <Helmet
+          htmlAttributes={{ lang: 'en' }}
+          meta={[{ name: 'description', content: "My CV" }]}
+          title="My CV"
+        />
         <div style={{ float: 'right' }}>
           <Link style={{ boxShadow: 'none' }} to='/'>
           <span>&#8592;</span>{' '}back
