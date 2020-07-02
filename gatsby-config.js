@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Abayomi Popoola',
     author: 'Abayomi Popoola',
-    twitterHandle: 'abayomipopoola',
+    twitterHandle: 'abayomip_',
     description: 'A blog about ideas worth sharing.',
     siteUrl: 'https://abayomipopoola.com',
   },

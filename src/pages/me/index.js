@@ -23,7 +23,7 @@ class PortfolioPage extends React.Component {
             I help bootstrap software products that scale.
         </p>
         <p> Welcome to my portfolio! Here is a collection of
-            my selected projects. Please feel free to send <a href="mailto:abayomipopoola@gmail.com">an email</a>
+            my selected projects. Please feel free to send <a href="mailto:abayomip@hey.com">an email</a>
         </p>
 
         <p> You can also view my <a href="/cv">résumé</a>

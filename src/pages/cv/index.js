@@ -94,7 +94,7 @@ class CvPage extends React.Component {
               <H2>Software Engineering Manager</H2>
               <P>
                   Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</A><br />
-                  Email: <A class="email" href="mailto:abayomipopoola@gmail.com">abayomipopoola@gmail.com</A>
+                  Email: <A class="email" href="mailto:abayomip@hey.com">abayomip@hey.com</A>
               </P>
           </div>
 
