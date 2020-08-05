@@ -168,12 +168,12 @@ class CvPage extends React.Component {
                   </P>
                   <Ul>
                       <li>Responsible for ensuring that all engineering activity is managed through the lifecycle of product development, from detailed requirement generation, development, and integration right to customer validation.</li>
-                      <li>I also double as the platform tech lead, leading a team of seven engineer and a PM.</li>
+                      <li>I also double as the platform tech lead, leading a team of seven engineers and a PM.</li>
                   </Ul>
 
                   <H2>Kudi.com <span>Platform Tech Lead – Jul, 2019 - Jan, 2020</span></H2>
                   <Ul>
-                      <li>I currently lead the platform engineering team. I am responsible for leading the technical design of systems and services.</li>
+                      <li>I lead the platform engineering team. I am responsible for leading the technical design of systems and services.</li>
                       <li>I provide project planning and management for established initiatives within the company.</li>
                       <li>I ensure that projects are completed to specification, within an established time frame.</li>
                       <li><strong>Technologies</strong>: Agile/Scrum, Jira, Java, Spring, Dropwizard, NodeJS, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
