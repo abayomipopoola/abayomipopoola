@@ -106,7 +106,7 @@ class CvPage extends React.Component {
 
           <div id="objective">
               <P>
-                  I am a result-driven software engineer with 6+ years experience in developing Service-Orientated Architecture (SOA) for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
+                  I am a result-driven engineer with 6+ years experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
               </P>
           </div>
 
@@ -167,7 +167,8 @@ class CvPage extends React.Component {
                     Kudi.com is a financial technology company that is enabling Africans to send money/pay bills through digital channels, viz, messaging app., mobile, web, USSD, and also through an Agent network.
                   </P>
                   <Ul>
-                      <li>I ensure that key projects and engineering duties are fulfilled.</li>
+                      <li>Responsible for ensuring that all engineering activity is managed through the lifecycle of product development, from detailed requirement generation, development, and integration right to customer validation.</li>
+                      <li>I also double as the platform tech lead, leading a team of seven engineer and a PM.</li>
                   </Ul>
 
                   <H2>Kudi.com <span>Platform Tech Lead – Jul, 2019 - Jan, 2020</span></H2>
