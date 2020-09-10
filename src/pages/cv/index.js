@@ -176,7 +176,7 @@ class CvPage extends React.Component {
                       <li>I lead the platform engineering team. I am responsible for leading the technical design of systems and services.</li>
                       <li>I provide project planning and management for established initiatives within the company.</li>
                       <li>I ensure that projects are completed to specification, within an established time frame.</li>
-                      <li><strong>Technologies</strong>: Agile/Scrum, Jira, Java, Spring, Dropwizard, NodeJS, Golang, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
+                      <li><strong>Technologies</strong>: Agile/Scrum, Jira, Java, Spring, Dropwizard, Golang, NodeJS, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
                   </Ul>
 
                   <H2>Kudi.com <span>Senior Platform Engineer – Jan, 2019 - Jun, 2019</span></H2>
