@@ -35,7 +35,7 @@ p {
 .post img {
 	max-width: 100%;
 	padding: 0;
-	margin: 0 0 1.75rem;
+	margin-top: 16px;
 }
 
 blockquote {
@@ -125,6 +125,6 @@ blockquote p {
 /* icons */
 .share svg {
   position: relative;
-  top: 35%;
+  top: 40%;
   transform: translateY(-50%);
 }

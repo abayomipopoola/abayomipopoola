@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/Bio"
 import Layout from "../components/Layout"
+import Disqus from "gatsby-plugin-disqus"
 import SEO from "../components/Seo"
 import Share from "../components/Share";
 
@@ -74,6 +75,11 @@ const BlogPostTemplate = ({ data, location }) => {
 					</li>
 				</ul>
 			</nav>
+			<Disqus
+				identifier={post.id}
+				title={post.frontmatter.title}
+				url={`${siteUrl+slug}`}
+			/>
 		</Layout>
 	)
 }
