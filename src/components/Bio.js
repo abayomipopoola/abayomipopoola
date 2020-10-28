@@ -1,47 +1,65 @@
-import React from 'react'
+import React from "react"
+import {useStaticQuery, graphql, Link} from "gatsby"
 
-// Import typefaces
-import 'typeface-libre-baskerville'
-import 'typeface-noto-serif'
+import Image from "gatsby-image"
 
-import profilePic from './profile-pic.jpg'
-import { Link } from 'gatsby'
-import { rhythm } from '../utils/typography'
+const Bio = () => {
+	const data = useStaticQuery(graphql`
+    query BioQuery {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50, quality: 95) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          author {
+            name
+            summary
+          }
+          social {
+            twitter
+          }
+        }
+      }
+    }
+  `)
 
-class Bio extends React.Component {
-  render() {
-    return (
-      <div
-        style={{
-          display: 'flex',
-          marginBottom: rhythm(2.5),
-        }}
-      >
-        <img
-          src={profilePic}
-          alt={`Abayomi Popoola`}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-            borderRadius: '50%',
-          }}
-        />
-        <p style={{ color: '#333333'}}>
-          I write about topics I find interesting—mostly things that are worth sharing.
-          A contriver.{' '}
-          <a href="https://twitter.com/abayomip_" target="_blank">
-            Twitter
-          </a>
-          {' '} &bull; {' '}
-          <Link style={{ boxShadow: 'none' }} to='/me'>
-            View My Portfolio{' '}<span>&#187;</span>
-          </Link>
-        </p>
-      </div>
-    )
-  }
+	// Set these values by editing "siteMetadata" in gatsby-config.js
+	const author = data.site.siteMetadata?.author
+	const social = data.site.siteMetadata?.social
+
+	const avatar = data?.avatar?.childImageSharp?.fixed
+
+	return (
+		<div className="bio">
+			{avatar && (
+				<Image
+					fixed={avatar}
+					alt={author?.name || ``}
+					className="bio-avatar"
+					imgStyle={{
+						borderRadius: `50%`,
+					}}
+				/>
+			)}
+			{author?.name && (
+				<p>
+					{author?.summary || null}
+					{` `}
+					<a href={`https://twitter.com/${social?.twitter || ``}`}>
+						<em>Follow me on Twitter</em>
+					</a>
+					{` `} &bull;{` `}
+					<Link style={{ boxShadow: 'none' }} to='/me'>
+						<em>View my portfolio{' '}</em><span>&#187;</span>
+					</Link>
+				</p>
+			)}
+		</div>
+	)
 }
 
 export default Bio

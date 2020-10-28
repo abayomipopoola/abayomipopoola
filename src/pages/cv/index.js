@@ -9,22 +9,22 @@ const Wrapper = styled.div`
   #objective p {font-style: italic; color: #666; }
 `;
 const H2 = styled.h2`
-  font-size: 16px; 
-  margin: 0 0 6px 0; 
+  font-size: 16px;
+  margin: 0 0 6px 0;
   padding-top: 10px;
   position: relative;
-  span { 
-    position: absolute; 
-    bottom: 0; 
-    right: 0; 
-    font-style: italic; 
-    font-size: 16px; 
-    color: #999; 
-    font-weight: normal; 
+  span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+    font-size: 16px;
+    color: #999;
+    font-weight: normal;
   };
   @media only screen and (max-width: 600px) {
-  span { 
-    position: relative; 
+  span {
+    position: relative;
   }
 }
 `;
@@ -38,8 +38,8 @@ const Ps = styled.p`
   margin: 0 0;
 `;
 const A = styled.a`
-  color: #999; 
-  text-decoration: none; 
+  color: #999;
+  text-decoration: none;
   border-bottom: 1px dotted #999;
   &:hover {
     border-bottom-style: solid; color: black;
@@ -50,13 +50,13 @@ const Ul = styled.ul`
    font-size: 14px;
 `;
 const Dt = styled.dt`
-  font-style: italic; 
-  font-weight: bold; 
-  font-size: 18px; 
-  text-align: left; 
-  padding: 0 26px 0 0; 
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  padding: 0 26px 0 0;
   width: 100%
-  border-bottom: 1px solid #999; 
+  border-bottom: 1px solid #999;
 `;
 const Dd = styled.dd`
   .flex-wrapper {
@@ -97,7 +97,7 @@ class CvPage extends React.Component {
         <Wrapper>
 
           <div id="contact-info" class="vcard">
-              <H2>Software Engineering Manager</H2>
+              <H2>Snr. Software Engineer/Manager</H2>
               <P>
                   Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</A><br />
                   Email: <A class="email" href="mailto:abayomip@hey.com">abayomip@hey.com</A>
@@ -162,7 +162,15 @@ class CvPage extends React.Component {
 
               <Dt>Experience</Dt>
               <Dd>
-                  <H2>Kudi.com <span>Software Engineering Manager – Jan, 2020 - Present</span></H2>
+				  <H2>The Linux Foundation <span>Senior Software Engineer – Oct, 2020 - Present</span></H2>
+				  <P>
+					  The Linux Foundation is a nonprofit organization enabling mass innovation through open source.
+				  </P>
+				  <Ul>
+					  <li>Working remotely as a core engineer working on a collection of products and services to help the open-source community.</li>
+				  </Ul>
+
+                  <H2>Kudi.com <span>Software Engineering Manager – Jan, 2020 - Aug, 2020</span></H2>
                   <P>
                     Kudi.com is a financial technology company that is enabling Africans to send money/pay bills through digital channels, viz, messaging app., mobile, web, USSD, and also through an Agent network.
                   </P>
@@ -171,7 +179,7 @@ class CvPage extends React.Component {
                       <li>I also double as the platform tech lead, with a team of seven engineers and a PM.</li>
                   </Ul>
 
-                  <H2>Kudi.com <span>Platform Tech Lead – Jul, 2019 - Jan, 2020</span></H2>
+                  <H2>Kudi.com <span>Platform Tech Lead – Jul, 2019 - Aug, 2020</span></H2>
                   <Ul>
                       <li>I lead the platform engineering team. I am responsible for leading the technical design of systems and services.</li>
                       <li>I provide project planning and management for established initiatives within the company.</li>

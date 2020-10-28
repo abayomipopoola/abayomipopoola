@@ -1,20 +1,32 @@
 module.exports = {
   siteMetadata: {
     title: 'Abayomi Popoola',
-    author: 'Abayomi Popoola',
-    twitterHandle: 'abayomip_',
-    description: 'A blog about ideas worth sharing.',
+	author: {
+	  name: `Abayomi Popoola`,
+	  summary: `I write about topics I find interesting—mostly things that are worth sharing.`,
+	},
+    description: `A blog about ideas worth sharing.`,
     siteUrl: 'https://abayomipopoola.com',
+	social: {
+	  twitter: `abayomip_`,
+	},
   },
   pathPrefix: '/',
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
-    },
+	  {
+		  resolve: `gatsby-source-filesystem`,
+		  options: {
+			  path: `${__dirname}/content/blog`,
+			  name: `blog`,
+		  },
+	  },
+	  {
+		  resolve: `gatsby-source-filesystem`,
+		  options: {
+			  path: `${__dirname}/content/assets`,
+			  name: `assets`,
+		  },
+	  },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -22,7 +34,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 630,
             },
           },
           {
@@ -49,23 +61,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `abayomipopoola`,
+        name: `Abayomi Popoola`,
         short_name: `abayomipopoola`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#0075cf`,
         display: `minimal-ui`,
-        icon: `src/assets/icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
