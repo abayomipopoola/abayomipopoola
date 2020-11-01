@@ -10,11 +10,11 @@ You probably have come across the viral "How To Get Rich" tweetstorm from Naval-
 
 Here is part one of the Naval’s expanded points from his tweetstorm in detail <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised article here)_</a>.
 
-#### Seek wealth, not money or status. 
+### Seek wealth, not money or status.
 
 > Wealth is having assets that earn while you sleep. Money is how we transfer time and wealth. Status is your place in the social hierarchy.
 
-##### Wealth is assets that earn while you sleep
+#### Wealth is assets that earn while you sleep
 
 Wealth is the thing that you really want. Wealth is assets that earn while you sleep. Wealth is the factory, the robots that’s cranking out things. Wealth is the computer program that’s running at night, that’s serving other customers. Wealth is... even money in the bank that is being reinvested into other assets, and into other businesses. Even a house can be a form of wealth because you can rent it out, although that’s probably a lower use of productivity of land than actually doing some commercial enterprise. So, my definition of wealth is much more businesses and assets that can earn while you sleep.
 
@@ -22,13 +22,13 @@ But really the reason you want wealth is because it buys you your freedom. So, y
 
 So, the purpose of wealth is freedom. It’s nothing more than that. It’s not to buy fur coats, or drive Ferraris, or sale yachts, or jet around the world in your Gulfstream. That stuff gets really boring, and really stupid really fast. It’s really just so that you are your own sovereign individual. You’re not gonna get that unless you really want it. And the entire world wants it. And the entire world is working hard at it. And to some extent it is competitive. It’s a positive sum game, but there are competitive elements to it. Because there’s a finite amount of resources right now in society. And to get the resources to do what you want, you have to stand out.
 
-##### Money is how we transfer wealth
+#### Money is how we transfer wealth
 
 Money is how we transfer wealth. Money is social credits. It is the ability to have credits and debits of other people’s time. If I do my job right, if I create value for society, society says, “Oh, thank you. We owe you something in the future for the work that you did in the past. Here’s a little IOU. Let’s call that money.”
 
 And that money gets debased because people steal the IOUs. The government prints extra IOUs. People renege on their IOUs. But really what money is trying to be, it is trying to be a reliable IOU from society that you are owed something for something you, or someone who gave you the money did in the past. And we can transfer these IOUs around. So, really money is how we transfer wealth.
 
-##### Status is your rank in the social hierarchy
+#### Status is your rank in the social hierarchy
 
 There are fundamentally two huge games in life that people play. One is the money game. Because money is not gonna solve all of your problems, but it’s gonna solve all of your money problems. So, I think that people know that. They realize that, so they want to make money.
 
@@ -44,7 +44,7 @@ Politics is an example of a status game. Even sports is an example of a status g
 
 The problem is in an evolutionary basis, like if you go back thousands of years, status is a much better predictor of survival than wealth is. You couldn’t have wealth before the farming age, before farmers ’cause you couldn’t store things. Hunter-gatherers carried everything on their backs. So, hunter-gatherers lived in entirely status based societies. Farmers started going to wealth-based societies. And the modern industrial economies are much more heavily wealth-based societies.
 
-##### People creating wealth will always be attacked by people playing status games
+#### People creating wealth will always be attacked by people playing status games
 
 But there’s always a subtle competition going on between status and wealth. For example, when journalists attack rich people. Or like attack the technology industry, they’re really bidding for status. They’re saying, “No, the people are more important. And I the journalist represents the people, and therefore I am more important.”
 
@@ -60,11 +60,11 @@ Summary:
 * People creating wealth will always be attacked by people still playing status games.
 
 
-#### Understand that ethical wealth creation is possible (Make Abundance for the World) 
+### Understand that ethical wealth creation is possible (Make Abundance for the World)
 
 > If you secretly despise wealth, it will elude you.
 
-##### Ethical wealth creation makes abundance for the world
+#### Ethical wealth creation makes abundance for the world
 
 I think there is this notion that making money is evil, right? It’s like rooted all the way back down to money is the root of all evil.
 
@@ -84,7 +84,7 @@ Obviously, there’s not a finite number of jobs, or finite amount of wealth, ot
 
 And it got created from somewhere. It got created from people. It got created from technology. It got created from productivity. It got created from hard work. So, this idea that it’s stolen is I think this horrible zero-sum game that people who are trying to gain status play.
 
-##### Everyone can be rich
+#### Everyone can be rich
 
 But the reality is everyone can be rich. And we can see that, by seeing that in the First World, everyone is basically richer than almost anyone who was alive 200 years ago.
 
@@ -113,9 +113,9 @@ Summary:
 
 
 
-#### Free Markets Are Intrinsic to Humans 
+### Free Markets Are Intrinsic to Humans
 
-##### Free markets are intrinsic to the human species
+#### Free markets are intrinsic to the human species
 
 Overall capitalism [meaning free markets] is intrinsic to the human species. Capitalism is not something we invented. Capitalism is not even something we discovered. It is in it to us in every exchange that we have.
 
@@ -133,7 +133,7 @@ But don’t try to put down the people who are playing the game. Because that’
 
 So, it is a beautiful game that is worth playing ethically, rationally, morally, socially for the human race. And it’s going to continue to make us all richer, and richer until we have massive wealth creation for anybody who wants it.
 
-##### Too many takers and not enough makers will plunge a society into ruin
+#### Too many takers and not enough makers will plunge a society into ruin
 
 That’s right. And so what those countries, political parties, and groups are reduced to playing the zero-sum game of status. In the process to destroy wealth creation, they drag everybody down to their level.
 
@@ -166,11 +166,11 @@ Summary:
 * Takers attack wealth creation with status games that drag everyone down to their level.
 
 
-#### You’re not going to get rich renting out your time. 
+### You’re not going to get rich renting out your time.
 
 > Own equity--a piece of a business--to gain your financial freedom.
 
-##### You won’t get rich renting out your time
+#### You won’t get rich renting out your time
 
 This is probably one of the absolute most important points. People seem to think that you can create wealth, and make money through work. And it’s probably not going to work. There are many reasons for that.
 
@@ -182,7 +182,7 @@ If you look at even doctors who get rich, like really rich, it’s because they 
 
 So, essentially you’re working for somebody else, and that person is taking on the risk, and has the accountability, and the intellectual property, and the brand. So, they’re just not gonna pay you enough. They’re gonna pay you the bare minimum that they have to, to get you to do their job. And that can be a high bare minimum, but it’s still not gonna be true wealth where you’re retired.
 
-##### Renting out your time means you’re essentially replaceable
+#### Renting out your time means you’re essentially replaceable
 
 And then finally you’re actually just not even creating that much original for society. Like I said, this tweetstorm should have been called “How to Create Wealth.” It’s just “How to Get Rich” was a more catchy title. But you’re not creating new things for society. You’re just doing things over and over.
 
@@ -192,13 +192,13 @@ You’re much more likely to be doing a job that can be eventually replaced by a
 
 So, fundamentally your inputs are matched to your outputs. You are replaceable, and you’re not being creative. I just don’t think that, that is a way that you can truly make money.
 
-##### You must own equity to gain your financial freedom
+#### You must own equity to gain your financial freedom
 
 So everybody who really makes money at some point owns a piece of a product, or a business, or some kind of IP. That can be through stock options, so you can be working at a tech company. That’s a fine way to start.
 
 But usually the real wealth is created by starting your own companies, or by even investors. They’re in an investment firm, and they’re buying equity. These are much more the routes to wealth. It doesn’t come through the hours.
 
-##### You want a career where your inputs don’t match your outputs
+#### You want a career where your inputs don’t match your outputs
 
 You really just want a job, or a career, or a profession where your input is don’t match your outputs. If you look at modern society, again this is later in the tweetstorm. Businesses that have high creativity and high leverage tends to be ones where you could do an hour of work, and it can have a huge effect. Or you can do 1,000 hours of work, and it can have no effect.
 
@@ -225,9 +225,9 @@ Summary:
 * You must have high creativity and leverage to decouple your inputs and outputs.
 
 
-####  You will get rich by giving society what it wants but does not yet know how to get--at scale.
+###  You will get rich by giving society what it wants but does not yet know how to get--at scale.
 
-##### Give society what it wants, but doesn’t know how to get--at scale
+#### Give society what it wants, but doesn’t know how to get--at scale
 
 That’s right. So, essentially as we talked about before, money is IOUs from society saying, “You did something good in the past. Now here’s something that we owe you for the future.” And so society will pay you for creating things that it wants.
 
@@ -237,7 +237,7 @@ Almost everything that’s in your house, in your workplace, and on the street u
 
 So, technology is just the set of things, as Alan Kay said, that don’t quite work yet. Once something works, it’s no longer technology. So, society always wants new things.
 
-##### Figure out what product you can provide and then figure out how to scale it
+#### Figure out what product you can provide and then figure out how to scale it
 
 And if you want to be wealthy, you want to figure out which one of those things you can provide for society, that it does not yet know how to get, but it will want, that’s natural to you, and within your skillset, within your capabilities.
 
@@ -247,7 +247,7 @@ Steve Jobs, and his team of course figured out that society would want smartphon
 
 And they figured out how to get one into every First World citizen’s pocket, and eventually every Third World citizen too. And so because of that they’re handsomely rewarded, and Apple is the most valuable company in the world.
 
-##### Entrepreneur’s job is to try to bring the high end to the mass market
+#### Entrepreneur’s job is to try to bring the high end to the mass market
 
 It starts as high end. First it starts as an act of creativity. First you create it just because you want it. You want it, and you know how to build it, and you need it. And so you build it for yourself. Then you figure out how to get it to other people. And then for a little while rich people have it.
 

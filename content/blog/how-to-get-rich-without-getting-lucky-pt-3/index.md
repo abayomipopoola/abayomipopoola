@@ -8,9 +8,9 @@ spoiler: Part three of the Naval’s expanded points from his viral tweetstorm, 
 
 Here is part three of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky"  <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised article here)_</a>.
 
-####  Learn to sell. Learn to build. If you can do both, you will be unstoppable.
+###  Learn to sell. Learn to build. If you can do both, you will be unstoppable.
 
-##### Learn to sell, learn to build
+#### Learn to sell, learn to build
 
 This is a very broad category. It’s two broad categories. One is building the product. Which is hard, and it’s multivariate. It can include design, it can include development, it can include manufacturing, logistics, procurement, it can even be designing and operating a service. It has many, many definitions.
 
@@ -18,7 +18,7 @@ But in every industry, there is a definition of the builder. In our tech industr
 
 The other side of it is sales. Again, selling has a very broad definition. Selling doesn’t necessarily just mean selling individual customers, but it can mean marketing, it can mean communicating, it can mean recruiting, it can mean raising money, it can mean inspiring people, it could mean doing PR. It’s a broad umbrella category.
 
-##### The Silicon Valley model is a builder and seller
+#### The Silicon Valley model is a builder and seller
 
 So, generally, the Silicon Valley startup model tends to work best. It’s not the only way, but it is probably the most common way, when you have two founders, one of whom is world class at selling, and one of whom is world class at building.
 
@@ -26,7 +26,7 @@ Examples are, of course, Steve Jobs and Steve Wozniak with Apple, Gates and Alle
 
 But generally, you will see this pattern repeated over and over. There’s a builder and there’s a seller. There’s a CEO and CTO combo. And venture and technology investors are almost trained to look for this combo whenever possible. It’s the magic combination.
 
-##### If you can do both you will be unstoppable
+#### If you can do both you will be unstoppable
 
 The ultimate is when one individual can do both. That’s when you get true superpowers. That’s when you get people who can create entire industries.
 
@@ -36,7 +36,7 @@ Even Steve Jobs developed enough product skills and was involved enough in the p
 
 Marc Andreessen was also in this domain. He may not have had enough confidence in his sales skills, but he was the programmer who wrote Netscape Navigator, or a big chunk of it. So, I think the real giants in any field are the people who can both build and sell.
 
-##### I’d rather teach an engineer marketing than a marketer engineering
+#### I’d rather teach an engineer marketing than a marketer engineering
 
 And usually the building is a thing that a sales person can’t pick up later in life. It requires too much focused time. But a builder can pick up selling a little bit later, especially if they were already innately wired to be a good communicator. Bill Gates famously paraphrases this as, “I’d rather teach an engineer marketing, than a marketer engineering.”
 
@@ -52,7 +52,7 @@ This is pointing out that if you’re at the intersection of these two, don’t 
 
 Long term, people who understand the underlying product and how to build it and can sell it, these are catnip to investors, these people can break down walls if they have enough energy, and they can get almost anything done.
 
-##### Could one pick one to be good at?
+#### Could one pick one to be good at?
 
 When you’re trying to stand out from the noise building is actually better because there’re so many hustlers and sales people who have nothing to back them up. When you’re starting out, when you’re trying to be recognized, building is better.
 
@@ -72,7 +72,7 @@ Summary:
 * Being a builder helps you stand out when you’re starting out, but it can be exhausting to stay current. Sales skills scale better over time and can be self-fulfilling.
 
 
-####  Arm yourself with specific knowledge, accountability, and leverage.
+###  Arm yourself with specific knowledge, accountability, and leverage.
 
 If you want to make money you have to get paid at scale. And why you, that’s accountability, at scale, that’s leverage, and just you getting paid as opposed to somebody else getting paid, that’s specific knowledge.
 
@@ -86,7 +86,7 @@ Classic example is investing, but it could be in anything. It could be in judgme
 
 So, specific knowledge is the knowledge that you care about. Especially if you’re later in life, let’s say your post 20, 21, 22, you almost don’t get to choose which specific knowledge you have. Rather, you get to look at what you have already built by that point in time, and then you can build on top of it.
 
-##### Specific knowledge can’t be trained
+#### Specific knowledge can’t be trained
 
 The first thing to notice about specific knowledge is that you can’t be trained for it. If you can be trained for it, if you can go to a class and learn specific knowledge, then somebody else can be trained for it too, and then we can mass-produce and mass-train people. Heck, we can even program computers to do it and eventually we can program robots to walk around doing it.
 
@@ -94,7 +94,7 @@ So, if that’s the case, then you’re extremely replaceable and all we have to
 
 So, you really want to pick up specific knowledge, you need your schooling, you need your training to be able to capitalize on the best specific knowledge, but the part of it that you’re going to get paid for is the specific knowledge.
 
-##### Specific knowledge is found by pursuing your curiosity
+#### Specific knowledge is found by pursuing your curiosity
 
 For example, someone who goes and gets a degree in psychology and then becomes a salesperson. Well if they were already a formidable salesperson, a high grade salesmanship to begin with, then the psychology degree is leverage, it arms them and they do much better at sales.
 
@@ -108,7 +108,7 @@ So, if you’re not 100% into it somebody else who is 100% into it will outperfo
 
 So, if you’re operating with 1,000 times leverage and somebody is right 80% of the time, and somebody else is right 90% of time, the person who’s right 90% of the time will literally get paid hundreds of times more by the market because of the leverage and because of the compounding factors and being correct. So, you really want to make sure you’re good at it so that genuine curiosity is very important.
 
-##### Building specific knowledge will feel like play to you
+#### Building specific knowledge will feel like play to you
 
 So, very often, it’s not something you sit down and then you reason about, it’s more found by observation. You almost have to look back on your own life and see what you’re actually good at.
 
@@ -141,13 +141,11 @@ Summary:
 * Genuine curiosity is very important. Leverage and compound interest mean someone who is just slightly better than you will get paid 10x-1000x more than you. So you must be the best.
 
 
-
-
-####  Specific knowledge is knowledge that you cannot be trained for. 
+###  Specific knowledge is knowledge that you cannot be trained for.
 
 > If society can train you, it can train someone else, and replace you.
 
-##### Specific knowledge can be taught through apprenticeships
+#### Specific knowledge can be taught through apprenticeships
 
 To the extent that specific knowledge is taught, it’s on the job. It’s through apprenticeships. And that’s why the best businesses, the best careers are the apprenticeship or self-taught careers, because those are things society still has not figured out how to train and automate yet.
 
@@ -156,7 +154,7 @@ The classic line here is that Warren Buffett went to Benjamin Graham when he got
 And Graham said, “Actually, you’re overpriced, free is overpriced.” And Graham was absolutely right. When it comes to a very valuable apprenticeship like the type that Graham was going to give Buffet, Buffet should have been paying him a lot of money. That right there tells you that those are skills worth having.
 
 
-##### Specific knowledge is often highly creative or technical
+#### Specific knowledge is often highly creative or technical
 
 Specific knowledge also tends to be technical and creative. It’s on the bleeding edge of technology, on the bleeding edge of art, on the bleeding edge of communication.
 
@@ -168,7 +166,7 @@ That is an example of someone who has built up a specific knowledge over the cou
 
 No one’s going to take that away from him, because he’s also accountable under one brand as Scott Adams, and he’s operating with the leverage of media with Periscope and drawing Dilbert cartoons and writing books. He has massive leverage on top of that brand and he can build wealth out of it if he wanted to build additional wealth beyond what he already has.
 
-##### Specific knowledge is specific to the individual and situation
+#### Specific knowledge is specific to the individual and situation
 
 You know, I came up with this framework when I was really young. We’re talking decades and decades. It’s now probably over 30 years old. So, at the time specific knowledge stuck with me so that is how I think about it.
 
@@ -178,7 +176,7 @@ The problem with unique knowledge is, yeah, maybe it’s unique but if I learn i
 
 It can’t just be read straight out of a single book, nor can it be taught in a single course, nor can it be programmed into a single algorithm.
 
-##### You can’t be too deliberate about assembling specific knowledge
+#### You can’t be too deliberate about assembling specific knowledge
 
 I actually think the best way is just to follow your own obsession. And somewhere in the back of your mind, you can realize that, actually, this obsession I like and I’ll keep an eye out for the commercial aspects of it.
 
@@ -192,7 +190,7 @@ But when you start combining, well, number 3,728 with top-notch sales skills and
 
 Also, there’s diminishing returns. So, it’s much easier to be top 5 percentile at three or four things than it is to be literally the number one at something.
 
-##### Build specific knowledge where you are a natural
+#### Build specific knowledge where you are a natural
 
 I think it’s a very pragmatic approach. But I think it’s important that one not start assembling things too deliberately because you do want to pick things where you are a natural. Everyone is a natural at something.
 
@@ -209,15 +207,15 @@ Summary:
 * You can’t be too deliberate about assembling specific knowledge. The best way is to follow your obsession, so you go deep enough into it to be the best.
 * Build specific knowledge where you are a natural. Everyone is a natural at something.
 
-#### Embrace accountability, and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.
+### Embrace accountability, and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.
 
-##### Accountability is how you’re going to get equity
+#### Accountability is how you’re going to get equity
 
 Accountability is important because that’s how you’re going to get leverage. That’s how you’re going to get credibility. It’s also how you’re going to get equity. You’re going to get a piece of the business.
 
 When you’re negotiating with other people, ultimately if someone else is making a decision about how to compensate you, that decision will be based on how replaceable you are. If you have high accountability, that makes you less replaceable. Then they have to give you equity, which is a piece of the upside.
 
-##### Taking accountability is like taking equity in all your work
+#### Taking accountability is like taking equity in all your work
 
 Equity itself is a good example because equity is also a risk-based instrument. Equity means you get paid everything after all the people who need guaranteed money are paid back.
 
@@ -247,7 +245,7 @@ Even if a business fails and your name’s on it, that’s not as bad as if it t
 
 I think these days the accountability risk with a name happens more around integrity, rather than it does around purely economic failure.
 
-##### Accountability is reputational skin in the game
+#### Accountability is reputational skin in the game
 
 Taleb’s Skin In The Game is required reading. If you want to get anywhere in modern life and understand how modern systems work, then Skin In The Game would be near the top of my list to read.
 
@@ -266,15 +264,15 @@ Summary:
 * We’re currently socially brainwashed to not take on accountability in a visible way.
 
 
-#### The most accountable people have singular, public, and risky brands: Oprah, Trump, Kanye, Elon.
+### The most accountable people have singular, public, and risky brands: Oprah, Trump, Kanye, Elon.
 
-##### You have to have accountability to get leverage
+#### You have to have accountability to get leverage
 
 So to get rich, you’re going to need leverage. Leverage comes in labor, comes in capital, or it can come through code or media. But most of these, like labor and capital, people have to give to you. For labor, somebody has to follow you. For capital, somebody has to give you money or assets to manage or machines.
 
 So to get these things, you have to build up credibility and you have to do those under your own name as much as possible, which is risky. So accountability is a double-edged thing. It allows you to take credit when things go well and to bear the brunt of the failure when things go badly.
 
-##### Take business risks under your own name
+#### Take business risks under your own name
 
 So in that sense, people who are stamping their names on things aren’t foolish. They’re just confident. Maybe it turns out to be foolish in the end, but if you look at a Kanye or an Oprah or a Trump or an Elon or anyone like that, these people can get rich just off their name because their name is such powerful branding.
 
@@ -288,7 +286,7 @@ These people also take risks for putting their name out there. Obviously Trump i
 
 By putting your name out there, you become a celebrity, and fame has many, many downsides. It’s better to be anonymous and rich than to be poor and famous, but even famous and rich has a lot of downsides associated with it. You’re always in the public eye.
 
-##### A well-functioning team has clear accountability for each position
+#### A well-functioning team has clear accountability for each position
 
 Accountability is quite important, and when you’re working to build a product or you’re working in a team or you’re working in a business, we constantly have drummed into our heads how important it is to be part of a team. Absolutely agree with that.
 
@@ -300,7 +298,7 @@ If you have a small team and you have clearly delineated responsibilities, then 
 
 We’ve all had that experience when we were in school and we got a group assignment to do. There were probably a few people in there who did a lot of the work. Then there are a few people who just did a lot of grandstanding or positioning to do the work. We’re all familiar with this from a childhood sense, but it’s sort of uncomfortable to talk about.
 
-##### People who can fail in public have a lot of power
+#### People who can fail in public have a lot of power
 
 Clear accountability is important. Without accountability, you don’t have incentives. Without accountability, you can’t build credibility. But you take risk. You take risk of failure. You take risk of humiliation. You take risk of failure under your own name.
 

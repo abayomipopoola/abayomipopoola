@@ -10,7 +10,7 @@ Here is the summarised note on the Naval’s expanded points from his "How to Ge
 
 Let's get to it.
 
-#### Seek wealth, not money or status. 
+### Seek wealth, not money or status.
 
 > Wealth is having assets that earn while you sleep. Money is how we transfer time and wealth. Status is your place in the social hierarchy.
 
@@ -20,7 +20,7 @@ Let's get to it.
 * People creating wealth will always be attacked by people still playing status games.
 
 
-#### Understand that ethical wealth creation is possible (Make Abundance for the World) 
+### Understand that ethical wealth creation is possible (Make Abundance for the World)
 
 > If you secretly despise wealth, it will elude you.
 
@@ -29,7 +29,7 @@ Let's get to it.
 * In the first world, it’s better to be poor today than it was to be the richest man 200 years ago.
 * Thought experiment: if everyone today was an engineer, in 20 years, children would be retired in riches from the moment they were born.
 
-#### Free Markets Are Intrinsic to Humans 
+### Free Markets Are Intrinsic to Humans
 
 * Free markets are intrinsic to the human species. We’re the only animals who cooperate across genetic boundaries.
 * One way we cooperate is by keeping track of credits and debits in voluntary exchanges.
@@ -38,7 +38,7 @@ Let's get to it.
 * Takers attack wealth creation with status games that drag everyone down to their level.
 
 
-#### You’re not going to get rich renting out your time. 
+### You’re not going to get rich renting out your time.
 
 > Own equity--a piece of a business--to gain your financial freedom.
 
@@ -49,19 +49,19 @@ Let's get to it.
 * You must have high creativity and leverage to decouple your inputs and outputs.
 
 
-####  You will get rich by giving society what it wants but does not yet know how to get--at scale.
+###  You will get rich by giving society what it wants but does not yet know how to get--at scale.
 
 * Give society what it wants, but doesn’t know how to get--at scale.
 * Figure out what new product or technology you can provide that’s natural to you.
 * Then figure out how to scale it so everyone on the planet can have your product.
 
 
-#### Pick an industry where you can play long term games with long term people.
+### Pick an industry where you can play long term games with long term people.
 
-* Pick an industry where you can play long-term games with long-term people. Long-term players make each other rich. 
+* Pick an industry where you can play long-term games with long-term people. Long-term players make each other rich.
 * Short-term players make themselves rich.
 
-####  The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet.
+###  The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet.
 
 * The Internet has massively broadened the possible space of careers, by allowing you to scale any niche obsession.
 * Before the Internet there was no way to find all the people in the world who were interested in your obsession. Now you can.
@@ -69,14 +69,14 @@ Let's get to it.
 * No one can compete with you on being you. Before the Internet, this was useless advice--now it’s a career.
 
 
-####  Play iterated games. 
+###  Play iterated games.
 > All the returns in life, whether in wealth, relationships, or knowledge, come from compound interest.
 
 * All returns in life come from compound interest over many turns of long-term games--and they usually come at the end.
 * People are fair with each other when they know there will be more turns of the game. Friction goes down with each turn, so you can do bigger and bigger things together.
 
 
-#### Pick business partners with high intelligence, energy, and, above all, integrity.
+### Pick business partners with high intelligence, energy, and, above all, integrity.
 
 * Pick business partners with high intelligence, energy and integrity.
 * They need intelligence or they’ll head in the wrong direction. They need energy because the world is full of smart, lazy people. And they need integrity or you’ll have a smart and hard working crook, who’ll eventually cheat you.
@@ -84,7 +84,7 @@ Let's get to it.
 * Integrity is what someone does, despite what they say they do.
 
 
-####  Don't partner with cynics and pessimists. Their beliefs are self-fulfilling.
+###  Don't partner with cynics and pessimists. Their beliefs are self-fulfilling.
 
 * Partner with rational optimists. They know the downsides but they keep their chin up.
 * Don’t partner with cynics and pessimists, their beliefs are self-fulfilling.
@@ -93,7 +93,7 @@ Let's get to it.
 * Worst of all is the nitpicker.
 
 
-####  Learn to sell. Learn to build. If you can do both, you will be unstoppable.
+###  Learn to sell. Learn to build. If you can do both, you will be unstoppable.
 
 * Learn to sell, learn to build. If you can do both, you will be unstoppable.
 * Selling is anything from one-on-one sales to marketing, recruiting, fundraising, PR, and more.
@@ -102,7 +102,7 @@ Let's get to it.
 * It’s easier to be a builder who learns sales, than a seller who learns building.
 * Being a builder helps you stand out when you’re starting out, but it can be exhausting to stay current. Sales skills scale better over time and can be self-fulfilling.
 
-####  Arm yourself with specific knowledge, accountability, and leverage.
+###  Arm yourself with specific knowledge, accountability, and leverage.
 
 * Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgment in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
 * Specific knowledge may come from your DNA. It may be soft skills learned in childhood. It may be something so new that nobody but you knows how to do it. It may be true on-the-job training where you’re pattern matching in highly complex environments.
@@ -111,7 +111,7 @@ Let's get to it.
 * Genuine curiosity is very important. Leverage and compound interest mean someone who is just slightly better than you will get paid 10x-1000x more than you. So you must be the best.
 
 
-####  Specific knowledge is knowledge that you cannot be trained for. 
+###  Specific knowledge is knowledge that you cannot be trained for.
 
 > If society can train you, it can train someone else, and replace you.
 
@@ -122,7 +122,7 @@ Let's get to it.
 * You can’t be too deliberate about assembling specific knowledge. The best way is to follow your obsession, so you go deep enough into it to be the best.
 * Build specific knowledge where you are a natural. Everyone is a natural at something.
 
-#### Embrace accountability, and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.
+### Embrace accountability, and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.
 
 * Taking on accountability is how you get a piece of the business. If you have high accountability, that makes you less replaceable so they have to give you a piece of the upside.
 * Taking accountability for your actions is the same as taking an equity position in all of your work. You’re taking greater downside risk for greater upside.
@@ -130,7 +130,7 @@ Let's get to it.
 * Accountability is reputational skin in the game; it’s putting your personal reputation on the line, as skin in the game.
 * We’re currently socially brainwashed to not take on accountability in a visible way.
 
-#### The most accountable people have singular, public, and risky brands: Oprah, Trump, Kanye, Elon.
+### The most accountable people have singular, public, and risky brands: Oprah, Trump, Kanye, Elon.
 
 * Embrace accountability and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.
 * Accountability lets you to take credit when things go well, but you will also bear the brunt of failure when things go badly.
@@ -140,9 +140,9 @@ Let's get to it.
 
 
 
-#### Labor and Capital Are Old Leverage
+### Labor and Capital Are Old Leverage
 
-> “Give me a lever long enough, and a place to stand, and I will move the earth.” - Archimedes 
+> “Give me a lever long enough, and a place to stand, and I will move the earth.” - Archimedes
 
 * Wealth requires leverage. Labor and capital are older forms of leverage that everyone is fighting over.
 * Our brains aren’t evolved to comprehend new forms of leverage and just how much leverage is possible in modern society.
@@ -151,7 +151,7 @@ Let's get to it.
 * Capital has been the dominant form of leverage in the last century. It scales very well: you can manage more capital much more easily than you can manage people.
 * If you have specific knowledge in a domain and if you’re accountable, people will give you capital as a form of leverage.
 
-#### Product and Media are New Leverage
+### Product and Media are New Leverage
 
 > Fortunes require leverage. Business leverage comes from capital, people, and products with no marginal cost of replication (code and media).
 > Code and media are permissionless leverage. They're the leverage behind the newly rich. You can create software and media that works for you while you sleep.
@@ -164,7 +164,7 @@ Let's get to it.
 * Product and media leverage are permissionless.
 * The robot army is already here--code lets you tell them what to do.
 
-#### Product Leverage is Egalitarian
+### Product Leverage is Egalitarian
 
 > Capital means money. To raise money, apply your specific knowledge, with accountability, and show resulting good judgment.
 > Labor means people working for you. It's the oldest and most fought-over form of leverage. Labor leverage will impress your parents, but don’t waste your life chasing it.
@@ -178,7 +178,7 @@ Let's get to it.
 * Capital and labor are becoming permissionless.
 
 
-#### Example: From Laborer to Entrepreneur
+### Example: From Laborer to Entrepreneur
 
 * The continuum from laborer to real estate tech company entrepreneur goes from low to high specific knowledge, accountability and leverage.
 * Laborers get paid hourly. The owner of the house doesn’t know who they are and they can be replaced by machines or newly trained hires.
@@ -187,7 +187,7 @@ Let's get to it.
 * Architects and REITs apply even more accountability, specific knowledge and leverage.
 * Real estate tech companies like Opendoor, Trulia or Redfin apply the maximum leverage by combining all of the lower layers of the stack with a new product.
 
-#### Judgment Is the Decisive Skill
+### Judgment Is the Decisive Skill
 
 > Leverage is a force multiplier for your judgement.
 > Judgement requires experience, but can be built faster by learning foundational skills.
@@ -199,7 +199,7 @@ Let's get to it.
 * The more outraged someone is, the worse their judgment. You don’t want to hand them the keys to your car, let alone the keys to your company.
 
 
-#### There’s No Actual Skill Called “Business”
+### There’s No Actual Skill Called “Business”
 
 * There’s no actual skill called “business”. It’s too broad; it’s like a skill called “relating to humans.”
 * Instead, learn basic concepts from game theory, psychology, ethics, mathematics, computers, and logic.
@@ -208,7 +208,7 @@ Let's get to it.
 * We’re not evolved to bleed a little bit every day with failed iterations. We’re evolved for small victories all the time, but that’s where the herd is. If you’re willing to bleed a little bit every day, you may win big later.
 
 
-#### The Foundations Are Math and Logic
+### The Foundations Are Math and Logic
 
 > Study microeconomics, game theory, psychology, persuasion, ethics, mathematics, and computers.
 
@@ -217,18 +217,18 @@ Let's get to it.
 * It’s better to read a great book slowly than to fly through a hundred books quickly. Understanding comes through repetition and usage.
 * The five most important skills are reading, writing, arithmetic, persuasion, and programming. If you’re good with computers, if you’re good at basic math, if you’re good at writing, if you’re good at speaking, and if you like to read, you’re set for life.
 
-#### Read What You Love Until You Love to Read
+### Read What You Love Until You Love to Read
 
 > Reading is faster than listening. Doing is faster than watching.
 
 * Read what you love until you love to read. Start with the books that interest you, no matter how unrefined they may seem.
 * To avoid being seduced by lies, read the original scientific texts in a field. For example, instead of reading a business book, pick up Adam Smith’s The Wealth of Nations.
-* If you understand the basics, especially in math and science, you will not be afraid of any book. 
+* If you understand the basics, especially in math and science, you will not be afraid of any book.
 * The means of learning are abundant, the desire to learn is scarce. The beauty of the Internet is that the entire library of Alexandria is at your fingertips at all times.
 * Children have a natural desire to learn: they’re always asking questions. But child-rearing and schools replace curiosity with compliance.
 
 
-#### Be Too Busy to “Do Coffee”
+### Be Too Busy to “Do Coffee”
 
 > You should be too busy to “do coffee," while still keeping an uncluttered calendar.
 
@@ -236,19 +236,19 @@ Let's get to it.
 * People will meet with you when you have proof of work.
 * Networking is overrated even early in your career.
 
-#### Set an Aspirational Hourly Rate
+### Set an Aspirational Hourly Rate
 
 > Set and enforce an aspirational personal hourly rate. If fixing a problem will save less than your hourly rate, ignore it. If outsourcing a task will cost less than your hourly rate, outsource it.
 
 * Set and enforce an aspirational hourly rate.
 * If fixing a problem will save less than your rate, ignore it. If outsourcing a task will cost less than your hourly rate, outsource it.
-* You can penny-pinch your way to a basic sustenance. But you can’t penny pinch your way to wealth. 
+* You can penny-pinch your way to a basic sustenance. But you can’t penny pinch your way to wealth.
 * My aspirational rate was $5,000/hr. Of course, I still ended up doing stupid things.
 * You should be working on your product and getting product-market fit. And you should be exercising and eating healthy.
 * That’s all you have time for while you’re on this mission.
 * Your hourly rate should seem absurdly high.
 
-#### Work As Hard As You Can
+### Work As Hard As You Can
 
 > Work as hard as you can. Even though who you work with and what you work on are more important than how hard you work.
 
@@ -256,16 +256,16 @@ Let's get to it.
 * Nobody really works 80 hours a week. Rather, people sprint as hard as they can when they’re inspired, then they rest.
 * Inspiration is perishable. When you have it, just seize it.
 * Impatience with actions, patience with results. Anything you have to do, just get it done. Then give up on the results and be patient because you’re dealing with complex systems.
- 
 
-#### Keep Redefining What You Do
+
+### Keep Redefining What You Do
 
 > Become the best in the world at what you do. Keep redefining what you do until this is true.
 
 * Keep redefining what you do until you’re the best in the world at what you do.
 * Find founder-product-market fit.
 
-#### Pick a Business Model With Leverage
+### Pick a Business Model With Leverage
 
 > Apply specific knowledge, with leverage, and eventually you will get what you deserve.
 
@@ -277,9 +277,9 @@ Let's get to it.
 * Zero marginal cost businesses can pivot into network effect businesses. Since it doesn’t cost you anything to make more, you can create hooks for the users to add value to each other.
 
 
-####  There are no get rich quick schemes. That's just someone else getting rich off you.
+###  There are no get rich quick schemes. That's just someone else getting rich off you.
 
-####  When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
+###  When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
 
 
 ###### Ref. image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a>.

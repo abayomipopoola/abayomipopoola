@@ -10,7 +10,7 @@ spoiler: Develop good habits and make them stick.
 
 Humans naturally are lazy…if there were to be a new religion that preaches slothfulness, I’m certain the congregation would be filled up in no time. It’s the way our brains are wired―inertia.
 
-####<p align="center">•••</p>
+###<p align="center">•••</p>
 
 Recently, scientists have discovered a nub of neurological tissue known as the basal ganglia. If you picture the human brain as an onion, composed of layer upon layer of cells, then the outside layer, the closest to the scalp--are generally the most recent addition from an evolutionary perspective.
 

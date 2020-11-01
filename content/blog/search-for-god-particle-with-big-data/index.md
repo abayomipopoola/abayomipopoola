@@ -12,7 +12,7 @@ With such massive and fast-growing data, Big data made it possible to analyse th
 
 In 2013, scientists at CERN announced that they had found the Higgs boson particle--a ground-breaking discovery. Later that year, Nobel prize in physics was awarded jointly to François Englert and Peter Higgs “for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider”.
 
-#### DATA
+### DATA
 
 Before computer became ubiquitous, data used to be recoreded on paper: sample survey and questionnaire, population census, student grades. They are usually time-consuming and not effective. Data collections are mostly structured and follows certain format for statistical analysis. The advent of computers help ease the labourious task of data collection and analysis, especially with spreedsheet application softwares like Microsoft Excel, Lotus 123, etc., that allows for organization, analysis and storage of data in tabular form.
 
@@ -22,7 +22,7 @@ We can classify structured data as the kind of data that are filled into a web f
 
 Unstructure data on the other hand, can't be easily categorised, e.g. tweets, photos, videos, clickstreams and other data from unstructured sources. Although taking a closer look into some of the unstructured data, we can re-classify some of them as semi-structured data: Email is a good example of a semi-structured data, as they contain structure metadata--like email heading, as well as the unstructure text and maybe photos or other attached documents. Metadata, data that describes and gives information about other data, can add some kind of structure to unstructured data: Like adding word tags to photos for ease of identification, or hashtags on social networking platforms for topic classifications. Unstructured data can't be stored in a table-style (relational databases), or on spreadsheet, making it hard to extract useful information from them even as there're lots of these data around us; for this, special tools have been built to help sort them out.
 
-#### Big Data Basics
+### Big Data Basics
 
 The term "big data" refers not only to large data sets, but also to the techniques, and tools used to analyze it. Data can be collected through any data-generating process such as social media, public utility infrastructure, search engines, etc.. And as we've discussed earlier, Big data may be either structured, semi-structured, or unstructured.
 
@@ -32,9 +32,9 @@ Today, with the average large business storing more than 200 terabyte, companies
 
 When we have enormous amount of information that can be made to interoperate with itself, we can come up with answers that will solve societal problems.
 
-#### Big Data Scandals
+### Big Data Scandals
 
-There have been issues of data-breaches with Big data. The biggest scandal yet, the Cambridge Analytica, a London-based political consulting firm that collects consumer data for use in election campaigns around the world. 
+There have been issues of data-breaches with Big data. The biggest scandal yet, the Cambridge Analytica, a London-based political consulting firm that collects consumer data for use in election campaigns around the world.
 
 The data of up to 87 million users, mostly in the U.S., was obtained by an analytics firm that, among its other work, helped elect President Donald Trump. In response to that revelation, lawmakers and regulators in the U.S. and U.K. increased their scrutiny of the social media giant, and at least some Facebook users canceled their accounts. The uproar has only added to the pressure on Facebook and Chief Executive Mark Zuckerberg over how the company was used during the 2016 presidential campaign to spread Russian propaganda and phony headlines <a href="http://bit.ly/2S4AFEs" target="_blank" class="read-more">_(Read more)_</a>.
 

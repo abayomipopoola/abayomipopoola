@@ -8,9 +8,9 @@ spoiler: Part two of the Naval’s expanded points from his viral tweetstorm, �
 
 Here is part two of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised article here)_</a>.
 
-#### Pick an industry where you can play long term games with long term people.
+### Pick an industry where you can play long term games with long term people.
 
-##### Play long-term games with long-term people
+#### Play long-term games with long-term people
 
 Yeah, this is an insight into what makes Silicon Valley work, and what makes high trust societies work. Essentially, all the benefits in life come from compound interests. Whether it’s in relationships, or making money, or in learning.
 
@@ -26,7 +26,7 @@ But essentially if you want to be successful, you have to work with other people
 
 So, for example, Warren Buffett has done really well as an investor in the U.S. stock market, but the biggest reason he could do that was because the U.S. stock market has been stable, and around, and didn’t get for example seized by the government during a bad administration. Or the U.S. didn’t plunge into some war. The underlying platform didn’t get destroyed. So, in his case, he was playing a longterm game. And the trust came from the U.S. stock market’s stability.
 
-##### When you switch industries, you’re starting over from scratch
+#### When you switch industries, you’re starting over from scratch
 
 In Silicon Valley, the trust comes from the network of people in the small geographic area, that you figure out over time who you can work with, and who you can’t.
 
@@ -42,7 +42,7 @@ Whereas every time you get like a new incoming freshman class in the House of Re
 
 So, it’s important to pick an industry where you can play long-term games, and with long-term people. So, those people have to signal that they’re gonna be around for a long time. That they’re ethical. And their ethics are visible through their action.
 
-##### Long-term players make each other rich
+#### Long-term players make each other rich
 
 In a longterm game, it’s positive sum. We’re all baking the pie together. We’re trying to make it as big as possible. And a short term game, we’re cutting up the pie.
 
@@ -52,13 +52,13 @@ But I think a good leader doesn’t take credit. A good leader basically tries t
 
 Summary:
 
-* Pick an industry where you can play long-term games with long-term people. Long-term players make each other rich. 
+* Pick an industry where you can play long-term games with long-term people. Long-term players make each other rich.
 * Short-term players make themselves rich.
 
 
-####  The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet.
+###  The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet.
 
-##### The Internet has massively broadened the possible space of careers
+#### The Internet has massively broadened the possible space of careers
 
 The fundamental property of the internet more than any other single thing is it connects every human to each other human on the planet. You can now reach everyone.
 
@@ -72,7 +72,7 @@ For example, Nenad, who is Illacertus, if you look at his videos pre-internet, h
 
 And then how many people in the world are really interested in it? Or even in interested in what we’re talking about are really gonna absorb it, right? It’s gonna be a very small subset of humanity. The key is being able to reach them.
 
-##### The Internet allows you to scale any niche obsession
+#### The Internet allows you to scale any niche obsession
 
 So, what the internet does is allows any niche obsession, which could be just the weirdest thing. It could be like people who collect snakes, to like people who like to ride hot air balloons, to people who like to sail around the world by themselves, just one person on a craft, or someone who’s obsessed with miniature cooking. Like, there’s this whole Japanese miniature cooking phenomenon. Or there’s a show about a woman who goes in people’s houses, and tidies it up, right?
 
@@ -92,7 +92,7 @@ The space of careers has been so broadened. E-sports players, you know, people m
 
 Even PewDiePie... there’s a hilarious tweet that I retweeted the other day. PewDiePie is the number one trusted name in news. This is a kid I think in Sweden, and he’s got three times the distribution of the top cable news networks. Just on his news channel. It’s not even on his entertainment channel.
 
-##### Escape competition through authenticity
+#### Escape competition through authenticity
 
 The internet enables any niche interest, as long as you’re the best at it to scale out. And the great news is because every human is different, everyone is the best at something. Being themselves.
 
@@ -112,10 +112,10 @@ Summary:
 * No one can compete with you on being you. Before the Internet, this was useless advice--now it’s a career.
 
 
-####  Play iterated games. 
+###  Play iterated games.
 > All the returns in life, whether in wealth, relationships, or knowledge, come from compound interest.
 
-##### Returns come from compound interest in iterated games
+#### Returns come from compound interest in iterated games
 
 When you have been doing business with somebody, you’ve been friends with somebody for ten years, twenty years, thirty years, it just gets better and better ’cause you trust them so easy. The friction goes down, you can do bigger, and bigger things together.
 
@@ -129,9 +129,9 @@ Summary:
 * People are fair with each other when they know there will be more turns of the game. Friction goes down with each turn, so you can do bigger and bigger things together.
 
 
-#### Pick business partners with high intelligence, energy, and, above all, integrity.
+### Pick business partners with high intelligence, energy, and, above all, integrity.
 
-##### Pick business partners with high intelligence, energy and integrity
+#### Pick business partners with high intelligence, energy and integrity
 
 In terms of picking people to work with, pick ones that have high intelligence, high energy, and high integrity, I find that’s the three-part checklist that you cannot compromise on.
 
@@ -150,7 +150,7 @@ And then high integrity is the most important because otherwise if you’ve got 
 
 And as we talked about, the way you do that is through signals. And signals is what they do, not what they say. It’s all the non-verbal stuff that they do when they think nobody is looking.
 
-##### Motivation has to come intrinsically
+#### Motivation has to come intrinsically
 
 I almost won’t start a company, or hire a person, or work with somebody if I just don’t think they’re into what I want them to do.
 
@@ -158,7 +158,7 @@ When I was younger, I used to try and talk people into things. I had this idea t
 
 But if you’re trying to keep someone motivated for the long-term, that motivation has to come intrinsically. You can’t just create it, nor can you be the crutch for them if they don’t have that intrinsic motivation. So, you have to make sure people actually are high-energy, and want to do what you want them to do, and what you want to work with them on.
 
-##### Integrity is what someone does, despite what they say they do
+#### Integrity is what someone does, despite what they say they do
 
 Reading signals is very, very important. Signals are what people do despite what they say. So, it’s important to pay attention to subtle signals. We all know that socially if someone treats a waiter, or waitress in a restaurant really badly, then it’s only a matter of time until they treat you badly.
 
@@ -190,9 +190,9 @@ Summary:
 * Integrity is what someone does, despite what they say they do.
 
 
-####  Don't partner with cynics and pessimists. Their beliefs are self-fulfilling.
+### Don't partner with cynics and pessimists. Their beliefs are self-fulfilling.
 
-##### Don’t partner with pessimists
+#### Don’t partner with pessimists
 
 Essentially, to create things, you have to be a rational optimist. Rational in the sense that you have to see the world for what it really is. And yet you have to be optimistic about your own capabilities, and your capability to get things done.
 
@@ -206,7 +206,7 @@ And all the really successful people I know have a very strong action bias. They
 
 So, if you want to be successful in life, creating wealth, or having good relationships, or being fit, or even being happy, you need to have an action bias towards getting what you want.
 
-##### Partner with rational optimists
+#### Partner with rational optimists
 
 And you have to be optimistic about it. Not irrationally. You know, there’s nothing worse than someone who is foolhardy and chasing something that’s not worth it.
 
@@ -220,7 +220,7 @@ But for whatever reason, education, circumstance, they didn’t get the chance t
 
 The cynics and the pessimists, what they’re really saying, it’s unfortunate, but they’re basically saying, “I’ve given up. I don’t think I can do anything. And so the world to me just looks like a world where nobody can do anything. And so why should you go do something because if you fail, then I’m right, which is great. But if you succeed, then you just make me look bad.”
 
-##### We’re descended from pessimists
+#### We’re descended from pessimists
 
 There’s a completely rational frame on why you should be an optimist. Historically, if you go back 2,000 years, 5,000 years, 10,000 years, two people are wandering through a jungle, they hear a tiger. One’s an optimist, and says, “Oh, it’s not headed our way.” The other one says, “I’m a pessimist, I’m out of here.” And the pessimist runs and survives, and the optimist gets eaten.
 
@@ -236,7 +236,7 @@ The one thing you have to avoid is the risk of ruin. Ruin means stay out of jail
 
 You have to watch your health. And stay out of things that can cause you to lose all of your capital, all of your savings. So, don’t gamble everything on one go. But take rationally optimistic bets with big upside.
 
-##### BOCTAOE
+#### BOCTAOE
 
 Scott Adams got so annoyed by this that he came up with a phrase, an acronym, which is “but of course there are obvious exceptions”, BOCTAOE. And he used to pin that acronym at the end of his articles for a while.
 
