@@ -73,7 +73,7 @@ Small businesses in the emerging economy today do not fully participate in an in
 
 According to research done by The Fletcher School and Mastercard Center for Inclusive Growth, of the $301 billion of funds flows from consumers to businesses in Nigeria, 98 percent is still based on cash.
 
-Several players in the FinTech space are attempting to tap into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of Agency banking: a medium where third-party agents perform transactions on behalf of institutions, enables customers to translate stored value (usually in the form of a wallet-system) to physical cash for use.
+Several players in the FinTech space are attempting to tap into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
 
 <b>Agency banking</b> is a type of branchless banking that allows the traditional banks to extend their network of branches and services in a cost-efficient manner through authorized agents. Agency banking is gaining popularity due to various reasons like product availability, risk management, improvement in financial inclusion, and many more.
 
