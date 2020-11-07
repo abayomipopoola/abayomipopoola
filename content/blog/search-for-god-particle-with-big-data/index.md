@@ -4,7 +4,7 @@ date: "2018-12-27T22:40:32.169Z"
 spoiler: Making sense of a larger and more complex data sets that traditional data processing software can’t manage, in order to understand observed events.
 ---
 
-![regression analysis](https://www.dropbox.com/s/fk8ue65io2bvbzk/bigdata.jpg?raw=1)
+![regression analysis](./bigdata.jpg)
 
 The Higgs Boson, mostly called "the God particle", is what holds the fabric of our universe together--as scientists believe that the particle gives all matter its mass. In order to isolate this particle, scientist utilises the Large Hadron Collider (LHC) that creates 600,000,000 collisions among 3,000,000,000,000,000 protons every second. In the same time, over 50,000,000,000,000 byte of data are being analysed to prove the particle's existence.
 

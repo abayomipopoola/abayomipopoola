@@ -4,7 +4,7 @@ date: "2018-06-28T23:46:37.121Z"
 spoiler: Develop good habits and make them stick.
 ---
 
-![work station](https://www.dropbox.com/s/948vweca512an6f/workstation.jpg?raw=1)
+![work station](./workstation.jpg)
 
 9-5 embraces me like I have the choice of refuting its warmth. I kinda miss work though, I’ve been off lately.
 

@@ -4,7 +4,7 @@ date: "2019-12-30T11:00:03.284Z"
 spoiler: Tackling software complexities by connecting its related pieces into an ever-evolving business model and processes.
 ---
 
-![Domain drivien design](https://www.dropbox.com/s/3tmdekqjt18ie7y/ddd.png?raw=1)
+![Domain drivien design](./ddd.png)
 
 An old chess saying goes as thus: "tactics is knowing what to do when there's something to do, while strategy is knowing what to do when there's nothing to do". Although it's slightly exaggerated, a more granular difference might be that tactics are the actual means used to gain an objective, while strategy is the overall campaign plan, which may involve complex operational patterns, activity, and decision-making that govern tactical execution (wiki).
 
@@ -12,7 +12,7 @@ Building software without starting with the end in mind is synonymous to not hav
 
 >Why though? Of course, because strategy is hard, tactics are easier, and people prefer easier tasks.
 
-![strategy-tactics](https://www.dropbox.com/s/if0buzo32q102px/visionstrategytactics.png?raw=1)
+![strategy-tactics](./visionstrategytactics.png)
 
 Enter Domain-Driven Design (DDD), an approach to software development first described by Eric Evans--a collection of principles and patterns that help developers craft elegant object systems. Properly applied it can lead to software abstractions called domain models. These models encapsulate complex business logic, closing the gap between business reality and code.
 
@@ -34,7 +34,7 @@ To accomplish this, DDD advocates that the domain experts--the banker in our cas
 
 Once the domain expert and the developer are done discussing the domain subject, they get to develop a ubiquitous language: Here we talk about a language that is used by all the team members to connect the activities of the team with the software. The ubiquitous language of DDD helps when it comes to knowing more about terms that are used by the business experts. The tech team can know if the language changes and if a specific term will be used for a different meaning. Once this has been established then the new field on the screen or column in the database table follows on from that.
 
-![ubiquitous language](https://www.dropbox.com/s/47rogiw99o7du5l/ubiquitous-lang.png?raw=1)
+![ubiquitous language](./ubiquitous-lang.png)
 
 ### Models and Context
 
@@ -46,7 +46,7 @@ The Bounded context (BC) is the context in which the ubiquitous language and the
 
 A graph that connects different contexts, is called a context map. For each context, you find a language, an independent implementation and an interface to talk to other bounded contexts. A context map helps us understand the nature of each bounded context dependencies.
 
-![Context map](https://www.dropbox.com/s/2pqcl6x5ht34b90/contextmapping.jpg?raw=1)
+![Context map](./contextmapping.jpg)
 
 The image above depicts a very simple Context Map: drawing contours around portions of the domain model shows the areas where conceptual integrity is preserved <a href="https://www.infoq.com/articles/ddd-contextmapping" target="_blank" class="read-more">_(Read more)_</a>.
 

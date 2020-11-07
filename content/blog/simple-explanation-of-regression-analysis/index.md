@@ -4,7 +4,7 @@ date: "2018-12-18T22:40:32.169Z"
 spoiler: A statistical method that allows you to examine the relationship between two or more variables of interest.
 ---
 
-![regression analysis](https://www.dropbox.com/s/piu6otxpg3gij58/regression.png?raw=1)
+![regression analysis](./regression.png)
 
 Regression analysis is a ubiquitous tool of scientific/statistical research, but what is it and how can it be explained simply? It's safe to define it as a method of measuring the link between two or more phenomena--establishing a correlation between phenomena.
 

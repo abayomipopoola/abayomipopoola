@@ -4,7 +4,7 @@ date: "2020-04-23T11:00:03.284Z"
 spoiler: Why expansionary fiscal policy is the most appropriate when an economy is in recession and producing below its potential GDP.
 ---
 
-![Fiscal Policy on the COVID-19 Economy](https://www.dropbox.com/s/q2wy56hjl88h6gv/social-distancing.jpg?raw=1)
+![Fiscal Policy on the COVID-19 Economy](./social-distancing.jpg)
 
 China, the epicentre of the virus was responsible for around $0.78 trillion out of the $1.66 trillion 2019 global economic growth. That’s about half the global economic growth. Same China sits at the heart of global supply chains that keep the world economy humming... large economies such as the US and Japan get more than a third of their intermediate goods from China. Then COVID-19 strikes.
 
@@ -32,7 +32,7 @@ To understand how fiscal policy can help during recession, we need to understand
 #### Economic Equilibrium
 In economics, equilibrium is a state where economic forces (supply and demand) are balanced. Without any external influences, price and quantity will remain at the equilibrium value.
 
-![supply demand equilibrium](https://www.dropbox.com/s/rucfsdtetj9koab/supply-demand-equilibrium.png?raw=1)
+![supply demand equilibrium](./supply-demand-equilibrium.png)
 
 #### Supply and Demand
 
@@ -58,7 +58,7 @@ Corporate tax cuts put more money into businesses' hands, which the government h
 
 The figure below illustrates the _Expansionary Fiscal Policy_. The original equilibrium (E0) represents a recession, occurring at a quantity of output (Y0) below potential GDP. However, a shift of aggregate demand from AD0 to AD1, enacted through an expansionary fiscal policy, can move the economy to a new equilibrium output of E1 at the level of potential GDP which is shown by the LRAS curve. Since the economy was originally producing below potential GDP, any inflationary increase in the price level from P0 to P1 that results should be relatively small.
 
-![Expansionary Fiscal Policy](https://www.dropbox.com/s/gzcaa0s7m1iyqk0/expansionary-fiscal-policy.png?raw=1)
+![Expansionary Fiscal Policy](./expansionary-fiscal-policy.png)
 
 ###<p align="center">•••</p>
 

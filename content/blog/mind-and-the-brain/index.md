@@ -4,7 +4,7 @@ date: "2018-11-20T22:40:32.169Z"
 spoiler: The mind, and the brain.
 ---
 
-![drawing the consciousness](https://www.dropbox.com/s/td2epunpedk73hi/mind.jpg?raw=1)
+![drawing the consciousness](./mind.jpg)
 
 Just like programming a computer--as the program comes to the electrical computer from without; the same is true of each biological computers (the human brains): Purpose comes to it from outside its own mechanism.
 
@@ -21,4 +21,4 @@ Now that the mind can be seen as a separate--although still very related to the 
 The mind though, must be a very powerful thing--having an energy of its own, that scientists can’t explain, yet.
 
 
-###### Ref. image by saatchiart 
+###### Ref. image by saatchiart

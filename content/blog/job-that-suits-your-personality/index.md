@@ -4,7 +4,7 @@ date: "2018-12-13T22:40:32.169Z"
 spoiler: Scale an enterprise by understand how different personalities map to different kinds of jobs, and who'd be good or sucks at what.
 ---
 
-![personality](https://www.dropbox.com/s/vn1de31xgd0g7mf/personality.jpg?raw=1)
+![personality](./personality.jpg)
 
 Your personality will partially determine how good you are at your job, especially if your job requires more than rote behavior.
 
