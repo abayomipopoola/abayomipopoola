@@ -21,7 +21,7 @@ Financial inclusion means that individuals and businesses have access to useful 
 Apart from protecting your money from theft, a bank account connects people to the formal financial system and enables them to make day-to-day living less complicated as well as allowing them to build up their assets. Lack of access to financial products and services means limited access to credit. A majority of the world’s poor population work in the informal sector. They grow crops on a small scale and rear animals. Others are artisans who sell wares to the population while others are small-scale vendors who sell basic items such as food and vegetables. However, despite their ability to make further investments in their little enterprises and improve their lives, they lack access to credit which would have helped them achieve such a goal, <a href="https://www.cgap.org/research/publication/financial-inclusion-and-development-recent-impact-evidence" target="_blank" >as this research shows</a>.
 
 #### Financial Inclusion Efforts in Nigeria
->According to research done by The Fletcher School and Mastercard Center for Inclusive Growth, of the >$301 billion of funds flows from consumers to businesses in Nigeria, 98 percent is still based on cash.
+>According to research done by The Fletcher School and Mastercard Center for Inclusive Growth, of the $301 billion of funds flows from consumers to businesses in Nigeria, 98 percent is still based on cash.
 
 Several players in the Nigeria Fintech space are attempting to help close the gap of financial inclusion, while tapping into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
 
