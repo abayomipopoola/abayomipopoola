@@ -45,9 +45,9 @@ const BlogPostTemplate = ({ data, location }) => {
 					}}
 				/>
 				<hr />
-				<footer>
-					<Bio />
-				</footer>
+				{/*<footer>*/}
+				{/*	<Bio />*/}
+				{/*</footer>*/}
 			</article>
 			<nav className="blog-post-nav">
 				<ul
@@ -75,6 +75,7 @@ const BlogPostTemplate = ({ data, location }) => {
 					</li>
 				</ul>
 			</nav>
+			<hr />
 			<Disqus
 				identifier={post.id}
 				title={post.frontmatter.title}

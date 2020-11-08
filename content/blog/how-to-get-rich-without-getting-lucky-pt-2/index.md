@@ -252,4 +252,4 @@ Summary:
 * It made sense to be pessimistic in the past. But modern society is far safer, with limited downside and unlimited upside. Adapting for modern society means overriding your natural pessimism.
 * Worst of all is the nitpicker.
 
-###### Ref. image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.

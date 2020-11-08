@@ -281,5 +281,4 @@ Let's get to it.
 
 ###  When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
 
-
-###### Ref. image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.

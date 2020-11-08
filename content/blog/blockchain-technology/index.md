@@ -110,7 +110,7 @@ Here are some real-world examples of blockchain technology in action:
  trace diamonds all the way from the mine to the end customer, which will increase transparency and allow customers to verify that
  their diamonds are free from conflict <a href="https://bernardmarr.com/default.asp?contentID=1788" target="_blank" class="read-more">_(Read more applications here)_</a>.
 
-###<p align="center">•••</p>
+######<p align="center">•••</p>
 
 With blockchain, we can imagine a world in which contracts are embedded in digital code and stored in transparent,
 shared databases, where they are protected from deletion, tampering, and revision. In this world, every agreement,

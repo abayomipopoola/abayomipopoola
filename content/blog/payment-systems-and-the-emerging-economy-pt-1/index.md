@@ -1,10 +1,10 @@
 ---
-title: Payment Systems, and the Emerging Economy
+title: Payment Systems, and the Emerging Economy pt. 1
 date: "2020-11-07T11:00:03.284Z"
 spoiler: The role of payment systems and services in financial inclusion, and as a key infrastructure for economic development.
 ---
 
-![Payment Systems, and the Emerging Economy](./card-schemes.png)
+![Payment Systems, and the Emerging Economy](./bank-connector.png)
 
 Today, banking is possible anywhere you are. As long as you have a mobile phone with you, it's all the bank you need. You can buy that item you want, pay your bills and transfer money to a friend. All while enjoying a coffee in your favourite cafe. Financial bodies continually simplify the way we make transactions.
 
@@ -64,49 +64,15 @@ The diagram above shows the participants in a typical card transaction. The card
 * A _network_, at its simplest, is a directory of participants along with the information required to access their stores of value and settle transfers: names and addresses, account details, and so on. Primary networks, such as ACH and real-time gross settlement (RTGS), are integrated with bank systems and do not rely on any other settlement mechanisms to execute payments.
 * A _scheme_ also has a directory of participants, but what differentiates it from a network is that it also enforces rules and standards. As well as connecting to bank networks to transfer funds, it ensures that participants abide by rules and standards on fraud liability, participant eligibility, data security, and other matters. Examples of payments schemes include Visa, Mastercard, China UnionPay, Zelle, and TransferWise.
 
-### Building a payments system for emerging economies
-Small businesses in the emerging economy today do not fully participate in an inclusive financial system. People have limited access to useful and affordable financial products and services that meet their needs – payments, savings, credit, insurance, and other kinds of transactions – delivered responsibly and sustainably. They deal exclusively in cash, have no safe way to save or invest, and do not have access to credit beyond informal lenders and friends. This causes credit scarcity as significant amounts are stored beyond the reach of the financial system. Economic growth suffers as a result of less consumer consumption.
+######<p align="center">•••</p>
 
->According to the World Bank, MSMEs represent about 90% of businesses and more than 50% of employment worldwide. Formal SMEs contribute up to 40% of national income (GDP) in emerging economies.
-> <br>
->In Nigeria, over 41.5 million MSME businesses operate in the country, according to a survey conducted by the National Bureau of Statistics and the SME Development Agency of Nigeria (SMEDAN) in 2018.
+You just completed the first part of the _Payment Systems, and the Emerging Economy_ blog post. <a href="/payment-systems-and-the-emerging-economy-pt-2" class="read-more">_(Read the concluding part here)_</a></a>
 
-According to research done by The Fletcher School and Mastercard Center for Inclusive Growth, of the $301 billion of funds flows from consumers to businesses in Nigeria, 98 percent is still based on cash.
-
-Several players in the FinTech space are attempting to tap into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
-
-<b>Agency banking</b> is a type of branchless banking that allows the traditional banks to extend their network of branches and services in a cost-efficient manner through authorized agents. Agency banking is gaining popularity due to various reasons like product availability, risk management, improvement in financial inclusion, and many more.
-
-MSME owners with an outlet or someone with a kiosk who conducts banking transactions on behalf of the concerned bank and financial institutions are called Agents. They are responsible for banking services such as:
-
-* Cash-in
-* Cash-out
-* Balance inquiry
-* Airtime purchase
-* Bill payments
-* P2P transfer
-* Generate mini statements
-* Collection of document
-* Micro-loans
-
-<b>Super Agents</b> are payment facilitator licensed by the Central Bank of Nigeria to recruit agents for agency banking i.e. provision of financial services within communities on behalf of banks.
-The essence of agency banking is to converts traditional linear banking chain to a beneficial community or ecosystem for value creation.
-
-#### POS
-Studying the Nigeria payments space, one can see an emerging convergence between the POS and payment gateway industry. The POS industries are leaning towards implementing their payment gateway to get a cut of all the transactions that are processed via the POS. Conversely, the payment gateway industry is looking to build their own POS systems to process all the transactions originating from the POS system.
-
-Even though a payment gateway offers easy integration to merchant applications, it comes as an additional cost to the merchant. The merchant can save this additional cost by integrating directly to the payment processor. While this is true several other factors should be considered when choosing between the payment gateway and payment processor:
-
-* _Total Transaction Volume:_ The payment processors have different transaction fee rates that depend on the volume of transactions. Most of the payment processors offer lower rates for a high volume of transactions. It would be more feasible for small businesses with a small volume of transactions to go through a payment gateway.
-
-* _Integration Cost & Time:_ The development cost and time for integrating with a payment processor are higher as compared to payment gateway integration. The Payment processor requires integration to their ISO 8583 platform and undergoing their certification process.
-
-* _Compliance:_ Integration to payment processor requires a PCI certified infrastructure and adherence to all compliances set by the card association network (VISA and MasterCard). The payment gateway on the other hand deals with all the intricacies related to ISO 8583 integration and the payment processor certification process. The time and cost associated with payment gateway integration are much lower as they offer a simple API layer for accepting and processing payment requests from merchants.
-
-* _Settlement:_ The payment gateway handles the settlement on behalf of merchant while the payment processor expects the merchant to send the end-of-day settlement request and handle the settlement file to be imported back into the system.
-
-###<p align="center">•••</p>
-
-Throughout history, as payments evolved from barter to coins to notes to cards to digital wallets, the underlying revenue model for each method (whether merchant, interchange or flat fees) has remained much the same. However, as digital payments methods, omnichannel, and instant payments converge to transform the payments industry, revenue models are likely to change, too. New networks and schemes will aggregate volumes and build ecosystems that generate network effects, enabling them to maintain premium pricing for customers while using low-cost bank rails to transfer funds.
-
-###### Ref 1: <a href="https://www.researchgate.net/publication/257716174_Payment_Systems_in_Economy_-_Present_End_Future_Tendencies" target="_blank">Researchgate's Payment Systems in Economy</a>; Ref 2: <a href="https://www.treasuryalliance.com/assets/publications/payments/Fundamentals_of_Payment_Systems.pdf">Treasuryalliance's fundamentals of Payment Systems</a>, Ref 3: <a href="https://www.mckinsey.com/industries/financial-services">Mckinsey's financial services insights</a>
+<small>
+References:
+<a href="https://www.researchgate.net/publication/257716174_Payment_Systems_in_Economy_-_Present_End_Future_Tendencies" target="_blank">
+Researchgate's Payment Systems in Economy</a>;
+<a href="https://www.treasuryalliance.com/assets/publications/payments/Fundamentals_of_Payment_Systems.pdf">
+Treasuryalliance's fundamentals of Payment Systems</a>;
+<a href="https://www.mckinsey.com/industries/financial-services">Mckinsey's financial services insights</a>.
+</small>

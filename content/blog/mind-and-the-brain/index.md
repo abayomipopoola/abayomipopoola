@@ -21,4 +21,4 @@ Now that the mind can be seen as a separate--although still very related to the 
 The mind though, must be a very powerful thing--having an energy of its own, that scientists can’t explain, yet.
 
 
-###### Ref. image by saatchiart
+<small> Reference image by saatchiart</small>

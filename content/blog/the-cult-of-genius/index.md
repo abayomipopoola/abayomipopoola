@@ -12,4 +12,4 @@ Our vanity, our self-love, promotes the cult of the genius… for if we think of
 
 Nietzsche implored us to consider exemplars to be above all else, craftsmen: “Do not talk about giftedness, inborn talents! One can name great men of all kinds who were very little gifted. They acquired greatness, became ‘geniuses’ (as we put it)…. They all possessed that seriousness of the efficient workman who first learns to construct the parts properly before it ventures to fashion a great whole; they allow themselves time for it, because they took more pleasure in making the little, secondary things well than in the effect of a dazzling whole.
 
-###### Ref. Grit, by Angela Duckworth
+<small> Ref: Grit, by Angela Duckworth</small>

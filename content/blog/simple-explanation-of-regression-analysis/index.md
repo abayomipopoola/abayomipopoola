@@ -41,7 +41,7 @@ with no books? The difference between the first and second is the difference bet
 A regression analysis can demonstrate correlation, but it doesn't prove cause. It helps establish the existence of connections that
 call for a closer investigation of careful studies and critical thinking.
 
-###### Ref. Freakonomics by Steven D. Levitt and Stephen J. Dubner; image, fiverr.com.
+<small>References: Freakonomics by Steven D. Levitt and Stephen J. Dubner; image, fiverr.com.</small>
 
 
 

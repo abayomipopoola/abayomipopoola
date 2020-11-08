@@ -43,7 +43,7 @@ _Aggregate supply_ is the total supply of goods and services that organisations 
 
 _Aggregate demand_ is the total demand for final goods and services in an economy at a given time and price level. It is the demand for the gross domestic product (GDP) of a country.
 
-###<p align="center">•••</p>
+######<p align="center">•••</p>
 
 For an economy in recession, the government might issue tax stimulus rebates to increase aggregate demand and fuel economic growth. In Keynesian economics, aggregate demand is what drives the performance and growth of the economy.
 
@@ -60,7 +60,7 @@ The figure below illustrates the _Expansionary Fiscal Policy_. The original equi
 
 ![Expansionary Fiscal Policy](./expansionary-fiscal-policy.png)
 
-###<p align="center">•••</p>
+######<p align="center">•••</p>
 
 The economists have said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don’t foreclose on loans, don’t put people off jobs, especially  if you can hold on to them, or if the government or the public can fund you to keep those jobs--because there’s this reality that once something goes under, be it a company, a job--and people leave, that it’s very hard to rebuild.
 

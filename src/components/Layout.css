@@ -38,6 +38,10 @@ p {
 	margin-top: 16px;
 }
 
+.post > ul, .post >  ol {
+	padding-left: var(--spacing-5);
+}
+
 blockquote {
   background: #f9f9f9;
   border-left: 3px solid #ccc;

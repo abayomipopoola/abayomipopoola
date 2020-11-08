@@ -364,4 +364,4 @@ Summary:
 * A lot of the top investors often sound like philosophers because investing is a real-world multi-variate activity. So they need to study everything, not just investment books whose advantages have already been competed away.
 * The more outraged someone is, the worse their judgment. You don’t want to hand them the keys to your car, let alone the keys to your company.
 
-###### Ref. image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.

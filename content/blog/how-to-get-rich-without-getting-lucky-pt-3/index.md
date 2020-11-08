@@ -320,4 +320,4 @@ Summary:
 * A well-functioning team has clear accountability for each position. If you have a small team with clearly delineated responsibilities, you can keep a very high level of accountability.
 * We’re socially hard wired not to fail in public. People who have the ability to fail in public under their own names gain a lot of power.
 
-###### Ref. image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.

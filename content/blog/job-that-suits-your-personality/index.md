@@ -80,5 +80,4 @@ these two kinds of people--which you probably won’t and you probably won’t a
 out how to get the balance right. And that’s extraordinarily complicated.
 
 
-###### Ref. image, scientopia.org; video link <a href="http://bit.ly/2PzUeTn" target="_blank">here</a>, by Jordan Peterson
-
+<small>References: image, scientopia.org; video link <a href="http://bit.ly/2PzUeTn" target="_blank">here</a>, by Jordan Peterson</small>
