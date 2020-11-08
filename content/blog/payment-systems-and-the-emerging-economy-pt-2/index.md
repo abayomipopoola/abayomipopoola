@@ -23,7 +23,7 @@ Apart from protecting your money from theft, a bank account connects people to t
 #### Financial Inclusion Efforts in Nigeria
 >According to research done by The Fletcher School and Mastercard Center for Inclusive Growth, of the $301 billion of funds flows from consumers to businesses in Nigeria, 98 percent is still based on cash.
 
-Several players in the Nigeria Fintech space are attempting to help close the gap of financial inclusion, while tapping into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
+Several players in the Nigeria Fintech space are attempting to help close the gap of financial inclusion, and tapping into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
 
 <b>Agency banking</b> is a type of branchless banking that allows the delivery of financial services outside conventional bank branches, often using agents and relying on information and communications technologies to transmit transaction details – typically card-reading point-of-sale (POS) terminals or mobile phones. It has the potential to radically reduce the cost of delivery and increase convenience for customers.
 
@@ -35,9 +35,9 @@ The CBN _Financial Policy and Regulation Department_ develops and implements pol
 
 #### POS Business
 
-A banking agents who run a _POS business_, as it's predominantly called, usually owns and operates a retail outlet, or a kioks where they conduct financial transactions that allow clients deposit, withdraw, transfer funds, pay bills, recharge airtime, do balance inquiry, and other related services.
+A banking agents who run a _POS business_, as it's predominantly called, usually owns and operates a retail outlet, or a kioks where they conduct financial transactions that allow customers to deposit, withdraw, transfer funds, pay bills, recharge airtime, do balance inquiry, and other related services.
 
-The business thrives in rural, and semi-urban centres with the unbanked and underbanked populace. It is similar to any other remote banking channel. A bank or super-agent equip agents with point-of-sale (POS) card reader, mobile phone, barcode scanner, personal identification number (PIN) pads, personal computer, etc. They are third party agents and can be an agent to as many banks as they can serve.
+The business thrives in rural, and semi-urban centres with the unbanked & underbanked populace. Banks or super-agents equip agents with point-of-sale (POS) card reader, mobile phone, barcode scanner, personal identification number (PIN) pads, personal computer, etc, to be able to transact.
 
 Here's an exhaustive list of services that can be rendered:
 
