@@ -35,7 +35,6 @@ p {
 .post img {
 	max-width: 100%;
 	padding: 0;
-	margin-top: 16px !important;
 }
 
 .post > ul, .post >  ol {

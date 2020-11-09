@@ -27,9 +27,9 @@ const BlogPostTemplate = ({ data, location }) => {
 			>
 				<header>
 					<h1 itemProp="headline">{post.frontmatter.title}</h1>
-					<small style={{ color: '#999999'}}>
+					<p style={{ color: '#999999', margin: '16px 0', fontSize: 13}}>
 						{post.frontmatter.date} · {post.timeToRead} min read
-					</small>
+					</p>
 				</header>
 				<section className='post'
 					dangerouslySetInnerHTML={{ __html: post.html }}
