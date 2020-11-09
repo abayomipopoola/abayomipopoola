@@ -108,7 +108,8 @@ New networks and schemes will aggregate volumes and build ecosystems that genera
 premium pricing for customers while using low-cost bank rails to transfer funds.
 
 <small> References:
-<a href="https://www.mckinsey.com/industries/financial-services">
+<a href="https://www.mckinsey.com/industries/financial-services" target="_blank">
 Mckinsey's financial services insights</a>;
-<a href="https://www.chetu.com/blogs/finance-2/">Chetu software solutions blog</a>.
+<a href="https://www.chetu.com/blogs/finance-2/" target="_blank">
+Chetu software solutions blog</a>.
 </small>
