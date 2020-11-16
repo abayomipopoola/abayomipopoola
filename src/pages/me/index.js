@@ -26,7 +26,7 @@ class PortfolioPage extends React.Component {
         </p>
 
         <p>
-			You can also shoot me <a href="mailto:abayomip@hey.com">an email</a>.
+			You can also shoot me <a href="mailto:abayomi@hey.com">an email</a>.
         </p>
 
         <div>

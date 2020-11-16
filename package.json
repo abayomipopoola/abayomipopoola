@@ -2,7 +2,7 @@
 	"name": "abayomipopoola",
 	"description": "Personal Blog",
 	"version": "1.0.0",
-	"author": "Abayomi Popoola <abayomip@hey.com>",
+	"author": "Abayomi Popoola <abayomi@hey.com>",
 	"dependencies": {
 	  "@fortawesome/fontawesome-svg-core": "^1.2.32",
 	  "@fortawesome/react-fontawesome": "^0.1.11",
