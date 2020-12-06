@@ -181,16 +181,16 @@ class CvPage extends React.Component {
 
                   <H2>Kudi.com <span>Platform Tech Lead – Jul, 2019 - Aug, 2020</span></H2>
                   <Ul>
-                      <li>I lead the platform engineering team. I am responsible for leading the technical design of systems and services.</li>
+                      <li>I led the platform engineering team. I was responsible for leading the technical design of systems and services.</li>
                       <li>I provide project planning and management for established initiatives within the company.</li>
-                      <li>I ensure that projects are completed to specification, within an established time frame.</li>
+                      <li>I ensured projects were completed to specification, within an established time frame.</li>
                       <li><strong>Technologies</strong>: Agile/Scrum, Jira, Java, Spring, Dropwizard, Golang, NodeJS, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
                   </Ul>
 
                   <H2>Kudi.com <span>Senior Platform Engineer – Jan, 2019 - Jun, 2019</span></H2>
                   <Ul>
-                      <li>Design and architect software; write application in an agile environment using Domain-driven and Test-driven development approach.</li>
-                      <li>Utilises the speed and effectiveness of Apache Kafka to scale transactions in a fault-tolerant manner.</li>
+                      <li>Designed and architected software applications; built applications in an agile environment using Domain-driven and Test-driven development approach.</li>
+                      <li>Utilised the speed and effectiveness of Apache Kafka to scale transactions in a fault-tolerant manner.</li>
                       <li><strong>Technologies</strong>: Java, Spring, Dropwizard, Golang, NodeJS, Python, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
                   </Ul>
 
@@ -199,7 +199,7 @@ class CvPage extends React.Component {
                     Jobberman is an online career portal from Nigeria. They connect employers to employees seeking job opportunities.
                   </P>
                   <Ul>
-                      <li>Head team of developers and Sys. Admin in maintaining and deploying new features on all Jobberman (Nigeria & Ghana) platforms.</li>
+                      <li>Head team of developers and system admin in maintaining and deploying new features on both Jobberman (Nigeria & Ghana) platforms.</li>
                       <li>Designed and coded application in an agile environment utilising a test-driven development approach.</li>
                       <li>Development and maintenance of search service using Elasticsearch. Rest API development and performance improvements. Ensure application security for all Jobberman websites and web services. Ensure rapid deployment of bug fixes. Deployment of products and features across countries (Nigeria & Ghana).</li>
                       <li>Handling platform infrastructure and servers management and administration. DevOps, continuous integration, enforcing testing and code review.</li>
