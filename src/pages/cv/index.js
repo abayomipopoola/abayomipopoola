@@ -162,13 +162,21 @@ class CvPage extends React.Component {
 
               <Dt>Experience</Dt>
               <Dd>
-				  <H2>The Linux Foundation <span>Senior Software Engineer – Oct, 2020 - Present</span></H2>
-				  <P>
-					  The Linux Foundation is a nonprofit organization enabling mass innovation through open source.
-				  </P>
-				  <Ul>
-					  <li>Working remotely as a core engineer working on a collection of products and services to help the open-source community.</li>
-				  </Ul>
+                  <H2>Bread <span>Senior Software Engineer – Apr, 2021 - Present</span></H2>
+                  <P>
+                    Bread helps retailers offer pay-over-time solutions as a way to build stronger consumer connections and power sales.
+                  </P>
+                  <Ul>
+                    <li>Working remotely with team of highly skilled engineers.</li>
+                  </Ul>
+
+                  <H2>The Linux Foundation <span>Senior Software Engineer – Oct, 2020 - Mar, 2021</span></H2>
+                  <P>
+                    The Linux Foundation is a nonprofit organization enabling mass innovation through open source.
+                  </P>
+                  <Ul>
+                    <li>Working remotely as a core engineer working on a collection of products and services to help the open-source community.</li>
+                  </Ul>
 
                   <H2>Kudi.com <span>Software Engineering Manager – Jan, 2020 - Aug, 2020</span></H2>
                   <P>
