@@ -175,7 +175,7 @@ class CvPage extends React.Component {
                     The Linux Foundation is a nonprofit organization enabling mass innovation through open source.
                   </P>
                   <Ul>
-                    <li>Working remotely as a core engineer working on a collection of products and services to help the open-source community.</li>
+                    <li>Worked remotely as a core engineer on a collection of products that help the open-source community.</li>
                   </Ul>
 
                   <H2>Kudi.com <span>Software Engineering Manager – Jan, 2020 - Aug, 2020</span></H2>
