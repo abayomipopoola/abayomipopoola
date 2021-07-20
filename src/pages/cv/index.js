@@ -106,7 +106,7 @@ class CvPage extends React.Component {
 
           <div id="objective">
               <P>
-                  I am a result-driven engineer with 6+ years experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
+                  I am a result-driven engineer with 7+ years experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
               </P>
           </div>
 
