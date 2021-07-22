@@ -40,7 +40,9 @@ Although, this does not mean that we should spend extensive effort and time on c
 
 ![batch sizes](./batch-economics.jpg)
 
-The graph above shows a classic example of batch size optimization which trades off a hyperbolic function against a linear function. Knowing that important optimizations take this form is surprisingly useful because the U-curves have two important properties. First, optimization never occurs at extreme values. If optimization occurred at extreme values, then quantification would be unnecessary. We would only need to know the direction that maximizes performance. In contrast, U-curve optimizations virtually always require quantification, because we must balance two or more competing factors.
+The graph above shows a classic example of batch size optimization which trades off a hyperbolic function against a linear function. Knowing that important optimizations take this form is surprisingly useful because the U-curves have two important properties. First, optimization never occurs at extreme values. If optimization occurred at extreme values, then quantification would be unnecessary. We would only need to know the direction that maximizes performance. In contrast, U-curve optimizations virtually always require quantification, because we must balance two or more competing factors. 
+
+We'll see an example of this in a bit.
 
 
 #### Exploiting Variability
@@ -85,7 +87,7 @@ Develop rapid feedback systems. Employ early warning systems and value at risk t
 
 Decentralize decision-making to speed the flow and avoid management bottlenecks. Provide high-level structure in the form of rough-cut plans, rules of thumb, intentions, templates, and sequences.
 
-######<p align="center">•••</p>
+######<p align="center">***</p>
 
 
 ### Introduction to Queueing Theory

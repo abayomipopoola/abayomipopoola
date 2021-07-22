@@ -75,7 +75,7 @@ Payment processors are also referred to as acquirers. The payment processor as a
 engine that processes real-time transactions and end of day settlement requests and are also responsible for handling
 chargebacks from the Issuing bank.
 
-######<p align="center">•••</p>
+######<p align="center">***</p>
 
 Studying the Nigeria payments space, one can see an emerging convergence between the POS and payment gateway industry.
 Agent facilitators and super-agents are leaning towards implementing their payment gateway to get a cut of all the transactions that are

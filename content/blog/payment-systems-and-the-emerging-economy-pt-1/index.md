@@ -64,7 +64,7 @@ The diagram above shows the participants in a typical card transaction. The card
 * A _network_, at its simplest, is a directory of participants along with the information required to access their stores of value and settle transfers: names and addresses, account details, and so on. Primary networks, such as ACH and real-time gross settlement (RTGS), are integrated with bank systems and do not rely on any other settlement mechanisms to execute payments.
 * A _scheme_ also has a directory of participants, but what differentiates it from a network is that it also enforces rules and standards. As well as connecting to bank networks to transfer funds, it ensures that participants abide by rules and standards on fraud liability, participant eligibility, data security, and other matters. Examples of payments schemes include Visa, Mastercard, China UnionPay, Zelle, and TransferWise.
 
-######<p align="center">•••</p>
+######<p align="center">***</p>
 
 You just completed the first part of the _Payment Systems, and the Emerging Economy_ blog post. <a href="/payment-systems-and-the-emerging-economy-pt-2" class="read-more">_(Read the concluding part here)_</a></a>
 
