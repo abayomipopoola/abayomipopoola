@@ -15,63 +15,61 @@ const TagsTemplate = ({ pageContext, data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-        <SEO title="Tag posts" />
-		<Bio />
+      <SEO title="Tagged posts" />
+		  <Bio />
         
-    <h1>
-      {totalCount} tagged <em>{tag}</em> {totalCount == 1 ? 'post' : 'posts'} 
-    </h1>
+      <h1>{totalCount} tagged <em>{tag}</em> {totalCount == 1 ? 'post' : 'posts'}</h1>
 
-		<ol style={{ listStyle: `none` }}>
-            {posts.map(post => {
-                const title = post.frontmatter.title || post.fields.slug
-                return (
-                    <li key={post.fields.slug}>
-                        <article
-                            className="post-list-item"
-                            itemScope
-                            itemType="http://schema.org/Article"
-                        >
-                            <header>
-                                <h3>
-                                    <Link to={post.fields.slug} itemProp="url">
-                                        <span itemProp="headline">{title}</span>
-                                    </Link>
-                                </h3>
-                            </header>
-                            <section>
-                                <p
-                                    dangerouslySetInnerHTML={{
-                                        __html: post.frontmatter.spoiler
-                                    }}
-                                    itemProp="description"
-                                />
-                                <small style={{ color: '#999999'}}>
-                                    {`${post.frontmatter.date} · ${post.timeToRead} min read`}
-                                </small>
-                                <small>
-                                  {post.frontmatter.tags &&
-                                      post.frontmatter.tags.map((tag) => {
-                                      return (
-                                          <span key={tag}>
-                                              <Link to={`/tags/${kebabCase(tag)}`}>
-                                                <em style={{ color:'#fff',fontSize:'10px',padding:'1px 2px',marginLeft:'0.6rem',background: '#41b6e5'}}>{tag}</em>
-                                              </Link>
-                                          </span>
-                                      );
-                                  })}
-                                </small>
-                            </section>
-                        </article>
-                    </li>
-                )
-            })}
-        </ol>
+		  <ol style={{ listStyle: `none` }}>
+        {posts.map(post => {
+            const title = post.frontmatter.title || post.fields.slug
+            return (
+                <li key={post.fields.slug}>
+                    <article
+                        className="post-list-item"
+                        itemScope
+                        itemType="http://schema.org/Article"
+                    >
+                        <header>
+                            <h3>
+                                <Link to={post.fields.slug} itemProp="url">
+                                    <span itemProp="headline">{title}</span>
+                                </Link>
+                            </h3>
+                        </header>
+                        <section>
+                            <p
+                                dangerouslySetInnerHTML={{
+                                    __html: post.frontmatter.spoiler
+                                }}
+                                itemProp="description"
+                            />
+                            <small style={{ color: '#999999'}}>
+                                {`${post.frontmatter.date} · ${post.timeToRead} min read`}
+                            </small>
+                            <small>
+                              {post.frontmatter.tags &&
+                                  post.frontmatter.tags.map((tag) => {
+                                  return (
+                                      <span key={tag}>
+                                          <Link to={`/tags/${kebabCase(tag)}`}>
+                                            <em style={{ color:'#fff',fontSize:'10px',padding:'1px 2px',marginLeft:'0.6rem',background: '#41b6e5'}}>{tag}</em>
+                                          </Link>
+                                      </span>
+                                  );
+                              })}
+                            </small>
+                        </section>
+                    </article>
+                </li>
+            )
+        })}
+      </ol>
 
-        <Link style={{ boxShadow: 'none' }} to='/tags'>
-            <em>View All Tags</em>
-        </Link>
-      </Layout>
+      <Link style={{ boxShadow: 'none' }} to='/tags'>
+          <em>View All Tags</em>
+      </Link>
+    </Layout>
   );
 };
 

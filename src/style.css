@@ -251,9 +251,9 @@ a:focus {
 	padding: var(--spacing-10) var(--spacing-5);
 }
 
-.global-wrapper[data-is-root-path="true"] .bio {
+/* .global-wrapper[data-is-root-path="true"] .bio {
 	margin-bottom: var(--spacing-20);
-}
+} */
 
 .global-header {
 	margin-bottom: var(--spacing-6);

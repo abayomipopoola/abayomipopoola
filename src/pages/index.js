@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/Bio'
 import Layout from '../components/Layout'
+import Bio from '../components/Bio'
 import SEO from '../components/Seo'
 
 const kebabCase = string => string.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()
@@ -16,17 +16,18 @@ const BlogIndex = ({ data, location }) => {
 			<Layout location={location} title={siteTitle}>
 				<SEO title="All posts" />
 				<Bio />
-				<p>
-					No blog posts found.
-				</p>
+				<h1><em>No blog posts found.</em></h1>
 			</Layout>
 		)
 	}
 
     return (
-		<Layout location={location} title={siteTitle}>
+	  <Layout location={location} title={siteTitle}>
 		<SEO title="All posts" />
 		<Bio />
+
+		<h1><em>Latest posts</em></h1>
+
 		<ol style={{ listStyle: `none` }}>
 			{posts.map(post => {
 				const title = post.frontmatter.title || post.fields.slug
