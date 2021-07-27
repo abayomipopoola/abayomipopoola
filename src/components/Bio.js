@@ -49,12 +49,12 @@ const Bio = () => {
 				<p>
 					{author?.summary || null}
 					{` `}
-					<a href={`https://twitter.com/${social?.twitter || ``}`}>
-						<em>Follow me on Twitter</em>
-					</a>
-					{` `} &bull;{` `}
 					<Link style={{ boxShadow: 'none' }} to='/me'>
-						<em>View my portfolio{' '}</em><span>&#187;</span>
+						<em><span>&#187;</span>{' '}About me</em>
+					</Link>
+					{` `}&bull;{` `}
+					<Link style={{ boxShadow: 'none' }} to='/tags'>
+						<em>View all articles tags</em>
 					</Link>
 				</p>
 			)}

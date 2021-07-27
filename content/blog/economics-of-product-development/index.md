@@ -1,6 +1,7 @@
 ---
 title: Economics of Product Development
 date: "2021-07-20T11:27:03.284Z"
+tags: [economics,  product development]
 spoiler: Understanding product development as an example of a systematic process that we can model and improve upon.
 ---
 

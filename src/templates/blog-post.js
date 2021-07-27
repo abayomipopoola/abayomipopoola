@@ -1,11 +1,12 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Bio from "../components/Bio"
-import Layout from "../components/Layout"
-import Disqus from "gatsby-plugin-disqus"
-import SEO from "../components/Seo"
-import Share from "../components/Share";
+import Layout from '../components/Layout'
+import Disqus from 'gatsby-plugin-disqus'
+import SEO from '../components/Seo'
+import Share from '../components/Share'
+
+const kebabCase = string => string.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()
 
 const BlogPostTemplate = ({ data, location }) => {
 	const post = data.markdownRemark
@@ -35,6 +36,18 @@ const BlogPostTemplate = ({ data, location }) => {
 					dangerouslySetInnerHTML={{ __html: post.html }}
 					itemProp="articleBody"
 				/>
+				<p>
+					{post.frontmatter.tags &&
+						post.frontmatter.tags.map((tag) => {
+						return (
+							<span key={tag}>
+								<Link to={`/tags/${kebabCase(tag)}`}>
+									<em style={{ color:'#fff',fontSize:'10px',padding:'1px 2px',marginLeft:'0.6rem',background: '#999999'}}>{tag}</em>
+								</Link>
+							</span>
+						);
+					})}
+				</p>
 				<Share
 					socialConfig={{
 						twitterHandle,
@@ -110,6 +123,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+		tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

@@ -1,6 +1,7 @@
 ---
 title: How to Get Rich (without getting lucky) summarised.
 date: "2018-08-20T22:12:03.284Z"
+tags: [tweetstorm, naval ravikant]
 spoiler: Summarised note on the Naval’s expanded points from his “How To Get Rich Without Getting Lucky” tweetstorm.
 ---
 

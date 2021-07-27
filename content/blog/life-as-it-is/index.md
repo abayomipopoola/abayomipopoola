@@ -1,6 +1,7 @@
 ---
 title: Life as it is
 date: "2018-07-05T22:12:03.284Z"
+tags: [random]
 spoiler: Faux friendship.
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: The cult of the genius
 date: "2018-05-28T22:40:32.169Z"
+tags: [random, psychology]
 spoiler: Passion (a deep, enduring knowledge of what you want) and perseverance (hard work and resilience).
 ---
 

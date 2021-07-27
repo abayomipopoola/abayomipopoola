@@ -57,7 +57,7 @@
 	--color-primary: #005b99;
 	--color-text: #2e353f;
 	--color-text-light: #4f5969;
-	--color-heading: #1a202c;
+	--color-heading: #121212;
 	--color-heading-black: black;
 	--color-accent: #d1dce5;
 }
@@ -120,7 +120,8 @@ h6 {
 h1 {
 	font-weight: var(--fontWeight-black);
 	font-size: var(--fontSize-5);
-	color: var(--color-heading-black);
+	color: #121212;
+	/* color: var(--color-heading-black); */
 }
 
 h2 {
@@ -154,8 +155,12 @@ h4 > a,
 h5 > a,
 h6 > a {
 	text-decoration: none;
-	color: #146396;
+	color: #121212;
 }
+
+h3 > a:hover {
+    color: #555555;
+  }
 
 /* Prose */
 

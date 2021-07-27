@@ -22,6 +22,9 @@ class PortfolioPage extends React.Component {
 			My name is Abayomi, a programmer and entrepreneur who loves building businesses.
         </p>
         <p>
+      I've got 7+ years of experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
+        </p>
+        <p>
 			Please feel free to view my <a href="/cv">résumé</a>.
         </p>
 

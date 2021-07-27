@@ -1,11 +1,16 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+const kebabCase = string => string.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
 	const { createPage } = actions
 
 	// Define a template for blog post
 	const blogPost = path.resolve(`./src/templates/blog-post.js`)
+
+  	// Define a template for blog tags
+	const blogTags = path.resolve(`./src/templates/tags.js`)
 
 	// Get all markdown blog posts sorted by date
 	const result = await graphql(
@@ -22,6 +27,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
           }
         }
+        tagsGroup: allMarkdownRemark(
+          limit: 5000
+        ) {
+          group(field: frontmatter___tags) {
+            fieldValue
+          }
+        }
       }
     `
 	)
@@ -35,6 +47,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 	}
 
 	const posts = result.data.allMarkdownRemark.nodes
+  const tags = result.data.tagsGroup.group;
 
 	// Create blog posts pages
 	// But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -56,6 +69,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 			})
 		})
 	}
+
+  tags.forEach((tag) => {
+    createPage({
+      path: `/tags/${kebabCase(tag.fieldValue)}/`,
+      component: blogTags,
+      context: {
+        tag: tag.fieldValue,
+      },
+    });
+  });
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -101,6 +124,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      tags: [String!]
     }
     type Fields {
       slug: String

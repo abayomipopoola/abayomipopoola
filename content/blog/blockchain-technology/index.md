@@ -1,6 +1,7 @@
 ---
 title: Blockchain Technology
 date: "2019-04-27T22:40:32.169Z"
+tags: [technology]
 spoiler: A distributed ledger at the heart of bitcoin and other virtual currencies, that makes it possible to share data publicly without third parties.
 ---
 

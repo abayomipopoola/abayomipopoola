@@ -5,6 +5,7 @@ body {
 
 a {
   color: #146396;
+  text-decoration: none;
 }
 
 a.read-more {
@@ -24,15 +25,7 @@ p {
   font-family: 'Noto Serif', serif;
 }
 
-.post h3 {
-  margin-left: calc(-1 * var(--spacing-3));
-}
-
 .post h4 {
-  font-size: 1.3rem;
-}
-
-.post h5 {
   font-size: 1.2rem;
 }
 
@@ -48,7 +41,7 @@ p {
 blockquote {
   background: #f9f9f9;
   border-left: 3px solid #ccc;
-  margin-left: calc(-1 * var(--spacing-3));
+  margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);
   padding: 0.5em 20px;
 }
