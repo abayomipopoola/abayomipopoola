@@ -42,7 +42,7 @@ const BlogPostTemplate = ({ data, location }) => {
 						return (
 							<span key={tag}>
 								<Link to={`/tags/${kebabCase(tag)}`}>
-									<em style={{ color:'#fff',fontSize:'10px',padding:'1px 2px',marginLeft:'0.6rem',background: '#999999'}}>{tag}</em>
+									<em style={{ color:'#fff',fontSize:'10px',padding:'1px 2px',marginLeft:'0.6rem',background: '#41b6e5'}}>{tag}</em>
 								</Link>
 							</span>
 						);

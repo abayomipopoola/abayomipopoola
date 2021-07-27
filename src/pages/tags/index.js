@@ -16,7 +16,7 @@ const Tags = ({ data, location }) => {
 		<SEO title="All tags" />
 		<Bio />
 
-      <h1 style={{ backgroundColor:'#999999',padding:'0.75rem 1.5rem' }}>All tags</h1>
+      <h1 style={{ backgroundColor:'#41b6e5',padding:'0.75rem 1.5rem' }}>All tags</h1>
       <ul>
         {tags.map((tag) => (
           <li key={tag.fieldValue}>
