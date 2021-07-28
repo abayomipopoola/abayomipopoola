@@ -54,7 +54,7 @@ const Bio = () => {
 					</Link>
 					{` `}&bull;{` `}
 					<Link style={{ boxShadow: 'none' }} to='/tags'>
-						<em>View all articles tags</em>
+						<em>View all post tags</em>
 					</Link>
 				</p>
 			)}
