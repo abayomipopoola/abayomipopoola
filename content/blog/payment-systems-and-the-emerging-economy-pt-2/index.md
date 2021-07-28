@@ -1,7 +1,7 @@
 ---
 title: Payment Systems, and the Emerging Economy pt. 2
 date: "2020-11-07T11:10:03.284Z"
-tags: [business, economics, finance]
+tags: [payments, economics, business domain]
 spoiler: The role of payment systems and services in financial inclusion, and as a key infrastructure for economic development. Contd.
 ---
 

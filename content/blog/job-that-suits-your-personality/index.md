@@ -1,7 +1,7 @@
 ---
 title: It’s important that your job matches your personality
 date: "2018-12-13T22:40:32.169Z"
-tags: [business domain, psychology]
+tags: [psychology, business domain]
 spoiler: Scale an enterprise by understand how different personalities map to different kinds of jobs, and who'd be good or sucks at what.
 ---
 
