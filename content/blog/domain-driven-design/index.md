@@ -1,7 +1,7 @@
 ---
 title: Domain-Driven Design
 date: "2019-12-30T11:00:03.284Z"
-tags: [business, software engineering]
+tags: [business domain, programming]
 spoiler: Tackling software complexities by connecting its related pieces into an ever-evolving business model and processes.
 ---
 

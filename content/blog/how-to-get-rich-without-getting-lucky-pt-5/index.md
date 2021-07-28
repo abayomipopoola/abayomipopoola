@@ -1,7 +1,7 @@
 ---
 title: How to Get Rich (without getting lucky) pt. 5
 date: "2018-08-20T22:09:03.284Z"
-tags: [tweetstorm, naval ravikant]
+tags: [tweetstorm, naval]
 spoiler: Part five of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
 ---
 
