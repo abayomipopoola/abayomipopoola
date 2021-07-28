@@ -320,6 +320,16 @@ a:focus {
 	margin: var(--spacing-0);
 }
 
+.comments-divider {
+	background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAMAAQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQJ/8QAJRAAAAQFAgcAAAAAAAAAAAAAAQIDBQQGERITACIVISRCRGFz/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANvhYjTP1nAGCZcnnuauLN8CYlbUA7NwXczbrsh2qpeldrnWXW53d2xvc49yhU4lRSKhyLY7ygbGS4BtTLWgFD2I1MYxhaD/2Q==);
+	background-repeat: repeat;
+	margin-bottom: calc(var(--spacing-8) / 2);
+}
+
+.comments-divider-inner {
+	display: inline-block;
+}
+
 .gatsby-highlight {
 	margin-bottom: var(--spacing-8);
 }
