@@ -62,7 +62,7 @@ const BlogIndex = ({ data, location }) => {
 										return (
 											<span key={tag}>
 												<Link to={`/tags/${kebabCase(tag)}`}>
-													<em style={{ color:'#fff',fontSize:'10px',padding:'1px 2px',marginLeft:'0.6rem',background: '#41b6e5'}}>{tag}</em>
+													<em className="tags-highlight">{tag}</em>
 												</Link>
 											</span>
 										);

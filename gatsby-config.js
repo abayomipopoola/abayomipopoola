@@ -65,7 +65,7 @@ module.exports = {
         short_name: `abayomipopoola`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#41b6e5`,
+        theme_color: `#0071e3`,
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
       },
