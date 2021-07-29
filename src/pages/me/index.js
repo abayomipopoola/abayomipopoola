@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
+import profileImg from './profile-pic.jpg';
 
 class PortfolioPage extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class PortfolioPage extends React.Component {
           meta={[{ name: 'description', content: "My Portfolio" }]}
           title="My Portfolio"
         />
+        <img src={profileImg} alt="Logo" style={{ width:'100px', height:'100px', borderRadius: '50%' }} />
         <div style={{ float: 'right' }}>
           <Link style={{ boxShadow: 'none' }} to='/'>
           <span>&#8592;</span>{' '}back
@@ -23,6 +25,9 @@ class PortfolioPage extends React.Component {
         </p>
         <p>
       I've got 7+ years of experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
+        </p>
+        <p>
+        I’m currently a Snr. Software Engineer at <a href="https://www.breadpayments.com/" target="_blank" >Bread</a>, a financial service firm based in New York. I also freelance at Bytecreatives.
         </p>
         <p>
 			Please feel free to view my <a href="/cv">résumé</a>.
