@@ -29,7 +29,7 @@ const Layout = ({ location, title, children }) => {
 			<footer>
 				© {new Date().getFullYear()},
 				{` `}
-				<a href="https://twitter.com/abayomip_" target="_blank">Abayomi Popoola</a>
+				<a href="https://twitter.com/abayomivp" target="_blank">Abayomi Popoola</a>
 			</footer>
 		</div>
     )

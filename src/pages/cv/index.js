@@ -273,7 +273,7 @@ class CvPage extends React.Component {
               <Dd><Ul>
                       <li>Personal Website: <A href="#">abayomipopoola.com</A></li>
                       <li>LinkedIn: <A href="https://www.linkedin.com/in/abayomipopoola/" target="_blank">linkedin.com/in/abayomipopoola</A></li>
-                      <li>Twitter:  <A href="https://twitter.com/abayomip_" target="_blank">twitter.com/abayomip_</A></li>
+                      <li>Twitter:  <A href="https://twitter.com/abayomivp" target="_blank">twitter.com/abayomivp</A></li>
                       <li>Github: <A href="https://github.com/abayomipopoola" target="_blank">github.com/abayomipopoola</A></li>
                   </Ul>
               </Dd>
