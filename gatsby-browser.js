@@ -1,8 +1,6 @@
 // custom typefaces
-import 'typeface-libre-baskerville'
-import 'typeface-noto-serif'
-import "typeface-montserrat"
-import "typeface-merriweather"
+import 'typeface-lora'
+import 'typeface-spectral'
 // normalize CSS across browsers
 import "./src/normalize.css"
 // custom CSS styles

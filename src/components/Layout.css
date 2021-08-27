@@ -1,6 +1,6 @@
 body {
-  font-family: 'Noto Serif', serif;
-  font-size: 17px;
+  font-family: Spectral, sans-serif;
+  font-size: 20px;
 }
 
 a {
@@ -22,11 +22,11 @@ p {
 
 .post {
   color: #333333;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Serif', serif;
+  font-family: Lora, sans-serif;
 }
 
 .post h4 {
