@@ -12,7 +12,8 @@ const capitalize = string => string.replace(/\b([a-z])/g, (w) => w.charAt(0).toU
 const BlogPostTemplate = ({ data, location }) => {
 	const post = data.markdownRemark
 	const siteTitle = data.site.siteMetadata?.title || `Title`
-	const { previous, next, slug  } = data
+	const { previous, next } = data
+	const siteSlug = post.fields.slug
 	const siteUrl = data.site.siteMetadata.siteUrl
 	const twitterHandle = data.site.siteMetadata.social.twitter
 
@@ -53,7 +54,7 @@ const BlogPostTemplate = ({ data, location }) => {
 					socialConfig={{
 						twitterHandle,
 						config: {
-							url: `${siteUrl+slug}`,
+							url: `${siteUrl+siteSlug}`,
 							title: post.frontmatter.title,
 						},
 					}}
@@ -94,7 +95,7 @@ const BlogPostTemplate = ({ data, location }) => {
 			<Disqus
 				identifier={post.id}
 				title={post.frontmatter.title}
-				url={`${siteUrl+slug}`}
+				url={`${siteUrl+siteSlug}`}
 			/>
 		</Layout>
 	)
@@ -122,6 +123,9 @@ export const pageQuery = graphql`
       excerpt
       html
       timeToRead
+	  fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
