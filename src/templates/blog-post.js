@@ -7,6 +7,7 @@ import SEO from '../components/Seo'
 import Share from '../components/Share'
 
 const kebabCase = string => string.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()
+const capitalize = string => string.replace(/\b([a-z])/g, (w) => w.charAt(0).toUpperCase() + w.slice(1));
 
 const BlogPostTemplate = ({ data, location }) => {
 	const post = data.markdownRemark
@@ -42,7 +43,7 @@ const BlogPostTemplate = ({ data, location }) => {
 						return (
 							<span key={tag}>
 								<Link to={`/tags/${kebabCase(tag)}`}>
-									<em className="tags-highlight">{tag}</em>
+									<span className="tags-highlight">{capitalize(tag)}</span>
 								</Link>
 							</span>
 						);

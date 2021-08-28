@@ -4,8 +4,10 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Bio from '../components/Bio'
 import SEO from '../components/Seo'
+import { string } from 'prop-types'
 
 const kebabCase = string => string.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()
+const capitalize = string => string.replace(/\b([a-z])/g, (w) => w.charAt(0).toUpperCase() + w.slice(1));
 
 const BlogIndex = ({ data, location }) => {
 	const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -62,7 +64,7 @@ const BlogIndex = ({ data, location }) => {
 										return (
 											<span key={tag}>
 												<Link to={`/tags/${kebabCase(tag)}`}>
-													<em className="tags-highlight">{tag}</em>
+													<span className="tags-highlight">{capitalize(tag)}</span>
 												</Link>
 											</span>
 										);

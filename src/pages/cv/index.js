@@ -87,8 +87,9 @@ class CvPage extends React.Component {
           meta={[{ name: 'description', content: "My CV" }]}
           title="My CV"
         />
+        <a name="top"></a>
         <div style={{ float: 'right' }}>
-          <Link style={{ boxShadow: 'none' }} to='/'>
+          <Link style={{ boxShadow: 'none' }} to='/me'>
           <span>&#8592;</span>{' '}back
           </Link>
         </div>
@@ -284,9 +285,9 @@ class CvPage extends React.Component {
         <div style={{clear: 'both'}}></div>
 
         <div style={{ float: 'right' }}>
-          <Link style={{ boxShadow: 'none' }} to='/cv'>
-          <span>&#8593;</span>{' '}top
-          </Link>
+          <a style={{ boxShadow: 'none' }} href="#top">
+            <span>&#8593;</span>{' '}top
+          </a>
         </div>
       </Layout>
     )

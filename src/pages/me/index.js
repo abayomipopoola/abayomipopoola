@@ -13,7 +13,10 @@ class PortfolioPage extends React.Component {
           meta={[{ name: 'description', content: "My Portfolio" }]}
           title="My Portfolio"
         />
-        <img src={profileImg} alt="Logo" style={{ width:'100px', height:'100px', borderRadius: '50%' }} />
+        <a name="top"></a>
+        <div style={{ float: 'left' }}>
+          <img src={profileImg} alt="Logo" style={{ width:'100px', height:'100px', borderRadius: '50%' }} />
+        </div>
         <div style={{ float: 'right' }}>
           <Link style={{ boxShadow: 'none' }} to='/'>
           <span>&#8592;</span>{' '}back
@@ -55,9 +58,9 @@ class PortfolioPage extends React.Component {
         </div>
 
         <div style={{ float: 'right' }}>
-          <Link style={{ boxShadow: 'none' }} to='/me'>
-          <span>&#8593;</span>{' '}top
-          </Link>
+        <a style={{ boxShadow: 'none' }} href="#top">
+            <span>&#8593;</span>{' '}top
+          </a>
         </div>
       </Layout>
     )

@@ -6,6 +6,7 @@ import Bio from '../components/Bio'
 import SEO from '../components/Seo'
 
 const kebabCase = string => string.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()
+const capitalize = string => string.replace(/\b([a-z])/g, (w) => w.charAt(0).toUpperCase() + w.slice(1));
 
 const TagsTemplate = ({ pageContext, data, location }) => {
   const { tag } = pageContext;
@@ -53,7 +54,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
                                   return (
                                       <span key={tag}>
                                           <Link to={`/tags/${kebabCase(tag)}`}>
-                                            <em className="tags-highlight">{tag}</em>
+                                            <span className="tags-highlight">{capitalize(tag)}</span>
                                           </Link>
                                       </span>
                                   );
