@@ -90,7 +90,23 @@ const BlogPostTemplate = ({ data, location }) => {
 					</li>
 				</ul>
 			</nav>
-			
+			<section className="subscribe-section">
+				<div className="card card--subscribe align--center txt--x-small">
+					<form action="https://world.hey.com/abayomi/subscribers" accept-charset="UTF-8" data-remote="true" method="post">
+						<label for="subscriber[email_address]" className="flush--top push_quarter--bottom txt--bold">
+							Subscribe below to get future posts
+						</label>
+						<div className="flex u-full-width push_half--top">
+							<input type="email" name="subscriber[email_address]" placeholder="Type your email…" required="true" className="subscribe__email input input--full-width input--borderless unpad flex-item--grow" />
+							<button className="subscribe__submit btn--plain txt--x-small">Subscribe</button>
+						</div>
+					</form>
+					<p className="txt--x-small flush--bottom">
+					Or grab the <a className="permalink" href="https://world.hey.com/abayomi/feed.atom">RSS feed</a>
+					</p>
+				</div>
+			</section>
+
 			<div className="comments-divider"><span className="comments-divider-innerr">&nbsp;</span></div>
 			<Disqus
 				identifier={post.id}
