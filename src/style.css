@@ -89,7 +89,8 @@ footer {
 }
 
 hr {
-	background: var(--color-accent);
+	/* background: var(--color-accent); */
+	background: #ccc;
 	height: 1px;
 	border: 0;
 }
