@@ -8,7 +8,7 @@ module.exports = {
     description: `A blog about ideas worth sharing.`,
     siteUrl: 'https://abayomipopoola.com',
 	social: {
-	  twitter: `abayomivp`,
+	  twitter: `abayomipo`,
 	},
   },
   pathPrefix: '/',
