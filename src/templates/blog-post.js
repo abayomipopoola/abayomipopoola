@@ -108,11 +108,11 @@ const BlogPostTemplate = ({ data, location }) => {
 			</section>
 
 			<div className="comments-divider"><span className="comments-divider-innerr">&nbsp;</span></div>
-			<Disqus
+			{/* <Disqus
 				identifier={post.id}
 				title={post.frontmatter.title}
 				url={`${siteUrl+siteSlug}`}
-			/>
+			/> */}
 		</Layout>
 	)
 }
