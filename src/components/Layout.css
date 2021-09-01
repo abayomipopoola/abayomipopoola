@@ -39,7 +39,13 @@ p {
 }
 
 .post > ul, .post >  ol {
-	padding-left: var(--spacing-5);
+	padding-left: 20px;
+}
+
+@media (min-width: 40em) {
+  .post > ul, .post >  ol {
+    padding-left: 40px;
+  }
 }
 
 blockquote {
