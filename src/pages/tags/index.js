@@ -15,13 +15,13 @@ const Tags = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO 
-        title="Tags" 
+        title="Posts Tags" 
         description="All posts by tag"
         slug="/tags" 
       />
       <Bio />
 
-        <h2><em>Tags</em></h2>
+        <h2><em>Posts Tags</em></h2>
 
         <ul style={{listStyle: 'none'}}>
         {tags.map((tag) => (

@@ -72,7 +72,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
       </ol>
 
       <Link style={{ boxShadow: 'none' }} to='/tags'>
-          <em>Tags</em>
+          <em>Posts Tags</em>
       </Link>
     </Layout>
   );
