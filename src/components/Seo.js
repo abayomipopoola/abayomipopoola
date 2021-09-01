@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, lang, meta, slug, title }) => {
 	const { site } = useStaticQuery(
 	graphql`
       query {
@@ -11,6 +11,7 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
+			siteUrl
             social {
               twitter
             }
@@ -20,8 +21,10 @@ const SEO = ({ description, lang, meta, title }) => {
     `
 	)
 
-	const metaDescription = description || site.siteMetadata.description
 	const defaultTitle = site.siteMetadata?.title
+	const metaDescription = description || site.siteMetadata.description
+	const siteTitle = title ? `${title} — ${defaultTitle}` : defaultTitle
+	const siteUrl = slug ? `${site.siteMetadata.siteUrl}${slug}` : site.siteMetadata.siteUrl
 
 	return (
 		<Helmet
@@ -29,15 +32,20 @@ const SEO = ({ description, lang, meta, title }) => {
 				lang,
 			}}
 			title={title}
-			titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+			defaultTitle={defaultTitle}
+			titleTemplate={`%s — ${defaultTitle}`}
 			meta={[
 				{
 					name: `description`,
 					content: metaDescription,
 				},
 				{
+					name: `og:site_name`,
+					content: defaultTitle,
+				},
+				{
 					property: `og:title`,
-					content: title,
+					content: siteTitle,
 				},
 				{
 					property: `og:description`,
@@ -46,6 +54,11 @@ const SEO = ({ description, lang, meta, title }) => {
 				{
 					property: `og:type`,
 					content: `website`,
+				},
+
+				{
+					name: `og:url`,
+					content: siteUrl,
 				},
 				{
 					name: `twitter:card`,
@@ -57,7 +70,7 @@ const SEO = ({ description, lang, meta, title }) => {
 				},
 				{
 					name: `twitter:title`,
-					content: title,
+					content: siteTitle,
 				},
 				{
 					name: `twitter:description`,

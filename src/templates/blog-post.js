@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Disqus from 'gatsby-plugin-disqus'
+// import Disqus from 'gatsby-plugin-disqus'
 import SEO from '../components/Seo'
 import Share from '../components/Share'
 
@@ -21,7 +21,8 @@ const BlogPostTemplate = ({ data, location }) => {
 		<Layout location={location} title={siteTitle}>
 			<SEO
 				title={post.frontmatter.title}
-				description={post.excerpt}
+				description={post.frontmatter.spoiler}
+				slug={post.fields.slug}
 			/>
 			<article
 				className="blog-post"
@@ -43,7 +44,7 @@ const BlogPostTemplate = ({ data, location }) => {
 						post.frontmatter.tags.map((tag) => {
 						return (
 							<span key={tag}>
-								<Link to={`/tags/${kebabCase(tag)}`}>
+								<Link to={`/category/${kebabCase(tag)}`}>
 									<span className="tags-highlight">{capitalize(tag)}</span>
 								</Link>
 							</span>
@@ -136,7 +137,6 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       id
-      excerpt
       html
       timeToRead
 	  fields {
@@ -146,6 +146,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
 		tags
+		spoiler
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

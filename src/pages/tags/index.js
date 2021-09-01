@@ -6,6 +6,7 @@ import Layout from '../../components/Layout'
 import SEO from '../../components/Seo'
 
 const kebabCase = string => string.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()
+const capitalize = string => string.replace(/\b([a-z])/g, (w) => w.charAt(0).toUpperCase() + w.slice(1));
 
 const Tags = ({ data, location }) => {
 	const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -13,15 +14,20 @@ const Tags = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-		<SEO title="All tags" />
-		<Bio />
+      <SEO 
+        title="Tags" 
+        description="All posts by tag"
+        slug="/tags" 
+      />
+      <Bio />
 
-      <h1><em>All tags</em></h1>
-      <ul>
+        <h2><em>Tags</em></h2>
+
+        <ul style={{listStyle: 'none'}}>
         {tags.map((tag) => (
           <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
+            <Link to={`/category/${kebabCase(tag.fieldValue)}/`}>
+              {capitalize(tag.fieldValue)} ({tag.totalCount})
             </Link>
           </li>
         ))}

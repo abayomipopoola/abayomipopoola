@@ -16,12 +16,16 @@ const TagsTemplate = ({ pageContext, data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Tagged posts" />
+      <SEO 
+        title={`${capitalize(tag)} — Posts`}
+        description={`${capitalize(tag)} Posts`}
+        slug={`/tags/${tag.replace(/\s+/g, '-')}`}
+      />
 		  <Bio />
         
-      <h1>{totalCount} tagged <em>{tag}</em> {totalCount == 1 ? 'post' : 'posts'}</h1>
+      <h2 style={{ color: '#555555' }}>{totalCount}{totalCount == 1 ? ' post' : ' posts'} in <em>{tag}</em></h2>
 
-		  <ol style={{ listStyle: `none` }}>
+		  <ol style={{ listStyle: 'none' }}>
         {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
             return (
@@ -53,7 +57,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
                                   post.frontmatter.tags.map((tag) => {
                                   return (
                                       <span key={tag}>
-                                          <Link to={`/tags/${kebabCase(tag)}`}>
+                                          <Link to={`/category/${kebabCase(tag)}`}>
                                             <span className="tags-highlight">{capitalize(tag)}</span>
                                           </Link>
                                       </span>
@@ -68,7 +72,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
       </ol>
 
       <Link style={{ boxShadow: 'none' }} to='/tags'>
-          <em>View All Tags</em>
+          <em>Tags</em>
       </Link>
     </Layout>
   );
@@ -103,7 +107,6 @@ export const pageQuery = graphql`
           spoiler
         }
         timeToRead
-        excerpt
       }
     }
   }

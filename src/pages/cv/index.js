@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components';
 import { Link } from 'gatsby'
+import SEO from '../../components/Seo'
 import Layout from '../../components/Layout'
 
 const Wrapper = styled.div`
@@ -9,7 +10,7 @@ const Wrapper = styled.div`
   #objective p {font-style: italic; color: #666; }
 `;
 const H2 = styled.h2`
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 0 6px 0;
   padding-top: 10px;
   position: relative;
@@ -30,10 +31,10 @@ const H2 = styled.h2`
 `;
 const P = styled.p`
   margin: 0 0 16px 0;
-  font-size: 14px;
+  font-size: 16px;
 `;
 const Ps = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   padding: 0 5px;
   margin: 0 0;
 `;
@@ -47,12 +48,12 @@ const A = styled.a`
 `;
 const Ul = styled.ul`
    margin: 0 0 32px 17px;
-   font-size: 14px;
+   font-size: 16px;
 `;
 const Dt = styled.dt`
   font-style: italic;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
   padding: 0 26px 0 0;
   width: 100%
@@ -82,11 +83,12 @@ class CvPage extends React.Component {
   render() {
     return (
       <Layout location={this.props.location}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: "My CV" }]}
-          title="My CV"
+        <SEO 
+          title="Resume" 
+          description="Abayomi Popoola CV/Resume"
+          slug="/cv" 
         />
+        
         <a name="top"></a>
         <div style={{ float: 'right' }}>
           <Link style={{ boxShadow: 'none' }} to='/me'>
@@ -135,7 +137,7 @@ class CvPage extends React.Component {
                       </div>
                       <div class='column'>
                         <div>
-                          <strong>Data Stores</strong>
+                          <strong>Database</strong>
                           <Ps>
                             MySQL, PostgreSQL, MongoDB, Redis, Elasticsearch.
                           </Ps>
@@ -143,7 +145,7 @@ class CvPage extends React.Component {
                       </div>
                       <div class='column'>
                         <div>
-                         <strong> Web Servers</strong>
+                         <strong>Servers</strong>
                           <Ps>
                             Apache Tomcat, Jetty, Nginx, Amazon Web Services, Apache Kafka.
                           </Ps>
@@ -151,7 +153,7 @@ class CvPage extends React.Component {
                       </div>
                       <div class='column'>
                         <div>
-                          <strong>Project Mgt.</strong>
+                          <strong>Proj Mgt.</strong>
                           <Ps>
                             Agile/Scrum & Kanban, Resource planning & Scheduling, Requirement gathering, Proficient communicator.
                           </Ps>

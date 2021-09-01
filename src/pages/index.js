@@ -16,7 +16,7 @@ const BlogIndex = ({ data, location }) => {
 	if (posts.length === 0) {
 		return (
 			<Layout location={location} title={siteTitle}>
-				<SEO title="All posts" />
+				<SEO />
 				<Bio />
 				<h1><em>No blog posts found.</em></h1>
 			</Layout>
@@ -25,10 +25,10 @@ const BlogIndex = ({ data, location }) => {
 
     return (
 	  <Layout location={location} title={siteTitle}>
-		<SEO title="All posts" />
+		<SEO />
 		<Bio />
 
-		<h1><em>Latest posts</em></h1>
+		<h2><em>Recent posts</em></h2>
 
 		<ol style={{ listStyle: `none` }}>
 			{posts.map(post => {
@@ -63,7 +63,7 @@ const BlogIndex = ({ data, location }) => {
 										post.frontmatter.tags.map((tag) => {
 										return (
 											<span key={tag}>
-												<Link to={`/tags/${kebabCase(tag)}`}>
+												<Link to={`/category/${kebabCase(tag)}`}>
 													<span className="tags-highlight">{capitalize(tag)}</span>
 												</Link>
 											</span>
@@ -92,7 +92,6 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
-        excerpt
         fields {
           slug
         }

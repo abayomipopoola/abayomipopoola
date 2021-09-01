@@ -1,28 +1,23 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
+import Bio from '../../components/Bio'
+import SEO from '../../components/Seo'
 import Layout from '../../components/Layout'
 import profileImg from './profile-pic.jpg';
 
 class PortfolioPage extends React.Component {
   render() {
     return (
-      <Layout location={this.props.location}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: "My Portfolio" }]}
-          title="My Portfolio"
+      <Layout location={this.props.location} title="Abayomi Popoola">
+        <SEO 
+          title="About & Contact" 
+          description="A bit about Abayomi Popoola"
+          slug="/me" 
         />
-        <a name="top"></a>
-        <div style={{ float: 'left' }}>
-          <img src={profileImg} alt="Logo" style={{ width:'100px', height:'100px', borderRadius: '50%' }} />
-        </div>
-        <div style={{ float: 'right' }}>
-          <Link style={{ boxShadow: 'none' }} to='/'>
-          <span>&#8592;</span>{' '}back
-          </Link>
-        </div>
-        <h2>Hello!</h2>
+        <Bio />
+
+        <h2><em>Hello!</em></h2>
         <p>
 			My name is Abayomi, a programmer and entrepreneur who loves building businesses.
         </p>

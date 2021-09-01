@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: 'Abayomi Popoola',
-	author: {
-	  name: `Abayomi Popoola`,
-	  summary: `I write about topics I find interesting—mostly things that are worth sharing.`,
-	},
-    description: `A blog about ideas worth sharing.`,
+    author: {
+      name: `Abayomi Popoola`,
+      summary: `I write about topics I find interesting—mostly things that are worth sharing.`,
+    },
+    description: `A blog about ideas worth sharing. Newsletter & articles by Abayomi Popoola`,
     siteUrl: 'https://abayomipopoola.com',
-	social: {
-	  twitter: `abayomipo`,
-	},
+    social: {
+      twitter: `abayomipo`,
+    },
   },
   pathPrefix: '/',
   plugins: [
