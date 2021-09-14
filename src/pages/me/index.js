@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import Bio from '../../components/Bio'
 import SEO from '../../components/Seo'
 import Layout from '../../components/Layout'
-import profileImg from './profile-pic.jpg';
 
 class PortfolioPage extends React.Component {
   render() {
