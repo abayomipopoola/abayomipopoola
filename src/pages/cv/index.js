@@ -165,6 +165,17 @@ class CvPage extends React.Component {
 
               <Dt>Experience</Dt>
               <Dd>
+                  <H2>DotPay <span>VP, Engineering – Sep, 2021 - Present</span></H2>
+                  <P>
+                    A fintech startup, democratising financial services with digital banking tools for underserved consumers in emerging markets.
+                  </P>
+                  <Ul>
+                    <li>Leading the team through management and mentorship.</li>
+                    <li>Developing standards and procedures to ensure that quality standards are met and consistent.</li>
+                    <li>Ensuring that all engineering activity is managed through the lifecycle of product development, 
+                      from detailed requirement generation, development, and integration right to customer validation.</li>
+                  </Ul>
+
                   <H2>Bread <span>Senior Software Engineer – Apr, 2021 - Present</span></H2>
                   <P>
                     Bread helps retailers offer pay-over-time solutions as a way to build stronger consumer connections and power sales.

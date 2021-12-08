@@ -21,10 +21,14 @@ class PortfolioPage extends React.Component {
 			My name is Abayomi, a programmer and entrepreneur who loves building businesses.
         </p>
         <p>
-      I've got 7+ years of experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
+      I've got 7+ years of experience in building solutions for highly scalable enterprise systems. 
+      I also provide project planning and management for established initiatives within a company; 
+      and ensure that projects are completed to specification, within an established time frame and budget.
         </p>
         <p>
-        I’m currently a Snr. Software Engineer at <a href="https://www.breadpayments.com/" target="_blank" >Bread</a>, a financial service firm based in New York. I also freelance at Bytecreatives.
+        I’m currently a VP of Engineering at  <a href="https://www.dotpay.africa/" target="_blank" >DotPay</a>, 
+        a fintech startup, democratising financial services with digital banking tools for underserved consumers in emerging markets. 
+        I used to freelance at Bytecreatives.
         </p>
         <p>
 			Please feel free to view my <a href="/cv">résumé</a>.
