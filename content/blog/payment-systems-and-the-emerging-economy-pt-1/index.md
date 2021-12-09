@@ -13,7 +13,7 @@ But payments haven't always been this easy: At the beginning of the 20th-century
 
 In the pre-digital world, doing all your banking by mail or at post offices all over the country was as convenient as it could get. Then rapid growth forced even more innovation, as bankers considered going from manual to automated administration — it took quite some pioneering to get it to work. 
 
-Yet by the 1960s, state-of-the-art computers had successfully taken over the administration process. In this era, following the post-war reconstruction in the 50s young people all over the world challenged societal conventions. The Swinging Sixties were filled with protests, revolution, music, love, and a desire to make things simpler, banking included.
+Yet by the 1960s, state-of-the-art computers had successfully taken over the administration process. In this era, following the post-war reconstruction in the 50s, young people all over the world challenged societal conventions. The Swinging Sixties were filled with protests, revolution, music, love, and a desire to make things simpler, banking included.
 
 Technical changes mirrored social changes. People no longer had to rely on bank cashiers to withdraw money. The first ATMs were installed in North London in the late 60s. Banks were also keen on innovating payments both in stores and other points of sale, as well as paying bills and wiring money. Electronic banking was introduced in simple balance checking via phone calls. Plastic money became both cutting edge and the norm as consumers could pay with their cards in more and more places.
 
