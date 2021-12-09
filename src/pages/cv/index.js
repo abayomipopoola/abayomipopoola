@@ -176,7 +176,7 @@ class CvPage extends React.Component {
                       from detailed requirement generation, development, and integration right to customer validation.</li>
                   </Ul>
 
-                  <H2>Breadpayments.com <span>Senior Software Engineer – Apr, 2021 - Present</span></H2>
+                  <H2>BreadPayments.com <span>Senior Software Engineer – Apr, 2021 - Present</span></H2>
                   <P>
                     Bread helps retailers offer pay-over-time solutions as a way to build stronger consumer connections and power sales.
                   </P>
@@ -184,7 +184,7 @@ class CvPage extends React.Component {
                     <li>Working remotely with team of highly skilled engineers.</li>
                   </Ul>
 
-                  <H2>The Linux Foundation <span>Senior Software Engineer – Oct, 2020 - Mar, 2021</span></H2>
+                  <H2>Linuxfoundation.org <span>Senior Software Engineer – Oct, 2020 - Mar, 2021</span></H2>
                   <P>
                     The Linux Foundation is a nonprofit organization enabling mass innovation through open source.
                   </P>
@@ -229,7 +229,7 @@ class CvPage extends React.Component {
                       <li><strong>Technologies</strong>: PHP, Laravel, Java, Python, MySQL, Nginx, Elasticsearch, AWS.</li>
                   </Ul>
 
-                  <H2>Ringer One Africa Media <span>Senior Software Engineer – Jul, 2017 - Dec, 2018</span></H2>
+                  <H2>Roam.africa <span>Senior Software Engineer – Jul, 2017 - Dec, 2018</span></H2>
                   <P>
                     ROAM operates and grows leading marketplaces in Sub-Saharan Africa, they provide an online marketplace that provide thousands of buyers and sellers with an avenue to meet and exchange goods and services.
                   </P>
