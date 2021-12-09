@@ -100,7 +100,7 @@ class CvPage extends React.Component {
         <Wrapper>
 
           <div id="contact-info" class="vcard">
-              <H2>Snr. Software Engineer/Manager</H2>
+              <H2>VP, Engineering</H2>
               <P>
                   Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</A><br />
                   Email: <A class="email" href="mailto:abayomi@hey.com">abayomi@hey.com</A>
