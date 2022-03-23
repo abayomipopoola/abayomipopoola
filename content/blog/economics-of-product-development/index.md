@@ -15,7 +15,7 @@ The book, albeit 300 pages, is dense. Reinertsen takes a rigorous approach on ho
 
 ### The Principles of Product Development Flow
 
-To fully get a grasp of the book you'd need to be familiar with concepts such as lean manufacturing, economics, and operations research. Lean manufacturing, Toyota Production System, theory of constraints, and other technical sources are briefly referenced.
+To fully get a grasp of the book you'd need to be familiar with some economic concepts: Lean manufacturing, Toyota Production System, theory of constraints, and other technical sources are briefly referenced.
 
 Reinertsen discusses how queuing theory manages delays, how project and task cycle times drive the cost of delay, how long queues increase defects, variability, and risks. How misplaced high efficiency and utilization goals lead to delays, increased costs, and disastrous momentum. 
 
