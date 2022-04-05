@@ -27,8 +27,7 @@ class PortfolioPage extends React.Component {
         </p>
         <p>
         I’m currently the VP of Engineering at  <a href="https://www.dot.limited/" target="_blank" >Dot</a>, 
-        a startup that's democratising financial services with digital banking tools for underserved consumers in emerging markets. 
-        I used to freelance at Bytecreatives.
+        a startup that's democratising financial services with digital banking tools for underserved consumers in emerging markets.
         </p>
         <p>
 			Please feel free to view my <a href="/cv">résumé</a>.
@@ -38,7 +37,7 @@ class PortfolioPage extends React.Component {
 			You can also shoot me <a href="mailto:abayomi@hey.com">an email</a>.
         </p>
 
-        <div>
+        {/* <div>
             <h3>Bytecreatives</h3>
             <div className="flex-container">
                 <div className="ant-card">
@@ -53,7 +52,7 @@ class PortfolioPage extends React.Component {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div style={{ float: 'right' }}>
         <a style={{ boxShadow: 'none' }} href="#top">
