@@ -100,7 +100,7 @@ class CvPage extends React.Component {
         <Wrapper>
 
           <div id="contact-info" class="vcard">
-              <H2>VP, Engineering</H2>
+              <H2>VP, Engineering at Dot</H2>
               <P>
                   Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</A><br />
                   Email: <A class="email" href="mailto:abayomi@hey.com">abayomi@hey.com</A>
@@ -139,7 +139,7 @@ class CvPage extends React.Component {
                         <div>
                           <strong>Database</strong>
                           <Ps>
-                            MySQL, PostgreSQL, MongoDB, Redis, Elasticsearch.
+                            PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch.
                           </Ps>
                         </div>
                       </div>
@@ -165,14 +165,22 @@ class CvPage extends React.Component {
 
               <Dt>Experience</Dt>
               <Dd>
-                  <H2>DotPay.africa <span>VP, Engineering – Sep, 2021 - Present</span></H2>
+                <H2>Dot.limited <span>VP, Engineering – Feb, 2022 - Present</span></H2>
                   <P>
                     A fintech startup, democratising financial services with digital banking tools for underserved consumers in emerging markets.
                   </P>
                   <Ul>
-                    <li>Leading the team through management and mentorship.</li>
+                    <li>Setting technology strategy, and ensuring intense executions.</li>
                     <li>Developing standards and procedures to ensure that quality standards are met and consistent.</li>
-                    <li>Ensuring that all engineering activity is managed through the lifecycle of product development, 
+                  </Ul>
+
+                  <H2>DotPay.africa <span>VP, Engineering – Sep, 2021 - Jan, 2022</span></H2>
+                  <P>
+                    Agency banking arm of Dot.limited.
+                  </P>
+                  <Ul>
+                    <li>Led the team through management and mentorship.</li>
+                    <li>Ensured that all engineering activity is managed through the lifecycle of product development, 
                       from detailed requirement generation, development, and integration right to customer validation.</li>
                   </Ul>
 
@@ -181,7 +189,7 @@ class CvPage extends React.Component {
                     Bread helps retailers offer pay-over-time solutions as a way to build stronger consumer connections and power sales.
                   </P>
                   <Ul>
-                    <li>Working remotely with team of highly skilled engineers.</li>
+                    <li>Worked remotely with team of highly skilled engineers.</li>
                   </Ul>
 
                   <H2>Linuxfoundation.org <span>Senior Software Engineer – Oct, 2020 - Mar, 2021</span></H2>
@@ -197,14 +205,14 @@ class CvPage extends React.Component {
                     Kudi.com is a financial technology company that is enabling Africans to send money/pay bills through digital channels, viz, messaging app., mobile, web, USSD, and also through an Agent network.
                   </P>
                   <Ul>
-                      <li>Responsible for ensuring that all engineering activity is managed through the lifecycle of product development, from detailed requirement generation, development, and integration right to customer validation.</li>
-                      <li>I also double as the platform tech lead, with a team of seven engineers and a PM.</li>
+                      <li>Ensured that all engineering activity is managed through the lifecycle of product development, from detailed requirement generation, development, and integration right to customer validation.</li>
+                      <li>I also doubled as the platform tech lead, with a team of seven engineers and a PM.</li>
                   </Ul>
 
                   <H2>Kudi.com <span>Platform Tech Lead – Jul, 2019 - Aug, 2020</span></H2>
                   <Ul>
                       <li>I led the platform engineering team. I was responsible for leading the technical design of systems and services.</li>
-                      <li>I provide project planning and management for established initiatives within the company.</li>
+                      <li>I provided project planning and management for established initiatives within the company.</li>
                       <li>I ensured projects were completed to specification, within an established time frame.</li>
                       <li><strong>Technologies</strong>: Agile/Scrum, Jira, Java, Spring, Dropwizard, Golang, NodeJS, Mongo, Apache Kafka, Nginx, Docker & Kubernetes, AWS.</li>
                   </Ul>
