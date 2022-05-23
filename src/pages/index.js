@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
 		<SEO />
 		<Bio />
 
-		<h2><em>Recent posts</em></h2>
+		<h3><em>Recent posts</em></h3>
 
 		<ol style={{ listStyle: `none` }}>
 			{posts.map(post => {
@@ -41,21 +41,21 @@ const BlogIndex = ({ data, location }) => {
 							itemType="http://schema.org/Article"
 						>
 							<header>
-								<h3>
+								<h4>
 									<Link to={post.fields.slug} itemProp="url">
 										<span itemProp="headline">{title}</span>
 									</Link>
-								</h3>
+								</h4>
 							</header>
 							<section>
 								<p
-									 style={{ color: '#555555'}}
+									 style={{ color: '#666666'}}
 									dangerouslySetInnerHTML={{
 										__html: post.frontmatter.spoiler
 									}}
 									itemProp="description"
 								/>
-								<small style={{ color: '#999999'}}>
+								<small style={{ color: '#666666'}}>
 									{`${post.frontmatter.date} · ${post.timeToRead} min read`}
 								</small>
 								<small>

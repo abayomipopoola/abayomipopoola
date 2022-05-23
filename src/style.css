@@ -58,7 +58,7 @@
 	--color-primary: #005b99;
 	--color-text: #2e353f;
 	--color-text-light: #4f5969;
-	--color-heading: #121212;
+	--color-heading: #1a1a1a;
 	--color-heading-black: black;
 	--color-accent: #d1dce5;
 }
@@ -122,7 +122,7 @@ h6 {
 h1 {
 	font-weight: var(--fontWeight-black);
 	font-size: var(--fontSize-5);
-	color: #121212;
+	color: #1a1a1a;
 	/* color: var(--color-heading-black); */
 }
 
@@ -157,11 +157,11 @@ h4 > a,
 h5 > a,
 h6 > a {
 	text-decoration: none;
-	color: #121212;
+	color: #1a1a1a;
 }
 
-h3 > a:hover {
-    color: #555555;
+h4 > a:hover {
+    color: #666666;
   }
 
 /* Prose */
@@ -321,7 +321,7 @@ a:focus {
 }
 
 .tags-highlight {
-	color: #999999;
+	color: #666666;
 	font-size: 12px;
 	padding: 2px 8px;
 	margin-left: 0.6rem;
@@ -408,7 +408,7 @@ a:focus {
 
 
 .card {
-    border: 1px solid #999999;
+    border: 1px solid #666666;
     border-radius: 0.2em;
     box-shadow: 5px 5px 7px #00000026;
     padding: 1.5em;
@@ -472,7 +472,7 @@ a:focus {
     padding: 0.65em 1em;
     margin: 0;
     background: var(--color-bg--main);
-    border: 1px solid #999999;
+    border: 1px solid #666666;
     border-right-color: transparent;
     border-radius: 1.5em 0 0 1.5em;
 }
@@ -489,8 +489,8 @@ a:focus {
     border-radius: 0 1.5em 1.5em 0;
 }
 .subscribe__submit:focus {
-    background: #999999;
-    border: 1px solid #999999;
+    background: #666666;
+    border: 1px solid #666666;
     outline: none;
 }
 
