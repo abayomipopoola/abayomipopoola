@@ -23,7 +23,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
       />
 		  <Bio />
         
-      <h2 style={{ color: '#666666' }}>{totalCount}{totalCount == 1 ? ' post' : ' posts'} in <em>{tag}</em></h2>
+      <h3 style={{ color: '#666666' }}>{totalCount}{totalCount == 1 ? ' post' : ' posts'} in <em>{tag}</em></h3>
 
 		  <ol style={{ listStyle: 'none' }}>
         {posts.map(post => {
@@ -36,14 +36,15 @@ const TagsTemplate = ({ pageContext, data, location }) => {
                         itemType="http://schema.org/Article"
                     >
                         <header>
-                            <h3>
+                            <h4>
                                 <Link to={post.fields.slug} itemProp="url">
                                     <span itemProp="headline">{title}</span>
                                 </Link>
-                            </h3>
+                            </h4>
                         </header>
                         <section>
                             <p
+                                style={{ color: '#666666'}}
                                 dangerouslySetInnerHTML={{
                                     __html: post.frontmatter.spoiler
                                 }}

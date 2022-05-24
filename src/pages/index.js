@@ -49,7 +49,7 @@ const BlogIndex = ({ data, location }) => {
 							</header>
 							<section>
 								<p
-									 style={{ color: '#666666'}}
+									style={{ color: '#666666'}}
 									dangerouslySetInnerHTML={{
 										__html: post.frontmatter.spoiler
 									}}
