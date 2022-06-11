@@ -262,7 +262,7 @@ a:focus {
 }
 
 .main-heading {
-	color: #1A98EE;
+	color: #1D9BF0;
 	font-size: var(--fontSize-5);
 	margin: 0;
 }
@@ -321,11 +321,11 @@ a:focus {
 }
 
 .tags-highlight {
-	color: #666666;
+	color: #1D9BF0;
 	font-size: 12px;
 	padding: 2px 8px;
 	margin-left: 0.6rem;
-	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
 	border-radius: 100px;
 }
 
@@ -477,13 +477,13 @@ a:focus {
     border-radius: 1.5em 0 0 1.5em;
 }
 .subscribe__email:focus {
-    border: 1px solid #1A98EE;
+    border: 1px solid #1D9BF0;
     outline: none;
 }
 .subscribe__submit {
     padding: 0.5em 1em;
-    background: #1A98EE;
-    border: 1px solid #1A98EE;
+    background: #1D9BF0;
+    border: 1px solid #1D9BF0;
 	color: #fff;
     border-left-color: transparent;
     border-radius: 0 1.5em 1.5em 0;
