@@ -100,7 +100,7 @@ class CvPage extends React.Component {
         <Wrapper>
 
           <div id="contact-info" class="vcard">
-              <H2>VP, Engineering at Dot</H2>
+              <H2>Director, Engineering at Dot</H2>
               <P>
                   Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</A><br />
                   Email: <A class="email" href="mailto:abayomi@hey.com">abayomi@hey.com</A>
@@ -165,23 +165,13 @@ class CvPage extends React.Component {
 
               <Dt>Experience</Dt>
               <Dd>
-                <H2>Dot.limited <span>VP, Engineering – Feb, 2022 - Present</span></H2>
+                <H2>Dot.limited <span>Director, Engineering – Sep, 2021 - Present</span></H2>
                   <P>
                     A fintech startup, democratising financial services with digital banking tools for underserved consumers in emerging markets.
                   </P>
                   <Ul>
                     <li>Setting technology strategy, and ensuring intense executions.</li>
                     <li>Developing standards and procedures to ensure that quality standards are met and consistent.</li>
-                  </Ul>
-
-                  <H2>DotPay.africa <span>VP, Engineering – Sep, 2021 - Jan, 2022</span></H2>
-                  <P>
-                    Agency banking arm of Dot.limited.
-                  </P>
-                  <Ul>
-                    <li>Led the team through management and mentorship.</li>
-                    <li>Ensured that all engineering activity is managed through the lifecycle of product development, 
-                      from detailed requirement generation, development, and integration right to customer validation.</li>
                   </Ul>
 
                   <H2>BreadPayments.com <span>Senior Software Engineer – Apr, 2021 - Present</span></H2>

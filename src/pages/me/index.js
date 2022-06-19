@@ -26,7 +26,7 @@ class PortfolioPage extends React.Component {
       and ensure that projects are completed to specification, within an established time frame and budget.
         </p>
         <p>
-        I’m currently the VP of Engineering at  <a href="https://www.dot.limited/" target="_blank" >Dot</a>, 
+        I’m currently the Director of Engineering at  <a href="https://www.dot.limited/" target="_blank" >Dot</a>, 
         a startup that's democratising financial services with digital banking tools for underserved consumers in emerging markets.
         </p>
         <p>
