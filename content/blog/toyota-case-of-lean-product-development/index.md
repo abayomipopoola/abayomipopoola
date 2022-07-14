@@ -71,15 +71,15 @@ Driving the lean process and rigorous standardization are people who work hard a
 
 #### Tools
 
-Technology to Toyota is a set of tools to enable the people to execute and improve the process — no more and no less. Doing wasteful work such as rework faster is still waste. If you cannot do a good job of defining the project, identifying problems, developing appropriate solutions, communicating effectively to the right people, and meeting deadlines, then technology will not solve your problem. It may even mask the problems. Toyota does not subordinate good thinking to technology. We describe each of these elements of the system in greater detail below. Next, we give examples of how they mutually support each other as a system.
+Technology to Toyota is a set of tools to enable the people to execute and improve the process — no more and no less. Doing wasteful work such as rework faster is still waste. If you cannot do a good job of defining the project, identifying problems, developing appropriate solutions, communicating effectively to the right people, and meeting deadlines, then technology will not solve your problem. It may even mask the problems. Toyota does not subordinate good thinking to technology.
 
 #### The Right Process Will Yield the Right Results
 
 We often think of process improvement as a technical issue. Get the right technical methodology (these days, often analogous to business processes for software use), justify its cost, implement it, and it runs. If it does not run as planned, it is a management problem. Identify the offending manager who failed to properly execute the business process, get rid of him or her, find a “good manager,” and hopefully the problem is solved. Toyota has a very different perspective. 
 
-At Toyota, there is a philosophy of having a good process. It is as much a philosophical issue as a technical issue. There are a set of beliefs about what makes up a good process. A good process is not defined by technology but by good process principles, and then people create and improve the process according to these principles. A summary of the process principles of lean product development is provided in the table below.
+At Toyota, there is a philosophy of having a good process. It is as much a philosophical issue as a technical issue. There are a set of beliefs about what makes up a good process. A good process is not defined by technology but by good process principles, and then people create and improve the process according to these principles. A summary of the process principles of lean product development is provided in the [table](#table-below) below.
 
-### Process Principles of Lean Product Development
+### <a name="table-below"></a>Process Principles of Lean Product Development
 
 <style>
   table {
@@ -208,7 +208,7 @@ At Toyota, there is a philosophy of having a good process. It is as much a philo
 
 ######<p align="center">***</p>
 
-In conclusion, the success of Toyota’s system revolves around its people. Highly competent and skilled people with a lot of hands-on experience, deep technical knowledge, and an eye for the overall system are prerequisites for successful product development. When you take a closer look into Toyota's operation, two things stand out in its product-development system: chief engineers using their expertise to gain leadership, and functional engineers using their expertise to reduce the amount of communication, supervision, trial and error, and confusion in the process. All the other coordinating mechanisms and practices serve to help highly skilled designers anf engineers do their job effectively. 
+In conclusion, the success of Toyota’s system revolves around its people. Highly competent and skilled people with a lot of hands-on experience, deep technical knowledge, and an eye for the overall system are prerequisites for successful product development. When you take a closer look into Toyota's operation, two things stand out in its product-development system: chief engineers using their expertise to gain leadership, and functional engineers using their expertise to reduce the amount of communication, supervision, trial and error, and confusion in the process. All the other coordinating mechanisms and practices serve to help highly skilled designers and engineers do their job effectively. 
 
 <small> Ref: This article is heavily influenced by this publication - <a href="https://www.researchgate.net/publication/200552295" target="_blank">The Toyota Way in Services.</a></small>
 
