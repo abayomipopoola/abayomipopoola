@@ -81,68 +81,6 @@ At Toyota, there is a philosophy of having a good process. It is as much a philo
 
 ### <a name="table-below"></a>Process Principles of Lean Product Development
 
-<style>
-  table {
-    border: 1px solid #ccc;
-    width: 100%;
-    margin:0;
-    padding:0;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font-size: 16px;
-  }
-
-  table tr {
-    border: 1px solid #ddd;
-    padding: 5px;
-  }
-
-  table th, table td {
-    padding: 10px;
-  }
-
-  table th {
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-
-  @media screen and (max-width: 600px) {
-
-    table {
-      border: 0;
-    }
-
-    table thead {
-      display: none;
-    }
-
-    table tr {
-      margin-bottom: 10px;
-      display: block;
-      border-bottom: 2px solid #ddd;
-    }
-
-    table td {
-      display: block;
-      text-align: right;
-      font-size: 14px;
-      border-bottom: 1px dotted #ccc;
-    }
-
-    table td:last-child {
-      border-bottom: 0;
-    }
-
-    table td:before {
-      content: attr(data-label);
-      float: left;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-  }
-</style>
-
 <table>
 <thead>
 	<tr>
@@ -177,7 +115,7 @@ At Toyota, there is a philosophy of having a good process. It is as much a philo
 	</tr>
 	<tr>
 		<td>7. Develop Towering Technical Competence in all Engineers.</td>
-		<td>Engineers must have deep specialized knowledge of the product and process that comes from direct experience at the _gemba_.</td>
+		<td>Engineers must have deep specialized knowledge of the product and process that comes from direct experience at the <em>gemba</em>.</td>
 	</tr>
 	<tr>
 		<td>8. Fully Integrate Suppliers into the Product Development System.</td>
