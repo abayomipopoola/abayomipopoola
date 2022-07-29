@@ -1,6 +1,6 @@
 body {
-  font-family: Spectral, sans-serif;
-  font-size: 18px;
+  font-family: 'EB Garamond', sans-serif;
+  font-size: 19px;
 }
 
 a {
@@ -22,11 +22,10 @@ p {
 
 .post {
   color: #1a1a1a;
-  /* font-size: 18px; */
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-  font-family: Lora, sans-serif;
+  font-family: Lora, serif;
 }
 
 .post h4 {
