@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ data, location }) => {
 				itemType="http://schema.org/Article"
 			>
 				<header>
-					<h1 itemProp="headline">{post.frontmatter.title}</h1>
+					<h2 itemProp="headline">{post.frontmatter.title}</h2>
 					<p style={{ color: '#666666', margin: '16px 0', fontSize: 13}}>
 						{post.frontmatter.date} · {post.timeToRead} min read
 					</p>

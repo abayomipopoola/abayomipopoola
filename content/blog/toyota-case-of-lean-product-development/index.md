@@ -23,7 +23,7 @@ Today, people have looked to Toyota to learn the lessons of ‘Lean’ -- combin
 
 The Toyota Production System changed not just how cars are made globally but how we approach making things. It also showed there is always a better way to make a product.
 
-### Toyota’s Production System (TPS)
+### Toyota Production System (TPS)
 
 TPS is how Toyota makes vehicles. It is an original manufacturing philosophy that aims to eliminate waste and achieve the best possible efficiency – what is often called a “lean” or “just-in-time” system.
 

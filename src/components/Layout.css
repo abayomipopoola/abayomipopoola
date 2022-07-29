@@ -1,5 +1,5 @@
 body {
-  font-family: 'Cardo', serif;
+  font-family: 'Uchen', serif;
   font-size: 1.125em;
 }
 
@@ -32,7 +32,7 @@ p {
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-  font-family: Lora, serif;
+  font-family: Uchen, serif;
 }
 
 .post h4 {
@@ -55,6 +55,7 @@ p {
 }
 
 blockquote {
+  font-family: 'Lora Italic', serif;
   background: #f9f9f9;
   border-left: 3px solid #ccc;
   margin-left: calc(-1 * var(--spacing-0));

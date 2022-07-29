@@ -1123,14 +1123,14 @@
     "ts-node" "^9"
     "tslib" "^2"
 
-"@fontsource/cardo@^4.5.7":
-  "integrity" "sha512-vBcBkJaAeOeLy9eH8Xr1ozWQIClUgABtVKNOVP46NZVhRLyGdZtxLi1kgSV93XYxXmiJeCiUEytWKUe6biCtyQ=="
-  "resolved" "https://registry.npmjs.org/@fontsource/cardo/-/cardo-4.5.7.tgz"
-  "version" "4.5.7"
-
 "@fontsource/lora@^4.5.10":
   "integrity" "sha512-STHlJKDMu6ma0kov3NRU7Z7VpqFl/87jZPooK7NyxqN0BOFnMkUQ7GS7qOJowFMdHRm69dkUvckaIoOWlSbe5Q=="
   "resolved" "https://registry.npmjs.org/@fontsource/lora/-/lora-4.5.10.tgz"
+  "version" "4.5.10"
+
+"@fontsource/uchen@^4.5.10":
+  "integrity" "sha512-1GpVg62BQQJVCYF/hpPiOAGft0SqnxoolozJjb9a/EGOCoRCA9LIJ1vYL5riDvSPZXUre47rF81OpvUYhw7tfA=="
+  "resolved" "https://registry.npmjs.org/@fontsource/uchen/-/uchen-4.5.10.tgz"
   "version" "4.5.10"
 
 "@fortawesome/fontawesome-common-types@^0.2.32":
