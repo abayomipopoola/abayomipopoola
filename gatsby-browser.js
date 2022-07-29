@@ -1,6 +1,6 @@
 // custom typefaces
 import '@fontsource/lora'
-import '@fontsource/eb-garamond'
+import '@fontsource/cardo'
 // normalize CSS across browsers
 import "./src/normalize.css"
 // custom CSS styles
