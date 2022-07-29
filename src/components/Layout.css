@@ -1,6 +1,7 @@
 body {
-  font-family: 'EB Garamond', sans-serif;
-  font-size: 19px;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 a {
