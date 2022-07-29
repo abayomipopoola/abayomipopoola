@@ -1,7 +1,6 @@
 body {
   font-family: 'EB Garamond', serif;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.125em;
 }
 
 a {
@@ -22,7 +21,14 @@ p {
 }
 
 .post {
+  font-size: 1.125em;
   color: #1a1a1a;
+}
+
+@media only screen and (max-width: 900px) {
+  .post {
+    font-size: 1em;
+  }
 }
 
 .post h1, h2, h3, h4, h5, h6 {
