@@ -1,6 +1,6 @@
 // custom typefaces
 import '@fontsource/lora'
-import '@fontsource/uchen'
+import '@fontsource/chivo'
 // normalize CSS across browsers
 import "./src/normalize.css"
 // custom CSS styles
