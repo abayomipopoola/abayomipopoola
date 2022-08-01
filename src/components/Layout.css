@@ -25,12 +25,6 @@ p {
   color: #1a1a1a;
 }
 
-@media only screen and (max-width: 900px) {
-  .post {
-    font-size: 1em;
-  }
-}
-
 .post h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Serif', sans-serif;
 }
@@ -42,6 +36,21 @@ p {
 
 .post > ul, .post >  ol {
 	padding-left: 20px;
+}
+
+@media only screen and (max-width: 680px) {
+  p {
+    font-size: 0.9em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  h4 {
+    font-size: 1.125em;
+  }
 }
 
 @media (min-width: 40em) {
