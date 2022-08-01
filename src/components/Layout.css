@@ -1,6 +1,7 @@
 body {
-  font-family: 'Chivo', sans-serif;
-  font-size: 1.125em;
+  font-family: 'Noto Serif', sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 a {
@@ -21,7 +22,6 @@ p {
 }
 
 .post {
-  font-size: 1em;
   color: #1a1a1a;
 }
 
@@ -32,7 +32,7 @@ p {
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Noto Serif', sans-serif;
 }
 
 .post img {
@@ -51,8 +51,8 @@ p {
 }
 
 blockquote {
-  font-family: 'Chivo', sans-serif;
-  /* font-size: 1.125em; */
+  font-family: 'Noto Serif', sans-serif;
+  font-size: 1em;
   background: #f9f9f9;
   border-left: 3px solid #ccc;
   margin-left: calc(-1 * var(--spacing-0));

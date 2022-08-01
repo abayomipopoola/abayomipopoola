@@ -1123,15 +1123,15 @@
     "ts-node" "^9"
     "tslib" "^2"
 
-"@fontsource/chivo@^4.5.7":
-  "integrity" "sha512-YNaw7X03yQuP+eYfkdowjEGEAMUnkgb0lXScoSGOdJGWVkvVTzvkaPf6PUdPTvi4Ts/oPNsCcJAmh7SnjKygRQ=="
-  "resolved" "https://registry.npmjs.org/@fontsource/chivo/-/chivo-4.5.7.tgz"
-  "version" "4.5.7"
-
 "@fontsource/lora@^4.5.10":
   "integrity" "sha512-STHlJKDMu6ma0kov3NRU7Z7VpqFl/87jZPooK7NyxqN0BOFnMkUQ7GS7qOJowFMdHRm69dkUvckaIoOWlSbe5Q=="
   "resolved" "https://registry.npmjs.org/@fontsource/lora/-/lora-4.5.10.tgz"
   "version" "4.5.10"
+
+"@fontsource/noto-serif@^4.5.9":
+  "integrity" "sha512-qvVrkuEwAKGKswmaETS9RVzrGTqlvQRHK60TJ9ncH1RA7ujqb8+o8lLgU3dK3KcggQWWfTa/ozNU8sNc1hXH4g=="
+  "resolved" "https://registry.npmjs.org/@fontsource/noto-serif/-/noto-serif-4.5.9.tgz"
+  "version" "4.5.9"
 
 "@fortawesome/fontawesome-common-types@^0.2.32":
   "integrity" "sha512-ux2EDjKMpcdHBVLi/eWZynnPxs0BtFVXJkgHIxXRl+9ZFaHPvYamAfCzeeQFqHRjuJtX90wVnMRaMQAAlctz3w=="
