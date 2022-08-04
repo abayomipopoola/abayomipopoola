@@ -1,6 +1,6 @@
 body {
   font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.125em;
   font-weight: 400;
 }
 
@@ -40,7 +40,7 @@ p {
 
 @media only screen and (max-width: 680px) {
   p {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   h2 {
     font-size: 1.5em;
