@@ -5,9 +5,9 @@ export const onRenderBody = ({ setHeadComponents }) => {
     <link
       key="charter"
       rel="preload"
-      href="/fonts/Charter.otf"
+      href="/fonts/charter-400-normal.woff"
       as="font"
-      type="font/otf"
+      type="font/woff"
       crossOrigin="anonymous"
     />
   ]);
