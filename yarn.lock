@@ -1123,11 +1123,6 @@
     "ts-node" "^9"
     "tslib" "^2"
 
-"@fontsource/lora@^4.5.10":
-  "integrity" "sha512-STHlJKDMu6ma0kov3NRU7Z7VpqFl/87jZPooK7NyxqN0BOFnMkUQ7GS7qOJowFMdHRm69dkUvckaIoOWlSbe5Q=="
-  "resolved" "https://registry.npmjs.org/@fontsource/lora/-/lora-4.5.10.tgz"
-  "version" "4.5.10"
-
 "@fortawesome/fontawesome-common-types@^0.2.32":
   "integrity" "sha512-ux2EDjKMpcdHBVLi/eWZynnPxs0BtFVXJkgHIxXRl+9ZFaHPvYamAfCzeeQFqHRjuJtX90wVnMRaMQAAlctz3w=="
   "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.32.tgz"

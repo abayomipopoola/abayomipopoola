@@ -26,7 +26,16 @@ p {
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif, sans-serif;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.125em; }
+
+small {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
 }
 
 .post img {

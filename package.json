@@ -4,7 +4,6 @@
 	"version": "1.0.0",
 	"author": "Abayomi Popoola <abayomi@hey.com>",
 	"dependencies": {
-		"@fontsource/lora": "^4.5.10",
 		"@fortawesome/fontawesome-svg-core": "^1.2.32",
 		"@fortawesome/react-fontawesome": "^0.1.11",
 		"gatsby": "^2.24.79",
