@@ -66,12 +66,9 @@
 /* Font faces */
 
 @font-face {
-	font-family: charter;
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url(/fonts/Charter.otf) format('otf');
-  }
+	font-family: 'Freight Sans Pro';
+	src: url('/fonts/FreightSansProMedium-Regular.woff2') format('woff2');
+}
 
 /* HTML elements */
 

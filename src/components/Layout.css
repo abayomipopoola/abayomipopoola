@@ -1,5 +1,5 @@
 body {
-  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif, sans-serif;
+  font-family: 'Freight Sans Pro', Arial, Helvetica, sans-serif;
   font-size: 1.125em;
   font-weight: 400;
 }
@@ -69,7 +69,6 @@ small {
 }
 
 blockquote {
-  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif, sans-serif;
   background: #f9f9f9;
   border-left: 3px solid #ccc;
   margin-left: calc(-1 * var(--spacing-0));
