@@ -7,7 +7,7 @@ spoiler: Understanding product development as an example of a systematic process
 
 ![Economics of Product Development](./lean.gif)
 
-_The Principles of Product Development Flow_ by Donald Reinertsen is a book on Lean Product Development that systematically applies the theories and best practices of economics, lean manufacturing, queuing theory, statistics, etc, to the product development process. 
+_The Principles of Product Development Flow_ by Donald Reinertsen is a book on Lean Product Development that systematically applies several economic theories, lean manufacturing, queuing theory, statistics, etc, to the product development process. 
 
 Reinertsen summarises the theories above in 8 core themes and 175 principles, with tons of examples and graphs to illustrate the concepts.
 

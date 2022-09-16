@@ -1,5 +1,5 @@
 body {
-  font-family: 'Freight Sans Pro', Arial, Helvetica, sans-serif;
+  font-family: 'MiloTE', Arial, Helvetica, sans-serif;
   font-size: 1.125em;
   font-weight: 400;
 }
@@ -18,15 +18,15 @@ a.read-more {
 }
 
 p {
-	color: #1a1a1a;
+	color: #0D0D0D;
 }
 
 .post {
-  color: #1a1a1a;
+  color: #0D0D0D;
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: EconSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h2 { font-size: 1.5em; }
@@ -34,7 +34,7 @@ h3 { font-size: 1.3em; }
 h4 { font-size: 1.125em; }
 
 small {
-  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: EconSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
 
