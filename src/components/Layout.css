@@ -1,6 +1,6 @@
 body {
   font-family: 'MiloTE', Arial, Helvetica, sans-serif;
-  font-size: 1.125em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
@@ -31,7 +31,7 @@ p {
 
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.3em; }
-h4 { font-size: 1.125em; }
+h4 { font-size: 1.2em; }
 
 small {
   font-family: EconSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -50,15 +50,6 @@ small {
 @media only screen and (max-width: 680px) {
   p {
     font-size: 1em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  h3 {
-    font-size: 1.3em;
-  }
-  h4 {
-    font-size: 1.125em;
   }
 }
 
