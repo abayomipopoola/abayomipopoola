@@ -100,7 +100,7 @@ class CvPage extends React.Component {
         <Wrapper>
 
           <div id="contact-info" class="vcard">
-              <H2>Director, Engineering at Dot</H2>
+              <H2>Director of Engineering at Dot</H2>
               <P>
                   Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</A><br />
                   Email: <A class="email" href="mailto:abayomi@hey.com">abayomi@hey.com</A>
@@ -109,7 +109,7 @@ class CvPage extends React.Component {
 
           <div id="objective">
               <P>
-                  I am a result-driven engineer with 7+ years experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
+                  I am a result-driven engineer with 8+ years experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
               </P>
           </div>
 
@@ -165,7 +165,7 @@ class CvPage extends React.Component {
 
               <Dt>Experience</Dt>
               <Dd>
-                <H2>Dot.limited <span>Director, Engineering – Sep, 2021 - Present</span></H2>
+                <H2>Dot.ai <span>Director, Engineering – Sep, 2021 - Present</span></H2>
                   <P>
                     A fintech startup, democratising financial services with digital banking tools for underserved consumers in emerging markets.
                   </P>
