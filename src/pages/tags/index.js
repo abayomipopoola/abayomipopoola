@@ -21,7 +21,7 @@ const Tags = ({ data, location }) => {
       />
       <Bio />
 
-        <h3><em>Posts Tags</em></h3>
+        <h3>Posts Tags</h3>
 
         <ul style={{listStyle: 'none'}}>
         {tags.map((tag) => (

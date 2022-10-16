@@ -14,7 +14,7 @@ class PortfolioPage extends React.Component {
         />
         <Bio />
 
-        <h3><em>Hello!</em></h3>
+        <h3>Hello!</h3>
         <p>
 			My name is Abayomi, a programmer and entrepreneur who loves building businesses.
         </p>

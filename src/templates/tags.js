@@ -23,7 +23,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
       />
 		  <Bio />
         
-      <h3 style={{ color: '#666666' }}>{totalCount}{totalCount == 1 ? ' post' : ' posts'} in <em>{tag}</em></h3>
+      <h3 style={{ color: '#666666' }}>{totalCount}{totalCount == 1 ? ' post' : ' posts'} in {tag}</h3>
 
 		  <ol style={{ listStyle: 'none' }}>
         {posts.map(post => {
@@ -73,7 +73,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
       </ol>
 
       <Link style={{ boxShadow: 'none' }} to='/tags'>
-          <em>Posts Tags</em>
+        Posts Tags
       </Link>
     </Layout>
   );

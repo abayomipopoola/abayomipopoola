@@ -18,7 +18,7 @@ const BlogIndex = ({ data, location }) => {
 			<Layout location={location} title={siteTitle}>
 				<SEO />
 				<Bio />
-				<h1><em>No blog posts found.</em></h1>
+				<h1>No blog posts found.</h1>
 			</Layout>
 		)
 	}
@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
 		<SEO />
 		<Bio />
 
-		<h3><em>Recent posts</em></h3>
+		<h3>Recent posts</h3>
 
 		<ol style={{ listStyle: `none` }}>
 			{posts.map(post => {
