@@ -325,7 +325,8 @@ a:focus {
 
 .main-heading {
 	color: #1a73e8;
-	font-size: var(--fontSize-5);
+	font-size: 32px;
+	line-height: 40px;
 	margin: 0;
 }
 

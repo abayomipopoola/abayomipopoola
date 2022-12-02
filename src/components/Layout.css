@@ -25,8 +25,23 @@ p {
   color: #353740;
 }
 
-.post h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: ColfaxAIBold,helvetica,sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 28px;
 }
 
 small {
