@@ -58,7 +58,7 @@
 	--color-primary: #005b99;
 	--color-text: #2e353f;
 	--color-text-light: #4f5969;
-	--color-heading: #292929;
+	--color-heading: #202123;
 	--color-heading-black: black;
 	--color-accent: #d1dce5;
 }
@@ -66,18 +66,18 @@
 /* Font faces */
 
 @font-face {
-	font-family: 'source-serif-pro';
-	src: url('/fonts/source-serif-pro-400-normal.woff') format('woff');
+	font-family: 'ColfaxAI';
+	src: url('/fonts/ColfaxAIRegular.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'sohne';
-	src: url('/fonts/sohne-700-normal.woff') format('woff');
+	font-family: 'ColfaxAIBold';
+	src: url('/fonts/ColfaxAIBold.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'sohne-normal';
-	src: url('/fonts/sohne-400-normal.woff') format('woff');
+	font-family: 'ColfaxAIRegularItalic';
+	src: url('/fonts/ColfaxAIRegularItalic.woff2') format('woff2');
 }
 
 /* HTML elements */
@@ -140,7 +140,7 @@ h6 {
 h1 {
 	font-weight: var(--fontWeight-black);
 	font-size: var(--fontSize-6);
-	color: #292929;
+	color: #202123;
 	/* color: var(--color-heading-black); */
 }
 
@@ -174,7 +174,7 @@ h4 > a,
 h5 > a,
 h6 > a {
 	text-decoration: none;
-	color: #292929;
+	color: #202123;
 }
 
 h4 > a:hover {
