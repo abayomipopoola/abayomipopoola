@@ -19,9 +19,8 @@ class PortfolioPage extends React.Component {
 			My name is Abayomi, a programmer and entrepreneur who loves building businesses.
         </p>
         <p>
-      I've got 10 years of experience in building solutions for highly scalable enterprise systems. 
-      I also provide project planning and management for established initiatives within a company; 
-      and ensure that projects are completed to specification, within an established time frame and budget.
+        I am a result-driven engineer with 10 years of experience building and designing highly scalable, resilient, distributed systems.
+        I set technology strategy, and ensure intense executions.
         </p>
         <p>
         I’m currently the Director of Engineering at  <a href="https://www.dot.ai/" target="_blank" >Dot</a>, 
