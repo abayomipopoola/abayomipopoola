@@ -380,6 +380,7 @@ a:focus {
 }
 
 .tags-highlight {
+	font-family: ColfaxAIRegular, helvetica, sans-serif;
 	color: #1a73e8;
 	font-size: 12px;
 	padding: 2px 8px;
