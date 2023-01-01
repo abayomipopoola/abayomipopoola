@@ -66,18 +66,13 @@
 /* Font faces */
 
 @font-face {
-	font-family: 'ColfaxAI';
-	src: url('/fonts/ColfaxAIRegular.woff2') format('woff2');
+	font-family: 'cardea-lining';
+	src: url('/fonts/cardea-lining.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'ColfaxAIBold';
 	src: url('/fonts/ColfaxAIBold.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'ColfaxAIRegularItalic';
-	src: url('/fonts/ColfaxAIRegularItalic.woff2') format('woff2');
 }
 
 /* HTML elements */
@@ -178,7 +173,7 @@ h6 > a {
 }
 
 h4 > a:hover {
-    color: #666666;
+    color: #5A5A5A;
   }
 
 /* Prose */
@@ -467,7 +462,7 @@ a:focus {
 
 
 .card {
-    border: 1px solid #666666;
+    border: 1px solid #5A5A5A;
     border-radius: 0.2em;
     box-shadow: 5px 5px 7px #00000026;
     padding: 1.5em;
@@ -531,7 +526,7 @@ a:focus {
     padding: 0.65em 1em;
     margin: 0;
     background: var(--color-bg--main);
-    border: 1px solid #666666;
+    border: 1px solid #5A5A5A;
     border-right-color: transparent;
     border-radius: 1.5em 0 0 1.5em;
 }
@@ -548,8 +543,8 @@ a:focus {
     border-radius: 0 1.5em 1.5em 0;
 }
 .subscribe__submit:focus {
-    background: #666666;
-    border: 1px solid #666666;
+    background: #5A5A5A;
+    border: 1px solid #5A5A5A;
     outline: none;
 }
 
