@@ -7,7 +7,7 @@ spoiler: Making sense of a larger and more complex data sets that traditional da
 
 ![regression analysis](./bigdata.jpg)
 
-The Higgs Boson, mostly called "the God particle", is what holds the fabric of our universe together--as scientists believe that the particle gives all matter its mass. In order to isolate this particle, scientist utilises the Large Hadron Collider (LHC) that creates 600,000,000 collisions among 3,000,000,000,000,000 protons every second. In the same time, over 50,000,000,000,000 byte of data are being analysed to prove the particle's existence.
+The Higgs field gives mass to fundamental particles--the electrons, quarks and other building blocks that cannot be broken into smaller parts. In order to isolate the Higgs boson--the fundamental particle associated with the Higgs field, scientist utilises the Large Hadron Collider (LHC) that creates 600,000,000 collisions among 3,000,000,000,000,000 protons every second. In the same time, over 50,000,000,000,000 byte of data are being analysed to prove the particle's existence.
 
 With such massive and fast-growing data, Big data made it possible to analyse the plethora of particles. This data is analysed by algorithms that are programmed to detect the energy signatures left behind by the appearance and disappearance of the elusive particles CERN are looking for. The algorithms compare the results with theoretical data on how the particle is believed to act.
 
