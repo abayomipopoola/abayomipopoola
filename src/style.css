@@ -66,8 +66,8 @@
 /* Font faces */
 
 @font-face {
-	font-family: 'cardea-lining';
-	src: url('/fonts/cardea-lining.woff2') format('woff2');
+	font-family: 'adobe-thai';
+	src: url('/fonts/AdobeThai-Regular.woff2') format('woff2');
 }
 
 @font-face {
