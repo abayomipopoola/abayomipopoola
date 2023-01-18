@@ -178,7 +178,7 @@ h6 > a {
 }
 
 h4 > a:hover {
-    color: #5A5A5A;
+    color: #353740;
   }
 
 /* Prose */
@@ -468,7 +468,7 @@ a:focus {
 
 
 .card {
-    border: 1px solid #5A5A5A;
+    border: 1px solid #353740;
     border-radius: 0.2em;
     box-shadow: 5px 5px 7px #00000026;
     padding: 1.5em;
@@ -532,7 +532,7 @@ a:focus {
     padding: 0.65em 1em;
     margin: 0;
     background: var(--color-bg--main);
-    border: 1px solid #5A5A5A;
+    border: 1px solid #353740;
     border-right-color: transparent;
     border-radius: 1.5em 0 0 1.5em;
 }
@@ -549,8 +549,8 @@ a:focus {
     border-radius: 0 1.5em 1.5em 0;
 }
 .subscribe__submit:focus {
-    background: #5A5A5A;
-    border: 1px solid #5A5A5A;
+    background: #353740;
+    border: 1px solid #353740;
     outline: none;
 }
 

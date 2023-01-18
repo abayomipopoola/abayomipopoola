@@ -49,13 +49,13 @@ const BlogIndex = ({ data, location }) => {
 							</header>
 							<section>
 								<p
-									style={{ color: '#5A5A5A'}}
+									style={{ color: '#353740'}}
 									dangerouslySetInnerHTML={{
 										__html: post.frontmatter.spoiler
 									}}
 									itemProp="description"
 								/>
-								<small style={{ color: '#5A5A5A'}}>
+								<small style={{ color: '#353740'}}>
 									{`${post.frontmatter.date} · ${post.timeToRead} min read`}
 								</small>
 								<small>
