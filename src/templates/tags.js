@@ -23,7 +23,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
       />
 		  <Bio />
         
-      <h3 style={{ color: '#353740' }}>{totalCount}{totalCount == 1 ? ' post' : ' posts'} in {tag}</h3>
+      <h3 style={{ color: '#202123' }}>{totalCount}{totalCount == 1 ? ' post' : ' posts'} in {tag}</h3>
 
 		  <ol style={{ listStyle: 'none' }}>
         {posts.map(post => {
@@ -44,13 +44,13 @@ const TagsTemplate = ({ pageContext, data, location }) => {
                         </header>
                         <section>
                             <p
-                                style={{ color: '#353740'}}
+                                style={{ color: '#202123'}}
                                 dangerouslySetInnerHTML={{
                                     __html: post.frontmatter.spoiler
                                 }}
                                 itemProp="description"
                             />
-                            <small style={{ color: '#353740'}}>
+                            <small style={{ color: '#202123'}}>
                                 {`${post.frontmatter.date} · ${post.timeToRead} min read`}
                             </small>
                             <small>

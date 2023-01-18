@@ -1,13 +1,10 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import styled from 'styled-components';
 import { Link } from 'gatsby'
 import SEO from '../../components/Seo'
 import Layout from '../../components/Layout'
 
 const Wrapper = styled.div`
-  #objective {float: left; }
-  #objective p {font-style: italic; color: #666; }
 `;
 const H2 = styled.h2`
   font-size: 18px;
@@ -30,11 +27,11 @@ const H2 = styled.h2`
 }
 `;
 const P = styled.p`
-  margin: 0 0 16px 0;
-  font-size: 16px;
+  margin: 0 0 22px 0;
+  font-size: 22px;
 `;
 const Ps = styled.p`
-  font-size: 14px;
+  font-size: 18px;
   padding: 0 5px;
   margin: 0 0;
 `;
@@ -48,12 +45,12 @@ const A = styled.a`
 `;
 const Ul = styled.ul`
    margin: 0 0 32px 17px;
-   font-size: 16px;
+   font-size: 20px;
 `;
 const Dt = styled.dt`
   font-style: italic;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   text-align: left;
   padding: 0 26px 0 0;
   width: 100%
@@ -102,14 +99,13 @@ class CvPage extends React.Component {
           <div id="contact-info" class="vcard">
               <H2>Director of Engineering at Dot</H2>
               <P>
-                  Cell: <A class="tel" href="tel:+2348073782117">+234 807 378 2117</A><br />
                   Email: <A class="email" href="mailto:abayomi@hey.com">abayomi@hey.com</A>
               </P>
           </div>
 
           <div id="objective">
               <P>
-                  I am a result-driven engineer with 8+ years experience in building solutions for highly scalable enterprise systems. I also provide project planning and management for established initiatives within a company; and ensure that projects are completed to specification, within an established time frame and budget.
+                I am a result-driven engineer with 10 years of experience building and designing highly scalable, resilient, distributed systems. I set technology strategy, and ensure intense executions.
               </P>
           </div>
 

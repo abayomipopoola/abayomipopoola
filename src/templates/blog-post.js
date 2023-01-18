@@ -31,7 +31,7 @@ const BlogPostTemplate = ({ data, location }) => {
 			>
 				<header>
 					<h2 itemProp="headline">{post.frontmatter.title}</h2>
-					<p style={{ color: '#353740', margin: '16px 0', fontSize: 13}}>
+					<p style={{ color: '#202123', margin: '16px 0', fontSize: 12}}>
 						{post.frontmatter.date} · {post.timeToRead} min read
 					</p>
 				</header>
