@@ -6,12 +6,12 @@ body {
 }
 
 a {
-  color: #0093ba;
+  color: #0096CE;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0093ba;
+  color: #0096CE;
 }
 
 a.read-more {
@@ -75,7 +75,7 @@ small {
 blockquote {
   font-size: 0.9em;
   background: #cee4ee;
-  border-left: 3px solid #0093ba;
+  border-left: 3px solid #0096CE;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);
   padding: 0.5em 20px;
