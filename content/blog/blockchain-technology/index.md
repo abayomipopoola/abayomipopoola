@@ -5,7 +5,7 @@ tags: [cryptocurrency, technology]
 spoiler: A distributed ledger at the heart of bitcoin and other virtual currencies, that makes it possible to share data publicly without third parties.
 ---
 
-![Blockchain Technology](./blockchain.jpg)
+![Blockchain Technology](./blockchain-tech.jpg)
 
 In recent years, new members are joining the _Bitcoin/Altcoins_ community, not for any ideological reason but practical ones.
 Whether or not bitcoin will be worth millions isn’t the main question for many computer scientists, investors, and entrepreneurs.

@@ -5,10 +5,9 @@ tags: [payments, economics, business domain]
 spoiler: The role of payment systems and services in financial inclusion, and as a key infrastructure for economic development. Contd.
 ---
 
-![Payment Systems, and the Emerging Economy](./bank-connector.png)
+![Payment Systems, and the Emerging Economy](./bank-connector.jpg)
 
 This is the concluding part of the _Payment Systems, and the Emerging Economy_ blog post.
-
 
 ### Building a payments system for emerging economies
 According to the World Bank, financial inclusion is a key enabler in reducing poverty and boosting prosperity.

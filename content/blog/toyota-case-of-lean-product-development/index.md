@@ -5,7 +5,7 @@ tags: [economics, business domain, product development]
 spoiler: A production system based on the philosophy of achieving the complete elimination of all waste in pursuit of the most efficient methods.
 ---
 
-![Gears](./gears.jpg)
+![Ideas](./ideas.jpg)
 
 Toyota knows how to make cars so well that it became the first company to produce more than 10 million units a year. Its success is rooted in a special system and began what is now known as 'Lean Manufacturing', an ethos emulated by companies around the world to make products faster, cheaper and better.
 

@@ -5,7 +5,7 @@ tags: [payments, economics, business domain]
 spoiler: The role of payment systems and services in financial inclusion, and as a key infrastructure for economic development.
 ---
 
-![Payment Systems, and the Emerging Economy](./bank-connector.png)
+![Payment Systems, and the Emerging Economy](./bank-connector.jpg)
 
 Today, banking is possible anywhere you are. As long as you have a mobile phone with you, it's all the bank you need. You can buy that item you want, pay your bills and transfer money to a friend. All while enjoying a coffee in your favourite cafe. Financial bodies continually simplify the way we make transactions.
 

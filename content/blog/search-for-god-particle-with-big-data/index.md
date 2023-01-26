@@ -5,7 +5,7 @@ tags: [data, physics]
 spoiler: Making sense of a larger and more complex data sets that traditional data processing software can’t manage, in order to understand observed events.
 ---
 
-![regression analysis](./bigdata.jpg)
+![regression analysis](./big-data.jpg)
 
 The Higgs field gives mass to fundamental particles--the electrons, quarks and other building blocks that cannot be broken into smaller parts. In order to isolate the Higgs boson--the fundamental particle associated with the Higgs field, scientist utilises the Large Hadron Collider (LHC) that creates 600,000,000 collisions among 3,000,000,000,000,000 protons every second. In the same time, over 50,000,000,000,000 byte of data are being analysed to prove the particle's existence.
 

@@ -5,7 +5,7 @@ tags: [economics,  product development]
 spoiler: Understanding product development as an example of a systematic process that we can model and improve upon.
 ---
 
-![Economics of Product Development](./lean.gif)
+![Economics of Product Development](./lean.jpg)
 
 _The Principles of Product Development Flow_ by Donald Reinertsen is a book on Lean Product Development that systematically applies several economic theories, lean manufacturing, queuing theory, statistics, etc, to the product development process. 
 
