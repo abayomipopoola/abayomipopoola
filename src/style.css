@@ -66,8 +66,8 @@
 /* Font faces */
 
 @font-face {
-	font-family: 'Libre Baskerville';
-	src: url('/fonts/LibreBaskerville-Regular.woff2') format('woff2');
+	font-family: 'Blanco';
+	src: url('/fonts/BlancoSubset-Regular.woff2') format('woff2');
 }
 
 @font-face {

@@ -1,6 +1,6 @@
 body {
-  font-family: 'Libre Baskerville', 'Georgia', 'Cambria', serif;
-  font-size: 16px;
+  font-family: Blanco, 'Georgia', serif;
+  font-size: 19px;
   font-weight: 400;
   line-height: 30px;
   background-color: #e3f0f4;
@@ -16,7 +16,7 @@ a:hover {
 }
 
 a.read-more {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 p {

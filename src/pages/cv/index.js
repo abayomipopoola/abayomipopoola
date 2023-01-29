@@ -16,7 +16,7 @@ const H2 = styled.h2`
     bottom: 0;
     right: 0;
     font-style: italic;
-    font-size: 15px;
+    font-size: 16px;
     color: #999;
     font-weight: normal;
   };
@@ -30,7 +30,7 @@ const P = styled.p`
   margin: 0 0 22px 0;
 `;
 const Ps = styled.p`
-  font-size: 12px;
+  font-size: 13px;
   padding: 0 5px;
   margin: 0 0;
 `;
@@ -44,12 +44,12 @@ const A = styled.a`
 `;
 const Ul = styled.ul`
    margin: 0 0 32px 17px;
-   font-size: 15px;
+   font-size: 16px;
 `;
 const Dt = styled.dt`
   font-style: italic;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
   padding: 0 26px 0 0;
   width: 100%
@@ -59,7 +59,7 @@ const Dd = styled.dd`
   .flex-wrapper {
     float: right;
     display: flex;
-    margin: 15px;
+    margin: 16px;
   }
   .row {
     display: flex;
