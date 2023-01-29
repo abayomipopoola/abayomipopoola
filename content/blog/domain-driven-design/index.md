@@ -7,7 +7,7 @@ spoiler: Tackling software complexities by connecting its related pieces into an
 
 ![Domain drivien design](./ddd.png)
 
-An old chess saying goes as thus: "tactics is knowing what to do when there's something to do, while strategy is knowing what to do when there's nothing to do". Although it's slightly exaggerated, a more granular difference might be that tactics are the actual means used to gain an objective, while strategy is the overall campaign plan, which may involve complex operational patterns, activity, and decision-making that govern tactical execution (wiki).
+An old chess saying goes as follows: "tactics is knowing what to do when there's something to do, while strategy is knowing what to do when there's nothing to do". Although it's slightly exaggerated, a more granular difference might be that tactics are the actual means used to gain an objective, while strategy is the overall campaign plan, which may involve complex operational patterns, activity, and decision-making that govern tactical execution (wiki).
 
 Building software without starting with the end in mind is synonymous to not having a strategy in place. Most developers tend to focus more on the technical details than solving the actual business needs--tactics without strategy.
 
