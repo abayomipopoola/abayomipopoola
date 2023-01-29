@@ -44,7 +44,7 @@ const A = styled.a`
 `;
 const Ul = styled.ul`
    margin: 0 0 32px 17px;
-   font-size: 14px;
+   font-size: 15px;
 `;
 const Dt = styled.dt`
   font-style: italic;
