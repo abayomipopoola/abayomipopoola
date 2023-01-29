@@ -66,8 +66,8 @@
 /* Font faces */
 
 @font-face {
-	font-family: 'adobe-thai';
-	src: url('/fonts/AdobeThai-Regular.woff2') format('woff2');
+	font-family: 'Libre Baskerville';
+	src: url('/fonts/LibreBaskerville-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -487,9 +487,8 @@ a:focus {
 .txt--bold {
     font-weight: bold;
 }
-.txt--x-small {
-    font-size: var(--fontSize-2);
-}
+.txt--x-small {}
+
 .card--subscribe {
     margin: 0 auto;
     overflow: initial;

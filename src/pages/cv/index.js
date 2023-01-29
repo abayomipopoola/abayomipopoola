@@ -16,7 +16,7 @@ const H2 = styled.h2`
     bottom: 0;
     right: 0;
     font-style: italic;
-    font-size: 16px;
+    font-size: 15px;
     color: #999;
     font-weight: normal;
   };
@@ -28,10 +28,9 @@ const H2 = styled.h2`
 `;
 const P = styled.p`
   margin: 0 0 22px 0;
-  font-size: 22px;
 `;
 const Ps = styled.p`
-  font-size: 18px;
+  font-size: 12px;
   padding: 0 5px;
   margin: 0 0;
 `;
@@ -45,12 +44,12 @@ const A = styled.a`
 `;
 const Ul = styled.ul`
    margin: 0 0 32px 17px;
-   font-size: 20px;
+   font-size: 14px;
 `;
 const Dt = styled.dt`
   font-style: italic;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 16px;
   text-align: left;
   padding: 0 26px 0 0;
   width: 100%
