@@ -19,7 +19,7 @@ class PortfolioPage extends React.Component {
 			My name is Abayomi, a programmer and entrepreneur who loves building businesses.
         </p>
         <p>
-        I am a result-driven engineer with 10 years of experience building and designing highly scalable, resilient, distributed systems.
+        I am a result-driven engineer with extensive experience in building and designing highly scalable, resilient, distributed systems.
         I set technology strategy, and ensure intense executions.
         </p>
         <p>
