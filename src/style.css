@@ -58,7 +58,7 @@
 	--color-primary: #005b99;
 	--color-text: #2e353f;
 	--color-text-light: #4f5969;
-	--color-heading: #0096CE;
+	--color-heading: #0984E3;
 	--color-heading-black: black;
 	--color-accent: #d1dce5;
 }
@@ -324,7 +324,7 @@ a:focus {
 }
 
 .main-heading {
-	color: #0096CE;
+	color: #0984E3;
 	font-size: 32px;
 	line-height: 40px;
 	margin: 0;
@@ -380,13 +380,12 @@ a:focus {
 
 .tags-highlight {
 	font-family: ColfaxAIRegular, helvetica, sans-serif;
-	color: #0096CE;
+	color: #0984E3;
 	font-size: 12px;
 	padding: 2px 8px;
 	margin-left: 0.6rem;
-	border: 1px solid #C9E2F1;
+	border: 1px solid #cfe2f3;
     border-radius: 3px;
-    /* background-color: #C9E2F1; */
 }
 
 .tags-highlight>span {
@@ -536,13 +535,13 @@ a:focus {
     border-radius: 1.5em 0 0 1.5em;
 }
 .subscribe__email:focus {
-    border: 1px solid #0096CE;
+    border: 1px solid #0984E3;
     outline: none;
 }
 .subscribe__submit {
     padding: 0.5em 1em;
-    background: #0096CE;
-    border: 1px solid #0096CE;
+    background: #0984E3;
+    border: 1px solid #0984E3;
 	color: #fff;
     border-left-color: transparent;
     border-radius: 0 1.5em 1.5em 0;

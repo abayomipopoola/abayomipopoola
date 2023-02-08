@@ -3,16 +3,16 @@ body {
   font-size: 19.5px;
   font-weight: 400;
   line-height: 30px;
-  background-color: #e3f0f4;
+  background-color: #DFE6E9;
 }
 
 a {
-  color: #0096CE;
+  color: #0984E3;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0096CE;
+  color: #0984E3;
 }
 
 a.read-more {
@@ -76,7 +76,7 @@ small {
 blockquote {
   font-size: 0.9em;
   background: #cee4ee;
-  border-left: 3px solid #0096CE;
+  border-left: 3px solid #0984E3;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);
   padding: 0.5em 20px;
@@ -131,8 +131,7 @@ blockquote p {
   width: 30px;
   margin-right: 8px;
   display: inline-block;
-  /* background-color: #C9E2F1; */
-  border: 1px #C9E2F1 solid;
+  border: 1px #cfe2f3 solid;
   box-shadow: none;
   border-radius: 50%;
   color: black;
@@ -141,8 +140,8 @@ blockquote p {
 }
 
 .share a:hover {
-  border: 1px #C9E2F1 solid;
-  background-color: #C9E2F1;
+  border: 1px #9fc5e8 solid;
+  background-color: #9fc5e8;
 }
 
 .share .text {
