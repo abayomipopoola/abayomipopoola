@@ -2,16 +2,16 @@
 title: It’s important that your job matches your personality
 date: "2018-12-13T22:40:32.169Z"
 tags: [psychology, business domain]
-spoiler: Scale an enterprise by understand how different personalities map to different kinds of jobs, and who'd be good or sucks at what.
+description: Scale an enterprise by understand how different personalities map to different kinds of jobs, and who'd be good or sucks at what.
 ---
 
 ![personality](./personality.jpg)
 
 Your personality will partially determine how good you are at your job, especially if your job requires more than rote behavior.
 
-So are you and your job a good fit? Creative people prefer jobs that allow them to try new things--***openness***--one of the
+So are you and your job a good fit? Creative people prefer jobs that allow them to try new things--**_openness_**--one of the
 'Big Five personality traits'; these guys are more likely to succeed at jobs that require novel solutions over efficient ones.
-On the contrary, some people are ***conscientious***--another 'Big Five personality trait', and they're likely to be better off
+On the contrary, some people are **_conscientious_**--another 'Big Five personality trait', and they're likely to be better off
 in a management or administrative position.
 
 This article is based on a BigThink video by Jordan Peterson; he started by suggesting a job categorisation scheme that’s rather
@@ -79,6 +79,5 @@ types is it just lets companies die.
 Now you might think, “Well I don’t want my company to die.” Of course, who would? So you need to understand the difference between
 these two kinds of people--which you probably won’t and you probably won’t admit to even if you knew. And then you have to figure
 out how to get the balance right. And that’s extraordinarily complicated.
-
 
 <small>References: image, scientopia.org; video link <a href="http://bit.ly/2PzUeTn" target="_blank">here</a>, by Jordan Peterson</small>

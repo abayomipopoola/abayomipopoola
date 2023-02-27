@@ -2,7 +2,7 @@
 title: Domain-Driven Design
 date: "2019-12-30T11:00:03.284Z"
 tags: [programming, business domain]
-spoiler: Tackling software complexities by connecting its related pieces into an ever-evolving business model and processes.
+description: Tackling software complexities by connecting its related pieces into an ever-evolving business model and processes.
 ---
 
 ![Domain drivien design](./ddd.png)
@@ -11,7 +11,7 @@ An old chess saying goes as follows: "tactics is knowing what to do when there's
 
 Building software without starting with the end in mind is synonymous to not having a strategy in place. Most developers tend to focus more on the technical details than solving the actual business needs--tactics without strategy.
 
->Why though? Of course, because strategy is hard, tactics are easier, and people prefer easier tasks.
+> Why though? Of course, because strategy is hard, tactics are easier, and people prefer easier tasks.
 
 ![strategy-tactics](./visionstrategytactics.png)
 
@@ -29,7 +29,7 @@ To create good software, you have to know what that software is all about. You c
 
 To accomplish this, DDD advocates that the domain experts--the banker in our case--and the developer consciously communicate the domain in other to build a model. This is done in a way that the domain experts don’t ask for what he wants to see in the implementation, like describing a new user story in terms of a field on a screen or a menu item, and whatnot; they talk about the underlying property or behaviour that’s required on a domain object. Similarly, the developers don’t talk about new instance variables of a class or columns in a database table.
 
->A Domain Model is an Object Model describing the problem domain. They include the domain objects in the problem domain and describe the attributes, behaviour and relationships between them.
+> A Domain Model is an Object Model describing the problem domain. They include the domain objects in the problem domain and describe the attributes, behaviour and relationships between them.
 
 ### Ubiquitous language
 
@@ -43,7 +43,7 @@ A model is always within a context of a sort; the context is a setting that dete
 
 The Bounded context (BC) is the context in which the ubiquitous language and the corresponding models are valid. It gives the team a clear understanding of what has to be consistent and what can develop independently. Every domain model lives in precisely one BC, and a BC contains precisely one domain model.
 
->Bounded Context is where Ubiquitous Language lives.
+> Bounded Context is where Ubiquitous Language lives.
 
 A graph that connects different contexts, is called a context map. For each context, you find a language, an independent implementation and an interface to talk to other bounded contexts. A context map helps us understand the nature of each bounded context dependencies.
 
@@ -56,13 +56,13 @@ In this case, the two contexts have some logical overlapping area: the concept o
 ### An over-simplified version of Eric's book
 
 In summary, these are the main concept of Eric's book:
-* Knowledge crunching
-* Ubiquitous language
-* Model-driven design
-* Implementation patterns (entity, aggregate, aggregate root, value object, strategy, domain service, domain event, repository, etc)
-* Supple design, Refactoring towards deeper insight
-* Strategic design (bounded context, context map, core domain, subdomains).
-Although you'll most likely have to read the book to understand most of the jargons. My writeup is merely a brief introduction to the DDD concept.
+
+- Knowledge crunching
+- Ubiquitous language
+- Model-driven design
+- Implementation patterns (entity, aggregate, aggregate root, value object, strategy, domain service, domain event, repository, etc)
+- Supple design, Refactoring towards deeper insight
+- Strategic design (bounded context, context map, core domain, subdomains).
+  Although you'll most likely have to read the book to understand most of the jargons. My writeup is merely a brief introduction to the DDD concept.
 
 <a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Get the book here</a>.
-

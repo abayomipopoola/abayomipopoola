@@ -2,7 +2,7 @@
 title: How to Get Rich (without getting lucky) pt. 2
 date: "2018-08-20T22:06:03.284Z"
 tags: [tweetstorm, naval]
-spoiler: Part two of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
+description: Part two of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
 ---
 
 ![The life we live in](./feynman.jpeg)
@@ -53,11 +53,10 @@ But I think a good leader doesn’t take credit. A good leader basically tries t
 
 Summary:
 
-* Pick an industry where you can play long-term games with long-term people. Long-term players make each other rich.
-* Short-term players make themselves rich.
+- Pick an industry where you can play long-term games with long-term people. Long-term players make each other rich.
+- Short-term players make themselves rich.
 
-
-###  The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet.
+### The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet.
 
 #### The Internet has massively broadened the possible space of careers
 
@@ -107,13 +106,13 @@ And so the more authentic you are to who you are, and what you love to do, the l
 
 Summary:
 
-* The Internet has massively broadened the possible space of careers, by allowing you to scale any niche obsession.
-* Before the Internet there was no way to find all the people in the world who were interested in your obsession. Now you can.
-* Escape competition through authenticity--when you’re competing with people it’s because you’re copying them.
-* No one can compete with you on being you. Before the Internet, this was useless advice--now it’s a career.
+- The Internet has massively broadened the possible space of careers, by allowing you to scale any niche obsession.
+- Before the Internet there was no way to find all the people in the world who were interested in your obsession. Now you can.
+- Escape competition through authenticity--when you’re competing with people it’s because you’re copying them.
+- No one can compete with you on being you. Before the Internet, this was useless advice--now it’s a career.
 
+### Play iterated games.
 
-###  Play iterated games.
 > All the returns in life, whether in wealth, relationships, or knowledge, come from compound interest.
 
 #### Returns come from compound interest in iterated games
@@ -126,9 +125,8 @@ It’s true in health and fitness. You know, the fitter you are, the easier it i
 
 Summary:
 
-* All returns in life come from compound interest over many turns of long-term games--and they usually come at the end.
-* People are fair with each other when they know there will be more turns of the game. Friction goes down with each turn, so you can do bigger and bigger things together.
-
+- All returns in life come from compound interest over many turns of long-term games--and they usually come at the end.
+- People are fair with each other when they know there will be more turns of the game. Friction goes down with each turn, so you can do bigger and bigger things together.
 
 ### Pick business partners with high intelligence, energy, and, above all, integrity.
 
@@ -139,7 +137,6 @@ In terms of picking people to work with, pick ones that have high intelligence, 
 You need someone who is smart, or they’ll head in the wrong direction. And you’re not going to end up in the right place. You need someone high-energy because the world is full of smart, lazy people.
 
 We all know people in our life who are really smart, but can’t get out of bed, or lift a finger. And we also know people who are very high energy, but not that smart. So, they work hard, but they’re sort of running in the wrong direction.
-
 
 And smart is not a pejorative. It’s not meant to say someone is smart, someone else is stupid. But it’s more that everyone is smart at different things. So, depending on what you want to do well, you have to find someone who is smart at that thing.
 
@@ -185,11 +182,10 @@ So, yeah, pick an industry in which you can play long-term games with long-term 
 
 Summary:
 
-* Pick business partners with high intelligence, energy and integrity.
-* They need intelligence or they’ll head in the wrong direction. They need energy because the world is full of smart, lazy people. And they need integrity or you’ll have a smart and hard working crook, who’ll eventually cheat you.
-* People may be energetic on some tasks but not on others. Put them on the right tasks.
-* Integrity is what someone does, despite what they say they do.
-
+- Pick business partners with high intelligence, energy and integrity.
+- They need intelligence or they’ll head in the wrong direction. They need energy because the world is full of smart, lazy people. And they need integrity or you’ll have a smart and hard working crook, who’ll eventually cheat you.
+- People may be energetic on some tasks but not on others. Put them on the right tasks.
+- Integrity is what someone does, despite what they say they do.
 
 ### Don't partner with cynics and pessimists. Their beliefs are self-fulfilling.
 
@@ -247,10 +243,10 @@ So, you’ve got to treat everybody with respect. You’ve got to look up to eve
 
 Summary:
 
-* Partner with rational optimists. They know the downsides but they keep their chin up.
-* Don’t partner with cynics and pessimists, their beliefs are self-fulfilling.
-* Pessimists don’t have an action bias nor do they want to lead, follow or get out of the way.
-* It made sense to be pessimistic in the past. But modern society is far safer, with limited downside and unlimited upside. Adapting for modern society means overriding your natural pessimism.
-* Worst of all is the nitpicker.
+- Partner with rational optimists. They know the downsides but they keep their chin up.
+- Don’t partner with cynics and pessimists, their beliefs are self-fulfilling.
+- Pessimists don’t have an action bias nor do they want to lead, follow or get out of the way.
+- It made sense to be pessimistic in the past. But modern society is far safer, with limited downside and unlimited upside. Adapting for modern society means overriding your natural pessimism.
+- Worst of all is the nitpicker.
 
 <small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.

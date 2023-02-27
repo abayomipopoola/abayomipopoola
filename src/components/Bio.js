@@ -1,18 +1,10 @@
 import React from "react"
-import {useStaticQuery, graphql, Link} from "gatsby"
-
-import Image from "gatsby-image"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
-	const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.JPG/" }) {
-        childImageSharp {
-          fixed(width: 50, height: 50, quality: 95) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
           author {
@@ -27,40 +19,37 @@ const Bio = () => {
     }
   `)
 
-	// Set these values by editing "siteMetadata" in gatsby-config.js
-	const author = data.site.siteMetadata?.author
-	const social = data.site.siteMetadata?.social
+  // Set these values by editing "siteMetadata" in gatsby-config.js
+  const author = data.site.siteMetadata?.author
 
-	const avatar = data?.avatar?.childImageSharp?.fixed
-
-	return (
-		<div className="bio">
-			{avatar && (
-				<Image
-					fixed={avatar}
-					alt={author?.name || ``}
-					className="bio-avatar"
-					imgStyle={{
-						borderRadius: `50%`,
-					}}
-				/>
-			)}
-			{author?.name && (
-				<p>
-					{author?.summary || null}
-					{` `}
-					<br/>
-					<Link style={{ boxShadow: 'none' }} to='/me'>
-						<em>About & Contact</em>
-					</Link>
-					{' - '}
-					<Link style={{ boxShadow: 'none' }} to='/tags'>
-						<em>Posts Tags</em>
-					</Link>
-				</p>
-			)}
-		</div>
-	)
+  return (
+    <div className="bio">
+      <StaticImage
+        className="bio-avatar"
+        layout="fixed"
+        formats={["auto", "webp", "avif"]}
+        src="../images/profile-pic.jpeg"
+        width={50}
+        height={50}
+        quality={95}
+        alt="Profile picture"
+      />
+      {author?.name && (
+        <p>
+          {author?.summary || null}
+          {` `}
+          <br />
+          <Link style={{ boxShadow: "none" }} to="/me">
+            <em>About & Contact</em>
+          </Link>
+          {" - "}
+          <Link style={{ boxShadow: "none" }} to="/tags">
+            <em>Posts Tags</em>
+          </Link>
+        </p>
+      )}
+    </div>
+  )
 }
 
 export default Bio

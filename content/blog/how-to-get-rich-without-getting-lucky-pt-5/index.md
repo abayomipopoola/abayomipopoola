@@ -2,7 +2,7 @@
 title: How to Get Rich (without getting lucky) pt. 5
 date: "2018-08-20T22:09:03.284Z"
 tags: [tweetstorm, naval]
-spoiler: Part five of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
+description: Part five of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
 ---
 
 ![The life we live in](./feynman.jpeg)
@@ -71,12 +71,11 @@ They’re not making money, they’re losing money, they’re constantly stresse
 
 Summary:
 
-* There’s no actual skill called “business”. It’s too broad; it’s like a skill called “relating to humans.”
-* Instead, learn basic concepts from game theory, psychology, ethics, mathematics, computers, and logic.
-* Doing is faster than watching: you will get much more skilled at “business” by running a lemonade stand than by reading business school case studies.
-* The number of “doing” iterations drives the learning curve. You will learn more by running different experiments every day than by doing the same job over and over.
-* We’re not evolved to bleed a little bit every day with failed iterations. We’re evolved for small victories all the time, but that’s where the herd is. If you’re willing to bleed a little bit every day, you may win big later.
-
+- There’s no actual skill called “business”. It’s too broad; it’s like a skill called “relating to humans.”
+- Instead, learn basic concepts from game theory, psychology, ethics, mathematics, computers, and logic.
+- Doing is faster than watching: you will get much more skilled at “business” by running a lemonade stand than by reading business school case studies.
+- The number of “doing” iterations drives the learning curve. You will learn more by running different experiments every day than by doing the same job over and over.
+- We’re not evolved to bleed a little bit every day with failed iterations. We’re evolved for small victories all the time, but that’s where the herd is. If you’re willing to bleed a little bit every day, you may win big later.
 
 ### The Foundations Are Math and Logic
 
@@ -89,7 +88,6 @@ Foundational things are principles, they’re algorithms, they’re deep seated 
 As Nassim Taleb says, it is easier to macro bullshit than it is the micro bullshit. Because macroeconomics is voodoo-complex-science meets politics. You can’t find two macroeconomists to agree on anything these days, and different macroeconomists get used by different politicians to peddle their different pet theories.
 
 There are even macroeconomists out there now peddling something called Modern Monetary Theory which basically says, hey, except for this pesky thing called inflation, we can just print all the money that we want. Yes, except for this pesky thing called inflation. That’s like saying, except for limited energy, we can fire rockets off into space all day long.
-
 
 It’s just nonsense, but the fact that there are people who have “macroeconomist” in their title and are peddling Modern Monetary Theory just tells you that macroeconomics as a so-called science has been corrupted. It’s now a branch of politics.
 
@@ -111,11 +109,10 @@ If you’re good with computers, if you’re good at basic mathematics, if you�
 
 Summary:
 
-* If you understand math and logic, you have the basis for understanding the scientific method. Once you understand the scientific method, you can separate truth from falsehood in other fields.
-* Be careful when reading because so-called facts are often just opinions with a veneer of pseudoscience around them.
-* It’s better to read a great book slowly than to fly through a hundred books quickly. Understanding comes through repetition and usage.
-* The five most important skills are reading, writing, arithmetic, persuasion, and programming. If you’re good with computers, if you’re good at basic math, if you’re good at writing, if you’re good at speaking, and if you like to read, you’re set for life.
-
+- If you understand math and logic, you have the basis for understanding the scientific method. Once you understand the scientific method, you can separate truth from falsehood in other fields.
+- Be careful when reading because so-called facts are often just opinions with a veneer of pseudoscience around them.
+- It’s better to read a great book slowly than to fly through a hundred books quickly. Understanding comes through repetition and usage.
+- The five most important skills are reading, writing, arithmetic, persuasion, and programming. If you’re good with computers, if you’re good at basic math, if you’re good at writing, if you’re good at speaking, and if you like to read, you’re set for life.
 
 ### Read What You Love Until You Love to Read
 
@@ -163,12 +160,11 @@ But one of the problems is that schools and our educational system, and even our
 
 Summary:
 
-* Read what you love until you love to read. Start with the books that interest you, no matter how unrefined they may seem.
-* To avoid being seduced by lies, read the original scientific texts in a field. For example, instead of reading a business book, pick up Adam Smith’s The Wealth of Nations.
-* If you understand the basics, especially in math and science, you will not be afraid of any book.
-* The means of learning are abundant, the desire to learn is scarce. The beauty of the Internet is that the entire library of Alexandria is at your fingertips at all times.
-* Children have a natural desire to learn: they’re always asking questions. But child-rearing and schools replace curiosity with compliance.
-
+- Read what you love until you love to read. Start with the books that interest you, no matter how unrefined they may seem.
+- To avoid being seduced by lies, read the original scientific texts in a field. For example, instead of reading a business book, pick up Adam Smith’s The Wealth of Nations.
+- If you understand the basics, especially in math and science, you will not be afraid of any book.
+- The means of learning are abundant, the desire to learn is scarce. The beauty of the Internet is that the entire library of Alexandria is at your fingertips at all times.
+- Children have a natural desire to learn: they’re always asking questions. But child-rearing and schools replace curiosity with compliance.
 
 ### Be Too Busy to “Do Coffee”
 
@@ -214,10 +210,9 @@ A busy calendar and a busy mind will destroy your ability to do great things in 
 
 Summary:
 
-* You should be too busy to “do coffee”, while still keeping an uncluttered calendar.
-* People will meet with you when you have proof of work.
-* Networking is overrated even early in your career.
-
+- You should be too busy to “do coffee”, while still keeping an uncluttered calendar.
+- People will meet with you when you have proof of work.
+- Networking is overrated even early in your career.
 
 ### Set an Aspirational Hourly Rate
 
@@ -263,14 +258,13 @@ Ironically, I actually think I’ve beaten it. I’m not the hardest working per
 
 Summary:
 
-* Set and enforce an aspirational hourly rate.
-* If fixing a problem will save less than your rate, ignore it. If outsourcing a task will cost less than your hourly rate, outsource it.
-* You can penny-pinch your way to a basic sustenance. But you can’t penny pinch your way to wealth.
-* My aspirational rate was $5,000/hr. Of course, I still ended up doing stupid things.
-* You should be working on your product and getting product-market fit. And you should be exercising and eating healthy.
-* That’s all you have time for while you’re on this mission.
-* Your hourly rate should seem absurdly high.
-
+- Set and enforce an aspirational hourly rate.
+- If fixing a problem will save less than your rate, ignore it. If outsourcing a task will cost less than your hourly rate, outsource it.
+- You can penny-pinch your way to a basic sustenance. But you can’t penny pinch your way to wealth.
+- My aspirational rate was $5,000/hr. Of course, I still ended up doing stupid things.
+- You should be working on your product and getting product-market fit. And you should be exercising and eating healthy.
+- That’s all you have time for while you’re on this mission.
+- Your hourly rate should seem absurdly high.
 
 ### Work As Hard As You Can
 
@@ -330,11 +324,10 @@ If I don’t solve a problem the moment it happens, or if I don’t start moving
 
 Summary:
 
-* Work as hard as you can. Even though what you work on and who you work with are more important.
-* Nobody really works 80 hours a week. Rather, people sprint as hard as they can when they’re inspired, then they rest.
-* Inspiration is perishable. When you have it, just seize it.
-* Impatience with actions, patience with results. Anything you have to do, just get it done. Then give up on the results and be patient because you’re dealing with complex systems.
-
+- Work as hard as you can. Even though what you work on and who you work with are more important.
+- Nobody really works 80 hours a week. Rather, people sprint as hard as they can when they’re inspired, then they rest.
+- Inspiration is perishable. When you have it, just seize it.
+- Impatience with actions, patience with results. Anything you have to do, just get it done. Then give up on the results and be patient because you’re dealing with complex systems.
 
 ### Keep Redefining What You Do
 
@@ -362,9 +355,8 @@ If you want to be successful in life you just have to get comfortable managing m
 
 Summary:
 
-* Keep redefining what you do until you’re the best in the world at what you do.
-* Find founder-product-market fit.
-
+- Keep redefining what you do until you’re the best in the world at what you do.
+- Find founder-product-market fit.
 
 ### Pick a Business Model With Leverage
 
@@ -396,7 +388,7 @@ You want to be in a network effects business, assuming you’re not number two. 
 
 ### Network effect businesses are natural monopolies
 
-One of the dirty secrets of Silicon Valley is that a lot of the winning businesses are natural monopolies.  Even ride-sharing tends towards one winner-take-all system.
+One of the dirty secrets of Silicon Valley is that a lot of the winning businesses are natural monopolies. Even ride-sharing tends towards one winner-take-all system.
 
 Uber will always have better economics than Lyft, as long as it’s moving more drivers and more riders around. Something like Google, there’s basically only one viable search engine. I do like DuckDuckGo, privacy reasons, but they’re just always gonna be behind because of network effects. Twitter: where else would you go for microblogging? Even YouTube has weak network effects, but they’re still powerful enough that there’s really no number two site that you go to, to consume your video on a regular basis. It even turns out in e-tail, Amazon Prime and kind of the convenience of stored credit cards and information creates a powerful network effect.
 
@@ -426,16 +418,15 @@ You should always be thinking about how your users, your customers, can add valu
 
 Summary:
 
-* Ideally, you should pick a business model with network effects, low marginal costs and scale economies.
-* Scale economies: the more you produce, the cheaper it gets. Making Widget 10,000 is cheaper than making Widget 1. This is a barrier to entry against competition.
-* Zero marginal cost of reproduction: producing more is free. This is common in software and media products. It doesn’t cost me more when more people listen to this podcast.
-* Network effects: each new user adds value to the existing users. Languages and money are universal examples of network effects.
-* Network effect businesses are natural monopolies because the customers want to be where the other customers (or suppliers) are.
-* Zero marginal cost businesses can pivot into network effect businesses. Since it doesn’t cost you anything to make more, you can create hooks for the users to add value to each other.
+- Ideally, you should pick a business model with network effects, low marginal costs and scale economies.
+- Scale economies: the more you produce, the cheaper it gets. Making Widget 10,000 is cheaper than making Widget 1. This is a barrier to entry against competition.
+- Zero marginal cost of reproduction: producing more is free. This is common in software and media products. It doesn’t cost me more when more people listen to this podcast.
+- Network effects: each new user adds value to the existing users. Languages and money are universal examples of network effects.
+- Network effect businesses are natural monopolies because the customers want to be where the other customers (or suppliers) are.
+- Zero marginal cost businesses can pivot into network effect businesses. Since it doesn’t cost you anything to make more, you can create hooks for the users to add value to each other.
 
+### There are no get rich quick schemes. That's just someone else getting rich off you.
 
-###  There are no get rich quick schemes. That's just someone else getting rich off you.
-
-###  When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
+### When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
 
 <small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.

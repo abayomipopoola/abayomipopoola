@@ -2,7 +2,7 @@
 title: How to Get Rich (without getting lucky) pt. 4
 date: "2018-08-20T22:08:03.284Z"
 tags: [tweetstorm, naval]
-spoiler: Part four of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
+description: Part four of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
 ---
 
 ![The life we live in](./feynman.jpeg)
@@ -65,16 +65,14 @@ If you have specific knowledge in a domain and if you’re accountable and you h
 
 Capital also is fairly well understood. I think a lot of the knocks against capitalism come because of the accumulation of capital.
 
-
 Summary:
 
-* Wealth requires leverage. Labor and capital are older forms of leverage that everyone is fighting over.
-* Our brains aren’t evolved to comprehend new forms of leverage and just how much leverage is possible in modern society.
-* Society overvalues labor leverage, which is people working for you. It is incredibly messy and competitive.
-* You want the minimum amount of labor that allows you to use the other forms of leverage.
-* Capital has been the dominant form of leverage in the last century. It scales very well: you can manage more capital much more easily than you can manage people.
-* If you have specific knowledge in a domain and if you’re accountable, people will give you capital as a form of leverage.
-
+- Wealth requires leverage. Labor and capital are older forms of leverage that everyone is fighting over.
+- Our brains aren’t evolved to comprehend new forms of leverage and just how much leverage is possible in modern society.
+- Society overvalues labor leverage, which is people working for you. It is incredibly messy and competitive.
+- You want the minimum amount of labor that allows you to use the other forms of leverage.
+- Capital has been the dominant form of leverage in the last century. It scales very well: you can manage more capital much more easily than you can manage people.
+- If you have specific knowledge in a domain and if you’re accountable, people will give you capital as a form of leverage.
 
 ### Product and Media are New Leverage
 
@@ -141,12 +139,11 @@ These robots aren’t very smart. They have to be told very precisely what to do
 
 Summary:
 
-* Product and media are the new leverage.
-* Product leverage is where the new fortunes are made.
-* Combining all three forms of leverage is a magic combination.
-* Product and media leverage are permissionless.
-* The robot army is already here--code lets you tell them what to do.
-
+- Product and media are the new leverage.
+- Product leverage is where the new fortunes are made.
+- Combining all three forms of leverage is a magic combination.
+- Product and media leverage are permissionless.
+- The robot army is already here--code lets you tell them what to do.
 
 ### Product Leverage is Egalitarian
 
@@ -212,13 +209,12 @@ Capital and labor are also becoming permissionless, and you don’t need to nece
 
 Summary:
 
-* Product leverage is a positive-sum game.
-* Status goods are limited to a few people.
-* The best products tend to be targeted at the middle class.
-* Creating wealth with product leads to more ethical wealth.
-* You want to use the product that is used by the most people.
-* Capital and labor are becoming permissionless.
-
+- Product leverage is a positive-sum game.
+- Status goods are limited to a few people.
+- The best products tend to be targeted at the middle class.
+- Creating wealth with product leads to more ethical wealth.
+- You want to use the product that is used by the most people.
+- Capital and labor are becoming permissionless.
 
 ### Example: From Laborer to Entrepreneur
 
@@ -280,13 +276,12 @@ As you layer in more and more kinds of knowledge that can only be gained on the 
 
 Summary:
 
-* The continuum from laborer to real estate tech company entrepreneur goes from low to high specific knowledge, accountability and leverage.
-* Laborers get paid hourly. The owner of the house doesn’t know who they are and they can be replaced by machines or newly trained hires.
-* General contractors pocket the profits of a job but they also eat the losses. They have laborers working for them and know how to organize projects.
-* Property developers use loans to build new homes and sell them at a profit. They know where to buy, how much to spend, and what customers want. Their reputation is on the line if the project fails.
-* Architects and REITs apply even more accountability, specific knowledge and leverage.
-* Real estate tech companies like Opendoor, Trulia or Redfin apply the maximum leverage by combining all of the lower layers of the stack with a new product.
-
+- The continuum from laborer to real estate tech company entrepreneur goes from low to high specific knowledge, accountability and leverage.
+- Laborers get paid hourly. The owner of the house doesn’t know who they are and they can be replaced by machines or newly trained hires.
+- General contractors pocket the profits of a job but they also eat the losses. They have laborers working for them and know how to organize projects.
+- Property developers use loans to build new homes and sell them at a profit. They know where to buy, how much to spend, and what customers want. Their reputation is on the line if the project fails.
+- Architects and REITs apply even more accountability, specific knowledge and leverage.
+- Real estate tech companies like Opendoor, Trulia or Redfin apply the maximum leverage by combining all of the lower layers of the stack with a new product.
 
 ### Judgment Is the Decisive Skill
 
@@ -301,7 +296,7 @@ Or you can get leverage permissionlessly by learning how to code or becoming goo
 
 That’s how you get leverage, but once you have leverage, what do you do with it? Well, the first part of your career’s spent hustling to get leverage. Once you have the leverage, then you wanna slow down a bit, because your judgment really matters.
 
-It’s like you’ve gone from  steering your sailboat around to now you’re steering an ocean liner or a tanker. You have a lot more at risk, but you have a lot more to gain as well. You’re carrying a much higher payload. In an age of infinite leverage, judgment becomes the most important skill.
+It’s like you’ve gone from steering your sailboat around to now you’re steering an ocean liner or a tanker. You have a lot more at risk, but you have a lot more to gain as well. You’re carrying a much higher payload. In an age of infinite leverage, judgment becomes the most important skill.
 
 Warren Buffett is so wealthy now because of his judgment. Even if you were to take away all of Warren’s money, tomorrow, investors would come out of the woodwork and hand him a $100 billion because they know his judgment is so good, and they would give him a big chunk of that $100 billion to invest.
 
@@ -359,10 +354,10 @@ The more outraged somebody is, I guarantee you, the worse their judgment is. If 
 
 Summary:
 
-* Judgment is knowing the long-term consequences of your actions. In an age of infinite leverage, judgment is the most important skill.
-* Once you have leverage, you want to slow down because correct decisions really matter. If you’re correct 10-20% more often than the other person, the compounding effects of your leverage will dwarf the competition.
-* The people with the best judgment are among the least emotional. Emotions prevent you from seeing what’s really happening, until you can no longer resist the truth and you’re forced into suffering.
-* A lot of the top investors often sound like philosophers because investing is a real-world multi-variate activity. So they need to study everything, not just investment books whose advantages have already been competed away.
-* The more outraged someone is, the worse their judgment. You don’t want to hand them the keys to your car, let alone the keys to your company.
+- Judgment is knowing the long-term consequences of your actions. In an age of infinite leverage, judgment is the most important skill.
+- Once you have leverage, you want to slow down because correct decisions really matter. If you’re correct 10-20% more often than the other person, the compounding effects of your leverage will dwarf the competition.
+- The people with the best judgment are among the least emotional. Emotions prevent you from seeing what’s really happening, until you can no longer resist the truth and you’re forced into suffering.
+- A lot of the top investors often sound like philosophers because investing is a real-world multi-variate activity. So they need to study everything, not just investment books whose advantages have already been competed away.
+- The more outraged someone is, the worse their judgment. You don’t want to hand them the keys to your car, let alone the keys to your company.
 
 <small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.

@@ -2,7 +2,7 @@
 title: How to be a Rebel!
 date: "2018-07-05T23:46:37.121Z"
 tags: [random]
-spoiler: Rebelling against negative, unrealistic, and the unworkable state of the mind.
+description: Rebelling against negative, unrealistic, and the unworkable state of the mind.
 ---
 
 ![how to be a rebel](./book.png)
@@ -13,7 +13,7 @@ A couple of chapters from a beautiful book top the excitement and assurance of w
 
 Reading gives new perspective to life--let you see the world from an author’s eye, challenges your perceptions, gives you hope,
 wakes you from a dogma and so much more. About 26 books a year should be the goal of a busy person--say you’re reading one every
- two weeks.
+two weeks.
 
 So what did I learn today? I learned **“How to be a Rebel”**, I learned that humans are in constant rebellion against failure and
 unhappiness. That is good. It indicates a desire for freedom.

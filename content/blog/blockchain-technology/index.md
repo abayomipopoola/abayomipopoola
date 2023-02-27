@@ -2,7 +2,7 @@
 title: Blockchain Technology
 date: "2019-04-27T22:40:32.169Z"
 tags: [cryptocurrency, technology]
-spoiler: A distributed ledger at the heart of bitcoin and other virtual currencies, that makes it possible to share data publicly without third parties.
+description: A distributed ledger at the heart of bitcoin and other virtual currencies, that makes it possible to share data publicly without third parties.
 ---
 
 ![Blockchain Technology](./blockchain-tech.jpg)
@@ -38,7 +38,6 @@ and check all bitcoin transactions in a public ledger.
 
 Satoshi Nakamoto designed the blockchain in such a way that users can create a free and anonymous bitcoin account number--a wallet.
 This eliminates the need for a central bank because all the users constitute the bank.
-
 
 > A decentralised blockchain makes it possible to share data publicly without a single party controlling the system.
 
@@ -88,30 +87,31 @@ and other complex backend functions. As an un-alterable ledger in real-time, it 
 and authenticate ownership of assets digitally.
 
 Here are some real-world examples of blockchain technology in action:
- * **Cutting out the middle man**: Companies like Uber, Airbnb and Expedia act as aggregators, i.e. a centralised platform that
- connects providers of a service with customers who need that service. The centralised aggregator is the one in control here;
- they set their own terms and conditions, and, naturally, take a cut of each transaction as their fee. Blockchains are now
- being used to cut out the middleman and create a secure, decentralised way for service providers and customers to connect and
- transact safely and directly.
 
- * **Improving healthcare**: Blockchain provider SimplyVital Health has already created two blockchain products that are designed to
- improve healthcare management. The first, ConnectingCare, tracks the progress of patients after they leave hospital, and the second,
- Health Nexus, is designed to provide decentralised blockchain patient records. Elsewhere, startup company Gem is working with the
- Centre for Disease Control to build a blockchain for storing disease outbreak data, in the hopes of increasing the effectiveness of
- disaster relief.
+- **Cutting out the middle man**: Companies like Uber, Airbnb and Expedia act as aggregators, i.e. a centralised platform that
+  connects providers of a service with customers who need that service. The centralised aggregator is the one in control here;
+  they set their own terms and conditions, and, naturally, take a cut of each transaction as their fee. Blockchains are now
+  being used to cut out the middleman and create a secure, decentralised way for service providers and customers to connect and
+  transact safely and directly.
 
- * **Better banking and transactions**: Barclays has already launched a number of blockchain initiatives for, among other things,
- tracking financial transactions and combating fraud, and Bank Hapoalim is collaborating with Microsoft to create a blockchain for
- managing bank guarantees. In another example, Aeternity’s blockchain platform allows users to create smart contracts that become
- active when certain conditions have been met, which means automated payments can be released when parties in a transaction agree
- that their conditions have been met.
+- **Improving healthcare**: Blockchain provider SimplyVital Health has already created two blockchain products that are designed to
+  improve healthcare management. The first, ConnectingCare, tracks the progress of patients after they leave hospital, and the second,
+  Health Nexus, is designed to provide decentralised blockchain patient records. Elsewhere, startup company Gem is working with the
+  Centre for Disease Control to build a blockchain for storing disease outbreak data, in the hopes of increasing the effectiveness of
+  disaster relief.
 
- * **Smarter supply chains**: Knowing the status, condition and provenance of every product on your supply chain is key for
- businesses--and, for consumers, provenance is becoming an increasingly important issue. DeBeers is planning to use blockchain technology to
- trace diamonds all the way from the mine to the end customer, which will increase transparency and allow customers to verify that
- their diamonds are free from conflict <a href="https://bernardmarr.com/default.asp?contentID=1788" target="_blank" class="read-more">_(Read more applications here)_</a>.
+- **Better banking and transactions**: Barclays has already launched a number of blockchain initiatives for, among other things,
+  tracking financial transactions and combating fraud, and Bank Hapoalim is collaborating with Microsoft to create a blockchain for
+  managing bank guarantees. In another example, Aeternity’s blockchain platform allows users to create smart contracts that become
+  active when certain conditions have been met, which means automated payments can be released when parties in a transaction agree
+  that their conditions have been met.
 
-######<p align="center">***</p>
+- **Smarter supply chains**: Knowing the status, condition and provenance of every product on your supply chain is key for
+  businesses--and, for consumers, provenance is becoming an increasingly important issue. DeBeers is planning to use blockchain technology to
+  trace diamonds all the way from the mine to the end customer, which will increase transparency and allow customers to verify that
+  their diamonds are free from conflict <a href="https://bernardmarr.com/default.asp?contentID=1788" target="_blank" class="read-more">_(Read more applications here)_</a>.
+
+<p class="three-dots">***</p>
 
 With blockchain, we can imagine a world in which contracts are embedded in digital code and stored in transparent,
 shared databases, where they are protected from deletion, tampering, and revision. In this world, every agreement,
@@ -120,7 +120,6 @@ stored, and shared. Intermediaries like lawyers, brokers, and bankers might no l
 machines, and algorithms would freely transact and interact with one another with little friction. This is the immense potential
 of blockchain <a href="https://hbr.org/2017/01/the-truth-about-blockchain" target="_blank" class="read-more">_(Read more)_</a>.
 
-
 Blockchain technology brings everyone to the highest degree of accountability. With the help of this technology no more
 transactions will be missed, human or machine errors will be minimised.
 
@@ -128,5 +127,3 @@ Just like all good things, blockchain to has got some challenges: it requires hi
 and in the case of bitcoin/altcoins, it's important you secure your wallet ID, as revealing it to a third party means losing
 control over your coin value, and also, if you forget your wallet ID it cannot be recovered and the funds secured by it are
 lost forever.
-
-

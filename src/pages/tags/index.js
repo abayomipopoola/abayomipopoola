@@ -1,30 +1,31 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
+import React from "react"
+import { Link, graphql } from "gatsby"
 
-import Bio from '../../components/Bio'
-import Layout from '../../components/Layout'
-import SEO from '../../components/Seo'
+import Bio from "../../components/bio"
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 
-const kebabCase = string => string.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\s+/g, '-').toLowerCase()
-const capitalize = string => string.replace(/\b([a-z])/g, (w) => w.charAt(0).toUpperCase() + w.slice(1));
+const kebabCase = string =>
+  string
+    .replace(/([a-z])([A-Z])/g, "$1-$2")
+    .replace(/\s+/g, "-")
+    .toLowerCase()
+const capitalize = string =>
+  string.replace(/\b([a-z])/g, w => w.charAt(0).toUpperCase() + w.slice(1))
 
 const Tags = ({ data, location }) => {
-	const siteTitle = data.site.siteMetadata?.title || `Title`
-  const tags = data.allMarkdownRemark.group;
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const tags = data.allMarkdownRemark.group
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO 
-        title="Posts Tags" 
-        description="All posts by tag"
-        slug="/tags" 
-      />
+      <Seo title="Posts Tags" description="All posts by tag" slug="/tags" />
       <Bio />
 
-        <h3>Posts Tags</h3>
+      <h3>Posts Tags</h3>
 
-        <ul style={{listStyle: 'none'}}>
-        {tags.map((tag) => (
+      <ul style={{ listStyle: "none" }}>
+        {tags.map(tag => (
           <li key={tag.fieldValue}>
             <Link to={`/category/${kebabCase(tag.fieldValue)}/`}>
               {capitalize(tag.fieldValue)} ({tag.totalCount})
@@ -32,12 +33,11 @@ const Tags = ({ data, location }) => {
           </li>
         ))}
       </ul>
-
     </Layout>
-  );
-};
+  )
+}
 
-export default Tags;
+export default Tags
 
 export const pageQuery = graphql`
   query {
@@ -47,11 +47,11 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(limit: 5000) {
-      group(field: frontmatter___tags) {
+    allMarkdownRemark(limit: 1000) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }
     }
   }
-`;
+`

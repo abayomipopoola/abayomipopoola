@@ -1,8 +1,8 @@
 ---
 title: "The Toyota way: The case of Lean Product Development"
 date: "2022-07-14T17:13:03.284Z"
-tags: [economics, business domain, product development]
-spoiler: A production system based on the philosophy of achieving the complete elimination of all waste in pursuit of the most efficient methods.
+tags: [lean, business domain, product development]
+description: A production system based on the philosophy of achieving the complete elimination of all waste in pursuit of the most efficient methods.
 ---
 
 ![Ideas](./ideas.jpg)
@@ -11,9 +11,9 @@ Toyota knows how to make cars so well that it became the first company to produc
 
 Following the Second World War, Japan was left in a precarious economic position, disadvantaged by lacking natural resources, materials like steel and other metals were hard to come by and companies had to be creative to compete. Toyota’s founder Sakichi Toyoda had started a loom business, but it was his son Kiichiro who founded the motor company in 1937. They were used to working within narrow margins -- as the shortage of materials increased during the war, the number of headlamps on its Model K truck was reduced to one and it only had brakes on one of the axles.
 
-The turning point for Toyota's Production System would come in the early fifties when Kiichiro's cousin Eiji would travel to the U.S. with a veteran loom machinist, Taiichi Ohno. They visited Ford's River Rouge plant in Michigan and were impressed by the scale of the operation, but knew that in cash-strapped Japan, companies didn’t have the resources for such a system; having months' worth of stock sitting in a warehouse would tie up precious capital they didn’t have. Instead, what truly impressed Ohno was a visit to a supermarket, a Piggly Wiggly -- according to legend. 
+The turning point for Toyota's Production System would come in the early fifties when Kiichiro's cousin Eiji would travel to the U.S. with a veteran loom machinist, Taiichi Ohno. They visited Ford's River Rouge plant in Michigan and were impressed by the scale of the operation, but knew that in cash-strapped Japan, companies didn’t have the resources for such a system; having months' worth of stock sitting in a warehouse would tie up precious capital they didn’t have. Instead, what truly impressed Ohno was a visit to a supermarket, a Piggly Wiggly -- according to legend.
 
-Japan didn’t really have self-service stores at this point -- and he was struck by the way customers could choose exactly what they wanted when they wanted. He decided to model his production line on a similar idea; with a "supermarket formula," only enough parts were produced in the first phase to replace what was used in the second, and so on. This is where the 'Just In Time system took shape. Toyota was able to eliminate much of the waste in Ford's system, making smaller numbers of parts to be used when it needed them, allowing the company to operate on a tighter budget. 
+Japan didn’t really have self-service stores at this point -- and he was struck by the way customers could choose exactly what they wanted when they wanted. He decided to model his production line on a similar idea; with a "supermarket formula," only enough parts were produced in the first phase to replace what was used in the second, and so on. This is where the 'Just In Time system took shape. Toyota was able to eliminate much of the waste in Ford's system, making smaller numbers of parts to be used when it needed them, allowing the company to operate on a tighter budget.
 
 As part of this Ohno developed 'Kanban' -- a sign-based scheduling method which shows goods in, goods in production, and goods out. Ohno and Toyoda also noticed that American car companies were still employing many of Henry Ford’s early production techniques: They kept operations at full tilt in order to maximize efficiencies of scale and then repaired defective cars after they rolled off the line. Ohno believed this caused more problems and didn’t encourage workers, or machines, to stop making the mistake. So he placed a cord above every station which any worker could pull to stop the entire assembly if they spotted a problem. The whole team would work on it, to prevent it from happening again. As teams identified more problems, the number of errors began to drop dramatically.
 
@@ -31,7 +31,7 @@ TPS is based on two concepts: jidoka and just-in-time. Jidoka, a Japanese term t
 
 TPS has become a model for competitive manufacturing throughout the world. It has been evolving within Toyota for decades, although a central tenet of the Toyota way prevented anyone from writing it down. The tenet is that serious learning only comes from the action at the gemba — where the work is done. So drawing pictures and models of TPS is not value added.
 
-Eventually, the theory behind TPS was represented as a house. The TPS house has become a cultural icon in the manufacturing world. The simplest version is shown in the figure below. 
+Eventually, the theory behind TPS was represented as a house. The TPS house has become a cultural icon in the manufacturing world. The simplest version is shown in the figure below.
 
 ![Toyota Production System](./tps.png)
 
@@ -59,7 +59,7 @@ It should be clear that this really is a system. Toyota uses the analogy of tryi
 
 ### Product Developement Process
 
-The in-depth study of Toyota’s approach to product-process development led to the identification of a set of 13 management principles that can be considered a foundation for lean product development more generally. This set of principles can be further broken down into a framework of process, people, and tools, which can be applied to service industries and professional operations. The important lesson to note is that it is a systems model. What makes it work at Toyota is that all the pieces fit together and support each other. Pull out a piece of the system and it collapses. 
+The in-depth study of Toyota’s approach to product-process development led to the identification of a set of 13 management principles that can be considered a foundation for lean product development more generally. This set of principles can be further broken down into a framework of process, people, and tools, which can be applied to service industries and professional operations. The important lesson to note is that it is a systems model. What makes it work at Toyota is that all the pieces fit together and support each other. Pull out a piece of the system and it collapses.
 
 #### Process
 
@@ -67,7 +67,7 @@ When thinking of process improvement, we often think of simple repetitive proces
 
 #### People
 
-Driving the lean process and rigorous standardization are people who work hard as a team to achieve common objectives. They not only do the work with high levels of skill and discipline but also reflect on the process and work to improve it. This activity happens on a continuing basis. It is true continuous improvement. To do this work requires people with “towering technical competence” who learn the specific technology they are engineering in tremendous depth and also learn through intense mentoring in the “Toyota Way” of identifying problems, analyzing them, developing countermeasures, communicating, and improving. The deep technical knowledge is the baseline skill, and the Toyota Way is the higher level meta-improvement method that is part of the culture of the company. 
+Driving the lean process and rigorous standardization are people who work hard as a team to achieve common objectives. They not only do the work with high levels of skill and discipline but also reflect on the process and work to improve it. This activity happens on a continuing basis. It is true continuous improvement. To do this work requires people with “towering technical competence” who learn the specific technology they are engineering in tremendous depth and also learn through intense mentoring in the “Toyota Way” of identifying problems, analyzing them, developing countermeasures, communicating, and improving. The deep technical knowledge is the baseline skill, and the Toyota Way is the higher level meta-improvement method that is part of the culture of the company.
 
 #### Tools
 
@@ -75,7 +75,7 @@ Technology to Toyota is a set of tools to enable the people to execute and impro
 
 #### The Right Process Will Yield the Right Results
 
-We often think of process improvement as a technical issue. Get the right technical methodology (these days, often analogous to business processes for software use), justify its cost, implement it, and it runs. If it does not run as planned, it is a management problem. Identify the offending manager who failed to properly execute the business process, get rid of him or her, find a “good manager,” and hopefully the problem is solved. Toyota has a very different perspective. 
+We often think of process improvement as a technical issue. Get the right technical methodology (these days, often analogous to business processes for software use), justify its cost, implement it, and it runs. If it does not run as planned, it is a management problem. Identify the offending manager who failed to properly execute the business process, get rid of him or her, find a “good manager,” and hopefully the problem is solved. Toyota has a very different perspective.
 
 At Toyota, there is a philosophy of having a good process. It is as much a philosophical issue as a technical issue. There are a set of beliefs about what makes up a good process. A good process is not defined by technology but by good process principles, and then people create and improve the process according to these principles. A summary of the process principles of lean product development is provided in the [table](#table-below) below.
 
@@ -144,10 +144,8 @@ At Toyota, there is a philosophy of having a good process. It is as much a philo
 </tbody>
 </table>
 
-######<p align="center">***</p>
+<p class="three-dots">***</p>
 
-In conclusion, the success of Toyota’s system revolves around its people. Highly competent and skilled people with a lot of hands-on experience, deep technical knowledge, and an eye for the overall system are prerequisites for successful product development. When you take a closer look into Toyota's operation, two things stand out in its product-development system: chief engineers using their expertise to gain leadership, and functional engineers using their expertise to reduce the amount of communication, supervision, trial and error, and confusion in the process. All the other coordinating mechanisms and practices serve to help highly skilled designers and engineers do their job effectively. 
+In conclusion, the success of Toyota’s system revolves around its people. Highly competent and skilled people with a lot of hands-on experience, deep technical knowledge, and an eye for the overall system are prerequisites for successful product development. When you take a closer look into Toyota's operation, two things stand out in its product-development system: chief engineers using their expertise to gain leadership, and functional engineers using their expertise to reduce the amount of communication, supervision, trial and error, and confusion in the process. All the other coordinating mechanisms and practices serve to help highly skilled designers and engineers do their job effectively.
 
 <small> Ref: This article is heavily influenced by this publication - <a href="https://www.researchgate.net/publication/200552295" target="_blank">The Toyota Way in Services.</a></small>
-
-

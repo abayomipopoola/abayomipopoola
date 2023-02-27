@@ -2,7 +2,7 @@
 title: How’s the mind different from the brain?
 date: "2018-11-20T22:40:32.169Z"
 tags: [random, psychology]
-spoiler: The mind, and the brain.
+description: The mind, and the brain.
 ---
 
 ![drawing the consciousness](./mind.jpg)
@@ -20,6 +20,5 @@ The fact that you’re aware of spending time to read this article is simply wha
 Now that the mind can be seen as a separate--although still very related to the brain, perhaps changing ones mindset could be a way of reprogramming the brain (Google the ‘CIA MK ultra’ programme for a start...the whole cybernetics field of study and stuff are pretty mind boggling).
 
 The mind though, must be a very powerful thing--having an energy of its own, that scientists can’t explain, yet.
-
 
 <small> Reference image by saatchiart</small>

@@ -156,3 +156,8 @@ blockquote p {
   top: 40%;
   transform: translateY(-50%);
 }
+
+.three-dots {
+  text-align: center;
+  margin: 24px;
+}

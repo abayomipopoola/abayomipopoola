@@ -2,7 +2,7 @@
 title: The Search for "God Particle" with Big Data
 date: "2018-12-27T22:40:32.169Z"
 tags: [data, physics]
-spoiler: Making sense of a larger and more complex data sets that traditional data processing software can’t manage, in order to understand observed events.
+description: Making sense of a larger and more complex data sets that traditional data processing software can’t manage, in order to understand observed events.
 ---
 
 ![regression analysis](./big-data.jpg)
@@ -38,4 +38,3 @@ When we have enormous amount of information that can be made to interoperate wit
 There have been issues of data-breaches with Big data. The biggest scandal yet, the Cambridge Analytica, a London-based political consulting firm that collects consumer data for use in election campaigns around the world.
 
 The data of up to 87 million users, mostly in the U.S., was obtained by an analytics firm that, among its other work, helped elect President Donald Trump. In response to that revelation, lawmakers and regulators in the U.S. and U.K. increased their scrutiny of the social media giant, and at least some Facebook users canceled their accounts. The uproar has only added to the pressure on Facebook and Chief Executive Mark Zuckerberg over how the company was used during the 2016 presidential campaign to spread Russian propaganda and phony headlines <a href="http://bit.ly/2S4AFEs" target="_blank" class="read-more">_(Read more)_</a>.
-

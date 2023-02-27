@@ -2,7 +2,7 @@
 title: A simple explanation of Regression analysis
 date: "2018-12-18T22:40:32.169Z"
 tags: [data, economics]
-spoiler: A statistical method that allows you to examine the relationship between two or more variables of interest.
+description: A statistical method that allows you to examine the relationship between two or more variables of interest.
 ---
 
 ![regression analysis](./regression.png)
@@ -14,7 +14,7 @@ Regression analysis is a ubiquitous tool of scientific/statistical research, but
 Correlation is a statistical term that indicates whether two variables, x and y, move together--meaning they change together at a constant rate. It tends to be cold when it snows--positive correlation; rain and sunshine, on the other hand,
 are negatively correlated.
 
-So what happens when we’ve got more variables, say a couple of hundred variables? You guessed it--we employ ***Regression Analysis*** to help sort out huge piles of data.
+So what happens when we’ve got more variables, say a couple of hundred variables? You guessed it--we employ **_Regression Analysis_** to help sort out huge piles of data.
 
 This is made possible by artificially holding constant every variable except the two we wish to focus on, then showing how the two co-vary. For example, imagine an arbitrary set of data that measured students' academic performance of public schools in Surulere LGA, and gathered information about each child: his gender, family structure, socioeconomic status, the level of his parents' education, etc.
 
@@ -31,7 +31,3 @@ Let's say we want to get some insights about parenting and education: Does havin
 A regression analysis can demonstrate correlation, but it doesn't prove cause. It helps establish the existence of connections that call for a closer investigation of careful studies and critical thinking.
 
 <small>References: Freakonomics by Steven D. Levitt and Stephen J. Dubner; image, fiverr.com.</small>
-
-
-
-

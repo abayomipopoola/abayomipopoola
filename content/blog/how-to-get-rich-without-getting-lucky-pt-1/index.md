@@ -2,7 +2,7 @@
 title: How to Get Rich (without getting lucky) pt. 1
 date: "2018-08-20T22:05:03.284Z"
 tags: [tweetstorm, naval]
-spoiler: Part one of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
+description: Part one of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
 ---
 
 ![The life we live in](./feynman.jpeg)
@@ -55,11 +55,10 @@ There’s no way around it, but just realize that most of the times when you’r
 
 Summary:
 
-* Wealth is assets that earn while you sleep: businesses, products, media, robots, investments, land. Wealth is for freedom, not conspicuous consumption.
-* Money is how we transfer wealth; it’s the social credits and debits of other people’s time. Money isn’t going to solve all your problems, but it’s going to solve your money problems.
-* Status is your rank in a social hierarchy like politics or sports. It’s a zero-sum game: to be a winner, there must be a loser. Status is an old game that predicted survival in the hunter-gatherer days, before we had technologies for creating wealth.
-* People creating wealth will always be attacked by people still playing status games.
-
+- Wealth is assets that earn while you sleep: businesses, products, media, robots, investments, land. Wealth is for freedom, not conspicuous consumption.
+- Money is how we transfer wealth; it’s the social credits and debits of other people’s time. Money isn’t going to solve all your problems, but it’s going to solve your money problems.
+- Status is your rank in a social hierarchy like politics or sports. It’s a zero-sum game: to be a winner, there must be a loser. Status is an old game that predicted survival in the hunter-gatherer days, before we had technologies for creating wealth.
+- People creating wealth will always be attacked by people still playing status games.
 
 ### Understand that ethical wealth creation is possible (Make Abundance for the World)
 
@@ -107,12 +106,10 @@ But I don’t think capitalism is evil. Capitalism is actually good. It’s just
 
 Summary:
 
-* Wealth isn’t about taking something from somebody else--it’s about creating abundance for the world.
-* Everyone can be rich: if wealth were finite, we would still be sitting around in caves.
-* In the first world, it’s better to be poor today than it was to be the richest man 200 years ago.
-* Thought experiment: if everyone today was an engineer, in 20 years, children would be retired in riches from the moment they were born.
-
-
+- Wealth isn’t about taking something from somebody else--it’s about creating abundance for the world.
+- Everyone can be rich: if wealth were finite, we would still be sitting around in caves.
+- In the first world, it’s better to be poor today than it was to be the richest man 200 years ago.
+- Thought experiment: if everyone today was an engineer, in 20 years, children would be retired in riches from the moment they were born.
 
 ### Free Markets Are Intrinsic to Humans
 
@@ -160,12 +157,11 @@ But I think that kind of wealth creation, if a society does not respect it, if t
 
 Summary:
 
-* Free markets are intrinsic to the human species. We’re the only animals who cooperate across genetic boundaries.
-* One way we cooperate is by keeping track of credits and debits in voluntary exchanges.
-* Free markets like this are beautiful games that keep food on our shelves--and can make us all wealthier and wealthier.
-* But too many takers and not enough makers will plunge a society into ruin.
-* Takers attack wealth creation with status games that drag everyone down to their level.
-
+- Free markets are intrinsic to the human species. We’re the only animals who cooperate across genetic boundaries.
+- One way we cooperate is by keeping track of credits and debits in voluntary exchanges.
+- Free markets like this are beautiful games that keep food on our shelves--and can make us all wealthier and wealthier.
+- But too many takers and not enough makers will plunge a society into ruin.
+- Takers attack wealth creation with status games that drag everyone down to their level.
 
 ### You’re not going to get rich renting out your time.
 
@@ -219,14 +215,13 @@ So, I think that if you’re looking at professions where your inputs and your o
 
 Summary:
 
-* You won’t get rich renting out your time, because your inputs are too closely tied to your outputs. You’re not earning while you’re sleeping.
-* Renting out your time means someone else will get the wealth from your time. They’re going to pay you the bare minimum to do your job.
-* Renting out your time also mean you’re replaceable and not as creative as you could be. So you must own equity to gain your financial freedom.
-* You get equity for work where your inputs don’t match your outputs. You could do an hour of work and it could have a huge effect--or you could do 1,000 hours of work and it could have no effect.
-* You must have high creativity and leverage to decouple your inputs and outputs.
+- You won’t get rich renting out your time, because your inputs are too closely tied to your outputs. You’re not earning while you’re sleeping.
+- Renting out your time means someone else will get the wealth from your time. They’re going to pay you the bare minimum to do your job.
+- Renting out your time also mean you’re replaceable and not as creative as you could be. So you must own equity to gain your financial freedom.
+- You get equity for work where your inputs don’t match your outputs. You could do an hour of work and it could have a huge effect--or you could do 1,000 hours of work and it could have no effect.
+- You must have high creativity and leverage to decouple your inputs and outputs.
 
-
-###  You will get rich by giving society what it wants but does not yet know how to get--at scale.
+### You will get rich by giving society what it wants but does not yet know how to get--at scale.
 
 #### Give society what it wants, but doesn’t know how to get--at scale
 
@@ -258,9 +253,8 @@ But the entrepreneur’s job starts even before that, which is creation. Entrepr
 
 Summary:
 
-* Give society what it wants, but doesn’t know how to get--at scale.
-* Figure out what new product or technology you can provide that’s natural to you.
-* Then figure out how to scale it so everyone on the planet can have your product.
-
+- Give society what it wants, but doesn’t know how to get--at scale.
+- Figure out what new product or technology you can provide that’s natural to you.
+- Then figure out how to scale it so everyone on the planet can have your product.
 
 <small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.

@@ -2,14 +2,14 @@
 title: How to Get Rich (without getting lucky) pt. 3
 date: "2018-08-20T22:07:03.284Z"
 tags: [tweetstorm, naval]
-spoiler: Part three of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
+description: Part three of the Naval’s expanded points from his viral tweetstorm, “How To Get Rich Without Getting Lucky”.
 ---
 
 ![The life we live in](./feynman.jpeg)
 
-Here is part three of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky"  <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised article here)_</a>.
+Here is part three of the Naval’s expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised article here)_</a>.
 
-###  Learn to sell. Learn to build. If you can do both, you will be unstoppable.
+### Learn to sell. Learn to build. If you can do both, you will be unstoppable.
 
 #### Learn to sell, learn to build
 
@@ -65,15 +65,14 @@ So, I think if you only had to pick up one, you can start with building and then
 
 Summary:
 
-* Learn to sell, learn to build. If you can do both, you will be unstoppable.
-* Selling is anything from one-on-one sales to marketing, recruiting, fundraising, PR, and more.
-* Building is anything from engineering to design, manufacturing, logistics, procurement, operations, and more.
-* When one person can both sell and build, they can create entire industries. Examples include Marc Andreessen, Steve Jobs, and Elon Musk.
-* It’s easier to be a builder who learns sales, than a seller who learns building.
-* Being a builder helps you stand out when you’re starting out, but it can be exhausting to stay current. Sales skills scale better over time and can be self-fulfilling.
+- Learn to sell, learn to build. If you can do both, you will be unstoppable.
+- Selling is anything from one-on-one sales to marketing, recruiting, fundraising, PR, and more.
+- Building is anything from engineering to design, manufacturing, logistics, procurement, operations, and more.
+- When one person can both sell and build, they can create entire industries. Examples include Marc Andreessen, Steve Jobs, and Elon Musk.
+- It’s easier to be a builder who learns sales, than a seller who learns building.
+- Being a builder helps you stand out when you’re starting out, but it can be exhausting to stay current. Sales skills scale better over time and can be self-fulfilling.
 
-
-###  Arm yourself with specific knowledge, accountability, and leverage.
+### Arm yourself with specific knowledge, accountability, and leverage.
 
 If you want to make money you have to get paid at scale. And why you, that’s accountability, at scale, that’s leverage, and just you getting paid as opposed to somebody else getting paid, that’s specific knowledge.
 
@@ -135,14 +134,13 @@ So, very often, your specific knowledge is observed and often observed by other 
 
 Summary:
 
-* Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgment in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
-* Specific knowledge may come from your DNA. It may be soft skills learned in childhood. It may be something so new that nobody but you knows how to do it. It may be true on-the-job training where you’re pattern matching in highly complex environments.
-* Specific knowledge can’t be trained. Otherwise it will be mass-produced and you will be paid the minimum possible wage to do it.
-*Specific knowledge can be learned by pursuing your genuine curiosity, talents and passion. Building specific knowledge will feel like play to you.
-* Genuine curiosity is very important. Leverage and compound interest mean someone who is just slightly better than you will get paid 10x-1000x more than you. So you must be the best.
+- Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgment in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
+- Specific knowledge may come from your DNA. It may be soft skills learned in childhood. It may be something so new that nobody but you knows how to do it. It may be true on-the-job training where you’re pattern matching in highly complex environments.
+- Specific knowledge can’t be trained. Otherwise it will be mass-produced and you will be paid the minimum possible wage to do it.
+  \*Specific knowledge can be learned by pursuing your genuine curiosity, talents and passion. Building specific knowledge will feel like play to you.
+- Genuine curiosity is very important. Leverage and compound interest mean someone who is just slightly better than you will get paid 10x-1000x more than you. So you must be the best.
 
-
-###  Specific knowledge is knowledge that you cannot be trained for.
+### Specific knowledge is knowledge that you cannot be trained for.
 
 > If society can train you, it can train someone else, and replace you.
 
@@ -153,7 +151,6 @@ To the extent that specific knowledge is taught, it’s on the job. It’s throu
 The classic line here is that Warren Buffett went to Benjamin Graham when he got out of school. Benjamin Graham was the author of the Intelligent Investor and sort of modernized or created value investing as a discipline. And Warren Buffett went to Benjamin Graham and offered to work for him for free.
 
 And Graham said, “Actually, you’re overpriced, free is overpriced.” And Graham was absolutely right. When it comes to a very valuable apprenticeship like the type that Graham was going to give Buffet, Buffet should have been paying him a lot of money. That right there tells you that those are skills worth having.
-
 
 #### Specific knowledge is often highly creative or technical
 
@@ -201,12 +198,12 @@ And then there are probably multiple things you’re natural at because personal
 
 Summary:
 
-* Specific knowledge can be taught through apprenticeships or self-taught.
-* It’s the highest paying knowledge because it involves things that society has not yet figured out how to broadly teach or automate.
-* Specific knowledge tends to be creative or technical. It’s on the bleeding edge of technology, art and communication.
-* Specific knowledge is highly specific to the individual, obsession, situation, and problem.
-* You can’t be too deliberate about assembling specific knowledge. The best way is to follow your obsession, so you go deep enough into it to be the best.
-* Build specific knowledge where you are a natural. Everyone is a natural at something.
+- Specific knowledge can be taught through apprenticeships or self-taught.
+- It’s the highest paying knowledge because it involves things that society has not yet figured out how to broadly teach or automate.
+- Specific knowledge tends to be creative or technical. It’s on the bleeding edge of technology, art and communication.
+- Specific knowledge is highly specific to the individual, obsession, situation, and problem.
+- You can’t be too deliberate about assembling specific knowledge. The best way is to follow your obsession, so you go deep enough into it to be the best.
+- Build specific knowledge where you are a natural. Everyone is a natural at something.
 
 ### Embrace accountability, and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.
 
@@ -258,12 +255,11 @@ I think there are ways to take on accountability where every member of a team ca
 
 Summary:
 
-* Taking on accountability is how you get a piece of the business. If you have high accountability, that makes you less replaceable so they have to give you a piece of the upside.
-* Taking accountability for your actions is the same as taking an equity position in all of your work. You’re taking greater downside risk for greater upside.
-* In modern business, the downside of accountability is not that large. Even personal bankruptcy can wipe your debts in good ecosystems. People will forgive failures, as long as you were honest and made a high integrity effort.
-* Accountability is reputational skin in the game; it’s putting your personal reputation on the line, as skin in the game.
-* We’re currently socially brainwashed to not take on accountability in a visible way.
-
+- Taking on accountability is how you get a piece of the business. If you have high accountability, that makes you less replaceable so they have to give you a piece of the upside.
+- Taking accountability for your actions is the same as taking an equity position in all of your work. You’re taking greater downside risk for greater upside.
+- In modern business, the downside of accountability is not that large. Even personal bankruptcy can wipe your debts in good ecosystems. People will forgive failures, as long as you were honest and made a high integrity effort.
+- Accountability is reputational skin in the game; it’s putting your personal reputation on the line, as skin in the game.
+- We’re currently socially brainwashed to not take on accountability in a visible way.
 
 ### The most accountable people have singular, public, and risky brands: Oprah, Trump, Kanye, Elon.
 
@@ -315,10 +311,10 @@ But when you put your name out there, you take a risk with certain things. You a
 
 Summary:
 
-* Embrace accountability and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.
-* Accountability lets you to take credit when things go well, but you will also bear the brunt of failure when things go badly.
-* Take business risks under your own name. Kanye, Oprah, Trump and Elon have such high accountability that they could get rich just by stamping their name on products.
-* A well-functioning team has clear accountability for each position. If you have a small team with clearly delineated responsibilities, you can keep a very high level of accountability.
-* We’re socially hard wired not to fail in public. People who have the ability to fail in public under their own names gain a lot of power.
+- Embrace accountability and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.
+- Accountability lets you to take credit when things go well, but you will also bear the brunt of failure when things go badly.
+- Take business risks under your own name. Kanye, Oprah, Trump and Elon have such high accountability that they could get rich just by stamping their name on products.
+- A well-functioning team has clear accountability for each position. If you have a small team with clearly delineated responsibilities, you can keep a very high level of accountability.
+- We’re socially hard wired not to fail in public. People who have the ability to fail in public under their own names gain a lot of power.
 
 <small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.
