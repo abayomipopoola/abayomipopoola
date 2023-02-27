@@ -111,6 +111,5 @@ The chapter also covers topics such as the importance of creating a culture that
 You just completed the first part of the _The Principles of Product Development Flow_ blog post. <a href="/principles-of-product-development-flow-pt-2" class="read-more">_(Read the concluding part here)_</a></a>
 
 
-<small>References: <a href="https://www.amazon.com/gp/product/1935401009" target="_blank">The Principles of Product Development Flow by Donald Reinertsen</a>; <a href="https://www.bptrends.com/principles-of-product-development-flow-second-generation-lean-product-development-by-donald-g-reinertsten/" target="_blank">Bptrends book summary</a>; <a href="https://kanbanize.com/blog/economic-problem-with-queues-product-development/" target="_blank">The Economic Problem with Queues in Product Development</a>; <a href="https://business.adobe.com/blog/basics/cumulative-flow/" target="_blank">Cumulative Flow Diagram.</a>
-
+<small>References: <a href="https://www.amazon.com/gp/product/1935401009" target="_blank">The Principles of Product Development Flow by Donald Reinertsen</a>
 </small>
