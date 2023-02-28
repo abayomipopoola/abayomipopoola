@@ -14,7 +14,7 @@ Regression analysis is a ubiquitous tool of scientific/statistical research, but
 Correlation is a statistical term that indicates whether two variables, x and y, move together—meaning they change together at a constant rate. It tends to be cold when it snows—positive correlation; rain and sunshine, on the other hand,
 are negatively correlated.
 
-So what happens when we’ve got more variables, say a couple of hundred variables? You guessed it—we employ **_Regression Analysis_** to help sort out huge piles of data.
+So what happens when we’ve got more variables, say a couple of hundred variables? You guessed it—we employ **Regression Analysis** to help sort out huge piles of data.
 
 This is made possible by artificially holding constant every variable except the two we wish to focus on, then showing how the two co-vary. For example, imagine an arbitrary set of data that measured students' academic performance of public schools in Surulere LGA, and gathered information about each child: his gender, family structure, socioeconomic status, the level of his parents' education, etc.
 

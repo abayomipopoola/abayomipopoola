@@ -27,9 +27,9 @@ To understand how fiscal policy can help during recession, we need to understand
 
 #### Key Terms
 
-- Aggregate: A mass, assemblage, or sum of particulars; something consisting of elements but considered as a whole.
-- Supply: The amount of some product that producers are willing and able to sell at a given price, all other factors being held constant.
-- Demand: The desire to purchase goods and services.
+- **Aggregate**: A mass, assemblage, or sum of particulars; something consisting of elements but considered as a whole.
+- **Supply**: The amount of some product that producers are willing and able to sell at a given price, all other factors being held constant.
+- **Demand**: The desire to purchase goods and services.
 
 #### Economic Equilibrium
 
@@ -55,7 +55,7 @@ An increase in government spending increases aggregate demand, price level and r
 
 The logic behind this approach is that when people pay lower taxes, they have more money to spend or invest, which fuels higher demand. That demand leads firms to hire more, decreasing unemployment, and to compete more fiercely for labour. In turn, this serves to raise wages and provide consumers with more income to spend and invest.
 
-The above concept is called _<b>expansionary fiscal policy</b>_: a tool the government use to boost growth to a healthy economic level, which is needed during the contractionary phase of the business cycle. The government wants to reduce unemployment, increase consumer demand, and seeks to end the recession.
+The above concept is called **expansionary fiscal policy**: a tool the government use to boost growth to a healthy economic level, which is needed during the contractionary phase of the business cycle. The government wants to reduce unemployment, increase consumer demand, and seeks to end the recession.
 
 Corporate tax cuts put more money into businesses' hands, which the government hopes will be put toward new investments and increasing employment. In that way, tax cuts create jobs, but if the company already has enough cash, it may use the cut to buy back stocks or purchase new companies. The theory of supply-side economics recommends lowering corporate taxes instead of income taxes, and advocates for lower capital gains taxes to increase business investment <a href="https://www.thebalance.com/expansionary-fiscal-policy-purpose-examples-how-it-works-3305792" target="_blank" class="read-more">_(Read more)_</a>.
 

@@ -9,9 +9,9 @@ description: Scale an enterprise by understand how different personalities map t
 
 Your personality will partially determine how good you are at your job, especially if your job requires more than rote behavior.
 
-So are you and your job a good fit? Creative people prefer jobs that allow them to try new things—**_openness_**—one of the
+So are you and your job a good fit? Creative people prefer jobs that allow them to try new things—**openness**—one of the
 'Big Five personality traits'; these guys are more likely to succeed at jobs that require novel solutions over efficient ones.
-On the contrary, some people are **_conscientious_**—another 'Big Five personality trait', and they're likely to be better off
+On the contrary, some people are **conscientious**—another 'Big Five personality trait', and they're likely to be better off
 in a management or administrative position.
 
 This article is based on a BigThink video by Jordan Peterson; he started by suggesting a job categorisation scheme that’s rather

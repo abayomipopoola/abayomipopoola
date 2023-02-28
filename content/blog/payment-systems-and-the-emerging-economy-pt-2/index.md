@@ -27,7 +27,7 @@ Apart from protecting your money from theft, a bank account connects people to t
 
 Several players in the Nigeria Fintech space are attempting to help close the gap of financial inclusion, and tapping into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
 
-<b>Agency banking</b> is a type of branchless banking that allows the delivery of financial services outside conventional bank branches, often using agents and relying on information and communications technologies to transmit transaction details – typically card-reading point-of-sale (POS) terminals or mobile phones. It has the potential to radically reduce the cost of delivery and increase convenience for customers.
+**Agency banking** is a type of branchless banking that allows the delivery of financial services outside conventional bank branches, often using agents and relying on information and communications technologies to transmit transaction details – typically card-reading point-of-sale (POS) terminals or mobile phones. It has the potential to radically reduce the cost of delivery and increase convenience for customers.
 
 The Nigerian payments system witnessed remarkable achievement with the introduction of a number of initiatives under the <a href="https://www.cbn.gov.ng/icps2013/papers/NIGERIA_PAYMENTS_SYSTEM_VISION_2020%5Bv2%5D.pdf" target="_blank" >Payments System Vision 2020</a>, the implementation of Bank Verification Number (BVN) scheme to address issues associated with the absence of unique identifier of bank customers across the country to put an end to identity theft which has been a worrisome phenomenon. There is no doubt that considerable progress has been made with the payments system as evidenced by the time it takes for third party instruments to be cleared for value to be given.
 
@@ -63,12 +63,12 @@ Agency banking is transforming banking all around the world. It will be interest
 
 To make sense of the POS payments space, one needs to understand the roles of the _Payment Gateway_ and _Payment Processor_.
 
-- <b>Payment Gateway</b> is an application service provider that authorizes payments for businesses, online retailers or
+- **Payment Gateway** is an application service provider that authorizes payments for businesses, online retailers or
   traditional brick and mortar. In simple terms, a payment gateway can be thought of as an interface between
   merchants and payment processors. The payment gateway accepts payment request from merchants and forwards this to the
   payment processor for further processing.
 
-- <b>Payment Processor</b> is an entity that has a direct interface to card associations or networks such as VISA and MasterCard.
+- **Payment Processor** is an entity that has a direct interface to card associations or networks such as VISA and MasterCard.
   The payment processor receives payment requests from merchants or payment gateways and sends it to the card association
   or networks, which, in turn, route the transaction to the card-issuing bank for authorization.
 
@@ -88,20 +88,20 @@ Payment gateways usually offer easy integration to merchant applications, althou
 merchant. The merchant can save this additional cost by integrating directly to the payment processor. While this is
 true, several other factors should be considered when choosing between the payment gateway and payment processor:
 
-- _Total Transaction Volume:_ The payment processors have different transaction fee rates that depend on the volume of transactions.
+- **Total Transaction Volume**: The payment processors have different transaction fee rates that depend on the volume of transactions.
   Most of the payment processors offer lower rates for a high volume of transactions. It would be more feasible for small
   businesses with a small volume of transactions to go through a payment gateway.
 
-- _Integration Cost & Time:_ The development cost and time for integrating with a payment processor are higher as compared
+- **Integration Cost & Time**: The development cost and time for integrating with a payment processor are higher as compared
   to payment gateway integration. The Payment processor requires integration to their ISO 8583 platform and undergoing their
   certification process.
 
-- _Compliance:_ Integration to payment processor requires a PCI certified infrastructure and adherence to all compliances
+- **Compliance**: Integration to payment processor requires a PCI certified infrastructure and adherence to all compliances
   set by the card association network (VISA and MasterCard). The payment gateway on the other hand deals with all the intricacies
   related to ISO 8583 integration and the payment processor certification process. The time and cost associated with payment gateway
   integration are much lower as they offer a simple API layer for accepting and processing payment requests from merchants.
 
-- _Settlement:_ The payment gateway handles the settlement on behalf of merchant while the payment processor expects the
+- **Settlement**: The payment gateway handles the settlement on behalf of merchant while the payment processor expects the
   merchant to send the end-of-day settlement request and handle the settlement file to be imported back into the system.
 
 Throughout history, as payments evolved from barter to coins to notes to cards to digital wallets, the underlying revenue
