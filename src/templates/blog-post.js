@@ -31,36 +31,57 @@ const capitalize = string =>
       >
         <header>
           <h2 itemProp="headline">{post.frontmatter.title}</h2>
-          <p style={{ color: "#202123", margin: "16px 0", fontSize: 12 }}>
-            {post.frontmatter.date} · {post.timeToRead} min read
-          </p>
+          <div class="metainfo-grid">
+            <div class="grid-child">
+              <p style={{ color: "#202123", margin: "0 0 16px 0", fontSize: 12 }}>
+                {post.frontmatter.date} · {post.timeToRead} min read
+              </p>
+            </div>
+            <div class="grid-child share-btn">
+              <Share
+                socialConfig={{
+                  twitterHandle,
+                  config: {
+                    url: `${siteUrl + siteSlug}`,
+                    title: post.frontmatter.title,
+                  },
+                }}
+              />
+            </div>
+          </div>
         </header>
         <section
           className="post"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <p>
-          {post.frontmatter.tags &&
-            post.frontmatter.tags.map(tag => {
-              return (
-                <span key={tag}>
-                  <Link to={`/category/${kebabCase(tag)}`}>
-                    <span className="tags-highlight">{capitalize(tag)}</span>
-                  </Link>
-                </span>
-              )
-            })}
-        </p>
-        <Share
-          socialConfig={{
-            twitterHandle,
-            config: {
-              url: `${siteUrl + siteSlug}`,
-              title: post.frontmatter.title,
-            },
-          }}
-        />
+        <div class="metainfo-grid">
+          <div class="grid-child">
+            <p>
+              {post.frontmatter.tags &&
+                post.frontmatter.tags.map(tag => {
+                  return (
+                    <span key={tag}>
+                      <Link to={`/category/${kebabCase(tag)}`}>
+                        <span className="tags-highlight">{capitalize(tag)}</span>
+                      </Link>
+                    </span>
+                  )
+                })}
+            </p>
+          </div>
+          <div class="grid-child share-btn">
+            <Share
+              socialConfig={{
+                twitterHandle,
+                config: {
+                  url: `${siteUrl + siteSlug}`,
+                  title: post.frontmatter.title,
+                },
+              }}
+            />
+          </div>
+        </div>
         <hr />
         {/*<footer>*/}
         {/*	<Bio />*/}

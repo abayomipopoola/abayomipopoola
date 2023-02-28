@@ -93,38 +93,38 @@ blockquote p {
   to{box-shadow: inset -3px 0px 0px transparent;}
 }
 
+.metainfo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
 /*Share button*/
 .share {
   width: 100%;
   margin: 0 auto;
-  text-align: center;
-}
-
-.reset-inline {
-  margin-top: 1.2em;
-  margin-bottom: 1.5em;
-  font-family: Helvetica Neue,Arial,sans-serif;
+  text-align: right;
 }
 
 .share a {
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
-  line-height: 20px;
-  height: 30px;
-  width: 30px;
-  margin-right: 8px;
+  line-height: 16px;
+  height: 24px;
+  width: 24px;
+  margin: 0px 4px 16px;
   display: inline-block;
-	border: 1px solid hsl(210,8%,80%);
+	border: 1px solid #202123;
+  background-color: #202123;
   box-shadow: none;
   border-radius: 50%;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: opacity 0.15s linear;
 }
 
 .share a:hover {
-	border: 1px solid hsl(210,8%,80%);
-  background-color: hsl(210,8%,80%);
+  opacity: .6;
 }
 
 .share .text {

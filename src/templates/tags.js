@@ -52,7 +52,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
                     }}
                     itemProp="description"
                   />
-                  <small style={{ color: "#202123" }}>
+                  <small className="date-time">
                     {`${post.frontmatter.date} · ${post.timeToRead} min read`}
                   </small>
                   <small>
