@@ -8,7 +8,7 @@ description: Faux friendship.
 ![The life we live in](./life.jpg)
 
 > It seems you have to agree with everything nowadays,
-> if you want friends; truthfulness only makes you unpopular--being
+> if you want friends; truthfulness only makes you unpopular—being
 > patient and tolerant with all your friends, falling in
 > with the wishes of any of them and joining in all their pursuits,
 > never contradicting nor putting yourself first. That’s the best way to steer clear of jealousy,

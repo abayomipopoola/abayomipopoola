@@ -52,6 +52,14 @@ small {
   font-size: 12px;
 }
 
+strong {
+  font-family: BlancoBold, 'Georgia', serif;
+}
+
+em {
+  font-family: BlancoItalic, 'Georgia', serif;
+}
+
 .post img {
 	max-width: 100%;
 	padding: 0;
@@ -61,12 +69,6 @@ small {
 	padding-left: 20px;
 }
 
-/* @media only screen and (max-width: 680px) {
-  p {
-    font-size: 1em;
-  }
-} */
-
 @media (min-width: 40em) {
   .post > ul, .post >  ol {
     padding-left: 40px;
@@ -74,9 +76,9 @@ small {
 }
 
 blockquote {
-  font-size: 0.9em;
   background: #cee4ee;
   border-left: 3px solid #0984E3;
+  font-family: BlancoItalic, 'Georgia', serif;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);
   padding: 0.5em 20px;

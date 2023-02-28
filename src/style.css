@@ -71,6 +71,16 @@
 }
 
 @font-face {
+	font-family: 'BlancoBold';
+	src: url('/fonts/BlancoSubset-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'BlancoItalic';
+	src: url('/fonts/BlancoSubset-Italic.woff2') format('woff2');
+}
+
+@font-face {
 	font-family: 'ColfaxAIBold';
 	src: url('/fonts/ColfaxAIBold.woff2') format('woff2');
 }

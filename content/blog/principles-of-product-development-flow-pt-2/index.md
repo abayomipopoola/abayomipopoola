@@ -103,9 +103,10 @@ By collecting and analyzing these metrics over time, we can identify trends and 
 
 The aim of a cumulative flow diagram is to show you the stability of your process over time. It tracks and accumulates each task that is ever entered or progressed to any stage of your workflow.
 
-![cfd-one](./cfd-one.png) ![cfd-two](./cfd-two.png)
+![cfd-one](./cfd-one.png) 
+![cfd-two](./cfd-two.png)
 
-Whenever you complete a task the number in your process is done stage will rise permanently. Each stage has an arrivaland a departure line. The vertical distance between them visualizes the number of tasks that were in this stage of your workflow at the time 
+Whenever you complete a task the number in your process is done stage will rise permanently. Each stage has an arrival  and a departure line. The vertical distance between them visualizes the number of tasks that were in this stage of your workflow at the time.
 
 ![cfd-three](./cfd-three.png)
 
@@ -113,14 +114,12 @@ The horizontal distance between your first and last stage shows the approximate 
 
 ![cfd-four](./cfd-four.png)
 
-Let's take a look at the workflow of an example software development team. Their process involves five stages:
+Let's take a look at the workflow of an example software development team whose process involves five stages: <br>
+<p align="center"><span style="color:#ED8B24">Requested to start</span> → <span style="color:#4C8B24">Design</span> → <span style="color:#4151A2">Development</span> → <span style="color:#E4411D">Review</span> → <span style="color:#690085                  ">Done</span>.</p>
 
 ![cfd-five](./cfd-five.png)
 
-A quick look at the chart tells you more about their approximate average cycle time of two weeks along with a number of asks completed during that period.
-
-
-In order to determine whether their process is stable we need to monitor how the chart progresses in time. If the distance between the arrival and departure lines grows in parallel then most likely we've got nothing to worry about.
+A quick look at the chart tells you more about their approximate average cycle time of two weeks along with a number of asks completed during that period. In order to determine whether their process is stable we need to monitor how the chart progresses in time. If the distance between the arrival and departure lines grows in parallel then most likely we've got nothing to worry about.
 
 ![cfd-six](./cfd-six.png)
 

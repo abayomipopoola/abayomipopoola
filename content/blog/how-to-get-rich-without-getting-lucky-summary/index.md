@@ -24,7 +24,7 @@ Let's get to it.
 
 > If you secretly despise wealth, it will elude you.
 
-- Wealth isn’t about taking something from somebody else--it’s about creating abundance for the world.
+- Wealth isn’t about taking something from somebody else—it’s about creating abundance for the world.
 - Everyone can be rich: if wealth were finite, we would still be sitting around in caves.
 - In the first world, it’s better to be poor today than it was to be the richest man 200 years ago.
 - Thought experiment: if everyone today was an engineer, in 20 years, children would be retired in riches from the moment they were born.
@@ -33,23 +33,23 @@ Let's get to it.
 
 - Free markets are intrinsic to the human species. We’re the only animals who cooperate across genetic boundaries.
 - One way we cooperate is by keeping track of credits and debits in voluntary exchanges.
-- Free markets like this are beautiful games that keep food on our shelves--and can make us all wealthier and wealthier.
+- Free markets like this are beautiful games that keep food on our shelves—and can make us all wealthier and wealthier.
 - But too many takers and not enough makers will plunge a society into ruin.
 - Takers attack wealth creation with status games that drag everyone down to their level.
 
 ### You’re not going to get rich renting out your time.
 
-> Own equity--a piece of a business--to gain your financial freedom.
+> Own equity—a piece of a business—to gain your financial freedom.
 
 - You won’t get rich renting out your time, because your inputs are too closely tied to your outputs. You’re not earning while you’re sleeping.
 - Renting out your time means someone else will get the wealth from your time. They’re going to pay you the bare minimum to do your job.
 - Renting out your time also mean you’re replaceable and not as creative as you could be. So you must own equity to gain your financial freedom.
-- You get equity for work where your inputs don’t match your outputs. You could do an hour of work and it could have a huge effect--or you could do 1,000 hours of work and it could have no effect.
+- You get equity for work where your inputs don’t match your outputs. You could do an hour of work and it could have a huge effect—or you could do 1,000 hours of work and it could have no effect.
 - You must have high creativity and leverage to decouple your inputs and outputs.
 
-### You will get rich by giving society what it wants but does not yet know how to get--at scale.
+### You will get rich by giving society what it wants but does not yet know how to get—at scale.
 
-- Give society what it wants, but doesn’t know how to get--at scale.
+- Give society what it wants, but doesn’t know how to get—at scale.
 - Figure out what new product or technology you can provide that’s natural to you.
 - Then figure out how to scale it so everyone on the planet can have your product.
 
@@ -62,14 +62,14 @@ Let's get to it.
 
 - The Internet has massively broadened the possible space of careers, by allowing you to scale any niche obsession.
 - Before the Internet there was no way to find all the people in the world who were interested in your obsession. Now you can.
-- Escape competition through authenticity--when you’re competing with people it’s because you’re copying them.
-- No one can compete with you on being you. Before the Internet, this was useless advice--now it’s a career.
+- Escape competition through authenticity—when you’re competing with people it’s because you’re copying them.
+- No one can compete with you on being you. Before the Internet, this was useless advice—now it’s a career.
 
 ### Play iterated games.
 
 > All the returns in life, whether in wealth, relationships, or knowledge, come from compound interest.
 
-- All returns in life come from compound interest over many turns of long-term games--and they usually come at the end.
+- All returns in life come from compound interest over many turns of long-term games—and they usually come at the end.
 - People are fair with each other when they know there will be more turns of the game. Friction goes down with each turn, so you can do bigger and bigger things together.
 
 ### Pick business partners with high intelligence, energy, and, above all, integrity.
@@ -146,14 +146,14 @@ Let's get to it.
 
 > Fortunes require leverage. Business leverage comes from capital, people, and products with no marginal cost of replication (code and media).
 > Code and media are permissionless leverage. They're the leverage behind the newly rich. You can create software and media that works for you while you sleep.
-> An army of robots is freely available--it's just packed in data centers for heat and space efficiency. Use it.
+> An army of robots is freely available—it's just packed in data centers for heat and space efficiency. Use it.
 > If you can't code, write books and blogs, record videos and podcasts.
 
 - Product and media are the new leverage.
 - Product leverage is where the new fortunes are made.
 - Combining all three forms of leverage is a magic combination.
 - Product and media leverage are permissionless.
-- The robot army is already here--code lets you tell them what to do.
+- The robot army is already here—code lets you tell them what to do.
 
 ### Product Leverage is Egalitarian
 

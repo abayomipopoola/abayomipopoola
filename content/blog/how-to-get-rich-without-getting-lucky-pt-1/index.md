@@ -7,7 +7,7 @@ description: Part one of the Naval’s expanded points from his viral tweetstorm
 
 ![The life we live in](./feynman.jpeg)
 
-You probably have come across the viral "How To Get Rich" tweetstorm from Naval--he’s kinda famous on Twitter, and also he's the co-founder of AngelList. He’s a prolific tech investor in companies like Twitter, Uber, and many more.
+You probably have come across the viral "How To Get Rich" tweetstorm from Naval—he’s kinda famous on Twitter, and also he's the co-founder of AngelList. He’s a prolific tech investor in companies like Twitter, Uber, and many more.
 
 Here is part one of the Naval’s expanded points from his tweetstorm in detail <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised article here)_</a>.
 
@@ -106,7 +106,7 @@ But I don’t think capitalism is evil. Capitalism is actually good. It’s just
 
 Summary:
 
-- Wealth isn’t about taking something from somebody else--it’s about creating abundance for the world.
+- Wealth isn’t about taking something from somebody else—it’s about creating abundance for the world.
 - Everyone can be rich: if wealth were finite, we would still be sitting around in caves.
 - In the first world, it’s better to be poor today than it was to be the richest man 200 years ago.
 - Thought experiment: if everyone today was an engineer, in 20 years, children would be retired in riches from the moment they were born.
@@ -159,13 +159,13 @@ Summary:
 
 - Free markets are intrinsic to the human species. We’re the only animals who cooperate across genetic boundaries.
 - One way we cooperate is by keeping track of credits and debits in voluntary exchanges.
-- Free markets like this are beautiful games that keep food on our shelves--and can make us all wealthier and wealthier.
+- Free markets like this are beautiful games that keep food on our shelves—and can make us all wealthier and wealthier.
 - But too many takers and not enough makers will plunge a society into ruin.
 - Takers attack wealth creation with status games that drag everyone down to their level.
 
 ### You’re not going to get rich renting out your time.
 
-> Own equity--a piece of a business--to gain your financial freedom.
+> Own equity—a piece of a business—to gain your financial freedom.
 
 #### You won’t get rich renting out your time
 
@@ -218,12 +218,12 @@ Summary:
 - You won’t get rich renting out your time, because your inputs are too closely tied to your outputs. You’re not earning while you’re sleeping.
 - Renting out your time means someone else will get the wealth from your time. They’re going to pay you the bare minimum to do your job.
 - Renting out your time also mean you’re replaceable and not as creative as you could be. So you must own equity to gain your financial freedom.
-- You get equity for work where your inputs don’t match your outputs. You could do an hour of work and it could have a huge effect--or you could do 1,000 hours of work and it could have no effect.
+- You get equity for work where your inputs don’t match your outputs. You could do an hour of work and it could have a huge effect—or you could do 1,000 hours of work and it could have no effect.
 - You must have high creativity and leverage to decouple your inputs and outputs.
 
-### You will get rich by giving society what it wants but does not yet know how to get--at scale.
+### You will get rich by giving society what it wants but does not yet know how to get—at scale.
 
-#### Give society what it wants, but doesn’t know how to get--at scale
+#### Give society what it wants, but doesn’t know how to get—at scale
 
 That’s right. So, essentially as we talked about before, money is IOUs from society saying, “You did something good in the past. Now here’s something that we owe you for the future.” And so society will pay you for creating things that it wants.
 
@@ -253,7 +253,7 @@ But the entrepreneur’s job starts even before that, which is creation. Entrepr
 
 Summary:
 
-- Give society what it wants, but doesn’t know how to get--at scale.
+- Give society what it wants, but doesn’t know how to get—at scale.
 - Figure out what new product or technology you can provide that’s natural to you.
 - Then figure out how to scale it so everyone on the planet can have your product.
 
