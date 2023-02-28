@@ -47,16 +47,16 @@ h4 {
   line-height: 28px;
 }
 
-small {
+.post small {
   font-family: ColfaxAIRegular, helvetica, sans-serif;
   font-size: 12px;
 }
 
-strong {
+.post strong {
   font-family: BlancoBold, 'Georgia', serif;
 }
 
-em {
+.post em {
   font-family: BlancoItalic, 'Georgia', serif;
 }
 
