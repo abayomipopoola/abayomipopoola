@@ -47,7 +47,7 @@ h4 {
   line-height: 28px;
 }
 
-.post small {
+.post small, .date-time {
   font-family: ColfaxAIRegular, helvetica, sans-serif;
   font-size: 12px;
 }
