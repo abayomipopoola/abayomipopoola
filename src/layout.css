@@ -112,7 +112,7 @@ blockquote p {
   width: 30px;
   margin-right: 8px;
   display: inline-block;
-  border: 1px #cfe2f3 solid;
+	border: 1px solid hsl(210,8%,80%);
   box-shadow: none;
   border-radius: 50%;
   color: black;
@@ -121,8 +121,8 @@ blockquote p {
 }
 
 .share a:hover {
-  border: 1px #9fc5e8 solid;
-  background-color: #9fc5e8;
+	border: 1px solid hsl(210,8%,80%);
+  background-color: hsl(210,8%,80%);
 }
 
 .share .text {

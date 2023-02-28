@@ -29,8 +29,8 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile-pic.jpeg"
-        width={50}
-        height={50}
+        width={60}
+        height={60}
         quality={95}
         alt="Profile picture"
       />
@@ -38,7 +38,6 @@ const Bio = () => {
         <p>
           {author?.summary || null}
           {` `}
-          <br />
           <Link style={{ boxShadow: "none" }} to="/me">
             <em>About & Contact</em>
           </Link>
