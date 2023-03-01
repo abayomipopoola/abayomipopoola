@@ -51,6 +51,7 @@ h4 {
   font-family: ColfaxAIRegular, helvetica, sans-serif;
   font-size: 13px;
   color: #757575;
+  white-space: nowrap;
 }
 
 .post strong {

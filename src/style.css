@@ -398,6 +398,7 @@ a:focus {
 	margin-left: 0.6rem;
 	border: 1px solid hsl(210,8%,85%);
     border-radius: 3px;
+	line-break: anywhere;
 }
 
 .tags-highlight>span {
