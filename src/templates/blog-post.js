@@ -12,6 +12,7 @@ const kebabCase = string =>
     .toLowerCase()
 const capitalize = string =>
   string.replace(/\b([a-z])/g, w => w.charAt(0).toUpperCase() + w.slice(1))
+const abbrevMonth = mo => [mo.split(' ')[0].substring(0,3), mo.split(' ')[1], mo.split(' ')[2]].join(' ')
 
   const BlogPostTemplate = ({
     data: { previous, next, site, markdownRemark: post },
@@ -33,9 +34,9 @@ const capitalize = string =>
           <h2 itemProp="headline">{post.frontmatter.title}</h2>
           <div class="metainfo-grid">
             <div class="grid-child">
-              <p style={{ color: "#202123", margin: "0 0 16px 0", fontSize: 12 }}>
-                {post.frontmatter.date} · {post.timeToRead} min read
-              </p>
+              <span className="date-time">
+                {abbrevMonth(post.frontmatter.date)} · {post.timeToRead} min read
+              </span>
             </div>
             <div class="grid-child share-btn">
               <Share
@@ -83,9 +84,6 @@ const capitalize = string =>
           </div>
         </div>
         <hr />
-        {/*<footer>*/}
-        {/*	<Bio />*/}
-        {/*</footer>*/}
       </article>
       <nav className="blog-post-nav">
         <ul

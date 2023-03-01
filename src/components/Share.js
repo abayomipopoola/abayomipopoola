@@ -2,6 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import {
+  faFacebookF,
   faLinkedinIn,
   faTwitter,
   faWhatsapp,
@@ -13,7 +14,7 @@ function isMobileOrTablet() {
   )
 }
 
-library.add(faLinkedinIn, faTwitter, faWhatsapp)
+library.add(faFacebookF, faLinkedinIn, faTwitter, faWhatsapp)
 
 const Share = ({ socialConfig }) => (
   <div className="share">
@@ -24,13 +25,13 @@ const Share = ({ socialConfig }) => (
     >
       <FontAwesomeIcon icon={["fab", "twitter"]} />
     </a>
-    {/* <a
+    <a
       className="facebook"
       href={`https://www.facebook.com/sharer/sharer.php?u=${socialConfig.config.url}`}
       target="blank"
     >
       <FontAwesomeIcon icon={["fab", "facebook-f"]} />
-    </a> */}
+    </a>
     <a
       className="linkedin"
       href={`https://www.linkedin.com/shareArticle?mini=true&url=${socialConfig.config.url}&title=${socialConfig.config.title}`}

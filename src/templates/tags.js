@@ -12,6 +12,7 @@ const kebabCase = string =>
     .toLowerCase()
 const capitalize = string =>
   string.replace(/\b([a-z])/g, w => w.charAt(0).toUpperCase() + w.slice(1))
+const abbrevMonth = mo => [mo.split(' ')[0].substring(0,3), mo.split(' ')[1], mo.split(' ')[2]].join(' ')
 
 const TagsTemplate = ({ pageContext, data, location }) => {
   const { tag } = pageContext
@@ -52,9 +53,9 @@ const TagsTemplate = ({ pageContext, data, location }) => {
                     }}
                     itemProp="description"
                   />
-                  <small className="date-time">
-                    {`${post.frontmatter.date} · ${post.timeToRead} min read`}
-                  </small>
+                  <span className="date-time">
+                    {`${abbrevMonth(post.frontmatter.date)} · ${post.timeToRead} min read`}
+                  </span>
                   <small>
                     {post.frontmatter.tags &&
                       post.frontmatter.tags.map(tag => {
