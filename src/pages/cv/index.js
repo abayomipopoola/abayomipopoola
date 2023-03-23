@@ -16,7 +16,7 @@ const H2 = styled.h2`
     right: 0;
     font-style: italic;
     font-size: 16px;
-    color: #999;
+    color: #80868b;
     font-weight: normal;
   }
   @media only screen and (max-width: 600px) {
@@ -34,9 +34,9 @@ const Ps = styled.p`
   margin: 0 0;
 `
 const A = styled.a`
-  color: #999;
+  color: #80868b;
   text-decoration: none;
-  border-bottom: 1px dotted #999;
+  border-bottom: 1px dotted #80868b;
   &:hover {
     border-bottom-style: solid;
     color: black;
@@ -53,7 +53,7 @@ const Dt = styled.dt`
   text-align: left;
   padding: 0 26px 0 0;
   width: 100%
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #80868b;
 `
 const Dd = styled.dd`
   .flex-wrapper {

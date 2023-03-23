@@ -22,7 +22,7 @@ const Tags = ({ data, location }) => {
       <Seo title="Posts Tags" description="All posts by tag" slug="/tags" />
       <Bio />
 
-      <h3>Posts Tags</h3>
+      <h3 className="head-title">Posts Tags</h3>
 
       <ul style={{ listStyle: "none" }}>
         {tags.map(tag => (
