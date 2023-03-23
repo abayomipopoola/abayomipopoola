@@ -20,12 +20,12 @@ a.read-more {
 }
 
 p {
-	color: #202123DE;
+	color: #000000DE;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: ColfaxAIBold,helvetica,sans-serif;
-	color: #202123;
+	color: #000000;
 }
 
 h2 {
@@ -124,7 +124,7 @@ blockquote p {
 }
 
 .share a:hover {
-  color: #202123;
+  color: #000000;
 }
 
 .share .text {

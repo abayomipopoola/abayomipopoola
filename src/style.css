@@ -150,8 +150,6 @@ h6 {
 h1 {
 	font-weight: var(--fontWeight-black);
 	font-size: var(--fontSize-6);
-	color: #202123;
-	/* color: var(--color-heading-black); */
 }
 
 h2 {
@@ -184,11 +182,11 @@ h4 > a,
 h5 > a,
 h6 > a {
 	text-decoration: none;
-	color: #202123;
+	color: #000000;
 }
 
 h4 > a:hover {
-    color: #202123;
+    color: #000000;
   }
 
 /* Prose */
@@ -479,7 +477,7 @@ a:focus {
 
 
 .card {
-    border: 1px solid #202123;
+    border: 1px solid #000000;
     border-radius: 0.2em;
     box-shadow: 5px 5px 7px #00000026;
     padding: 1.5em;
@@ -541,7 +539,7 @@ a:focus {
     padding: 0.65em 1em;
     margin: 0;
     background: var(--color-bg--main);
-    border: 1px solid #202123;
+    border: 1px solid #000000;
     border-right-color: transparent;
     border-radius: 1.5em 0 0 1.5em;
 }
@@ -558,8 +556,8 @@ a:focus {
     border-radius: 0 1.5em 1.5em 0;
 }
 .subscribe__submit:focus {
-    background: #202123;
-    border: 1px solid #202123;
+    background: #000000;
+    border: 1px solid #000000;
     outline: none;
 }
 
