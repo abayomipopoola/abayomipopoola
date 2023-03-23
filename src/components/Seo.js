@@ -22,7 +22,9 @@ const Seo = ({ description, title, slug, children }) => {
   const defaultTitle = site.siteMetadata?.title
   const metaDescription = description || site.siteMetadata.description
   const siteTitle = title ? `${title} — ${defaultTitle}` : defaultTitle
-  const siteUrl = slug ? `${site.siteMetadata.siteUrl}${slug}` : site.siteMetadata.siteUrl
+  const siteUrl = slug
+    ? `${site.siteMetadata.siteUrl}${slug}`
+    : site.siteMetadata.siteUrl
 
   return (
     <>

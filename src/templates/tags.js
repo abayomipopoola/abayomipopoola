@@ -12,7 +12,10 @@ const kebabCase = string =>
     .toLowerCase()
 const capitalize = string =>
   string.replace(/\b([a-z])/g, w => w.charAt(0).toUpperCase() + w.slice(1))
-const abbrevMonth = mo => [mo.split(' ')[0].substring(0,3), mo.split(' ')[1], mo.split(' ')[2]].join(' ')
+const abbrevMonth = mo =>
+  [mo.split(" ")[0].substring(0, 3), mo.split(" ")[1], mo.split(" ")[2]].join(
+    " "
+  )
 
 const TagsTemplate = ({ pageContext, data, location }) => {
   const { tag } = pageContext
@@ -23,7 +26,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Bio />
-      <h3 style={{ color: "#202123" }}>
+      <h3 className="head-title">
         {totalCount}
         {totalCount === 1 ? " post" : " posts"} in {tag}
       </h3>
@@ -47,14 +50,15 @@ const TagsTemplate = ({ pageContext, data, location }) => {
                 </header>
                 <section>
                   <p
-                    style={{ color: "#202123" }}
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description,
                     }}
                     itemProp="description"
                   />
                   <span className="date-time">
-                    {`${abbrevMonth(post.frontmatter.date)} · ${post.timeToRead} min read`}
+                    {`${abbrevMonth(post.frontmatter.date)} · ${
+                      post.timeToRead
+                    } min read`}
                   </span>
                   <small>
                     {post.frontmatter.tags &&
@@ -90,7 +94,7 @@ export const Head = ({ pageContext }) => {
     <Seo
       title={`${capitalize(tag)} — Post tags`}
       description={`${capitalize(tag)} Post tags`}
-      slug={`/tags/${tag.replace(/\s+/g, '-')}`}
+      slug={`/tags/${tag.replace(/\s+/g, "-")}`}
     />
   )
 }

@@ -81,7 +81,7 @@ The CFD can also help product managers understand the overall flow of work items
 
 The chart above is an example of a CFD, where the x-axis represent the time frame that the chart is visualising the data for. The y-axis represent the cummulative number of work units that are in the work flow at the time of measurement.
 
-The cumulative flow diagram is also a crucial Kanban analytics tool and provides an overview of the current state of your project. 
+The cumulative flow diagram is also a crucial Kanban analytics tool and provides an overview of the current state of your project.
 
 Kanban is a popular approach to managing workflow that involves visualizing work on a board that is divided into columns. Each column represents a different stage of the workflow, and tasks move from left to right as they progress through the various stages. In a typical Kanban board, there are three columns: "To Do," "Work in Progress" (WIP), and "Done."
 
@@ -103,10 +103,10 @@ By collecting and analyzing these metrics over time, we can identify trends and 
 
 The aim of a cumulative flow diagram is to show you the stability of your process over time. It tracks and accumulates each task that is ever entered or progressed to any stage of your workflow.
 
-![cfd-one](./cfd-one.png) 
+![cfd-one](./cfd-one.png)
 ![cfd-two](./cfd-two.png)
 
-Whenever you complete a task the number in your process is done stage will rise permanently. Each stage has an arrival  and a departure line. The vertical distance between them visualizes the number of tasks that were in this stage of your workflow at the time.
+Whenever you complete a task the number in your process is done stage will rise permanently. Each stage has an arrival and a departure line. The vertical distance between them visualizes the number of tasks that were in this stage of your workflow at the time.
 
 ![cfd-three](./cfd-three.png)
 
@@ -115,6 +115,7 @@ The horizontal distance between your first and last stage shows the approximate 
 ![cfd-four](./cfd-four.png)
 
 Let's take a look at the workflow of an example software development team whose process involves five stages: <br>
+
 <p align="center"><span style="color:#ED8B24">Requested to start</span> → <span style="color:#4C8B24">Design</span> → <span style="color:#4151A2">Development</span> → <span style="color:#E4411D">Review</span> → <span style="color:#690085                  ">Done</span>.</p>
 
 ![cfd-five](./cfd-five.png)
@@ -127,7 +128,7 @@ However if it starts to expand rapidly then tests are arriving faster than they 
 
 ![cfd-seven](./cfd-seven.png)
 
-A properly built cumulative flow diagram always flows upward or sideways. If you ever see a line going down then the chart is incorrect since tasks should never disappear. 
+A properly built cumulative flow diagram always flows upward or sideways. If you ever see a line going down then the chart is incorrect since tasks should never disappear.
 
 When the "In Progress" bar appears thinner, the team is working on smaller batches of tasks, which means they have less "Work in progress" (WIP). By working on fewer tasks at the same time, the team can concentrate better and create more value through the system. In the second diagram, if you imagine the same vertical and horizontal lines, you'll see that having a smaller queue size has resulted in less delay.
 

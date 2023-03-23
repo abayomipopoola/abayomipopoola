@@ -3,7 +3,7 @@ import Bio from "../../components/bio"
 import Seo from "../../components/seo"
 import Layout from "../../components/layout"
 
-const PortfolioPage = ({location}) => {
+const PortfolioPage = ({ location }) => {
   return (
     <Layout location={location} title="Abayomi Popoola">
       <Seo
@@ -13,7 +13,7 @@ const PortfolioPage = ({location}) => {
       />
       <Bio />
 
-      <h3>Hello!</h3>
+      <h3 className="head-title">Hello!</h3>
       <p>
         My name is Abayomi, a programmer and entrepreneur who loves building
         businesses.

@@ -12,7 +12,10 @@ const kebabCase = string =>
     .toLowerCase()
 const capitalize = string =>
   string.replace(/\b([a-z])/g, w => w.charAt(0).toUpperCase() + w.slice(1))
-const abbrevMonth = mo => [mo.split(' ')[0].substring(0,3), mo.split(' ')[1], mo.split(' ')[2]].join(' ')
+const abbrevMonth = mo =>
+  [mo.split(" ")[0].substring(0, 3), mo.split(" ")[1], mo.split(" ")[2]].join(
+    " "
+  )
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -30,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Bio />
-      <h3>Recent posts</h3>
+      <h3 className="head-title">Recent posts</h3>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -50,14 +53,15 @@ const BlogIndex = ({ data, location }) => {
                 </header>
                 <section>
                   <p
-                    style={{ color: "#202123" }}
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description,
                     }}
                     itemProp="description"
                   />
                   <span className="date-time">
-                    {`${abbrevMonth(post.frontmatter.date)} · ${post.timeToRead} min read`}
+                    {`${abbrevMonth(post.frontmatter.date)} · ${
+                      post.timeToRead
+                    } min read`}
                   </span>
                   <small>
                     {post.frontmatter.tags &&
@@ -95,7 +99,7 @@ export const pageQuery = graphql`
         description
       }
     }
-	  allMarkdownRemark(sort: { frontmatter: { date: DESC }}) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
         fields {
           slug
@@ -104,7 +108,7 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
-		      tags
+          tags
           description
         }
       }

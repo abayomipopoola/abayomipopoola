@@ -9,7 +9,7 @@ description: Understanding product development as an example of a systematic pro
 
 _The Principles of Product Development Flow_ by Donald Reinertsen is a book on Lean Product Development that systematically applies various economic concepts, lean manufacturing, statistics, queuing theory, etc, to the product development process. Reinertsen organizes these theories into 8 main themes and outlines 175 principles to provide guidance for product development. Some of these principles include concepts such as reducing batch sizes, limiting work in progress, and enabling teams to make decisions.
 
-The author places great emphasis on the importance of managing queues and argues that bottlenecks and queues often hinder the flow of work in the product development process. The book provides a thorough and in-depth method for managing product development processes, making it a valuable resource for anyone seeking to enhance the speed and efficiency of their product development efforts. 
+The author places great emphasis on the importance of managing queues and argues that bottlenecks and queues often hinder the flow of work in the product development process. The book provides a thorough and in-depth method for managing product development processes, making it a valuable resource for anyone seeking to enhance the speed and efficiency of their product development efforts.
 
 In the rest of this write-up, I'll give a brief overview of some important concepts covered in the book, and then take a more detailed look at managing queues, which is a crucial aspect of product development processes.
 
@@ -51,8 +51,8 @@ The concept involves several key principles:
 - Product development teams should be aware of the variability in their process and should actively seek to understand and manage it.
 - Variability can be used to improve product performance, reduce costs, and increase efficiency.
 - Teams should use a variety of tools and techniques to exploit variability, including statistical analysis, simulations, and scenario planning.
-Effective exploitation of variability requires collaboration and communication among team members.
-For example, one way to exploit variability is through the use of statistical process control (SPC) techniques. SPC involves monitoring the development process for variations and using that data to make adjustments to the process in real-time. By doing so, teams can identify and correct issues before they become major problems, reducing waste and improving quality.
+  Effective exploitation of variability requires collaboration and communication among team members.
+  For example, one way to exploit variability is through the use of statistical process control (SPC) techniques. SPC involves monitoring the development process for variations and using that data to make adjustments to the process in real-time. By doing so, teams can identify and correct issues before they become major problems, reducing waste and improving quality.
 
 The figure below shows how to measure variability with a payoff function. Reinertsen advise we use statistics-based steps to reduce variation, such as smaller tasks and time limits; mininimizing the impact of variability by economic prioritisation, faster iterations, and early high-risk actions.
 
@@ -109,7 +109,6 @@ The chapter also covers topics such as the importance of creating a culture that
 <p class="three-dots">***</p>
 
 You just completed the first part of the _The Principles of Product Development Flow_ blog post. <a href="/principles-of-product-development-flow-pt-2" class="read-more">_(Read the concluding part here)_</a></a>
-
 
 <small>References: <a href="https://www.amazon.com/gp/product/1935401009" target="_blank">The Principles of Product Development Flow by Donald Reinertsen</a>
 </small>

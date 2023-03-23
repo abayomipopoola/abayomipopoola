@@ -12,12 +12,15 @@ const kebabCase = string =>
     .toLowerCase()
 const capitalize = string =>
   string.replace(/\b([a-z])/g, w => w.charAt(0).toUpperCase() + w.slice(1))
-const abbrevMonth = mo => [mo.split(' ')[0].substring(0,3), mo.split(' ')[1], mo.split(' ')[2]].join(' ')
+const abbrevMonth = mo =>
+  [mo.split(" ")[0].substring(0, 3), mo.split(" ")[1], mo.split(" ")[2]].join(
+    " "
+  )
 
-  const BlogPostTemplate = ({
-    data: { previous, next, site, markdownRemark: post },
-    location,
-  }) => {
+const BlogPostTemplate = ({
+  data: { previous, next, site, markdownRemark: post },
+  location,
+}) => {
   const siteTitle = site.siteMetadata?.title || `Title`
   const siteUrl = site.siteMetadata.siteUrl
   const twitterHandle = site.siteMetadata.social.twitter
@@ -35,7 +38,8 @@ const abbrevMonth = mo => [mo.split(' ')[0].substring(0,3), mo.split(' ')[1], mo
           <div class="metainfo-grid">
             <div class="grid-child">
               <span className="date-time">
-                {abbrevMonth(post.frontmatter.date)} · {post.timeToRead} min read
+                {abbrevMonth(post.frontmatter.date)} · {post.timeToRead} min
+                read
               </span>
             </div>
             <div class="grid-child share-btn">
@@ -64,7 +68,9 @@ const abbrevMonth = mo => [mo.split(' ')[0].substring(0,3), mo.split(' ')[1], mo
                   return (
                     <span key={tag}>
                       <Link to={`/category/${kebabCase(tag)}`}>
-                        <span className="tags-highlight">{capitalize(tag)}</span>
+                        <span className="tags-highlight">
+                          {capitalize(tag)}
+                        </span>
                       </Link>
                     </span>
                   )
@@ -158,7 +164,7 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description}
-	    slug={post.fields.slug}
+      slug={post.fields.slug}
     />
   )
 }
