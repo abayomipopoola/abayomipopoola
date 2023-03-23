@@ -155,6 +155,11 @@ const BlogPostTemplate = ({
           </p>
         </div>
       </section>
+      <div style={{ float: "right" }}>
+        <a style={{ boxShadow: "none" }} href="#top">
+          <span>&#8593;</span> top
+        </a>
+      </div>
     </Layout>
   )
 }

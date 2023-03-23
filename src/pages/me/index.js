@@ -15,7 +15,7 @@ const PortfolioPage = ({ location }) => {
 
       <h3 className="head-title">Hello!</h3>
       <p>
-        My name is Abayomi, a programmer and entrepreneur who loves building
+        I'm Abayomi, a programmer and entrepreneur who loves building
         businesses.
       </p>
       <p>

@@ -39,11 +39,11 @@ const Bio = () => {
           {author?.summary || null}
           {` `}
           <Link style={{ boxShadow: "none" }} to="/me">
-            <em>About & Contact</em>
+            <span className="about-link">About & Contact</span>
           </Link>
           {" - "}
           <Link style={{ boxShadow: "none" }} to="/tags">
-            <em>Posts Tags</em>
+            <span className="about-link">Posts Tags</span>
           </Link>
         </p>
       )}

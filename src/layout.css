@@ -44,7 +44,12 @@ h4 {
 }
 
 h3.head-title {
+  font-family: BlancoItalic, 'Georgia', serif;
   color: #80868b;
+}
+
+span.about-link {
+  font-family: BlancoItalic, 'Georgia', serif;
 }
 
 .date-time {
