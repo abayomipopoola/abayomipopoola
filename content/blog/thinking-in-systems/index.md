@@ -17,7 +17,7 @@ Donella introduces the concept of _systems_ as a central tenet of systems thinki
 
 Donella emphasizes that systems are more than just the sum of their parts; it is the interconnections and interactions between components that give rise to the system's overall behavior. To understand a system, one must not only consider its individual components but also the relationships between those components and how they contribute to the system's overall function.
 
-One of the key insights from "Thinking in Systems" is that systems exhibit certain properties and behaviors that cannot be deduced by simply examining their individual components in isolation. These emergent properties arise from the system's structure and the interactions between its components. For instance, a traffic jam is an emergent property of the transportation system, resulting from the interactions between vehicles, roads, and traffic control measures.
+One of the key insights from _Thinking in Systems_ is that systems exhibit certain properties and behaviors that cannot be deduced by simply examining their individual components in isolation. These emergent properties arise from the system's structure and the interactions between its components. For instance, a traffic jam is an emergent property of the transportation system, resulting from the interactions between vehicles, roads, and traffic control measures.
 
 By adopting a systems perspective, we can develop a more comprehensive understanding of complex phenomena, enabling us to better identify underlying issues, anticipate potential problems, and design more effective solutions. Systems thinking encourages us to think holistically, considering not just the individual components but also the interconnections, feedback loops, and dynamics that shape the behavior of the system as a whole.
 
@@ -31,8 +31,6 @@ Systems can be broken down into three fundamental constituents: elements, connec
 
 - **Purposes**: The purpose of a system refers to its overarching goal, function, or reason for existence. It is the driving force behind the system's behavior and the ultimate objective that its components collectively strive to achieve. Understanding a system's purpose helps clarify the context in which it operates and provides a foundation for evaluating its performance and effectiveness. In the software system example, the purpose could be to process and analyze data, facilitate communication between users, or manage an organization's resources.
 
-Recognizing the elements, connectors, and purposes within a system is crucial for comprehending its overall structure and behavior. By examining these constituents, we can identify key components, relationships, and objectives that shape the system's dynamics. This understanding enables us to better diagnose issues, anticipate potential challenges, and design more effective solutions in various contexts.
-
 By analyzing these constituents, we can develop a more holistic understanding of complex systems and improve our problem-solving and decision-making capabilities.
 
 ### System Dynamics
@@ -41,11 +39,11 @@ The author provides an overview of system dynamics as a methodology for understa
 
 #### Stocks and Flows
 
-Stocks and Flows are fundamental concepts in systems thinking. These concepts help us understand the structure and behavior of systems by breaking them down into their basic components and interactions.
+Donella introduces the concept of stocks and flows as fundamental components of systems thinking. These concepts help us understand the structure and behavior of systems by breaking them down into their basic components and interactions.
 
 ![stocks and flow](./stocks_sys.png)
 
-The diagram above illustrates a model of a bathtub, as presented in _Thinking in Systems_, to help us understand the dynamics of a system.
+The diagram above illustrates a bathtub model, which is a useful example used in the book to help us understand the dynamics of a system.
 
 In this context, a stock represents a static snapshot of the system, while the arrows symbolize the changing dynamics that collaborate to maintain the system's balance. If the stock of a bathtub refers to the volume of water it holds, then the inflow could be represented by the faucet, and the outflow by the drain. The stock at any given moment is a result of the previous interactions between inflow and outflow, demonstrating the interconnected nature of system components.
 
@@ -59,13 +57,13 @@ Flows can be influenced by various factors, such as external forces, feedback lo
 
 ##### One-Stock and Two-Stock systems
 
-The author does not explicitly use the terms _one-stock system_ and _two-stock system_ to categorize systems. However, the book does discuss systems with varying numbers of stocks and their interactions. We can derive examples of one-stock and two-stock systems based on the concepts presented in the book. 
+The author does not explicitly use the terms _one-stock system_ and _two-stock system_ to categorize systems. However, the book does discuss systems with varying numbers of stocks and their interactions. The one-stock and two-stock systems is a derived example based on the concepts presented in the book. 
 
 One-stock and two-stock systems are not about the intrinsic nature of a system; instead, they relate to the focus of analysis. When working with models, it is often beneficial to reduce complexity, similar to measuring two variables at a time in regression analysis. As more stocks are added to a system under simultaneous analysis, the model becomes increasingly complex.
 
 - **One-stock system**. In a one-stock system, there is a single stock influenced by one or more inflows and outflows. The bathtub analogy mentioned earlier is an example of a one-stock system, where the stock is the water in the bathtub, the inflow is water coming from the faucet, and the outflow is water draining away. This simple model helps convey the basic concept of stocks and flows and how they affect the stock's accumulation or depletion over time.
 
-    - Example: In the book, the example of a bathtub is used to illustrate the concept of stocks and flows. The stock in this example is the water in the bathtub. The inflow is the water coming from the faucet, and the outflow is the water draining out. The system's behavior depends on the balance between the inflow and outflow rates, which determine the water level in the bathtub.
+    - Example: Using the bathtub model, the stock in this example is the water in the bathtub. The inflow is the water coming from the faucet, and the outflow is the water draining out. The system's behavior depends on the balance between the inflow and outflow rates, which determine the water level in the bathtub.
 
 - **Two-stock system**. A two-stock system involves two interconnected stocks, each influenced by their respective inflows and outflows. In this model, the outflow from one stock may serve as the inflow for the other stock. For example, imagine two interconnected bathtubs, where water flows from the faucet into the first bathtub (Stock A) and then drains into the second bathtub (Stock B) before finally draining out of the system. This model demonstrates how multiple stocks can interact and how the dynamics of one stock can influence the behavior of another stock within a system.
 
@@ -89,7 +87,9 @@ Another example of a balancing feedback is monthly budget: the stock is your hol
 
 - Reinforcing feedback loops (positive feedback): These loops amplify changes in the system, causing it to grow or decline more rapidly. When a discrepancy occurs in a stock, a reinforcing feedback loop can amplify the difference and lead to further divergence from the desired state. For example, in a population growth scenario, an increasing population leads to more births, which in turn further increases the population, creating a self-reinforcing cycle.
 
-The concept of behavior-over-time graphs was used in the book as a way to visually represent the dynamics of systems and their response to feedback loops.
+##### Behavior-Over-Time Graphs
+
+Behavior-over-time graphs is used in the book as a way to visually represent the dynamics of systems and their response to feedback loops.
 
 ![behavior-over-time](./behavior-graph.png)
 
@@ -142,11 +142,11 @@ Understanding these characteristics can help us better analyze and manage comple
 
 ### System Thinking 
 
-In essence, systems thinking is an approach to understanding and discussing reality that enables us to effectively work with and influence systems to improve our lives. It serves as a perspective, a unique language for describing systemic behavior, and a set of tools for visually representing and communicating about systems. For those new to systems thinking, it's essential to learn about the defining characteristics of systems and understand their role in daily life, their behavior, and management strategies. The latter sections of this volume address these aspects.
+In essence, systems thinking is an approach to understanding and discussing reality that enables us to effectively work with and influence systems to improve our lives. It serves as a perspective, a unique language for describing systemic behavior, and a set of tools for visually representing and communicating about systems. 
 
-Systems thinking is a concept that has gained traction in recent years, especially among senior managers who strive to improve the effectiveness of their programs. This approach involves analyzing an entity, comprised of interconnected components, as a whole, rather than focusing on individual parts. By doing so, managers can identify the factors that contribute to or inhibit the success of interventions in complex areas such as healthcare, social issues, or environmental concerns.
+Systems thinking is a concept that has gained traction in recent years, particularly among decision-makers who seek to enhance the performance and outcomes of their initiatives. This approach involves analyzing an entity, comprised of interconnected components, as a whole, rather than focusing on individual parts. By doing so, decision-makers can identify the factors that contribute to or inhibit the success of interventions in complex areas such as business operations, organizational management, or addressing societal challenges.
 
-#### Practical Application of System Thinking 
+#### System Thinking, Case Study
 
 Consider Mr. X, senior manager at an urban planning organization. He is responsible for reducing traffic congestion in a rapidly growing city. His initial idea is to increase public transportation options to encourage people to use them instead of their cars. However, systems thinkers argue that focusing on a single solution (a 'part') without considering the broader context (the 'whole') could overlook crucial factors that influence its impact.
 
