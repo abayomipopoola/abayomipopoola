@@ -1,7 +1,7 @@
 ---
 title: Thinking in Systems
 date: "2023-03-25T16:40:32.169Z"
-tags: [systems Thinking]
+tags: [systems thinking]
 description: Demystify systems thinking, explore interconnectedness and feedback loops to understand complex systems and enable effective problem-solving.
 ---
 
