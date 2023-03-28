@@ -63,21 +63,33 @@
 	--color-accent: #d1dce5;
 }
 
+/* Quotes */
+
+q {
+	quotes: "“" "”" "‘" "’";
+  }
+  q::before {
+	  content: open-quote;
+  }
+  q::after {
+	  content: close-quote;
+  }
+
 /* Font faces */
 
 @font-face {
-	font-family: 'Blanco';
-	src: url('/fonts/BlancoSubset-Regular.woff2') format('woff2');
+	font-family: 'MinionPro';
+	src: url('/fonts/MinionPro-Regular.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'BlancoBold';
-	src: url('/fonts/BlancoSubset-Bold.woff2') format('woff2');
+	font-family: 'MinionProSemibold';
+	src: url('/fonts/MinionPro-Semibold.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'BlancoItalic';
-	src: url('/fonts/BlancoSubset-Italic.woff2') format('woff2');
+	font-family: 'MinionProItalic';
+	src: url('/fonts/MinionPro-Italic.woff2') format('woff2');
 }
 
 @font-face {

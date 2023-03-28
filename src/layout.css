@@ -1,6 +1,6 @@
 body {
-  font-family: Blanco, 'Georgia', serif;
-  font-size: 19px;
+  font-family: MinionPro, 'Georgia', serif;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   background-color: #f3f6fc;
@@ -44,12 +44,12 @@ h4 {
 }
 
 h3.head-title {
-  font-family: BlancoItalic, 'Georgia', serif;
+  font-family: MinionProItalic, 'Georgia', serif;
   color: #80868b;
 }
 
 span.about-link {
-  font-family: BlancoItalic, 'Georgia', serif;
+  font-family: MinionProItalic, 'Georgia', serif;
 }
 
 .date-time {
@@ -60,11 +60,11 @@ span.about-link {
 }
 
 .post strong {
-  font-family: BlancoBold, 'Georgia', serif;
+  font-family: MinionProSemibold, 'Georgia', serif;
 }
 
 .post em {
-  font-family: BlancoItalic, 'Georgia', serif;
+  font-family: MinionProItalic, 'Georgia', serif;
 }
 
 .post img {
@@ -84,7 +84,7 @@ span.about-link {
 
 blockquote {
   border-left: 3px solid #80868b;
-  font-family: BlancoItalic, 'Georgia', serif;
+  font-family: MinionProItalic, 'Georgia', serif;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);
   padding: 0.5em 20px;
