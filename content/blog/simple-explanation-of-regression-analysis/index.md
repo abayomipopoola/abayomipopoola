@@ -7,27 +7,22 @@ description: A statistical method that allows you to examine the relationship be
 
 ![regression analysis](./regression.png)
 
-Regression analysis is a ubiquitous tool of scientific/statistical research, but what is it and how can it be explained simply? It's safe to define it as a method of measuring the link between two or more phenomena—establishing correlations.
+Regression analysis is a commonly used tool in scientific and statistical research. However, many people may not understand what it is and how it works. Simply put, regression analysis is a method used to measure the relationship between two or more variables, and to establish correlations between them.
 
 ### Correlation
 
-Correlation is a statistical term that indicates whether two variables, x and y, move together—meaning they change together at a constant rate. It tends to be cold when it snows—positive correlation; rain and sunshine, on the other hand,
-are negatively correlated.
+Correlation is a statistical concept that indicates whether two variables, x and y, move together. If they change at a constant rate, they are positively correlated. For example, it tends to be cold when it snows. Conversely, if they move in opposite directions, they are negatively correlated, such as rain and sunshine.
 
-So what happens when we’ve got more variables, say a couple of hundred variables? You guessed it—we employ **Regression Analysis** to help sort out huge piles of data.
+When dealing with a large dataset containing many variables, regression analysis can be used to help sort out the data. This is achieved by holding all variables except the ones of interest constant and demonstrating how they co-vary. For example, imagine a dataset that measures students' academic performance in public schools in Surulere LGA. This dataset contains variables such as gender, family structure, socioeconomic status, parents' education level, and more.
 
-This is made possible by artificially holding constant every variable except the two we wish to focus on, then showing how the two co-vary. For example, imagine an arbitrary set of data that measured students' academic performance of public schools in Surulere LGA, and gathered information about each child: his gender, family structure, socioeconomic status, the level of his parents' education, etc.
+To make sense of this complex data, we can think of regression analysis as converting each Surulere LGA student into a circuit board with an equal number of switches. Each switch represents a category of data, such as primary one math score, primary four math score, primary one reading score in English language, mother's education level, father's income, neighborhood affluence, and so on.
 
-With respect to this data, it might help to think of regression analysis as performing the following tasks: converting each of those Surulere LGA schoolchildren into a sort of a circuit board with an identical number of switches. Each switch represents a single category of the child's data: his primary one math score, his primary four math score, his primary one reading score in english language, his mother's education level, his father's income, the relative affluence of his neighborhood, and so on.
+By doing this, a researcher can begin to identify patterns and relationships within the data. They can group students who share many characteristics, based on their circuit board switches that are flipped in the same direction, and then pinpoint a single characteristic that they don't share. This allows the researcher to understand the effect of that characteristic, and eventually, the effect of every switch in the circuit board.
 
-Now a researcher is able to tease some insights from this very complicated set of data. He can line up all the children who share many characteristics—all the circuit board that has their switches flipped in the same direction—and then pinpoint a single
-characteristic they don't share. This is how the effect of that switch—and, eventually, of every switch—becomes manifested.
+### Correlation is not causation
 
-### Asking data questions
+Let's consider an example to understand the limitations of regression analysis. Suppose we want to gain insights about the relationship between parenting and education by analyzing whether having a lot of books at home results in better academic performance for children. While regression analysis can show whether there is a correlation between these two variables, it cannot establish causality. In other words, it can tell us whether children with more books tend to perform better academically than those without books, but it cannot prove that having more books is the cause of better academic performance.
 
-Let's say we want to get some insights about parenting and education: Does having a lot of books in your home
-(assuming it's part of the data collected) lead your child to do well in school? Regression analysis can't quite answer that question, but it can answer a subtly different one: does a child with a lot of books in his home tend to do better than a child with no books? The difference between the first and second is the difference between causality (question 1) and correlation (question 2).
-
-A regression analysis can demonstrate correlation, but it doesn't prove cause. It helps establish the existence of connections that call for a closer investigation of careful studies and critical thinking.
+Therefore, while regression analysis is a valuable tool for identifying connections between variables, it is important to remember that correlation does not imply causation. Further investigation, careful studies, and critical thinking are necessary to establish cause and effect relationships.
 
 <small>References: Freakonomics by Steven D. Levitt and Stephen J. Dubner; image, fiverr.com.</small>

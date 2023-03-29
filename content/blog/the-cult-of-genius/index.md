@@ -7,8 +7,10 @@ description: Passion (a deep, enduring knowledge of what you want) and persevera
 
 ![Cult of genius](./cult.png)
 
-We do not ask how it came to be. Instead, we rejoice in the present fact as though it came out of the ground by magic. — Nietzsche
+The concept of genius has long been romanticized, often leading to a sense of complacency and reluctance to strive for greatness. Nietzsche's thoughts on this matter invite us to reconsider our understanding of genius and to focus on the importance of hard work and dedication.
 
-Our vanity, our self-love, promotes the cult of the genius... for if we think of genius as something magical, we are not obliged to compare ourselves and find ourselves lacking. To call someone ‘divine’ means, “here, there’s no need to compete”. In other words, mythologizing natural talent lets us all off the hook. It lets us relax into the status quo.
+> We do not ask how it came to be. Instead, we rejoice in the present fact as though it came out of the ground by magic. — Nietzsche
 
-Nietzsche implored us to consider exemplars to be above all else, craftsmen: “Do not talk about giftedness, inborn talents! One can name great men of all kinds who were very little gifted. They acquired greatness — became geniuses. They all possessed that seriousness of the efficient workman who first learns to construct the parts properly before they ventures to fashion a great whole; they allow themselves time for it, because they took more pleasure in making the little, secondary things well than in the effect of a dazzling whole.
+Nietzsche urges us not to dwell on the origins of greatness, but instead to appreciate its existence as if it emerged from the ground by magic. Our self-esteem and pride encourage us to view genius as something mystical, which allows us to avoid comparing ourselves and feeling inadequate. Labeling someone as "divine" implies that there is no need to compete with them. In essence, mythologizing natural talent provides a convenient excuse to remain complacent with the status quo.
+
+He also emphasizes the importance of viewing exceptional individuals as, above all, skilled artisans. He discourages the belief in innate talent or giftedness, pointing out that many great figures achieved their status through hard work and dedication. These individuals focused on mastering smaller tasks before attempting to create something monumental. They all possessed that seriousness of the efficient workman who first learns to construct the parts properly before they ventures to fashion a great whole; they allow themselves time for it, because they took more pleasure in making the little, secondary things well than in the effect of a dazzling whole.

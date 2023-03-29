@@ -7,13 +7,13 @@ description: Making sense of a larger and more complex data sets that traditiona
 
 ![regression analysis](./big-data.jpg)
 
-The Higgs field gives mass to fundamental particles—the electrons, quarks and other building blocks that cannot be broken into smaller parts. In order to isolate the Higgs boson—the fundamental particle associated with the Higgs field, scientist utilises the Large Hadron Collider (LHC) that creates 600,000,000 collisions among 3,000,000,000,000,000 protons every second. In the same time, over 50,000,000,000,000 byte of data are being analysed to prove the particle's existence.
+The Higgs field is responsible for giving mass to fundamental particles like electrons and quarks, which are the building blocks of matter that cannot be further broken down. To isolate the Higgs boson particle associated with this field, scientists use the Large Hadron Collider (LHC). This machine creates around 600 million collisions every second between 3 quadrillion protons. During this process, more than 50 trillion bytes of data are generated and analyzed to confirm the existence of the Higgs boson particle.
 
 With such massive and fast-growing data, Big data made it possible to analyse the plethora of particles. This data is analysed by algorithms that are programmed to detect the energy signatures left behind by the appearance and disappearance of the elusive particles CERN are looking for. The algorithms compare the results with theoretical data on how the particle is believed to act.
 
 In 2013, scientists at CERN announced that they had found the Higgs boson particle—a ground-breaking discovery. Later that year, Nobel prize in physics was awarded jointly to François Englert and Peter Higgs “for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider”.
 
-### DATA
+### Data
 
 Before computer became ubiquitous, data used to be recoreded on paper: sample survey and questionnaire, population census, student grades. They are usually time-consuming and not effective. Data collections are mostly structured and follows certain format for statistical analysis. The advent of computers help ease the labourious task of data collection and analysis, especially with spreedsheet application softwares like Microsoft Excel, Lotus 123, etc., that allows for organization, analysis and storage of data in tabular form.
 

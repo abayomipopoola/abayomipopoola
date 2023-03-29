@@ -7,9 +7,7 @@ description: A distributed ledger at the heart of bitcoin and other virtual curr
 
 ![Blockchain Technology](./blockchain-tech.jpg)
 
-In recent years, new members are joining the _Bitcoin/Altcoins_ community, not for any ideological reason but practical ones.
-Whether or not bitcoin will be worth millions isn’t the main question for many computer scientists, investors, and entrepreneurs.
-To them, Satoshi Nakamoto’s real invention is the _Blockchain Technology_—a global open ledger which can be used to share much more than just money.
+In recent years, more people have been joining the Bitcoin/Altcoins community for practical reasons rather than ideological ones. For many computer scientists, investors, and entrepreneurs, the main question is not whether Bitcoin will be worth millions in the future. Instead, they are more interested in Satoshi Nakamoto's true invention: _Blockchain Technology_ — a global open ledger that can be used to share much more than just money.
 
 While the original purpose of the blockchain technology is powering bitcoin, it is capable of so much more.
 Blockchain is a suite of distributed ledger that can be programmed to record and track anything of value,
