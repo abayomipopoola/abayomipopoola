@@ -7,7 +7,7 @@ description: Understanding product development as an example of a systematic pro
 
 ![Lean development](./lean.jpg)
 
-_The Principles of Product Development Flow_ by Donald Reinertsen is a book on Lean Product Development that systematically applies various economic concepts, lean manufacturing, statistics, queuing theory, etc, to the product development process. Reinertsen organizes these theories into 8 main themes and outlines 175 principles to provide guidance for product development. Some of these principles include concepts such as reducing batch sizes, limiting work in progress, and enabling teams to make decisions.
+**The Principles of Product Development Flow** by Donald Reinertsen is a book on Lean Product Development that systematically applies various economic concepts, lean manufacturing, statistics, queuing theory, etc, to the product development process. Reinertsen organizes these theories into 8 main themes and outlines 175 principles to provide guidance for product development. Some of these principles include concepts such as reducing batch sizes, limiting work in progress, and enabling teams to make decisions.
 
 The author places great emphasis on the importance of managing queues and argues that bottlenecks and queues often hinder the flow of work in the product development process. The book provides a thorough and in-depth method for managing product development processes, making it a valuable resource for anyone seeking to enhance the speed and efficiency of their product development efforts.
 
