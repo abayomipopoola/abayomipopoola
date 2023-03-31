@@ -1,7 +1,7 @@
 ---
 title: Principles of Product Development Flow pt. 1
 date: "2023-02-27T11:15:40.284Z"
-tags: [agile, economics, product development]
+tags: [agile, books, economics]
 description: Understanding product development as an example of a systematic process that we can model and improve upon.
 ---
 

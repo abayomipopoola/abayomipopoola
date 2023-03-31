@@ -1,13 +1,13 @@
 ---
 title: The Power of Habit
 date: "2018-06-28T23:46:37.121Z"
-tags: [random, psychology]
+tags: [books, psychology]
 description: Develop good habits and make them stick.
 ---
 
 ![work station](./workstation.jpg)
 
-The challenge of overcoming inertia and establishing productive habits is a common struggle for many people. A key to understanding how we can create and maintain good habits lies in the neurological structure known as the basal ganglia. In this write-up, we will explore the role of the basal ganglia in habit formation and automatic behaviors, providing insight into how we can make our daily lives more efficient.
+The challenge of overcoming inertia and establishing productive habits is a common struggle for many people. A key to understanding how we can create and maintain good habits lies in the neurological structure known as the basal ganglia. In this write-up, I will briefly touch on the role of the basal ganglia in habit formation and automatic behaviors, providing insight into how we can make our daily lives more efficient.
 
 The basal ganglia, a cluster of neurological tissue, is responsible for recalling patterns and acting on them. This structure allows us to perform tasks automatically, conserving mental energy for more demanding activities.
 
