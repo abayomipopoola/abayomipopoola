@@ -74,7 +74,7 @@ The diagram above shows the participants in a typical card transaction. The card
 
 <p class="three-dots">***</p>
 
-You just completed the first part of the _Payment Systems, and the Emerging Economy_ blog post. <a href="/payment-systems-and-the-emerging-economy-pt-2" class="read-more">_(Read the concluding part here)_</a></a>
+You just completed the first part of the _Payment Systems, and the Emerging Economy_ blog post. <a href="/payment-systems-and-the-emerging-economy-pt-2" class="read-more">_(Read the concluding part here)_</a>
 
 <small>
 References:

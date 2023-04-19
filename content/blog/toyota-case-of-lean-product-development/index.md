@@ -130,7 +130,7 @@ At Toyota, there is a philosophy of having a good process. It is as much a philo
 		<td>Excellence and kaizen in the final analysis reflect the organizational culture.</td>
 	</tr>
 	<tr>
-		<td>11. AdaptTechnologytoFityourPeopleandProcess.</td>
+		<td>11. Adapt Technology to Fit your People and Process.</td>
 		<td>Technology must be customized and always subordinated to the people and process.</td>
 	</tr>
 	<tr>

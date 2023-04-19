@@ -5,7 +5,7 @@ tags: [data, physics]
 description: Making sense of a larger and more complex data sets that traditional data processing software can’t manage, in order to understand observed events.
 ---
 
-![regression analysis](./big-data.jpg)
+![big data](./big-data.jpg)
 
 The Higgs field is responsible for giving mass to fundamental particles like electrons and quarks, which are the building blocks of matter that cannot be further broken down. To isolate the Higgs boson particle associated with this field, scientists use the Large Hadron Collider (LHC). This machine creates around 600 million collisions every second between 3 quadrillion protons. During this process, more than 50 trillion bytes of data are generated and analyzed to confirm the existence of the Higgs boson particle.
 

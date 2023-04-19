@@ -59,7 +59,7 @@ Flows can be influenced by various factors, such as external forces, feedback lo
 
 The author does not explicitly use the terms _one-stock system_ and _two-stock system_ to categorize systems. However, the book does discuss systems with varying numbers of stocks and their interactions. The one-stock and two-stock systems is a derived example based on the concepts presented in the book. 
 
-One-stock and two-stock systems are not about the intrinsic nature of a system; instead, they relate to the focus of analysis. When working with models, it is often beneficial to reduce complexity, similar to measuring two variables at a time in regression analysis. As more stocks are added to a system under simultaneous analysis, the model becomes increasingly complex.
+One-stock and two-stock systems are not about the intrinsic nature of a system; instead, they relate to the focus of analysis. When working with models, it is often beneficial to reduce complexity, similar to measuring two variables at a time in <a href="/simple-explanation-of-regression-analysis" target="_blank">regression analysis</a>. As more stocks are added to a system under simultaneous analysis, the model becomes increasingly complex.
 
 - **One-stock system**. In a one-stock system, there is a single stock influenced by one or more inflows and outflows. The bathtub analogy mentioned earlier is an example of a one-stock system, where the stock is the water in the bathtub, the inflow is water coming from the faucet, and the outflow is water draining away. This simple model helps convey the basic concept of stocks and flows and how they affect the stock's accumulation or depletion over time.
 
@@ -73,7 +73,7 @@ Understanding one-stock and two-stock systems, along with their interactions and
 
 #### Feedback Loops
 
-Feedback loops are vital mechanisms within systems that either amplify (positive feedback) or stabilize (negative feedback) changes. Positive feedback loops drive growth or decline, whereas negative feedback loops maintain balance within the system. Comprehending feedback loops is crucial for understanding system behavior and potential for change.
+Feedback loops are vital mechanisms within systems that either amplify (positive feedback) or stabilize (negative feedback) changes. Positive feedback loops drive growth or decline, whereas negative feedback loops maintain balance within the system.
 
 ![feedback](./feedback.png)
 
@@ -83,7 +83,7 @@ When a discrepancy arises in a system stock, such as an imbalance or deviation f
 
 - Balancing feedback loops (negative feedback): These loops counteract changes in the system, working to stabilize it or bring it back to a desired state. When a discrepancy occurs in a stock, a balancing feedback loop detects the difference between the current state and the desired state, and then acts to reduce this difference. For example, in a temperature control system, if the room temperature falls below the desired level, a thermostat activates the heating system to bring the temperature back up, thus closing the gap between the actual and desired states.
 
-Another example of a balancing feedback is monthly budget: the stock is your holding balance, and the inflow is your income, and the outflow is your monthly spending. In a situation where the stock, your holding balance, is less than you’d like it to be — a discrepancy in your goal and the state of your bank account, that’ll lead you to change your out flow, spend less, which influence the stock, your balance.
+Another example of a balancing feedback is monthly budget: the stock is your holding balance, and the inflow is your income, and the outflow is your monthly spending. In a situation where the stock, your holding balance, is less than you’d like it to be — a discrepancy in your goal and the state of your bank account, that’ll lead you to change your outflow, spend less, which influence the stock, your balance.
 
 - Reinforcing feedback loops (positive feedback): These loops amplify changes in the system, causing it to grow or decline more rapidly. When a discrepancy occurs in a stock, a reinforcing feedback loop can amplify the difference and lead to further divergence from the desired state. For example, in a population growth scenario, an increasing population leads to more births, which in turn further increases the population, creating a self-reinforcing cycle.
 
@@ -115,7 +115,7 @@ Recognizing and understanding limiting factors within a system is crucial for ef
 
 ### Resilience, Self-Organization and Hierarchy
 
-Resilience, self-organization, and hierarchy as key characteristics that contribute to the effectiveness and functionality of systems.
+Resilience, self-organization, and hierarchy are key characteristics that contribute to the effectiveness and functionality of systems.
 
 Understanding these characteristics can help us better analyze and manage complex systems.
 

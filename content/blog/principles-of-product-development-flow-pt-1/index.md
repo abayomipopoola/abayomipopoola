@@ -78,7 +78,7 @@ The batch size chapter reiterates the concepts of Agile or Lean principles: colo
 
 The chapter discusses how costs can be minimized by controlling work-in-progress. Detailed planning and control of tasks are costly. It is more effective to control the work in process between major functions.
 
-This principle is inspired by lean manufacturing concepts such as the Toyota Production System <a href="https://www.abayomipopoola.com/toyota-case-of-lean-product-development/" target="_blank" class="read-more">_(read it)_</a> and the Theory of Constraints, which emphasize the importance of optimizing the flow of work to achieve maximum efficiency and quality.
+This principle is inspired by lean manufacturing concepts such as the  <a href="https://www.abayomipopoola.com/toyota-case-of-lean-product-development/" target="_blank">Toyota Production System</a> and the Theory of Constraints, which emphasize the importance of optimizing the flow of work to achieve maximum efficiency and quality.
 
 By managing the flow of products, teams can identify bottlenecks and areas of inefficiency, and work to minimize the work in progress (WIP) at each stage of the process. This can be achieved through various scheduling, prioritization, resource allocation, and recovery strategies.
 
@@ -108,7 +108,7 @@ The chapter also covers topics such as the importance of creating a culture that
 
 <p class="three-dots">***</p>
 
-You just completed the first part of the _The Principles of Product Development Flow_ blog post. <a href="/principles-of-product-development-flow-pt-2" class="read-more">_(Read the concluding part here)_</a></a>
+You just completed the first part of the _The Principles of Product Development Flow_ blog post. <a href="/principles-of-product-development-flow-pt-2" class="read-more">_(Read the concluding part here)_</a>
 
 <small>References: <a href="https://www.amazon.com/gp/product/1935401009" target="_blank">The Principles of Product Development Flow by Donald Reinertsen</a>
 </small>
