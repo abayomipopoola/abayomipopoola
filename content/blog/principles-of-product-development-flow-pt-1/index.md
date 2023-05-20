@@ -78,7 +78,7 @@ The batch size chapter reiterates the concepts of Agile or Lean principles: colo
 
 The chapter discusses how costs can be minimized by controlling work-in-progress. Detailed planning and control of tasks are costly. It is more effective to control the work in process between major functions.
 
-This principle is inspired by lean manufacturing concepts such as the  <a href="https://www.abayomipopoola.com/toyota-case-of-lean-product-development/" target="_blank">Toyota Production System</a> and the Theory of Constraints, which emphasize the importance of optimizing the flow of work to achieve maximum efficiency and quality.
+This principle is inspired by lean manufacturing concepts such as the <a href="https://www.abayomipopoola.com/toyota-case-of-lean-product-development/" target="_blank">Toyota Production System</a> and the Theory of Constraints, which emphasize the importance of optimizing the flow of work to achieve maximum efficiency and quality.
 
 By managing the flow of products, teams can identify bottlenecks and areas of inefficiency, and work to minimize the work in progress (WIP) at each stage of the process. This can be achieved through various scheduling, prioritization, resource allocation, and recovery strategies.
 

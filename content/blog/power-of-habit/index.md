@@ -16,4 +16,3 @@ According to Charles Duhigg's book, **The Power of Habit**, the basal ganglia st
 Our daily routines consist of numerous automatic actions, such as getting dressed or locking the door. These patterns have been acquired through long-term learning and can be performed without conscious attention. Animals also develop a variety of action skills after long-term learning, even when facing complex tasks.
 
 In conclusion, understanding the role of the basal ganglia in habit formation can help us overcome inertia and establish productive habits. By harnessing the power of the basal ganglia, we can transform difficult routines into automatic habits, making our daily lives more efficient and freeing up mental energy for other endeavors. With a better understanding of the neurological processes at play, we can work towards creating and maintaining habits that positively impact our lives.
-

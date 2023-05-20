@@ -83,7 +83,7 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
-      
+
       <div style={{ float: "right" }}>
         <a style={{ boxShadow: "none" }} href="#top">
           <span>&#8593;</span> top
