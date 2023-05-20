@@ -78,18 +78,18 @@ q {
 /* Font faces */
 
 @font-face {
-	font-family: 'MinionPro';
-	src: url('/fonts/MinionPro-Regular.woff2') format('woff2');
+	font-family: 'TiemposText';
+	src: url('/fonts/tiempos-text-web-regular.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'MinionProSemibold';
-	src: url('/fonts/MinionPro-Semibold.woff2') format('woff2');
+	font-family: 'TiemposTextBold';
+	src: url('/fonts/tiempos-text-web-semibold.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'MinionProItalic';
-	src: url('/fonts/MinionPro-Italic.woff2') format('woff2');
+	font-family: 'TiemposTextItalic';
+	src: url('/fonts/tiempos-text-web-regular-italic.woff2') format('woff2');
 }
 
 @font-face {
@@ -235,25 +235,6 @@ li *:last-child {
 li > ul {
 	margin-left: var(--spacing-8);
 	margin-top: calc(var(--spacing-8) / 2);
-}
-
-blockquote {
-	color: var(--color-text-light);
-	margin-left: calc(-1 * var(--spacing-6));
-	margin-right: var(--spacing-8);
-	padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-	border-left: var(--spacing-1) solid var(--color-primary);
-	font-size: var(--fontSize-2);
-	margin-bottom: var(--spacing-8);
-}
-
-blockquote > :last-child {
-	margin-bottom: var(--spacing-0);
-}
-
-blockquote > ul,
-blockquote > ol {
-	list-style-position: inside;
 }
 
 table {
