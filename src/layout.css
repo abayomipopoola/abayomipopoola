@@ -1,6 +1,6 @@
 body {
-  font-family: TiemposText, 'Georgia', serif;
-  font-size: 17px;
+  font-family: AbodeHebrew, 'Georgia', serif;
+  font-size: 19px;
   font-weight: 400;
   line-height: 30px;
   background-color: #f3f6fc;
@@ -44,12 +44,12 @@ h4 {
 }
 
 h3.head-title {
-  font-family: TiemposTextItalic, 'Georgia', serif;
+  font-family: AbodeHebrewItalic, 'Georgia', serif;
   color: #80868b;
 }
 
 span.about-link {
-  font-family: TiemposTextItalic, 'Georgia', serif;
+  font-family: AbodeHebrewItalic, 'Georgia', serif;
 }
 
 .date-time {
@@ -60,11 +60,11 @@ span.about-link {
 }
 
 .post strong {
-  font-family: TiemposTextBold, 'Georgia', serif;
+  font-family: AbodeHebrewBold, 'Georgia', serif;
 }
 
 .post em {
-  font-family: TiemposTextItalic, 'Georgia', serif;
+  font-family: AbodeHebrewItalic, 'Georgia', serif;
 }
 
 .post img {
@@ -84,8 +84,8 @@ span.about-link {
 
 blockquote {
   border-left: 3px solid #80868b;
-  font-family: TiemposTextItalic, 'Georgia', serif;
-  font-size: 0.95em;
+  font-family: AbodeHebrewItalic, 'Georgia', serif;
+  font-size: 0.98em;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);
   padding: 0.5em 20px;

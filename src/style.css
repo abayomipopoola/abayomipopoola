@@ -78,18 +78,18 @@ q {
 /* Font faces */
 
 @font-face {
-	font-family: 'TiemposText';
-	src: url('/fonts/tiempos-text-web-regular.woff2') format('woff2');
+	font-family: 'AbodeHebrew';
+	src: url('/fonts/adobehebrew-regular.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'TiemposTextBold';
-	src: url('/fonts/tiempos-text-web-semibold.woff2') format('woff2');
+	font-family: 'AbodeHebrewBold';
+	src: url('/fonts/adobehebrew-bold.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'TiemposTextItalic';
-	src: url('/fonts/tiempos-text-web-regular-italic.woff2') format('woff2');
+	font-family: 'AbodeHebrewItalic';
+	src: url('/fonts/adobehebrew-italic.woff2') format('woff2');
 }
 
 @font-face {
