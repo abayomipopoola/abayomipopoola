@@ -1,6 +1,6 @@
 body {
-  font-family: AbodeHebrew, 'Georgia', serif;
-  font-size: 20px;
+  font-family: Imperial, Georgia, serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   background-color: #f3f6fc;
@@ -44,12 +44,12 @@ h4 {
 }
 
 h3.head-title {
-  font-family: AbodeHebrewItalic, 'Georgia', serif;
+  font-family: ImperialItalic, Georgia, serif;
   color: #80868b;
 }
 
 span.about-link {
-  font-family: AbodeHebrewItalic, 'Georgia', serif;
+  font-family: ImperialItalic, Georgia, serif;
 }
 
 .date-time {
@@ -60,11 +60,11 @@ span.about-link {
 }
 
 .post strong {
-  font-family: AbodeHebrewBold, 'Georgia', serif;
+  font-family: ImperialBold, Georgia, serif;
 }
 
 .post em {
-  font-family: AbodeHebrewItalic, 'Georgia', serif;
+  font-family: ImperialItalic, Georgia, serif;
 }
 
 .post img {
@@ -84,7 +84,7 @@ span.about-link {
 
 blockquote {
   border-left: 3px solid #80868b;
-  font-family: AbodeHebrewItalic, 'Georgia', serif;
+  font-family: ImperialItalic, Georgia, serif;
   font-size: 0.98em;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);

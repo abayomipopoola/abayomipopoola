@@ -11,25 +11,25 @@ In recent years, more people have been joining the Bitcoin/Altcoins community fo
 
 While the original purpose of the blockchain technology is powering bitcoin, it is capable of so much more.
 Blockchain is a suite of distributed ledger that can be programmed to record and track anything of value,
-be it records of contracts, financial transactions, land titles/deeds, medical records, etc. Thus, bitcoin isn’t just
-another way to pay for stuff online, rather it’s a denomination used to pave the tool to put stuff on a global ledger.
+be it records of contracts, financial transactions, land titles/deeds, medical records, etc. Thus, bitcoin isn't just
+another way to pay for stuff online, rather it's a denomination used to pave the tool to put stuff on a global ledger.
 
 To understand what makes this technology special or any different from the existing systems we have in place,
-I’d touch on the internals of bitcoin.
+I'd touch on the internals of bitcoin.
 
 ### Bitcoin
 
-Bitcoins is a stateless, “algorithmic” currency that exists only in cyberspace.
+Bitcoins is a stateless, "algorithmic" currency that exists only in cyberspace.
 
 It all started in October 2008, when Satoshi Nakamoto, a software engineer who was never identified,
-published a paper outlining a “peer-to-peer electronic cash system” <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" class="read-more">_(Read paper)_</a>.
+published a paper outlining a "peer-to-peer electronic cash system" <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" class="read-more">_(Read paper)_</a>.
 
 Just as precious metals are dug from the earth, bitcoins are mined from blocks. Blocks are ledgers that contain
 a complex mathematical problem that, if solved, will reward its solvers with a number of bitcoins.
 
-> There’re only twenty-one million Bitcoins to be mined.
+> There're only twenty-one million Bitcoins to be mined.
 
-Bitcoin mining is the process of adding transaction records to bitcoin’s public ledger of past transactions,
+Bitcoin mining is the process of adding transaction records to bitcoin's public ledger of past transactions,
 called the blockchain (chain of blocks)—a shared public ledger on which the entire decentralised distributed peer-to-peer
 bitcoin network relies. All the bitcoin used in the world are connected and together they constitute a network that processes
 and check all bitcoin transactions in a public ledger.
@@ -49,18 +49,18 @@ be redeemed for a set amount of gold or silver.
 Because fiat money is not linked to physical reserves, such as a national stockpile of gold or silver,
 it risks losing value due to inflation or even becoming worthless in the event of hyperinflation—Zimbabwe as a perfect example.
 
-Although if you created an entire society that is reliant on bitcoin, you’d have massive inequalities,
-it’s imperative that it forms a counterpart to the existing banking system—that bank on the fiat monetary system.
+Although if you created an entire society that is reliant on bitcoin, you'd have massive inequalities,
+it's imperative that it forms a counterpart to the existing banking system—that bank on the fiat monetary system.
 
 Right now, the banking system has moved to the concept of cashless-society, meaning that every single payment you make goes
-via a commercial bank—so every single transaction is being monitored and recorded in a database. And you’ll always pay some
+via a commercial bank—so every single transaction is being monitored and recorded in a database. And you'll always pay some
 kind of fees to the commercial banks/credit card companies.
 
 Bitcoin made the cashless society possible without the need for a third-party.
 
 ### Blockchain
 
-> The blockchain is an incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value.”
+> The blockchain is an incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value."
 > — Don & Alex Tapscott, authors Blockchain Revolution (2016).
 
 #### How Blockchain Works
@@ -100,7 +100,7 @@ Here are some real-world examples of blockchain technology in action:
 
 - **Better banking and transactions**: Barclays has already launched a number of blockchain initiatives for, among other things,
   tracking financial transactions and combating fraud, and Bank Hapoalim is collaborating with Microsoft to create a blockchain for
-  managing bank guarantees. In another example, Aeternity’s blockchain platform allows users to create smart contracts that become
+  managing bank guarantees. In another example, Aeternity's blockchain platform allows users to create smart contracts that become
   active when certain conditions have been met, which means automated payments can be released when parties in a transaction agree
   that their conditions have been met.
 

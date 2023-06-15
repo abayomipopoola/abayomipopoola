@@ -15,28 +15,27 @@ const PortfolioPage = ({ location }) => {
 
       <h3 className="head-title">Hello!</h3>
       <p>
-        I'm Abayomi, a programmer and entrepreneur who loves building
-        businesses.
+        My name is Abayomi, a programmer and entrepreneur with a passion for business development. 
+        I'm a results-oriented engineer specializing in designing and building highly scalable, resilient, and distributed systems.
       </p>
       <p>
-        I am a result-driven engineer with extensive experience in building and
-        designing highly scalable, resilient, distributed systems. I set
-        technology strategy, and ensure intense executions.
+        When I'm not hands-on setting the technology strategy and ensuring intense execution for fintech startups in Lagos, 
+        you can find me working remotely.
       </p>
       <p>
-        I lead engineering efforts at{" "}
+        Most recently, I was the Director of Engineering at{" "}
         <a href="https://www.dot.ai/" target="_blank" rel="noreferrer">
           Dot
         </a>
-        , a startup that's democratising financial services with digital banking
-        tools for underserved consumers in emerging markets.
-      </p>
-      <p>
-        Please feel free to view my <a href="/cv">résumé</a>.
+        , a Lagos-based startup democratising financial services by providing digital banking tools for 
+        underserved consumers in emerging markets.
       </p>
 
       <p>
-        You can also shoot me <a href="mailto:abayomi@hey.com">an email</a>.
+        You can also shoot me <a href="mailto:abayomi@hey.com" target="_blank" rel="noreferrer">an email</a>.
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/abayomipopoola/" target="_blank" rel="noreferrer">LinkedIn</a> profile.
       </p>
 
       <div style={{ float: "right" }}>

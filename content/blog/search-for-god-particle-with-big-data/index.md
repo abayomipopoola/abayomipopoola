@@ -2,7 +2,7 @@
 title: The Search for "God Particle" with Big Data
 date: "2018-12-27T22:40:32.169Z"
 tags: [data, physics]
-description: Making sense of a larger and more complex data sets that traditional data processing software can’t manage, in order to understand observed events.
+description: Making sense of a larger and more complex data sets that traditional data processing software can't manage, in order to understand observed events.
 ---
 
 ![big data](./big-data.jpg)
@@ -11,7 +11,7 @@ The Higgs field is responsible for giving mass to fundamental particles like ele
 
 With such massive and fast-growing data, Big data made it possible to analyse the plethora of particles. This data is analysed by algorithms that are programmed to detect the energy signatures left behind by the appearance and disappearance of the elusive particles CERN are looking for. The algorithms compare the results with theoretical data on how the particle is believed to act.
 
-In 2013, scientists at CERN announced that they had found the Higgs boson particle—a ground-breaking discovery. Later that year, Nobel prize in physics was awarded jointly to François Englert and Peter Higgs “for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider”.
+In 2013, scientists at CERN announced that they had found the Higgs boson particle—a ground-breaking discovery. Later that year, Nobel prize in physics was awarded jointly to François Englert and Peter Higgs "for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider".
 
 ### Data
 

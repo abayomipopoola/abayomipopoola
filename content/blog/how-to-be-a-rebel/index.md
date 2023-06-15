@@ -11,7 +11,7 @@ The whiff of coffee quickened me to a whole new realm of possibilities this beau
 
 A couple of chapters from a beautiful book top the excitement and assurance of waking up to yet another morning.
 
-Reading gives a new perspective on life. It lets you see the world from an author’s eye, challenges your perceptions, gives you hope, and wakes you from dogma, among other things. About 26 books a year should be the goal of a busy person—say you’re reading one every two weeks.
+Reading gives a new perspective on life. It lets you see the world from an author's eye, challenges your perceptions, gives you hope, and wakes you from dogma, among other things. About 26 books a year should be the goal of a busy person—say you're reading one every two weeks.
 
 So what did I learn today? I learned **How to be a Rebel**, I learned that humans are in constant rebellion against failure and
 unhappiness. That is good. It indicates a desire for freedom.

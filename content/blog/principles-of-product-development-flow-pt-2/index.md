@@ -1,7 +1,7 @@
 ---
 title: Principles of Product Development Flow pt. 2
 date: "2023-02-27T11:15:50.284Z"
-tags: [agile, books, economics]
+tags: [agile, books, product development]
 description: Understanding product development as an example of a systematic process that we can model and improve upon. Contd.
 ---
 
@@ -59,7 +59,7 @@ The interesting part is that capacity utilization affects the size of the queue 
 
 Also, it is important to note that queues are not always bad, and whether you should allow a queue of a given size to occur is an economical question (more on that in the next section). If an extra developer costs you _N_, but the potential delay of the project costs you _100 x N_, then it might be wise that you just get the developer and zero down the development queue. However, if you need to spend a lot of money to shorten the test cycle by one week and the benefit would be a mere pat on the back, then that shouldn't count.
 
-If you have a process or a staff that affects the overall throughput of the system (bottleneck), you don’t want any idle time for them. To make sure they always have something to work on, you deliberately build a queue right before them. This queue takes away the variation of arriving new tasks and ensures maximum throughput for your process.
+If you have a process or a staff that affects the overall throughput of the system (bottleneck), you don't want any idle time for them. To make sure they always have something to work on, you deliberately build a queue right before them. This queue takes away the variation of arriving new tasks and ensures maximum throughput for your process.
 
 Product management happens to have a big queue of non-refined ideas collected by the team or other teams. A lot of ideas could propel the company to the next level, as long as product management has the capacity to refine them into real business cases and work with the engineering teams to realize them. Failing to do so results in a lot of missed opportunities or sometimes direct losses, when customers churn because their feedback was not heard.
 
@@ -140,11 +140,11 @@ Firstly, the quality of the code generally improves due to more thorough scrutin
 
 This approach builds resilience into the software engineering system without requiring restrictive WIP constraints such as limits on the number of tasks in progress.
 
-By managing our WIP and being mindful of our queues, we remove constraints on flow. By removing constraints on flow, we unlock the team’s ability to pivot quickly without suspending good engineering practice. This property is and always will be, at the very heart of an agile culture and a necessary ingredient in the success of an organisation’s software engineering effort.
+By managing our WIP and being mindful of our queues, we remove constraints on flow. By removing constraints on flow, we unlock the team's ability to pivot quickly without suspending good engineering practice. This property is and always will be, at the very heart of an agile culture and a necessary ingredient in the success of an organisation's software engineering effort.
 
 ### Conclusion
 
-The principles of product development flow are designed to optimize flow and improve the efficiency of the product development process. By understanding concepts like Little’s Law, queueing theory, flow management, work-in-progress limits, pull systems and flow metrics, organizations can take steps to eliminate bottlenecks in their development process and improve the flow of their development process. This leads to faster time to market, better quality products, and increased customer satisfaction.
+The principles of product development flow are designed to optimize flow and improve the efficiency of the product development process. By understanding concepts like Little's Law, queueing theory, flow management, work-in-progress limits, pull systems and flow metrics, organizations can take steps to eliminate bottlenecks in their development process and improve the flow of their development process. This leads to faster time to market, better quality products, and increased customer satisfaction.
 
 I strongly recommend reading "The Principles of Product Development Flow" by Donald Reinertsen as it is an excellent book.
 

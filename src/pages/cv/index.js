@@ -6,7 +6,7 @@ import Layout from "../../components/layout"
 
 const Wrapper = styled.div``
 const H2 = styled.h2`
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 0 6px 0;
   padding-top: 10px;
   position: relative;
