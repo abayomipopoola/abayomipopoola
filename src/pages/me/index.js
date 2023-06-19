@@ -16,7 +16,7 @@ const PortfolioPage = ({ location }) => {
       <h3 className="head-title">Hello!</h3>
       <p>
         My name is Abayomi, a programmer and entrepreneur with a passion for business development. 
-        I'm a results-oriented engineer specializing in designing and building highly scalable, resilient, and distributed systems.
+        I specialise in distributed systems, back-end architecture, and cloud infrastructure.
       </p>
       <p>
         When I'm not hands-on setting the technology strategy and ensuring intense execution for fintech startups in Lagos, 
