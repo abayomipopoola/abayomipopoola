@@ -1,4 +1,4 @@
-Hello, I'm Abayomi, a programmer and entrepreneur with a passion for business development. I'm a results-oriented engineer specializing in designing and building highly scalable, resilient, and distributed systems.
+Hello, I'm Abayomi, a programmer and entrepreneur with a passion for business development. I specialise in distributed systems, back-end architecture, and cloud infrastructure.
 
 When I'm not hands-on setting the technology strategy and ensuring intense execution for fintech startups in Lagos, you can find me working remotely.
 
