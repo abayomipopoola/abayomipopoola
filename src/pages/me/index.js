@@ -23,7 +23,7 @@ const PortfolioPage = ({ location }) => {
         you can find me working remotely.
       </p>
       <p>
-        Most recently, I was the Director of Engineering at{" "}
+        Previously Director of Engineering at{" "}
         <a href="https://www.dot.ai/" target="_blank" rel="noreferrer">
           Dot
         </a>
