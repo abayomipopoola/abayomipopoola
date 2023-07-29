@@ -1,6 +1,6 @@
 body {
-  font-family: Imperial, Georgia, serif;
-  font-size: 18px;
+  font-family: SchoolbookCondensed, serif;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   background-color: #f3f6fc;
@@ -24,7 +24,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: ColfaxAIBold,helvetica,sans-serif;
+  font-family: SchoolbookBold,helvetica,sans-serif;
 	color: #000000;
 }
 
@@ -44,27 +44,27 @@ h4 {
 }
 
 h3.head-title {
-  font-family: ImperialItalic, Georgia, serif;
+  font-family: SchoolbookItalic, serif;
   color: #80868b;
 }
 
 span.about-link {
-  font-family: ImperialItalic, Georgia, serif;
+  font-family: SchoolbookItalic, serif;
 }
 
 .date-time {
-  font-family: ColfaxAIRegular, helvetica, sans-serif;
+  font-family: helvetica, sans-serif;
   font-size: 13px;
   color: #80868b;
   white-space: nowrap;
 }
 
 .post strong {
-  font-family: ImperialBold, Georgia, serif;
+  font-family: SchoolbookCondensedBold, serif;
 }
 
 .post em {
-  font-family: ImperialItalic, Georgia, serif;
+  font-family: SchoolbookItalic, serif;
 }
 
 .post img {
@@ -84,7 +84,7 @@ span.about-link {
 
 blockquote {
   border-left: 3px solid #80868b;
-  font-family: ImperialItalic, Georgia, serif;
+  font-family: SchoolbookItalic, serif;
   font-size: 0.98em;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);
