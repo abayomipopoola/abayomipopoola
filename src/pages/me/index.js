@@ -1,11 +1,13 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Bio from "../../components/bio"
 import Seo from "../../components/seo"
 import Layout from "../../components/layout"
 
-const PortfolioPage = ({ location }) => {
+const PortfolioPage = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
   return (
-    <Layout location={location} title="Abayomi Popoola">
+    <Layout location={location} title={siteTitle}>
       <Seo
         title="About & Contact"
         description="A bit about Abayomi Popoola"
@@ -15,7 +17,7 @@ const PortfolioPage = ({ location }) => {
 
       <h3 className="head-title">Hello!</h3>
       <p>
-        My name is Abayomi, a programmer and entrepreneur with a passion for business development. 
+        My name is Abayomi Popoola, a programmer and entrepreneur with a passion for business development. 
         I specialise in distributed systems, back-end architecture, and cloud infrastructure.
       </p>
       <p>
@@ -48,3 +50,13 @@ const PortfolioPage = ({ location }) => {
 }
 
 export default PortfolioPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
