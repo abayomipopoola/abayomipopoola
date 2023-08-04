@@ -39,12 +39,20 @@ const Bio = () => {
           {author?.summary || null}
           {` `}
           <Link style={{ boxShadow: "none" }} to="/me">
-            <span className="about-link">About & Contact</span>
+            <span className="about-link">about</span>
           </Link>
-          {" - "}
+          &nbsp;&#183;&nbsp;
           <Link style={{ boxShadow: "none" }} to="/tags">
-            <span className="about-link">Posts Tags</span>
+            <span className="about-link">tags</span>
           </Link>
+          &nbsp;&#183;&nbsp;
+          <a
+            href="https://medium.com/@abayomip"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="about-link">medium</span>
+          </a>
         </p>
       )}
     </div>
