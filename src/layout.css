@@ -1,6 +1,6 @@
 body {
-  font-family: SchoolbookPro, serif;
-  font-size: 20.5px;
+  font-family: Lusitana, serif;
+  font-size: 18.5px;
   font-weight: 400;
   line-height: 30px;
   background-color: #f3f6fc;
@@ -44,13 +44,13 @@ h4 {
 }
 
 h3.head-title {
-  font-family: SchoolbookItalic, serif;
+  font-family: LusitanaItalic, serif;
   color: #80868b;
   font-size: 28px;
 }
 
 span.about-link {
-  font-family: SchoolbookItalic, serif;
+  font-family: LusitanaItalic, serif;
 }
 
 .date-time {
@@ -61,11 +61,11 @@ span.about-link {
 }
 
 .post strong {
-  font-family: SchoolbookBold, serif;
+  font-family: LusitanaBold, serif;
 }
 
 .post em {
-  font-family: SchoolbookItalic, serif;
+  font-family: LusitanaItalic, serif;
 }
 
 .post img {
@@ -85,7 +85,7 @@ span.about-link {
 
 blockquote {
   border-left: 3px solid #80868b;
-  font-family: SchoolbookItalic, serif;
+  font-family: LusitanaItalic, serif;
   font-size: 0.98em;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);

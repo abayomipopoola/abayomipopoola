@@ -78,18 +78,18 @@ q {
 /* Font faces */
 
 @font-face {
-	font-family: 'SchoolbookPro';
-	src: url('/fonts/schoolbook-pro-normal.woff2') format('woff2');
+	font-family: 'Lusitana';
+	src: url('/fonts/lusitana.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'SchoolbookItalic';
-	src: url('/fonts/schoolbook-italic.woff2') format('woff2');
+	font-family: 'LusitanaItalic';
+	src: url('/fonts/lusitana-italic.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'SchoolbookBold';
-	src: url('/fonts/schoolbook-bold.woff2') format('woff2');
+	font-family: 'LusitanaBold';
+	src: url('/fonts/lusitana-bold.woff2') format('woff2');
 }
 
 @font-face {
