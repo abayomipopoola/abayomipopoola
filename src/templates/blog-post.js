@@ -38,7 +38,7 @@ const BlogPostTemplate = ({
           <div class="metainfo-grid">
             <div class="grid-child">
               <span className="date-time">
-                {abbrevMonth(post.frontmatter.date)} · {post.timeToRead} min
+                {abbrevMonth(post.frontmatter.date)} • {post.timeToRead} min
                 read
               </span>
             </div>

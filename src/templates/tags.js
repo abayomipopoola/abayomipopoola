@@ -56,7 +56,7 @@ const TagsTemplate = ({ pageContext, data, location }) => {
                     itemProp="description"
                   />
                   <span className="date-time">
-                    {`${abbrevMonth(post.frontmatter.date)} · ${
+                    {`${abbrevMonth(post.frontmatter.date)} • ${
                       post.timeToRead
                     } min read`}
                   </span>
