@@ -346,7 +346,7 @@ a:focus {
 }
 
 .header-link-home {
-	font-weight: var(--fontWeight-bold);
+	font-weight: var(--fontWeight-normal);
 	font-family: var(--font-heading);
 	text-decoration: none;
 	font-size: var(--fontSize-4);
