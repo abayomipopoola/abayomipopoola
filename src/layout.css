@@ -1,5 +1,5 @@
 body {
-  font-family: Lusitana, serif;
+  font-family: SourceSerifPro, serif;
   font-size: 19px;
   font-weight: 400;
   line-height: 30px;
@@ -44,13 +44,13 @@ h4 {
 }
 
 h3.head-title {
-  font-family: LusitanaItalic, serif;
+  font-family: SourceSerifProItalic, serif;
   color: #80868b;
   font-size: 28px;
 }
 
 span.about-link {
-  font-family: LusitanaItalic, serif;
+  font-family: SourceSerifProItalic, serif;
 }
 
 .date-time {
@@ -61,11 +61,11 @@ span.about-link {
 }
 
 .post strong {
-  font-family: LusitanaBold, serif;
+  font-family: SourceSerifBold, serif;
 }
 
 .post em {
-  font-family: LusitanaItalic, serif;
+  font-family: SourceSerifProItalic, serif;
 }
 
 .post img {
@@ -85,7 +85,7 @@ span.about-link {
 
 blockquote {
   border-left: 3px solid #80868b;
-  font-family: LusitanaItalic, serif;
+  font-family: SourceSerifProItalic, serif;
   font-size: 0.98em;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);

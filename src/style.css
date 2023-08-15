@@ -78,18 +78,18 @@ q {
 /* Font faces */
 
 @font-face {
-	font-family: 'Lusitana';
-	src: url('/fonts/lusitana.woff2') format('woff2');
+	font-family: 'SourceSerifPro';
+	src: url('/fonts/SourceSerifPro.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'LusitanaItalic';
-	src: url('/fonts/lusitana-italic.woff2') format('woff2');
+	font-family: 'SourceSerifProItalic';
+	src: url('/fonts/SourceSerifPro-italic.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'LusitanaBold';
-	src: url('/fonts/lusitana-bold.woff2') format('woff2');
+	font-family: 'SourceSerifBold';
+	src: url('/fonts/SourceSerif-semibold.woff2') format('woff2');
 }
 
 @font-face {
