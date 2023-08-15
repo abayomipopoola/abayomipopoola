@@ -17,9 +17,9 @@ In its most basic form, the law can be represented as:
 
 <img src="https://latex.codecogs.com/svg.latex?LEAD\:TIME=\frac{WORK\:IN\:PROGRESS}{THROUGHPUT\:RATE}" title="Lead time formula" />
 
-* Lead Time: The duration required for an item to traverse and be completed within a process.
-* Work In Progress (WIP): Imagine looking into a process pipeline, much like peering into a transparent tube. If you spot, say, 10 ongoing tasks—be it applications, requests, or products being crafted—it signifies that there are 10 units currently being processed. This count of active tasks is the Work in Progress.
-* Throughput Rate: This denotes the average number of items that accomplish their goal within a set time frame, perhaps an hour or a day.
+* **Lead Time**: The duration required for an item to traverse and be completed within a process.
+* **Work In Progress (WIP)**: Imagine looking into a process pipeline, much like peering into a transparent tube. If you spot, say, 10 ongoing tasks—be it applications, requests, or products being crafted—it signifies that there are 10 units currently being processed. This count of active tasks is the Work in Progress.
+* **Throughput Rate**: This denotes the average number of items that accomplish their goal within a set time frame, perhaps an hour or a day.
 
 ### Diving Deeper into Examples
 
