@@ -7,11 +7,11 @@ description: Why expansionary fiscal policy is the most appropriate when an econ
 
 ![Fiscal Policy on the COVID-19 Economy](./social-distancing.jpg)
 
-China, the epicentre of the virus was responsible for around $0.78 trillion out of the $1.66 trillion 2019 global economic growth. That's about half the global economic growth. Same China sits at the heart of global supply chains that keep the world economy humming... large economies such as the US and Japan get more than a third of their intermediate goods from China. Then COVID-19 strikes.
+China, the epicentre of the virus was responsible for around $0.78 trillion out of the $1.66 trillion 2019 global economic growth. That’s about half the global economic growth. Same China sits at the heart of global supply chains that keep the world economy humming... large economies such as the US and Japan get more than a third of their intermediate goods from China. Then COVID-19 strikes.
 
 Until there is a better sense of when and how the COVID-19 crisis will be resolved and when a vaccine would be made available, economists are yet to predict the end of the incipient recession.
 
-The National Bureau of Economic Research (NBER) defines a recession as "a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in the real gross domestic product (GDP), real income, employment, industrial production, and wholesale-retail sales."
+The National Bureau of Economic Research (NBER) defines a recession as “a significant decline in economic activity spread across the economy, lasting more than a few months, normally visible in the real gross domestic product (GDP), real income, employment, industrial production, and wholesale-retail sales.”
 
 Every financial shock is different. In 1930 central banks let banks fail. In 2008-09 it was the subprime mortgages crisis. Now, COVID-19, the cause of the incipient recession has left the economy vulnerable to yet another economic shocks.
 
@@ -21,9 +21,9 @@ The contraction in the global economy is much worse than the 2008-09 financial c
 
 Fiscal policy is the use of government purchases, transfer payments (including welfare programs), and taxes to influence the level of economic activity, especially macroeconomic conditions including aggregate demand for goods and services, employment, inflation, and economic growth.
 
-> Fiscal policy is largely based on the ideas of British economist John Maynard Keynes (1883-1946), who argued that economic recessions are due to a deficiency in the consumption spending and business investment components of aggregate demand. Keynes believed that governments could stabilize the business cycle and regulate economic output by adjusting spending and tax policies to make up for the shortfalls of the private sector. His theories were developed in response to the Great Depression, which defied classical economics' assumptions that economic swings were self-correcting <a href="https://www.investopedia.com/terms/f/fiscalpolicy.asp" target="_blank" class="read-more">_(Read more)_</a>.
+> Fiscal policy is largely based on the ideas of British economist John Maynard Keynes (1883-1946), who argued that economic recessions are due to a deficiency in the consumption spending and business investment components of aggregate demand. Keynes believed that governments could stabilize the business cycle and regulate economic output by adjusting spending and tax policies to make up for the shortfalls of the private sector. His theories were developed in response to the Great Depression, which defied classical economics’ assumptions that economic swings were self-correcting <a href="https://www.investopedia.com/terms/f/fiscalpolicy.asp" target="_blank" class="read-more">_(Read more)_</a>.
 
-To understand how fiscal policy can help during recession, we need to understand the _Aggregate Demand-Supply Model_ macroeconomic concept. Let's start by defining some underlying concepts.
+To understand how fiscal policy can help during recession, we need to understand the _Aggregate Demand-Supply Model_ macroeconomic concept. Let’s start by defining some underlying concepts.
 
 #### Key Terms
 
@@ -57,7 +57,7 @@ The logic behind this approach is that when people pay lower taxes, they have mo
 
 The above concept is called **expansionary fiscal policy**: a tool the government use to boost growth to a healthy economic level, which is needed during the contractionary phase of the business cycle. The government wants to reduce unemployment, increase consumer demand, and seeks to end the recession.
 
-Corporate tax cuts put more money into businesses' hands, which the government hopes will be put toward new investments and increasing employment. In that way, tax cuts create jobs, but if the company already has enough cash, it may use the cut to buy back stocks or purchase new companies. The theory of supply-side economics recommends lowering corporate taxes instead of income taxes, and advocates for lower capital gains taxes to increase business investment <a href="https://www.thebalance.com/expansionary-fiscal-policy-purpose-examples-how-it-works-3305792" target="_blank" class="read-more">_(Read more)_</a>.
+Corporate tax cuts put more money into businesses’ hands, which the government hopes will be put toward new investments and increasing employment. In that way, tax cuts create jobs, but if the company already has enough cash, it may use the cut to buy back stocks or purchase new companies. The theory of supply-side economics recommends lowering corporate taxes instead of income taxes, and advocates for lower capital gains taxes to increase business investment <a href="https://www.thebalance.com/expansionary-fiscal-policy-purpose-examples-how-it-works-3305792" target="_blank" class="read-more">_(Read more)_</a>.
 
 The figure below illustrates the _Expansionary Fiscal Policy_. The original equilibrium (E0) represents a recession, occurring at a quantity of output (Y0) below potential GDP. However, a shift of aggregate demand from AD0 to AD1, enacted through an expansionary fiscal policy, can move the economy to a new equilibrium output of E1 at the level of potential GDP which is shown by the LRAS curve. Since the economy was originally producing below potential GDP, any inflationary increase in the price level from P0 to P1 that results should be relatively small.
 
@@ -65,13 +65,13 @@ The figure below illustrates the _Expansionary Fiscal Policy_. The original equi
 
 <p class="three-dots">***</p>
 
-Economists have said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don't foreclose on loans, don't put people off jobs, especially if you can hold on to them, or if the government or the public can fund you to keep those jobs—because there's this reality that once something goes under, be it a company, a job—and people leave, that it's very hard to rebuild.
+Economists have said we have to do whatever we can to fill the hole that’s been blown in the economy, so it’s still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It’s the goal to say don’t foreclose on mortgages, don’t foreclose on loans, don’t put people off jobs, especially if you can hold on to them, or if the government or the public can fund you to keep those jobs—because there’s this reality that once something goes under, be it a company, a job—and people leave, that it’s very hard to rebuild.
 
 ### Plan For The Better Days
 
 Here are some things you can do to get yourself ready for the better days ahead:
 
-- Understanding your expenses and where you're able to reduce costs.
+- Understanding your expenses and where you’re able to reduce costs.
 - Business owners should create an effective plan for their business to remain profitable—easier said than done, but possible.
 - Invest in the stock market, as they might be in their all-time low.
 - Start a business.

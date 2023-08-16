@@ -11,7 +11,7 @@ description: Understanding product development as an example of a systematic pro
 
 The author places great emphasis on the importance of managing queues and argues that bottlenecks and queues often hinder the flow of work in the product development process. The book provides a thorough and in-depth method for managing product development processes, making it a valuable resource for anyone seeking to enhance the speed and efficiency of their product development efforts.
 
-In the rest of this write-up, I'll give a brief overview of some important concepts covered in the book, and then take a more detailed look at managing queues, which is a crucial aspect of product development processes.
+In the rest of this write-up, I’ll give a brief overview of some important concepts covered in the book, and then take a more detailed look at managing queues, which is a crucial aspect of product development processes.
 
 ### The Principles of Product Development Flow
 
@@ -58,7 +58,7 @@ The figure below shows how to measure variability with a payoff function. Reiner
 
 ![payoff function curve](./payoff.jpg)
 
-While building a product, you get to a stage where adding more features becomes more expensive than the advantages they provide. By utilizing economic principles to measure the value of these features, we can determine their benefits and make a well-informed decision about whether it's financially feasible to include more features.
+While building a product, you get to a stage where adding more features becomes more expensive than the advantages they provide. By utilizing economic principles to measure the value of these features, we can determine their benefits and make a well-informed decision about whether it’s financially feasible to include more features.
 
 #### Enable Smaller Batches
 

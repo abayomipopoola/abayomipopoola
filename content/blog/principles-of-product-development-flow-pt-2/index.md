@@ -51,15 +51,15 @@ Cycle time is a crucial metric in product development as it provides valuable in
 
 Underestimating the cost of queues in product development leads to process overloading. Queues affect capacity utilization: As queue size increases, we tend to apply more of our capacity to alleviate the situation. This increased capacity utilization reduces our flexibility.
 
-Queues in a given process occur right before a step with limited capacity and/or high utilization (Product management, Engineering, QA). Capacity utilization is the single most important factor in the occurrence of queues. This is somewhat natural because when a process is run at 100% utilization, any new work would automatically sit on the "waiting" queue until someone has the free capacity to take it.
+Queues in a given process occur right before a step with limited capacity and/or high utilization (Product management, Engineering, QA). Capacity utilization is the single most important factor in the occurrence of queues. This is somewhat natural because when a process is run at 100% utilization, any new work would automatically sit on the “waiting” queue until someone has the free capacity to take it.
 
 The interesting part is that capacity utilization affects the size of the queue exponentially: going from 80% utilization to 90% utilization would double the queue size; going from 90% to 95% will double it once again. Since the queue size also affects the cycle time of each new job, you have to be careful what percent utilization you operate your processes on. If cycle time is important — choose lower utilization, which would guarantee a quick turnaround time for important new tasks.
 
 ![the effect of queues](./effect-of-queue.jpg)
 
-Also, it is important to note that queues are not always bad, and whether you should allow a queue of a given size to occur is an economical question (more on that in the next section). If an extra developer costs you _N_, but the potential delay of the project costs you _100 x N_, then it might be wise that you just get the developer and zero down the development queue. However, if you need to spend a lot of money to shorten the test cycle by one week and the benefit would be a mere pat on the back, then that shouldn't count.
+Also, it is important to note that queues are not always bad, and whether you should allow a queue of a given size to occur is an economical question (more on that in the next section). If an extra developer costs you _N_, but the potential delay of the project costs you _100 x N_, then it might be wise that you just get the developer and zero down the development queue. However, if you need to spend a lot of money to shorten the test cycle by one week and the benefit would be a mere pat on the back, then that shouldn’t count.
 
-If you have a process or a staff that affects the overall throughput of the system (bottleneck), you don't want any idle time for them. To make sure they always have something to work on, you deliberately build a queue right before them. This queue takes away the variation of arriving new tasks and ensures maximum throughput for your process.
+If you have a process or a staff that affects the overall throughput of the system (bottleneck), you don’t want any idle time for them. To make sure they always have something to work on, you deliberately build a queue right before them. This queue takes away the variation of arriving new tasks and ensures maximum throughput for your process.
 
 Product management happens to have a big queue of non-refined ideas collected by the team or other teams. A lot of ideas could propel the company to the next level, as long as product management has the capacity to refine them into real business cases and work with the engineering teams to realize them. Failing to do so results in a lot of missed opportunities or sometimes direct losses, when customers churn because their feedback was not heard.
 
@@ -83,7 +83,7 @@ The chart above is an example of a CFD, where the x-axis represent the time fram
 
 The cumulative flow diagram is also a crucial Kanban analytics tool and provides an overview of the current state of your project.
 
-Kanban is a popular approach to managing workflow that involves visualizing work on a board that is divided into columns. Each column represents a different stage of the workflow, and tasks move from left to right as they progress through the various stages. In a typical Kanban board, there are three columns: "To Do," "Work in Progress" (WIP), and "Done."
+Kanban is a popular approach to managing workflow that involves visualizing work on a board that is divided into columns. Each column represents a different stage of the workflow, and tasks move from left to right as they progress through the various stages. In a typical Kanban board, there are three columns: “To Do,” “Work in Progress” (WIP), and “Done”.
 
 ![kanban board](./kanban.png)
 
@@ -91,9 +91,9 @@ A cumulative flow diagram can be used to track the performance of a Kanban board
 
 By using a CFD to track the performance of a Kanban board, we can monitor several important metrics:
 
-- **Cycle time**: This is the time it takes for a single task to move through the entire workflow, from "To Do" to "Done." By analyzing the slope of the line for the "Done" column, we can estimate the average cycle time for each task.
+- **Cycle time**: This is the time it takes for a single task to move through the entire workflow, from “To Do” to “Done.” By analyzing the slope of the line for the “Done” column, we can estimate the average cycle time for each task.
 
-- **Work in progress (WIP)**: This is the number of tasks that are currently in progress within the workflow, represented by the height of the line for the "Work in Progress" column. By looking at the overall shape of the CFD, we can see how WIP levels fluctuate over time and identify periods of high or low utilization.
+- **Work in progress (WIP)**: This is the number of tasks that are currently in progress within the workflow, represented by the height of the line for the “Work in Progress” column. By looking at the overall shape of the CFD, we can see how WIP levels fluctuate over time and identify periods of high or low utilization.
 
 - **Throughput**: This is the number of tasks that are completed within a given period of time, represented by the steepness of the overall slope of the CFD. By measuring the throughput of the workflow, we can estimate the overall efficiency and productivity of the team.
 
@@ -114,13 +114,13 @@ The horizontal distance between your first and last stage shows the approximate 
 
 ![cfd-four](./cfd-four.png)
 
-Let's take a look at the workflow of an example software development team whose process involves five stages: <br>
+Let’s take a look at the workflow of an example software development team whose process involves five stages: <br>
 
-<p align="center"><span style="color:#ED8B24">Requested to start</span> → <span style="color:#4C8B24">Design</span> → <span style="color:#4151A2">Development</span> → <span style="color:#E4411D">Review</span> → <span style="color:#690085                  ">Done</span>.</p>
+<p align="center"><span style="color:#ED8B24">Requested to start</span> → <span style="color:#4C8B24">Design</span> → <span style="color:#4151A2">Development</span> → <span style="color:#E4411D">Review</span> → <span style="color:#690085">Done</span>.</p>
 
 ![cfd-five](./cfd-five.png)
 
-A quick look at the chart tells you more about their approximate average cycle time of two weeks along with a number of asks completed during that period. In order to determine whether their process is stable we need to monitor how the chart progresses in time. If the distance between the arrival and departure lines grows in parallel then most likely we've got nothing to worry about.
+A quick look at the chart tells you more about their approximate average cycle time of two weeks along with a number of asks completed during that period. In order to determine whether their process is stable we need to monitor how the chart progresses in time. If the distance between the arrival and departure lines grows in parallel then most likely we’ve got nothing to worry about.
 
 ![cfd-six](./cfd-six.png)
 
@@ -130,9 +130,9 @@ However if it starts to expand rapidly then tests are arriving faster than they 
 
 A properly built cumulative flow diagram always flows upward or sideways. If you ever see a line going down then the chart is incorrect since tasks should never disappear.
 
-When the "In Progress" bar appears thinner, the team is working on smaller batches of tasks, which means they have less "Work in progress" (WIP). By working on fewer tasks at the same time, the team can concentrate better and create more value through the system. In the second diagram, if you imagine the same vertical and horizontal lines, you'll see that having a smaller queue size has resulted in less delay.
+When the “In Progress” bar appears thinner, the team is working on smaller batches of tasks, which means they have less “Work in progress” (WIP). By working on fewer tasks at the same time, the team can concentrate better and create more value through the system. In the second diagram, if you imagine the same vertical and horizontal lines, you’ll see that having a smaller queue size has resulted in less delay.
 
-#### How do we lower "Work In Progress"?
+#### How do we lower “Work In Progress”?
 
 Pair programming and code reviews are methods that enable engineers to manage their work in progress (WIP) more effectively. By collaborating to tackle complex tasks, there are several additional benefits that arise.
 
@@ -140,13 +140,13 @@ Firstly, the quality of the code generally improves due to more thorough scrutin
 
 This approach builds resilience into the software engineering system without requiring restrictive WIP constraints such as limits on the number of tasks in progress.
 
-By managing our WIP and being mindful of our queues, we remove constraints on flow. By removing constraints on flow, we unlock the team's ability to pivot quickly without suspending good engineering practice. This property is and always will be, at the very heart of an agile culture and a necessary ingredient in the success of an organisation's software engineering effort.
+By managing our WIP and being mindful of our queues, we remove constraints on flow. By removing constraints on flow, we unlock the team’s ability to pivot quickly without suspending good engineering practice. This property is and always will be, at the very heart of an agile culture and a necessary ingredient in the success of an organisation’s software engineering effort.
 
 ### Conclusion
 
-The principles of product development flow are designed to optimize flow and improve the efficiency of the product development process. By understanding concepts like Little's Law, queueing theory, flow management, work-in-progress limits, pull systems and flow metrics, organizations can take steps to eliminate bottlenecks in their development process and improve the flow of their development process. This leads to faster time to market, better quality products, and increased customer satisfaction.
+The principles of product development flow are designed to optimize flow and improve the efficiency of the product development process. By understanding concepts like Little’s Law, queueing theory, flow management, work-in-progress limits, pull systems and flow metrics, organizations can take steps to eliminate bottlenecks in their development process and improve the flow of their development process. This leads to faster time to market, better quality products, and increased customer satisfaction.
 
-I strongly recommend reading "The Principles of Product Development Flow" by Donald Reinertsen as it is an excellent book.
+I strongly recommend reading “The Principles of Product Development Flow” by Donald Reinertsen as it is an excellent book.
 
 <small>References: <a href="https://www.amazon.com/gp/product/1935401009" target="_blank">The Principles of Product Development Flow by Donald Reinertsen</a>; <a href="https://kanbanize.com/kanban-resources/kanban-analytics/cumulative-flow-diagram" target="_blank">Cumulative Flow Diagram</a>; <a href="https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-cumulative-flow-diagram/" target="_blank">View and understand the cumulative flow diagram</a>
 
