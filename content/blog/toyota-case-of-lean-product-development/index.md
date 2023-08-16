@@ -1,5 +1,5 @@
 ---
-title: “The Toyota way: The case of Lean Product Development"
+title: "The Toyota way: The case of Lean Product Development"
 date: "2022-07-14T17:13:03.284Z"
 tags: [lean, business domain, product development]
 description: A production system based on the philosophy of achieving the complete elimination of all waste in pursuit of the most efficient methods.

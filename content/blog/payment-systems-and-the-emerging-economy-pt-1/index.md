@@ -78,10 +78,10 @@ You just completed the first part of the _Payment Systems, and the Emerging Econ
 
 <small>
 References:
-<a href="https://www.researchgate.net/publication/257716174_Payment_Systems_in_Economy_-_Present_End_Future_Tendencies” target="_blank">
+<a href="https://www.researchgate.net/publication/257716174_Payment_Systems_in_Economy_-_Present_End_Future_Tendencies" target="_blank">
 Researchgate’s Payment Systems in Economy</a>;
-<a href="https://www.treasuryalliance.com/assets/publications/payments/Fundamentals_of_Payment_Systems.pdf” target="_blank">
+<a href="https://www.treasuryalliance.com/assets/publications/payments/Fundamentals_of_Payment_Systems.pdf" target="_blank">
 Treasuryalliance’s fundamentals of Payment Systems</a>;
-<a href="https://www.mckinsey.com/industries/financial-services” target="_blank">
+<a href="https://www.mckinsey.com/industries/financial-services" target="_blank">
 Mckinsey’s financial services insights</a>.
 </small>

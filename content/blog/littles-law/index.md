@@ -15,7 +15,7 @@ I am currently writing an article on this topic—on its application to the Scal
 
 In its most basic form, the law can be represented as:
 
-<img src="https://latex.codecogs.com/svg.latex?LEAD\:TIME=\frac{WORK\:IN\:PROGRESS}{THROUGHPUT\:RATE}” title="Lead time formula” />
+<img src="https://latex.codecogs.com/svg.latex?LEAD\:TIME=\frac{WORK\:IN\:PROGRESS}{THROUGHPUT\:RATE}" title="Lead time formula" />
 
 * **Lead Time**: The duration required for an item to traverse and be completed within a process.
 * **Work In Progress (WIP)**: Imagine looking into a process pipeline, much like peering into a transparent tube. If you spot, say, 10 ongoing tasks—be it applications, requests, or products being crafted—it signifies that there are 10 units currently being processed. This count of active tasks is the Work in Progress.
@@ -29,11 +29,11 @@ Let’s delve into a couple of practical scenarios where it can be applied to fu
 
 Suppose there’s a factory assembly line (our process pipeline). If 25 widgets are in different stages of assembly and 5 get completed every hour, the lead time can be calculated as:
 
-<img src="https://latex.codecogs.com/svg.latex?LT=\frac{25\:widgets}{5\:widgets/hr}=5hrs” title="process pipeline” />
+<img src="https://latex.codecogs.com/svg.latex?LT=\frac{25\:widgets}{5\:widgets/hr}=5hrs" title="process pipeline" />
 
 If we suddenly introduce 25 more widgets to this line without any change to the process or throughput rate, our lead time grows:
 
-<img src="https://latex.codecogs.com/svg.latex?LT=\frac{50\:widgets}{5\:widgets/hr}=10hrs” title="process pipeline bottlenecks” />
+<img src="https://latex.codecogs.com/svg.latex?LT=\frac{50\:widgets}{5\:widgets/hr}=10hrs" title="process pipeline bottlenecks" />
 
 This illustrates that simply increasing the workload without enhancing the process can lead to inefficiencies, longer wait times, and potential bottlenecks.
 

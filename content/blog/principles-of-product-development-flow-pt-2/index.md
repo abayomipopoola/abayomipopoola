@@ -83,7 +83,7 @@ The chart above is an example of a CFD, where the x-axis represent the time fram
 
 The cumulative flow diagram is also a crucial Kanban analytics tool and provides an overview of the current state of your project.
 
-Kanban is a popular approach to managing workflow that involves visualizing work on a board that is divided into columns. Each column represents a different stage of the workflow, and tasks move from left to right as they progress through the various stages. In a typical Kanban board, there are three columns: “To Do,” “Work in Progress” (WIP), and “Done”.
+Kanban is a popular approach to managing workflow that involves visualizing work on a board that is divided into columns. Each column represents a different stage of the workflow, and tasks move from left to right as they progress through the various stages. In a typical Kanban board, there are three columns: “To Do”, “Work in Progress” (WIP), and “Done”.
 
 ![kanban board](./kanban.png)
 
@@ -91,7 +91,7 @@ A cumulative flow diagram can be used to track the performance of a Kanban board
 
 By using a CFD to track the performance of a Kanban board, we can monitor several important metrics:
 
-- **Cycle time**: This is the time it takes for a single task to move through the entire workflow, from “To Do” to “Done.” By analyzing the slope of the line for the “Done” column, we can estimate the average cycle time for each task.
+- **Cycle time**: This is the time it takes for a single task to move through the entire workflow, from “To Do” to “Done”. By analyzing the slope of the line for the “Done” column, we can estimate the average cycle time for each task.
 
 - **Work in progress (WIP)**: This is the number of tasks that are currently in progress within the workflow, represented by the height of the line for the “Work in Progress” column. By looking at the overall shape of the CFD, we can see how WIP levels fluctuate over time and identify periods of high or low utilization.
 
