@@ -13,7 +13,7 @@ Building software without starting with the end in mind is synonymous with not h
 
 ![strategy-tactics](./visionstrategytactics.png)
 
-Enter **Domain-Driven Design** (DDD), an approach to software development first described by Eric Evans—a collection of principles and patterns that help developers craft elegant object systems. Properly applied it can lead to software abstractions called domain models. These models encapsulate complex business logic, closing the gap between business reality and code.
+Enter **Domain-Driven Design** (DDD), an approach to software development first described by Eric Evans. It is a collection of principles and patterns that help developers craft elegant object systems. When properly applied, it can lead to software abstractions called domain models. These models encapsulate complex business logic, closing the gap between business reality and code.
 
 In simple terms, DDD helps make software deeply reflect a real-world system or process. For example, let’s try modelling a bank savings account.
 
