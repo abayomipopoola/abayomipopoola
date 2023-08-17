@@ -51,7 +51,7 @@ Beyond ensuring the integrity of the model within its context, the context map u
 
 ### Domain-Driven Design in a Nutshell
 
-To encapsulate the essence of Eric's book, we can categorize its profound insights into several pivotal concepts:
+To encapsulate the essence of Eric’s book, we can categorize its profound insights into several pivotal concepts:
 
 - **Knowledge Crunching**: The process of distilling vast information into usable knowledge for software design.
 - **Ubiquitous Language**: Establishing a common language that bridges the gap between technical and domain experts.
@@ -60,6 +60,6 @@ To encapsulate the essence of Eric's book, we can categorize its profound insigh
 - **Supple Design and Refinement**: The continuous process of refining the design to gain deeper insights and maintain flexibility.
 - **Strategic Design**: Concepts like bounded contexts, context maps, core domains, and subdomains, provide the overarching architecture and strategy for domain-driven design.
 
-It's worth noting that to truly grasp the nuances and intricacies of these concepts, immersing oneself in the book is essential. This article serves as a primer, a window into the vast world of Domain-Driven Design that Eric has so eloquently presented.
+It’s worth noting that to truly grasp the nuances and intricacies of these concepts, immersing oneself in the book is essential. This article serves as a primer, a window into the vast world of Domain-Driven Design that Eric has so eloquently presented.
 
 <a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Get the book here</a>.
