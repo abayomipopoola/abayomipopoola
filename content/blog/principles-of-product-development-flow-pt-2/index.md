@@ -21,7 +21,7 @@ Queues are an essential tool for managing the complex and ever-changing workflow
 
 #### Queueing theory
 
-Queueing theory is a mathematical approach to the study of waiting lines, and it provides a framework for understanding the behavior of systems that involve waiting in line, such as banks, grocery stores, and call centers.
+Queueing theory is a mathematical approach to the study of waiting lines, and it provides a framework for understanding the behaviour of systems that involve waiting in line, such as banks, grocery stores, and call centers.
 
 The queue refers to the line of customers waiting to be served. The length of the queue and the waiting time of customers in the queue can be influenced by various factors, such as the arrival rate, the service rate, and the number of servers available.
 

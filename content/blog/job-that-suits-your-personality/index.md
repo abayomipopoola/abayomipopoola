@@ -7,7 +7,7 @@ description: Scale an enterprise by understand how different personalities map t
 
 ![personality](./personality.jpg)
 
-Your personality will partially determine how good you are at your job, especially if your job requires more than rote behavior.
+Your personality will partially determine how good you are at your job, especially if your job requires more than rote behaviour.
 
 When considering whether a job is a good fit for you, it’s essential to consider your personality traits. For example, creative individuals tend to prefer jobs that allow them to explore new ideas and concepts, which is known as _openness_, one of the “Big Five” personality traits. These individuals are more likely to excel in roles that require innovative solutions rather than efficient ones. Conversely, those who possess the _conscientious_ trait, which is another “Big Five” personality trait, tend to do better in management or administrative positions. Therefore, understanding your personality traits can help you identify career paths that are a good match for your strengths and preferences.
 
