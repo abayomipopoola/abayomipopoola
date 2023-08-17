@@ -21,7 +21,7 @@ const PortfolioPage = ({ data, location }) => {
         I specialise in distributed systems, back-end architecture, and cloud infrastructure.
       </p>
       <p>
-        When I’m not hands-on setting the technology strategy and ensuring intense execution for fintech startups in Lagos, 
+        When I’m not hands-on setting the technology strategy and ensuring intense execution for fintech startups, 
         you can find me working remotely.
       </p>
       <p>
