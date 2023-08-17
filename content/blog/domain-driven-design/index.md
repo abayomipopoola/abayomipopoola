@@ -53,12 +53,12 @@ Beyond ensuring the integrity of the model within its context, the context map u
 
 To encapsulate the essence of Eric's book, we can categorize its profound insights into several pivotal concepts:
 
-- Knowledge Crunching: The process of distilling vast information into usable knowledge for software design.
-- Ubiquitous Language: Establishing a common language that bridges the gap between technical and domain experts.
-- Model-driven Design: Using a shared model as the foundation of both design and implementation.
-- Implementation Patterns: This includes a plethora of patterns such as entities, aggregates, aggregate roots, value objects, strategies, domain services, domain events, repositories, and more.
-- Supple Design and Refinement: The continuous process of refining the design to gain deeper insights and maintain flexibility.
-- Strategic Design: Concepts like bounded contexts, context maps, core domains, and subdomains, provide the overarching architecture and strategy for domain-driven design.
+- **Knowledge Crunching**: The process of distilling vast information into usable knowledge for software design.
+- **Ubiquitous Language**: Establishing a common language that bridges the gap between technical and domain experts.
+- **Model-driven Design**: Using a shared model as the foundation of both design and implementation.
+- **Implementation Patterns**: This includes a plethora of patterns such as entities, aggregates, aggregate roots, value objects, strategies, domain services, domain events, repositories, and more.
+- **Supple Design and Refinement**: The continuous process of refining the design to gain deeper insights and maintain flexibility.
+- **Strategic Design**: Concepts like bounded contexts, context maps, core domains, and subdomains, provide the overarching architecture and strategy for domain-driven design.
 
 It's worth noting that to truly grasp the nuances and intricacies of these concepts, immersing oneself in the book is essential. This article serves as a primer, a window into the vast world of Domain-Driven Design that Eric has so eloquently presented.
 
