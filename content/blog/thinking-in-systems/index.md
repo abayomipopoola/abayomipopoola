@@ -85,11 +85,11 @@ When a discrepancy arises in a system stock, such as an imbalance or deviation f
 
 - **Reinforcing feedback loops** (positive feedback): These loops amplify changes in the system, causing it to grow or decline more rapidly. When a discrepancy occurs in a stock, a reinforcing feedback loop can amplify the difference and lead to further divergence from the desired state. For example, in a population growth scenario, an increasing population leads to more births, which in turn further increases the population, creating a self-reinforcing cycle.
 
-##### behaviour-Over-Time Graphs
+##### Behaviour-Over-Time Graphs
 
-behaviour-over-time graphs is used in the book as a way to visually represent the dynamics of systems and their response to feedback loops.
+Behaviour-over-time graphs is used in the book as a way to visually represent the dynamics of systems and their response to feedback loops.
 
-![behaviour-over-time](./behaviour-graph.png)
+![behaviour-over-time](./behaviourgraph.png)
 
 The charts above are called behaviour over time graphs. They provide clues to the kind of systemic processes that may be at work. A rapidly rising or falling graph, for example, indicates a reinforcing process, whereas an oscillating graph suggests what’s called a balancing process.
 
