@@ -7,18 +7,22 @@ description: The mind, and the brain.
 
 ![drawing the consciousness](./mind.jpg)
 
-Just like programming a computer—as the program comes to the electrical computer from without; the same is true of each biological computers (the human brains): Purpose comes to it from outside its own mechanism.
+Programming a computer involves external software instructing the internal hardware. Similarly, for biological computers like the human brain, purpose or direction often comes from outside its own mechanism.
 
 > The mind programs the brain 🧠 .
 
-One could posit that the mind is a separate but closely related element of the brain, contrary to the idea that it’s merely a function of the brain. This could be backed by with scientific findings that could be surmised, viz., in the brain there’s an amazing automatic sensory and motor computer that utilizes the conditioned reflexes—taking them as input signals for processing.
+### The Relationship between Mind and Brain
 
-But humans are more than that...we possess some sort of a higher brain mechanism that is closely related to what we’ve come to know as consciousness or spirit or the mind.
+While both are interconnected, some theorize the mind and brain as distinct entities. The brain, a sophisticated organ, operates like an intricate computer. It processes sensory inputs and motor commands based on conditioned reflexes. Yet, there’s an element of our cognition—our self-awareness—that transcends this mechanistic description. This consciousness, often ascribed to the mind, hints at something more profound.
 
-The fact that you’re aware of spending time to read this article is simply what ‘consciousness’ is about.
+Being aware of reading this very article or reflecting on one’s existence is the magic of consciousness in action. But is this consciousness purely a function of our physical brain, or is it an external, more ethereal component? The distinction is still a topic of much debate and research.
 
-Now that the mind can be seen as a separate—although still very related to the brain, perhaps changing ones mindset could be a way of reprogramming the brain (Google the ‘CIA MK ultra’ programme for a start...the whole cybernetics field of study and stuff are pretty mind boggling).
+### The Power of the Mind
 
-The mind though, must be a very powerful thing—having an energy of its own, that scientists can’t explain, yet.
+What if the mind, being separate yet deeply interconnected with the brain, holds the power to reprogram our neural pathways? Initiatives like the CIA’s MK Ultra program have delved into the potential of mind control, showcasing the immense influence of the mind. Furthermore, the field of cybernetics offers astonishing insights into how systems, including the human brain, can be controlled and transformed.
+
+The mind’s capabilities are undeniable, and it’s often described as having a distinctive “energy.” This energy might be a metaphorical reference to its power and influence, or it could literally point to a measurable force, like neural activity. However, the exact nature and source of this energy remain elusive to current scientific understanding.
+
+The mind and brain, two entities of vast complexity, continue to fascinate and baffle scholars and scientists alike. As we inch closer to understanding them, we must keep an open mind—embracing both the tangible and the intangible aspects of our existence.
 
 <small> Reference image by saatchiart</small>
