@@ -1,6 +1,6 @@
 ---
 title: Enhancing Scalability & Fault Tolerance of Web Servers
-date: "2023-08-21T18:45:32.169Z"
+date: "2023-08-22T14:35:32.169Z"
 tags: [programming, system design]
 description: Understand the crucial interplay between scalability & fault-tolerance as pivotal architectural components in microservices design.
 ---
@@ -32,22 +32,24 @@ To handle more requests, we need to increase _L_, the system’s capacity, or de
 
 #### Understanding Capacity (L)
 
-The capacity, _L_, of a web server is not a constant value. It’s malleable, influenced by several environmental _(hardware, OS, etc.)_ and limiting factors:
+The capacity, _L_, of a web server is not a constant value. It’s variable, influenced by several environmental _(hardware, OS, etc.)_ and limiting factors:
 
-- **TCP Connections**: The number of concurrent TCP connections the server can support. Modern servers can handle a staggering number of concurrent TCP connections, sometimes surpassing 2 million.
-- **Bandwidth**: With today’s high bandwidth LAN technology, the network can support anywhere between 100K to over a million concurrent requests — given the total volume of a single request is under 1MB.
-- **RAM**: Given that each request might consume less than 1MB of memory, RAM can support well over a million concurrent requests.
-- **CPU**: Since the heavy lifting is often offloaded to microservices, CPUs can handle hundreds of thousands to millions of requests without breaking a sweat.
+- **TCP Connections**: The number of concurrent TCP connections a server can support. Typical servers can handle tens of thousands of simultaneous TCP connections. It’s even possible to sustain millions of active connections in certain cases, with the right configuration.
+- **Bandwidth**: Except for streaming HD video, most requests and responses over LAN are just a few kilobytes in length. Given that the total volume of a single request is under 1MB, a network can support anywhere from 100K to over a million concurrent requests.
+- **RAM**: Assuming each request uses less than 1MB of memory, and considering the affordability of RAM, it’s feasible to support over a million concurrent requests, or at the very least, several hundreds of thousands.
+- **CPU**: Given that most of the processing is handled by microservices and requests primarily wait for responses, CPUs can efficiently manage anywhere from several hundreds of thousands to multiple millions of concurrent requests. In real-world systems with similar architectures, CPU usage is seldom the limiting factor.
 
-While our initial estimates suggest that we can maintain _L_ within a range of 100K to 1 million, the operating system introduces a crucial constraint. In a scenario where we adopt the thread-per-request model, each request occupies an OS thread until completed, and then it’s repurposed for other requests. The OS’s ability to handle threads determines our concurrent request capacity.
+From our analysis of the limiting factors, we expect to sustain _L_ in the range of 100K to about 1 million. However, the operating system introduces a key constraint. When using the _thread-per-request_ model, each request is processed on a single OS thread from start to finish. This means our ability to manage concurrent requests is directly limited by the number of threads the OS can handle.
 
-Threads process, pause for microservice responses and repeat. They’re not always active, but they aren’t idle either. Typically, an OS can concurrently manage 2K to 20K threads. Beyond this, increased latency affects requests, causing _W_ to rise and _λ_ to fall. Allowing a server to create threads without restraint can severely hinder our application’s performance. Typically, we usually set a strict limit on the number of threads the application can spawn, which usually falls between 500 and 10,000, but it’s rare to go beyond that.
+In the _thread-per-request_ model, threads do some processing and then they block, waiting for a microservice or other downstream services to respond, and then repeat. They’re not constantly active – not fully utilizing the CPU – but they aren’t entirely idle either. The OS typically schedules each thread multiple times for a single request. During these idle times, the OS temporarily stops the waiting thread and switches to another task, then reschedules it once a response is received. Given this behavior, most OS typically supports between 2K and 20K concurrent threads. Going beyond this limit introduces latency, causing _W_ to rise and _λ_ to fall. To prevent system strain from excessive thread creation, there’s often a cap on the number of threads that can be spawned, usually set between 500 and 20K, but rarely more than that.
 
-Considering these factors, the OS reduces our optimistic capacity from the high 100Ks to below 20,000. In essence, when employing the thread-per-request model on adequate hardware, _L_ is primarily influenced by the OS’s thread capacity without inducing latency. While purchasing additional servers is an option, it’s a costly one with potential hidden expenses. Hesitation might arise, especially when recognizing that software inefficiencies are the root cause, and our existing servers remain underutilized.
+Because _L_ is the minimum of all these limits, the OS scheduler suddenly dropped our capacity, _L_, from the high 100Ks to ­low millions, to well under 20,000. 
+
+If we use the _thread-per-request_ model on a “good-­enough” hardware, _L_ is largely determined by the OS’s thread capacity without adding latency. While purchasing additional servers is an option, it’s a costly one with potential hidden cost. Hesitation increases when we realize that software is the problem, and our existing servers remain underutilized.
 
 #### Processing Latency (W)
 
-Latency, often the nemesis of real-time applications, is a crucial factor in determining system efficiency. Imagine two microservices, _Service A_ and _Service B_, each taking an average of 500ms to respond, inclusive of network latency. If the services are being called sequentially, the web service’s processing latency is 1 second, denoted as _W_. If we permit the web server to generate up to 2000 threads, our _L_ becomes 2000. By Little’s law, our system can manage:
+Latency is a crucial factor in determining system efficiency. Imagine two microservices, _Service A_ and _Service B_, each taking an average of 500ms to respond, inclusive of network latency. If the services are being called sequentially, the web service’s processing latency is 1 second, denoted as _W_. If we permit the web server to generate up to 2000 threads, our _L_ becomes 2000. By Little’s law, our system can manage:
 
 <img src="https://latex.codecogs.com/svg.latex?\lambda=\frac{W}{L}=\frac{2000}{1}=2000" title="processing letency" />
 
@@ -67,11 +69,11 @@ Is this our peak performance? Barring significant optimizations to _Service A_ a
 
 ### Optimizing Latency with Functional Callbacks
 
-While we’ve managed to reduce _W_, _L_ remains limited by the OS’s thread-handling capacity. To increase _L_, we must move away from the thread-per-request model.
+While we’ve managed to reduce _W_, _L_ remains limited by the OS’s thread-handling capacity. To increase _L_, we must move away from the _thread-per-request_ model.
 
 Enter **Node.js**, a server-side JavaScript framework. Given JavaScript’s single-threaded nature, Node.js bypasses the OS thread scheduler. Instead of allocating a thread for each request, it uses asynchronous callbacks. When a request handler needs to wait (e.g., for a service call), it provides a callback to execute upon completion. This approach capitalizes on JavaScript’s lack of threading, avoiding the OS thread limitations.
 
-However, this method has its challenges. Any prolonged blocking of a handler function stalls the entire Node.js instance; and no other requests can be processed.This is often mitigated by running several Node instances on one machine and load-­balancing them, which also helps take advantage of all CPU cores. But it consumes more RAM and makes parallelizing certain computational tasks difficult. Moreover, the asynchronous, callback-based programming style can be intricate, leading to the infamous “callback hell.” Node.js tries to simplify this with “promises,” a more functional approach. 
+However, this method has its challenges. Any prolonged blocking of a handler function stalls the entire Node.js instance; and no other requests can be processed. This is often mitigated by running several Node instances on one machine and load-­balancing them, which also helps take advantage of all CPU cores. But it consumes more RAM and makes parallelizing certain computational tasks difficult. Moreover, the asynchronous, callback-based programming style can be intricate, leading to the infamous “callback hell.” Node.js tries to simplify this with “promises,” a more functional approach. 
 
 A benefit of Node’s single-threaded nature is its simplicity. Even if callbacks from asynchronous calls like _Service A_ and _Service B_ can execute in any sequence, they run on the same thread, eliminating concurrency issues, like race condition, etc.
 
@@ -79,13 +81,13 @@ By sidestepping thread-based code flow, _L_ is no longer bound by the OS’s sch
 
 <p class="three-dots">***</p>
 
-The functional style appears promising, but it diverges from the intuitive nature of the thread-per-request model. While the functional approach provides scalability and fault tolerance, its code is often less straightforward than that of the thread-per-request model. Yet, is it impossible to combine the best of both worlds: the scalability and fault tolerance of the functional style with the clarity of the thread-per-request model? Fortunately, it’s not.
+The functional style appears promising, but it diverges from the intuitive nature of the _thread-per-request_ model. While the functional approach provides scalability and fault tolerance, its code is often less straightforward than that of the _thread-per-request_ model. Yet, is it impossible to combine the best of both worlds: the scalability and fault tolerance of the functional style with the clarity of the _thread-per-request_ model? Fortunately, it’s not. Enter _Lightweight Threads_.
 
 ### Lightweight or User-mode Threads
 
 So far, we have realised that the server’s capacity, denoted as _L_ in Little’s formula, is often limited by the OS’s thread scheduling capability. Traditional threads, being a limited resource, had to be capped at some relatively small number, leading to the adoption of complex solutions like circuit breakers and functional programming style. But what if threads were more efficient?
 
-Languages like Erlang and Go provide lightweight threads _(Erlang’s processes and Go’s goroutines)_. Similarly, the relatively new OpenJDK’s Project Loom introduces this functionality for Java 19 and later versions. These threads are managed by the language or library runtime, not the OS, allowing for more efficient scheduling.
+Languages like **Go** and **Erlang** provide lightweight threads _(Go’s goroutines and Erlang’s processes)_. Similarly, the relatively new OpenJDK’s Project Loom introduces this functionality for Java 19 and later versions. These threads are managed by the language or library runtime, not the OS, allowing for more efficient scheduling.
 
 Lightweight threads offer many advantages similar to traditional OS threads, including a straightforward control flow and the capability to pause and wait for resources, while permitting other threads to operate on the CPU. However, unlike traditional threads, lightweight threads are not managed by the operating system, leading to quicker context-switching and reduced system resource consumption. Consequently, a single machine can efficiently manage millions of these threads. This offers a distinct advantage. The runtime, having a deeper understanding of the thread’s purpose and behaviour, can often outperform the OS in scheduling decisions. It recognizes that these threads operate in short bursts and frequently block, a behaviour not typical of heavyweight threads. This knowledge allows the runtime to employ an _M:N_ scheduling model, where a larger number of lightweight threads _(M)_ are mapped onto a smaller number of OS threads _(N)_.
 
