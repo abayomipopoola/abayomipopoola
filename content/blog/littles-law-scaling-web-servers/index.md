@@ -2,7 +2,7 @@
 title: Enhancing Scalability & Fault Tolerance of Web Servers
 date: "2023-08-21T18:45:32.169Z"
 tags: [programming, system design]
-description: Explore the crucial interplay between scalability & fault-tolerance as pivotal architectural components in microservices design.
+description: Understand the crucial interplay between scalability & fault-tolerance as pivotal architectural components in microservices design.
 ---
 
 ![Loom](./loom.jpg)
@@ -61,7 +61,7 @@ We still have room for improvement. If _Service A_ consistently fails and times 
 
 Additionally, some circuit breaker libraries allow for allocating specific thread pools for different tasks, ensuring a single malfunctioning operation doesn’t consume all available threads. This approach is known as “bulkheading” against failures.
 
-Can we further reduce _W_? Indeed, if _Service A’s_ result isn’t a prerequisite for _Service B_, we can parallelize their calls. Using Futures _(Java)_ or Promises _(JS)_, we dispatch both requests simultaneously, potentially reducing _W_ from 1 second to 500ms. This principle extends to multiple service calls, allowing our server to manage up to 4000 requests per second, even with numerous microservice interactions.
+Can we further reduce _W_? Indeed, if _Service A’s_ result isn’t a prerequisite for _Service B_, we can parallelize their calls. Using Futures (Java) or Promises (JS), we dispatch both requests simultaneously, potentially reducing _W_ from 1 second to 500ms. This principle extends to multiple service calls, allowing our server to manage up to 4000 requests per second, even with numerous microservice interactions.
 
 Is this our peak performance? Barring significant optimizations to _Service A_ and _Service B_, it appears so. Even with underutilized hardware, 4000 requests per second is our upper limit, especially if any microservice latency exceeds 500ms. If this isn’t sufficient, what’s our next move?
 
@@ -85,7 +85,7 @@ The functional style appears promising, but it diverges from the intuitive natur
 
 So far, we have realised that the server’s capacity, denoted as _L_ in Little’s formula, is often limited by the OS’s thread scheduling capability. Traditional threads, being a limited resource, had to be capped at some relatively small number, leading to the adoption of complex solutions like circuit breakers and functional programming style. But what if threads were more efficient?
 
-Languages like _Erlang_ and _Go_ provide lightweight threads _(Erlang’s processes and Go’s goroutines)_. Similarly, the relatively new OpenJDK’s _Project Loom_ introduces this functionality for Java 19 and later versions. These threads are managed by the language or library runtime, not the OS, allowing for more efficient scheduling.
+Languages like Erlang and Go provide lightweight threads _(Erlang’s processes and Go’s goroutines)_. Similarly, the relatively new OpenJDK’s Project Loom introduces this functionality for Java 19 and later versions. These threads are managed by the language or library runtime, not the OS, allowing for more efficient scheduling.
 
 Lightweight threads offer many advantages similar to traditional OS threads, including a straightforward control flow and the capability to pause and wait for resources, while permitting other threads to operate on the CPU. However, unlike traditional threads, lightweight threads are not managed by the operating system, leading to quicker context-switching and reduced system resource consumption. Consequently, a single machine can efficiently manage millions of these threads. This offers a distinct advantage. The runtime, having a deeper understanding of the thread’s purpose and behaviour, can often outperform the OS in scheduling decisions. It recognizes that these threads operate in short bursts and frequently block, a behaviour not typical of heavyweight threads. This knowledge allows the runtime to employ an _M:N_ scheduling model, where a larger number of lightweight threads _(M)_ are mapped onto a smaller number of OS threads _(N)_.
 
