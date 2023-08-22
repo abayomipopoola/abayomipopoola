@@ -18,9 +18,9 @@ Scalability, in the context of this post, refers to the software’s ability to 
 <img src="https://latex.codecogs.com/svg.latex?\Large L=\lambda W" title="Littles law" />
 
 where:
-- **_λ_** represents the average rate of incoming requests.
-- **_W_** denotes the average time taken to process each request.
-- **_L_** is the number of concurrent requests the system handles.
+- _**λ**_ represents the average rate of incoming requests.
+- _**W**_ denotes the average time taken to process each request.
+- _**L**_ is the number of concurrent requests the system handles.
 
 To illustrate, consider a system that receives 500 requests per second, with each request taking 0.5 seconds to complete. This means the system is concurrently handling 500 × 0.5 = 250 requests.
 
