@@ -85,7 +85,7 @@ The functional style appears promising, but it diverges from the intuitive natur
 
 ### Lightweight or User-mode Threads
 
-So far, we have realised that the server’s capacity, denoted as _L_ in Little’s formula, is often limited by the OS’s thread scheduling capability. Traditional threads, being a limited resource, had to be capped at some relatively small number, leading to the adoption of complex solutions like circuit breakers and functional programming style. But what if threads were more efficient?
+So far, we have realised that a server capacity, denoted as _L_ in Little’s formula, is often limited by the OS’s thread scheduling capability. Traditional threads, being a limited resource, had to be capped at some relatively small number, leading to the adoption of complex solutions like circuit breakers and functional programming style. But what if threads were more efficient?
 
 Languages like **Go** and **Erlang** provide lightweight threads _(Go’s goroutines and Erlang’s processes)_. Similarly, the relatively new OpenJDK’s Project Loom introduces this functionality for Java 19 and later versions. These threads are managed by the language or library runtime, not the OS, allowing for more efficient scheduling.
 
