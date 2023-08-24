@@ -33,7 +33,7 @@ If we suddenly introduce 25 more widgets to this line without any change to the 
 
 <img src="https://latex.codecogs.com/svg.latex?LT=\frac{50\:widgets}{5\:widgets/hr}=10hrs" title="process pipeline bottlenecks" />
 
-This illustrates that simply increasing the workload without enhancing the process can lead to inefficiencies, longer wait times, and potential bottlenecks.
+This shows that simply increasing the workload without enhancing the process can lead to inefficiencies, longer wait times, and potential bottlenecks.
 
 #### Traffic Congestion
 
