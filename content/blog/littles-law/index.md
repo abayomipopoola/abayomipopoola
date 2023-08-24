@@ -21,9 +21,7 @@ In its most basic form, the law can be represented as:
 * **Work In Progress (WIP)**: Imagine looking into a process pipeline, much like peering into a transparent tube. If you spot, say, 10 ongoing tasks—be it applications, requests, or products being crafted—it signifies that there are 10 units currently being processed. This count of active tasks is the Work in Progress.
 * **Throughput Rate**: This denotes the average number of items that accomplish their goal within a set time frame, perhaps an hour or a day.
 
-### Diving Deeper into Examples
-
-Let’s delve into a couple of practical scenarios where it can be applied to further clarify the concept of Little’s Law and its implications.
+Let’s explore a few practical examples where the concept of _lead time_ sheds light on Little’s Law and its implications.
 
 #### Process Pipeline
 
