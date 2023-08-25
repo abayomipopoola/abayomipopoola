@@ -5,7 +5,7 @@ tags: [books]
 description: Delve into the intricate interplay of people, strategy, and operations as you navigate the core processes that drive tangible results.
 ---
 
-![collab](./collab.jpg)
+![collab](./team.jpg)
 
 In **Execution: The Discipline of Getting Things Done**, Ram Charan and former Honeywell CEO Larry Bossidy explore leadership techniques. They spotlight the significance of hiring individuals who not only execute tasks but also inspire colleagues, make swift decisions, delegate effectively, and ensure accountability. For business leaders to succeed, they should deeply understand markets, customers, and resources. Moreover, they should lead the strategic process, leverage the operations process when creating new programs, and correlate performance with incentives. These three cornerstones serve as the foundation for a competitive edge.
 
