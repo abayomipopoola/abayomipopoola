@@ -78,18 +78,18 @@ q {
 /* Font faces */
 
 @font-face {
-	font-family: 'SourceSerifPro';
-	src: url('/fonts/source-serif-pro.woff') format('woff');
+	font-family: 'Exchange';
+	src: url('/fonts/Exchange.woff2') format('woff');
 }
 
 @font-face {
-	font-family: 'SourceSerifProBold';
-	src: url('/fonts/source-serif-pro-bold.woff') format('woff');
+	font-family: 'ExchangeSemibold';
+	src: url('/fonts/Exchange-Semibold.woff2') format('woff');
 }
 
 @font-face {
-	font-family: 'SourceSerifProItalic';
-	src: url('/fonts/source-serif-pro-italic.woff') format('woff');
+	font-family: 'ExchangeItalic';
+	src: url('/fonts/Exchange-Italic.woff2') format('woff');
 }
 
 @font-face {

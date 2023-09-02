@@ -15,9 +15,8 @@ Scalability, in the context of this post, refers to the software’s ability to 
 
 <a href="/littles-law" target="_blank">_Little’s Law_</a> is a foundational theorem in operations research and system analysis. It offers insights into determining the capacity of stable systems that manage and process external requests. This theorem elegantly connects three pivotal variables: 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large L=\lambda W" title="Littles law" />
+<img src="https://latex.codecogs.com/svg.latex?\Large L=\lambda W" title="Littles law" class="centre"/>
 
-where:
 - _**λ**_ represents the average rate of incoming requests.
 - _**W**_ denotes the average time taken to process each request.
 - _**L**_ is the number of concurrent requests the system handles.
@@ -26,7 +25,7 @@ To illustrate, consider a system that receives 500 requests per second, with eac
 
 In this scenario, _L_ represents the system’s capacity, while _W_ is determined by the software’s design, its complexity, and inherent latencies. By knowing both _L_ and _W_, we can calculate the maximum request rate the system can sustain: 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large \lambda=\frac{L}{W}" title="max requests rate" />
+<img src="https://latex.codecogs.com/svg.latex?\Large \lambda=\frac{L}{W}" title="max requests rate" class="centre"/>
 
 To handle more requests, we need to increase _L_, the system’s capacity, or decrease _W_, the processing time or latency. But what if the incoming request rate surpasses _λ_? The system will no longer be stable. Requests will start queuing up. At first, they will experience much-increased latency, but quickly system resources will be fully consumed, leading to service unavailability.
 
@@ -51,7 +50,7 @@ If we use the _thread-per-request_ model on a “good-­enough” hardware, _L_ 
 
 Latency is a crucial factor in determining system efficiency. Imagine two microservices, _Service A_ and _Service B_, each taking an average of 500ms to respond, inclusive of network latency. If the services are being called sequentially, the web service’s processing latency is 1 second, denoted as _W_. If we permit the web server to generate up to 2000 threads, our _L_ becomes 2000. By Little’s law, our system can manage:
 
-<img src="https://latex.codecogs.com/svg.latex?\lambda=\frac{W}{L}=\frac{2000}{1}=2000" title="processing letency" />
+<img src="https://latex.codecogs.com/svg.latex?\lambda=\frac{W}{L}=\frac{2000}{1}=2000" title="processing letency" class="centre"/>
 
 requests per second before instability ensues. This seems sufficient, even accounting for traffic surges.
 
