@@ -1,6 +1,6 @@
 body {
-  font-family: Exchange, serif;
-  font-size: 16px;
+  font-family: SourceSerifPro, serif;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   background-color: #f3f6fc;
@@ -20,7 +20,7 @@ a.read-more {
 }
 
 p {
-	color: #000000; /* color: #000000DE; */
+	color: #000000DE;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,13 +44,13 @@ h4 {
 }
 
 h3.head-title {
-  font-family: ExchangeItalic, serif;
+  font-family: SourceSerifProItalic, serif;
   color: #80868b;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 span.about-link {
-  font-family: ExchangeItalic, serif;
+  font-family: SourceSerifProItalic, serif;
 }
 
 .date-time {
@@ -61,11 +61,11 @@ span.about-link {
 }
 
 .post strong {
-  font-family: ExchangeSemibold, serif;
+  font-family: SourceSerifProBold, serif;
 }
 
 .post em {
-  font-family: ExchangeItalic, serif;
+  font-family: SourceSerifProItalic, serif;
 }
 
 .post img {
@@ -85,7 +85,7 @@ span.about-link {
 
 blockquote {
   border-left: 3px solid #80868b;
-  font-family: ExchangeItalic, serif;
+  font-family: SourceSerifProItalic, serif;
   font-size: 0.98em;
   margin-left: calc(-1 * var(--spacing-0));
   margin-right: var(--spacing-0);
@@ -149,5 +149,5 @@ blockquote p {
 
 .centre {
   display: block;
-  margin: -8px auto 16px auto;
+  margin: -6px auto 18px auto;
 }
