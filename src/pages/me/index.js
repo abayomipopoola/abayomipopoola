@@ -17,20 +17,25 @@ const PortfolioPage = ({ data, location }) => {
 
       <h3 className="head-title">Hello!</h3>
       <p>
-        My name is Abayomi Popoola, a programmer and entrepreneur with a passion for business development. 
+        My name is Abayomi Popoola, a programmer and entrepreneur with a passion for business development.
         I specialise in distributed systems, back-end architecture, and cloud infrastructure.
       </p>
       <p>
-        When I’m not hands-on setting the technology strategy and ensuring intense execution for fintech startups, 
+        When I’m not hands-on setting the technology strategy and ensuring intense execution for fintech startups,
         you can find me working remotely.
       </p>
       <p>
-        Previously Director of Engineering at{" "}
+        Currently, I serve as the VP of Engineering at{" "}
+        <a href="https://www.maxdrive.ai/" target="_blank" rel="noreferrer">
+          Max
+        </a>
+        , a leading technology-driven company committed to addressing mobility challenges across Africa.
+        Previously, I was the Director of Engineering at{" "}
         <a href="https://www.dot.ai/" target="_blank" rel="noreferrer">
           Dot
         </a>
-        , a Lagos-based startup democratising financial services by providing digital banking tools for 
-        underserved consumers in emerging markets.
+        , a startup dedicated to democratizing financial services by offering innovative digital
+        banking tools to underserved consumers in emerging markets.
       </p>
 
       <p>

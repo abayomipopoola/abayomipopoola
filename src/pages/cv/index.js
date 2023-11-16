@@ -168,7 +168,23 @@ class CvPage extends React.Component {
             <Dt>Experience</Dt>
             <Dd>
               <H2>
-                Dot.ai <span>Director, Engineering – Sep, 2021 - Present</span>
+                Maxdrive.ai <span>VP, Engineering – Nov, 2023 - Present</span>
+              </H2>
+              <P>
+                A leading technology-driven company committed to addressing mobility challenges across Africa
+              </P>
+              <Ul>
+                <li>
+                  Setting technology strategy, and ensuring intense executions.
+                </li>
+                <li>
+                  Developing standards and procedures to ensure that quality
+                  standards are met and consistent.
+                </li>
+              </Ul>
+
+              <H2>
+                Dot.ai <span>Director, Engineering – Sep, 2021 - Jun, 2023</span>
               </H2>
               <P>
                 A fintech startup, democratising financial services with digital

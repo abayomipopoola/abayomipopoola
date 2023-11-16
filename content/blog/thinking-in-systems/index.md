@@ -15,6 +15,8 @@ This article provides a comprehensive introduction to the book and its central i
 
 Donella introduces the concept of _systems_ as a central tenet of systems thinking. A system is defined as a set of interconnected components that work together to achieve a specific purpose or function. Systems can exist in various contexts, such as natural ecosystems, organizational structures, social networks, and technological infrastructures. They can range from simple to highly complex, and their components can be either tangible (e.g., objects, people) or intangible (e.g., information, relationships).
 
+> _**A system is more than the sum of its parts**_. It may exhibit adaptive, dynamic, goal-seeking, self-preserving, and sometimes evolutionary behavior.
+
 Donella emphasizes that systems are more than just the sum of their parts; it is the interconnections and interactions between components that give rise to the system’s overall behaviour. To understand a system, one must not only consider its individual components but also the relationships between those components and how they contribute to the system’s overall function.
 
 One of the key insights from _Thinking in Systems_ is that systems exhibit certain properties and behaviours that cannot be deduced by simply examining their individual components in isolation. These emergent properties arise from the system’s structure and the interactions between its components. For instance, a traffic jam is an emergent property of the transportation system, resulting from the interactions between vehicles, roads, and traffic control measures.
@@ -119,21 +121,21 @@ Understanding these characteristics can help us better analyze and manage comple
 
 1. **Resilience**: Resilience refers to a system’s ability to withstand shocks or disturbances and recover from them. A resilient system can maintain its functions and structure in the face of challenges, ensuring its long-term stability and sustainability. Meadows emphasizes the importance of resilience in both natural and human-made systems, as it allows them to adapt to changing conditions and survive potential crises. Resilience can be enhanced in a system through various means, such as:
 
-   - _Diversity_: Systems with diverse components are often more resilient, as they can draw upon a range of responses to disturbances and adapt more effectively.
-   - _Redundancy_: Having multiple, redundant elements that can perform the same function can increase a system’s resilience, as it can continue to function even if some of its components fail.
-   - _Modularity_: A modular system, where components are organized into semi-independent subunits, can be more resilient, as disturbances in one module are less likely to spread throughout the entire system.
+   - _**Diversity**_: Systems with diverse components are often more resilient, as they can draw upon a range of responses to disturbances and adapt more effectively.
+   - _**Redundancy**_: Having multiple, redundant elements that can perform the same function can increase a system’s resilience, as it can continue to function even if some of its components fail.
+   - _**Modularity**_: A modular system, where components are organized into semi-independent subunits, can be more resilient, as disturbances in one module are less likely to spread throughout the entire system.
 
 2. **Self-Organization**: Self-organization is the ability of a system to organize and maintain its structure without external control or intervention. Self-organizing systems can adapt and evolve in response to changes in their environment, ensuring their continued functioning and survival. Meadows highlights the importance of understanding self-organization in complex systems, as it can lead to the emergence of new patterns, structures, and behaviours that may not be predictable or easily controlled. Self-organization can be encouraged or hindered by various factors, including:
 
-   - _Feedback loops_: Positive and negative feedback loops within a system can influence its self-organization by amplifying or dampening changes in the system.
-   - _Rules_: The rules governing a system, such as its decision-making processes or resource allocation, can either enable or constrain its self-organization.
-   - _Initial conditions_: The starting conditions of a system can have a significant impact on its self-organization, as they can shape the patterns and structures that emerge over time.
+   - _**Feedback loops**_: Positive and negative feedback loops within a system can influence its self-organization by amplifying or dampening changes in the system.
+   - _**Rules**_: The rules governing a system, such as its decision-making processes or resource allocation, can either enable or constrain its self-organization.
+   - _**Initial conditions**_: The starting conditions of a system can have a significant impact on its self-organization, as they can shape the patterns and structures that emerge over time.
 
 3. **Hierarchy**: Hierarchy refers to the organization of a system into different levels or layers, with each level being composed of smaller subsystems and contributing to the functioning of larger super-systems. Meadows explains that hierarchy is a common feature of complex systems, as it allows them to manage information, allocate resources, and coordinate activities more efficiently. Understanding hierarchy in systems can provide insights into:
 
-   - _System behaviour_: Analyzing the interactions between different levels of a hierarchical system can help us understand its overall behaviour and identify potential leverage points for intervention.
-   - _System vulnerability_: Recognizing the vulnerabilities of a hierarchical system, such as the dependence on key components or the concentration of power at certain levels, can help us develop strategies to increase its resilience and stability.
-   - _System evolution_: Examining the evolution of hierarchical structures in a system can provide insights into its adaptive processes and the factors that drive its development and change.
+   - _**System behaviour**_: Analyzing the interactions between different levels of a hierarchical system can help us understand its overall behaviour and identify potential leverage points for intervention.
+   - _**System vulnerability**_: Recognizing the vulnerabilities of a hierarchical system, such as the dependence on key components or the concentration of power at certain levels, can help us develop strategies to increase its resilience and stability.
+   - _**System evolution**_: Examining the evolution of hierarchical structures in a system can provide insights into its adaptive processes and the factors that drive its development and change.
 
 <p class="three-dots">***</p>
 
