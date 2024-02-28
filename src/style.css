@@ -27,7 +27,7 @@
 	--spacing-20: 5rem;
 	--spacing-24: 6rem;
 	--spacing-32: 8rem;
-	--fontFamily-sans: ColfaxAIBold, helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+	--fontFamily-sans: Helvetica, Arial, sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
 	"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
 	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--fontFamily-serif: sans-serif, "Georgia", Cambria, "Times New Roman",
@@ -90,11 +90,6 @@ q {
 @font-face {
 	font-family: 'SourceSerifProItalic';
 	src: url('/fonts/source-serif-pro-italic.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'ColfaxAIBold';
-	src: url('/fonts/ColfaxAIBold.woff2') format('woff2');
 }
 
 /* HTML elements */
