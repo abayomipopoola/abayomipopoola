@@ -5,11 +5,8 @@ type Props = ButtonProps;
 
 const { url = Astro.request.url, description, title } = Astro.props;
 
-let baseURL = "https://www.linkedin.com/shareArticle?mini=true";
-let params = new URLSearchParams({ url: url });
-
-if (title) params.append("title", title + " — " + description);
-if (description) params.append("summary", description);
+let baseURL = "https://www.linkedin.com/shareArticle";
+let params = new URLSearchParams({ mini: "true", url: url });
 
 let URL = `${baseURL}?${params.toString()}`;
 ---

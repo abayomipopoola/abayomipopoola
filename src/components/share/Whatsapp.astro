@@ -2,23 +2,23 @@
 import type ButtonProps from "@src/utils/share-button-type";
 
 type Props = ButtonProps;
+
 const { url = Astro.request.url, description, title } = Astro.props;
 
-const isMobileOrTablet = () =>
-  typeof window !== "undefined" &&
-  /(android|iphone|ipad|mobile)/i.test(window.navigator.userAgent);
-let baseURL = `https://${isMobileOrTablet() ? "api" : "web"}.whatsapp.com/send`;
-let params = new URLSearchParams({ url: url });
+let messageParts = [];
 
-if (title) params.append("text", title + " — " + description);
+if (title) messageParts.push(title + " — " + description);
+if (url) messageParts.push(url);
 
-let URL = `${baseURL}?${params.toString()}`;
+const message = messageParts.join(" ").trim();
+const encodedMessage = encodeURIComponent(message);
+const URL = `https://api.whatsapp.com/send?text=${encodedMessage}`;
 ---
 
 <a
   class="social-share-btn"
   target="_blank"
-  href={encodeURI(URL)}
+  href={URL}
   rel="noopener noreferrer"
   data-action="share/whatsapp/share"
 >
