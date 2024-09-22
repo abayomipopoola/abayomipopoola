@@ -1,0 +1,33 @@
+---
+import { slugifyStr } from "@src/utils/slugify";
+import FormatDate from "./FormatDate.astro";
+import type { CollectionEntry } from "astro:content";
+
+type BlogPost = CollectionEntry<"blog">;
+const { post }: Record<string, any> | { post: BlogPost } = Astro.props;
+const { remarkPluginFrontmatter } = await post.render();
+---
+
+<h3 class="py-2 text-lg font-medium">
+  <a href={`/${post.slug}/`}>
+    {post.data.title}
+  </a>
+</h3>
+<p class="text-zinc-600">{post.data.description}</p>
+<div class="mb-1 flex flex-col gap-2 border-b py-2 sm:flex-row sm:items-center">
+  <div class="shrink-0 text-xs text-zinc-600">
+    <FormatDate date={post.data.date} /> • {remarkPluginFrontmatter.minutesRead}
+  </div>
+  <div class="flex shrink-0 gap-2 capitalize">
+    {
+      (post.data.tags || [])?.map((tag: string) => (
+        <a
+          class="rounded-2xl border border-zinc-300 px-2 py-0.5 text-xs text-[var(--link-color)] no-underline transition-all duration-700 hover:border-zinc-700"
+          href={`/tags/${slugifyStr(tag)}`}
+        >
+          {tag}
+        </a>
+      ))
+    }
+  </div>
+</div>

@@ -1,0 +1,56 @@
+---
+import EmailShareButton from "@src/components/share/Email.astro";
+import LinkedInShareButton from "@src/components/share/LinkedIn.astro";
+import TwitterShareButton from "@src/components/share/Twitter.astro";
+import WhatsAppShareButton from "@src/components/share/Whatsapp.astro";
+import type ButtonProps from "@src/utils/share-button-type";
+
+interface Props extends ButtonProps {
+  buttons?: Object[];
+}
+
+const DEFAULT_COMPONENTS = [
+  TwitterShareButton,
+  LinkedInShareButton,
+  EmailShareButton,
+  WhatsAppShareButton,
+];
+
+const {
+  buttons = DEFAULT_COMPONENTS,
+  url = Astro.request.url,
+  title,
+  description,
+  via,
+} = Astro.props;
+---
+
+<slot name="astro-social-share-css">
+  <style is:global>
+    .astro-social-share {
+      margin: 20px 0px;
+      height: 16px;
+      display: inline-flex;
+    }
+    .astro-social-share a {
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .astro-social-share svg {
+      height: 16px;
+      fill: #71717a; /* the hex value for zinc-600 */
+    }
+  </style>
+</slot>
+<div class="astro-social-share">
+  {
+    buttons.map((ShareButton: any) => (
+      <ShareButton
+        url={url}
+        description={description}
+        via={via}
+        title={title}
+      />
+    ))
+  }
+</div>

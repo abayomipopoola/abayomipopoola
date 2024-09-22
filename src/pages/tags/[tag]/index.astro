@@ -1,0 +1,43 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import BaseLayout from "@src/layouts/BaseLayout.astro";
+import PostsByYear from "@src/components/PostsByYear.astro";
+import { slugifyStr, unslugify } from "@src/utils/slugify";
+
+type BlogPost = CollectionEntry<"blog">;
+export const getStaticPaths = async () => {
+  const allPosts: BlogPost[] = await getCollection("blog");
+  return [
+    ...new Set(
+      allPosts
+        .map((post) => post.data.tags)
+        .flat()
+        .filter((tag) => !!tag),
+    ),
+  ].map((tag) => ({ params: { tag: slugifyStr(tag || "") } }));
+};
+
+const { tag } = Astro.params;
+const allPosts: BlogPost[] = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const taggedPosts = allPosts.filter((post) =>
+  post.data.tags?.map((tag: string) => slugifyStr(tag)).includes(tag || ""),
+);
+const totalCount = taggedPosts.length;
+const titleText = `${totalCount} ${totalCount === 1 ? "post" : "posts"} in `; // leading space is intentional.
+const tagText = unslugify(tag || "");
+const title = titleText + tagText;
+const description = titleText + tagText;
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="container">
+    <div class="mb-10">
+      <h2 class="mb-2 text-2xl font-bold">
+        {titleText}<span class="italic">{tagText}</span>
+      </h2>
+    </div>
+    <PostsByYear posts={taggedPosts} />
+  </div>
+</BaseLayout>

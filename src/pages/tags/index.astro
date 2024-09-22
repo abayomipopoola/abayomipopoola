@@ -1,0 +1,83 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import BaseLayout from "@src/layouts/BaseLayout.astro";
+import { slugifyStr } from "@src/utils/slugify";
+
+type BlogPost = CollectionEntry<"blog">;
+interface Tag {
+  value: string;
+  label: string;
+  postCount: number;
+}
+
+function groupTagsByFirstLetter(tags: Tag[]) {
+  const grouped = tags.reduce(
+    (acc, tag) => {
+      const firstLetter = tag.label[0].toUpperCase();
+      if (!acc[firstLetter]) {
+        acc[firstLetter] = [];
+      }
+      acc[firstLetter].push(tag);
+      return acc;
+    },
+    {} as Record<string, Tag[]>,
+  );
+
+  return Object.entries(grouped)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([letter, tags]) => ({
+      letter,
+      tags: tags.sort((a, b) => a.label.localeCompare(b.label)),
+    }));
+}
+
+const allPosts: BlogPost[] = await getCollection("blog");
+const mappedTags: { [key: string]: Tag } = {};
+for (const post of allPosts) {
+  for (const tag of post.data?.tags || []) {
+    const tagValue = slugifyStr(tag);
+    if (mappedTags[tagValue]) {
+      mappedTags[tagValue].postCount += 1;
+    } else {
+      const _tag: Tag = {
+        value: tagValue,
+        label: tag,
+        postCount: 1,
+      };
+      mappedTags[tagValue] = _tag;
+    }
+  }
+}
+const groupedTags = groupTagsByFirstLetter(Object.values(mappedTags));
+const title = `Posts Tags`;
+---
+
+<BaseLayout title={title}>
+  <div class="container">
+    <div class="mb-10">
+      <h2 class="mb-2 text-2xl font-bold">{title}</h2>
+    </div>
+    <div>
+      {
+        groupedTags.map(({ letter, tags }) => (
+          <div class="mb-8 flex gap-2 capitalize">
+            <h2 class="w-7 shrink-0 text-2xl font-bold text-zinc-800">
+              {letter}
+            </h2>
+            <div class="flex flex-wrap gap-2">
+              {(tags || [])?.map((tag: Tag) => (
+                <a
+                  class="rounded-2xl border border-zinc-300 px-3 py-1 text-sm text-zinc-700 no-underline transition-all duration-700 hover:border-zinc-700"
+                  href={`/tags/${slugifyStr(tag.value)}/`}
+                >
+                  {tag.label} ({tag.postCount})
+                </a>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

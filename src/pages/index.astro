@@ -1,0 +1,68 @@
+---
+import { SITE_TITLE, SITE_TAGLINE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import type { CollectionEntry } from "astro:content";
+import DP from "@src/assets/img/ava.jpg";
+import Prose from "../components/Prose.astro";
+import PostItem from "../components/PostItem.astro";
+
+type BlogPost = CollectionEntry<"blog">;
+
+const posts = (await getCollection("blog"))
+  .sort(
+    (a: BlogPost, b: BlogPost) => b.data.date.valueOf() - a.data.date.valueOf(),
+  )
+  .slice(0, 8);
+---
+
+<BaseLayout
+  title={SITE_TITLE + " - " + SITE_TAGLINE}
+  description={SITE_DESCRIPTION}
+>
+  <div class="container">
+    <div class="mb-10 w-full gap-16 md:flex md:items-center">
+      <div class="text-pretty leading-9">
+        <h2 class="mb-4 text-2xl font-bold">Hey there!</h2>
+        <Prose>
+          <div class="text-lg">
+            <p>
+              Welcome to my blog! I’m Abayomi, and here I share thoughts on
+              topics that captivate me—ideas and insights I believe are worth
+              exploring. You can also find me on <a
+                href="https://x.com/abayomipo"
+                target="_blank">𝕏</a
+              >.
+            </p>
+            <p>
+              I'm an aspiring comprehensivist. I specialize in distributed
+              systems, backend architecture, and cloud infrastructure.
+            </p>
+          </div>
+        </Prose>
+      </div>
+      <Image
+        src={DP}
+        alt="Abayomi Popoola's pic"
+        width={250}
+        loading="eager"
+        class="mx-4 hidden rotate-3 rounded-3xl md:mx-0 md:block"
+      />
+    </div>
+    <main>
+      <div class="mb-12 mt-6">
+        <div class="mb-1 flex justify-between gap-2 border-b">
+          <h2 class="mb-3 text-lg font-bold">Recent Posts</h2>
+          <a href="/posts/" class="inline-block py-2 italic text-zinc-600"
+            >all posts &raquo;</a
+          >
+        </div>
+        <div>
+          {posts.map((post: BlogPost) => <PostItem post={post} />)}
+        </div>
+        <div class="text-right"></div>
+      </div>
+    </main>
+  </div>
+</BaseLayout>

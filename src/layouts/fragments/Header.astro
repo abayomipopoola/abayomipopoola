@@ -1,0 +1,52 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+
+const menu = [
+  {
+    link: "/posts/",
+    label: "Posts",
+  },
+  {
+    link: "/tags/",
+    label: "Tags",
+  },
+  {
+    link: "/about/",
+    label: "About",
+  },
+];
+---
+
+<header
+  id="site-header"
+  class:list={[
+    "z-[999] flex w-full items-center border-[var(--soft-border-color)] transition duration-300",
+  ]}
+>
+  <div class="container">
+    <nav class="flex items-center justify-between gap-4 py-3">
+      <span class="m-0 text-3xl font-bold">
+        <a
+          class="flex items-center py-3 text-[var(--link-color)]"
+          href="/"
+          aria-label="Home"
+        >
+          𝔸𝕓𝕒𝕪𝕠𝕞𝕚
+        </a>
+      </span>
+      <div class="flex">
+        <div class="flex px-2.5 leading-tight backdrop-blur-md">
+          {
+            menu.map((item) => (
+              <div class="px-2.5 text-sm">
+                <HeaderLink class="flex items-center py-3" href={item.link}>
+                  {item.label}
+                </HeaderLink>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

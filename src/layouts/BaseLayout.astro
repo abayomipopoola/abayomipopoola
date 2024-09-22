@@ -1,0 +1,46 @@
+---
+import BaseHead from "./fragments/BaseHead.astro";
+import Header from "./fragments/Header.astro";
+import Footer from "./fragments/Footer.astro";
+import { loadEnv } from "vite";
+
+const { GTAG_TRACKING_ID } = loadEnv(
+  process.env.NODE_ENV || "production",
+  process.cwd(),
+  "",
+);
+const { title, description, image } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} image={image} />
+  </head>
+  <body class="bg-[#f3f6fc]">
+    <Header />
+    <div class="min-h-[calc(100vh-160px)] py-8">
+      <slot />
+    </div>
+    <Footer />
+    <!-- Google tag (gtag.js) -->
+    {
+      GTAG_TRACKING_ID && (
+        <>
+          <script
+            type="text/partytown"
+            async
+            src={
+              "https://www.googletagmanager.com/gtag/js?id=" + GTAG_TRACKING_ID
+            }
+          />
+          <script type="text/partytown" define:vars={{ GTAG_TRACKING_ID }}>
+            window.dataLayer = window.dataLayer || []; function gtag(){" "}
+            {dataLayer.push(arguments)}
+            gtag('js', new Date()); gtag('config', GTAG_MEASUREMENT_ID);
+          </script>
+        </>
+      )
+    }
+  </body>
+</html>

@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Prose from "../components/Prose.astro";
+---
+
+<BaseLayout title="About Me" description="Lorem ipsum dolor sit amet">
+  <div class="container">
+    <article>
+      <div class="mb-10 w-full gap-16 md:flex md:items-center">
+        <div class="text-pretty leading-9">
+          <h2 class="mb-4 text-2xl font-bold">Hello!</h2>
+          <Prose>
+            <div class="text-lg">
+              <p>
+                I’m Abayomi Popoola, a programmer and entrepreneur with a
+                passion for building businesses. My technical expertise spans
+                distributed systems, back-end architecture, and cloud
+                infrastructure.
+              </p>
+
+              <p>
+                Currently, I serve as the VP of Engineering at Max, a leading
+                tech company tackling mobility challenges across Africa.
+                Previously, I was the Director of Engineering at <a
+                  href="https://www.dot.ai/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Dot
+                </a>, a startup democratizing financial services through
+                innovative digital banking tools in emerging markets.
+              </p>
+
+              <p>
+                My focus is on setting technology strategy and driving execution
+                for impactful solutions, particularly in the fintech space. When
+                not immersed in these endeavors, I’m typically working remotely,
+                leveraging technology to create and grow innovative businesses.
+              </p>
+
+              <p>
+                You can also shoot me <a
+                  href="mailto:abayomi@hey.com"
+                  target="_blank"
+                  rel="noreferrer">an email</a
+                >.
+              </p>
+              <p>
+                Check my technica posts on <a
+                  href="https://medium.com/@abayomip"
+                  target="_blank"
+                  rel="noreferrer">Medium</a
+                >.
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/abayomipopoola/"
+                  target="_blank"
+                  rel="noreferrer">LinkedIn</a
+                > profile.
+              </p>
+            </div>
+          </Prose>
+        </div>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

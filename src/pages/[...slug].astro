@@ -1,0 +1,218 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Prose from "../components/Prose.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import FormatDate from "../components/FormatDate.astro";
+import SocialShare from "../components/SocialShare.astro";
+import { slugifyStr } from "@src/utils/slugify";
+
+type BlogPost = CollectionEntry<"blog">;
+export const getStaticPaths = async () => {
+  const posts: BlogPost[] = await getCollection("blog");
+  posts.sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  );
+  return posts.map((post, index) => {
+    const prev = index + 1 < posts.length ? posts[index + 1] : undefined;
+    const next = index > 0 ? posts[index - 1] : undefined;
+    return {
+      params: { slug: post.slug },
+      props: { post, prev, next },
+    };
+  });
+};
+
+const po = Astro.props;
+const post = po.post;
+const {
+  data: { title, seoTitle, description, coverImage, date, updatedDate, tags },
+} = post;
+const { Content, remarkPluginFrontmatter } = await post.render();
+---
+
+<BaseLayout
+  title={seoTitle || title}
+  description={description}
+  image={coverImage?.src || undefined}
+>
+  <div class="container gap-10 lg:flex">
+    <main class="grow overflow-hidden">
+      <article>
+        <Prose>
+          <div>
+            <h2 class="!my-1 leading-tight">{title}</h2>
+            <div
+              class="mt-2 flex flex-col gap-3 py-1 text-sm font-[500] sm:mt-0 sm:flex-row sm:items-center sm:justify-between md:text-right"
+            >
+              <div class="date-time">
+                {
+                  updatedDate ? (
+                    <div class="shrink-0 text-xs text-zinc-600">
+                      <FormatDate date={updatedDate} /> •{" "}
+                      {remarkPluginFrontmatter.minutesRead}
+                    </div>
+                  ) : (
+                    <div class="shrink-0 text-xs text-zinc-600">
+                      <FormatDate date={date} /> •{" "}
+                      {remarkPluginFrontmatter.minutesRead}
+                    </div>
+                  )
+                }
+              </div>
+              <SocialShare description={description} title={title} />
+            </div>
+          </div>
+          <div class="overflow-hidden py-3">
+            {
+              coverImage && (
+                <Image
+                  class="m-0 w-full !rounded-2xl lg:mb-2"
+                  src={coverImage}
+                  alt={title}
+                  loading="eager"
+                />
+              )
+            }
+          </div>
+          <Content />
+          {
+            (
+              <div class="tags-highlight flex gap-2 capitalize">
+                {(tags || [])?.map((tag: string) => (
+                  <a
+                    class="rounded-2xl border border-zinc-300 px-2 py-0.5 text-xs text-[var(--link-color)] no-underline transition-all duration-700 hover:border-zinc-700"
+                    href={`/tags/${slugifyStr(tag)}`}
+                  >
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            )
+          }
+        </Prose>
+      </article>
+      <div class="mx-[25%] mb-8 border-b-4 border-double py-4"></div>
+      <nav class="prev-next mb-8">
+        <ul class="flex list-none flex-wrap justify-between p-0">
+          <li>
+            {
+              po.prev && (
+                <a
+                  href={`/${po.prev.slug}/`}
+                  rel="prev"
+                  class="text-[var(--link-color)]"
+                >
+                  ← {po.prev.data.title}
+                </a>
+              )
+            }
+          </li>
+          <li>
+            {
+              po.next && (
+                <a
+                  href={`/${po.next.slug}/`}
+                  rel="next"
+                  class="text-[var(--link-color)]"
+                >
+                  {po.next.data.title} →
+                </a>
+              )
+            }
+          </li>
+        </ul>
+      </nav>
+      <section class="subscribe-section">
+        <div
+          class="mx-auto max-w-[480px] -rotate-1 transform px-4 py-3 sm:px-0"
+        >
+          <div
+            class="bg--[#f3f6fc] overflow-visible rounded-md border border-black p-6 shadow-md"
+          >
+            <form
+              class="flex flex-col"
+              action="https://world.hey.com/abayomi/subscribers"
+              accept-charset="UTF-8"
+              data-remote="true"
+              method="post"
+            >
+              <label
+                for="subscriber[email_address]"
+                class="mb-4 text-center font-bold"
+              >
+                Subscribe below to get future posts
+              </label>
+              <div class="flex flex-col sm:flex-row">
+                <input
+                  type="email"
+                  name="subscriber[email_address]"
+                  placeholder="Type your email..."
+                  class="mb-2 flex-grow rounded-full border border-black bg-[#f3f6fc] px-4 py-2 focus:border-[var(--link-color)] focus:outline-none focus:ring-1 focus:ring-[var(--link-color)] sm:mb-0 sm:rounded-r-none sm:border-r-0"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="rounded-full border border-[var(--link-color)] bg-[var(--link-color)] px-6 py-2 text-white focus:outline-none focus:ring-2 focus:ring-black sm:rounded-l-none"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <p class="mt-4 text-center">
+              Or grab the <a
+                href="#"
+                class="text-[var(--link-color)] hover:underline">RSS feed</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</BaseLayout>
+
+<script async is:inline>
+  const anchors = document.querySelectorAll(".prose h2[id], .prose h3[id]");
+  const links = document.querySelectorAll("nav.toc ul li a");
+
+  function observeToc() {
+    if (
+      typeof anchors != "undefined" &&
+      anchors != null &&
+      typeof links != "undefined" &&
+      links != null
+    ) {
+      let scrollTop = window.scrollY;
+
+      // highlight the last scrolled-to: set everything inactive first
+      for (const link of links) {
+        link.classList.add("border-transparent", "text-inherit");
+        link.classList.remove(
+          "bg-[var(--background-surface-color)]",
+          "border-[var(--soft-border-color)]",
+          "text-[var(--link-color)]",
+        );
+      }
+      // then iterate backwards, on the first match highlight it and break
+      for (var i = anchors.length - 1; i >= 0; i--) {
+        if (scrollTop > anchors[i].offsetTop - 80) {
+          links[i].classList.remove("border-transparent", "text-inherit");
+          links[i].classList.add(
+            "bg-[var(--background-surface-color)]",
+            "border-[var(--soft-border-color)]",
+            "text-[var(--link-color)]",
+          );
+          break;
+        }
+      }
+    }
+  }
+
+  window.addEventListener("scroll", (event) => {
+    observeToc(event);
+  });
+  window.addEventListener("hashchange", (event) => {
+    observeToc(event);
+  });
+</script>
