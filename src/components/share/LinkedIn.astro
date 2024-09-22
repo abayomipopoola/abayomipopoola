@@ -3,12 +3,9 @@ import type ButtonProps from "@src/utils/share-button-type";
 
 type Props = ButtonProps;
 
-const { url = Astro.request.url, description, title } = Astro.props;
+const { url = Astro.request.url } = Astro.props;
 
-let baseURL = "https://www.linkedin.com/shareArticle";
-let params = new URLSearchParams({ mini: "true", url: url });
-
-let URL = `${baseURL}?${params.toString()}`;
+let URL = `https://www.linkedin.com/shareArticle?mini=true&url=${url}`;
 ---
 
 <a

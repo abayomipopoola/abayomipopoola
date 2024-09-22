@@ -1,5 +1,6 @@
 ---
 import LinkedInShareButton from "@src/components/share/LinkedIn.astro";
+import FacebookShareButton from "@src/components/share/Facebook.astro";
 import TwitterShareButton from "@src/components/share/Twitter.astro";
 import WhatsAppShareButton from "@src/components/share/Whatsapp.astro";
 import type ButtonProps from "@src/utils/share-button-type";
@@ -10,6 +11,7 @@ interface Props extends ButtonProps {
 
 const DEFAULT_COMPONENTS = [
   TwitterShareButton,
+  FacebookShareButton,
   LinkedInShareButton,
   WhatsAppShareButton,
 ];
