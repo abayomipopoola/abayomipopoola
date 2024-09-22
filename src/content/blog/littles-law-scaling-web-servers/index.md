@@ -9,7 +9,7 @@ coverImage: "./loom.jpg"
 
 Microservices design is a key component of modern app development. This architecture, which involves composing multiple _(mostly)_ HTTP or gRPC services, offers numerous advantages, including code reuse, maintainability, scalability, and fault tolerance.
 
-In the context of this post, scalability refers to the software's ability to optimize performance based on available resources, while fault tolerance ensures that the system remains operational even when certain components fail. The interplay between these two aspects becomes crucial when dealing with microservices.
+In the context of this post, scalability refers to the software’s ability to optimize performance based on available resources, while fault tolerance ensures that the system remains operational even when certain components fail. The interplay between these two aspects becomes crucial when dealing with microservices.
 
 ### Little’s Law: Decoding Server Performance
 
