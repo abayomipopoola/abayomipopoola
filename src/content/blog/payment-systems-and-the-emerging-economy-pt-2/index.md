@@ -13,13 +13,13 @@ This is the concluding part of the _Payment Systems, and the Emerging Economy_ b
 
 According to the World Bank, financial inclusion is a key enabler in reducing poverty and boosting prosperity.
 
-About 1.7 billion adults worldwide still don’t have access to a bank account <a href="https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter2.pdf" target="_blank" class="read-more">_(Worldbank globalfindex)_</a>.
+About 1.7 billion adults worldwide still don't have access to a bank account <a href="https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter2.pdf" target="_blank" class="read-more">_(Worldbank globalfindex)_</a>.
 
 ![Unbanked populace data](./unbanked_data.jpg)
 
 Financial inclusion means that individuals and businesses have access to useful and affordable financial products and services that meet their needs – transactions, payments, savings, credit and insurance – delivered in a responsible and sustainable way.
 
-Apart from protecting your money from theft, a bank account connects people to the formal financial system and enables them to make day-to-day living less complicated as well as allowing them to build up their assets. Lack of access to financial products and services means limited access to credit. A majority of the world’s poor population work in the informal sector. They grow crops on a small scale and rear animals. Others are artisans who sell wares to the population while others are small-scale vendors who sell basic items such as food and vegetables. However, despite their ability to make further investments in their little enterprises and improve their lives, they lack access to credit which would have helped them achieve such a goal, <a href="https://www.cgap.org/research/publication/financial-inclusion-and-development-recent-impact-evidence" target="_blank" >as this research shows</a>.
+Apart from protecting your money from theft, a bank account connects people to the formal financial system and enables them to make day-to-day living less complicated as well as allowing them to build up their assets. Lack of access to financial products and services means limited access to credit. A majority of the world's poor population work in the informal sector. They grow crops on a small scale and rear animals. Others are artisans who sell wares to the population while others are small-scale vendors who sell basic items such as food and vegetables. However, despite their ability to make further investments in their little enterprises and improve their lives, they lack access to credit which would have helped them achieve such a goal, <a href="https://www.cgap.org/research/publication/financial-inclusion-and-development-recent-impact-evidence" target="_blank" >as this research shows</a>.
 
 #### Financial Inclusion Efforts in Nigeria
 
@@ -39,11 +39,11 @@ The scope of permissible activities as detailed in the guidelines includes essen
 
 #### POS Business
 
-A banking agents who run a _POS business_, as it’s predominantly called, usually owns and operates a retail outlet, or a kioks where they conduct financial transactions that allow customers to deposit, withdraw, transfer funds, pay bills, recharge airtime, do balance inquiry, and other related services.
+A banking agents who run a _POS business_, as it's predominantly called, usually owns and operates a retail outlet, or a kioks where they conduct financial transactions that allow customers to deposit, withdraw, transfer funds, pay bills, recharge airtime, do balance inquiry, and other related services.
 
 The business thrives in rural, and semi-urban centres with the unbanked & underbanked populace. Banks or super-agents equip agents with point-of-sale (POS) card reader, mobile phone, barcode scanner, personal identification number (PIN) pads, personal computer, etc, to be able to transact.
 
-Here’s an exhaustive list of services that can be rendered:
+Here's an exhaustive list of services that can be rendered:
 
 - Cash-in (deposit money)
 - Cash-out (withdraw money)
@@ -55,7 +55,7 @@ Here’s an exhaustive list of services that can be rendered:
 - Collection of document
 - Micro-loans
 
-Agency banking offers a seamless solution for banks, retailers, and customers. It allows banks to expand their services in the remote areas where they previously wouldn’t have been able to reach.
+Agency banking offers a seamless solution for banks, retailers, and customers. It allows banks to expand their services in the remote areas where they previously wouldn't have been able to reach.
 
 Agency banking is transforming banking all around the world. It will be interesting to see how much impact will it have on the banking industry soon.
 
@@ -112,7 +112,7 @@ premium pricing for customers while using low-cost bank rails to transfer funds.
 
 <small> References:
 <a href="https://www.mckinsey.com/industries/financial-services" target="_blank">
-Mckinsey’s financial services insights</a>;
+Mckinsey's financial services insights</a>;
 <a href="https://www.chetu.com/blogs/finance-2/" target="_blank">
 Chetu software solutions blog</a>.
 </small>

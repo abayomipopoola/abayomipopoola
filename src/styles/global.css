@@ -39,6 +39,8 @@
 	}
 	.prose strong {
 		font-family: SourceSerifProBold, serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 	.prose a {
 		color: var(--link-color);
