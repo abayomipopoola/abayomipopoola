@@ -11,7 +11,8 @@ Here is part four of the Naval's expanded points from his viral tweetstorm, "How
 
 ### Labor and Capital Are Old Leverage
 
-> "Give me a lever long enough, and a place to stand, and I will move the earth." - Archimedes
+> "Give me a lever long enough, and a place to stand, and I will move the earth."<br>
+— Archimedes
 
 #### Our brains aren't evolved to comprehend new forms of leverage
 
