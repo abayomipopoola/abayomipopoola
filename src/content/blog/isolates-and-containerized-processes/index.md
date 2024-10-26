@@ -78,7 +78,7 @@ Despite these constraints, isolates excel in specific scenarios that leverage th
 
 ### Conclusion
 
-Isolates represent an innovative evolution in code execution paradigms, particularly as implemented in Chrome's V8 engine. While containers remain valuable for many use cases with their benefits of portability and consistent environments, isolates offer a compelling alternative for scenarios requiring rapid startup times and efficient resource utilization.
+While containers remain valuable for many use cases with their benefits of portability and consistent environments, isolates offer a compelling alternative for scenarios requiring rapid startup times and efficient resource utilization.
 
 As computing continues to evolve, especially in serverless and edge computing contexts, understanding and leveraging the strengths of both approaches will be crucial for optimizing application performance and resource usage. Selecting the right execution model depends on the specific needs of the application, and a hybrid approach may often provide the best balance between flexibility and efficiency.
 
