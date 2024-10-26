@@ -11,7 +11,7 @@ The evolution of computing paradigms has been a journey toward greater efficienc
 
 **Isolates** are lightweight execution contexts that provide a secure, isolated environment for code execution within a shared runtime. Developed as part of the Chrome's V8 JavaScript engine, isolates offer a sandboxed space where functions can run independently, without interference from other processes. This makes them particularly well-suited for serverless architectures and edge computing.
 
-In this article, I'll explore the architectures, performance characteristics, security models, and real-world applications of both isolates and containerized processes. By examining these aspects in detail, we can better understand their respective strengths and use cases in modern computing environments.
+In this post, I'll explore the architectures, performance characteristics, security models, and real-world applications of both isolates and containerized processes. By examining these aspects in detail, we can better understand their respective strengths and use cases in modern computing environments.
 
 ### Containerized Processes
 
