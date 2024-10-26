@@ -9,7 +9,7 @@ coverImage: "./systems.jpg"
 
 **Thinking in Systems: A Primer**, is a groundbreaking book authored by the late Donella Meadows, an acclaimed environmental scientist, and systems analyst. The book, published posthumously in 2008, provides an accessible introduction to the field of systems thinking—a holistic approach to understanding the complex interconnections between components of a system. Donella's work has had a profound impact on various disciplines, including environmental science, economics, and public policy.
 
-This article provides a comprehensive introduction to the book and its central ideas, followed by a brief overview of systems thinking.
+This post provides a comprehensive introduction to the book and its central ideas, followed by a brief overview of systems thinking.
 
 ### Systems
 

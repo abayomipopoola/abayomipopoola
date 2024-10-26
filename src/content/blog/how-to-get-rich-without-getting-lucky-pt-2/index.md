@@ -7,7 +7,7 @@ slug: "how-to-get-rich-without-getting-lucky-pt-2"
 coverImage: "./feynman.jpeg"
 ---
 
-Here is part two of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised article here)_</a>.
+Here is part two of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
 ### Pick an industry where you can play long term games with long term people.
 

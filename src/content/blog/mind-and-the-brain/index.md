@@ -15,7 +15,7 @@ Programming a computer involves external software instructing the internal hardw
 
 While both are interconnected, some theorize the mind and brain as distinct entities. The brain, a sophisticated organ, operates like an intricate computer. It processes sensory inputs and motor commands based on conditioned reflexes. Yet, there's an element of our cognition—our self-awareness—that transcends this mechanistic description. This consciousness, often ascribed to the mind, hints at something more profound.
 
-Being aware of reading this very article or reflecting on one's existence is the magic of consciousness in action. But is this consciousness purely a function of our physical brain, or is it an external, more ethereal component? The distinction is still a topic of much debate and research.
+Being aware of reading this very post or reflecting on one's existence is the magic of consciousness in action. But is this consciousness purely a function of our physical brain, or is it an external, more ethereal component? The distinction is still a topic of much debate and research.
 
 ### The Power of the Mind
 

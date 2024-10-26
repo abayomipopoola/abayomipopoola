@@ -148,4 +148,4 @@ At Toyota, there is a philosophy of having a good process. It is as much a philo
 
 In conclusion, the success of Toyota's system revolves around its people. Highly competent and skilled people with a lot of hands-on experience, deep technical knowledge, and an eye for the overall system are prerequisites for successful product development. When you take a closer look into Toyota's operation, two things stand out in its product-development system: chief engineers using their expertise to gain leadership, and functional engineers using their expertise to reduce the amount of communication, supervision, trial and error, and confusion in the process. All the other coordinating mechanisms and practices serve to help highly skilled designers and engineers do their job effectively.
 
-<small> Ref: This article is heavily influenced by this publication - <a href="https://www.researchgate.net/publication/200552295" target="_blank">The Toyota Way in Services.</a></small>
+<small> Ref: This post is heavily influenced by this publication - <a href="https://www.researchgate.net/publication/200552295" target="_blank">The Toyota Way in Services.</a></small>

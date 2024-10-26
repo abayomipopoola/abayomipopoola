@@ -60,6 +60,6 @@ To encapsulate the essence of Eric's book, we can categorize its profound insigh
 - **Supple Design and Refinement**: The continuous process of refining the design to gain deeper insights and maintain flexibility.
 - **Strategic Design**: Concepts like bounded contexts, context maps, core domains, and subdomains, provide the overarching architecture and strategy for domain-driven design.
 
-It's worth noting that to truly grasp the nuances and intricacies of these concepts, immersing oneself in the book is essential. This article serves as a primer, a window into the vast world of Domain-Driven Design that Eric has so eloquently presented.
+It's worth noting that to truly grasp the nuances and intricacies of these concepts, immersing oneself in the book is essential. This post serves as a primer, a window into the vast world of Domain-Driven Design that Eric has so eloquently presented.
 
 <a href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215" target="_blank">Get the book here</a>.

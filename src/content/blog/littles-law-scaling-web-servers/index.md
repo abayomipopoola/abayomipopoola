@@ -96,4 +96,4 @@ In essence, lightweight threads offer a path to maximize hardware efficiency wit
 
 As the world continues its relentless march towards digital ubiquity, ensuring the scalability and fault tolerance of web applications becomes non-negotiable. While hardware advancements are laudable, the true bottleneck often lies in the software, especially the OS's thread management capabilities. By embracing functional programming, lightweight threads, and a thorough understanding of Little's Law, developers and system administrators can unlock the full potential of their servers, ensuring optimal performance even under duress.
 
-<small>References: this article is influenced by a <a href="https://inside.java/u/RonPressler/" target="_blank">series of presentations and articles</a> by _Ron Pressler (Tech lead, Project Loom)_</small>
+<small>References: this post is influenced by a <a href="https://inside.java/u/RonPressler/" target="_blank">series of presentations and articles</a> by _Ron Pressler (Tech lead, Project Loom)_</small>

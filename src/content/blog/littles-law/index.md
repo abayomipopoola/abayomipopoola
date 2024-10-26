@@ -9,7 +9,7 @@ coverImage: "./queue.jpg"
 
 Delving into the intricacies of complex systems often reveals foundational principles that capture their core essence. Little's Law, stemming from a branch of operations research called _Queueing Theory_, serves as a prime example. This principle, named after MIT's Professor John Little, intricately connects processes, workloads, and outcomes, highlighting the crucial balance underpinning efficient operations.
 
-I wrote <a href="/littles-law-scaling-web-servers" target="_blank">_an article_</a> on this topic—on its application to the Scalability and Fault Tolerance of modern web applications. In this piece, I provide a more accessible introduction, detailing its relevance to everyday life and management practices.
+I wrote <a href="/littles-law-scaling-web-servers" target="_blank">a post</a> on this topic—on its application to the Scalability and Fault Tolerance of modern web applications. In this piece, I provide a more accessible introduction, detailing its relevance to everyday life and management practices.
 
 ### Little's Law Simplified
 
