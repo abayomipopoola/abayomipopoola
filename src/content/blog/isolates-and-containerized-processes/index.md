@@ -17,7 +17,7 @@ In this post, I'll explore the architectures, performance characteristics, secur
 
 Containers are technologies that allow the packaging and isolation of applications with their entire runtime environment. By encapsulating an application and its dependencies, containers ensure consistent performance across different environments. In essence, they are a form of operating system-level virtualization, allowing multiple applications to run in isolated spaces while sharing the same OS kernel.
 
-> _**A virtual machine**_ is a piece of software that emulates a complete computer system, running its own operating system and kernel in isolation from its host machine. While virtual machines offer another way to host multiple environments on a single server, they consume significantly more resources than containers.
+> **_A virtual machine_** is a piece of software that emulates a complete computer system, running its own operating system and kernel in isolation from its host machine. While virtual machines offer another way to host multiple environments on a single server, they consume significantly more resources than containers.
 
 ![containers ](./containers.png)
 

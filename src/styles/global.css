@@ -31,16 +31,11 @@
 	}
 	h1, h2, h3, h4, h5, h6 {
 		font-family: Helvetica, Arial, sans-serif,sans-serif;
-		  color: #000000;
+		color: #000000;
 	}
 	.date-time, .tags-highlight {
-		font-family: helvetica, sans-serif;
+		font-family: Helvetica, Arial, sans-serif,sans-serif;
 		white-space: nowrap;
-	}
-	.prose strong {
-		font-family: SourceSerifProBold, serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
 	}
 	.prose a {
 		color: var(--link-color);
@@ -49,11 +44,10 @@
 	.prose a:hover {
 		color: #1a73e8DE;
 	}
-	.prose em {
-		font-family: SourceSerifProItalic, serif;
-	}
 	.prose strong {
 		font-family: SourceSerifProBold, serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 	.prose em {
 		font-family: SourceSerifProItalic, serif;
