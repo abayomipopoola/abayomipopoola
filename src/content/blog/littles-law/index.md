@@ -1,7 +1,7 @@
 ---
 title: Little's Law
 date: "2023-08-15T18:40:32.169Z"
-tags: [economics, lean]
+tags: [programming, system design]
 description: Explore the intricate dance between processes, workloads, and results, alluding to a delicate balance that is pivotal for efficient operations.
 slug: "littles-law"
 coverImage: "./queue.jpg"
