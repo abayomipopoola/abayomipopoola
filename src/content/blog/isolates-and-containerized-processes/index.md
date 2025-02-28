@@ -40,6 +40,7 @@ A sandbox provides an isolated execution environment where software runs indepen
 ![v8 sandboxing ](./sandboxing.png)
 
 V8's approach to sandboxing stands out from traditional solutions:
+
 - Unlike enterprise sandboxing products that rely on isolated virtual machines, V8's implementation maintains high performance.
 - Each process operates in its own sandbox, ensuring complete separation of JavaScript functions.
 - Memory isolation prevents code execution in one sandbox from affecting others.
@@ -69,6 +70,7 @@ Unlike containers that can package applications in any programming language, iso
 The container ecosystem benefits from mature tooling and standardization through the Open Container Initiative (OCI), enabling portable deployments across different runtimes and cloud providers. In contrast, isolates are tied to specific runtimes like V8, and their ecosystem, while growing, hasn't reached the same level of maturity in terms of orchestration, monitoring, and deployment tools.
 
 #### Optimal Use Cases
+
 Despite these constraints, isolates excel in specific scenarios that leverage their strengths. They are particularly well-suited for:
 
 - **Edge Computing**: Applications requiring minimal latency and efficient resource utilization at the network edge.
@@ -81,9 +83,6 @@ Despite these constraints, isolates excel in specific scenarios that leverage th
 While containers remain valuable for many use cases with their benefits of portability and consistent environments, isolates offer a compelling alternative for scenarios requiring rapid startup times and efficient resource utilization.
 
 As computing continues to evolve, especially in serverless and edge computing contexts, understanding and leveraging the strengths of both approaches will be crucial for optimizing application performance and resource usage. Selecting the right execution model depends on the specific needs of the application, and a hybrid approach may often provide the best balance between flexibility and efficiency.
-
-
-
 
 <small>References: <a href="https://v8.dev" target="_blank">Chrome's V8</a>; <a href="https://developers.cloudflare.com/workers/reference/how-workers-works" target="_blank">Cloudflare Workers</a>; <a href="https://www.cloudflare.com/en-gb/learning/serverless/glossary/what-is-chrome-v8/" target="_blank">What is Chrome's V8</a>
 </small>

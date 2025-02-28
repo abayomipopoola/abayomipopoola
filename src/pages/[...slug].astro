@@ -41,7 +41,7 @@ const { Content, remarkPluginFrontmatter } = await post.render();
       <article>
         <Prose>
           <div>
-            <h2 class="!my-1 leading-tight">{title}</h2>
+            <h2 class="my-1! leading-tight">{title}</h2>
             <div
               class="mt-2 flex flex-col gap-3 py-1 text-sm font-[500] sm:mt-0 sm:flex-row sm:items-center sm:justify-between md:text-right"
             >
@@ -67,7 +67,7 @@ const { Content, remarkPluginFrontmatter } = await post.render();
             {
               coverImage && (
                 <Image
-                  class="m-0 w-full !rounded-2xl lg:mb-2"
+                  class="m-0 w-full rounded-2xl! lg:mb-2"
                   src={coverImage}
                   alt={title}
                   loading="eager"
@@ -148,12 +148,12 @@ const { Content, remarkPluginFrontmatter } = await post.render();
                   type="email"
                   name="subscriber[email_address]"
                   placeholder="Type your email..."
-                  class="mb-2 flex-grow rounded-full border border-black bg-[#f3f6fc] px-4 py-2 focus:border-[var(--link-color)] focus:outline-none focus:ring-1 focus:ring-[var(--link-color)] sm:mb-0 sm:rounded-r-none sm:border-r-0"
+                  class="mb-2 grow rounded-full border border-black bg-[#f3f6fc] px-4 py-2 focus:border-[var(--link-color)] focus:ring-1 focus:ring-[var(--link-color)] focus:outline-hidden sm:mb-0 sm:rounded-r-none sm:border-r-0"
                   required
                 />
                 <button
                   type="submit"
-                  class="rounded-full border border-[var(--link-color)] bg-[var(--link-color)] px-6 py-2 text-white focus:outline-none focus:ring-2 focus:ring-black sm:rounded-l-none"
+                  class="rounded-full border border-[var(--link-color)] bg-[var(--link-color)] px-6 py-2 text-white focus:ring-2 focus:ring-black focus:outline-hidden sm:rounded-l-none"
                 >
                   Subscribe
                 </button>

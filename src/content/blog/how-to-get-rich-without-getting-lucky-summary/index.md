@@ -134,7 +134,7 @@ Let's get to it.
 ### Labor and Capital Are Old Leverage
 
 > "Give me a lever long enough, and a place to stand, and I will move the earth."<br>
-— Archimedes
+> — Archimedes
 
 - Wealth requires leverage. Labor and capital are older forms of leverage that everyone is fighting over.
 - Our brains aren't evolved to comprehend new forms of leverage and just how much leverage is possible in modern society.

@@ -5,15 +5,18 @@ const today = new Date();
 <footer class="container mt-8">
   <div class="border-t py-4">
     <div
-      class="prose justify-between text-sm text-zinc-500 dark:prose-invert md:flex dark:text-zinc-300"
+      class="justify-between text-sm text-zinc-500 md:flex dark:text-zinc-300 dark:prose-invert"
     >
       <div>
-        © {today.getFullYear()},
-        <span class="text-[var(--link-color)]">
-          <a href="/">𝔸𝕓𝕒𝕪𝕠𝕞𝕚</a>
+        © {today.getFullYear()}
+        <span>
+          <a class="text-[var(--link-color)]" href="/">Abayomi Popoola</a>. All
+          rights reserved.
         </span>
       </div>
-      <div><a href="/rss.xml">RSS feeds</a></div>
+      <div>
+        <a class="text-[var(--link-color)]" href="/rss.xml">RSS feeds</a>
+      </div>
     </div>
   </div>
 </footer>

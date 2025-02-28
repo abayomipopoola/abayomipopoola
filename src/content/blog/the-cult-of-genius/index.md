@@ -9,7 +9,7 @@ coverImage: "./cult.png"
 
 The concept of genius has long been romanticized, often leading to a sense of complacency and reluctance to strive for greatness. Nietzsche's thoughts on this matter invite us to reconsider our understanding of genius and to focus on the importance of hard work and dedication.
 
-> "We do not ask how it came to be. Instead, we rejoice in the present fact as though it came out of the ground by magic."  <br> — Nietzsche
+> "We do not ask how it came to be. Instead, we rejoice in the present fact as though it came out of the ground by magic." <br> — Nietzsche
 
 Our self-esteem and pride encourage us to view genius as something mystical, which allows us to avoid comparing ourselves and feeling inadequate. Labeling someone as "divine" implies that there is no need to compete with them. In essence, mythologizing natural talent provides a convenient excuse to remain complacent with the status quo.
 

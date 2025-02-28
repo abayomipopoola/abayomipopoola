@@ -1,73 +1,121 @@
-/* Font faces */
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-@font-face {
-	font-family: 'SourceSerifPro';
-	src: url('/fonts/source-serif-pro.woff') format('woff');
-}
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
-@font-face {
-	font-family: 'SourceSerifProBold';
-	src: url('/fonts/source-serif-pro-bold.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'SourceSerifProItalic';
-	src: url('/fonts/source-serif-pro-italic.woff') format('woff');
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
-	:root {
-		--link-color: #1a73e8; /* Set your desired link color */
-	}
-	body .prose, .subscribe-section, .prev-next {
-		color: #000000DE;
-		font-family: SourceSerifPro, serif;
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 30px;
-	}
-	h1, h2, h3, h4, h5, h6 {
-		font-family: Helvetica, Arial, sans-serif,sans-serif;
-		color: #000000;
-	}
-	.date-time, .tags-highlight {
-		font-family: Helvetica, Arial, sans-serif,sans-serif;
-		white-space: nowrap;
-	}
-	.prose a {
-		color: var(--link-color);
-		text-decoration: none;
-	}
-	.prose a:hover {
-		color: #1a73e8DE;
-	}
-	.prose strong {
-		font-family: SourceSerifProBold, serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-	.prose em {
-		font-family: SourceSerifProItalic, serif;
-	}
-	.prose img {
-		border-radius: 0;
-		max-width: 100%;
-		margin: 0 auto;
-		padding: 0;
-	}
-	.prose blockquote {
-		font-family: SourceSerifProItalic, serif;
-		font-style: normal;
-	}
-	.three-dots {
-		text-align: center;
-		margin: 24px;
-	}
-	pre,
-	code {
-		font-size: 0.875rem;
-	}
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "SourceSerifPro";
+    src: url("/fonts/source-serif-pro.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "SourceSerifProBold";
+    src: url("/fonts/source-serif-pro-bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "SourceSerifProItalic";
+    src: url("/fonts/source-serif-pro-italic.woff") format("woff");
+  }
+}
+@layer base {
+  :root {
+    --link-color: #1a73e8;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Helvetica, Arial, sans-serif, sans-serif;
+    color: #000000;
+  }
+  .date-time,
+  .tags-highlight {
+    font-family: Helvetica, Arial, sans-serif, sans-serif;
+    white-space: nowrap;
+  }
+  .three-dots {
+    text-align: center;
+    margin: 24px;
+  }
+  pre,
+  code {
+    font-size: 0.875rem;
+  }
+}
+
+/* Customize the container */
+@layer utilities {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+  }
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 46rem; /* 46rem ≈ 736px, overrides default xl breakpoint */
+    }
+  }
+}
+
+/* Define custom utility for link-color */
+@layer utilities {
+  body .prose {
+    color: #000000de;
+    font-family: SourceSerifPro, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .prose {
+    max-width: 100%;
+  }
+  .prose blockquote {
+    quotes: none;
+  }
+  .prose a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  .prose a:hover {
+    color: #1a73e8de;
+  }
+  .prose strong {
+    font-family: SourceSerifProBold, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .prose em {
+    font-family: SourceSerifProItalic, serif;
+  }
+  .prose img {
+    border-radius: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .prose blockquote {
+    font-family: SourceSerifProItalic, serif;
+    font-style: normal;
+  }
 }

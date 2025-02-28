@@ -13,10 +13,10 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.js,*.ts,*.tsx]
+[*.{js,ts,tsx}]
 indent_size = 2
 tab_width = 2
 
-[*.json]
+[*.{json,html,css}]
 indent_size = 2
 tab_width = 2

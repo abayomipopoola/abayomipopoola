@@ -23,7 +23,7 @@ const posts = (await getCollection("blog"))
 >
   <div class="container">
     <div class="mb-10 w-full gap-16 md:flex md:items-center">
-      <div class="text-pretty leading-9">
+      <div class="leading-9 text-pretty">
         <h2 class="mb-4 text-2xl font-bold">Hey there!</h2>
         <Prose>
           <div class="text-lg">
@@ -51,10 +51,10 @@ const posts = (await getCollection("blog"))
       />
     </div>
     <main>
-      <div class="mb-12 mt-6">
+      <div class="mt-6 mb-12">
         <div class="mb-1 flex justify-between gap-2 border-b">
           <h2 class="mb-3 text-xl font-bold">Recent Posts</h2>
-          <a href="/posts/" class="inline-block py-2 italic text-zinc-600"
+          <a href="/posts/" class="inline-block py-2 text-zinc-600 italic"
             >All posts &raquo;</a
           >
         </div>
