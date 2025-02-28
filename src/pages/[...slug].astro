@@ -42,9 +42,7 @@ const { Content, remarkPluginFrontmatter } = await post.render();
         <Prose>
           <div>
             <h2 class="my-1! leading-tight">{title}</h2>
-            <div
-              class="mt-2 flex flex-col gap-3 py-1 text-sm font-[500] sm:mt-0 sm:flex-row sm:items-center sm:justify-between md:text-right"
-            >
+            <div class="flex w-full justify-between py-4 text-sm font-[500]">
               <div class="date-time">
                 {
                   updatedDate ? (
