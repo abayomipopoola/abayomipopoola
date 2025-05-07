@@ -53,7 +53,19 @@ Underestimating the cost of queues in product development leads to process overl
 
 Queues in a given process occur right before a step with limited capacity and/or high utilization (Product management, Engineering, QA). Capacity utilization is the single most important factor in the occurrence of queues. This is somewhat natural because when a process is run at 100% utilization, any new work would automatically sit on the "waiting" queue until someone has the free capacity to take it.
 
-The interesting part is that capacity utilization affects the size of the queue exponentially: going from 80% utilization to 90% utilization would double the queue size; going from 90% to 95% will double it once again. Since the queue size also affects the cycle time of each new job, you have to be careful what percent utilization you operate your processes on. If cycle time is important — choose lower utilization, which would guarantee a quick turnaround time for important new tasks.
+**The Queue Multiplier Effect**: Capacity utilization affects queue size exponentially, not linearly. This creates a powerful but often overlooked relationship:
+
+- Increasing from 80% to 90% utilization → Queue size doubles
+- Increasing from 90% to 95% utilization → Queue size doubles again
+- Approaching 100% utilization → Queue size approaches infinity
+
+This exponential relationship means small changes in utilization create dramatic changes in wait times. Since queue size directly determines how long each new job waits before being processed, your utilization target becomes a critical business decision:
+
+- If fast response time is critical → Target lower utilization (70-80%)
+- If maximum throughput is critical → Target higher utilization (85-95%)
+- If both matter → Find the economic balance point for your specific context
+
+This relationship explains why seemingly small increases in workload can suddenly cause system-wide delays that feel disproportionate to the change in input.
 
 ![the effect of queues](./effect-of-queue.jpg)
 
@@ -61,9 +73,24 @@ Also, it is important to note that queues are not always bad, and whether you sh
 
 If you have a process or a staff that affects the overall throughput of the system (bottleneck), you don't want any idle time for them. To make sure they always have something to work on, you deliberately build a queue right before them. This queue takes away the variation of arriving new tasks and ensures maximum throughput for your process.
 
-Product management happens to have a big queue of non-refined ideas collected by the team or other teams. A lot of ideas could propel the company to the next level, as long as product management has the capacity to refine them into real business cases and work with the engineering teams to realize them. Failing to do so results in a lot of missed opportunities or sometimes direct losses, when customers churn because their feedback was not heard.
+**Strategic Queue Management in Practice:**<br>
+Product management typically maintains a large queue of non-refined ideas collected from various teams. This queue represents significant potential value - many of these ideas could propel the company forward if properly developed. However, this value is only realized when product management has sufficient capacity to:
 
-This is the right place to say that implementing a FIFO (first in first out) scheduling algorithm for product management (like the one lean people use in manufacturing) might be a really bad mistake. One of the methods to minimize the economic losses caused by queues is to sequence the jobs in the most economically feasible order. If you have a very critical job, that might lead to a lot of extra costs if delayed, you may want to schedule it before many others, that have no such risk associated with them. If you have two such jobs, you may want to start with the shorter one.
+- Refine raw ideas into viable business cases
+- Partner with engineering teams to implement them
+- Validate results through customer feedback
+
+When product management lacks capacity to process this queue efficiently, the organization suffers from:
+
+- Missed market opportunities
+- Customer churn when valuable feedback goes unaddressed
+- Reduced innovation potential
+
+This example illustrates why simply applying manufacturing-style FIFO (first in first out) queuing to product management can be a costly mistake. Unlike manufacturing, where units are often interchangeable, product development work varies dramatically in economic impact. The optimal strategy is to sequence work based on economic value and risk profile:
+
+- Prioritize tasks with high cost-of-delay or significant opportunity cost
+- For equally critical tasks, start with the shorter ones first
+- Consider risk factors that might affect sequencing decisions
 
 Queues have a profound affect the product development processes. They cause valuable work products to sit idle, waiting to access busy resources. Queuing theory is interested in the various qualities of a queue. Its importance within software engineering can not be understated. A team that does not manage its queues properly is running the risk of slow delivery, long cycle times and large batch sizes.
 
@@ -99,36 +126,56 @@ By using a CFD to track the performance of a Kanban board, we can monitor severa
 
 By collecting and analyzing these metrics over time, we can identify trends and patterns in workflow performance and make informed decisions about how to improve processes and optimize performance.
 
-#### How To Read a Cumulative Flow Diagram
+#### How To Read a Cumulative Flow Diagram: A Visual Guide
 
-The aim of a cumulative flow diagram is to show you the stability of your process over time. It tracks and accumulates each task that is ever entered or progressed to any stage of your workflow.
+The cumulative flow diagram (CFD) reveals the stability of your process over time by tracking each task through your workflow stages.
 
-![cfd-one](./cfd-one.png)
-![cfd-two](./cfd-two.png)
+**Basic CFD Structure:**
+![cfd-one and cfd-two](./cfd-one.png)
 
-Whenever you complete a task the number in your process is done stage will rise permanently. Each stage has an arrival and a departure line. The vertical distance between them visualizes the number of tasks that were in this stage of your workflow at the time.
+- Each colored band represents a workflow stage
+- The width of each band shows the number of items in that stage
+- The x-axis represents time
+- The y-axis shows the cumulative number of work items
 
+**Understanding Arrival and Departure:**
 ![cfd-three](./cfd-three.png)
 
-The horizontal distance between your first and last stage shows the approximate average cycle time for your tasks, meaning the time it took you to progress a task from being requested to done.
+- Each stage has both an arrival line (top) and departure line (bottom)
+- The vertical distance between these lines shows how many items are currently in that stage
+- Widening bands indicate growing queues in that stage
 
+**Measuring Cycle Time:**
 ![cfd-four](./cfd-four.png)
 
-Let's take a look at the workflow of an example software development team whose process involves five stages: <br>
+- The horizontal distance between the first stage (intake) and last stage (completion) represents average cycle time
+- This visualization makes it easy to see how long tasks typically take to flow through your entire process
+
+**Reading a Real Example:**
+![cfd-five](./cfd-five.png)
+This example shows a software team's five-stage workflow:
 
 <p align="center"><span style="color:#ED8B24">Requested to start</span> → <span style="color:#4C8B24">Design</span> → <span style="color:#4151A2">Development</span> → <span style="color:#E4411D">Review</span> → <span style="color:#690085">Done</span>.</p>
 
-![cfd-five](./cfd-five.png)
+Notice:
 
-A quick look at the chart tells you more about their approximate average cycle time of two weeks along with a number of asks completed during that period. In order to determine whether their process is stable we need to monitor how the chart progresses in time. If the distance between the arrival and departure lines grows in parallel then most likely we've got nothing to worry about.
+- The approximate two-week cycle time from request to completion
+- The relative sizes of queues in each stage
+- The total number of completed tasks over the period
 
+**Evaluating Process Stability:**
 ![cfd-six](./cfd-six.png)
+A stable process shows parallel growth between arrival and departure lines. In this example, work is flowing smoothly through the system.
 
-However if it starts to expand rapidly then tests are arriving faster than they can be processed and we need to take action.
-
+**Detecting Problems:**
 ![cfd-seven](./cfd-seven.png)
+When bands expand rapidly (especially in the middle stages), it signals that items are arriving faster than they can be processed - a warning sign requiring immediate action.
 
-A properly built cumulative flow diagram always flows upward or sideways. If you ever see a line going down then the chart is incorrect since tasks should never disappear.
+**Key CFD Principles:**
+
+- A proper CFD always flows upward or sideways - never downward (tasks don't disappear)
+- Thinner "In Progress" bands indicate smaller batch sizes and typically faster cycle times
+- Consistent band widths suggest a stable, predictable process
 
 When the "In Progress" bar appears thinner, the team is working on smaller batches of tasks, which means they have less "Work in progress" (WIP). By working on fewer tasks at the same time, the team can concentrate better and create more value through the system. In the second diagram, if you imagine the same vertical and horizontal lines, you'll see that having a smaller queue size has resulted in less delay.
 
@@ -149,5 +196,4 @@ The principles of product development flow are designed to optimize flow and imp
 I strongly recommend reading "The Principles of Product Development Flow" by Donald Reinertsen as it is an excellent book.
 
 <small>References: <a href="https://www.amazon.com/gp/product/1935401009" target="_blank">The Principles of Product Development Flow by Donald Reinertsen</a>; <a href="https://kanbanize.com/kanban-resources/kanban-analytics/cumulative-flow-diagram" target="_blank">Cumulative Flow Diagram</a>; <a href="https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-cumulative-flow-diagram/" target="_blank">View and understand the cumulative flow diagram</a>
-
 </small>
