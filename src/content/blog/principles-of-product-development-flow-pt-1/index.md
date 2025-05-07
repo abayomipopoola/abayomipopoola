@@ -38,7 +38,14 @@ Although, this does not mean that we should spend extensive effort and time on c
 
 ![batch sizes](./batch-economics.jpg)
 
-The graph above shows a classic example of batch size optimization which trades off a hyperbolic function against a linear function. Knowing that important optimizations take this form is surprisingly useful because the U-curves have two important properties. First, optimization never occurs at extreme values. If optimization occurred at extreme values, then quantification would be unnecessary. We would only need to know the direction that maximizes performance. In contrast, U-curve optimizations virtually always require quantification, because we must balance two or more competing factors.
+The graph above shows a classic example of batch size optimization where two different types of costs interact: transaction costs and holding costs. The U-shaped Total Cost curve represents the sum of two competing factors:
+
+**Transaction Cost**: Decreases as batch size increases because fixed setup costs are distributed across more units. Each time you start a new batch, you incur costs regardless of size (e.g., equipment setup, admin overhead).
+**Holding Cost**: Increases linearly with batch size due to inventory storage expenses, capital tied up in work-in-progress, delayed feedback, and increased risk of obsolescence.
+
+The optimal batch size occurs at the minimum point of the Total Cost curve, where marginal transaction savings equal marginal holding costs. However, as Reinertsen points out, we don't need perfect precision - getting reasonably close to the optimal point captures most of the economic benefits with significantly less measurement effort.
+
+This principle applies broadly across product development decisions, including sprint length, feature bundling, and release frequency, where finding the balance between competing factors is essential for maximizing value.
 
 #### Exploiting Variability
 
