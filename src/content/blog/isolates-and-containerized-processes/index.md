@@ -80,7 +80,7 @@ Despite these constraints, isolates excel in specific scenarios that leverage th
 
 ### Conclusion
 
-While containers remain valuable for many use cases with their benefits of portability and consistent environments, isolates offer a compelling alternative for scenarios requiring rapid startup times and efficient resource utilization.
+While containers remain valuable for many use cases due to their portability and consistent environments, isolates offer a compelling alternative for scenarios requiring rapid startup times and efficient resource utilization. They enable code execution at the network edge, which not only improves performance but also simplifies deployment and reduces costs compared to running code in a centralized data center.
 
 As computing continues to evolve, especially in serverless and edge computing contexts, understanding and leveraging the strengths of both approaches will be crucial for optimizing application performance and resource usage. Selecting the right execution model depends on the specific needs of the application, and a hybrid approach may often provide the best balance between flexibility and efficiency.
 
