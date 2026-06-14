@@ -7,7 +7,7 @@ slug: "fiscal-policy-on-thecovid-19-economy"
 coverImage: "./social-distancing.jpg"
 ---
 
-> **Editor's note:** This piece was written in April 2020, in the early weeks of the pandemic—before vaccines were available and before the full scale of the global policy response was known. It is kept here as a snapshot of that moment. Expansionary fiscal policy was a reasonable answer to a demand-driven slump producing below potential GDP, but it is not a universal prescription: when inflation, debt sustainability, or supply-side constraints dominate, the trade-offs change—as the inflationary aftermath of 2021–2023 went on to show.
+> **Editor's note:** This piece was written in April 2020, in the early weeks of the pandemic, before vaccines were available and before the full scale of the global policy response was known. It is kept here as a snapshot of that moment. Expansionary fiscal policy was a reasonable answer to a demand-driven slump producing below potential GDP, but it is not a universal prescription: when inflation, debt sustainability, or supply-side constraints dominate, the trade-offs change, as the inflationary aftermath of 2021–2023 went on to show.
 
 China, the epicentre of the virus was responsible for around $0.78 trillion out of the $1.66 trillion 2019 global economic growth. That's about half the global economic growth. Same China sits at the heart of global supply chains that keep the world economy humming... large economies such as the US and Japan get more than a third of their intermediate goods from China. Then COVID-19 strikes.
 
@@ -67,13 +67,13 @@ The figure below illustrates the _Expansionary Fiscal Policy_. The original equi
 
 <p class="three-dots">***</p>
 
-Economists have said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don't foreclose on loans, don't put people off jobs, especially if you can hold on to them, or if the government or the public can fund you to keep those jobs—because there's this reality that once something goes under, be it a company, a job—and people leave, that it's very hard to rebuild.
+Economists have said we have to do whatever we can to fill the hole that's been blown in the economy, so it's still intact when we come out the other side. They have put together some responses like providing essentially a bridge loan for everybody: It's the goal to say don't foreclose on mortgages, don't foreclose on loans, don't put people off jobs, especially if you can hold on to them, or if the government or the public can fund you to keep those jobs, because there's this reality that once something goes under, be it a company, a job, and people leave, that it's very hard to rebuild.
 
 ### Plan For The Better Days
 
 Here are some things you can do to get yourself ready for the better days ahead:
 
 - Understanding your expenses and where you're able to reduce costs.
-- Business owners should create an effective plan for their business to remain profitable—easier said than done, but possible.
+- Business owners should create an effective plan for their business to remain profitable, easier said than done, but possible.
 - Invest in the stock market, as they might be in their all-time low.
 - Start a business.

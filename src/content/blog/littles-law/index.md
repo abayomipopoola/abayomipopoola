@@ -9,7 +9,7 @@ coverImage: "./queue.jpg"
 
 Delving into the intricacies of complex systems often reveals foundational principles that capture their core essence. Little's Law, stemming from a branch of operations research called _Queueing Theory_, serves as a prime example. This principle, named after MIT's Professor John Little, intricately connects processes, workloads, and outcomes, highlighting the crucial balance underpinning efficient operations.
 
-I wrote <a href="/littles-law-scaling-web-servers" target="_blank">a post</a> on this topic—on its application to the Scalability and Fault Tolerance of modern web applications. In this piece, I provide a more accessible introduction, detailing its relevance to everyday life and management practices.
+I wrote <a href="/littles-law-scaling-web-servers" target="_blank">a post</a> on this topic, on its application to the Scalability and Fault Tolerance of modern web applications. In this piece, I provide a more accessible introduction, detailing its relevance to everyday life and management practices.
 
 ### Little's Law Simplified
 
@@ -18,7 +18,7 @@ In its most basic form, the law can be represented as:
 <img src="https://latex.codecogs.com/svg.latex?LEAD\:TIME=\frac{WORK\:IN\:PROGRESS}{THROUGHPUT\:RATE}" title="Lead time formula" class="centre"/>
 
 - **Lead Time**: The duration required for an item to traverse and be completed within a process.
-- **Work In Progress (WIP)**: Imagine looking into a process pipeline, much like peering into a transparent tube. If you spot, say, 10 ongoing tasks—be it applications, requests, or products being crafted—it signifies that there are 10 units currently being processed. This count of active tasks is the Work in Progress.
+- **Work In Progress (WIP)**: Imagine looking into a process pipeline, much like peering into a transparent tube. If you spot, say, 10 ongoing tasks (be it applications, requests, or products being crafted), it signifies that there are 10 units currently being processed. This count of active tasks is the Work in Progress.
 - **Throughput Rate**: This denotes the average number of items that accomplish their goal within a set time frame, perhaps an hour or a day.
 
 Let's explore a few practical examples where the concept of _lead time_ sheds light on Little's Law and its implications.

@@ -43,13 +43,13 @@ The graph above shows a classic example of batch size optimization where two dif
 - **_Transaction Cost:_** Decreases as batch size increases because fixed setup costs are distributed across more units. Each time you start a new batch, you incur costs regardless of size (e.g., equipment setup, admin overhead).
 - **_Holding Cost:_** Increases linearly with batch size due to inventory storage expenses, capital tied up in work-in-progress, delayed feedback, and increased risk of obsolescence.
 
-The optimal batch size occurs at the minimum point of the Total Cost curve, where marginal transaction savings equal marginal holding costs. However, as Reinertsen points out, we don't need perfect precision — getting reasonably close to the optimal point captures most of the economic benefits with significantly less measurement effort.
+The optimal batch size occurs at the minimum point of the Total Cost curve, where marginal transaction savings equal marginal holding costs. However, as Reinertsen points out, we don't need perfect precision: getting reasonably close to the optimal point captures most of the economic benefits with significantly less measurement effort.
 
 This principle applies broadly across product development decisions, including sprint length, feature bundling, and release frequency, where finding the balance between competing factors is essential for maximizing value.
 
 #### Exploiting Variability
 
-Variability refers to the differences and uncertainties inherent in product development processes. Rather than viewing variability as only a problem to eliminate, Reinertsen proposes a counterintuitive approach — strategically using variability as an advantage.
+Variability refers to the differences and uncertainties inherent in product development processes. Rather than viewing variability as only a problem to eliminate, Reinertsen proposes a counterintuitive approach: strategically using variability as an advantage.
 
 The key insight is that variability can be beneficial when:
 
@@ -67,7 +67,7 @@ For example, instead of rigidly controlling all process variations, teams can:
 
 The graph above illustrates how to evaluate variability using a payoff function. When outcomes vary, their economic value also varies. The curve shows that:
 
-- **_Left side_**: Performance shortfalls below target create increasing costs — the further below target, the more severe the economic penalty
+- **_Left side_**: Performance shortfalls below target create increasing costs: the further below target, the more severe the economic penalty
 - **_Middle_**: Performance at the target level provides the baseline expected value
 - **_Right side_**: Performance above target provides benefits, but with diminishing returns - each additional increment of performance delivers less additional value
 

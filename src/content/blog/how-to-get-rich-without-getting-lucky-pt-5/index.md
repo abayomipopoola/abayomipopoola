@@ -7,7 +7,7 @@ slug: "how-to-get-rich-without-getting-lucky-pt-5"
 coverImage: "./feynman.jpeg"
 ---
 
-> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his—kept as attribution, not presented as original writing.
+> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his, kept as attribution, not presented as original writing.
 
 Here is part five of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
@@ -15,7 +15,7 @@ Here is part five of Naval's expanded points from his viral tweetstorm, "How To 
 
 In that sense, business to me is bottom of the barrel. There's no actual skill called business, it's too generic. It's like a skill called "relating." Like "relating to humans." That's not a skill, it's too broad.
 
-A lot of what goes on in business schools, and there is some very intelligent stuff taught in business schools—I don't mean to detract from them completely—some of the things taught in business school are just anecdotes. They call them "case studies."
+A lot of what goes on in business schools, and there is some very intelligent stuff taught in business schools (I don't mean to detract from them completely). Some of the things taught in business school are just anecdotes. They call them "case studies."
 
 But they're just anecdotes, and they're trying to help you pattern match by throwing lots of data points at you, but the reality is, you will never understand them fully until you're actually in that position yourself.
 

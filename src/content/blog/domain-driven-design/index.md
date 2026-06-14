@@ -9,7 +9,7 @@ coverImage: "./ddd.png"
 
 An old chess saying goes as follows: "Tactics is knowing what to do when there's something to do, while strategy is knowing what to do when there's nothing to do." Although this statement is somewhat exaggerated, a more nuanced distinction might be that tactics represent the specific means used to achieve an objective, while strategy refers to the comprehensive campaign plan. This plan may involve complex operational patterns, activities, and decision-making processes that guide tactical execution.
 
-Building software without starting with the end in mind is synonymous with not having a strategy in place. Most developers tend to focus more on the technical details than solving the actual business needs—tactics without strategy. Why though? Of course, because strategy is hard, tactics are easier, and people prefer easier tasks.
+Building software without starting with the end in mind is synonymous with not having a strategy in place. Most developers tend to focus more on the technical details than solving the actual business needs: tactics without strategy. Why though? Of course, because strategy is hard, tactics are easier, and people prefer easier tasks.
 
 ![strategy-tactics](./visionstrategytactics.png)
 
@@ -25,7 +25,7 @@ In reality, a savings account is much more intricate. It processes iterations ov
 
 To develop effective software, understanding the domain it serves is crucial. You can't create a banking software system without a deep knowledge of banking itself – understanding the banking domain. Bankers profoundly understand this system, so their expertise is invaluable. DDD aids in the creation of models that represent a problem domain. The model consists of essential concepts selected for software implementation. To achieve this, DDD emphasizes close communication between domain experts – bankers, in this case – and developers. This dialogue should revolve around the domain, ensuring domain experts aren't merely listing desired software features. Instead, they should discuss the fundamental properties or behaviours required of domain objects. Likewise, developers shouldn't fixate on the technicalities, like class variables or database columns, but focus on the bigger picture of the domain's needs.
 
-> A domain model captures the essential concepts of a problem domain—their attributes, behaviour, and the relationships between them. It is frequently expressed as an object model, but it need not be: DDD is broader than object modelling, reaching into strategic design—bounded contexts, context maps, core domains—as much as the tactical building blocks.
+> A domain model captures the essential concepts of a problem domain: their attributes, behaviour, and the relationships between them. It is frequently expressed as an object model, but it need not be: DDD is broader than object modelling, reaching into strategic design (bounded contexts, context maps, core domains) as much as the tactical building blocks.
 
 ### Ubiquitous Language
 

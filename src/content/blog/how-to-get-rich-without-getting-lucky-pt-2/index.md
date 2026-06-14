@@ -7,7 +7,7 @@ slug: "how-to-get-rich-without-getting-lucky-pt-2"
 coverImage: "./feynman.jpeg"
 ---
 
-> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his—kept as attribution, not presented as original writing.
+> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his, kept as attribution, not presented as original writing.
 
 Here is part two of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
@@ -110,8 +110,8 @@ Summary:
 
 - The Internet has massively broadened the possible space of careers, by allowing you to scale any niche obsession.
 - Before the Internet there was no way to find all the people in the world who were interested in your obsession. Now you can.
-- Escape competition through authenticity—when you're competing with people it's because you're copying them.
-- No one can compete with you on being you. Before the Internet, this was useless advice—now it's a career.
+- Escape competition through authenticity. When you're competing with people it's because you're copying them.
+- No one can compete with you on being you. Before the Internet, this was useless advice. Now it's a career.
 
 ### Play iterated games.
 
@@ -127,7 +127,7 @@ It's true in health and fitness. You know, the fitter you are, the easier it is 
 
 Summary:
 
-- All returns in life come from compound interest over many turns of long-term games—and they usually come at the end.
+- All returns in life come from compound interest over many turns of long-term games, and they usually come at the end.
 - People are fair with each other when they know there will be more turns of the game. Friction goes down with each turn, so you can do bigger and bigger things together.
 
 ### Pick business partners with high intelligence, energy, and, above all, integrity.

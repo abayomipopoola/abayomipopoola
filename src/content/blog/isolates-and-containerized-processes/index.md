@@ -25,13 +25,13 @@ Containers offer several key advantages, including portability across any system
 
 ### Introducing Isolates
 
-These limitations have led to alternative approaches, particularly isolates as implemented in Chrome's V8 engine — Google's JavaScript engine (named like the eight-cylinder engine) that can execute code both within and outside of browsers. This flexibility, combined with V8's isolate architecture, provides enhanced resource efficiency, faster startup times, more granular isolation for better security, and improved scalability, making it a compelling alternative to traditional containerization.
+These limitations have led to alternative approaches, particularly isolates as implemented in Chrome's V8 engine, Google's JavaScript engine (named like the eight-cylinder engine) that can execute code both within and outside of browsers. This flexibility, combined with V8's isolate architecture, provides enhanced resource efficiency, faster startup times, more granular isolation for better security, and improved scalability, making it a compelling alternative to traditional containerization.
 
 V8's runtime can manage thousands of isolates, switching between them seamlessly while maintaining complete memory isolation between each piece of code. This isolation ensures protection from untrusted or user-written code within the same runtime. Unlike virtual machines that require a complete environment setup, isolates are created within an existing environment, enabling extremely fast startup times and eliminating the cold starts typically associated with virtual machines.
 
 ![isolates vs cm ](./isolates-v-conainers.png)
 
-The figure above contrasts two approaches to running code: containerized processes and V8 isolates. In containerized processes, each instance requires its own language runtime, creating significant overhead. V8 isolates take a different approach — the V8 engine pays the runtime overhead only once at startup, after which it can execute hundreds of thousands of isolated scripts with minimal individual overhead. This architecture enables isolates to start approximately a hundred times faster than containerized Node.js processes, while consuming an order of magnitude less memory at startup.
+The figure above contrasts two approaches to running code: containerized processes and V8 isolates. In containerized processes, each instance requires its own language runtime, creating significant overhead. V8 isolates take a different approach: the V8 engine pays the runtime overhead only once at startup, after which it can execute hundreds of thousands of isolated scripts with minimal individual overhead. This architecture enables isolates to start approximately a hundred times faster than containerized Node.js processes, while consuming an order of magnitude less memory at startup.
 
 #### V8's Fine-Grained Sandboxing
 
@@ -45,7 +45,7 @@ V8's approach to sandboxing stands out from traditional solutions:
 - Each process operates in its own sandbox, ensuring complete separation of JavaScript functions.
 - Memory isolation prevents code execution in one sandbox from affecting others.
 
-It's important to be precise about what this buys you, though. An isolate is **not** the same security boundary as a container or a virtual machine. Isolates share a single operating-system process and runtime, so their separation is logical rather than hardware-enforced. Microarchitectural side-channel attacks such as Spectre—and bugs in the runtime itself—can cross that boundary. That is exactly why platforms running untrusted code in isolates layer on additional mitigations (process and site isolation, reduced timer precision, and seccomp-style sandboxes) rather than relying on the isolate alone.
+It's important to be precise about what this buys you, though. An isolate is **not** the same security boundary as a container or a virtual machine. Isolates share a single operating-system process and runtime, so their separation is logical rather than hardware-enforced. Microarchitectural side-channel attacks such as Spectre, and bugs in the runtime itself, can cross that boundary. That is exactly why platforms running untrusted code in isolates layer on additional mitigations (process and site isolation, reduced timer precision, and seccomp-style sandboxes) rather than relying on the isolate alone.
 
 While V8 provides the foundation for various JavaScript runtimes, it's important to understand how other environments build upon it. Node.js, for example, is built on the V8 engine as a runtime environment for JavaScript, offering asynchronous execution capabilities and sharing V8's open-source nature. However, it notably lacks V8's built-in sandboxing features, distinguishing it from its underlying engine.
 

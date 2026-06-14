@@ -13,7 +13,7 @@ This is the concluding part of the _Payment Systems, and the Emerging Economy_ b
 
 According to the World Bank, financial inclusion is a key enabler in reducing poverty and boosting prosperity.
 
-By 2024, 79% of adults globally had an account at a bank, mobile-money provider, or similar institution—up from 74% in 2021. Yet roughly 1.3 billion adults remain unbanked, still cut off from the formal financial system <a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" class="read-more">_(World Bank, 2025 Global Findex)_</a>.
+By 2024, 79% of adults globally had an account at a bank, mobile-money provider, or similar institution, up from 74% in 2021. Yet roughly 1.3 billion adults remain unbanked, still cut off from the formal financial system <a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" class="read-more">_(World Bank, 2025 Global Findex)_</a>.
 
 ![Unbanked populace data](./unbanked_data.jpg)
 
@@ -25,7 +25,7 @@ Apart from protecting your money from theft, a bank account connects people to t
 
 > According to research done by The Fletcher School and Mastercard Center for Inclusive Growth, of the $301 billion of funds flows from consumers to businesses in Nigeria, 98 percent is still based on cash.
 
-_The Nigerian figures in this post reflect the data available when it was written. For the current picture—including the surge in agency banking and POS usage since—see EFInA's <a href="https://efina.org.ng/our-work/research/access/" target="_blank">Access to Financial Services in Nigeria (A2F) 2023</a> survey._
+_The Nigerian figures in this post reflect the data available when it was written. For the current picture, including the surge in agency banking and POS usage since, see EFInA's <a href="https://efina.org.ng/our-work/research/access/" target="_blank">Access to Financial Services in Nigeria (A2F) 2023</a> survey._
 
 Several players in the Nigeria Fintech space are attempting to help close the gap of financial inclusion, and tapping into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
 

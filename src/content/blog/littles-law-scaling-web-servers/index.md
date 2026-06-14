@@ -23,13 +23,13 @@ In the context of this post, scalability refers to the software's ability to opt
 
 To illustrate, consider a system that receives 500 requests per second, with each request taking 0.5 seconds to complete. This means the system is concurrently handling 500 × 0.5 = 250 requests.
 
-In this scenario, _L_ is the average number of requests in flight at any instant—a measure of the load the system must hold—while _W_ is determined by the software's design, its complexity, and inherent latencies. By knowing both _L_ and _W_, we can calculate the maximum request rate the system can sustain:
+In this scenario, _L_ is the average number of requests in flight at any instant, a measure of the load the system must hold, while _W_ is determined by the software's design, its complexity, and inherent latencies. By knowing both _L_ and _W_, we can calculate the maximum request rate the system can sustain:
 
 <img src="https://latex.codecogs.com/svg.latex?\Large \lambda=\frac{L}{W}" title="max requests rate" class="centre"/>
 
 To handle more requests, we need to increase _L_, the number of in-flight requests the system can hold, or decrease _W_, the processing time or latency. However, if the incoming request rate surpasses λ, the system will no longer be stable. Requests will start queuing up, initially experiencing much-increased latency, but quickly leading to full consumption of system resources and service unavailability.
 
-Treat Little's Law here as a sizing and intuition tool rather than a complete capacity model: it holds for a stable arrival rate and long-run averages, assumes a bounded queue, and—on its own—says nothing about downstream bottlenecks. Each of those still has to be measured directly.
+Treat Little's Law here as a sizing and intuition tool rather than a complete capacity model: it holds for a stable arrival rate and long-run averages, assumes a bounded queue, and, on its own, says nothing about downstream bottlenecks. Each of those still has to be measured directly.
 
 #### Understanding Capacity (L)
 
@@ -58,7 +58,7 @@ requests per second before instability ensues. This seems sufficient, even accou
 
 However, this holds true only when both _Service A_ and _Service B_ function optimally. If one's latency spikes to 10 seconds, _W_ shifts from 1 second to approximately 10 seconds _(From W = 0.5 + 0.5 = 1 we've now gone to W = 0.5 + 10 = 10.5)_. Consequently, _λ_ drops from 2000 to 200 requests per second, which is suboptimal.
 
-To make our service fault-tolerant, let's set timeouts for the service calls — say we set our HTTP client's timeout to 2 seconds. This ensures our maximum latency, even amidst failures, remains at 4 seconds, resulting in a _λ_ of 2000/4 = 500 requests per second.
+To make our service fault-tolerant, let's set timeouts for the service calls: say we set our HTTP client's timeout to 2 seconds. This ensures our maximum latency, even amidst failures, remains at 4 seconds, resulting in a _λ_ of 2000/4 = 500 requests per second.
 
 We still have room for improvement. If _Service A_ consistently fails and times out, it's inefficient to keep trying to connect to it, especially with a 2-second wait for each attempt. Instead, we can implement a "circuit breaker." When _Service A_ fails, the circuit breaker activates, halting further attempts to connect. Periodically, a background task checks _Service A's_ status. If it's operational, the circuit breaker deactivates. This strategy can reduce our latency to less than 1 second and maintain our capacity at 2000 requests per second, even if failures occur.
 

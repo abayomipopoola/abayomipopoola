@@ -11,7 +11,7 @@ Today, banking is possible anywhere you are. As long as you have a mobile phone 
 
 But payments haven't always been this easy: At the beginning of the 20th-century payments for rents, salary, and taxes became routine for many people, yet paying in cash became increasingly inconvenient. Manufacturing cash was expensive, carrying it unhandy.
 
-In the pre-digital world, doing all your banking by mail or at post offices all over the country was as convenient as it could get. Then rapid growth forced even more innovation, as bankers considered going from manual to automated administration — it took quite some pioneering to get it to work.
+In the pre-digital world, doing all your banking by mail or at post offices all over the country was as convenient as it could get. Then rapid growth forced even more innovation, as bankers considered going from manual to automated administration. It took quite some pioneering to get it to work.
 
 Yet by the 1960s, state-of-the-art computers had successfully taken over the administration process. In this era, following the post-war reconstruction in the 50s, young people all over the world challenged societal conventions. The Swinging Sixties were filled with protests, revolution, music, love, and a desire to make things simpler, banking included.
 
@@ -41,11 +41,11 @@ Non-traditional payment systems such as Bitcoin bypass the banking system almost
 The operation of the model is often referred to as the payment process and it involves four basic steps:
 
 - _Payment instructions_ are the information contained in a wire transfer or cheque. These instructions are from the payer and tell the paying bank to transfer value to the beneficiary through the network and receiving bank.
-- _Payment generation_ is when the instructions are entered into the system—e.g. printed on a cheque or transmitted via ACH or wire.
+- _Payment generation_ is when the instructions are entered into the system, e.g. printed on a cheque or transmitted via ACH or wire.
 - _Clearing_ is the process where the banks use the payment information to transfer money between themselves on behalf of the payer and the beneficiary (payee).
 - _Settlement_ is the final step in the basic process and occurs when the beneficiary's (payee's) bank account is credited and the payer's bank account is debited. Final settlement occurs when the banks irrevocably pass value among themselves, a distinction that has important treasury implications.
 
-The actual payment process will depend on the type of payment instrument that the payer and payee choose to use—or have chosen for them by their financial institutions.
+The actual payment process will depend on the type of payment instrument that the payer and payee choose to use, or have chosen for them by their financial institutions.
 
 ### Payment Channels
 

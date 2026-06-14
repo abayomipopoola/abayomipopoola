@@ -13,7 +13,7 @@ This is the concluding part of the _The Principles of Product Development Flow_ 
 
 Queues are everywhere in product development. The waiting lists or backlog of tasks or items that need to be completed or processed, list of bugs to be fixed, features to be added, or requests to be addressed.
 
-It helps to separate two ideas that are easy to blur together. A _backlog_ is an ordered set of options—work you _might_ commit to. A _queue_ is work that has already been committed and is now waiting for a resource to free up. Backlogs are healthy; they are how a team keeps its options open. Unmanaged queues are the costly part: as Reinertsen stresses, invisible queues are where product development quietly bleeds economic value.
+It helps to separate two ideas that are easy to blur together. A _backlog_ is an ordered set of options: work you _might_ commit to. A _queue_ is work that has already been committed and is now waiting for a resource to free up. Backlogs are healthy; they are how a team keeps its options open. Unmanaged queues are the costly part: as Reinertsen stresses, invisible queues are where product development quietly bleeds economic value.
 
 Queues are an integral part of product development because they help teams prioritize work and manage their workflow. When new tasks or items are added to the queue, they are typically assigned a priority based on their importance and urgency, and this helps team members decide what to work on next.
 

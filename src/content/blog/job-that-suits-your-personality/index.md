@@ -2,12 +2,12 @@
 title: It's important that your job matches your personality
 date: "2018-12-13T22:40:32.169Z"
 tags: [psychology, business domain]
-description: Scale an enterprise by understanding how different personalities map to different kinds of work—and where each tends to thrive or struggle.
+description: Scale an enterprise by understanding how different personalities map to different kinds of work, and where each tends to thrive or struggle.
 slug: "job-that-suits-your-personality"
 coverImage: "./personality.png"
 ---
 
-Personality has a real influence on how well one performs at work—shaping your energy, your stress, and your default strengths—especially when the job isn't purely routine. Think of it as a tendency rather than a destiny: the "Big Five" traits describe inclinations, not hard limits, and people routinely stretch well beyond their defaults.
+Personality has a real influence on how well one performs at work (shaping your energy, your stress, and your default strengths) especially when the job isn't purely routine. Think of it as a tendency rather than a destiny: the "Big Five" traits describe inclinations, not hard limits, and people routinely stretch well beyond their defaults.
 
 When choosing a career, it's crucial to match your personality traits with the job requirements. For instance, those who have a high score in _openness_ – one of the "Big Five" personality traits – often thrive in roles that demand creativity and new ideas. In contrast, individuals with a high score in the _conscientiousness_ trait usually shine in structured roles like management or administration.
 
@@ -33,6 +33,6 @@ While the creative minds sketch the ever-evolving blueprint of a company's journ
 
 ### Capitalism's Take on Creativity and Management
 
-Capitalism, in its inherent nature, operates on survival of the fittest. Companies that fail to strike a balance between creativity and administration often find themselves sidelined. They may become obsolete, outpaced by more agile competitors who can pivot with changing market demands. This cyclical process of birth, growth, and eventual decline—or reinvention—is capitalism's way of ensuring a dynamic business ecosystem. For businesses that envision a lasting legacy, it's essential not only to recognize these evolutionary patterns but also to maintain a harmony between the forces of creation and management.
+Capitalism, in its inherent nature, operates on survival of the fittest. Companies that fail to strike a balance between creativity and administration often find themselves sidelined. They may become obsolete, outpaced by more agile competitors who can pivot with changing market demands. This cyclical process of birth, growth, and eventual decline, or reinvention, is capitalism's way of ensuring a dynamic business ecosystem. For businesses that envision a lasting legacy, it's essential not only to recognize these evolutionary patterns but also to maintain a harmony between the forces of creation and management.
 
 <small>References: video link <a href="http://bit.ly/2PzUeTn" target="_blank">here</a>, by Jordan Peterson</small>

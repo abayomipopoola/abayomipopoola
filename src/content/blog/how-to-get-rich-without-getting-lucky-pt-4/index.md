@@ -7,7 +7,7 @@ slug: "how-to-get-rich-without-getting-lucky-pt-4"
 coverImage: "./feynman.jpeg"
 ---
 
-> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his—kept as attribution, not presented as original writing.
+> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his, kept as attribution, not presented as original writing.
 
 Here is part four of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
@@ -79,7 +79,7 @@ Summary:
 
 > Fortunes require leverage. Business leverage comes from capital, people, and products with no marginal cost of replication (code and media).
 > Code and media are permissionless leverage. They're the leverage behind the newly rich. You can create software and media that works for you while you sleep.
-> An army of robots is freely available—it's just packed in data centers for heat and space efficiency. Use it.
+> An army of robots is freely available. It's just packed in data centers for heat and space efficiency. Use it.
 > If you can't code, write books and blogs, record videos and podcasts.
 
 #### Product and media are the new leverage
@@ -120,7 +120,7 @@ As much as people may rail on Facebook and YouTube, they're not going to stop us
 
 The same way you can rail upon Apple for having a slightly closed ecosystem in the iPhone, but everyone's writing apps for it. As long as you can write apps for it, you can get rich or reach users doing that, why not?
 
-#### The robot army is already here—code lets you tell them what to do
+#### The robot army is already here. Code lets you tell them what to do
 
 I think of all the forms of leverage, the best one in modern society... This is glib. This is a little overused. This is why I tell people learn to code. It's that we have this idea that in the future there's going to be these robots and they're going to be doing everything.
 
@@ -144,7 +144,7 @@ Summary:
 - Product leverage is where the new fortunes are made.
 - Combining all three forms of leverage is a magic combination.
 - Product and media leverage are permissionless.
-- The robot army is already here—code lets you tell them what to do.
+- The robot army is already here. Code lets you tell them what to do.
 
 ### Product Leverage is Egalitarian
 
