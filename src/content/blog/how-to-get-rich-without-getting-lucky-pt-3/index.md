@@ -7,6 +7,8 @@ slug: "how-to-get-rich-without-getting-lucky-pt-3"
 coverImage: "./feynman.jpeg"
 ---
 
+> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his—kept as attribution, not presented as original writing.
+
 Here is part three of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
 ### Learn to sell. Learn to build. If you can do both, you will be unstoppable.

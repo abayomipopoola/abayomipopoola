@@ -28,15 +28,16 @@ Just as precious metals are dug from the earth, new bitcoins are mined into exis
 transactions added to the chain; to add one, a miner must solve a hard mathematical puzzle, and is rewarded with
 newly minted bitcoins for doing so. A block is not itself the ledger—it is one more page appended to it.
 
-> There're only twenty-one million Bitcoins to be mined.
+> There are only twenty-one million bitcoins to be mined.
 
 Bitcoin mining is the process of adding transaction records to bitcoin's public ledger of past transactions,
 called the blockchain (chain of blocks)—a shared public ledger on which the entire decentralised distributed peer-to-peer
-bitcoin network relies. All the bitcoin used in the world are connected and together they constitute a network that processes
-and checks all bitcoin transactions in a public ledger.
+bitcoin network relies. The participants in the Bitcoin network collectively maintain and verify the public ledger of transactions.
 
-Satoshi Nakamoto designed the blockchain in such a way that users can create a free and anonymous bitcoin account number—a wallet.
-This eliminates the need for a central bank because all the users constitute the bank.
+Satoshi Nakamoto designed Bitcoin so users can create wallets and addresses without asking permission from a central authority.
+These addresses are better described as pseudonymous than truly anonymous: activity is public on-chain, even if the real-world identity
+behind an address is not always obvious. The system removes the need for a central bank or clearing house by letting network
+participants verify transactions collectively.
 
 > A decentralised blockchain makes it possible to share data publicly without a single party controlling the system.
 

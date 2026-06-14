@@ -7,6 +7,8 @@ slug: "how-to-get-rich-without-getting-lucky-summary"
 coverImage: "./feynman.jpeg"
 ---
 
+> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his—kept as attribution, not presented as original writing.
+
 Here is the summarised note on Naval's expanded points from his "How to Get Rich" tweetstorm <a href="/how-to-get-rich-without-getting-lucky-pt-1" class="read-more">_(Read expanded series here)_</a>.
 
 Let's get to it.

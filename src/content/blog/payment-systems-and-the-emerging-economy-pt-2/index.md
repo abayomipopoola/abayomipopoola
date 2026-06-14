@@ -13,7 +13,7 @@ This is the concluding part of the _Payment Systems, and the Emerging Economy_ b
 
 According to the World Bank, financial inclusion is a key enabler in reducing poverty and boosting prosperity.
 
-About 1.4 billion adults worldwide still don't have access to a bank account <a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" class="read-more">_(World Bank, 2021 Global Findex)_</a>.
+By 2024, 79% of adults globally had an account at a bank, mobile-money provider, or similar institution—up from 74% in 2021. Yet roughly 1.3 billion adults remain unbanked, still cut off from the formal financial system <a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" class="read-more">_(World Bank, 2025 Global Findex)_</a>.
 
 ![Unbanked populace data](./unbanked_data.jpg)
 

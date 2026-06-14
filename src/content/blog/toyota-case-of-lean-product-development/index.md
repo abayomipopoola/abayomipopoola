@@ -7,7 +7,7 @@ slug: "toyota-case-of-lean-product-development"
 coverImage: "./ideas.jpg"
 ---
 
-Toyota knows how to make cars so well that it became the first carmaker to produce more than 10 million vehicles in a single year—a milestone it crossed in the early 2010s. Its success is rooted in a special system and began what is now known as 'Lean Manufacturing', an ethos emulated by companies around the world to make products faster, cheaper and better.
+Toyota knows how to make cars so well that it became the first carmaker to produce more than 10 million vehicles in a single year—a milestone it crossed in the early 2010s. Its success is rooted in a special system and began what is now known as 'Lean Manufacturing', an ethos emulated by companies around the world to make products faster, cheaper and better. The more transferable lesson—the one the rest of this post builds toward—isn't really about cars: Toyota's system shows how process design, deep technical competence, supplier integration, and continuous learning can make _product development_ itself faster, cheaper, and better without sacrificing quality.
 
 Following the Second World War, Japan was left in a precarious economic position, disadvantaged by lacking natural resources, materials like steel and other metals were hard to come by and companies had to be creative to compete. Toyota's founder Sakichi Toyoda had started a loom business, but it was his son Kiichiro who founded the motor company in 1937. They were used to working within narrow margins — as the shortage of materials increased during the war, the number of headlamps on its Model K truck was reduced to one and it only had brakes on one of the axles.
 

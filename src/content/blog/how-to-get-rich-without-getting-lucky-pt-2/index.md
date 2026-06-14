@@ -7,6 +7,8 @@ slug: "how-to-get-rich-without-getting-lucky-pt-2"
 coverImage: "./feynman.jpeg"
 ---
 
+> **Editor's note:** This post is a personal reading note and commentary on Naval Ravikant's "How to Get Rich Without Getting Lucky" series. Where it quotes Naval directly, those words are his—kept as attribution, not presented as original writing.
+
 Here is part two of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
 ### Pick an industry where you can play long-term games with long-term people.
