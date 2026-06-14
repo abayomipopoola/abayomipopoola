@@ -8,9 +8,17 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  ogType?: "website" | "article";
+  publishedDate?: Date;
 }
 
-const { title, description = SITE_DESCRIPTION, image } = Astro.props;
+const {
+  title,
+  description = SITE_DESCRIPTION,
+  image,
+  ogType,
+  publishedDate,
+} = Astro.props;
 const GTAG_TRACKING_ID = import.meta.env.GTAG_TRACKING_ID;
 const gtagInitScript = GTAG_TRACKING_ID
   ? `
@@ -27,7 +35,13 @@ gtag("config", ${JSON.stringify(GTAG_TRACKING_ID)});
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} image={image} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      ogType={ogType}
+      publishedDate={publishedDate}
+    />
   </head>
   <body class="bg-stone-50">
     <Header />

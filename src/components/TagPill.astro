@@ -1,0 +1,23 @@
+---
+import { getTagHref } from "@src/utils/blog";
+
+interface Props {
+  tag: string;
+  count?: number;
+  size?: "sm" | "lg";
+}
+
+const { tag, count, size = "sm" } = Astro.props;
+
+const sizeClasses = size === "lg" ? "px-3 py-1 text-sm" : "px-2 py-0.5 text-xs";
+---
+
+<a
+  class:list={[
+    "rounded-2xl border border-zinc-300 text-(--link-color) no-underline transition-all duration-700 hover:border-zinc-700",
+    sizeClasses,
+  ]}
+  href={getTagHref(tag)}
+>
+  {tag}{count !== undefined && ` (${count})`}
+</a>

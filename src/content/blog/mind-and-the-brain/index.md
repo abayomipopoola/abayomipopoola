@@ -7,9 +7,11 @@ slug: "mind-and-the-brain"
 coverImage: "./mind.jpg"
 ---
 
-Programming a computer involves external software instructing the internal hardware. Similarly, for biological computers like the human brain, purpose or direction often comes from outside its own mechanism.
+Programming a computer involves external software instructing the internal hardware. It's tempting to reach for the same metaphor with the brain—that some higher-level "software", the mind, directs the hardware.
 
 > The mind programs the brain 🧠 .
+
+It's an evocative image, but one worth holding loosely. That the mind is a separate thing which "programs" the brain is not established science; a widely held view runs the other way—that the mind is the lived, subjective process the brain produces. What follows is a walk through that debate, not a settled answer to it.
 
 ### The Relationship between Mind and Brain
 
@@ -19,9 +21,9 @@ Being aware of reading this very post or reflecting on one's existence is the ma
 
 ### The Power of the Mind
 
-What if the mind, being separate yet deeply interconnected with the brain, holds the power to reprogram our neural pathways? Initiatives like the CIA's MK Ultra program have delved into the potential of mind control, showcasing the immense influence of the mind. Furthermore, the field of cybernetics offers astonishing insights into how systems, including the human brain, can be controlled and transformed.
+What if the mind—deeply interconnected with the brain—can, in some measure, reshape it? This is less mystical than it first sounds. Research on _neuroplasticity_ shows that directed attention and repeated practice physically rewire neural pathways: learning an instrument, recovering speech after a stroke, or the structural changes seen in long-term meditators are all cases where sustained mental activity leaves a measurable mark on the brain itself.
 
-The mind's capabilities are undeniable, and it's often described as having a distinctive "energy." This energy might be a metaphorical reference to its power and influence, or it could literally point to a measurable force, like neural activity. However, the exact nature and source of this energy remain elusive to current scientific understanding.
+The mind is often described as having a distinctive "energy." That word is best read as a metaphor—for focus, will, and influence—rather than a literal physical force. The measurable thing underneath it is neural activity; the felt sense of mental "energy" is our first-person experience of that activity.
 
 The mind and brain, two entities of vast complexity, continue to fascinate and baffle scholars and scientists alike. As we inch closer to understanding them, we must keep an open mind—embracing both the tangible and the intangible aspects of our existence.
 

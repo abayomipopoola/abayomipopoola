@@ -2,14 +2,14 @@
 title: How to Get Rich (without getting lucky) pt. 2
 date: "2018-08-20T22:06:03.284Z"
 tags: [tweetstorm, naval]
-description: Part two of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
+description: Part two of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
 slug: "how-to-get-rich-without-getting-lucky-pt-2"
 coverImage: "./feynman.jpeg"
 ---
 
-Here is part two of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
+Here is part two of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
-### Pick an industry where you can play long term games with long term people.
+### Pick an industry where you can play long-term games with long-term people.
 
 #### Play long-term games with long-term people
 
@@ -25,7 +25,7 @@ Now of course that doesn't always work because you can make so much money in one
 
 But essentially if you want to be successful, you have to work with other people. And you have to figure out who can you trust, and who can you trust over a long, long period of time, that you can just keep playing the game with them, so that compound interest, and high trust will make it easier to play the game, and will let you collect the major rewards, which are usually at the end of the cycle.
 
-So, for example, Warren Buffett has done really well as an investor in the U.S. stock market, but the biggest reason he could do that was because the U.S. stock market has been stable, and around, and didn't get for example seized by the government during a bad administration. Or the U.S. didn't plunge into some war. The underlying platform didn't get destroyed. So, in his case, he was playing a longterm game. And the trust came from the U.S. stock market's stability.
+So, for example, Warren Buffett has done really well as an investor in the U.S. stock market, but the biggest reason he could do that was because the U.S. stock market has been stable, and around, and didn't get for example seized by the government during a bad administration. Or the U.S. didn't plunge into some war. The underlying platform didn't get destroyed. So, in his case, he was playing a long-term game. And the trust came from the U.S. stock market's stability.
 
 #### When you switch industries, you're starting over from scratch
 
@@ -45,7 +45,7 @@ So, it's important to pick an industry where you can play long-term games, and w
 
 #### Long-term players make each other rich
 
-In a longterm game, it's positive sum. We're all baking the pie together. We're trying to make it as big as possible. And a short term game, we're cutting up the pie.
+In a long-term game, it's positive sum. We're all baking the pie together. We're trying to make it as big as possible. And a short term game, we're cutting up the pie.
 
 Now this is not to excuse the socialists, right? The socialists are the people who are not involved in baking the pie, who show up at the end, and say, "I want a slice, or I want the whole pie." They show up with the guns.
 
@@ -249,4 +249,4 @@ Summary:
 - It made sense to be pessimistic in the past. But modern society is far safer, with limited downside and unlimited upside. Adapting for modern society means overriding your natural pessimism.
 - Worst of all is the nitpicker.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

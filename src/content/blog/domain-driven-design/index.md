@@ -25,7 +25,7 @@ In reality, a savings account is much more intricate. It processes iterations ov
 
 To develop effective software, understanding the domain it serves is crucial. You can't create a banking software system without a deep knowledge of banking itself – understanding the banking domain. Bankers profoundly understand this system, so their expertise is invaluable. DDD aids in the creation of models that represent a problem domain. The model consists of essential concepts selected for software implementation. To achieve this, DDD emphasizes close communication between domain experts – bankers, in this case – and developers. This dialogue should revolve around the domain, ensuring domain experts aren't merely listing desired software features. Instead, they should discuss the fundamental properties or behaviours required of domain objects. Likewise, developers shouldn't fixate on the technicalities, like class variables or database columns, but focus on the bigger picture of the domain's needs.
 
-> A Domain Model is an Object Model describing the problem domain. They include the domain objects in the problem domain and describe the attributes, behaviour and relationships between them.
+> A domain model captures the essential concepts of a problem domain—their attributes, behaviour, and the relationships between them. It is frequently expressed as an object model, but it need not be: DDD is broader than object modelling, reaching into strategic design—bounded contexts, context maps, core domains—as much as the tactical building blocks.
 
 ### Ubiquitous Language
 

@@ -13,7 +13,7 @@ This is the concluding part of the _Payment Systems, and the Emerging Economy_ b
 
 According to the World Bank, financial inclusion is a key enabler in reducing poverty and boosting prosperity.
 
-About 1.7 billion adults worldwide still don't have access to a bank account <a href="https://globalfindex.worldbank.org/sites/globalfindex/files/chapters/2017%20Findex%20full%20report_chapter2.pdf" target="_blank" class="read-more">_(Worldbank globalfindex)_</a>.
+About 1.4 billion adults worldwide still don't have access to a bank account <a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" class="read-more">_(World Bank, 2021 Global Findex)_</a>.
 
 ![Unbanked populace data](./unbanked_data.jpg)
 
@@ -24,6 +24,8 @@ Apart from protecting your money from theft, a bank account connects people to t
 #### Financial Inclusion Efforts in Nigeria
 
 > According to research done by The Fletcher School and Mastercard Center for Inclusive Growth, of the $301 billion of funds flows from consumers to businesses in Nigeria, 98 percent is still based on cash.
+
+_The Nigerian figures in this post reflect the data available when it was written. For the current picture—including the surge in agency banking and POS usage since—see EFInA's <a href="https://efina.org.ng/our-work/research/access/" target="_blank">Access to Financial Services in Nigeria (A2F) 2023</a> survey._
 
 Several players in the Nigeria Fintech space are attempting to help close the gap of financial inclusion, and tapping into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
 
@@ -39,7 +41,7 @@ The scope of permissible activities as detailed in the guidelines includes essen
 
 #### POS Business
 
-A banking agents who run a _POS business_, as it's predominantly called, usually owns and operates a retail outlet, or a kioks where they conduct financial transactions that allow customers to deposit, withdraw, transfer funds, pay bills, recharge airtime, do balance inquiry, and other related services.
+A banking agent who runs a _POS business_, as it's predominantly called, usually owns and operates a retail outlet, or a kiosk, where they conduct financial transactions that allow customers to deposit, withdraw, transfer funds, pay bills, recharge airtime, do balance inquiry, and other related services.
 
 The business thrives in rural, and semi-urban centres with the unbanked & underbanked populace. Banks or super-agents equip agents with point-of-sale (POS) card reader, mobile phone, barcode scanner, personal identification number (PIN) pads, personal computer, etc, to be able to transact.
 

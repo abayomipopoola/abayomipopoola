@@ -2,12 +2,12 @@
 title: How to Get Rich (without getting lucky) pt. 5
 date: "2018-08-20T22:09:03.284Z"
 tags: [tweetstorm, naval]
-description: Part five of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
+description: Part five of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
 slug: "how-to-get-rich-without-getting-lucky-pt-5"
 coverImage: "./feynman.jpeg"
 ---
 
-Here is part five of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
+Here is part five of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
 ### There's No Actual Skill Called "Business"
 
@@ -429,4 +429,4 @@ Summary:
 
 ### When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

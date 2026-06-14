@@ -7,7 +7,7 @@ slug: "toyota-case-of-lean-product-development"
 coverImage: "./ideas.jpg"
 ---
 
-Toyota knows how to make cars so well that it became the first company to produce more than 10 million units a year. Its success is rooted in a special system and began what is now known as 'Lean Manufacturing', an ethos emulated by companies around the world to make products faster, cheaper and better.
+Toyota knows how to make cars so well that it became the first carmaker to produce more than 10 million vehicles in a single year—a milestone it crossed in the early 2010s. Its success is rooted in a special system and began what is now known as 'Lean Manufacturing', an ethos emulated by companies around the world to make products faster, cheaper and better.
 
 Following the Second World War, Japan was left in a precarious economic position, disadvantaged by lacking natural resources, materials like steel and other metals were hard to come by and companies had to be creative to compete. Toyota's founder Sakichi Toyoda had started a loom business, but it was his son Kiichiro who founded the motor company in 1937. They were used to working within narrow margins — as the shortage of materials increased during the war, the number of headlamps on its Model K truck was reduced to one and it only had brakes on one of the axles.
 
@@ -57,7 +57,7 @@ Kaizen has practically become a universal word. But is rarely practised in most 
 
 It should be clear that this really is a system. Toyota uses the analogy of trying to navigate through waters while lowering the water level to reveal the rocks. The water level is like inventory. The rocks are problems. When you lower the inventory problems are exposed and unless they are solved the boat will crash on the rocks. Jidoka also reveals rocks throughout the day. Surfacing problems is only valuable if people working on the process have the tools and are motivated to first contain the problems and then solve them at the root cause. It is an endless journey of improvement.
 
-### Product Developement Process
+### Product Development Process
 
 The in-depth study of Toyota's approach to product-process development led to the identification of a set of 13 management principles that can be considered a foundation for lean product development more generally. This set of principles can be further broken down into a framework of process, people, and tools, which can be applied to service industries and professional operations. The important lesson to note is that it is a systems model. What makes it work at Toyota is that all the pieces fit together and support each other. Pull out a piece of the system and it collapses.
 

@@ -11,7 +11,7 @@ In **Execution: The Discipline of Getting Things Done**, Ram Charan and former H
 
 For effective execution, leaders need to be deeply engaged within their teams and organizations. Cultivating a culture of execution ensures systematic evaluation of the current state and taking the necessary measures.
 
-### The Principle of GTD
+### The Principle of Execution
 
 Leaders need to be proactive, working closely with their teams. To implement effective core processes, they should instill vital leadership behaviors and foster an execution culture. The three core processes of execution intricately weave together an organization's people, strategy, and operations.
 
@@ -74,7 +74,7 @@ A robust evaluation process is crucial in determining potential leaders and thos
 
 ![leadership assessment](./las.png)
 
-- In constract, a **Succession Depth Analysis** evaluates if the company has the talent pipeline to fill critical positions. It also evaluates if high-potential people are stuck in the wrong jobs.
+- In contrast, a **Succession Depth Analysis** evaluates if the company has the talent pipeline to fill critical positions. It also evaluates if high-potential people are stuck in the wrong jobs.
 
 ![succession depth](./sda.png)
 

@@ -24,7 +24,7 @@ export const autoNewTabExternalLinks: RehypePlugin = (options?: Options) => {
 
       if (isExternal(url, siteDomain)) {
         element.properties!["target"] = "_blank";
-        element.properties!["rel"] = "noopener";
+        element.properties!["rel"] = "noopener noreferrer";
       }
     });
   };
@@ -48,5 +48,12 @@ const getUrl = (element: any) => {
 };
 
 const isExternal = (url: string, domain: string) => {
-  return url.startsWith("http") && !url.includes(domain);
+  try {
+    // Resolve against the site origin so relative URLs become internal and
+    // protocol-relative ("//host") URLs are classified by their real host.
+    const { hostname } = new URL(url, `https://${domain}`);
+    return hostname !== domain && !hostname.endsWith(`.${domain}`);
+  } catch {
+    return false; // unparseable URLs are treated as internal
+  }
 };

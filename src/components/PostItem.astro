@@ -1,11 +1,7 @@
 ---
 import FormatDate from "./FormatDate.astro";
-import {
-  getPostHref,
-  getReadingTime,
-  getTagHref,
-  type BlogPost,
-} from "@src/utils/blog";
+import TagPill from "@src/components/TagPill.astro";
+import { getPostHref, getReadingTime, type BlogPost } from "@src/utils/blog";
 
 interface Props {
   post: BlogPost;
@@ -26,15 +22,6 @@ const minutesRead = getReadingTime(post);
     <FormatDate date={post.data.date} /> • {minutesRead}
   </div>
   <div class="flex shrink-0 gap-2 capitalize">
-    {
-      (post.data.tags || []).map((tag) => (
-        <a
-          class="rounded-2xl border border-zinc-300 px-2 py-0.5 text-xs text-[var(--link-color)] no-underline transition-all duration-700 hover:border-zinc-700"
-          href={getTagHref(tag)}
-        >
-          {tag}
-        </a>
-      ))
-    }
+    {(post.data.tags || []).map((tag) => <TagPill tag={tag} />)}
   </div>
 </div>

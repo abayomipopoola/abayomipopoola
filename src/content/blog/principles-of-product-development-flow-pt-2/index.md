@@ -13,6 +13,8 @@ This is the concluding part of the _The Principles of Product Development Flow_ 
 
 Queues are everywhere in product development. The waiting lists or backlog of tasks or items that need to be completed or processed, list of bugs to be fixed, features to be added, or requests to be addressed.
 
+It helps to separate two ideas that are easy to blur together. A _backlog_ is an ordered set of options—work you _might_ commit to. A _queue_ is work that has already been committed and is now waiting for a resource to free up. Backlogs are healthy; they are how a team keeps its options open. Unmanaged queues are the costly part: as Reinertsen stresses, invisible queues are where product development quietly bleeds economic value.
+
 Queues are an integral part of product development because they help teams prioritize work and manage their workflow. When new tasks or items are added to the queue, they are typically assigned a priority based on their importance and urgency, and this helps team members decide what to work on next.
 
 One common use of queues in product development is in Agile software development methodologies. In Agile, work is typically organized into short iterations called sprints. During each sprint, the team works on a prioritized backlog of tasks, which is essentially a queue of work items. The backlog is constantly evolving, with new items being added and others being completed, and the team adjusts their priorities accordingly.
@@ -25,7 +27,7 @@ Queueing theory is a mathematical approach to the study of waiting lines, and it
 
 The queue refers to the line of customers waiting to be served. The length of the queue and the waiting time of customers in the queue can be influenced by various factors, such as the arrival rate, the service rate, and the number of servers available.
 
-Queueing theory provides a way to analyze the performance of a queue systems and to identify ways to optimize them, such as by increasing the number of servers, improving the service rate, or reducing the arrival rate. The principles of queueing theory can be applied to a wide range of systems and are used in various fields, such as operations research, computer science, and engineering.
+Queueing theory provides a way to analyze the performance of queueing systems and to identify ways to optimize them, such as by increasing the number of servers, improving the service rate, or reducing the arrival rate. The principles of queueing theory can be applied to a wide range of systems and are used in various fields, such as operations research, computer science, and engineering.
 
 > The arrival process in a queueing system describes how customers or requests enter the queue. Various models can represent it, including the Poisson process, where customer arrival is a random event that conforms to a particular probability distribution.
 
@@ -92,7 +94,7 @@ This example illustrates why simply applying manufacturing-style FIFO (first in 
 - For equally critical tasks, start with the shorter ones first
 - Consider risk factors that might affect sequencing decisions
 
-Queues have a profound affect the product development processes. They cause valuable work products to sit idle, waiting to access busy resources. Queuing theory is interested in the various qualities of a queue. Its importance within software engineering can not be understated. A team that does not manage its queues properly is running the risk of slow delivery, long cycle times and large batch sizes.
+Queues have a profound effect on product development processes. They cause valuable work products to sit idle, waiting to access busy resources. Queuing theory is interested in the various qualities of a queue. Its importance within software engineering can not be understated. A team that does not manage its queues properly is running the risk of slow delivery, long cycle times and large batch sizes.
 
 #### Cumulative Flow Diagram
 
@@ -106,7 +108,7 @@ The CFD can also help product managers understand the overall flow of work items
 
 ![cumulative flow diagram](./cfd.png)
 
-The chart above is an example of a CFD, where the x-axis represent the time frame that the chart is visualising the data for. The y-axis represent the cummulative number of work units that are in the work flow at the time of measurement.
+The chart above is an example of a CFD, where the x-axis represents the time frame that the chart is visualising the data for. The y-axis represents the cumulative number of work units that are in the work flow at the time of measurement.
 
 The cumulative flow diagram is also a crucial Kanban analytics tool and provides an overview of the current state of your project.
 

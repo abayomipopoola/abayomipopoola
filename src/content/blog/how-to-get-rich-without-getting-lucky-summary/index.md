@@ -1,13 +1,13 @@
 ---
-title: How to Get Rich (without getting lucky) summarised.
+title: "How to Get Rich (without getting lucky): Summary"
 date: "2018-08-20T22:12:03.284Z"
 tags: [tweetstorm, naval]
-description: Summarised note on the Naval's expanded points from his "How To Get Rich Without Getting Lucky" tweetstorm.
+description: Summarised note on Naval's expanded points from his "How To Get Rich Without Getting Lucky" tweetstorm.
 slug: "how-to-get-rich-without-getting-lucky-summary"
 coverImage: "./feynman.jpeg"
 ---
 
-Here is the summarised note on the Naval's expanded points from his "How to Get Rich" tweetstorm <a href="/how-to-get-rich-without-getting-lucky-pt-1" class="read-more">_(Read expanded series here)_</a>.
+Here is the summarised note on Naval's expanded points from his "How to Get Rich" tweetstorm <a href="/how-to-get-rich-without-getting-lucky-pt-1" class="read-more">_(Read expanded series here)_</a>.
 
 Let's get to it.
 
@@ -53,7 +53,7 @@ Let's get to it.
 - Figure out what new product or technology you can provide that's natural to you.
 - Then figure out how to scale it so everyone on the planet can have your product.
 
-### Pick an industry where you can play long term games with long term people.
+### Pick an industry where you can play long-term games with long-term people.
 
 - Pick an industry where you can play long-term games with long-term people. Long-term players make each other rich.
 - Short-term players make themselves rich.
@@ -101,7 +101,7 @@ Let's get to it.
 - Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgment in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
 - Specific knowledge may come from your DNA. It may be soft skills learned in childhood. It may be something so new that nobody but you knows how to do it. It may be true on-the-job training where you're pattern matching in highly complex environments.
 - Specific knowledge can't be trained. Otherwise it will be mass-produced and you will be paid the minimum possible wage to do it.
-  \*Specific knowledge can be learned by pursuing your genuine curiosity, talents and passion. Building specific knowledge will feel like play to you.
+- Specific knowledge can be learned by pursuing your genuine curiosity, talents and passion. Building specific knowledge will feel like play to you.
 - Genuine curiosity is very important. Leverage and compound interest mean someone who is just slightly better than you will get paid 10x-1000x more than you. So you must be the best.
 
 ### Specific knowledge is knowledge that you cannot be trained for.
@@ -267,4 +267,4 @@ Let's get to it.
 
 ### When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

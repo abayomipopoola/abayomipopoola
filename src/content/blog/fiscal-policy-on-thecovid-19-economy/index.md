@@ -7,6 +7,8 @@ slug: "fiscal-policy-on-thecovid-19-economy"
 coverImage: "./social-distancing.jpg"
 ---
 
+> **Editor's note:** This piece was written in April 2020, in the early weeks of the pandemic—before vaccines were available and before the full scale of the global policy response was known. It is kept here as a snapshot of that moment. Expansionary fiscal policy was a reasonable answer to a demand-driven slump producing below potential GDP, but it is not a universal prescription: when inflation, debt sustainability, or supply-side constraints dominate, the trade-offs change—as the inflationary aftermath of 2021–2023 went on to show.
+
 China, the epicentre of the virus was responsible for around $0.78 trillion out of the $1.66 trillion 2019 global economic growth. That's about half the global economic growth. Same China sits at the heart of global supply chains that keep the world economy humming... large economies such as the US and Japan get more than a third of their intermediate goods from China. Then COVID-19 strikes.
 
 Until there is a better sense of when and how the COVID-19 crisis will be resolved and when a vaccine would be made available, economists are yet to predict the end of the incipient recession.

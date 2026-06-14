@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "@src/layouts/BaseLayout.astro";
+import TagPill from "@src/components/TagPill.astro";
 import {
   getAllBlogPosts,
   getAllTags,
-  getTagHref,
   groupTagsByFirstLetter,
 } from "@src/utils/blog";
 
@@ -25,12 +25,7 @@ const title = `Posts Tags`;
             </h2>
             <div class="flex flex-wrap gap-2">
               {tags.map((tag) => (
-                <a
-                  class="rounded-2xl border border-zinc-300 px-3 py-1 text-sm text-zinc-700 no-underline transition-all duration-700 hover:border-zinc-700"
-                  href={getTagHref(tag.slug)}
-                >
-                  {tag.label} ({tag.postCount})
-                </a>
+                <TagPill tag={tag.label} count={tag.postCount} size="lg" />
               ))}
             </div>
           </div>

@@ -23,11 +23,13 @@ In the context of this post, scalability refers to the software's ability to opt
 
 To illustrate, consider a system that receives 500 requests per second, with each request taking 0.5 seconds to complete. This means the system is concurrently handling 500 × 0.5 = 250 requests.
 
-In this scenario, _L_ represents the system's capacity, while _W_ is determined by the software's design, its complexity, and inherent latencies. By knowing both _L_ and _W_, we can calculate the maximum request rate the system can sustain:
+In this scenario, _L_ is the average number of requests in flight at any instant—a measure of the load the system must hold—while _W_ is determined by the software's design, its complexity, and inherent latencies. By knowing both _L_ and _W_, we can calculate the maximum request rate the system can sustain:
 
 <img src="https://latex.codecogs.com/svg.latex?\Large \lambda=\frac{L}{W}" title="max requests rate" class="centre"/>
 
-To handle more requests, we need to increase _L_, the system's capacity, or decrease _W_, the processing time or latency. However, if the incoming request rate surpasses λ, the system will no longer be stable. Requests will start queuing up, initially experiencing much-increased latency, but quickly leading to full consumption of system resources and service unavailability.
+To handle more requests, we need to increase _L_, the number of in-flight requests the system can hold, or decrease _W_, the processing time or latency. However, if the incoming request rate surpasses λ, the system will no longer be stable. Requests will start queuing up, initially experiencing much-increased latency, but quickly leading to full consumption of system resources and service unavailability.
+
+Treat Little's Law here as a sizing and intuition tool rather than a complete capacity model: it holds for a stable arrival rate and long-run averages, assumes a bounded queue, and—on its own—says nothing about downstream bottlenecks. Each of those still has to be measured directly.
 
 #### Understanding Capacity (L)
 
@@ -50,7 +52,7 @@ If we use the _thread-per-request_ model on a "good-­enough" hardware, _L_ is l
 
 Latency is a crucial factor in determining system efficiency. Imagine two microservices, _Service A_ and _Service B_, each taking an average of 500ms to respond, inclusive of network latency. If the services are being called sequentially, the web service's processing latency is 1 second, denoted as _W_. If we permit the web server to generate up to 2000 threads, our _L_ becomes 2000. By Little's law, our system can manage:
 
-<img src="https://latex.codecogs.com/svg.latex?\lambda=\frac{W}{L}=\frac{2000}{1}=2000" title="processing letency" class="centre"/>
+<img src="https://latex.codecogs.com/svg.latex?\lambda=\frac{L}{W}=\frac{2000}{1}=2000" title="processing latency" class="centre"/>
 
 requests per second before instability ensues. This seems sufficient, even accounting for traffic surges.
 

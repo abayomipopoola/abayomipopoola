@@ -23,7 +23,7 @@ One of the key insights from _Thinking in Systems_ is that systems exhibit certa
 
 By adopting a systems perspective, we can develop a more comprehensive understanding of complex phenomena, enabling us to better identify underlying issues, anticipate potential problems, and design more effective solutions. Systems thinking encourages us to think holistically, considering not just the individual components but also the interconnections, feedback loops, and dynamics that shape the behaviour of the system as a whole.
 
-#### Three constituents of a Systems
+#### Three constituents of a system
 
 Systems can be broken down into three fundamental constituents: elements, connectors, and purposes. Understanding these constituents is essential for analyzing and managing complex systems effectively.
 
@@ -31,7 +31,7 @@ Systems can be broken down into three fundamental constituents: elements, connec
 
 - **Connectors**: Connectors are the relationships, interactions, or connections between the elements within a system. These can take various forms, such as data flows, communication channels, or dependencies. Connectors are critical to a system's functioning, as they enable the transfer of information, resources, or influence among its components. In the software system example, connectors could be API calls, data exchange protocols, or function calls within the code.
 
-- **Purposes**: The purpose of a system refers to its overarching goal, function, or reason for existence. It is the driving force behind the system's behaviour and the ultimate objective that its components collectively strive to achieve. Understanding a system's purpose helps clarify the context in which it operates and provides a foundation for evaluating its performance and effectiveness. In the software system example, the purpose could be to process and analyze data, facilitate communication between users, or manage an organization's resources.
+- **Purposes**: The purpose of a system refers to its overarching goal, function, or reason for existence. It is the driving force behind the system's behaviour and the ultimate objective that its components collectively strive to achieve. Understanding a system's purpose helps clarify the context in which it operates and provides a foundation for evaluating its performance and effectiveness. In the software system example, the purpose could be to process and analyze data, facilitate communication between users, or manage an organization's resources. A caution from Meadows: a system's real purpose is best deduced from its behaviour, not from its stated goals—what it actually does often reveals an aim quite different from the one announced for it.
 
 By analyzing these constituents, we can develop a more holistic understanding of complex systems and improve our problem-solving and decision-making capabilities.
 
@@ -93,7 +93,7 @@ Behaviour-over-time graphs is used in the book as a way to visually represent th
 
 The charts above are called behaviour over time graphs. They provide clues to the kind of systemic processes that may be at work. A rapidly rising or falling graph, for example, indicates a reinforcing process, whereas an oscillating graph suggests what's called a balancing process.
 
-behaviour-over-time graphs plot the changes in a stock or flow over time, revealing patterns, trends, or oscillations in the system's behaviour. These graphs can help identify the presence and effects of feedback loops within a system, as they make it easier to visualize the relationships between variables and how they change over time.
+Behaviour-over-time graphs plot the changes in a stock or flow over time, revealing patterns, trends, or oscillations in the system's behaviour. These graphs can help identify the presence and effects of feedback loops within a system, as they make it easier to visualize the relationships between variables and how they change over time.
 
 ### Systems Limiting Factors
 
@@ -153,6 +153,6 @@ By using a systems approach, Jon gains a better understanding of the external fa
 
 Many now believe that a systems approach holds the most promise for addressing complex issues like traffic congestion, which is beneficial not only for Jon but also for everyone affected by the problem.
 
-### Conclussion
+### Conclusion
 
 _Thinking in Systems_ serves as a foundational text for understanding the principles and concepts of systems thinking. Donella Meadows masterfully presents these ideas in an engaging and accessible manner, making the book an invaluable resource for anyone seeking to grasp the intricacies of complex systems. By applying the concepts and insights presented in the book, readers can develop the skills necessary to analyze, design, and manage systems in a wide range of contexts.

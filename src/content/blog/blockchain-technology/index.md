@@ -19,20 +19,21 @@ I'd touch on the internals of bitcoin.
 
 ### Bitcoin
 
-Bitcoins is a stateless, "algorithmic" currency that exists only in cyberspace.
+Bitcoin is a stateless, "algorithmic" currency that exists only in cyberspace.
 
 It all started in October 2008, when Satoshi Nakamoto, a software engineer who was never identified,
 published a paper outlining a "peer-to-peer electronic cash system" <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" class="read-more">_(Read paper)_</a>.
 
-Just as precious metals are dug from the earth, bitcoins are mined from blocks. Blocks are ledgers that contain
-a complex mathematical problem that, if solved, will reward its solvers with a number of bitcoins.
+Just as precious metals are dug from the earth, new bitcoins are mined into existence. A block is a batch of
+transactions added to the chain; to add one, a miner must solve a hard mathematical puzzle, and is rewarded with
+newly minted bitcoins for doing so. A block is not itself the ledger—it is one more page appended to it.
 
 > There're only twenty-one million Bitcoins to be mined.
 
 Bitcoin mining is the process of adding transaction records to bitcoin's public ledger of past transactions,
 called the blockchain (chain of blocks)—a shared public ledger on which the entire decentralised distributed peer-to-peer
 bitcoin network relies. All the bitcoin used in the world are connected and together they constitute a network that processes
-and check all bitcoin transactions in a public ledger.
+and checks all bitcoin transactions in a public ledger.
 
 Satoshi Nakamoto designed the blockchain in such a way that users can create a free and anonymous bitcoin account number—a wallet.
 This eliminates the need for a central bank because all the users constitute the bank.
@@ -78,6 +79,9 @@ Before a block can be added to a chain, a few things have to happen. First, a co
 thus creating the block. The computer that solves the problem shares the solution to all other computers on the network.
 This is called a proof-of-work. The network verifies the proof-of-work, if correct, the block is added to the chain.
 
+This describes Bitcoin's particular mechanism. Proof-of-work is not universal, though: many other blockchains reach
+agreement through proof-of-stake or other consensus mechanisms that require no mining at all.
+
 #### How Organisations are already using Blockchains
 
 We've seen major banks, e-commerce giants and other industries experimenting with blockchain for money transfers, keeping records,
@@ -121,7 +125,7 @@ of blockchain <a href="https://hbr.org/2017/01/the-truth-about-blockchain" targe
 Blockchain technology brings everyone to the highest degree of accountability. With the help of this technology no more
 transactions will be missed, human or machine errors will be minimised.
 
-Just like all good things, blockchain to has got some challenges: it requires high computing resources/power to operate;
+Just like all good things, blockchain too has its challenges: it requires high computing resources/power to operate;
 and in the case of bitcoin/altcoins, it's important you secure your wallet ID, as revealing it to a third party means losing
 control over your coin value, and also, if you forget your wallet ID it cannot be recovered and the funds secured by it are
 lost forever.

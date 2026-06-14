@@ -1,10 +1,10 @@
 ---
-import { SITE_TITLE, SITE_TAGLINE, SITE_DESCRIPTION } from "../consts";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, SITE_TAGLINE, SITE_DESCRIPTION } from "@src/consts";
 import { Image } from "astro:assets";
+import BaseLayout from "@src/layouts/BaseLayout.astro";
+import Prose from "@src/components/Prose.astro";
+import PostItem from "@src/components/PostItem.astro";
 import DP from "@src/assets/img/ava.jpg";
-import Prose from "../components/Prose.astro";
-import PostItem from "../components/PostItem.astro";
 import { getRecentBlogPosts } from "@src/utils/blog";
 
 const posts = await getRecentBlogPosts();
@@ -55,7 +55,6 @@ const posts = await getRecentBlogPosts();
         <div>
           {posts.map((post) => <PostItem post={post} />)}
         </div>
-        <div class="text-right"></div>
       </div>
     </main>
   </div>

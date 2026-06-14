@@ -2,12 +2,12 @@
 title: How to Get Rich (without getting lucky) pt. 3
 date: "2018-08-20T22:07:03.284Z"
 tags: [tweetstorm, naval]
-description: Part three of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
+description: Part three of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
 slug: "how-to-get-rich-without-getting-lucky-pt-3"
 coverImage: "./feynman.jpeg"
 ---
 
-Here is part three of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
+Here is part three of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
 ### Learn to sell. Learn to build. If you can do both, you will be unstoppable.
 
@@ -137,7 +137,7 @@ Summary:
 - Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgment in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
 - Specific knowledge may come from your DNA. It may be soft skills learned in childhood. It may be something so new that nobody but you knows how to do it. It may be true on-the-job training where you're pattern matching in highly complex environments.
 - Specific knowledge can't be trained. Otherwise it will be mass-produced and you will be paid the minimum possible wage to do it.
-  \*Specific knowledge can be learned by pursuing your genuine curiosity, talents and passion. Building specific knowledge will feel like play to you.
+- Specific knowledge can be learned by pursuing your genuine curiosity, talents and passion. Building specific knowledge will feel like play to you.
 - Genuine curiosity is very important. Leverage and compound interest mean someone who is just slightly better than you will get paid 10x-1000x more than you. So you must be the best.
 
 ### Specific knowledge is knowledge that you cannot be trained for.
@@ -317,4 +317,4 @@ Summary:
 - A well-functioning team has clear accountability for each position. If you have a small team with clearly delineated responsibilities, you can keep a very high level of accountability.
 - We're socially hard wired not to fail in public. People who have the ability to fail in public under their own names gain a lot of power.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

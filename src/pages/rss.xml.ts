@@ -1,6 +1,6 @@
 import rss from "@astrojs/rss";
 import type { APIRoute } from "astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@src/consts";
 import { getAllBlogPosts, getPostHref } from "@src/utils/blog";
 
 export const GET: APIRoute = async (context) => {

@@ -45,6 +45,8 @@ V8's approach to sandboxing stands out from traditional solutions:
 - Each process operates in its own sandbox, ensuring complete separation of JavaScript functions.
 - Memory isolation prevents code execution in one sandbox from affecting others.
 
+It's important to be precise about what this buys you, though. An isolate is **not** the same security boundary as a container or a virtual machine. Isolates share a single operating-system process and runtime, so their separation is logical rather than hardware-enforced. Microarchitectural side-channel attacks such as Spectre—and bugs in the runtime itself—can cross that boundary. That is exactly why platforms running untrusted code in isolates layer on additional mitigations (process and site isolation, reduced timer precision, and seccomp-style sandboxes) rather than relying on the isolate alone.
+
 While V8 provides the foundation for various JavaScript runtimes, it's important to understand how other environments build upon it. Node.js, for example, is built on the V8 engine as a runtime environment for JavaScript, offering asynchronous execution capabilities and sharing V8's open-source nature. However, it notably lacks V8's built-in sandboxing features, distinguishing it from its underlying engine.
 
 > A runtime environment is the software infrastructure where code executes. While Node.js uses the '.js' extension to denote its JavaScript association, this is purely nomenclature and doesn't indicate a JavaScript file.

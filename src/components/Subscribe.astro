@@ -1,0 +1,48 @@
+---
+// Newsletter subscribe form (posts to HEY World). Extracted from the post page
+// so the surface color is a token and the markup is reusable.
+---
+
+<section class="subscribe-section">
+  <div class="mx-auto max-w-120 -rotate-1 transform px-4 py-3 sm:px-0">
+    <div
+      class="overflow-visible rounded-md border border-black bg-surface p-6 shadow-md"
+    >
+      <form
+        class="flex flex-col"
+        action="https://world.hey.com/abayomi/subscribers"
+        accept-charset="UTF-8"
+        data-remote="true"
+        method="post"
+      >
+        <label
+          for="subscriber[email_address]"
+          class="mb-4 text-center font-bold"
+        >
+          Subscribe below to get future posts
+        </label>
+        <div class="flex flex-col sm:flex-row">
+          <input
+            type="email"
+            name="subscriber[email_address]"
+            placeholder="Type your email..."
+            class="mb-2 grow rounded-full border border-black bg-surface px-4 py-2 focus:border-(--link-color) focus:ring-1 focus:ring-(--link-color) focus:outline-hidden sm:mb-0 sm:rounded-r-none sm:border-r-0"
+            required
+          />
+          <button
+            type="submit"
+            class="rounded-full border border-(--link-color) bg-(--link-color) px-6 py-2 text-white focus:ring-2 focus:ring-black focus:outline-hidden sm:rounded-l-none"
+          >
+            Subscribe
+          </button>
+        </div>
+      </form>
+      <p class="mt-4 text-center">
+        Or grab the <a
+          href="/rss.xml"
+          class="text-(--link-color) hover:underline">RSS feed</a
+        >
+      </p>
+    </div>
+  </div>
+</section>

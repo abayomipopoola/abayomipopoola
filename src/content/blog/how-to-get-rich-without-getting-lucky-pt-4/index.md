@@ -2,12 +2,12 @@
 title: How to Get Rich (without getting lucky) pt. 4
 date: "2018-08-20T22:08:03.284Z"
 tags: [tweetstorm, naval]
-description: Part four of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
+description: Part four of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
 slug: "how-to-get-rich-without-getting-lucky-pt-4"
 coverImage: "./feynman.jpeg"
 ---
 
-Here is part four of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
+Here is part four of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky" <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
 ### Labor and Capital Are Old Leverage
 
@@ -59,8 +59,6 @@ It scales very, very well. If you get good at managing capital, you can manage m
 #### You need specific knowledge and accountability to obtain capital
 
 It is a good form of leverage, but the hard part with capital is how do you obtain it? That's why I talked about specific knowledge and accountability first.
-
-If you have specific knowledge in a domain and if you're accountable and you have a good name in that domain, then people are going to give you capital as a form of leverage that you can use to then go get more capital.
 
 If you have specific knowledge in a domain and if you're accountable and you have a good name in that domain, then people are going to give you capital as a form of leverage that you can use to then go get more capital.
 
@@ -361,4 +359,4 @@ Summary:
 - A lot of the top investors often sound like philosophers because investing is a real-world multi-variate activity. So they need to study everything, not just investment books whose advantages have already been competed away.
 - The more outraged someone is, the worse their judgment. You don't want to hand them the keys to your car, let alone the keys to your company.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

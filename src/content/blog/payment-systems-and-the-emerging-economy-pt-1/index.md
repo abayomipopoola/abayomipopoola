@@ -34,7 +34,7 @@ In the simplest case involving the traditional banking system, payments involve 
 
 ![Bank to bank transfer payments](./bank-payments.png)
 
-In the simple case illustrated in the above figure, the two banks may choose to transfer payment instructions and funds directly with each other. It is also possible for the banks to use various intermediaries to help facilitate the transaction. The diagram refers to these intermediaries as "network"—the central banks in most cases.
+In the simple case illustrated in the above figure, the two banks may choose to transfer payment instructions and funds directly with each other. It is also possible for the banks to use various intermediaries to help facilitate the transaction. The diagram refers to these intermediaries collectively as the "network". In practice the network is rarely a single entity: it can include switches, card schemes, clearing houses, processors, and settlement systems. Central banks often operate or oversee the settlement rails at the centre of it, but they are not always "the network" themselves.
 
 Non-traditional payment systems such as Bitcoin bypass the banking system almost entirely by fulfilling the roles of a financial institution, currency and network themselves.
 

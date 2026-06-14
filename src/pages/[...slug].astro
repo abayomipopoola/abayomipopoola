@@ -1,15 +1,16 @@
 ---
 import { render } from "astro:content";
-import Prose from "../components/Prose.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
-import FormatDate from "../components/FormatDate.astro";
-import SocialShare from "../components/SocialShare.astro";
+import Prose from "@src/components/Prose.astro";
+import BaseLayout from "@src/layouts/BaseLayout.astro";
+import FormatDate from "@src/components/FormatDate.astro";
+import SocialShare from "@src/components/SocialShare.astro";
+import TagPill from "@src/components/TagPill.astro";
+import Subscribe from "@src/components/Subscribe.astro";
 import {
   getAllBlogPosts,
   getPostHref,
   getReadingTime,
-  getTagHref,
   type BlogPost,
 } from "@src/utils/blog";
 
@@ -44,6 +45,8 @@ const minutesRead = getReadingTime(post);
   title={seoTitle || title}
   description={description}
   image={coverImage?.src || undefined}
+  ogType="article"
+  publishedDate={displayDate}
 >
   <div class="container gap-10 lg:flex">
     <main class="grow overflow-hidden">
@@ -74,15 +77,10 @@ const minutesRead = getReadingTime(post);
           </div>
           <Content />
           {
-            (
+            tags && tags.length > 0 && (
               <div class="tags-highlight flex gap-2 capitalize">
-                {(tags || [])?.map((tag: string) => (
-                  <a
-                    class="rounded-2xl border border-zinc-300 px-2 py-0.5 text-xs text-[var(--link-color)] no-underline transition-all duration-700 hover:border-zinc-700"
-                    href={getTagHref(tag)}
-                  >
-                    {tag}
-                  </a>
+                {tags.map((tag) => (
+                  <TagPill tag={tag} />
                 ))}
               </div>
             )
@@ -120,51 +118,7 @@ const minutesRead = getReadingTime(post);
           </li>
         </ul>
       </nav>
-      <section class="subscribe-section">
-        <div
-          class="mx-auto max-w-[480px] -rotate-1 transform px-4 py-3 sm:px-0"
-        >
-          <div
-            class="bg--[#f3f6fc] overflow-visible rounded-md border border-black p-6 shadow-md"
-          >
-            <form
-              class="flex flex-col"
-              action="https://world.hey.com/abayomi/subscribers"
-              accept-charset="UTF-8"
-              data-remote="true"
-              method="post"
-            >
-              <label
-                for="subscriber[email_address]"
-                class="mb-4 text-center font-bold"
-              >
-                Subscribe below to get future posts
-              </label>
-              <div class="flex flex-col sm:flex-row">
-                <input
-                  type="email"
-                  name="subscriber[email_address]"
-                  placeholder="Type your email..."
-                  class="mb-2 grow rounded-full border border-black bg-[#f3f6fc] px-4 py-2 focus:border-[var(--link-color)] focus:ring-1 focus:ring-[var(--link-color)] focus:outline-hidden sm:mb-0 sm:rounded-r-none sm:border-r-0"
-                  required
-                />
-                <button
-                  type="submit"
-                  class="rounded-full border border-[var(--link-color)] bg-[var(--link-color)] px-6 py-2 text-white focus:ring-2 focus:ring-black focus:outline-hidden sm:rounded-l-none"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
-            <p class="mt-4 text-center">
-              Or grab the <a
-                href="/rss.xml"
-                class="text-[var(--link-color)] hover:underline">RSS feed</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
+      <Subscribe />
     </main>
   </div>
 </BaseLayout>

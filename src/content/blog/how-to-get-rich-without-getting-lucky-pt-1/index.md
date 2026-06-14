@@ -2,14 +2,14 @@
 title: How to Get Rich (without getting lucky) pt. 1
 date: "2018-08-20T22:05:03.284Z"
 tags: [tweetstorm, naval]
-description: Part one of the Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
+description: Part one of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".
 slug: "how-to-get-rich-without-getting-lucky-pt-1"
 coverImage: "./feynman.jpeg"
 ---
 
 You probably have come across the viral "How To Get Rich" tweetstorm from Naval—he's kinda famous on Twitter, and also he's the co-founder of AngelList. He's a prolific tech investor in companies like Twitter, Uber, and many more.
 
-Here is part one of the Naval's expanded points from his tweetstorm in detail <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
+Here is part one of Naval's expanded points from his tweetstorm in detail <a href="/how-to-get-rich-without-getting-lucky-summary" class="read-more">_(Read summarised post here)_</a>.
 
 ### Seek wealth, not money or status.
 
@@ -17,11 +17,11 @@ Here is part one of the Naval's expanded points from his tweetstorm in detail <a
 
 #### Wealth is assets that earn while you sleep
 
-Wealth is the thing that you really want. Wealth is assets that earn while you sleep. Wealth is the factory, the robots that's cranking out things. Wealth is the computer program that's running at night, that's serving other customers. Wealth is... even money in the bank that is being reinvested into other assets, and into other businesses. Even a house can be a form of wealth because you can rent it out, although that's probably a lower use of productivity of land than actually doing some commercial enterprise. So, my definition of wealth is much more businesses and assets that can earn while you sleep.
+Wealth is the thing that you really want. Wealth is assets that earn while you sleep. Wealth is the factory, the robots that are cranking out things. Wealth is the computer program that's running at night, that's serving other customers. Wealth is... even money in the bank that is being reinvested into other assets, and into other businesses. Even a house can be a form of wealth because you can rent it out, although that's probably a lower use of productivity of land than actually doing some commercial enterprise. So, my definition of wealth is much more businesses and assets that can earn while you sleep.
 
 But really the reason you want wealth is because it buys you your freedom. So, you don't have to wear a tie like a collar around your neck. So, you don't have to wake up at 7:00 AM, and rush to work, and sit in commute traffic. So, you don't have to waste away your entire life grinding all the productive hours away into a soulless job that doesn't fulfill you.
 
-So, the purpose of wealth is freedom. It's nothing more than that. It's not to buy fur coats, or drive Ferraris, or sale yachts, or jet around the world in your Gulfstream. That stuff gets really boring, and really stupid really fast. It's really just so that you are your own sovereign individual. You're not gonna get that unless you really want it. And the entire world wants it. And the entire world is working hard at it. And to some extent it is competitive. It's a positive sum game, but there are competitive elements to it. Because there's a finite amount of resources right now in society. And to get the resources to do what you want, you have to stand out.
+So, the purpose of wealth is freedom. It's nothing more than that. It's not to buy fur coats, or drive Ferraris, or sail yachts, or jet around the world in your Gulfstream. That stuff gets really boring, and really stupid really fast. It's really just so that you are your own sovereign individual. You're not gonna get that unless you really want it. And the entire world wants it. And the entire world is working hard at it. And to some extent it is competitive. It's a positive sum game, but there are competitive elements to it. Because there's a finite amount of resources right now in society. And to get the resources to do what you want, you have to stand out.
 
 #### Money is how we transfer wealth
 
@@ -257,4 +257,4 @@ Summary:
 - Figure out what new product or technology you can provide that's natural to you.
 - Then figure out how to scale it so everyone on the planet can have your product.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a><small>.
+<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

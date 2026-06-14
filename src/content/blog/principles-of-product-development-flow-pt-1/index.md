@@ -32,7 +32,7 @@ Two important points from this chapter:
 - If you only measure one thing, measure the cost of delay
 - Measure the work, never the worker
 
-Most economic factors in product developement can be traced back to managing delay. Once we quantify the cost of delay, we become aware of the cost of queues.
+Most economic factors in product development can be traced back to managing delay. Once we quantify the cost of delay, we become aware of the cost of queues.
 
 Although, this does not mean that we should spend extensive effort and time on computing the economic value of everything in the product development process. Reinertsen argues that just getting close delivers almost all of the value of measurement with a fraction of the effort.
 
