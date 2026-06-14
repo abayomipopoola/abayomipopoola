@@ -1,29 +1,29 @@
 import { defineConfig } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import { remarkReadingTime } from "./src/utils/remark-reading-time.mjs";
 import { autoNewTabExternalLinks } from "./src/autoNewTabExternalLinks";
-
 import partytown from "@astrojs/partytown";
-
 import tailwindcss from "@tailwindcss/vite";
+
+const site = "https://abayomipo.com";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://abayomipo.com",
+  site,
   integrations: [mdx(), sitemap(), partytown()],
 
   markdown: {
-    extendDefaultPlugins: true,
-    remarkPlugins: [remarkReadingTime],
-    rehypePlugins: [
-      [
-        autoNewTabExternalLinks,
-        {
-          domain: "localhost:4321",
-        },
+    processor: unified({
+      rehypePlugins: [
+        [
+          autoNewTabExternalLinks,
+          {
+            domain: new URL(site).hostname,
+          },
+        ],
       ],
-    ],
+    }),
   },
 
   vite: {

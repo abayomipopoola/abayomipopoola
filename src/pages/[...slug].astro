@@ -1,34 +1,43 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { render } from "astro:content";
 import Prose from "../components/Prose.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import FormatDate from "../components/FormatDate.astro";
 import SocialShare from "../components/SocialShare.astro";
-import { slugifyStr } from "@src/utils/slugify";
+import {
+  getAllBlogPosts,
+  getPostHref,
+  getReadingTime,
+  getTagHref,
+  type BlogPost,
+} from "@src/utils/blog";
 
-type BlogPost = CollectionEntry<"blog">;
 export const getStaticPaths = async () => {
-  const posts: BlogPost[] = await getCollection("blog");
-  posts.sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
-  );
+  const posts = await getAllBlogPosts();
   return posts.map((post, index) => {
     const prev = index + 1 < posts.length ? posts[index + 1] : undefined;
     const next = index > 0 ? posts[index - 1] : undefined;
     return {
-      params: { slug: post.slug },
+      params: { slug: post.id },
       props: { post, prev, next },
     };
   });
 };
 
-const po = Astro.props;
-const post = po.post;
+interface Props {
+  post: BlogPost;
+  prev?: BlogPost;
+  next?: BlogPost;
+}
+
+const { post, prev, next } = Astro.props;
 const {
   data: { title, seoTitle, description, coverImage, date, updatedDate, tags },
 } = post;
-const { Content, remarkPluginFrontmatter } = await post.render();
+const { Content } = await render(post);
+const displayDate = updatedDate ?? date;
+const minutesRead = getReadingTime(post);
 ---
 
 <BaseLayout
@@ -44,19 +53,9 @@ const { Content, remarkPluginFrontmatter } = await post.render();
             <h2 class="my-1! leading-tight">{title}</h2>
             <div class="flex w-full justify-between py-4 text-sm font-[500]">
               <div class="date-time">
-                {
-                  updatedDate ? (
-                    <div class="shrink-0 text-xs text-zinc-600">
-                      <FormatDate date={updatedDate} /> •{" "}
-                      {remarkPluginFrontmatter.minutesRead}
-                    </div>
-                  ) : (
-                    <div class="shrink-0 text-xs text-zinc-600">
-                      <FormatDate date={date} /> •{" "}
-                      {remarkPluginFrontmatter.minutesRead}
-                    </div>
-                  )
-                }
+                <div class="shrink-0 text-xs text-zinc-600">
+                  <FormatDate date={displayDate} /> • {minutesRead}
+                </div>
               </div>
               <SocialShare description={description} title={title} />
             </div>
@@ -80,7 +79,7 @@ const { Content, remarkPluginFrontmatter } = await post.render();
                 {(tags || [])?.map((tag: string) => (
                   <a
                     class="rounded-2xl border border-zinc-300 px-2 py-0.5 text-xs text-[var(--link-color)] no-underline transition-all duration-700 hover:border-zinc-700"
-                    href={`/tags/${slugifyStr(tag)}`}
+                    href={getTagHref(tag)}
                   >
                     {tag}
                   </a>
@@ -95,26 +94,26 @@ const { Content, remarkPluginFrontmatter } = await post.render();
         <ul class="flex list-none flex-wrap justify-between p-0">
           <li>
             {
-              po.prev && (
+              prev && (
                 <a
-                  href={`/${po.prev.slug}/`}
+                  href={getPostHref(prev)}
                   rel="prev"
                   class="text-[var(--link-color)]"
                 >
-                  ← {po.prev.data.title}
+                  ← {prev.data.title}
                 </a>
               )
             }
           </li>
           <li>
             {
-              po.next && (
+              next && (
                 <a
-                  href={`/${po.next.slug}/`}
+                  href={getPostHref(next)}
                   rel="next"
                   class="text-[var(--link-color)]"
                 >
-                  {po.next.data.title} →
+                  {next.data.title} →
                 </a>
               )
             }
@@ -159,7 +158,7 @@ const { Content, remarkPluginFrontmatter } = await post.render();
             </form>
             <p class="mt-4 text-center">
               Or grab the <a
-                href="#"
+                href="/rss.xml"
                 class="text-[var(--link-color)] hover:underline">RSS feed</a
               >
             </p>
@@ -169,48 +168,3 @@ const { Content, remarkPluginFrontmatter } = await post.render();
     </main>
   </div>
 </BaseLayout>
-
-<script async is:inline>
-  const anchors = document.querySelectorAll(".prose h2[id], .prose h3[id]");
-  const links = document.querySelectorAll("nav.toc ul li a");
-
-  function observeToc() {
-    if (
-      typeof anchors != "undefined" &&
-      anchors != null &&
-      typeof links != "undefined" &&
-      links != null
-    ) {
-      let scrollTop = window.scrollY;
-
-      // highlight the last scrolled-to: set everything inactive first
-      for (const link of links) {
-        link.classList.add("border-transparent", "text-inherit");
-        link.classList.remove(
-          "bg-[var(--background-surface-color)]",
-          "border-[var(--soft-border-color)]",
-          "text-[var(--link-color)]",
-        );
-      }
-      // then iterate backwards, on the first match highlight it and break
-      for (var i = anchors.length - 1; i >= 0; i--) {
-        if (scrollTop > anchors[i].offsetTop - 80) {
-          links[i].classList.remove("border-transparent", "text-inherit");
-          links[i].classList.add(
-            "bg-[var(--background-surface-color)]",
-            "border-[var(--soft-border-color)]",
-            "text-[var(--link-color)]",
-          );
-          break;
-        }
-      }
-    }
-  }
-
-  window.addEventListener("scroll", (event) => {
-    observeToc(event);
-  });
-  window.addEventListener("hashchange", (event) => {
-    observeToc(event);
-  });
-</script>

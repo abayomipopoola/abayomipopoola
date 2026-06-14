@@ -1,55 +1,13 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import { getCollection } from "astro:content";
 import BaseLayout from "@src/layouts/BaseLayout.astro";
-import { slugifyStr } from "@src/utils/slugify";
+import {
+  getAllBlogPosts,
+  getAllTags,
+  getTagHref,
+  groupTagsByFirstLetter,
+} from "@src/utils/blog";
 
-type BlogPost = CollectionEntry<"blog">;
-interface Tag {
-  value: string;
-  label: string;
-  postCount: number;
-}
-
-function groupTagsByFirstLetter(tags: Tag[]) {
-  const grouped = tags.reduce(
-    (acc, tag) => {
-      const firstLetter = tag.label[0].toUpperCase();
-      if (!acc[firstLetter]) {
-        acc[firstLetter] = [];
-      }
-      acc[firstLetter].push(tag);
-      return acc;
-    },
-    {} as Record<string, Tag[]>,
-  );
-
-  return Object.entries(grouped)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([letter, tags]) => ({
-      letter,
-      tags: tags.sort((a, b) => a.label.localeCompare(b.label)),
-    }));
-}
-
-const allPosts: BlogPost[] = await getCollection("blog");
-const mappedTags: { [key: string]: Tag } = {};
-for (const post of allPosts) {
-  for (const tag of post.data?.tags || []) {
-    const tagValue = slugifyStr(tag);
-    if (mappedTags[tagValue]) {
-      mappedTags[tagValue].postCount += 1;
-    } else {
-      const _tag: Tag = {
-        value: tagValue,
-        label: tag,
-        postCount: 1,
-      };
-      mappedTags[tagValue] = _tag;
-    }
-  }
-}
-const groupedTags = groupTagsByFirstLetter(Object.values(mappedTags));
+const groupedTags = groupTagsByFirstLetter(getAllTags(await getAllBlogPosts()));
 const title = `Posts Tags`;
 ---
 
@@ -66,10 +24,10 @@ const title = `Posts Tags`;
               {letter}
             </h2>
             <div class="flex flex-wrap gap-2">
-              {(tags || [])?.map((tag: Tag) => (
+              {tags.map((tag) => (
                 <a
                   class="rounded-2xl border border-zinc-300 px-3 py-1 text-sm text-zinc-700 no-underline transition-all duration-700 hover:border-zinc-700"
-                  href={`/tags/${slugifyStr(tag.value)}/`}
+                  href={getTagHref(tag.slug)}
                 >
                   {tag.label} ({tag.postCount})
                 </a>
