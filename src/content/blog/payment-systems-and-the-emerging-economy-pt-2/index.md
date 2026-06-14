@@ -17,7 +17,7 @@ By 2024, 79% of adults globally had an account at a bank, mobile-money provider,
 
 ![Unbanked populace data](./unbanked_data.jpg)
 
-Financial inclusion means that individuals and businesses have access to useful and affordable financial products and services that meet their needs – transactions, payments, savings, credit and insurance – delivered in a responsible and sustainable way.
+Financial inclusion means that individuals and businesses have access to useful and affordable financial products and services that meet their needs (transactions, payments, savings, credit and insurance), delivered in a responsible and sustainable way.
 
 Apart from protecting your money from theft, a bank account connects people to the formal financial system and enables them to make day-to-day living less complicated as well as allowing them to build up their assets. Lack of access to financial products and services means limited access to credit. A majority of the world's poor population work in the informal sector. They grow crops on a small scale and rear animals. Others are artisans who sell wares to the population while others are small-scale vendors who sell basic items such as food and vegetables. However, despite their ability to make further investments in their little enterprises and improve their lives, they lack access to credit which would have helped them achieve such a goal, <a href="https://www.cgap.org/research/publication/financial-inclusion-and-development-recent-impact-evidence" target="_blank" >as this research shows</a>.
 
@@ -29,7 +29,7 @@ _The Nigerian figures in this post reflect the data available when it was writte
 
 Several players in the Nigeria Fintech space are attempting to help close the gap of financial inclusion, and tapping into this cash-rich system, by providing basic banking solution, while penetrating into rural areas with few or no banking presence. This solution comes in the form of _Agency Banking_.
 
-**Agency banking** is a type of branchless banking that allows the delivery of financial services outside conventional bank branches, often using agents and relying on information and communications technologies to transmit transaction details – typically card-reading point-of-sale (POS) terminals or mobile phones. It has the potential to radically reduce the cost of delivery and increase convenience for customers.
+**Agency banking** is a type of branchless banking that allows the delivery of financial services outside conventional bank branches, often using agents and relying on information and communications technologies to transmit transaction details, typically card-reading point-of-sale (POS) terminals or mobile phones. It has the potential to radically reduce the cost of delivery and increase convenience for customers.
 
 The Nigerian payments system witnessed remarkable achievement with the introduction of a number of initiatives under the <a href="https://www.cbn.gov.ng/icps2013/papers/NIGERIA_PAYMENTS_SYSTEM_VISION_2020%5Bv2%5D.pdf" target="_blank" >Payments System Vision 2020</a>, the implementation of Bank Verification Number (BVN) scheme to address issues associated with the absence of unique identifier of bank customers across the country to put an end to identity theft which has been a worrisome phenomenon. There is no doubt that considerable progress has been made with the payments system as evidenced by the time it takes for third party instruments to be cleared for value to be given.
 

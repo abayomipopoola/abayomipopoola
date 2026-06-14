@@ -9,7 +9,7 @@ coverImage: "./personality.png"
 
 Personality has a real influence on how well one performs at work (shaping your energy, your stress, and your default strengths) especially when the job isn't purely routine. Think of it as a tendency rather than a destiny: the "Big Five" traits describe inclinations, not hard limits, and people routinely stretch well beyond their defaults.
 
-When choosing a career, it's crucial to match your personality traits with the job requirements. For instance, those who have a high score in _openness_ – one of the "Big Five" personality traits – often thrive in roles that demand creativity and new ideas. In contrast, individuals with a high score in the _conscientiousness_ trait usually shine in structured roles like management or administration.
+When choosing a career, it's crucial to match your personality traits with the job requirements. For instance, those who have a high score in _openness_, one of the "Big Five" personality traits, often thrive in roles that demand creativity and new ideas. In contrast, individuals with a high score in the _conscientiousness_ trait usually shine in structured roles like management or administration.
 
 Jordan Peterson, in a video by BigThink, introduces a broad job categorisation:
 

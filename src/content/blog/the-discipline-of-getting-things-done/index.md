@@ -49,7 +49,7 @@ The best long-term competitive differentiator is the quality of an organization'
 
 ![belief](./hiring.png)
 
-In building a culture of execution, prioritize hiring _doers over thinkers_. While visionary thinking is valuable, execution is paramount. Seek candidates who demonstrate a passion for execution rather than mere intellectual musings–prioritise candidates who display energy and enthusiasm for execution instead of just abstract ideation.
+In building a culture of execution, prioritize hiring _doers over thinkers_. While visionary thinking is valuable, execution is paramount. Seek candidates who demonstrate a passion for execution rather than mere intellectual musings. Prioritise candidates who display energy and enthusiasm for execution instead of just abstract ideation.
 
 Qualities to Seek in Candidates:
 

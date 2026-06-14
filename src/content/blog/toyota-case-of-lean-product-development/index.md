@@ -25,7 +25,7 @@ The Toyota Production System changed not just how cars are made globally but how
 
 ### Toyota Production System (TPS)
 
-TPS is how Toyota makes vehicles. It is an original manufacturing philosophy that aims to eliminate waste and achieve the best possible efficiency – what is often called a 'lean' or 'just-in-time' system.
+TPS is how Toyota makes vehicles. It is an original manufacturing philosophy that aims to eliminate waste and achieve the best possible efficiency, what is often called a 'lean' or 'just-in-time' system.
 
 TPS is based on two concepts: jidoka and just-in-time. Jidoka, a Japanese term that can be translated as "automation with a human touch" is a method for quickly identifying and correcting any issues that could lead to faulty production. Just-in-time is about refining and co-ordinating each production process so that it only produces what is required by the next process in the sequence. By applying these concepts, Toyota are able to produce vehicles quickly and efficiently, every one meeting a high-quality standards.
 
