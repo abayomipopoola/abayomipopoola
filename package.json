@@ -10,7 +10,7 @@
     "astro": "astro",
     "fmt": "vp fmt && prettier --write \"**/*.astro\"",
     "fmt:check": "vp fmt --check && prettier --check \"**/*.astro\"",
-    "prepare": "vp config"
+    "prepare": "[ -n \"$CI\" ] || vp config || true"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
