@@ -1,17 +1,5 @@
-# Deep Directories
-**/dist
-**/smoke
-**/node_modules
-**/fixtures
-**/vendor
-**/.vercel
-
-# Short-term need to format
-!packages/db/test/fixtures
-
-# Directories
-.github
-.changeset
-
-# Files
-pnpm-lock.yaml
+# Prettier only formats .astro files now (everything else is handled by vp fmt / oxfmt).
+# These never contain hand-authored .astro source, but keep them out regardless.
+dist
+.astro
+node_modules
