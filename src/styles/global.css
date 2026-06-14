@@ -20,34 +20,12 @@
 }
 
 @layer base {
-  @font-face {
-    font-family: "AdelleSans";
-    src: url("/fonts/AdelleSans.woff2") format("woff2");
-    font-display: swap;
-    font-style: normal;
-    font-weight: 400;
-  }
-
-  @font-face {
-    font-family: "AdelleSans";
-    src: url("/fonts/AdelleSans-bold.woff2") format("woff2");
-    font-display: swap;
-    font-style: normal;
-    font-weight: 700;
-  }
-
-  @font-face {
-    font-family: "AdelleSans";
-    src: url("/fonts/AdelleSans-Italic.woff2") format("woff2");
-    font-display: swap;
-    font-style: italic;
-    font-weight: 400;
-  }
-}
-@layer base {
   :root {
     --link-color: #1a73e8;
-    --font-sans: "AdelleSans", Helvetica, Arial, sans-serif;
+    /* Bridge Tailwind's --font-sans to the astro:fonts stack (AdelleSans +
+       metric-matched fallbacks). Declared after `@import "tailwindcss"`, so it
+       wins over Tailwind's default --font-sans. */
+    --font-sans: var(--font-adelle);
   }
   h1,
   h2,

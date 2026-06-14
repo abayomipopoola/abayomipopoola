@@ -2,6 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "../../styles/global.css";
+import { Font } from "astro:assets";
 import DefaultImage from "@src/assets/img/ava.jpg";
 import Favicon from "@src/assets/img/favicon.png";
 import { SITE_DESCRIPTION } from "@src/consts";
@@ -27,6 +28,9 @@ const socialImage = new URL(image, Astro.url);
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" href={Favicon.src} />
 <meta name="generator" content={Astro.generator} />
+
+<!-- Fonts: astro:fonts injects @font-face + metric-matched fallbacks + preload -->
+<Font cssVariable="--font-adelle" preload />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
