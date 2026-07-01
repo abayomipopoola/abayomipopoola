@@ -25,7 +25,7 @@ I would focus on the foundations, I would focus with a science bent. I would dev
 
 ### Doing is faster than watching
 
-When it comes to your learning curve, if you want to optimize your learning curve... One of the reasons why I don't love podcasts, even though I'm a generator of podcasts, is that I like to consume my information very quickly.
+When it comes to your learning curve, if you want to optimise your learning curve... One of the reasons why I don't love podcasts, even though I'm a generator of podcasts, is that I like to consume my information very quickly.
 
 And I'm a good reader, or a fast reader and I can read very fast but I can only listen at a certain speed. I know people listen at 2x, 3x, but everyone sounds like a chipmunk and it's hard to go back, it's hard to highlight, it's hard to pinpoint snippets and save them in your notebook, and so on.
 
@@ -79,13 +79,13 @@ Summary:
 - The number of "doing" iterations drives the learning curve. You will learn more by running different experiments every day than by doing the same job over and over.
 - We're not evolved to bleed a little bit every day with failed iterations. We're evolved for small victories all the time, but that's where the herd is. If you're willing to bleed a little bit every day, you may win big later.
 
-### The Foundations Are Math and Logic
+### The Foundations Are Maths and Logic
 
 > Study microeconomics, game theory, psychology, persuasion, ethics, mathematics, and computers.
 
-### The ultimate foundations are math and logic
+### The ultimate foundations are maths and logic
 
-Foundational things are principles, they're algorithms, they're deep seated logical understanding where you can defend it or attack it from any angle. And that's why microeconomics is important because macroeconomics is a lot of memorization, a lot of macro bullshit.
+Foundational things are principles, they're algorithms, they're deep seated logical understanding where you can defend it or attack it from any angle. And that's why microeconomics is important because macroeconomics is a lot of memorisation, a lot of macro bullshit.
 
 As Nassim Taleb says, it is easier to macro bullshit than it is the micro bullshit. Because macroeconomics is voodoo-complex-science meets politics. You can't find two macroeconomists to agree on anything these days, and different macroeconomists get used by different politicians to peddle their different pet theories.
 
@@ -101,7 +101,7 @@ So, be very careful about reading other people's opinions and even be careful wh
 
 What you are really looking for are algorithms. What you are really looking for is understanding. It's better to go through a book really slowly and struggle and stumble and rewind, than it is to fly through it quickly and say, "Well, now I've read 20 books, I've read 30 books, I've read 50 books in the field."
 
-It's like Bruce Lee said, "I don't fear the man who knows a thousand kicks and a thousand punches, I fear the man who's practiced one punch ten thousand times or one kick ten thousand times." It's that understanding that comes through repetition and through usage and through logic and foundations that really makes you a smart thinker.
+It's like Bruce Lee said, "I don't fear the man who knows a thousand kicks and a thousand punches, I fear the man who's practised one punch ten thousand times or one kick ten thousand times." It's that understanding that comes through repetition and through usage and through logic and foundations that really makes you a smart thinker.
 
 ### Learn persuasion and programming
 
@@ -111,10 +111,10 @@ If you're good with computers, if you're good at basic mathematics, if you're go
 
 Summary:
 
-- If you understand math and logic, you have the basis for understanding the scientific method. Once you understand the scientific method, you can separate truth from falsehood in other fields.
+- If you understand maths and logic, you have the basis for understanding the scientific method. Once you understand the scientific method, you can separate truth from falsehood in other fields.
 - Be careful when reading because so-called facts are often just opinions with a veneer of pseudoscience around them.
 - It's better to read a great book slowly than to fly through a hundred books quickly. Understanding comes through repetition and usage.
-- The five most important skills are reading, writing, arithmetic, persuasion, and programming. If you're good with computers, if you're good at basic math, if you're good at writing, if you're good at speaking, and if you like to read, you're set for life.
+- The five most important skills are reading, writing, arithmetic, persuasion, and programming. If you're good with computers, if you're good at basic maths, if you're good at writing, if you're good at speaking, and if you like to read, you're set for life.
 
 ### Read What You Love Until You Love to Read
 
@@ -146,9 +146,9 @@ For example, instead of reading a business book, pick up Adam Smith's The Wealth
 
 If you understand the basics, especially in mathematics and physics and sciences, then you will not be afraid of any book. All of us have that memory of when we were sitting in class and we're learning mathematics, and it was all logical and all made sense until at one point the class moved too fast and we fell behind.
 
-Then after that we were left memorizing equations, memorizing concepts without being able to derive them from first principles. And at that moment, we're lost, because unless you're a professional mathematician, you're not going to remember those things. All you're going to remember are the techniques, the foundations.
+Then after that we were left memorising equations, memorising concepts without being able to derive them from first principles. And at that moment, we're lost, because unless you're a professional mathematician, you're not going to remember those things. All you're going to remember are the techniques, the foundations.
 
-So, you have to make sure that you're building on a steel frame of understanding because you're putting together a foundation for skyscraper, and you're not just memorizing things because you're just memorizing things you're lost. So the foundations are ultra important.
+So, you have to make sure that you're building on a steel frame of understanding because you're putting together a foundation for skyscraper, and you're not just memorising things because you're just memorising things you're lost. So the foundations are ultra important.
 
 And the ultimate, the ultimate is when you walk into a library and you look at it up and down and you don't fear any book. You know that you can take any book off the shelf, you can read it, you can understand it, you can absorb what is true, you can reject what is false, and you have a basis for even working that out that is logical and scientific and not purely just based on opinions.
 
@@ -164,7 +164,7 @@ Summary:
 
 - Read what you love until you love to read. Start with the books that interest you, no matter how unrefined they may seem.
 - To avoid being seduced by lies, read the original scientific texts in a field. For example, instead of reading a business book, pick up Adam Smith's The Wealth of Nations.
-- If you understand the basics, especially in math and science, you will not be afraid of any book.
+- If you understand the basics, especially in maths and science, you will not be afraid of any book.
 - The means of learning are abundant, the desire to learn is scarce. The beauty of the Internet is that the entire library of Alexandria is at your fingertips at all times.
 - Children have a natural desire to learn: they're always asking questions. But child-rearing and schools replace curiosity with compliance.
 
@@ -228,7 +228,7 @@ Always factor your time into every decision. How much time does it take? Oh it's
 
 You buy something from Amazon; they screwed it up, you have to return. Is it worth your time to return it? Is it worth the mental hassle? Keep in mind that you have less work hours, you have less mentally high-output hours. Do you want to use them to run errands and solve little problems, or do you want to save them for the big stuff?
 
-All the great scientists were terrible at managing their household life. None of them had a clean, organized room, or made all their social events on time, or sent their thank you cards.
+All the great scientists were terrible at managing their household life. None of them had a clean, organised room, or made all their social events on time, or sent their thank you cards.
 
 ### You can't penny pinch your way to wealth
 
@@ -278,7 +278,7 @@ Let's talk about hard work. There's this battle that happens in Twitter a lot be
 
 They're talking past each other. First of all, they're talking about two different things. David is talking about employees and a lifestyle business, which is fine. Your number one thing in life, if you're doing that, is not getting wealthy. You have a job, you also have your family, you also have your life.
 
-Keith is talking about the Olympics of startups. He's talking about the person going for the gold medal and trying to build a multi-billion dollar public company. That person has to get everything right. They have to have great judgment. They have to pick the right thing to work on. They have to recruit the right team, and they have to work crazy hard. They're basically engaged in a competitive sprint.
+Keith is talking about the Olympics of startups. He's talking about the person going for the gold medal and trying to build a multi-billion dollar public company. That person has to get everything right. They have to have great judgement. They have to pick the right thing to work on. They have to recruit the right team, and they have to work crazy hard. They're basically engaged in a competitive sprint.
 
 If getting wealthy is your goal, you are going to have to work as hard as you can. But hard work is absolutely no substitute for who you work with and what you work on. What you work on is probably the most important thing.
 
@@ -298,7 +298,7 @@ Finally, once you've picked the right thing to work on and the right people to w
 
 ### Nobody really works 80 hours a week
 
-Now, this is where the mythology gets a little crazy. People who work 80, 120 hour weeks, a lot of that's just status signaling. It's showing off. Nobody really works 80 to 120 hours a week sustained at high output with mental clarity. Your brain breaks down. You just won't have good ideas.
+Now, this is where the mythology gets a little crazy. People who work 80, 120 hour weeks, a lot of that's just status signalling. It's showing off. Nobody really works 80 to 120 hours a week sustained at high output with mental clarity. Your brain breaks down. You just won't have good ideas.
 
 Really, the way people tend to work most effectively, especially in knowledge work, is they sprint as hard as they can while they're working on something, and they're inspired and they're passionate; and then they rest. They take long breaks.
 
@@ -314,7 +314,7 @@ What I've learned is, if I'm inspired to write a blog post or to publish a tweet
 
 People talk about impatience. When do you know to be impatient? When do you know to be patient? My glib tweet on this was, "Impatience with actions and patience with results." I think that's actually a good philosophy for life.
 
-Anything you have to do, just get it done. Why wait? You're not getting any younger. Your life is slipping away. You don't want to spend it waiting in line. You don't want to spend it traveling back and forth. You don't want to spend it doing thing that you know ultimately aren't part of your mission.
+Anything you have to do, just get it done. Why wait? You're not getting any younger. Your life is slipping away. You don't want to spend it waiting in line. You don't want to spend it travelling back and forth. You don't want to spend it doing thing that you know ultimately aren't part of your mission.
 
 When you do them, you want to do them as quickly as you can while you do them well, with your full attention. But then you just have to give up on the results; you have to be patient with the results because you're dealing with complex systems, you're dealing with lots of people.
 
@@ -370,7 +370,7 @@ There's some really good microeconomic concepts that are important to understand
 
 One of those is scale economies, which is the more you produce of something the cheaper it gets to make it. That's something that a lot of businesses have, Basic Economics 101.
 
-You should try and get into a business where making Widget Number 12 is cheaper than making Widget Number 5, and making Widget Number 10,000 is a lot cheaper than the previous ones. This builds up an automatic barrier to entry against competition and getting commoditized. That's an important one.
+You should try and get into a business where making Widget Number 12 is cheaper than making Widget Number 5, and making Widget Number 10,000 is a lot cheaper than the previous ones. This builds up an automatic barrier to entry against competition and getting commoditised. That's an important one.
 
 ### Zero marginal cost of reproduction: producing more is free
 
@@ -386,7 +386,7 @@ Then, the most subtle but the most important is this idea of network effects. It
 
 If a network of size 10 would have a value of a 100, a network of a size 100 would have a value of 10,000. It's not just 10 times more, it's 100 times more, because of the square; the difference is the square.
 
-You want to be in a network effects business, assuming you're not number two. If you're number one in network effect business, you win everything. Example: if you look at Facebook, your friends and family social networking protocol. Who's their competitor? Nobody, because they won everything through network effects. Which is why when people say, "Well, I can just switch away from Facebook," they don't realize that network effects create natural monopolies. They're very, very powerful things.
+You want to be in a network effects business, assuming you're not number two. If you're number one in network effect business, you win everything. Example: if you look at Facebook, your friends and family social networking protocol. Who's their competitor? Nobody, because they won everything through network effects. Which is why when people say, "Well, I can just switch away from Facebook," they don't realise that network effects create natural monopolies. They're very, very powerful things.
 
 ### Network effect businesses are natural monopolies
 
@@ -429,6 +429,6 @@ Summary:
 
 ### There are no get rich quick schemes. That's just someone else getting rich off you.
 
-### When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
+### When you're finally wealthy, you'll realise that it wasn't what you were seeking in the first place. But that's for another day.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.
+<small>References: image, nav.al/; extensive explanations are got from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

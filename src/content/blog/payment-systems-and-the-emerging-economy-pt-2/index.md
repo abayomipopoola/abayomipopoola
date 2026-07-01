@@ -65,14 +65,14 @@ Agency banking is transforming banking all around the world. It will be interest
 
 To make sense of the POS payments space, one needs to understand the roles of the _Payment Gateway_ and _Payment Processor_.
 
-- **Payment Gateway** is an application service provider that authorizes payments for businesses, online retailers or
+- **Payment Gateway** is an application service provider that authorises payments for businesses, online retailers or
   traditional brick and mortar. In simple terms, a payment gateway can be thought of as an interface between
   merchants and payment processors. The payment gateway accepts payment request from merchants and forwards this to the
   payment processor for further processing.
 
 - **Payment Processor** is an entity that has a direct interface to card associations or networks such as VISA and MasterCard.
   The payment processor receives payment requests from merchants or payment gateways and sends it to the card association
-  or networks, which, in turn, route the transaction to the card-issuing bank for authorization.
+  or networks, which, in turn, route the transaction to the card-issuing bank for authorisation.
 
 ![Payment gateway and processor](./payment-gateway-and-processor.png)
 

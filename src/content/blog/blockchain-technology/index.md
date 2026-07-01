@@ -119,7 +119,7 @@ Here are some real-world examples of blockchain technology in action:
 With blockchain, we can imagine a world in which contracts are embedded in digital code and stored in transparent,
 shared databases, where they are protected from deletion, tampering, and revision. In this world, every agreement,
 every process, every task, and every payment would have a digital record and signature that could be identified, validated,
-stored, and shared. Intermediaries like lawyers, brokers, and bankers might no longer be necessary. Individuals, organizations,
+stored, and shared. Intermediaries like lawyers, brokers, and bankers might no longer be necessary. Individuals, organisations,
 machines, and algorithms would freely transact and interact with one another with little friction. This is the immense potential
 of blockchain <a href="https://hbr.org/2017/01/the-truth-about-blockchain" target="_blank" class="read-more">_(Read more)_</a>.
 

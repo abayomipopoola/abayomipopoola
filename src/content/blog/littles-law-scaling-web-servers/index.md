@@ -9,7 +9,7 @@ coverImage: "./loom.jpg"
 
 Microservices design is a key component of modern app development. This architecture, which involves composing multiple _(mostly)_ HTTP or gRPC services, offers numerous advantages, including code reuse, maintainability, scalability, and fault tolerance.
 
-In the context of this post, scalability refers to the software's ability to optimize performance based on available resources, while fault tolerance ensures that the system remains operational even when certain components fail. The interplay between these two aspects becomes crucial when dealing with microservices.
+In the context of this post, scalability refers to the software's ability to optimise performance based on available resources, while fault tolerance ensures that the system remains operational even when certain components fail. The interplay between these two aspects becomes crucial when dealing with microservices.
 
 ### Little's Law: Decoding Server Performance
 
@@ -42,11 +42,11 @@ The capacity, _L_, of a web server is not a constant value. It's variable, influ
 
 From our analysis of the limiting factors, we expect to sustain _L_ in the range of 100K to about 1 million. However, the operating system _(OS)_ introduces a key constraint. When using the _thread-per-request_ model, each request is processed on a single OS thread from start to finish, meaning our ability to manage concurrent requests is directly limited by the number of threads the OS can handle.
 
-In the _thread-per-request_ model, threads perform some processing, then block while waiting for a microservice or other downstream services to respond, and repeat this process. They're not constantly active, not fully utilizing the CPU, but they aren't entirely idle either. The OS typically schedules each thread multiple times for a single request. During these idle times, the OS temporarily stops the waiting thread and switches to another task, then reschedules it once a response is received. Given this behavior, most OS typically supports between 2K and 20K concurrent threads. Going beyond this limit introduces latency, causing _W_ to rise and _λ_ to fall. To prevent system strain from excessive thread creation, there's often a cap on the number of threads that can be spawned, usually set between 500 and 20K, but rarely more than that.
+In the _thread-per-request_ model, threads perform some processing, then block while waiting for a microservice or other downstream services to respond, and repeat this process. They're not constantly active, not fully utilising the CPU, but they aren't entirely idle either. The OS typically schedules each thread multiple times for a single request. During these idle times, the OS temporarily stops the waiting thread and switches to another task, then reschedules it once a response is received. Given this behaviour, most OS typically supports between 2K and 20K concurrent threads. Going beyond this limit introduces latency, causing _W_ to rise and _λ_ to fall. To prevent system strain from excessive thread creation, there's often a cap on the number of threads that can be spawned, usually set between 500 and 20K, but rarely more than that.
 
 Because _L_ is the minimum of all these limits, the OS scheduler suddenly dropped our capacity, _L_, from the high 100Ks to ­low millions, to well under 20,000.
 
-If we use the _thread-per-request_ model on a "good-­enough" hardware, _L_ is largely determined by the OS's thread capacity without adding latency. While purchasing additional servers is an option, it's a costly one with potential hidden cost. Hesitation increases when we realize that software is the problem, and our existing servers remain underutilized.
+If we use the _thread-per-request_ model on a "good-­enough" hardware, _L_ is largely determined by the OS's thread capacity without adding latency. While purchasing additional servers is an option, it's a costly one with potential hidden cost. Hesitation increases when we realise that software is the problem, and our existing servers remain underutilised.
 
 #### Processing Latency (W)
 
@@ -64,17 +64,17 @@ We still have room for improvement. If _Service A_ consistently fails and times 
 
 Additionally, some circuit breaker libraries allow for allocating specific thread pools for different tasks, ensuring a single malfunctioning operation doesn't consume all available threads. This approach is known as "bulkheading" against failures.
 
-Can we further reduce _W_? Yes, if _Service A's_ result isn't a prerequisite for _Service B_, we can parallelize their calls. Using Futures (Java) or Promises (JS), we dispatch both requests simultaneously, potentially reducing _W_ from 1 second to 500ms. This principle extends to multiple service calls, allowing our server to manage up to 4000 requests per second, even with numerous microservice interactions.
+Can we further reduce _W_? Yes, if _Service A's_ result isn't a prerequisite for _Service B_, we can parallelise their calls. Using Futures (Java) or Promises (JS), we dispatch both requests simultaneously, potentially reducing _W_ from 1 second to 500ms. This principle extends to multiple service calls, allowing our server to manage up to 4000 requests per second, even with numerous microservice interactions.
 
-Is this our peak performance? Barring significant optimizations to _Service A_ and _Service B_, it appears so. Even with underutilized hardware, 4000 requests per second is our upper limit, especially if any microservice latency exceeds 500ms. If this isn't sufficient, what's our next move?
+Is this our peak performance? Barring significant optimisations to _Service A_ and _Service B_, it appears so. Even with underutilised hardware, 4000 requests per second is our upper limit, especially if any microservice latency exceeds 500ms. If this isn't sufficient, what's our next move?
 
-### Optimizing Latency with Functional Callbacks
+### Optimising Latency with Functional Callbacks
 
 While we've managed to reduce _W_, _L_ remains limited by the OS's thread-handling capacity. To increase _L_, we must move away from the _thread-per-request_ model.
 
-Enter **Node.js**, a server-side JavaScript framework. Given JavaScript's single-threaded nature, Node.js bypasses the OS thread scheduler. Instead of allocating a thread for each request, it uses asynchronous callbacks. When a request handler needs to wait (e.g., for a service call), it provides a callback to execute upon completion. This approach capitalizes on JavaScript's lack of threading, avoiding the OS thread limitations.
+Enter **Node.js**, a server-side JavaScript framework. Given JavaScript's single-threaded nature, Node.js bypasses the OS thread scheduler. Instead of allocating a thread for each request, it uses asynchronous callbacks. When a request handler needs to wait (e.g., for a service call), it provides a callback to execute upon completion. This approach capitalises on JavaScript's lack of threading, avoiding the OS thread limitations.
 
-However, this method has its challenges. Any prolonged blocking of a handler function stalls the entire Node.js instance, and no other requests can be processed. This is often mitigated by running several Node instances on one machine and load-­balancing them, which also helps take advantage of all CPU cores. However, this consumes more RAM and makes parallelizing certain computational tasks difficult. Moreover, the asynchronous, callback-based programming style can be intricate, leading to the infamous "callback hell." Node.js tries to simplify this with "promises," a more functional approach.
+However, this method has its challenges. Any prolonged blocking of a handler function stalls the entire Node.js instance, and no other requests can be processed. This is often mitigated by running several Node instances on one machine and load-­balancing them, which also helps take advantage of all CPU cores. However, this consumes more RAM and makes parallelising certain computational tasks difficult. Moreover, the asynchronous, callback-based programming style can be intricate, leading to the infamous "callback hell." Node.js tries to simplify this with "promises," a more functional approach.
 
 A benefit of Node's single-threaded nature is its simplicity. Even if callbacks from asynchronous calls like _Service A_ and _Service B_ can execute in any sequence, they run on the same thread, eliminating concurrency issues, like race condition, etc.
 
@@ -90,9 +90,9 @@ So far, we have realised that a server capacity, denoted as _L_ in Little's form
 
 Languages like **Go** and **Erlang** provide lightweight threads _(Go's goroutines, and Erlang's processes)_. Similarly, the relatively new OpenJDK's Project Loom introduces this functionality for Java 19 and later versions. These threads are managed by the language or library runtime, not the OS, allowing for more efficient scheduling.
 
-Lightweight threads offer many advantages similar to traditional OS threads, including a straightforward control flow and the capability to block and wait for resources while permitting other threads to operate on the CPU. However, unlike traditional threads, lightweight threads are not managed by the OS, leading to quicker context-switching and reduced system resource consumption. Consequently, a single machine can efficiently manage millions of these threads. This offers a distinct advantage. The runtime, having a deeper understanding of the thread's purpose and behaviour, can often outperform the OS in scheduling decisions. It recognizes that these threads operate in short bursts and frequently block, a behaviour not typical of heavyweight threads. This knowledge allows the runtime to employ an _M:N_ scheduling model, where a larger number of lightweight threads _(M)_ are mapped onto a smaller number of OS threads _(N)_.
+Lightweight threads offer many advantages similar to traditional OS threads, including a straightforward control flow and the capability to block and wait for resources while permitting other threads to operate on the CPU. However, unlike traditional threads, lightweight threads are not managed by the OS, leading to quicker context-switching and reduced system resource consumption. Consequently, a single machine can efficiently manage millions of these threads. This offers a distinct advantage. The runtime, having a deeper understanding of the thread's purpose and behaviour, can often outperform the OS in scheduling decisions. It recognises that these threads operate in short bursts and frequently block, a behaviour not typical of heavyweight threads. This knowledge allows the runtime to employ an _M:N_ scheduling model, where a larger number of lightweight threads _(M)_ are mapped onto a smaller number of OS threads _(N)_.
 
-In essence, lightweight threads offer a path to maximize hardware efficiency without compromising code simplicity.
+In essence, lightweight threads offer a path to maximise hardware efficiency without compromising code simplicity.
 
 ### Conclusion
 

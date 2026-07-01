@@ -7,7 +7,7 @@ slug: "isolate-and-containerized-processes"
 coverImage: "./loom.jpg"
 ---
 
-The evolution of computing paradigms has been a journey toward greater efficiency, scalability, and abstraction. From physical servers to virtual machines, and then to containers, each shift has aimed to optimize resource utilization and simplify deployment. Today, isolates are emerging as an innovative approach that builds upon and refines the containerization model.
+The evolution of computing paradigms has been a journey towards greater efficiency, scalability, and abstraction. From physical servers to virtual machines, and then to containers, each shift has aimed to optimise resource utilisation and simplify deployment. Today, isolates are emerging as an innovative approach that builds upon and refines the containerization model.
 
 **Isolates** are lightweight execution contexts that provide a secure, isolated environment for code execution within a shared runtime. Developed as part of the Chrome's V8 JavaScript engine, isolates offer a sandboxed space where functions can run independently, without interference from other processes. This makes them particularly well-suited for serverless architectures and edge computing.
 
@@ -53,11 +53,11 @@ While V8 provides the foundation for various JavaScript runtimes, it's important
 
 ### Compute Per Request Paradigm
 
-Compute Per Request is a natural paradigm that aligns perfectly with the lightweight, ephemeral nature of isolates. This model proves especially valuable in serverless and edge computing environments, where minimizing latency and optimizing resource usage are critical.
+Compute Per Request is a natural paradigm that aligns perfectly with the lightweight, ephemeral nature of isolates. This model proves especially valuable in serverless and edge computing environments, where minimising latency and optimising resource usage are critical.
 
-Unlike typical containerized processes that require separate runtime environments, isolates provide lightweight, sandboxed execution contexts within a shared runtime. This architecture enables platforms to process requests with significantly reduced overhead, faster startup times, and more efficient resource utilization.
+Unlike typical containerised processes that require separate runtime environments, isolates provide lightweight, sandboxed execution contexts within a shared runtime. This architecture enables platforms to process requests with significantly reduced overhead, faster startup times, and more efficient resource utilisation.
 
-The alignment between isolates and Compute Per Request has led to its adoption by modern edge computing platforms like Cloudflare Workers, Deno Deploy, and Fastly Compute@Edge. These platforms demonstrate how the combination of isolates' ultra-fast startup times and fine-grained resource allocation enables true request-level computation, delivering consistent performance at scale without the overhead of traditional containerization.
+The alignment between isolates and Compute Per Request has led to its adoption by modern edge computing platforms like Cloudflare Workers, Deno Deploy, and Fastly Compute@Edge. These platforms demonstrate how the combination of isolates' ultra-fast startup times and fine-grained resource allocation enables true request-level computation, delivering consistent performance at scale without the overhead of traditional containerisation.
 
 ### Limitations and Optimal Use Cases of Isolates
 
@@ -65,26 +65,26 @@ While isolates offer compelling advantages in startup speed, resource efficiency
 
 #### Language Support and Runtime Environment
 
-Unlike containers that can package applications in any programming language, isolates are specifically designed for JavaScript and WebAssembly execution within the V8 engine. This specialization means applications must either be written in these languages or transpiled to them. Additionally, the V8 runtime environment may not provide all system-level functionalities available in a complete operating system environment, potentially limiting applications requiring low-level system access or complex dependency management.
+Unlike containers that can package applications in any programming language, isolates are specifically designed for JavaScript and WebAssembly execution within the V8 engine. This specialisation means applications must either be written in these languages or transpiled to them. Additionally, the V8 runtime environment may not provide all system-level functionalities available in a complete operating system environment, potentially limiting applications requiring low-level system access or complex dependency management.
 
-#### Ecosystem and Standardization
+#### Ecosystem and Standardisation
 
-The container ecosystem benefits from mature tooling and standardization through the Open Container Initiative (OCI), enabling portable deployments across different runtimes and cloud providers. In contrast, isolates are tied to specific runtimes like V8, and their ecosystem, while growing, hasn't reached the same level of maturity in terms of orchestration, monitoring, and deployment tools.
+The container ecosystem benefits from mature tooling and standardisation through the Open Container Initiative (OCI), enabling portable deployments across different runtimes and cloud providers. In contrast, isolates are tied to specific runtimes like V8, and their ecosystem, while growing, hasn't reached the same level of maturity in terms of orchestration, monitoring, and deployment tools.
 
 #### Optimal Use Cases
 
 Despite these constraints, isolates excel in specific scenarios that leverage their strengths. They are particularly well-suited for:
 
-- **Edge Computing**: Applications requiring minimal latency and efficient resource utilization at the network edge.
+- **Edge Computing**: Applications requiring minimal latency and efficient resource utilisation at the network edge.
 - **Serverless Functions**: FaaS platforms handling high volumes of short-lived requests.
 - **Multi-Tenant Environments**: Services executing user-provided code securely at scale.
 - **Per-Request Computation**: Workloads requiring computation on a per-request basis without maintaining long-lived processes.
 
 ### Conclusion
 
-While containers remain valuable for many use cases due to their portability and consistent environments, isolates offer a compelling alternative for scenarios requiring rapid startup times and efficient resource utilization. They enable code execution at the network edge, which not only improves performance but also simplifies deployment and reduces costs compared to running code in a centralized data center.
+While containers remain valuable for many use cases due to their portability and consistent environments, isolates offer a compelling alternative for scenarios requiring rapid startup times and efficient resource utilisation. They enable code execution at the network edge, which not only improves performance but also simplifies deployment and reduces costs compared to running code in a centralised data centre.
 
-As computing continues to evolve, especially in serverless and edge computing contexts, understanding and leveraging the strengths of both approaches will be crucial for optimizing application performance and resource usage. Selecting the right execution model depends on the specific needs of the application, and a hybrid approach may often provide the best balance between flexibility and efficiency.
+As computing continues to evolve, especially in serverless and edge computing contexts, understanding and leveraging the strengths of both approaches will be crucial for optimising application performance and resource usage. Selecting the right execution model depends on the specific needs of the application, and a hybrid approach may often provide the best balance between flexibility and efficiency.
 
 <small>References: <a href="https://v8.dev" target="_blank">Chrome's V8</a>; <a href="https://developers.cloudflare.com/workers/reference/how-workers-works" target="_blank">Cloudflare Workers</a>; <a href="https://www.cloudflare.com/en-gb/learning/serverless/glossary/what-is-chrome-v8/" target="_blank">What is Chrome's V8</a>
 </small>

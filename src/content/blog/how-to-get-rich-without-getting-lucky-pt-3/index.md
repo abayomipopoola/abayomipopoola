@@ -49,7 +49,7 @@ Now, your sales skills could be in a different than traditional domain. For exam
 
 And writing is a skill that can be learned much more easily than, say, in-person selling, and so you may just cultivate writing skills until you become a good online communicator and then use that for your sales.
 
-On the other hand, it could just be that you're a good builder and you're bad at writing and you don't like communicating to mass audiences but you're good one-on-one, so then you might use your sales skills for recruiting or for fundraising, which are more one-on-one kinds of endeavors.
+On the other hand, it could just be that you're a good builder and you're bad at writing and you don't like communicating to mass audiences but you're good one-on-one, so then you might use your sales skills for recruiting or for fundraising, which are more one-on-one kinds of endeavours.
 
 This is pointing out that if you're at the intersection of these two, don't despair because you're not going to be the best technologist and you're not going to be the best salesperson, but in a weird way, that combination, back to the Scott Adams skill stack, that combination of two skills is unstoppable.
 
@@ -57,7 +57,7 @@ Long term, people who understand the underlying product and how to build it and 
 
 #### Could one pick one to be good at?
 
-When you're trying to stand out from the noise building is actually better because there're so many hustlers and sales people who have nothing to back them up. When you're starting out, when you're trying to be recognized, building is better.
+When you're trying to stand out from the noise building is actually better because there're so many hustlers and sales people who have nothing to back them up. When you're starting out, when you're trying to be recognised, building is better.
 
 But much later down the line building gets exhausting because it is a focus job and it's hard to stay current because there's always new people, new products coming up who have newer tools, and frankly more time because it's very intense, it's a very focused task.
 
@@ -82,9 +82,9 @@ So, specific knowledge is probably the hardest thing to get across in this whole
 
 The thing is that we have this idea that everything can be taught, everything can be taught in school. And it's not true that everything can be taught. In fact, the most interesting things cannot be taught.
 
-But everything can be learned. And very often that learning either comes from some innate characteristics in your DNA, or it could be through your childhood where you learn soft skills which are very, very hard to teach later on in life, or it's something that is brand new so nobody else knows how to do it either, or it's true on the job training because you're pattern matching into highly complex environments, basically building judgment in a specific domain.
+But everything can be learned. And very often that learning either comes from some innate characteristics in your DNA, or it could be through your childhood where you learn soft skills which are very, very hard to teach later on in life, or it's something that is brand new so nobody else knows how to do it either, or it's true on the job training because you're pattern matching into highly complex environments, basically building judgement in a specific domain.
 
-Classic example is investing, but it could be in anything. It could be in judgment in running a fleet of trucks, it could be judgment in weather forecasting.
+Classic example is investing, but it could be in anything. It could be in judgement in running a fleet of trucks, it could be judgement in weather forecasting.
 
 So, specific knowledge is the knowledge that you care about. Especially if you're later in life, let's say your post 20, 21, 22, you almost don't get to choose which specific knowledge you have. Rather, you get to look at what you have already built by that point in time, and then you can build on top of it.
 
@@ -94,7 +94,7 @@ The first thing to notice about specific knowledge is that you can't be trained 
 
 So, if that's the case, then you're extremely replaceable and all we have to pay you is the minimum wage that we have to pay you to get you to do it when there are lots of other takers who can be trained to do it. So really, your returns just devolve into your cost of training plus the return on investment on that training.
 
-So, you really want to pick up specific knowledge, you need your schooling, you need your training to be able to capitalize on the best specific knowledge, but the part of it that you're going to get paid for is the specific knowledge.
+So, you really want to pick up specific knowledge, you need your schooling, you need your training to be able to capitalise on the best specific knowledge, but the part of it that you're going to get paid for is the specific knowledge.
 
 #### Specific knowledge is found by pursuing your curiosity
 
@@ -128,7 +128,7 @@ This is ironic, but the first person to actually point out my real specific know
 
 I was like, "What, my mom's telling me I'm going to be in business. I'm going to be an astrophysicist. Mom doesn't know she's talking about." But mom knew exactly what she was talking about.
 
-She'd already observed that every time we walk down the street, I would critique the local pizza parlor on why they were selling their slices a certain way with certain toppings and why their process of ordering was this way when it should have been that way.
+She'd already observed that every time we walk down the street, I would critique the local pizza parlour on why they were selling their slices a certain way with certain toppings and why their process of ordering was this way when it should have been that way.
 
 So, she knew that I had more of a business curious mind, but then my obsession with science combined to create technology and technology businesses where I found myself.
 
@@ -136,7 +136,7 @@ So, very often, your specific knowledge is observed and often observed by other 
 
 Summary:
 
-- Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgment in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
+- Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgement in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
 - Specific knowledge may come from your DNA. It may be soft skills learned in childhood. It may be something so new that nobody but you knows how to do it. It may be true on-the-job training where you're pattern matching in highly complex environments.
 - Specific knowledge can't be trained. Otherwise it will be mass-produced and you will be paid the minimum possible wage to do it.
 - Specific knowledge can be learned by pursuing your genuine curiosity, talents and passion. Building specific knowledge will feel like play to you.
@@ -150,7 +150,7 @@ Summary:
 
 To the extent that specific knowledge is taught, it's on the job. It's through apprenticeships. And that's why the best businesses, the best careers are the apprenticeship or self-taught careers, because those are things society still has not figured out how to train and automate yet.
 
-The classic line here is that Warren Buffett went to Benjamin Graham when he got out of school. Benjamin Graham was the author of the Intelligent Investor and sort of modernized or created value investing as a discipline. And Warren Buffett went to Benjamin Graham and offered to work for him for free.
+The classic line here is that Warren Buffett went to Benjamin Graham when he got out of school. Benjamin Graham was the author of the Intelligent Investor and sort of modernised or created value investing as a discipline. And Warren Buffett went to Benjamin Graham and offered to work for him for free.
 
 And Graham said, "Actually, you're overpriced, free is overpriced." And Graham was absolutely right. When it comes to a very valuable apprenticeship like the type that Graham was going to give Buffet, Buffet should have been paying him a lot of money. That right there tells you that those are skills worth having.
 
@@ -160,7 +160,7 @@ Specific knowledge also tends to be technical and creative. It's on the bleeding
 
 Even today, for example, there are probably meme lords out there on the Internet who can create incredible memes that will spread the idea to millions of people. Or are very persuasive. Scott Adams is a good example of this. He is essentially becoming one of the most credible people in the world by making accurate predictions through persuasive arguments and videos.
 
-And that is specific knowledge that he has built up over the years because he got obsessed with hypnosis when he was young, he learned how to communicate through cartooning, he embraced Periscope early, so he's been practicing lots of conversation, he's read all the books on the topic, he's employed in his everyday life. If you look at his girlfriend, she's this beautiful young Instagram model.
+And that is specific knowledge that he has built up over the years because he got obsessed with hypnosis when he was young, he learned how to communicate through cartooning, he embraced Periscope early, so he's been practising lots of conversation, he's read all the books on the topic, he's employed in his everyday life. If you look at his girlfriend, she's this beautiful young Instagram model.
 
 That is an example of someone who has built up a specific knowledge over the course of his career. It's highly creative, it has elements of being technical in it, and it's something that is never going to be automated.
 
@@ -178,7 +178,7 @@ It can't just be read straight out of a single book, nor can it be taught in a s
 
 #### You can't be too deliberate about assembling specific knowledge
 
-I actually think the best way is just to follow your own obsession. And somewhere in the back of your mind, you can realize that, actually, this obsession I like and I'll keep an eye out for the commercial aspects of it.
+I actually think the best way is just to follow your own obsession. And somewhere in the back of your mind, you can realise that, actually, this obsession I like and I'll keep an eye out for the commercial aspects of it.
 
 But I think if you go around trying to build it a little too deliberately, if you become too goal-oriented on the money, then you won't pick the right thing. You won't actually pick the thing that you love to do, so you won't go deep enough into it.
 
@@ -229,7 +229,7 @@ But if there isn't enough money to pay off the salaries and the debt holders, or
 
 The equity holders take on greater risk, but in exchange, they get nearly unlimited upside. You can do the same with all of your work. Essentially, taking accountability for your actions is the same as taking an equity position in all of your work. You're taking greater downside risk for greater upside.
 
-Realize that in modern society, the downside risk is not that large. Even personal bankruptcy can wipe the debts clean in good ecosystems. I'm most familiar with Silicon Valley, but generally people will forgive failures as long as you were honest and made a high integrity effort.
+Realise that in modern society, the downside risk is not that large. Even personal bankruptcy can wipe the debts clean in good ecosystems. I'm most familiar with Silicon Valley, but generally people will forgive failures as long as you were honest and made a high integrity effort.
 
 There's not really that much to fear in terms of failure, and so people should be taking on a lot more accountability than they actually are.
 
@@ -267,7 +267,7 @@ Summary:
 
 #### You have to have accountability to get leverage
 
-So to get rich, you're going to need leverage. Leverage comes in labor, comes in capital, or it can come through code or media. But most of these, like labor and capital, people have to give to you. For labor, somebody has to follow you. For capital, somebody has to give you money or assets to manage or machines.
+So to get rich, you're going to need leverage. Leverage comes in labour, comes in capital, or it can come through code or media. But most of these, like labour and capital, people have to give to you. For labour, somebody has to follow you. For capital, somebody has to give you money or assets to manage or machines.
 
 So to get these things, you have to build up credibility and you have to do those under your own name as much as possible, which is risky. So accountability is a double-edged thing. It allows you to take credit when things go well and to bear the brunt of the failure when things go badly.
 
@@ -275,9 +275,9 @@ So to get these things, you have to build up credibility and you have to do thos
 
 So in that sense, people who are stamping their names on things aren't foolish. They're just confident. Maybe it turns out to be foolish in the end, but if you look at a Kanye or an Oprah or a Trump or an Elon or anyone like that, these people can get rich just off their name because their name is such powerful branding.
 
-Regardless of what you think of Trump, you have to realize that the guy was among the best in the world at just branding his name. Why would you go to Trump Casino? Used to be because Trump. Why would you go to a Trump tower? Because of Trump.
+Regardless of what you think of Trump, you have to realise that the guy was among the best in the world at just branding his name. Why would you go to Trump Casino? Used to be because Trump. Why would you go to a Trump tower? Because of Trump.
 
-When it came time to vote, I think that a lot of voters just went in and said, "Trump." They recognize the name, so the name recognition paid off.
+When it came time to vote, I think that a lot of voters just went in and said, "Trump." They recognise the name, so the name recognition paid off.
 
 Same thing with Oprah. She puts her brand on something, her name on something and it flies off the shelves, and it's like an instant validator.
 
@@ -319,4 +319,4 @@ Summary:
 - A well-functioning team has clear accountability for each position. If you have a small team with clearly delineated responsibilities, you can keep a very high level of accountability.
 - We're socially hard wired not to fail in public. People who have the ability to fail in public under their own names gain a lot of power.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.
+<small>References: image, nav.al/; extensive explanations are got from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

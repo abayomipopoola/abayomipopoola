@@ -17,11 +17,11 @@ Jordan Peterson, in a video by BigThink, introduces a broad job categorisation:
 
 - **Complexity**: Jobs fall on a spectrum from simple to complex. Simple jobs involve tasks you can learn once and repeat without much variation. While a high cognitive ability might help you learn faster, it doesn't necessarily make you better at the job. On the other hand, complex jobs, like many managerial roles, constantly evolve. Here, a high cognitive ability is a strong predictor of success.
 
-- **Nature of the Job**: Jobs can be broadly categorized as creative/entrepreneurial or managerial/administrative.
+- **Nature of the Job**: Jobs can be broadly categorised as creative/entrepreneurial or managerial/administrative.
   - **Creative/Entrepreneurial**: Ideal for those high in the "openness to experience" trait from the Big Five personality framework. These roles demand lateral and divergent thinking, allowing individuals to explore and innovate.
   - **Managerial/Administrative**: Think of this as a train on a set track, where the goal is to move forward swiftly and efficiently. These roles are more algorithmic, following a clear-cut path. Success here aligns with the "conscientiousness" trait, focusing on adherence to processes and efficiency.
 
-### Balancing Act in Organizations
+### Balancing Act in Organisations
 
 In the early stages of a company, it's the creative minds that steer the ship. These individuals thrive in environments filled with uncertainty, always eager to experiment with new ideas and navigate uncharted territories. They are the risk-takers, the innovators who lay the foundation of a business venture, often breaking conventional norms and introducing groundbreaking solutions.
 
@@ -33,6 +33,6 @@ While the creative minds sketch the ever-evolving blueprint of a company's journ
 
 ### Capitalism's Take on Creativity and Management
 
-Capitalism, in its inherent nature, operates on survival of the fittest. Companies that fail to strike a balance between creativity and administration often find themselves sidelined. They may become obsolete, outpaced by more agile competitors who can pivot with changing market demands. This cyclical process of birth, growth, and eventual decline, or reinvention, is capitalism's way of ensuring a dynamic business ecosystem. For businesses that envision a lasting legacy, it's essential not only to recognize these evolutionary patterns but also to maintain a harmony between the forces of creation and management.
+Capitalism, in its inherent nature, operates on survival of the fittest. Companies that fail to strike a balance between creativity and administration often find themselves sidelined. They may become obsolete, outpaced by more agile competitors who can pivot with changing market demands. This cyclical process of birth, growth, and eventual decline, or reinvention, is capitalism's way of ensuring a dynamic business ecosystem. For businesses that envision a lasting legacy, it's essential not only to recognise these evolutionary patterns but also to maintain a harmony between the forces of creation and management.
 
 <small>References: video link <a href="http://bit.ly/2PzUeTn" target="_blank">here</a>, by Jordan Peterson</small>

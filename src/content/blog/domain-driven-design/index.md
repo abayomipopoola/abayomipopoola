@@ -23,13 +23,13 @@ Without DDD, a naive developer might model a savings account merely as a calcula
 
 In reality, a savings account is much more intricate. It processes iterations over an audit trail of database transactions, which include deposits, interest accruals, and various money transfers. It's not as if there's tangible money just sitting on a shelf in a bank somewhere. The underlying structures of a banking system are complex, designed to cater to tax officials, actuaries, and other stakeholders that developers might not initially consider.
 
-To develop effective software, understanding the domain it serves is crucial. You can't create a banking software system without a deep knowledge of banking itself, understanding the banking domain. Bankers profoundly understand this system, so their expertise is invaluable. DDD aids in the creation of models that represent a problem domain. The model consists of essential concepts selected for software implementation. To achieve this, DDD emphasizes close communication between domain experts (bankers, in this case) and developers. This dialogue should revolve around the domain, ensuring domain experts aren't merely listing desired software features. Instead, they should discuss the fundamental properties or behaviours required of domain objects. Likewise, developers shouldn't fixate on the technicalities, like class variables or database columns, but focus on the bigger picture of the domain's needs.
+To develop effective software, understanding the domain it serves is crucial. You can't create a banking software system without a deep knowledge of banking itself, understanding the banking domain. Bankers profoundly understand this system, so their expertise is invaluable. DDD aids in the creation of models that represent a problem domain. The model consists of essential concepts selected for software implementation. To achieve this, DDD emphasises close communication between domain experts (bankers, in this case) and developers. This dialogue should revolve around the domain, ensuring domain experts aren't merely listing desired software features. Instead, they should discuss the fundamental properties or behaviours required of domain objects. Likewise, developers shouldn't fixate on the technicalities, like class variables or database columns, but focus on the bigger picture of the domain's needs.
 
 > A domain model captures the essential concepts of a problem domain: their attributes, behaviour, and the relationships between them. It is frequently expressed as an object model, but it need not be: DDD is broader than object modelling, reaching into strategic design (bounded contexts, context maps, core domains) as much as the tactical building blocks.
 
 ### Ubiquitous Language
 
-After the domain expert and developer have thoroughly discussed the domain topic, they collaborate to form a _ubiquitous language_. This language serves as a common medium for the entire team, ensuring alignment between the software's functionality and the team's objectives. The DDD _ubiquitous language_ facilitates a clearer understanding of terms utilized by business experts. This allows the tech team to stay updated on any shifts in terminology or changes in meaning. Following this, modifications such as adding new fields on screens or columns in database tables can be executed more seamlessly.
+After the domain expert and developer have thoroughly discussed the domain topic, they collaborate to form a _ubiquitous language_. This language serves as a common medium for the entire team, ensuring alignment between the software's functionality and the team's objectives. The DDD _ubiquitous language_ facilitates a clearer understanding of terms utilised by business experts. This allows the tech team to stay updated on any shifts in terminology or changes in meaning. Following this, modifications such as adding new fields on screens or columns in database tables can be executed more seamlessly.
 
 ![ubiquitous language](./ubiquitous-lang.png)
 
@@ -45,13 +45,13 @@ Moreover, when we chart the connections between these contexts, we create what's
 
 ![Context map](./contextmapping.jpg)
 
-Consider the provided illustration above as a rudimentary Context Map. By outlining parts of the domain model, it highlights zones where conceptual consistency is maintained. As shown, there are areas where the two contexts intersect. The concept of a banking account, for instance, is interpreted differently across various segments of the application, leading to the utilization of diverse models. These models, despite their differences, will likely have significant interactions.
+Consider the provided illustration above as a rudimentary Context Map. By outlining parts of the domain model, it highlights zones where conceptual consistency is maintained. As shown, there are areas where the two contexts intersect. The concept of a banking account, for instance, is interpreted differently across various segments of the application, leading to the utilisation of diverse models. These models, despite their differences, will likely have significant interactions.
 
-Beyond ensuring the integrity of the model within its context, the context map underscores the interactions between differing contexts. Given that the same team is likely overseeing both contexts, it's crucial for every member to recognize and understand these divergent contexts. This understanding might entail a shared "translation map" for terms and concepts that span both models.
+Beyond ensuring the integrity of the model within its context, the context map underscores the interactions between differing contexts. Given that the same team is likely overseeing both contexts, it's crucial for every member to recognise and understand these divergent contexts. This understanding might entail a shared "translation map" for terms and concepts that span both models.
 
 ### Domain-Driven Design in a Nutshell
 
-To encapsulate the essence of Eric's book, we can categorize its profound insights into several pivotal concepts:
+To encapsulate the essence of Eric's book, we can categorise its profound insights into several pivotal concepts:
 
 - **Knowledge Crunching**: The process of distilling vast information into usable knowledge for software design.
 - **Ubiquitous Language**: Establishing a common language that bridges the gap between technical and domain experts.

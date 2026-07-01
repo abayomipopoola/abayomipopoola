@@ -70,7 +70,7 @@ It connects everyone to everyone. So, the internet is an inter-networking tool. 
 
 What that helps you figure out is the internet means you can find your audience for your product, or your talent, and skill no matter how far away they are.
 
-For example, Nenad, who is Illacertus, if you look at his videos pre-internet, how would he get the message out there? It would just be... what would he do? He would run around where he lives in his neighborhood showing it to people on a computer, or a screen? Or he would try to get it played at his local movie theater? It was impossible. It only works because he can put it on the internet.
+For example, Nenad, who is Illacertus, if you look at his videos pre-internet, how would he get the message out there? It would just be... what would he do? He would run around where he lives in his neighbourhood showing it to people on a computer, or a screen? Or he would try to get it played at his local movie theatre? It was impossible. It only works because he can put it on the internet.
 
 And then how many people in the world are really interested in it? Or even in interested in what we're talking about are really gonna absorb it, right? It's gonna be a very small subset of humanity. The key is being able to reach them.
 
@@ -104,7 +104,7 @@ Basically, when you're competing with people it's because you're copying them. I
 
 I know we're mimetic creatures, and René Girard has a whole mimesis theory. But it's much easier than that. Don't imitate. Don't copy. Just do your own thing. No one can compete with you on being you. It's that simple.
 
-And so the more authentic you are to who you are, and what you love to do, the less competition you're gonna have. So, you can escape competition through authenticity when you realize that no one can compete with you on being you. And normally that would have been useless advice pre-internet. Post-internet you can turn that into a career.
+And so the more authentic you are to who you are, and what you love to do, the less competition you're gonna have. So, you can escape competition through authenticity when you realise that no one can compete with you on being you. And normally that would have been useless advice pre-internet. Post-internet you can turn that into a career.
 
 Summary:
 
@@ -251,4 +251,4 @@ Summary:
 - It made sense to be pessimistic in the past. But modern society is far safer, with limited downside and unlimited upside. Adapting for modern society means overriding your natural pessimism.
 - Worst of all is the nitpicker.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.
+<small>References: image, nav.al/; extensive explanations are got from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

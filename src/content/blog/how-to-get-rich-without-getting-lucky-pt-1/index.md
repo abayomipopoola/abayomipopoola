@@ -21,7 +21,7 @@ Here is part one of Naval's expanded points from his tweetstorm in detail <a hre
 
 Wealth is the thing that you really want. Wealth is assets that earn while you sleep. Wealth is the factory, the robots that are cranking out things. Wealth is the computer program that's running at night, that's serving other customers. Wealth is... even money in the bank that is being reinvested into other assets, and into other businesses. Even a house can be a form of wealth because you can rent it out, although that's probably a lower use of productivity of land than actually doing some commercial enterprise. So, my definition of wealth is much more businesses and assets that can earn while you sleep.
 
-But really the reason you want wealth is because it buys you your freedom. So, you don't have to wear a tie like a collar around your neck. So, you don't have to wake up at 7:00 AM, and rush to work, and sit in commute traffic. So, you don't have to waste away your entire life grinding all the productive hours away into a soulless job that doesn't fulfill you.
+But really the reason you want wealth is because it buys you your freedom. So, you don't have to wear a tie like a collar around your neck. So, you don't have to wake up at 7:00 AM, and rush to work, and sit in commute traffic. So, you don't have to waste away your entire life grinding all the productive hours away into a soulless job that doesn't fulfil you.
 
 So, the purpose of wealth is freedom. It's nothing more than that. It's not to buy fur coats, or drive Ferraris, or sail yachts, or jet around the world in your Gulfstream. That stuff gets really boring, and really stupid really fast. It's really just so that you are your own sovereign individual. You're not gonna get that unless you really want it. And the entire world wants it. And the entire world is working hard at it. And to some extent it is competitive. It's a positive sum game, but there are competitive elements to it. Because there's a finite amount of resources right now in society. And to get the resources to do what you want, you have to stand out.
 
@@ -33,13 +33,13 @@ And that money gets debased because people steal the IOUs. The government prints
 
 #### Status is your rank in the social hierarchy
 
-There are fundamentally two huge games in life that people play. One is the money game. Because money is not gonna solve all of your problems, but it's gonna solve all of your money problems. So, I think that people know that. They realize that, so they want to make money.
+There are fundamentally two huge games in life that people play. One is the money game. Because money is not gonna solve all of your problems, but it's gonna solve all of your money problems. So, I think that people know that. They realise that, so they want to make money.
 
 But at the same time many of them deep down believe that they can't make it. They don't want any wealth creation to happen. So, they sort of virtue signal by attacking the whole enterprise by saying, "Well, making money is evil. You shouldn't do it. Blah, blah, blah."
 
 But what they're trying to do is they're actually playing the other game, which is the status game. They're trying to be high status in the eyes of other people watching by saying, "Well, I don't need money. We don't want money."
 
-And then status is just your ranking in the social hierarchy. So, wealth is not a zero-sum game. Everybody in the world can have a house. Because you have a house doesn't take away from my ability to have a house. If anything the more houses that are built, the easier it becomes to build houses, the more we know about building houses, and just the more people that can have houses. So, wealth is a very positive sum game. We create things together. We're starting this endeavor to create this hopefully piece of art that explains what we're doing. At the end of it something brand new will be created. It's a positive sum game.
+And then status is just your ranking in the social hierarchy. So, wealth is not a zero-sum game. Everybody in the world can have a house. Because you have a house doesn't take away from my ability to have a house. If anything the more houses that are built, the easier it becomes to build houses, the more we know about building houses, and just the more people that can have houses. So, wealth is a very positive sum game. We create things together. We're starting this endeavour to create this hopefully piece of art that explains what we're doing. At the end of it something brand new will be created. It's a positive sum game.
 
 Status on the other hand is a zero sum game. It's a very old game. We've been playing it since monkey tribes. And it's hierarchical. Who's number one? Who's number two? Who's number three? And for number three to move to number two, number two has to move out of that slot. So, status is a zero-sum game.
 
@@ -53,7 +53,7 @@ But there's always a subtle competition going on between status and wealth. For 
 
 The problem is that by playing these status games, to win at a status game you have to put somebody else down. That's why you should avoid status games in your life because they make you into an angry combative person. You're always fighting to put other people down, to put yourself and the people which you like up. And they're always gonna exist.
 
-There's no way around it, but just realize that most of the times when you're trying to create wealth, you're actually getting attacked by someone else, and they're trying to look like a goody-two shoes. But really what they're doing is they're trying to up their own status at your expense. They're just playing a different game. And it's a worse game. It's a zero-sum game instead of a positive sum game.
+There's no way around it, but just realise that most of the times when you're trying to create wealth, you're actually getting attacked by someone else, and they're trying to look like a goody-two shoes. But really what they're doing is they're trying to up their own status at your expense. They're just playing a different game. And it's a worse game. It's a zero-sum game instead of a positive sum game.
 
 Summary:
 
@@ -82,7 +82,7 @@ But there are a lot that are just taking. That's just the nature of how any comp
 
 But what I am basically focused on is true wealth creation. It's not about taking money. It's not about taking something from somebody else. But it's from creating abundance.
 
-Obviously, there's not a finite number of jobs, or finite amount of wealth, otherwise we would still be sitting around in caves, figuring out how to divide up pieces of fire wood, and the occasional dead deer. So, most of the wealth in civilization, in fact not most, basically all of it has been created.
+Obviously, there's not a finite number of jobs, or finite amount of wealth, otherwise we would still be sitting around in caves, figuring out how to divide up pieces of fire wood, and the occasional dead deer. So, most of the wealth in civilisation, in fact not most, basically all of it has been created.
 
 And it got created from somewhere. It got created from people. It got created from technology. It got created from productivity. It got created from hard work. So, this idea that it's stolen is I think this horrible zero-sum game that people who are trying to gain status play.
 
@@ -141,7 +141,7 @@ Which is why the U.S. is a very popular country for immigrants because of the Am
 
 Obviously, the definition of wealth is different for different people. A First World citizen's definition of wealth might be, "Oh, I have to make millions of dollars, and I'm completely done."
 
-Whereas to a Third World poor immigrant just entering the country, and we were poor immigrants who came here when I as fairly young, to the United States, wealth may just be a much lower number. It may just be like, "I don't have to work a manual labor job for the rest of my life that I don't want to work."
+Whereas to a Third World poor immigrant just entering the country, and we were poor immigrants who came here when I as fairly young, to the United States, wealth may just be a much lower number. It may just be like, "I don't have to work a manual labour job for the rest of my life that I don't want to work."
 
 But groups that despise it will essentially bring the entire group to that level. If you get too many takers, and not enough makers, society falls apart. You end up with a communist country.
 
@@ -205,7 +205,7 @@ For example, look at software engineering. One great engineer can for example cr
 
 That is an example of a profession where the input and the outputs are highly disconnected. It's not based on the number of hours that you put in.
 
-Whereas on the extreme other end, if you're a lumberjack, even the best lumberjack in the world, assuming you're not working with tools, so the inputs and outputs are clearly connected. You're just using an ax, or a saw. You know, the best lumberjack in the world may be like 3x better than one of the worst lumberjacks, right? It's not gonna be a gigantic difference.
+Whereas on the extreme other end, if you're a lumberjack, even the best lumberjack in the world, assuming you're not working with tools, so the inputs and outputs are clearly connected. You're just using an axe, or a saw. You know, the best lumberjack in the world may be like 3x better than one of the worst lumberjacks, right? It's not gonna be a gigantic difference.
 
 So, you want to look for professions and careers where the inputs and outputs are highly disconnected. This is another way of saying that you want to look for things that are leveraged. And by leveraged I don't mean financial leveraged alone, like Wall Street uses, and that has a bad name. I'm just talking about tools. We're using tools.
 
@@ -259,4 +259,4 @@ Summary:
 - Figure out what new product or technology you can provide that's natural to you.
 - Then figure out how to scale it so everyone on the planet can have your product.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.
+<small>References: image, nav.al/; extensive explanations are got from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.

@@ -43,11 +43,11 @@ Think of a highway during rush hour. Each car represents a unit of work, and the
 
 ### Managerial Insights
 
-The implications for management are significant. If minimizing lead time is crucial for us and our clients, we must either:
+The implications for management are significant. If minimising lead time is crucial for us and our clients, we must either:
 
 1. **Boost the throughput rate of the process**. This might involve streamlining operations, investing in faster machinery, or training staff.
 2. **Limit the WIP**. This could be achieved through strategic decisions like scheduling breaks in production or, in the case of our highway analogy, introducing tolls or carpool lanes to manage flow. In extreme cases, it could also mean declining new business if capacity is reached.
 
 One thing to note is that Little's Law describes long-run averages in a stable system, not instantaneous snapshots. It's less pertinent in chaotic or start-up environments. Moreover, the law assumes a non-preemptive process, meaning every task in the queue gets equal treatment and no task can skip ahead.
 
-In conclusion, Little's Law offers profound insights, and its understanding can be a game-changer in various fields, especially in management. It emphasizes the interconnectedness of processes, workloads, and results, reminding us of the importance of balance and efficiency.
+In conclusion, Little's Law offers profound insights, and its understanding can be a game-changer in various fields, especially in management. It emphasises the interconnectedness of processes, workloads, and results, reminding us of the importance of balance and efficiency.

@@ -7,7 +7,7 @@ slug: "toyota-case-of-lean-product-development"
 coverImage: "./ideas.jpg"
 ---
 
-Toyota knows how to make cars so well that it became the first carmaker to produce more than 10 million vehicles in a single year, a milestone it crossed in the early 2010s. Its success is rooted in a special system and began what is now known as 'Lean Manufacturing', an ethos emulated by companies around the world to make products faster, cheaper and better. The more transferable lesson, the one the rest of this post builds toward, isn't really about cars: Toyota's system shows how process design, deep technical competence, supplier integration, and continuous learning can make _product development_ itself faster, cheaper, and better without sacrificing quality.
+Toyota knows how to make cars so well that it became the first carmaker to produce more than 10 million vehicles in a single year, a milestone it crossed in the early 2010s. Its success is rooted in a special system and began what is now known as 'Lean Manufacturing', an ethos emulated by companies around the world to make products faster, cheaper and better. The more transferable lesson, the one the rest of this post builds towards, isn't really about cars: Toyota's system shows how process design, deep technical competence, supplier integration, and continuous learning can make _product development_ itself faster, cheaper, and better without sacrificing quality.
 
 Following the Second World War, Japan was left in a precarious economic position, disadvantaged by lacking natural resources, materials like steel and other metals were hard to come by and companies had to be creative to compete. Toyota's founder Sakichi Toyoda had started a loom business, but it was his son Kiichiro who founded the motor company in 1937. They were used to working within narrow margins. As the shortage of materials increased during the war, the number of headlamps on its Model K truck was reduced to one and it only had brakes on one of the axles.
 
@@ -15,7 +15,7 @@ The turning point for Toyota's Production System would come in the early fifties
 
 Japan didn't really have self-service stores at this point, and he was struck by the way customers could choose exactly what they wanted when they wanted. He decided to model his production line on a similar idea; with a "supermarket formula," only enough parts were produced in the first phase to replace what was used in the second, and so on. This is where the 'Just In Time' system took shape. Toyota was able to eliminate much of the waste in Ford's system, making smaller numbers of parts to be used when it needed them, allowing the company to operate on a tighter budget.
 
-As part of this Ohno developed 'Kanban': a sign-based scheduling method which shows goods in, goods in production, and goods out. Ohno and Toyoda also noticed that American car companies were still employing many of Henry Ford's early production techniques: They kept operations at full tilt in order to maximize efficiencies of scale and then repaired defective cars after they rolled off the line. Ohno believed this caused more problems and didn't encourage workers, or machines, to stop making the mistake. So he placed a cord above every station which any worker could pull to stop the entire assembly if they spotted a problem. The whole team would work on it, to prevent it from happening again. As teams identified more problems, the number of errors began to drop dramatically.
+As part of this Ohno developed 'Kanban': a sign-based scheduling method which shows goods in, goods in production, and goods out. Ohno and Toyoda also noticed that American car companies were still employing many of Henry Ford's early production techniques: They kept operations at full tilt in order to maximise efficiencies of scale and then repaired defective cars after they rolled off the line. Ohno believed this caused more problems and didn't encourage workers, or machines, to stop making the mistake. So he placed a cord above every station which any worker could pull to stop the entire assembly if they spotted a problem. The whole team would work on it, to prevent it from happening again. As teams identified more problems, the number of errors began to drop dramatically.
 
 Combined with a culture of continuous, incremental improvement, Kaizen, the Toyota Production System built a brand known for making reliable and affordable cars. But Toyota was also getting good at producing cars quickly. In 1962, the company produced one million vehicles. By 1972, they had produced ten million. It was around that time the efficiencies of their factories enabled Toyota to produce a car every 1.6 man hours, much lower than their competitors in the U.S., Sweden and Germany. And as the oil crises of the decade sent gas prices higher, cheap-to-run Japanese cars became much more appealing to Americans, whose powerful, but gas-guzzling vehicles suddenly became very expensive to run.
 
@@ -51,9 +51,9 @@ Just-in-Time is the most well-known concept. It relates to making material flow 
 
 #### Kaizen
 
-Kaizen, or continuous improvement processes, often is considered to be the building block of all lean production methods. It focuses on eliminating waste, improving productivity, and achieving sustained continual improvement in targeted activities and processes of an organization.
+Kaizen, or continuous improvement processes, often is considered to be the building block of all lean production methods. It focuses on eliminating waste, improving productivity, and achieving sustained continual improvement in targeted activities and processes of an organisation.
 
-Kaizen has practically become a universal word. But is rarely practised in most organizations as a true continuous improvement that spreads throughout the organization. Kaizen is not optional in a lean system. Lowering inventory means problems truly shut down the operation, starving downstream processes for parts. Jidoka means machines and people are shutting down the system when there is a problem. This surfaces problems and is great if people are skilled and motivated enough to solve the problems very quickly. Otherwise, the result is simply an erosion of production efficiency and competitiveness.
+Kaizen has practically become a universal word. But is rarely practised in most organisations as a true continuous improvement that spreads throughout the organisation. Kaizen is not optional in a lean system. Lowering inventory means problems truly shut down the operation, starving downstream processes for parts. Jidoka means machines and people are shutting down the system when there is a problem. This surfaces problems and is great if people are skilled and motivated enough to solve the problems very quickly. Otherwise, the result is simply an erosion of production efficiency and competitiveness.
 
 It should be clear that this really is a system. Toyota uses the analogy of trying to navigate through waters while lowering the water level to reveal the rocks. The water level is like inventory. The rocks are problems. When you lower the inventory problems are exposed and unless they are solved the boat will crash on the rocks. Jidoka also reveals rocks throughout the day. Surfacing problems is only valuable if people working on the process have the tools and are motivated to first contain the problems and then solve them at the root cause. It is an endless journey of improvement.
 
@@ -63,11 +63,11 @@ The in-depth study of Toyota's approach to product-process development led to th
 
 #### Process
 
-When thinking of process improvement, we often think of simple repetitive processes. Toyota views product development as a process, albeit a broader, more complex, and less precise process than most short-cycle manufacturing jobs. In so doing Toyota has been able to standardize the process, refine it, eliminate waste, and continually reduce both lead time and cost from program to program. The process starts with specific stretch objectives for each program and the teams virtually always achieve the targets.
+When thinking of process improvement, we often think of simple repetitive processes. Toyota views product development as a process, albeit a broader, more complex, and less precise process than most short-cycle manufacturing jobs. In so doing Toyota has been able to standardise the process, refine it, eliminate waste, and continually reduce both lead time and cost from programme to programme. The process starts with specific stretch objectives for each programme and the teams virtually always achieve the targets.
 
 #### People
 
-Driving the lean process and rigorous standardization are people who work hard as a team to achieve common objectives. They not only do the work with high levels of skill and discipline but also reflect on the process and work to improve it. This activity happens on a continuing basis. It is true continuous improvement. To do this work requires people with "towering technical competence" who learn the specific technology they are engineering in tremendous depth and also learn through intense mentoring in the "Toyota Way" of identifying problems, analyzing them, developing countermeasures, communicating, and improving. The deep technical knowledge is the baseline skill, and the Toyota Way is the higher level meta-improvement method that is part of the culture of the company.
+Driving the lean process and rigorous standardisation are people who work hard as a team to achieve common objectives. They not only do the work with high levels of skill and discipline but also reflect on the process and work to improve it. This activity happens on a continuing basis. It is true continuous improvement. To do this work requires people with "towering technical competence" who learn the specific technology they are engineering in tremendous depth and also learn through intense mentoring in the "Toyota Way" of identifying problems, analyzing them, developing countermeasures, communicating, and improving. The deep technical knowledge is the baseline skill, and the Toyota Way is the higher level meta-improvement method that is part of the culture of the company.
 
 #### Tools
 
@@ -99,23 +99,23 @@ At Toyota, there is a philosophy of having a good process. It is as much a philo
 	</tr>
 	<tr>
 		<td>3. Create a leveled Product Development Process Flow.</td>
-		<td>Leveling the flow starts with stabilizing the process so it can be predicted and appropriately planned. This allows product planning to reduce wild swings in work load. Predictable work load swings can be staffed through flexible labor pools.</td>
+		<td>Leveling the flow starts with stabilising the process so it can be predicted and appropriately planned. This allows product planning to reduce wild swings in work load. Predictable work load swings can be staffed through flexible labour pools.</td>
 	</tr>
 	<tr>
-		<td>4. Utilize Rigorous Standardization to Reduce Variation, and Create Flexibility and Predictable Outcomes.</td>
-		<td>Standardization is the basis for continuous improvement. Standardization of the product and process is a foundation for all the other process principles.</td>
+		<td>4. Utilise Rigorous Standardisation to Reduce Variation, and Create Flexibility and Predictable Outcomes.</td>
+		<td>Standardisation is the basis for continuous improvement. Standardisation of the product and process is a foundation for all the other process principles.</td>
 	</tr>
 	<tr>
 		<td>5. Develop a "Chief Engineer System" to Integrate Development from start to finish.</td>
 		<td>The chief engineer is the master architect with final authority and responsibility for the entire product development process. The chief engineer is the overarching source of product and process integration.</td>
 	</tr>
 	<tr>
-		<td>6. Organize to balance Functional Expertise and Cross-functional Integration.</td>
-		<td>Deep functional expertise combined with superordinate goals and the chief engineer system provides the balance sought by matrix organization.</td>
+		<td>6. Organise to balance Functional Expertise and Cross-functional Integration.</td>
+		<td>Deep functional expertise combined with superordinate goals and the chief engineer system provides the balance sought by matrix organisation.</td>
 	</tr>
 	<tr>
 		<td>7. Develop Towering Technical Competence in all Engineers.</td>
-		<td>Engineers must have deep specialized knowledge of the product and process that comes from direct experience at the <em>gemba</em>.</td>
+		<td>Engineers must have deep specialised knowledge of the product and process that comes from direct experience at the <em>gemba</em>.</td>
 	</tr>
 	<tr>
 		<td>8. Fully Integrate Suppliers into the Product Development System.</td>
@@ -123,23 +123,23 @@ At Toyota, there is a philosophy of having a good process. It is as much a philo
 	</tr>
 	<tr>
 		<td>9. Build in Learning and Continuous Improvement.</td>
-		<td>Organizational learning is a necessary condition for continuous improvement and builds on all of the other principles.</td>
+		<td>Organisational learning is a necessary condition for continuous improvement and builds on all of the other principles.</td>
 	</tr>
 	<tr>
 		<td>10. Build a Culture to Support Excellence and Relentless Improvement.</td>
-		<td>Excellence and kaizen in the final analysis reflect the organizational culture.</td>
+		<td>Excellence and kaizen in the final analysis reflect the organisational culture.</td>
 	</tr>
 	<tr>
 		<td>11. Adapt Technology to Fit your People and Process.</td>
-		<td>Technology must be customized and always subordinated to the people and process.</td>
+		<td>Technology must be customised and always subordinated to the people and process.</td>
 	</tr>
 	<tr>
-		<td>12. Align your Organization through Simple, Visual Communication.</td>
+		<td>12. Align your Organisation through Simple, Visual Communication.</td>
 		<td>Aligned goals must be cascaded down and joint problem solving is enabled by simple, visual communication.</td>
 	</tr>
 	<tr>
-		<td>13. Use Powerful Tools for Standardization and Organizational learning.</td>
-		<td>Powerful tools can be simple. Their power comes from enabling standardization which is necessary for organizational learning.</td>
+		<td>13. Use Powerful Tools for Standardisation and Organisational learning.</td>
+		<td>Powerful tools can be simple. Their power comes from enabling standardisation which is necessary for organisational learning.</td>
 	</tr>
 </tbody>
 </table>

@@ -100,7 +100,7 @@ Let's get to it.
 
 ### Arm yourself with specific knowledge, accountability, and leverage.
 
-- Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgment in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
+- Arm yourself with specific knowledge. The classic example of specific knowledge is investing. But it could be anything from judgement in running a fleet of trucks to weather forecasting. Very often it is at the edge of knowledge.
 - Specific knowledge may come from your DNA. It may be soft skills learned in childhood. It may be something so new that nobody but you knows how to do it. It may be true on-the-job training where you're pattern matching in highly complex environments.
 - Specific knowledge can't be trained. Otherwise it will be mass-produced and you will be paid the minimum possible wage to do it.
 - Specific knowledge can be learned by pursuing your genuine curiosity, talents and passion. Building specific knowledge will feel like play to you.
@@ -133,15 +133,15 @@ Let's get to it.
 - A well-functioning team has clear accountability for each position. If you have a small team with clearly delineated responsibilities, you can keep a very high level of accountability.
 - We're socially hard wired not to fail in public. People who have the ability to fail in public under their own names gain a lot of power.
 
-### Labor and Capital Are Old Leverage
+### Labour and Capital Are Old Leverage
 
 > "Give me a lever long enough, and a place to stand, and I will move the earth."<br>
 > — Archimedes
 
-- Wealth requires leverage. Labor and capital are older forms of leverage that everyone is fighting over.
+- Wealth requires leverage. Labour and capital are older forms of leverage that everyone is fighting over.
 - Our brains aren't evolved to comprehend new forms of leverage and just how much leverage is possible in modern society.
-- Society overvalues labor leverage, which is people working for you. It is incredibly messy and competitive.
-- You want the minimum amount of labor that allows you to use the other forms of leverage.
+- Society overvalues labour leverage, which is people working for you. It is incredibly messy and competitive.
+- You want the minimum amount of labour that allows you to use the other forms of leverage.
 - Capital has been the dominant form of leverage in the last century. It scales very well: you can manage more capital much more easily than you can manage people.
 - If you have specific knowledge in a domain and if you're accountable, people will give you capital as a form of leverage.
 
@@ -149,7 +149,7 @@ Let's get to it.
 
 > Fortunes require leverage. Business leverage comes from capital, people, and products with no marginal cost of replication (code and media).
 > Code and media are permissionless leverage. They're the leverage behind the newly rich. You can create software and media that works for you while you sleep.
-> An army of robots is freely available: it's just packed in data centers for heat and space efficiency. Use it.
+> An army of robots is freely available: it's just packed in data centres for heat and space efficiency. Use it.
 > If you can't code, write books and blogs, record videos and podcasts.
 
 - Product and media are the new leverage.
@@ -160,36 +160,36 @@ Let's get to it.
 
 ### Product Leverage is Egalitarian
 
-> Capital means money. To raise money, apply your specific knowledge, with accountability, and show resulting good judgment.
-> Labor means people working for you. It's the oldest and most fought-over form of leverage. Labor leverage will impress your parents, but don't waste your life chasing it.
-> Capital and labor are permissioned leverage. Everyone is chasing capital, but someone has to give it to you. Everyone is trying to lead, but someone has to follow you.
+> Capital means money. To raise money, apply your specific knowledge, with accountability, and show resulting good judgement.
+> Labour means people working for you. It's the oldest and most fought-over form of leverage. Labour leverage will impress your parents, but don't waste your life chasing it.
+> Capital and labour are permissioned leverage. Everyone is chasing capital, but someone has to give it to you. Everyone is trying to lead, but someone has to follow you.
 
 - Product leverage is a positive-sum game.
 - Status goods are limited to a few people.
 - The best products tend to be targeted at the middle class.
 - Creating wealth with product leads to more ethical wealth.
 - You want to use the product that is used by the most people.
-- Capital and labor are becoming permissionless.
+- Capital and labour are becoming permissionless.
 
-### Example: From Laborer to Entrepreneur
+### Example: From Labourer to Entrepreneur
 
-- The continuum from laborer to real estate tech company entrepreneur goes from low to high specific knowledge, accountability and leverage.
-- Laborers get paid hourly. The owner of the house doesn't know who they are and they can be replaced by machines or newly trained hires.
-- General contractors pocket the profits of a job but they also eat the losses. They have laborers working for them and know how to organize projects.
+- The continuum from labourer to real estate tech company entrepreneur goes from low to high specific knowledge, accountability and leverage.
+- Labourers get paid hourly. The owner of the house doesn't know who they are and they can be replaced by machines or newly trained hires.
+- General contractors pocket the profits of a job but they also eat the losses. They have labourers working for them and know how to organise projects.
 - Property developers use loans to build new homes and sell them at a profit. They know where to buy, how much to spend, and what customers want. Their reputation is on the line if the project fails.
 - Architects and REITs apply even more accountability, specific knowledge and leverage.
 - Real estate tech companies like Opendoor, Trulia or Redfin apply the maximum leverage by combining all of the lower layers of the stack with a new product.
 
-### Judgment Is the Decisive Skill
+### Judgement Is the Decisive Skill
 
 > Leverage is a force multiplier for your judgement.
 > Judgement requires experience, but can be built faster by learning foundational skills.
 
-- Judgment is knowing the long-term consequences of your actions. In an age of infinite leverage, judgment is the most important skill.
+- Judgement is knowing the long-term consequences of your actions. In an age of infinite leverage, judgement is the most important skill.
 - Once you have leverage, you want to slow down because correct decisions really matter. If you're correct 10-20% more often than the other person, the compounding effects of your leverage will dwarf the competition.
-- The people with the best judgment are among the least emotional. Emotions prevent you from seeing what's really happening, until you can no longer resist the truth and you're forced into suffering.
+- The people with the best judgement are among the least emotional. Emotions prevent you from seeing what's really happening, until you can no longer resist the truth and you're forced into suffering.
 - A lot of the top investors often sound like philosophers because investing is a real-world multi-variate activity. So they need to study everything, not just investment books whose advantages have already been competed away.
-- The more outraged someone is, the worse their judgment. You don't want to hand them the keys to your car, let alone the keys to your company.
+- The more outraged someone is, the worse their judgement. You don't want to hand them the keys to your car, let alone the keys to your company.
 
 ### There's No Actual Skill Called "Business"
 
@@ -199,14 +199,14 @@ Let's get to it.
 - The number of "doing" iterations drives the learning curve. You will learn more by running different experiments every day than by doing the same job over and over.
 - We're not evolved to bleed a little bit every day with failed iterations. We're evolved for small victories all the time, but that's where the herd is. If you're willing to bleed a little bit every day, you may win big later.
 
-### The Foundations Are Math and Logic
+### The Foundations Are Maths and Logic
 
 > Study microeconomics, game theory, psychology, persuasion, ethics, mathematics, and computers.
 
-- If you understand math and logic, you have the basis for understanding the scientific method. Once you understand the scientific method, you can separate truth from falsehood in other fields.
+- If you understand maths and logic, you have the basis for understanding the scientific method. Once you understand the scientific method, you can separate truth from falsehood in other fields.
 - Be careful when reading because so-called facts are often just opinions with a veneer of pseudoscience around them.
 - It's better to read a great book slowly than to fly through a hundred books quickly. Understanding comes through repetition and usage.
-- The five most important skills are reading, writing, arithmetic, persuasion, and programming. If you're good with computers, if you're good at basic math, if you're good at writing, if you're good at speaking, and if you like to read, you're set for life.
+- The five most important skills are reading, writing, arithmetic, persuasion, and programming. If you're good with computers, if you're good at basic maths, if you're good at writing, if you're good at speaking, and if you like to read, you're set for life.
 
 ### Read What You Love Until You Love to Read
 
@@ -214,7 +214,7 @@ Let's get to it.
 
 - Read what you love until you love to read. Start with the books that interest you, no matter how unrefined they may seem.
 - To avoid being seduced by lies, read the original scientific texts in a field. For example, instead of reading a business book, pick up Adam Smith's The Wealth of Nations.
-- If you understand the basics, especially in math and science, you will not be afraid of any book.
+- If you understand the basics, especially in maths and science, you will not be afraid of any book.
 - The means of learning are abundant, the desire to learn is scarce. The beauty of the Internet is that the entire library of Alexandria is at your fingertips at all times.
 - Children have a natural desire to learn: they're always asking questions. But child-rearing and schools replace curiosity with compliance.
 
@@ -267,6 +267,6 @@ Let's get to it.
 
 ### There are no get rich quick schemes. That's just someone else getting rich off you.
 
-### When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.
+### When you're finally wealthy, you'll realise that it wasn't what you were seeking in the first place. But that's for another day.
 
-<small>References: image, nav.al/; extensive explanations are gotten from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.
+<small>References: image, nav.al/; extensive explanations are got from the podcasts on "Wealth" between Naval and Nivi podcast, link: <a href="https://nav.al/category/wealth/" target="_blank">here</a></small>.
