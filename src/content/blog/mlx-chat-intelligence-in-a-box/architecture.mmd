@@ -1,0 +1,26 @@
+flowchart TB
+    U(["You type a message"]) --> C["ChatController<br/>streams the turn · 10 Hz UI flush"]
+    C --> R["EngineRuntime<br/>one model in RAM · idle auto-unload"]
+    R --> P{{"ChatEngine protocol"}}
+    P --> M["MLXEngine<br/>KV-cached ChatSession"]
+    P --> A["AppleIntelligenceEngine<br/>LanguageModelSession"]
+    M --> G["MLX / Metal<br/>Apple Silicon GPU"]
+    A --> S["Apple Intelligence<br/>OS on-device model"]
+    R -. downloads .-> D["ModelStore<br/>catalog · imports<br/>~/Models"]
+    D -.-> H[("Hugging Face Hub")]
+
+    classDef user fill:#F6F6F7,stroke:#8F8F8F,stroke-width:1.5px,color:#1F1F21
+    classDef core fill:#EDEEF2,stroke:#5B5F6B,stroke-width:1.5px,color:#1F1F21
+    classDef protocol fill:#F3E8FA,stroke:#BB3FD8,stroke-width:1.5px,color:#1F1F21
+    classDef mlx fill:#E3F0EC,stroke:#3E9979,stroke-width:1.5px,color:#1F1F21
+    classDef apple fill:#E7F0FE,stroke:#2F7CF9,stroke-width:1.5px,color:#1F1F21
+    classDef store fill:#FDEEDF,stroke:#F3903E,stroke-width:1.5px,color:#1F1F21
+    classDef hub fill:#FFF7DB,stroke:#E3A008,stroke-width:1.5px,color:#1F1F21
+
+    class U user
+    class C,R core
+    class P protocol
+    class M,G mlx
+    class A,S apple
+    class D store
+    class H hub
