@@ -15,8 +15,7 @@ After seeing what _Fable_ could do on fairly complex projects, I decided to use 
 
 There are plenty of other ways to run models locally: _Ollama_, _llama.cpp_, _vLLM_, or _mlx-lm_. I just wanted the experience to feel more like an app: open it, pick a model, and chat.
 
-The result is **MLX Chat**: a native macOS chat app for running LLMs fully on-device. <br/>
-Download the signed dmg from the [_website_](https://mlxchat.dev/) or build it from [_source_](https://github.com/abayomipopoola/mlx-chat).
+The result is **MLX Chat**: a native macOS chat app for running LLMs fully on-device. Download the signed dmg from the [_website_](https://mlxchat.dev/) or build it from [_source_](https://github.com/abayomipopoola/mlx-chat).
 
 ### The shape of the thing
 
@@ -56,7 +55,7 @@ It's the feature nobody demos, but everybody's Activity Monitor appreciates.
 
 ### Why this matters
 
-The point of MLX Chat is not that everyone should run every model locally. Hosted models are still more powerful, easier to update, and better suited to many serious workloads. But local models change the relationship a little.
+The point of MLX Chat is not that everyone should run every model locally. Hosted models are still more powerful and often the better choice for demanding workloads. But local models change the relationship a little.
 
 You do not ask permission to try a model. You do not send a private thought to a server just to see what a model thinks about it. You do not need an account, a quota, or a billing dashboard before you can experiment. The machine in front of you becomes enough.
 
@@ -64,6 +63,5 @@ That is what makes on-device intelligence interesting to me. Not because it repl
 
 The best local AI app is not the one that reminds you how clever the technology is. It is the one that makes local intelligence feel ordinary.
 
-<small>References: MLX Chat draws inspiration from Locally AI for its simplicity and MLX Studio for its polished MLX experience, while taking a more open approach to model management.<br/>
-Download the signed dmg from the [_website_](https://mlxchat.dev/) or build it from [_source_](https://github.com/abayomipopoola/mlx-chat).
+<small>References: [**MLX Chat**](https://mlxchat.dev/) draws inspiration from [Locally AI](https://locally.ai/) for its simplicity and [MLX Studio](https://mlxstudio.aleonis.co/) for its polished MLX experience, while taking a more open approach to model management.
 </small>

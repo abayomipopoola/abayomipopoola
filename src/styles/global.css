@@ -96,6 +96,15 @@
   .prose em {
     font-style: italic;
   }
+  /* <small> is used only for "References:" footer notes. It's inline, so
+     Markdown wraps it in a <p> whose "strut" (the fixed 30px prose line-height)
+     sets each line's height — NOT <small>'s own line-height, which is why
+     setting it there did nothing. Tighten it on the wrapping paragraph instead.
+     Trailing periods sit outside </small>, so <small> stays inline (no
+     display:block) to avoid orphaning them onto their own line. */
+  .prose p:has(small) {
+    line-height: 1.3;
+  }
   .prose img {
     border-radius: 0;
     max-width: 100%;
