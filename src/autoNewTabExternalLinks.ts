@@ -1,50 +1,34 @@
-import type { RehypePlugin } from "@astrojs/markdown-remark";
-import { visit } from "unist-util-visit";
+import { defineHastPlugin } from "satteri";
 
 interface Options {
   domain: string;
 }
 
-export const autoNewTabExternalLinks: RehypePlugin = (options?: Options) => {
+/**
+ * Sätteri HAST plugin: adds target="_blank" rel="noopener noreferrer" to
+ * links pointing outside the site's domain (subdomains count as internal).
+ */
+export const autoNewTabExternalLinks = (options?: Options) => {
   const siteDomain = options?.domain ?? "";
 
-  return (tree: unknown) => {
-    visit(tree, (node: any) => {
-      if (node.type != "element") {
-        return;
-      }
+  return defineHastPlugin({
+    name: "auto-new-tab-external-links",
+    element: {
+      filter: ["a"],
+      visit(node, ctx) {
+        const href = node.properties?.["href"];
 
-      const element = node;
+        if (href == null || href === "") {
+          return;
+        }
 
-      if (!isAnchor(element)) {
-        return;
-      }
-
-      const url = getUrl(element);
-
-      if (isExternal(url, siteDomain)) {
-        element.properties!["target"] = "_blank";
-        element.properties!["rel"] = "noopener noreferrer";
-      }
-    });
-  };
-};
-
-const isAnchor = (element: any) =>
-  element.tagName == "a" && element.properties && "href" in element.properties;
-
-const getUrl = (element: any) => {
-  if (!element.properties) {
-    return "";
-  }
-
-  const url = element.properties["href"];
-
-  if (!url) {
-    return "";
-  }
-
-  return url.toString();
+        if (isExternal(String(href), siteDomain)) {
+          ctx.setProperty(node, "target", "_blank");
+          ctx.setProperty(node, "rel", "noopener noreferrer");
+        }
+      },
+    },
+  });
 };
 
 const isExternal = (url: string, domain: string) => {

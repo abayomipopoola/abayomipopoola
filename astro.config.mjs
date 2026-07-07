@@ -1,5 +1,5 @@
 import { defineConfig, fontProviders } from "astro/config";
-import { unified } from "@astrojs/markdown-remark";
+import { satteri } from "@astrojs/markdown-satteri";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import { autoNewTabExternalLinks } from "./src/autoNewTabExternalLinks";
@@ -11,6 +11,10 @@ const site = "https://abayomipo.com";
 // https://astro.build/config
 export default defineConfig({
   site,
+
+  // v7 changed the default to 'jsx' (drops newline whitespace between inline
+  // elements). Our Prettier-formatted templates assume HTML semantics; keep them.
+  compressHTML: true,
 
   // Fonts API (astro:fonts) — generates @font-face, metric-matched fallback
   // fonts (less CLS), and preload links. Replaces the manual @font-face block
@@ -51,14 +55,9 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), partytown()],
 
   markdown: {
-    processor: unified({
-      rehypePlugins: [
-        [
-          autoNewTabExternalLinks,
-          {
-            domain: new URL(site).hostname,
-          },
-        ],
+    processor: satteri({
+      hastPlugins: [
+        autoNewTabExternalLinks({ domain: new URL(site).hostname }),
       ],
     }),
   },
