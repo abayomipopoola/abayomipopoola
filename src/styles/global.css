@@ -22,10 +22,10 @@
 @layer base {
   :root {
     --link-color: #1a73e8;
-    /* Bridge Tailwind's --font-sans to the astro:fonts stack (AdelleSans +
+    /* Bridge Tailwind's --font-sans to the astro:fonts stack (Atkinson Hyperlegible +
        metric-matched fallbacks). Declared after `@import "tailwindcss"`, so it
        wins over Tailwind's default --font-sans. */
-    --font-sans: var(--font-adelle);
+    --font-sans: var(--font-atkinson);
   }
   h1,
   h2,

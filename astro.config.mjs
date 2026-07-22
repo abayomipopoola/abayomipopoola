@@ -21,31 +21,33 @@ export default defineConfig({
   // that used to live in src/styles/global.css.
   fonts: [
     {
-      name: "AdelleSans",
+      name: "Atkinson Hyperlegible",
       // Dedicated var (NOT --font-sans, which Tailwind v4 already owns). global.css
-      // bridges Tailwind's --font-sans -> var(--font-adelle) so there's no collision.
-      cssVariable: "--font-adelle",
+      // bridges Tailwind's --font-sans -> var(--font-atkinson) so there's no collision.
+      cssVariable: "--font-atkinson",
       provider: fontProviders.local(),
       fallbacks: ["Helvetica", "Arial", "sans-serif"],
       options: {
-        // NOTE: no bold-italic (700/italic) variant yet — add one here once
-        // AdelleSans-BoldItalic.woff2 exists, otherwise **_bold italic_** text
-        // renders as real italic + synthesized (faux) bold.
         variants: [
           {
             weight: 400,
             style: "normal",
-            src: ["./src/assets/fonts/AdelleSans.woff2"],
+            src: ["./src/assets/fonts/AtkinsonHyperlegible-Regular.woff2"],
           },
           {
             weight: 700,
             style: "normal",
-            src: ["./src/assets/fonts/AdelleSans-bold.woff2"],
+            src: ["./src/assets/fonts/AtkinsonHyperlegible-Bold.woff2"],
           },
           {
             weight: 400,
             style: "italic",
-            src: ["./src/assets/fonts/AdelleSans-Italic.woff2"],
+            src: ["./src/assets/fonts/AtkinsonHyperlegible-Italic.woff2"],
+          },
+          {
+            weight: 700,
+            style: "italic",
+            src: ["./src/assets/fonts/AtkinsonHyperlegible-BoldItalic.woff2"],
           },
         ],
       },
