@@ -52,6 +52,31 @@ export default defineConfig({
         ],
       },
     },
+    {
+      name: "Adelle Sans",
+      cssVariable: "--font-adelle",
+      provider: fontProviders.local(),
+      fallbacks: ["Helvetica", "Arial", "sans-serif"],
+      options: {
+        variants: [
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/AdelleSans-Regular.woff2"],
+          },
+          {
+            weight: 700,
+            style: "normal",
+            src: ["./src/assets/fonts/AdelleSans-Bold.woff2"],
+          },
+          {
+            weight: 400,
+            style: "italic",
+            src: ["./src/assets/fonts/AdelleSans-Italic.woff2"],
+          },
+        ],
+      },
+    },
   ],
 
   integrations: [mdx(), sitemap(), partytown()],

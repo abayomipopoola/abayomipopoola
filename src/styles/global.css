@@ -21,20 +21,21 @@
 
 @layer base {
   :root {
-    --link-color: #1a73e8;
+    --link-color: #107599;
     /* Bridge Tailwind's --font-sans to the astro:fonts stack (Atkinson Hyperlegible +
        metric-matched fallbacks). Declared after `@import "tailwindcss"`, so it
        wins over Tailwind's default --font-sans. */
     --font-sans: var(--font-atkinson);
+    --font-heading: var(--font-adelle);
   }
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6 {
-    font-family: var(--font-sans);
-    color: #000000;
+  h6,
+  .site-title {
+    font-family: var(--font-heading);
   }
   .date-time,
   .tags-highlight {
@@ -68,12 +69,25 @@
 
 /* Define custom utility for link-color */
 @layer utilities {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .site-title {
+    color: var(--link-color);
+  }
   body .prose {
     color: #000000de;
     font-family: var(--font-sans);
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
+  }
+  .prose :is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--font-heading);
+    color: var(--link-color);
   }
   .prose {
     max-width: 100%;
@@ -86,7 +100,7 @@
     text-decoration: none;
   }
   .prose a:hover {
-    color: #1a73e8de;
+    color: #107599de;
   }
   .prose strong {
     font-weight: 700;
