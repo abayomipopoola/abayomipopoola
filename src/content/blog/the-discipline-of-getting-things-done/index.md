@@ -1,7 +1,7 @@
 ---
 title: "Execution: The Discipline of Getting Things Done"
 date: "2022-06-05T11:13:03.284Z"
-tags: [books]
+tags: [books, business domain]
 description: Delve into the intricate interplay of people, strategy, and operations as you navigate the core processes that drive tangible results.
 slug: "the-discipline-of-getting-things-done"
 coverImage: "./team.jpg"

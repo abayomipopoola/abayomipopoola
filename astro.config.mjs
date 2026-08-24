@@ -21,33 +21,26 @@ export default defineConfig({
   // that used to live in src/styles/global.css.
   fonts: [
     {
-      name: "Atkinson Hyperlegible",
-      // Dedicated var (NOT --font-sans, which Tailwind v4 already owns). global.css
-      // bridges Tailwind's --font-sans -> var(--font-atkinson) so there's no collision.
-      cssVariable: "--font-atkinson",
+      name: "Mona Sans VF",
+      cssVariable: "--font-mona",
       provider: fontProviders.local(),
       fallbacks: ["Helvetica", "Arial", "sans-serif"],
       options: {
         variants: [
           {
-            weight: 400,
+            weight: "200 900",
             style: "normal",
-            src: ["./src/assets/fonts/AtkinsonHyperlegible-Regular.woff2"],
+            src: ["./src/assets/fonts/MonaSansVF.woff2"],
           },
           {
-            weight: 700,
-            style: "normal",
-            src: ["./src/assets/fonts/AtkinsonHyperlegible-Bold.woff2"],
-          },
-          {
-            weight: 400,
+            weight: "200 900",
             style: "italic",
-            src: ["./src/assets/fonts/AtkinsonHyperlegible-Italic.woff2"],
+            src: ["./src/assets/fonts/MonaSansVF-Italic.woff2"],
           },
           {
             weight: 700,
             style: "italic",
-            src: ["./src/assets/fonts/AtkinsonHyperlegible-BoldItalic.woff2"],
+            src: ["./src/assets/fonts/MonaSans-BoldItalic.woff2"],
           },
         ],
       },

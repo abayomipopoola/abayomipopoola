@@ -22,11 +22,10 @@
 @layer base {
   :root {
     --link-color: #107599;
-    /* Bridge Tailwind's --font-sans to the astro:fonts stack (Atkinson Hyperlegible +
-       metric-matched fallbacks). Declared after `@import "tailwindcss"`, so it
-       wins over Tailwind's default --font-sans. */
-    --font-sans: var(--font-atkinson);
+    /* Bridge Tailwind's --font-sans to the astro:fonts Mona Sans VF stack. */
+    --font-sans: var(--font-mona);
     --font-heading: var(--font-adelle);
+    --font-prose: var(--font-mona);
   }
   h1,
   h2,
@@ -36,6 +35,29 @@
   h6,
   .site-title {
     font-family: var(--font-heading);
+  }
+  /* Prevent the browser from slanting the roman face when italic
+     files are meant to load. */
+  body,
+  em,
+  i,
+  .italic,
+  .prose blockquote,
+  .prose blockquote p {
+    font-synthesis: none;
+  }
+  p {
+    font-family: var(--font-prose);
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
+  }
+  em,
+  i,
+  .italic {
+    font-style: italic;
   }
   .date-time,
   .tags-highlight {
@@ -80,20 +102,27 @@
   }
   body .prose {
     color: #000000de;
-    font-family: var(--font-sans);
-    font-size: 17px;
+    font-family: var(--font-prose);
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+    font-stretch: 100%;
+    font-optical-sizing: auto;
+    letter-spacing: normal;
   }
   .prose :is(h1, h2, h3, h4, h5, h6) {
     font-family: var(--font-heading);
     color: var(--link-color);
+    font-variation-settings: normal;
+    font-feature-settings: normal;
   }
   .prose {
     max-width: 100%;
   }
-  .prose blockquote {
+  .prose blockquote,
+  .prose blockquote p {
     quotes: none;
+    font-style: italic;
   }
   .prose a {
     color: var(--link-color);
@@ -106,6 +135,11 @@
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .prose :is(em, i, blockquote) strong,
+  .prose strong :is(em, i) {
+    font-style: italic;
+    font-weight: 700;
   }
   .prose em {
     font-style: italic;
@@ -124,8 +158,5 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
-  }
-  .prose blockquote {
-    font-style: italic;
   }
 }

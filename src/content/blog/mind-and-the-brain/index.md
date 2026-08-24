@@ -1,5 +1,5 @@
 ---
-title: How's the mind different from the brain?
+title: How’s the mind different from the brain?
 date: "2018-11-20T22:40:32.169Z"
 tags: [random, psychology]
 description: The mind, and the brain.
