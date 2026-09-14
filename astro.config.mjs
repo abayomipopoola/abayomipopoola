@@ -21,33 +21,31 @@ export default defineConfig({
   // that used to live in src/styles/global.css.
   fonts: [
     {
-      name: "Mona Sans VF",
-      cssVariable: "--font-mona",
+      name: "STK Bureau Serif",
+      cssVariable: "--font-stk-bureau",
       provider: fontProviders.local(),
-      fallbacks: ["Helvetica", "Arial", "sans-serif"],
+      fallbacks: ["Georgia", "Times New Roman", "serif"],
       options: {
         variants: [
           {
-            weight: "200 900",
+            // "Book" is the family's text face. The file's usWeightClass is
+            // 300, but the prose is weight 400, so register it as the regular
+            // face for exact matching.
+            weight: 400,
             style: "normal",
-            src: ["./src/assets/fonts/MonaSansVF.woff2"],
+            src: ["./src/assets/fonts/STKBureauSerif_Book.woff2"],
           },
           {
-            weight: "200 900",
-            style: "italic",
-            src: ["./src/assets/fonts/MonaSansVF-Italic.woff2"],
-          },
-          {
-            weight: 700,
-            style: "italic",
-            src: ["./src/assets/fonts/MonaSans-BoldItalic.woff2"],
+            weight: 500,
+            style: "normal",
+            src: ["./src/assets/fonts/STKBureauSerif_Medium.woff2"],
           },
         ],
       },
     },
     {
-      name: "Adelle Sans",
-      cssVariable: "--font-adelle",
+      name: "NB International Pro",
+      cssVariable: "--font-nb-international",
       provider: fontProviders.local(),
       fallbacks: ["Helvetica", "Arial", "sans-serif"],
       options: {
@@ -55,17 +53,17 @@ export default defineConfig({
           {
             weight: 400,
             style: "normal",
-            src: ["./src/assets/fonts/AdelleSans-Regular.woff2"],
+            src: ["./src/assets/fonts/NBInternationalPro_Regular.woff2"],
+          },
+          {
+            weight: 500,
+            style: "normal",
+            src: ["./src/assets/fonts/NBInternationalPro_Medium.woff2"],
           },
           {
             weight: 700,
             style: "normal",
-            src: ["./src/assets/fonts/AdelleSans-Bold.woff2"],
-          },
-          {
-            weight: 400,
-            style: "italic",
-            src: ["./src/assets/fonts/AdelleSans-Italic.woff2"],
+            src: ["./src/assets/fonts/NBInternationalPro_Bold.woff2"],
           },
         ],
       },

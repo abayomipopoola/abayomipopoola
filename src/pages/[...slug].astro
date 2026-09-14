@@ -57,7 +57,11 @@ const minutesRead = getReadingTime(post);
             <div class="flex w-full justify-between py-4 text-sm font-normal">
               <div class="date-time">
                 <div class="shrink-0 text-xs text-zinc-600">
-                  <FormatDate date={displayDate} /> • {minutesRead}
+                  <FormatDate date={displayDate} />
+                  <span
+                    class="mx-0.5 inline-block size-[3.4px] rounded-full bg-current align-middle"
+                  ></span>
+                  {minutesRead}
                 </div>
               </div>
               <SocialShare description={description} title={title} />

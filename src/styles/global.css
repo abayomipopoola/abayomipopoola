@@ -22,10 +22,12 @@
 @layer base {
   :root {
     --link-color: #107599;
-    /* Bridge Tailwind's --font-sans to the astro:fonts Mona Sans VF stack. */
-    --font-sans: var(--font-mona);
-    --font-heading: var(--font-adelle);
-    --font-prose: var(--font-mona);
+    /* UI chrome (menu, » links, date-time, tags, reference notes) → NB
+       International Pro via Tailwind's --font-sans; prose p → STK Bureau;
+       headings → NB International. */
+    --font-sans: var(--font-nb-international);
+    --font-heading: var(--font-nb-international);
+    --font-prose: var(--font-stk-bureau);
   }
   h1,
   h2,
@@ -36,24 +38,15 @@
   .site-title {
     font-family: var(--font-heading);
   }
-  /* Prevent the browser from slanting the roman face when italic
-     files are meant to load. */
-  body,
-  em,
-  i,
-  .italic,
-  .prose blockquote,
-  .prose blockquote p {
-    font-synthesis: none;
-  }
   p {
     font-family: var(--font-prose);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    font-stretch: 100%;
-    font-optical-sizing: auto;
     letter-spacing: normal;
   }
+  /* Neither STK Bureau Serif nor NB International Pro ships italic faces, so
+     let the browser synthesize obliques — otherwise these would render
+     indistinguishable from roman. */
   em,
   i,
   .italic {
@@ -103,18 +96,14 @@
   body .prose {
     color: #000000de;
     font-family: var(--font-prose);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
-    font-stretch: 100%;
-    font-optical-sizing: auto;
+    line-height: 26px;
     letter-spacing: normal;
   }
   .prose :is(h1, h2, h3, h4, h5, h6) {
     font-family: var(--font-heading);
     color: var(--link-color);
-    font-variation-settings: normal;
-    font-feature-settings: normal;
   }
   .prose {
     max-width: 100%;
@@ -149,7 +138,11 @@
      sets each line's height — NOT <small>'s own line-height, which is why
      setting it there did nothing. Tighten it on the wrapping paragraph instead.
      Trailing periods sit outside </small>, so <small> stays inline (no
-     display:block) to avoid orphaning them onto their own line. */
+     display:block) to avoid orphaning them onto their own line. Reference
+     notes are set in the sans stack, not the serif prose face. */
+  .prose small {
+    font-family: var(--font-sans);
+  }
   .prose p:has(small) {
     line-height: 1.3;
   }
