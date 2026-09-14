@@ -142,6 +142,7 @@
      notes are set in the sans stack, not the serif prose face. */
   .prose small {
     font-family: var(--font-sans);
+    font-size: 12.5px;
   }
   .prose p:has(small) {
     line-height: 1.3;
