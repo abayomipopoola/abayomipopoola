@@ -1,0 +1,142 @@
+---
+// Where a 1,000,000-token window rolls over, computed the way muxcode does.
+const window = 1_000_000;
+const reserve = 16_384;
+const usable = window - reserve;
+const rollover = usable + 1;
+const buffer = Math.min(32_000, Math.floor(usable * 0.1));
+const reminder = rollover - buffer;
+const caps = [
+  { label: "256K", tokens: 256 * 1_024 },
+  { label: "400K", tokens: 400 * 1_024 },
+  { label: "600K", tokens: 600 * 1_024 },
+];
+const zoomFrom = 900_000;
+
+const n = (value: number) => value.toLocaleString("en-US");
+const pct = (value: number) => `${((value / window) * 100).toFixed(3)}%`;
+const zpct = (value: number) =>
+  `${(((value - zoomFrom) / (window - zoomFrom)) * 100).toFixed(3)}%`;
+---
+
+<div class="cx-scale">
+  <p class="cx-scale-head fx-in" style="--d:0">
+    A 1,000,000-token window
+    <small>Window cap choices on top</small>
+  </p>
+  <div class="cx-labels" data-one aria-hidden="true">
+    {caps.map((cap, i) => (
+      <span
+        class="cx-lab fx-in"
+        data-c="blue"
+        style={`--at:${pct(cap.tokens)}; --d:${1500 + i * 150}`}
+      >
+        {cap.label}
+      </span>
+    ))}
+  </div>
+  <div class="cx-bar">
+    <div class="cx-win">
+      <span
+        class="cx-part fx-grow"
+        data-c="teal"
+        style={`--w:${pct(usable)}; --d:150; --dur:1.2s`}
+      ></span>
+      <span
+        class="cx-part fx-in"
+        data-c="coral"
+        style={`--w:${pct(reserve)}; --d:1300`}
+      ></span>
+    </div>
+    {caps.map((cap, i) => (
+      <span
+        class="cx-mark fx-in"
+        data-c="blue"
+        data-dash
+        style={`--at:${pct(cap.tokens)}; --d:${1500 + i * 150}`}
+      />
+    ))}
+    <span
+      class="cx-zoom fx-in"
+      style={`--at:${pct(zoomFrom)}; --d:2100`}
+    ></span>
+  </div>
+  <div class="cx-axis" aria-hidden="true">
+    <span>0</span>
+    <span>1,000,000 tokens</span>
+  </div>
+</div>
+
+<div class="cx-scale">
+  <p class="cx-scale-head fx-in" style="--d:2250">
+    The last 100,000 tokens, enlarged
+    <small>no cap set</small>
+  </p>
+  <div class="cx-span" data-c="blue" aria-hidden="true">
+    <span
+      class="cx-span-line fx-in"
+      style={`--from:${zpct(reminder)}; --to:${zpct(rollover)}; --d:3400`}
+    ></span>
+    <span
+      class="cx-span-text fx-in"
+      style={`--from:${zpct(reminder)}; --to:${zpct(rollover)}; --d:3400`}
+    >
+      up to {n(buffer)}
+    </span>
+  </div>
+  <div class="cx-bar">
+    <div class="cx-win">
+      <span
+        class="cx-part fx-grow"
+        data-c="teal"
+        style={`--w:${zpct(usable)}; --d:2400; --dur:1s`}
+      ></span>
+      <span
+        class="cx-part fx-in"
+        data-c="coral"
+        style={`--w:${zpct(zoomFrom + reserve)}; --d:3300`}
+      >
+        {n(reserve)}
+      </span>
+    </div>
+    <span
+      class="cx-mark fx-in"
+      data-c="blue"
+      data-dash
+      style={`--at:${zpct(reminder)}; --d:3400`}
+    ></span>
+    <span
+      class="cx-mark fx-in"
+      data-c="teal"
+      style={`--at:${zpct(rollover)}; --d:3300`}
+    ></span>
+  </div>
+  <div class="cx-labels" aria-hidden="true">
+    <span
+      class="cx-lab fx-in"
+      data-c="blue"
+      style={`--at:${zpct(reminder)}; --d:3500`}
+    >
+      reminder<b>{n(reminder)}</b>
+    </span>
+    <span
+      class="cx-lab fx-in"
+      data-c="teal"
+      style={`--at:${zpct(rollover)}; --d:3350`}
+    >
+      rollover<b>{n(rollover)}</b>
+    </span>
+  </div>
+  <div class="cx-axis" aria-hidden="true">
+    <span>{n(zoomFrom)}</span>
+    <span>{n(window)}</span>
+  </div>
+</div>
+
+<div class="cx-key fx-in" style="--d:3700" aria-hidden="true">
+  <span data-c="teal">room pi uses before the line</span>
+  <span data-c="coral">pi's reserve, {n(reserve)} tokens</span>
+  <span data-c="blue" data-line>
+    muxcode's reminder and Window caps
+  </span>
+</div>

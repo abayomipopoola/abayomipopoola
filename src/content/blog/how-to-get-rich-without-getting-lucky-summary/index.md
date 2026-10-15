@@ -1,5 +1,6 @@
 ---
 title: "How to Get Rich (without getting lucky): Summary"
+seoTitle: "How to Get Rich Without Getting Lucky: Complete Summary"
 date: "2018-08-20T22:12:03.284Z"
 tags: [tweetstorm, naval]
 description: Summarised note on Naval's expanded points from his "How To Get Rich Without Getting Lucky" tweetstorm.

@@ -1,5 +1,6 @@
 ---
 title: Principles of Product Development Flow pt. 2
+seoTitle: "Product Development Flow (Pt. 2): Queuing Theory & CFDs"
 date: "2023-02-27T11:15:50.284Z"
 tags: [agile, books, product development]
 description: Understanding product development as an example of a systematic process that we can model and improve upon. Contd.

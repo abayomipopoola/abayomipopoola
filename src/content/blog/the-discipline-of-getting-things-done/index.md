@@ -1,5 +1,6 @@
 ---
 title: "Execution: The Discipline of Getting Things Done"
+seoTitle: "Execution: Aligning People, Strategy, and Operations"
 date: "2022-06-05T11:13:03.284Z"
 tags: [books, business domain]
 description: Delve into the intricate interplay of people, strategy, and operations as you navigate the core processes that drive tangible results.

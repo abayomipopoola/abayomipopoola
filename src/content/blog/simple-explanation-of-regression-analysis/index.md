@@ -1,5 +1,6 @@
 ---
 title: A simple explanation of Regression analysis
+seoTitle: "Regression Analysis Explained: Modeling Variables & Trends"
 date: "2018-12-18T22:40:32.169Z"
 tags: [books, data]
 description: A statistical method that allows you to examine the relationship between two or more variables of interest.

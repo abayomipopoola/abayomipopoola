@@ -1,0 +1,189 @@
+---
+import "../../styles/mux-diagrams.css";
+
+interface Props {
+  label: string;
+  title?: string;
+  narrow?: boolean;
+  replay?: boolean;
+  player?: boolean;
+}
+
+const {
+  label,
+  title,
+  narrow = false,
+  replay = false,
+  player = false,
+} = Astro.props;
+const hasCaption = Astro.slots.has("caption");
+---
+
+<figure
+  class:list={[
+    "fx",
+    "not-prose",
+    "not-content",
+    { "fx-narrow": narrow, "fx-player": player },
+  ]}
+  aria-label={label}
+  data-fx-player={player ? "" : undefined}
+  tabindex={player ? 0 : undefined}
+>
+  <div class="fx-stage">
+    {title && <p class="fx-title">{title}</p>}
+    {replay && (
+      <button class="fx-replay" type="button" data-fx-replay hidden>
+        Replay
+      </button>
+    )}
+    <slot />
+    {player && <p class="fx-scene-caption" data-fx-caption />}
+  </div>
+  {hasCaption && (
+    <figcaption>
+      <slot name="caption" />
+    </figcaption>
+  )}
+</figure>
+
+<script>
+  function replayLive(el: Element) {
+    el.removeAttribute("data-live");
+    el.getBoundingClientRect();
+    requestAnimationFrame(() => el.setAttribute("data-live", ""));
+  }
+
+  function arm(el: Element) {
+    el.classList.add("fx-root", "fx-armed");
+  }
+
+  function onVisible(el: Element, cb: () => void) {
+    if (!("IntersectionObserver" in window)) {
+      cb();
+      return;
+    }
+    const obs = new IntersectionObserver(
+      (entries) => {
+        if (
+          entries.some(
+            (entry) =>
+              entry.isIntersecting &&
+              (entry.intersectionRatio >= 0.3 ||
+                entry.intersectionRect.height >= window.innerHeight * 0.4),
+          )
+        ) {
+          obs.disconnect();
+          cb();
+        }
+      },
+      { threshold: [0, 0.1, 0.3] },
+    );
+    obs.observe(el);
+  }
+
+  function makeBtn(label: string, onClick: () => void) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = label;
+    btn.addEventListener("click", onClick);
+    return btn;
+  }
+
+  function initSingle(fig: HTMLElement) {
+    arm(fig);
+    const replayBtn = fig.querySelector<HTMLButtonElement>("[data-fx-replay]");
+    if (replayBtn) {
+      replayBtn.hidden = false;
+      replayBtn.addEventListener("click", () => replayLive(fig));
+    }
+    onVisible(fig, () => fig.setAttribute("data-live", ""));
+  }
+
+  function initPlayer(fig: HTMLElement) {
+    const scenes = [...fig.querySelectorAll<HTMLElement>(".fx-scene")];
+    if (scenes.length < 2) {
+      initSingle(fig);
+      return;
+    }
+    scenes.forEach(arm);
+    fig.classList.add("fx-ready");
+
+    const captionEl = fig.querySelector<HTMLElement>("[data-fx-caption]");
+    const controls = document.createElement("div");
+    controls.className = "fx-controls";
+    controls.setAttribute("role", "group");
+    controls.setAttribute("aria-label", "Scenes");
+
+    let current = 0;
+    let timer: number | undefined;
+
+    const stepBtns = scenes.map((scene, idx) =>
+      makeBtn(scene.dataset.title ?? String(idx + 1), () => goTo(idx, true)),
+    );
+    const spacer = document.createElement("span");
+    spacer.className = "fx-spacer";
+    const prevBtn = makeBtn("Previous", () => goTo(current - 1, true));
+    const nextBtn = makeBtn("Next", () => goTo(current + 1, true));
+    const playBtn = makeBtn("Play", () => togglePlay());
+    playBtn.setAttribute("aria-pressed", "false");
+
+    controls.append(...stepBtns, spacer, prevBtn, nextBtn, playBtn);
+    (fig.querySelector(".fx-stage") ?? fig).append(controls);
+
+    function goTo(index: number, stopAuto: boolean, animate = true) {
+      if (stopAuto) stopPlay();
+      current = (index + scenes.length) % scenes.length;
+      scenes.forEach((scene, idx) => {
+        scene.hidden = idx !== current;
+        if (idx !== current) scene.removeAttribute("data-live");
+      });
+      stepBtns.forEach((btn, idx) => {
+        if (idx === current) btn.setAttribute("aria-current", "step");
+        else btn.removeAttribute("aria-current");
+      });
+      const active = scenes[current];
+      if (active) {
+        if (captionEl) captionEl.textContent = active.dataset.caption ?? "";
+        if (animate) replayLive(active);
+      }
+    }
+
+    function stopPlay() {
+      if (timer !== undefined) window.clearInterval(timer);
+      timer = undefined;
+      playBtn.textContent = "Play";
+      playBtn.setAttribute("aria-pressed", "false");
+    }
+
+    function togglePlay() {
+      if (timer !== undefined) {
+        stopPlay();
+        return;
+      }
+      playBtn.textContent = "Pause";
+      playBtn.setAttribute("aria-pressed", "true");
+      timer = window.setInterval(() => goTo(current + 1, false), 7000);
+    }
+
+    fig.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") goTo(current + 1, true);
+      else if (e.key === "ArrowLeft") goTo(current - 1, true);
+      else return;
+      e.preventDefault();
+    });
+
+    goTo(0, false, false);
+    onVisible(fig, () => {
+      const active = scenes[current];
+      if (active) replayLive(active);
+    });
+  }
+
+  for (const el of document.querySelectorAll<HTMLElement>(".fx")) {
+    if (el.dataset.fxBound === "true") continue;
+    el.dataset.fxBound = "true";
+    if (el.hasAttribute("data-fx-player")) initPlayer(el);
+    else initSingle(el);
+  }
+</script>

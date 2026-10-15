@@ -1,5 +1,6 @@
 ---
 title: Payment Systems, and the Emerging Economy pt. 1
+seoTitle: "Payment Systems in Emerging Economies (Pt. 1): Rails & Cards"
 date: "2020-11-07T11:00:03.284Z"
 tags: [payments, business domain]
 description: The role of payment systems and services in financial inclusion, and as a key infrastructure for economic development.

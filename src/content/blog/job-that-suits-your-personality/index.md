@@ -1,5 +1,6 @@
 ---
 title: It’s important that your job matches your personality
+seoTitle: "Matching Personality Types to Roles in Scaling Teams"
 date: "2018-12-13T22:40:32.169Z"
 tags: [psychology, business domain]
 description: Scale an enterprise by understanding how different personalities map to different kinds of work, and where each tends to thrive or struggle.

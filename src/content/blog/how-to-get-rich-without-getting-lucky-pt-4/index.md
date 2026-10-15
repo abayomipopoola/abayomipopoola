@@ -1,5 +1,6 @@
 ---
 title: How to Get Rich (without getting lucky) pt. 4
+seoTitle: "How to Get Rich (Pt. 4): Code, Media Leverage & Judgment"
 date: "2018-08-20T22:08:03.284Z"
 tags: [tweetstorm, naval]
 description: Part four of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".

@@ -1,5 +1,6 @@
 ---
 title: How to Get Rich (without getting lucky) pt. 5
+seoTitle: "How to Get Rich (Pt. 5): Foundations, Execution & Scale"
 date: "2018-08-20T22:09:03.284Z"
 tags: [tweetstorm, naval]
 description: Part five of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".

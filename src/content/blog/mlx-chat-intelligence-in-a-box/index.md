@@ -1,7 +1,8 @@
 ---
 title: Intelligence in a Box
+seoTitle: "MLX Chat: Running Local LLMs on Mac with Apple Silicon"
 date: "2026-07-06T10:00:00.000Z"
-tags: [LLM, AI, programming]
+tags: ["AI Engineering", LLM]
 description: Exploring what becomes possible when powerful language models run privately on your own machine, without servers, setup, or permission.
 coverImage: "./fable.jpg"
 slug: "mlx-chat-intelligence-in-a-box"

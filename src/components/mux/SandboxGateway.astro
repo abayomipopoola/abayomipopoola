@@ -1,0 +1,130 @@
+---
+// The gateway's five answers, each with requests it would get.
+interface Req {
+  method: string;
+  target: string;
+  rule: string;
+}
+interface Answer {
+  c: "green" | "coral";
+  verdict: string;
+  head: string;
+  reqs: Req[];
+}
+
+const answers: Answer[] = [
+  {
+    c: "green",
+    verdict: "forwarded",
+    head: "A read from a host on the list",
+    reqs: [
+      {
+        method: "GET",
+        target: "registry.npmjs.org/zod",
+        rule: "download-read",
+      },
+      {
+        method: "GET",
+        target: "static.crates.io/crates/serde",
+        rule: "download-read",
+      },
+    ],
+  },
+  {
+    c: "green",
+    verdict: "forwarded",
+    head: "A git fetch or a Git LFS download from GitHub",
+    reqs: [
+      {
+        method: "POST",
+        target: "github.com/acme/ledger.git/git-upload-pack",
+        rule: "git-fetch",
+      },
+      {
+        method: "POST",
+        target: "github.com/acme/ledger.git/info/lfs/objects/batch",
+        rule: "lfs-download",
+      },
+    ],
+  },
+  {
+    c: "green",
+    verdict: "forwarded, token added",
+    head: "The task's own fork: a fetch, or a push while the task saves its work",
+    reqs: [
+      {
+        method: "POST",
+        target: "the fork, git-upload-pack",
+        rule: "fork-fetch",
+      },
+      {
+        method: "POST",
+        target: "the fork, git-receive-pack, from a save",
+        rule: "fork-push",
+      },
+    ],
+  },
+  {
+    c: "coral",
+    verdict: "refused",
+    head: "Any other write: a push, a publish, a push to the fork from a command",
+    reqs: [
+      {
+        method: "POST",
+        target: "github.com/acme/ledger.git/git-receive-pack",
+        rule: "read-only-methods",
+      },
+      {
+        method: "PUT",
+        target: "registry.npmjs.org/zod",
+        rule: "read-only-methods",
+      },
+      {
+        method: "POST",
+        target: "the fork, git-receive-pack, from a command",
+        rule: "fork-push",
+      },
+    ],
+  },
+  {
+    c: "coral",
+    verdict: "refused",
+    head: "A host that is not on the list",
+    reqs: [
+      {
+        method: "GET",
+        target: "paste.example.com/raw",
+        rule: "host-allowlist",
+      },
+    ],
+  },
+];
+---
+
+<div class="sb-wrap">
+  <ol class="sb-gate">
+    {answers.map((answer, index) => (
+      <li class="sb-rule fx-in" data-c={answer.c} style={`--d:${index * 450}`}>
+        <div class="sb-rule-head">
+          {answer.head}
+          <span
+            class="fx-chip fx-pop"
+            data-c={answer.c}
+            style={`--d:${index * 450 + 250}`}
+          >
+            {answer.verdict}
+          </span>
+        </div>
+        <div class="sb-reqs">
+          {answer.reqs.map((req) => (
+            <p class="sb-req">
+              <b>{req.method}</b>
+              <span>{req.target}</span>
+              <i>{req.rule}</i>
+            </p>
+          ))}
+        </div>
+      </li>
+    ))}
+  </ol>
+</div>

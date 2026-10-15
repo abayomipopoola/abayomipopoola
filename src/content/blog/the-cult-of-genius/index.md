@@ -1,5 +1,6 @@
 ---
 title: The cult of the genius
+seoTitle: "The Cult of Genius: Why Grit and Craft Beat Raw Talent"
 date: "2018-05-28T22:40:32.169Z"
 tags: [random, psychology]
 description: Passion (a deep, enduring knowledge of what you want) and perseverance (hard work and resilience).

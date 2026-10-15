@@ -1,0 +1,78 @@
+---
+// The two halves of a sandbox task: your Mac lends a sign-in; the task's Durable Object runs the agent; the container holds no credential.
+---
+
+<div class="sb-wrap">
+  <div class="sb-map">
+    <div class="fx-group fx-in" data-c="blue" style="--d:0">
+      <span class="fx-group-label">your Mac</span>
+      <div class="fx-node" data-c="blue">
+        muxcode<small>keeps every refresh token</small>
+      </div>
+      <div class="sb-chips" data-col>
+        <span class="fx-chip" data-c="blue">
+          answers the agent's questions
+        </span>
+        <span class="fx-chip" data-c="blue">
+          a gate on each call
+        </span>
+      </div>
+    </div>
+
+    <div class="sb-link fx-in" data-c="blue" style="--d:350">
+      <span class="sb-wire" data-c="blue" data-both></span>
+      <div class="sb-chips">
+        <span class="fx-label" data-c="blue">
+          a socket and a loan
+        </span>
+        <span class="fx-chip" data-c="blue">
+          access token or API key
+        </span>
+        <span class="fx-chip" data-off>
+          refresh token
+        </span>
+      </div>
+    </div>
+
+    <div class="fx-group sb-mux fx-in" data-c="purple" style="--d:700">
+      <span class="fx-group-label">mux, one per task</span>
+      <div class="fx-node" data-c="teal">
+        Task Durable Object<small>the agent, its conversation, its loans</small>
+      </div>
+      <span class="sb-down" aria-hidden="true"></span>
+      <div class="fx-node fx-in" data-c="teal" style="--d:1050">
+        container<small>standard-3 · every command, every file</small>
+      </div>
+      <span class="fx-chip sb-mark fx-pop" data-c="coral" style="--d:1500">
+        no Mac credential inside
+      </span>
+    </div>
+
+    <div class="sb-link fx-in" data-c="amber" style="--d:1850">
+      <span class="sb-wire" data-c="amber"></span>
+      <div class="sb-chips">
+        <span class="fx-label" data-c="amber">
+          the gateway
+        </span>
+      </div>
+    </div>
+
+    <div class="sb-hosts">
+      <span class="fx-label fx-in" data-c="grey" style="--d:2150">
+        what the container reaches
+      </span>
+      <span class="fx-chip fx-in" data-c="green" style="--d:2250">
+        package hosts, to read
+      </span>
+      <span class="fx-chip fx-in" data-c="green" style="--d:2350">
+        GitHub, to fetch
+      </span>
+      <span class="fx-chip fx-in" data-c="green" style="--d:2450">
+        its own fork
+      </span>
+      <span class="fx-chip fx-in" data-c="coral" style="--d:2650">
+        any other host: refused
+      </span>
+    </div>
+  </div>
+</div>

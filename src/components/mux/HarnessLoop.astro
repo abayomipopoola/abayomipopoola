@@ -1,0 +1,66 @@
+---
+// One lap of an agent loop: the model asks, the harness answers.
+import Fig from "./Fig.astro";
+
+const model = [
+  { title: "Reads", note: "The task, and what the last tool sent back" },
+  {
+    title: "Asks for a tool",
+    note: "Read a file, run a command, edit, delete",
+  },
+];
+const harness = [
+  { title: "Decides", note: "Yes, ask the person, or no", c: "amber" },
+  { title: "Runs the tool", note: "Only after a yes", c: "blue" },
+  { title: "Checks the result", note: "Done, or another lap", c: "blue" },
+];
+---
+
+<Fig
+  label="One lap of an agent loop: the model reads and asks for a tool; the harness decides, runs the tool and checks the result, then the loop goes round again"
+  replay
+>
+  <div class="wy-box">
+    <div class="hn-loop">
+      <div class="fx-group fx-in" data-c="teal">
+        <span class="fx-group-label">The model</span>
+        <ol class="wy-flow">
+          {model.map((step, i) => (
+            <li class="fx-in" style={`--d:${150 + i * 250}`}>
+              <div class="fx-node" data-c="teal">
+                {step.title}
+                <small>{step.note}</small>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div class="hn-join fx-in" style="--d:700" aria-hidden="true"></div>
+      <div class="fx-group fx-in" data-c="blue" style="--d:800">
+        <span class="fx-group-label">The harness</span>
+        <ol class="wy-flow">
+          {harness.map((step, i) => (
+            <li class="fx-in" style={`--d:${950 + i * 250}`}>
+              <div class="fx-node" data-c={step.c}>
+                {step.title}
+                <small>{step.note}</small>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+    <div class="fx-fade" style="--d:1800" aria-hidden="true">
+      <div class="hn-back"></div>
+    </div>
+    <p class="hn-return fx-in" style="--d:2000">
+      <b aria-hidden="true">↺</b>Then round again, until the harness says the
+      work is done.
+    </p>
+  </div>
+  <Fragment slot="caption">
+    The model is two parts of the loop.{" "}
+    <strong>The harness is every other part</strong>, including the one that
+    says yes or no.
+  </Fragment>
+</Fig>

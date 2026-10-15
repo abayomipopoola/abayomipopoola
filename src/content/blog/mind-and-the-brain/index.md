@@ -1,5 +1,6 @@
 ---
 title: How’s the mind different from the brain?
+seoTitle: "Mind vs. Brain: Neuroplasticity and How Thought Shapes Us"
 date: "2018-11-20T22:40:32.169Z"
 tags: [random, psychology]
 description: The mind, and the brain.

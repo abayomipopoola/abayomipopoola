@@ -1,5 +1,6 @@
 ---
 title: How to be a Rebel!
+seoTitle: "How to Be a Rebel: Overcoming Negative Mindsets & Habits"
 date: "2018-07-05T23:46:37.121Z"
 tags: [books, psychology]
 description: Rebelling against negative, unrealistic, and the unworkable state of the mind.

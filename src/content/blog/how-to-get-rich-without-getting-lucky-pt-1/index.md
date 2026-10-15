@@ -1,5 +1,6 @@
 ---
 title: How to Get Rich (without getting lucky) pt. 1
+seoTitle: "How to Get Rich (Pt. 1): Seek Wealth, Equity, and Ownership"
 date: "2018-08-20T22:05:03.284Z"
 tags: [tweetstorm, naval]
 description: Part one of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".

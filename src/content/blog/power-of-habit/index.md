@@ -1,5 +1,6 @@
 ---
 title: The Power of Habit
+seoTitle: "The Power of Habit: Habit Loops & Building Lasting Routines"
 date: "2018-06-28T23:46:37.121Z"
 tags: [books, psychology]
 description: Develop good habits and make them stick.

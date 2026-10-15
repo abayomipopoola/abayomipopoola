@@ -1,0 +1,110 @@
+---
+// Summary compaction against a fresh window, built row by row.
+---
+
+<div class="cx-cmp">
+  <div class="cx-cmp-row" data-c="coral">
+    <p class="cx-cmp-head fx-in" style="--d:0">
+      Summary compaction
+    </p>
+    <div class="cx-cmp-flow">
+      <div class="fx-in" style="--d:150">
+        <span class="cx-cmp-cap">full window</span>
+        <div class="cx-win" aria-hidden="true">
+          <span class="cx-part" data-c="grey" style="--w:5%"></span>
+          <span class="cx-part" data-c="grey" style="--w:6%"></span>
+          <span
+            class="cx-part fx-grow"
+            data-c="teal"
+            style="--w:89%; --d:300; --dur:0.9s"
+          >
+            conversation
+          </span>
+        </div>
+      </div>
+      <span class="fx-arrow fx-in" style="--d:1100" aria-hidden="true"></span>
+      <div class="fx-node fx-pop" data-c="coral" style="--d:1250">
+        summary call
+        <small>the whole window, uncached</small>
+      </div>
+      <span class="fx-arrow fx-in" style="--d:1600" aria-hidden="true"></span>
+      <div class="fx-in" style="--d:1750">
+        <span class="cx-cmp-cap">next window</span>
+        <div class="cx-win" aria-hidden="true">
+          <span class="cx-part" data-c="grey" style="--w:5%"></span>
+          <span class="cx-part" data-c="grey" style="--w:6%"></span>
+          <span
+            class="cx-part fx-grow"
+            data-c="coral"
+            style="--w:22%; --d:1900"
+          >
+            summary
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="cx-cmp-notes">
+      <span class="fx-chip fx-in" data-c="coral" style="--d:2300">
+        +1 large call
+      </span>
+      <span class="fx-chip fx-in" data-c="coral" style="--d:2450">
+        detail the summary drops is gone
+      </span>
+    </div>
+  </div>
+
+  <div class="cx-cmp-row" data-c="teal">
+    <p class="cx-cmp-head fx-in" style="--d:2800">
+      Fresh context window, the default
+    </p>
+    <div class="cx-cmp-flow">
+      <div class="fx-in" style="--d:2950">
+        <span class="cx-cmp-cap">full window</span>
+        <div class="cx-win" aria-hidden="true">
+          <span class="cx-part" data-c="grey" style="--w:5%"></span>
+          <span class="cx-part" data-c="grey" style="--w:6%"></span>
+          <span
+            class="cx-part fx-grow"
+            data-c="teal"
+            style="--w:89%; --d:3100; --dur:0.9s"
+          >
+            conversation
+          </span>
+        </div>
+      </div>
+      <span class="fx-arrow fx-in" style="--d:3900" aria-hidden="true"></span>
+      <div class="fx-node fx-pop" data-c="teal" style="--d:4050">
+        rollover
+        <small>no model call</small>
+      </div>
+      <span class="fx-arrow fx-in" style="--d:4400" aria-hidden="true"></span>
+      <div class="fx-in" style="--d:4550">
+        <span class="cx-cmp-cap">next window</span>
+        <div class="cx-win" aria-hidden="true">
+          <span class="cx-part" data-c="grey" style="--w:5%"></span>
+          <span class="cx-part" data-c="grey" style="--w:6%"></span>
+          <span
+            class="cx-part fx-grow"
+            data-c="green"
+            style="--w:9%; --d:4700"
+          ></span>
+        </div>
+      </div>
+    </div>
+    <div class="cx-cmp-notes">
+      <span class="fx-chip fx-in" data-c="green" style="--d:5100">
+        handoff: a short record of inputs
+      </span>
+      <span class="fx-chip fx-in" data-c="teal" style="--d:5250">
+        the rest stays in notes and history
+      </span>
+    </div>
+  </div>
+
+  <div class="cx-key fx-in" style="--d:5500" aria-hidden="true">
+    <span data-c="grey">system prompt and tools</span>
+    <span data-c="teal">conversation</span>
+    <span data-c="coral">summary</span>
+    <span data-c="green">handoff</span>
+  </div>
+</div>

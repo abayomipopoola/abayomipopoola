@@ -1,0 +1,92 @@
+---
+// Where memory lives: three callers, one tool and route, the index container that commits, and the workspace's repos.
+const callers = [
+  {
+    name: "Ada's task on her Mac",
+    sub: "muxcode, signed in",
+    reach: ["shared", "Ada's"],
+  },
+  {
+    name: "Ada's cloud task",
+    sub: "its own memory ticket",
+    reach: ["shared", "Ada's"],
+  },
+  {
+    name: "Bola's agent in Claude Code",
+    sub: "mux MCP, a key Bola made as owner",
+    reach: ["shared", "Bola's"],
+  },
+];
+const repos = [
+  { name: "Workspace repo", sub: "shared, the whole team", lock: false },
+  { name: "Ada's repo", sub: "private, only Ada", lock: true },
+  { name: "Bola's repo", sub: "private, only Bola", lock: true },
+];
+---
+
+<div class="mm-wrap">
+  <div class="mm-flow">
+    <div class="mm-col">
+      <span class="mm-col-label fx-in">Callers</span>
+      {callers.map((caller, i) => (
+        <div class="fx-node fx-in" data-c="teal" style={`--d:${i * 150}`}>
+          {caller.name}
+          <small>{caller.sub}</small>
+          <span class="mm-reach">
+            {caller.reach.map((repo) => (
+              <span class="fx-chip" data-c="purple">
+                {repo}
+              </span>
+            ))}
+          </span>
+        </div>
+      ))}
+    </div>
+    <span class="mm-link fx-fade" style="--d:550" aria-hidden="true"></span>
+    <div class="mm-col">
+      <span class="mm-col-label fx-in" style="--d:600">
+        On mux
+      </span>
+      <div class="fx-node fx-in" data-c="purple" style="--d:650">
+        <code>workspace_memory</code>
+        <small>one tool, seven operations</small>
+      </div>
+      <div class="fx-node fx-in" data-c="purple" style="--d:800">
+        mux API
+        <small>checks role, size and the person behind the key</small>
+      </div>
+      <div class="fx-node fx-in" data-c="purple" style="--d:950">
+        Index container
+        <small>commits and pushes, then answers</small>
+      </div>
+    </div>
+    <span class="mm-link fx-fade" style="--d:1100" aria-hidden="true"></span>
+    <div class="fx-group fx-in" data-c="purple" style="--d:1150">
+      <span class="fx-group-label">Private Git repos on mux</span>
+      <div class="mm-col">
+        {repos.map((repo, i) => (
+          <div
+            class:list={["fx-node", "fx-pop", { "mm-node-dashed": repo.lock }]}
+            data-c="purple"
+            style={`--d:${1250 + i * 150}`}
+          >
+            <span>
+              {repo.name}
+              {repo.lock && <span class="mm-lock">private</span>}
+            </span>
+            <small>{repo.sub}</small>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  <div class="mm-search fx-in" style="--d:1800">
+    <span class="mm-col-label">Search</span>
+    <span class="fx-chip" data-c="green">
+      words, every plan
+    </span>
+    <span class="fx-chip" data-c="amber">
+      meaning, Pro, Pro+ and the trial
+    </span>
+  </div>
+</div>

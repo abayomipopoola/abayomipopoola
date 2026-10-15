@@ -1,0 +1,115 @@
+---
+// The two MCP sides: mux's hosted server and muxcode's own MCP servers.
+const everyPlan = [
+  "workspace_memory",
+  "get_context",
+  "record_context_outcome",
+  "corpus_status",
+  "list_repositories",
+  "grep_code",
+  "trace_code",
+];
+const paid = ["search_code", "ask_code"];
+---
+
+<div class="mm-wrap">
+  <div class="mm-split">
+    <div class="fx-group fx-in" data-c="purple">
+      <span class="fx-group-label">mux's MCP server, for other agents</span>
+      <div class="mm-chain">
+        <div class="mm-clients">
+          {["Codex", "Claude Code", "Copilot CLI"].map((name, i) => (
+            <div
+              class="fx-node fx-in"
+              data-c="grey"
+              style={`--d:${150 + i * 120}`}
+            >
+              {name}
+            </div>
+          ))}
+        </div>
+        <span class="mm-link fx-fade" style="--d:550" aria-hidden="true"></span>
+        <div class="fx-node fx-in" data-c="purple" style="--d:600">
+          usemux.com/mcp
+          <small>Bearer hk_live_…, one workspace</small>
+        </div>
+        <span class="mm-link fx-fade" style="--d:750" aria-hidden="true"></span>
+        <div class="fx-node fx-in" data-c="purple" style="--d:800">
+          mux API
+          <small>code index and memory</small>
+        </div>
+      </div>
+      <div
+        class="mm-tools"
+        role="group"
+        aria-label="Nine tools: seven on every plan, two on Pro, Pro+ and the trial"
+      >
+        {everyPlan.map((tool, i) => (
+          <span
+            class="fx-chip fx-pop"
+            data-c="green"
+            style={`--d:${1000 + i * 70}`}
+          >
+            {tool}
+          </span>
+        ))}
+        {paid.map((tool, i) => (
+          <span
+            class="fx-chip fx-pop"
+            data-c="amber"
+            style={`--d:${1550 + i * 70}`}
+          >
+            {tool}
+          </span>
+        ))}
+      </div>
+      <div class="mm-key fx-in" style="--d:1700">
+        <span data-c="green">
+          <i></i>every plan
+        </span>
+        <span data-c="amber">
+          <i></i>Pro, Pro+ and the trial
+        </span>
+      </div>
+      <div class="fx-node fx-in" data-c="blue" data-quiet style="--d:1800">
+        muxcode skips this server
+        <small>it reaches the mux API through its own sign-in</small>
+      </div>
+    </div>
+    <div class="fx-group fx-in" data-c="blue" style="--d:300">
+      <span class="fx-group-label">muxcode's own MCP servers</span>
+      <div class="mm-chain" data-short>
+        <div class="fx-node fx-in" data-c="blue" style="--d:900">
+          A task on your Mac
+          <small>muxcode</small>
+        </div>
+        <span
+          class="mm-link fx-fade"
+          style="--d:1050"
+          aria-hidden="true"
+        ></span>
+        <div class="fx-node fx-in" data-c="blue" style="--d:1100">
+          Your MCP servers
+          <small>~/.muxcode/mcp.json, by command or https URL</small>
+        </div>
+      </div>
+      <div class="mm-rules">
+        <span class="fx-chip fx-in" data-c="green" style="--d:1300">
+          every plan, no sign-in needed
+        </span>
+        <span class="fx-chip fx-in" data-c="grey" style="--d:1420">
+          a server on this Mac starts after Allow once, per task
+        </span>
+        <span class="fx-chip fx-in" data-c="grey" style="--d:1540">
+          each tool call asks, unless a saved rule allows it
+        </span>
+        <span class="fx-chip fx-in" data-c="grey" style="--d:1660">
+          Plan mode starts none
+        </span>
+        <span class="fx-chip fx-in" data-c="coral" style="--d:1780">
+          cloud tasks are never offered them
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

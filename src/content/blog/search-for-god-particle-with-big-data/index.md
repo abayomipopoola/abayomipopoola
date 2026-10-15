@@ -1,5 +1,6 @@
 ---
 title: The Search for "God Particle" with Big Data
+seoTitle: "Finding the Higgs Boson: Big Data Analytics at CERN’s LHC"
 date: "2018-12-27T22:40:32.169Z"
 tags: [data, physics]
 description: Making sense of a larger and more complex data sets that traditional data processing software can't manage, in order to understand observed events.

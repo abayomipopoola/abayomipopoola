@@ -1,5 +1,6 @@
 ---
 title: Enhancing Scalability & Fault Tolerance of Web Servers
+seoTitle: "Scaling Web Servers & Fault Tolerance Using Little’s Law"
 date: "2023-08-22T14:35:32.169Z"
 tags: [programming, system design]
 description: Understand the crucial interplay between scalability & fault-tolerance as pivotal architectural components in microservices design.

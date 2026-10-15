@@ -1,5 +1,6 @@
 ---
 title: How to Get Rich (without getting lucky) pt. 2
+seoTitle: "How to Get Rich (Pt. 2): Long-Term Games & Compounding"
 date: "2018-08-20T22:06:03.284Z"
 tags: [tweetstorm, naval]
 description: Part two of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".

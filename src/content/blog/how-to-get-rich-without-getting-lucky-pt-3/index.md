@@ -1,5 +1,6 @@
 ---
 title: How to Get Rich (without getting lucky) pt. 3
+seoTitle: "How to Get Rich (Pt. 3): Specific Knowledge & Accountability"
 date: "2018-08-20T22:07:03.284Z"
 tags: [tweetstorm, naval]
 description: Part three of Naval's expanded points from his viral tweetstorm, "How To Get Rich Without Getting Lucky".

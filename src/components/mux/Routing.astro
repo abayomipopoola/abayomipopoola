@@ -1,0 +1,46 @@
+---
+// Seat routing, once you add a second worker: Clef makes one choice per work package.
+---
+
+<div class="pl-wrap">
+  <div class="pl-routing">
+    <div class="fx-node fx-in" data-c="grey" style="--d:0">
+      Work package<small>from the Architect's plan</small>
+    </div>
+    <span class="fx-arrow fx-in" style="--d:300" aria-hidden="true"></span>
+    <div class="fx-node fx-in" data-c="amber" style="--d:450">
+      Clef<small>one choice · bar 0.85</small>
+    </div>
+    <span class="fx-arrow fx-in" style="--d:750" aria-hidden="true"></span>
+    <div class="pl-branches">
+      <div class="pl-branch fx-in" data-c="green" style="--d:900">
+        <span class="pl-out" data-c="green">
+          at 0.85 or more · e.g. 0.91
+        </span>
+        <div class="fx-node" data-c="teal">
+          Cheapest worker that fits<small>its criteria clearly met</small>
+        </div>
+      </div>
+      <div class="pl-branch fx-in" data-c="grey" style="--d:1300">
+        <span class="pl-out" data-c="grey">
+          under 0.85 · e.g. 0.72
+        </span>
+        <div class="fx-node" data-c="teal">
+          Configured worker<small>last in the list · the default</small>
+        </div>
+        <span class="pl-when">
+          Also keeps the package when the Architect set a reasoning minimum,
+          evidence is missing, or the risk is high.
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="pl-routing-foot fx-in" style="--d:1700">
+    <span class="fx-chip" data-c="grey" data-wrap>
+      Architect and judge: never routed
+    </span>
+    <span class="fx-chip" data-c="grey" data-wrap>
+      one worker, as shipped: nothing to pick
+    </span>
+  </div>
+</div>

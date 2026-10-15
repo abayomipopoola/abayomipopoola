@@ -16,6 +16,15 @@ export default defineConfig({
   // elements). Our Prettier-formatted templates assume HTML semantics; keep them.
   compressHTML: true,
 
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: "hover",
+  },
+
+  build: {
+    inlineStylesheets: "auto",
+  },
+
   // Fonts API (astro:fonts) — generates @font-face, metric-matched fallback
   // fonts (less CLS), and preload links. Replaces the manual @font-face block
   // that used to live in src/styles/global.css.

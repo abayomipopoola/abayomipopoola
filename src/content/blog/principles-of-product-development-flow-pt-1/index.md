@@ -1,5 +1,6 @@
 ---
 title: Principles of Product Development Flow pt. 1
+seoTitle: "Product Development Flow (Pt. 1): Batch Size & WIP Limits"
 date: "2023-02-27T11:15:40.284Z"
 tags: [agile, books, product development]
 description: Understanding product development as an example of a systematic process that we can model and improve upon.

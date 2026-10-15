@@ -1,5 +1,6 @@
 ---
 title: Isolates and Containerized Processes
+seoTitle: "V8 Isolates vs. Containerized Processes in System Design"
 date: "2024-10-25T10:35:32.169Z"
 tags: [programming, system design]
 description: Learn the intricacies of isolates and containerized processes, and explore their architectures in real-world applications.

@@ -1,0 +1,298 @@
+---
+// The whole system in six scenes, ported from usemux.com/blog/how-muxcode-works
+const scenes = [
+  {
+    title: "On your Mac",
+    caption:
+      "muxcode is a Mac app: a Rust host and a React window. It ships pi, an open-source agent harness, and starts one pi process per task, driven over RPC.",
+  },
+  {
+    title: "A local task",
+    caption:
+      "pi works with tools. The gate in the Rust host runs each call, refuses it or asks you. When a window fills, pi starts a fresh one with a short handoff.",
+  },
+  {
+    title: "mux on Cloudflare",
+    caption:
+      "mux is the cloud service at usemux.com. One router Worker sends /app, /api and /mcp to their Workers; cloud tasks have a host of their own.",
+  },
+  {
+    title: "The code index",
+    caption:
+      "mux mirrors the GitHub repositories you pick and indexes them in one container per workspace. get_context returns one ranked packet of code.",
+  },
+  {
+    title: "The sandbox",
+    caption:
+      "On a paid plan or trial, a task can run on mux. The agent runs in the task’s Durable Object on a sign-in your Mac lends it, and your Mac fetches the result.",
+  },
+  {
+    title: "Memory",
+    caption:
+      "Agent memory is two kinds of Git repo on mux: one shared per workspace, one private per member. Any connected plan can search it by words; meaning is paid.",
+  },
+] as const;
+const [mac, local, cloud, index, sandbox, memory] = scenes;
+---
+
+<Fragment>
+  <div class="fx-scenes">
+    <div
+      class="fx-scene tr-scene"
+      data-title={mac.title}
+      data-caption={mac.caption}
+    >
+      <div class="tr-flow">
+        <div class="fx-group fx-in" data-c="blue">
+          <span class="fx-group-label">muxcode · your Mac</span>
+          <div class="tr-stack">
+            <div class="fx-node" data-c="blue">
+              React window<small>composer · transcript · settings</small>
+            </div>
+            <div class="fx-node" data-c="blue">
+              Rust host<small>sessions · the gate · mux calls</small>
+            </div>
+          </div>
+        </div>
+        <div class="tr-link fx-in" data-c="teal" style="--d:400">
+          <span>RPC</span>
+        </div>
+        <div class="tr-stack fx-in" style="--d:700">
+          <div class="fx-node" data-c="teal">
+            pi<small>bundled · one process per task</small>
+          </div>
+          <span class="fx-chip fx-pop" data-c="amber" style="--d:1100">
+            extension: more tools, and the gate
+          </span>
+        </div>
+      </div>
+      <p class="tr-cap">{mac.caption}</p>
+    </div>
+
+    <div
+      class="fx-scene tr-scene"
+      data-title={local.title}
+      data-caption={local.caption}
+    >
+      <div class="tr-flow">
+        <div class="tr-stack fx-in">
+          <div class="fx-node" data-c="teal">
+            pi<small>works with tools</small>
+          </div>
+          <div class="tr-chips">
+            <span class="fx-chip">read</span>
+            <span class="fx-chip">grep</span>
+            <span class="fx-chip">bash</span>
+            <span class="fx-chip">edit</span>
+            <span class="fx-chip">write</span>
+          </div>
+        </div>
+        <div class="tr-link fx-in" data-c="amber" style="--d:350">
+          <span>each call</span>
+        </div>
+        <div class="fx-node fx-in" data-c="amber" style="--d:600">
+          The gate<small>mode · your rules · the project fence</small>
+        </div>
+        <div class="tr-link fx-in" style="--d:900"></div>
+        <div class="tr-stack">
+          <span class="fx-chip fx-pop" data-c="green" style="--d:1100">
+            runs
+          </span>
+          <span class="fx-chip fx-pop" data-c="amber" style="--d:1250">
+            a card: once, this session, always, or deny
+          </span>
+          <span class="fx-chip fx-pop" data-c="coral" style="--d:1400">
+            refused
+          </span>
+        </div>
+      </div>
+      <div class="tr-windows">
+        <span class="fx-sub tr-wlabel">window 1</span>
+        <div class="fx-track">
+          <div
+            class="fx-seg fx-grow"
+            data-c="teal"
+            style="--w:92%;--d:1700;--dur:1.1s"
+          ></div>
+          <span class="fx-tick" style="--at:92%"></span>
+        </div>
+        <span class="fx-sub tr-wlabel">window 2</span>
+        <div class="fx-track">
+          <div
+            class="fx-seg fx-grow"
+            data-c="amber"
+            style="--w:8%;--d:2900"
+          ></div>
+        </div>
+        <span class="fx-sub tr-windows-note fx-in" style="--d:3100">
+          The line is the window less 16,384 tokens. The handoff holds at most
+          20,000 characters, and no model writes it.
+        </span>
+      </div>
+      <p class="tr-cap">{local.caption}</p>
+    </div>
+
+    <div
+      class="fx-scene tr-scene"
+      data-title={cloud.title}
+      data-caption={cloud.caption}
+    >
+      <div class="tr-flow">
+        <div class="fx-node fx-in" data-c="blue">
+          muxcode<small>a workspace key</small>
+        </div>
+        <div class="tr-link fx-in" data-c="blue" style="--d:300"></div>
+        <div class="fx-node fx-in" data-c="purple" style="--d:500">
+          usemux.com<small>one router Worker</small>
+        </div>
+        <div class="tr-link fx-in" data-c="purple" style="--d:800"></div>
+        <div class="tr-stack">
+          <div class="fx-node fx-in" data-c="purple" style="--d:1000">
+            /app<small>the web app</small>
+          </div>
+          <div class="fx-node fx-in" data-c="purple" style="--d:1150">
+            /api<small>the JSON API</small>
+          </div>
+          <div class="fx-node fx-in" data-c="purple" style="--d:1300">
+            /mcp<small>MCP server for other agents</small>
+          </div>
+        </div>
+      </div>
+      <div class="tr-chips fx-in" style="--d:1700">
+        <span class="fx-sub">its own host:</span>
+        <span class="fx-chip" data-c="purple">
+          sandbox.usemux.com · cloud tasks
+        </span>
+      </div>
+      <p class="tr-cap">{cloud.caption}</p>
+    </div>
+
+    <div
+      class="fx-scene tr-scene"
+      data-title={index.title}
+      data-caption={index.caption}
+    >
+      <div class="tr-flow">
+        <div class="fx-node fx-in" data-c="grey">
+          GitHub<small>the repositories you pick</small>
+        </div>
+        <div class="tr-link fx-in" data-c="purple" style="--d:300"></div>
+        <div class="fx-node fx-in" data-c="purple" style="--d:500">
+          Mirror<small>in Artifacts</small>
+        </div>
+        <div class="tr-link fx-in" data-c="purple" style="--d:800"></div>
+        <div class="fx-node fx-in" data-c="purple" style="--d:1000">
+          Index container
+          <small>one per workspace · sleeps after 3 idle minutes</small>
+        </div>
+        <div
+          class="tr-link fx-in"
+          data-c="teal"
+          style="--d:1300;--len:6rem"
+          data-back
+        >
+          <span>get_context</span>
+        </div>
+        <div class="fx-node fx-in" data-c="teal" style="--d:1500">
+          An agent<small>local or cloud</small>
+        </div>
+      </div>
+      <div class="tr-chips">
+        <span class="fx-sub fx-in" style="--d:1800">
+          one ranked packet:
+        </span>
+        <span class="fx-chip fx-pop" data-c="green" style="--d:1950">
+          keyword match
+        </span>
+        <span class="fx-chip fx-pop" data-c="green" style="--d:2050">
+          code graph
+        </span>
+        <span class="fx-chip fx-pop" data-c="amber" style="--d:2150">
+          by meaning · paid
+        </span>
+      </div>
+      <p class="tr-cap">{index.caption}</p>
+    </div>
+
+    <div
+      class="fx-scene tr-scene"
+      data-title={sandbox.title}
+      data-caption={sandbox.caption}
+    >
+      <div class="tr-flow">
+        <div class="tr-stack fx-in">
+          <div class="fx-node" data-c="blue">
+            muxcode<small>your Mac</small>
+          </div>
+          <span class="fx-chip fx-pop" data-c="green" style="--d:2000">
+            fetch the branch, then apply or commit
+          </span>
+        </div>
+        <div class="tr-link fx-in" data-c="amber" style="--d:400;--len:8rem">
+          <span>lends a sign-in</span>
+        </div>
+        <div class="fx-group fx-in" data-c="purple" style="--d:600">
+          <span class="fx-group-label">
+            mux · one Task Durable Object per task
+          </span>
+          <div class="tr-group-body">
+            <div class="fx-node" data-c="teal">
+              The agent loop<small>pi-durable · keeps the loan</small>
+            </div>
+            <div class="tr-link" data-c="teal" style="--len:2rem"></div>
+            <div class="fx-node" data-c="grey">
+              Container<small>files and commands</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tr-chips">
+        <span class="fx-chip fx-pop" data-c="coral" style="--d:1300">
+          no Mac credential in the container
+        </span>
+        <span class="fx-chip fx-pop" data-c="amber" style="--d:1550">
+          egress: package hosts and GitHub reads
+        </span>
+      </div>
+      <p class="tr-cap">{sandbox.caption}</p>
+    </div>
+
+    <div
+      class="fx-scene tr-scene"
+      data-title={memory.title}
+      data-caption={memory.caption}
+    >
+      <div class="tr-flow">
+        <div class="tr-stack fx-in">
+          <div class="fx-node" data-c="blue">
+            A task on your Mac<small>tool: workspace_memory</small>
+          </div>
+          <div class="fx-node" data-c="purple">
+            A cloud task<small>its own memory ticket</small>
+          </div>
+        </div>
+        <div class="tr-link fx-in" data-c="teal" style="--d:400"></div>
+        <div class="tr-stack fx-in" style="--d:650">
+          <div class="fx-node" data-c="purple">
+            Workspace memory<small>shared · one per workspace</small>
+          </div>
+          <div class="fx-node" data-c="purple">
+            Personal memory<small>private · one per member</small>
+          </div>
+        </div>
+      </div>
+      <div class="tr-chips">
+        <span class="fx-chip fx-pop" data-c="grey" style="--d:1000">
+          Git · MEMORY.md
+        </span>
+        <span class="fx-chip fx-pop" data-c="green" style="--d:1200">
+          any connected plan: search by words
+        </span>
+        <span class="fx-chip fx-pop" data-c="amber" style="--d:1400">
+          Pro, Pro+, trial: by meaning
+        </span>
+      </div>
+      <p class="tr-cap">{memory.caption}</p>
+    </div>
+  </div>
+</Fragment>

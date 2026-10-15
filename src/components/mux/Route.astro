@@ -1,0 +1,97 @@
+---
+// The route a writing run takes, built in the order it runs.
+const contracts = ["contract 1", "contract 2", "contract 3", "contract 4"];
+const gate = ["exit codes", "scope", "secrets", "project checks"];
+const lenses = ["contract", "tests", "scope", "your words"];
+---
+
+<div class="pl-wrap">
+  <ol class="pl-route">
+    <li class="pl-step fx-in" style="--d:0">
+      <div class="fx-node" data-c="grey">
+        Root<small>GPT-6 Luna · starts the run</small>
+      </div>
+    </li>
+    <li class="pl-step fx-in" style="--d:350">
+      <div class="fx-node" data-c="grey">
+        Plan<small>Architect · Opus 5.5 · high</small>
+      </div>
+      <div class="pl-chips">
+        {contracts.map((name, i) => (
+          <span
+            class="fx-chip fx-pop"
+            data-c="grey"
+            style={`--d:${600 + i * 120}`}
+          >
+            {name}
+          </span>
+        ))}
+      </div>
+    </li>
+    <li class="pl-step fx-in" style="--d:1200">
+      <div class="fx-node" data-c="grey">
+        Review<small>Architect · its own plan, fresh session</small>
+      </div>
+    </li>
+    <li class="pl-step fx-in" style="--d:1600">
+      <div class="fx-node" data-c="teal">
+        Worker<small>Opus 5.5 · medium to xhigh</small>
+      </div>
+    </li>
+    <li class="pl-step fx-in" style="--d:2000">
+      <div class="fx-node" data-c="amber">
+        Gate<small>host code · no model</small>
+      </div>
+      <div class="pl-chips">
+        {gate.map((name, i) => (
+          <span
+            class="fx-chip fx-pop"
+            data-c="amber"
+            style={`--d:${2250 + i * 120}`}
+          >
+            {name}
+          </span>
+        ))}
+      </div>
+    </li>
+    <li class="pl-step fx-in" style="--d:2800">
+      <div class="fx-node" data-c="grey">
+        Judge<small>Architect · four lenses</small>
+      </div>
+      <div class="pl-chips">
+        {lenses.map((name, i) => (
+          <span
+            class="fx-chip fx-pop"
+            data-c="grey"
+            style={`--d:${3050 + i * 120}`}
+          >
+            {name}
+          </span>
+        ))}
+        <span class="fx-chip fx-pop" data-c="green" style="--d:3600">
+          accept
+        </span>
+      </div>
+    </li>
+  </ol>
+  <div class="pl-loop">
+    <span class="fx-chip fx-pop" data-c="coral" style="--d:3900">
+      failed check or reject
+    </span>
+    <span class="pl-loop-arrow fx-in" style="--d:4050" aria-hidden="true">
+      to
+    </span>
+    <div class="fx-node fx-in" data-c="teal" style="--d:4150">
+      Retry<small>Fable 5.1 · xhigh to max · once per route</small>
+    </div>
+    <span class="pl-loop-arrow fx-in" style="--d:4400" aria-hidden="true">
+      back to
+    </span>
+    <span class="fx-chip fx-pop" data-c="amber" style="--d:4500">
+      the gate
+    </span>
+    <span class="fx-chip fx-pop" data-c="coral" data-wrap style="--d:4800">
+      a second failure stops the run
+    </span>
+  </div>
+</div>

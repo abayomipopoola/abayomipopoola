@@ -1,5 +1,6 @@
 ---
 title: Life as it is
+seoTitle: "Life as It Is: Honest Disagreement vs. Faux Friendship"
 date: "2018-07-05T22:12:03.284Z"
 tags: [random]
 description: Faux friendship.

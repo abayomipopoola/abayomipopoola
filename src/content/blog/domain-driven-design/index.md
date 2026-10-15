@@ -1,5 +1,6 @@
 ---
 title: Domain-Driven Design
+seoTitle: "Domain-Driven Design: Bounded Contexts & Domain Modeling"
 date: "2019-12-30T11:00:03.284Z"
 tags: [books, programming, business domain]
 description: Tackling software complexities by connecting its related pieces into an ever-evolving business model and processes.
