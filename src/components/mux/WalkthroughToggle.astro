@@ -1,4 +1,6 @@
 ---
+import "../../styles/mux-diagrams.css";
+
 interface Props {
   id?: string;
   proseTitle?: string;
@@ -64,97 +66,40 @@ const {
   </div>
 </section>
 
-<style>
-  .wt-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    margin-top: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
+<script is:inline>
+  (() => {
+    for (const root of document.querySelectorAll("[data-wt-root]")) {
+      if (root.dataset.wtBound === "true") continue;
+      root.dataset.wtBound = "true";
 
-  .wt-heading {
-    margin: 0 !important;
-  }
+      const btn = root.querySelector("[data-wt-toggle]");
+      const labelEl = root.querySelector("[data-wt-label]");
+      const headingEl = root.querySelector("[data-wt-heading]");
 
-  .wt-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.38rem;
-    padding: 0.28rem 0.7rem;
-    border-radius: 999px;
-    border: 1px solid rgba(24, 24, 26, 0.16);
-    background: #faf9f5;
-    color: #5b6570;
-    font: 500 0.75rem/1.2 var(--font-sans);
-    cursor: pointer;
-    white-space: nowrap;
-    flex-shrink: 0;
-    transition:
-      color 140ms ease,
-      border-color 140ms ease,
-      background-color 140ms ease;
-  }
+      if (!btn) continue;
 
-  .wt-toggle:hover {
-    color: #107599;
-    border-color: rgba(16, 117, 153, 0.45);
-    background: #ffffff;
-  }
+      btn.addEventListener("click", () => {
+        const showingCode = btn.getAttribute("aria-pressed") !== "true";
+        btn.setAttribute("aria-pressed", showingCode ? "true" : "false");
 
-  .wt-toggle[aria-pressed="true"] {
-    color: #107599;
-    border-color: rgba(16, 117, 153, 0.5);
-    background: rgba(16, 117, 153, 0.07);
-  }
+        for (const el of document.querySelectorAll("[data-wt-prose]")) {
+          el.hidden = showingCode;
+        }
+        for (const el of document.querySelectorAll("[data-wt-code]")) {
+          el.hidden = !showingCode;
+        }
 
-  .wt-icon {
-    flex-shrink: 0;
-  }
-
-  :global([data-wt-prose][hidden]),
-  :global([data-wt-code][hidden]) {
-    display: none !important;
-  }
-</style>
-
-<script>
-  for (const root of document.querySelectorAll<HTMLElement>("[data-wt-root]")) {
-    if (root.dataset.wtBound === "true") continue;
-    root.dataset.wtBound = "true";
-
-    const btn = root.querySelector<HTMLButtonElement>("[data-wt-toggle]");
-    const labelEl = root.querySelector<HTMLElement>("[data-wt-label]");
-    const headingEl = root.querySelector<HTMLElement>("[data-wt-heading]");
-
-    if (!btn) continue;
-
-    btn.addEventListener("click", () => {
-      const showingCode = btn.getAttribute("aria-pressed") !== "true";
-      btn.setAttribute("aria-pressed", showingCode ? "true" : "false");
-
-      for (const el of document.querySelectorAll<HTMLElement>(
-        "[data-wt-prose]",
-      )) {
-        el.hidden = showingCode;
-      }
-      for (const el of document.querySelectorAll<HTMLElement>(
-        "[data-wt-code]",
-      )) {
-        el.hidden = !showingCode;
-      }
-
-      if (labelEl) {
-        labelEl.textContent = showingCode
-          ? (btn.dataset.labelProse ?? "Show prose summary")
-          : (btn.dataset.labelCode ?? "Show code example");
-      }
-      if (headingEl) {
-        headingEl.textContent = showingCode
-          ? (headingEl.dataset.codeTitle ?? headingEl.textContent)
-          : (headingEl.dataset.proseTitle ?? headingEl.textContent);
-      }
-    });
-  }
+        if (labelEl) {
+          labelEl.textContent = showingCode
+            ? (btn.dataset.labelProse ?? "Show prose summary")
+            : (btn.dataset.labelCode ?? "Show code example");
+        }
+        if (headingEl) {
+          headingEl.textContent = showingCode
+            ? (headingEl.dataset.codeTitle ?? headingEl.textContent)
+            : (headingEl.dataset.proseTitle ?? headingEl.textContent);
+        }
+      });
+    }
+  })();
 </script>
