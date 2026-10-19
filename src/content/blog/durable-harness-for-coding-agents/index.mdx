@@ -1,7 +1,7 @@
 ---
 title: "Durable Harness for Coding Agents"
 seoTitle: "mux and muxcode: A Durable Harness, Shared Code Index, and Cloud Sandbox for Coding Agents"
-description: "Why I built mux and muxcode: a local-first agent harness with fresh context windows, plan-first orchestration, decision routing, isolated cloud sandboxes, and more."
+description: "Why I built mux and muxcode: a local-first agent harness with fresh context windows, plan-first orchestration sized per change, isolated cloud sandboxes, and more."
 date: "2026-10-15"
 tags: ["Agents", "AI Engineering", "LLM"]
 coverImage: ./cover.webp
@@ -106,49 +106,52 @@ When the window rolls over, no model writes a summary. Instead, the new window s
 
 It also works with the plans you already pay for: Claude Code, Codex CLI, Grok CLI, Cursor, Antigravity and OpenRouter. muxcode orchestrates them; you keep your subscriptions.
 
-muxcode serves no hosted chat models of its own. Every role in your workflow is filled from the model sign-ins you already have on your Mac, and you can swap a seat's model or effort ceiling at any time without losing your worktree, session history, or permission rules.
+muxcode serves no hosted chat models of its own. Every role in your workflow is filled from the model sign-ins you already have on your Mac, and you can swap a seat's model or reasoning level at any time without losing your worktree, session history, or permission rules.
 
-#### Plan-First Orchestration and Clef Routing
+#### Plan-First Orchestration, Sized by Clef
 
-For plan-first work, an Architect writes the plan, and Clef matches each work package to the cheapest worker it's confident can handle it. When it's unsure, it keeps the worker you've configured. The classifier advises; it never expands what a worker is allowed to do.
+Not every change needs the whole pipeline. A one-line fix that your test suite already covers shouldn't wait on a plan, a review and a judge. So before any work starts, muxcode decides how much process the change deserves: a small change your checks can prove goes straight to a single worker, anything else gets the full plan-first workflow, and a change where a mistake could slip past the tests also gets a second reviewer on a different model.
 
-In muxcode, a writing run plans first, builds second, and proves the change in code before any model is allowed to judge it:
+When a change takes the workflow, it plans first, builds second, and proves the change in code before any model is allowed to judge it:
 
 1. **Root (`GPT-6 Luna`)** starts the run from your prompt.
 2. **Plan & Self-Review (`Architect · Claude Opus 5.5 @ high`)** writes one to four contracts, naming the exact goal, route kind (`logic`, `ui`, or `terminal`), allowed file paths, frozen paths it must not touch, and verification commands, and re-reads its own plan in a fresh session.
 3. **Pre-Worker Screens & Baseline** run in host code before any file is edited: a mechanical check ensures backticked verification commands actually run and cannot trivially pass (like `npm test || true`), a Clef contract screen (at `0.7` confidence) checks for missing checks or scope gaps, static lint verifies referenced tools and directories exist, and the host records a baseline of up to 10 read-only project checks on the untouched tree.
-4. **Worker (`Opus 5.5 · medium to xhigh`)** implements the contract while the host runs per-file checks after edits and watches for repeated command failures or drift.
+4. **Worker (`Opus 5.5 @ medium`)** implements the contract while the host runs per-file checks after edits and watches for repeated command failures or drift.
 5. **The Gate (host code, zero tokens)** checks the finished attempt before any judge sees it: out-of-scope edits pause the run, touched frozen paths stop it, verification commands must exit `0`, secret scans block newly added keys, and project checks are compared against the baseline.
-6. **Judge (`Architect · four lenses`) & Retry (`Claude Fable 5.1 @ xhigh to max`)**: Only after the deterministic gate passes does the Architect judge the change across four lenses: _contract_, _tests_, _scope_, and _your words_. If a check fails or the Judge rejects the diff, the route goes once to a second model (`Fable 5.1`) and must pass the same gate again. Every run is bounded by hard ceilings: `500,000` tokens, `60` minutes of active time, or `40` attempts.
+6. **Judge (`GPT-6.1 Sol @ high · four lenses`) & Retry (`Claude Fable 5.1 @ xhigh`)**: Only after the deterministic gate passes does the judge, always on a model that neither planned nor wrote the change, read it across four lenses: _contract_, _tests_, _scope_, and _your words_. If a check fails or the Judge rejects the diff, the route goes once to a second model (`Fable 5.1`) and must pass the same gate again. Every run is bounded by hard ceilings: `500,000` tokens, `60` minutes of active time, or `40` attempts.
 
 <Fig
-  label="The route of a writing run: the root starts it, the Architect plans up to four contracts and reviews its own plan, the worker writes the change, the gate checks it in code, and the Architect judges through four lenses. A failed check or a reject goes to the retry on Fable once per route, then back to the gate; a second failure stops the run."
+  label="The route of a writing run: the root starts it, the Architect plans up to four contracts and reviews its own plan, the worker writes the change, the gate checks it in code, and a judge on another model reads it through four lenses. A failed check or a reject goes to the retry on Fable once per route, then back to the gate; a second failure stops the run."
   replay
 >
   <Route />
   <Fragment slot="caption">
-    <strong>One route, in order.</strong> The Architect plans, reviews in a
-    fresh session, and judges. The gate between worker and judge is
-    deterministic host code, not a model. A failed gate or rejection goes once
-    to a second model (Fable 5.1) before returning to the gate.
+    <strong>One route, in order.</strong> The Architect plans and reviews in a
+    fresh session; a judge on another model accepts. The gate between worker and
+    judge is deterministic host code, not a model. A failed gate or rejection
+    goes once to a second model (Fable 5.1) before returning to the gate.
   </Fragment>
 </Fig>
 
-Alongside the host sits **Clef**, Cloudflare's fast decision classifier (`clef-flash` on Workers AI). Instead of paying a chat model to write a paragraph of commentary at every step, the host asks Clef typed questions that return a single choice and a probability held to fixed confidence bars (`0.7` for contract screens, `0.8` for block triage, and `0.85` for effort selection, worker routing, drift checks, and gate readings).
+That decision is made by **Clef**, Cloudflare's decision model. Rather than paying a chat model to write commentary at every step, muxcode asks Clef short, typed questions: can this project's checks prove the change, is it confined to one place, could a wrong version pass the tests? Clef uses the same kind of question elsewhere too, to screen a plan before work starts, to tell whether a failing check is new, and to notice a worker going in circles.
 
-When you configure two or more workers in your pool, Clef evaluates each work package from the Architect's plan against a `0.85` confidence bar:
+What makes those answers trustworthy is that Clef returns a probability, not an opinion. muxcode only acts when that probability clears a bar set in code, and every bar is tested against real examples we labelled by hand. A chat model's "yes" carries no such number, so muxcode never acts on one. And where measuring showed Clef wasn't earning its keep, choosing reasoning levels and workers, we took that job away: every seat now runs at the model and level you choose.
+
+Each change is read once, and only a confident answer takes it off the full workflow:
 
 <Fig
-  label="Seat routing with two or more workers: a work package goes to Clef, which makes one choice. At 0.85 or more, for example 0.91, the package moves to the cheapest worker that fits. Under 0.85, for example 0.72, or with a reasoning minimum, missing evidence or high risk, it stays on the configured worker. The Architect and the judge are never routed."
+  label="How much process a change gets: Clef reads the change once. If the project's checks can prove it and it sits in one place, it takes the fast path with a single worker. If a mistake could slip past the tests, it takes the full workflow with a second reviewer on another model. Anything uncertain takes the full workflow. A fast-path change that breaks a check moves to the full workflow."
   replay
 >
   <Routing />
   <Fragment slot="caption">
-    <strong>Only a sure reading moves the package.</strong> At <code>0.85</code>{" "}
-    or higher, Clef routes a routine work package to the cheapest fitting worker
-    in your pool. Below <code>0.85</code>, or when the Architect sets a
-    reasoning minimum, evidence is missing, or risk is high, the configured
-    worker keeps it.
+    <strong>Only a confident answer skips the plan.</strong> The fast path needs
+    every signal in its favour (at least <code>0.60</code> that the checks can
+    prove the change, <code>0.85</code> that it sits in one place); anything
+    less runs the full workflow. We fixed these bars before testing them on a
+    fresh set of examples, and none of those examples took the fast path by
+    mistake.
   </Fragment>
 </Fig>
 

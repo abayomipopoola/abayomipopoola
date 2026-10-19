@@ -1,0 +1,122 @@
+---
+// Reinertsen-style U-curve optimization: Authoring Cost ("Easy") vs Complexity Holding Cost ("Complected").
+---
+
+<div class="ec-chart">
+  <svg
+    class="ec-svg"
+    viewBox="0 0 640 310"
+    role="img"
+    aria-label="Economic U-curve graph with Unbounded Agent Batch Size on the horizontal axis and Economic Cost on the vertical axis. Authoring Cost falls as agent autonomy increases, Complexity and Blast-Radius Holding Cost rises steeply, and Total System Cost forms a U-curve with its minimum at Small Bounded Changes."
+  >
+    <!-- Grid lines -->
+    <g class="ec-grid" aria-hidden="true">
+      <line x1="76" y1="60" x2="600" y2="60" />
+      <line x1="76" y1="120" x2="600" y2="120" />
+      <line x1="76" y1="180" x2="600" y2="180" />
+    </g>
+
+    <!-- Axes -->
+    <g class="ec-axes" aria-hidden="true">
+      <line x1="76" y1="32" x2="76" y2="242" />
+      <line x1="76" y1="242" x2="606" y2="242" />
+      <text x="38" y="142" text-anchor="middle" class="ec-axis-title">
+        Cost
+      </text>
+      <text x="340" y="274" text-anchor="middle" class="ec-axis-title">
+        Batch Size of Unbounded Agent Change
+      </text>
+      <text x="90" y="260" text-anchor="start" class="ec-axis-sub">
+        Small bounded step
+      </text>
+      <text x="596" y="260" text-anchor="end" class="ec-axis-sub">
+        Unconstrained repo-wide loop
+      </text>
+    </g>
+
+    <!-- Transaction / Authoring Cost curve (falling) -->
+    <path
+      class="ec-curve fx-draw"
+      data-c="teal"
+      pathLength="1"
+      style="--d:200;--dur:1.1s"
+      d="M 105 72 C 165 168, 285 212, 580 226"
+    />
+    <text
+      x="468"
+      y="214"
+      class="ec-curve-label fx-in"
+      data-c="teal"
+      style="--d:900"
+    >
+      Authoring Cost (Prompt-to-Diff)
+    </text>
+
+    <!-- Holding / Complexity & Blast-Radius Cost curve (rising) -->
+    <path
+      class="ec-curve fx-draw"
+      data-c="coral"
+      pathLength="1"
+      style="--d:550;--dur:1.1s"
+      d="M 105 232 C 235 210, 385 150, 580 58"
+    />
+    <text
+      x="420"
+      y="128"
+      text-anchor="end"
+      class="ec-curve-label fx-in"
+      data-c="coral"
+      style="--d:1250"
+    >
+      Complexity &amp; Coupling Cost
+    </text>
+
+    <!-- Total Economic Cost U-curve -->
+    <path
+      class="ec-curve ec-curve-total fx-draw"
+      data-c="amber"
+      pathLength="1"
+      style="--d:950;--dur:1.2s"
+      d="M 105 62 C 155 152, 225 156, 265 148 C 345 132, 455 86, 580 38"
+    />
+    <text
+      x="280"
+      y="108"
+      class="ec-curve-label ec-curve-label-strong fx-in"
+      data-c="amber"
+      style="--d:1650"
+    >
+      Total Economic Cost
+    </text>
+
+    <!-- Optimal point marker -->
+    <g class="fx-pop" style="--d:1950">
+      <line
+        x1="238"
+        y1="150"
+        x2="238"
+        y2="242"
+        class="ec-Guide"
+        data-c="green"
+      />
+      <circle cx="238" cy="150" r="5.5" class="ec-dot" data-c="green" />
+      <text
+        x="238"
+        y="176"
+        text-anchor="middle"
+        class="ec-badge"
+        data-c="green"
+      >
+        Optimal: Bounded Harness Step
+      </text>
+    </g>
+
+    <!-- Loom failure zone marker -->
+    <g class="fx-pop" style="--d:2250">
+      <circle cx="556" cy="46" r="5.5" class="ec-dot" data-c="coral" />
+      <text x="544" y="34" text-anchor="end" class="ec-badge" data-c="coral">
+        Unconstrained Loop (Coupling Spike)
+      </text>
+    </g>
+  </svg>
+</div>

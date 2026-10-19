@@ -1,0 +1,55 @@
+---
+// Modelled directly on Reinertsen's Figure 3-1 "The Effect of Queues" (effect-of-queue.jpg).
+const effects = [
+  {
+    title: "Lossy Context Amnesia",
+    sub: "Summaries discard verbatim paths, constraints, and test evidence",
+    c: "coral",
+  },
+  {
+    title: "Guardrail Gaming",
+    sub: "Pass-oriented edits weaken assertions or bypass checks",
+    c: "coral",
+  },
+  {
+    title: "Silent Cross-Service Coupling",
+    sub: "Unbounded edits modify shared helpers across service boundaries",
+    c: "amber",
+  },
+  {
+    title: "Rediscovery Token Tax",
+    sub: "Repeated repo searches and uncached context rebuilds",
+    c: "purple",
+  },
+  {
+    title: "Higher Defect Injection",
+    sub: "Dropped constraints reintroduce previously ruled-out regressions",
+    c: "coral",
+  },
+  {
+    title: "Review Queue Stalls",
+    sub: "Large, unverified diffs accumulate in senior review",
+    c: "amber",
+  },
+];
+---
+
+<div class="ec-fan">
+  <div class="ec-fan-root fx-node fx-in" data-c="coral" style="--d:0">
+    Unconstrained Agent Loops Create…
+    <small>Raw model + long context + no deterministic gate</small>
+  </div>
+
+  <div class="ec-fan-spine fx-in" style="--d:300" aria-hidden="true"></div>
+
+  <ol class="ec-fan-list">
+    {effects.map((item, i) => (
+      <li class="ec-fan-item fx-in" style={`--d:${450 + i * 180}`}>
+        <div class="fx-node" data-c={item.c}>
+          {item.title}
+          <small>{item.sub}</small>
+        </div>
+      </li>
+    ))}
+  </ol>
+</div>

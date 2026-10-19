@@ -1,46 +1,54 @@
 ---
-// Seat routing, once you add a second worker: Clef makes one choice per work package.
+// Clef's lanes: one reading per change decides how much of the workflow it gets.
 ---
 
 <div class="pl-wrap">
   <div class="pl-routing">
     <div class="fx-node fx-in" data-c="grey" style="--d:0">
-      Work package<small>from the Architect's plan</small>
+      A change<small>from your prompt</small>
     </div>
     <span class="fx-arrow fx-in" style="--d:300" aria-hidden="true"></span>
     <div class="fx-node fx-in" data-c="amber" style="--d:450">
-      Clef<small>one choice · bar 0.85</small>
+      Clef<small>reads it once</small>
     </div>
     <span class="fx-arrow fx-in" style="--d:750" aria-hidden="true"></span>
     <div class="pl-branches">
       <div class="pl-branch fx-in" data-c="green" style="--d:900">
         <span class="pl-out" data-c="green">
-          at 0.85 or more · e.g. 0.91
+          the checks can prove it, in one place
         </span>
         <div class="fx-node" data-c="teal">
-          Cheapest worker that fits<small>its criteria clearly met</small>
+          Fast path<small>one worker · your checks prove it</small>
         </div>
       </div>
-      <div class="pl-branch fx-in" data-c="grey" style="--d:1300">
+      <div class="pl-branch fx-in" data-c="grey" style="--d:1150">
         <span class="pl-out" data-c="grey">
-          under 0.85 · e.g. 0.72
+          any doubt
         </span>
         <div class="fx-node" data-c="teal">
-          Configured worker<small>last in the list · the default</small>
+          Full workflow<small>plan · worker · gate · judge</small>
+        </div>
+      </div>
+      <div class="pl-branch fx-in" data-c="amber" style="--d:1400">
+        <span class="pl-out" data-c="amber">
+          a mistake could pass the tests
+        </span>
+        <div class="fx-node" data-c="teal">
+          Second reviewer<small>the workflow + another model</small>
         </div>
         <span class="pl-when">
-          Also keeps the package when the Architect set a reasoning minimum,
-          evidence is missing, or the risk is high.
+          If a fast-path change breaks a check or turns out risky, it moves to
+          the full workflow and carries on from there.
         </span>
       </div>
     </div>
   </div>
   <div class="pl-routing-foot fx-in" style="--d:1700">
     <span class="fx-chip" data-c="grey" data-wrap>
-      Architect and judge: never routed
+      every seat runs at the model and level you choose
     </span>
     <span class="fx-chip" data-c="grey" data-wrap>
-      one worker, as shipped: nothing to pick
+      the judge never shares a model with the writer
     </span>
   </div>
 </div>

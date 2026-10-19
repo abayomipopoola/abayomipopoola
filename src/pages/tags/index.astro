@@ -17,20 +17,18 @@ const title = `Posts Tags`;
       <h2 class="mb-2 text-2xl font-bold">{title}</h2>
     </div>
     <div>
-      {
-        groupedTags.map(({ letter, tags }) => (
-          <div class="mb-8 flex gap-2 capitalize">
-            <h2 class="w-7 shrink-0 text-2xl font-bold text-zinc-800">
-              {letter}
-            </h2>
-            <div class="flex flex-wrap gap-2">
-              {tags.map((tag) => (
-                <TagPill tag={tag.label} count={tag.postCount} size="lg" />
-              ))}
-            </div>
+      {groupedTags.map(({ letter, tags }) => (
+        <div class="mb-8 flex gap-2 capitalize">
+          <h2 class="w-7 shrink-0 text-2xl font-bold text-zinc-800">
+            {letter}
+          </h2>
+          <div class="flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <TagPill tag={tag.label} count={tag.postCount} size="lg" />
+            ))}
           </div>
-        ))
-      }
+        </div>
+      ))}
     </div>
   </div>
 </BaseLayout>

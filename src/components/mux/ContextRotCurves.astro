@@ -1,0 +1,407 @@
+---
+// Digest of Chroma's "Context Rot" empirical curves and corroborating
+// benchmarks (LongMemEval, NoLiMa, Multi-Turn Sharding, Tool Sprawl, SlopCodeBench)
+// paired with the Agent Context Window Anatomy & 4 Failure Modes / Subtractive Fixes.
+const failureModes = [
+  {
+    title: "1. Context Poisoning",
+    fix: "Fix: Validate",
+    c: "coral",
+    fixColor: "teal",
+    sub: "False conclusion in self-notes (e.g. 'new DB driver auto-retries') is treated as ground truth, deleting valid retry logic across files. Run a real test before persisting notes.",
+  },
+  {
+    title: "2. Context Distraction",
+    fix: "Fix: Offload to Files",
+    c: "amber",
+    fixColor: "teal",
+    sub: "An hour of past actions dominates pattern continuation over reasoning. Avoid lossy 'photocopy of a photocopy' summaries; store detailed state on disk and load on demand.",
+  },
+  {
+    title: "3. Context Confusion",
+    fix: "Fix: Curate (19 vs. 46 tools)",
+    c: "purple",
+    fixColor: "teal",
+    sub: "Tool sprawl dilutes attention across unused schemas (failing at 46 tools where 19 pass; >30 tools in RAG-MCP). Expose only the handful of tools the step requires.",
+  },
+  {
+    title: "4. Context Clash",
+    fix: "Fix: Prune / Fresh Window",
+    c: "coral",
+    fixColor: "teal",
+    sub: "Early wrong assumptions and later corrections coexist in the prompt (-39% in sharded multi-turn tests). Delete superseded state outright or roll over to a clean window.",
+  },
+];
+---
+
+<div class="ec-rot-stack">
+  <div class="ec-split">
+    <!-- Left Chart: Chroma Context Rot Curves (Similarity & Distractors vs Input Length) -->
+    <div class="ec-panel">
+      <p class="ec-panel-title fx-in" style="--d:0">
+        Context Rot: Accuracy vs. Input Tokens
+      </p>
+      <svg
+        class="ec-svg"
+        viewBox="0 0 320 236"
+        role="img"
+        aria-label="Line chart of LLM accuracy against input token length from 1k to 1M tokens. Lexical exact match stays flat near 96 percent, semantic needles with zero distractors decay notably with length, and adding 4 distractors in coherent text causes steep degradation."
+      >
+        <!-- Grid lines -->
+        <g class="ec-grid" aria-hidden="true">
+          <line x1="42" y1="36" x2="300" y2="36"></line>
+          <line x1="42" y1="86" x2="300" y2="86"></line>
+          <line x1="42" y1="136" x2="300" y2="136"></line>
+        </g>
+
+        <!-- Axes -->
+        <line x1="42" y1="22" x2="42" y2="186" class="ec-axis-line"></line>
+        <line x1="42" y1="186" x2="302" y2="186" class="ec-axis-line"></line>
+
+        <!-- Y-axis labels -->
+        <text x="36" y="40" text-anchor="end" class="ec-axis-sub">
+          100%
+        </text>
+        <text x="36" y="90" text-anchor="end" class="ec-axis-sub">
+          65%
+        </text>
+        <text x="36" y="140" text-anchor="end" class="ec-axis-sub">
+          30%
+        </text>
+
+        <!-- X-axis log ticks -->
+        <text x="52" y="202" text-anchor="middle" class="ec-axis-sub">
+          1k
+        </text>
+        <text x="112" y="202" text-anchor="middle" class="ec-axis-sub">
+          16k
+        </text>
+        <text x="172" y="202" text-anchor="middle" class="ec-axis-sub">
+          64k
+        </text>
+        <text x="232" y="202" text-anchor="middle" class="ec-axis-sub">
+          256k
+        </text>
+        <text x="292" y="202" text-anchor="middle" class="ec-axis-sub">
+          1M
+        </text>
+
+        <text x="172" y="224" text-anchor="middle" class="ec-axis-title">
+          Input Context Length (Log Scale)
+        </text>
+
+        <!-- Curve 1: Lexical NIAH (Exact Match Illusion) -->
+        <path
+          class="ec-curve fx-draw"
+          data-c="teal"
+          pathLength="1"
+          style="--d:200;--dur:0.9s;stroke-dasharray:4 3"
+          d="M 52 38 C 112 39, 172 41, 292 46"
+        ></path>
+        <text
+          x="294"
+          y="33"
+          text-anchor="end"
+          class="ec-note fx-in"
+          data-c="teal"
+          style="--d:650"
+        >
+          Lexical NIAH (exact match)
+        </text>
+
+        <!-- Curve 2: Semantic Needle (NoLiMa / Chroma 0 Distractors) -->
+        <path
+          class="ec-curve fx-draw"
+          data-c="amber"
+          pathLength="1"
+          style="--d:450;--dur:1.0s"
+          d="M 52 48 C 112 58, 172 78, 232 98 C 260 108, 278 115, 292 122"
+        ></path>
+        <text
+          x="294"
+          y="108"
+          text-anchor="end"
+          class="ec-note fx-in"
+          data-c="amber"
+          style="--d:950"
+        >
+          Semantic needle (NoLiMa / 0 dist.)
+        </text>
+
+        <!-- Curve 3: Semantic Needle + 4 Distractors in Coherent Code/Logs -->
+        <path
+          class="ec-curve ec-curve-total fx-draw"
+          data-c="coral"
+          pathLength="1"
+          style="--d:700;--dur:1.1s"
+          d="M 52 58 C 102 82, 152 118, 212 146 C 248 160, 274 168, 292 173"
+        ></path>
+        <circle
+          cx="292"
+          cy="173"
+          r="4"
+          class="ec-dot fx-pop"
+          data-c="coral"
+          style="--d:1350"
+        ></circle>
+        <text
+          x="284"
+          y="163"
+          text-anchor="end"
+          class="ec-note fx-in"
+          data-c="coral"
+          style="--d:1350"
+        >
+          +4 distractors &amp; coherent logs
+        </text>
+      </svg>
+    </div>
+
+    <!-- Right Chart: Corroborating Benchmarks (Lean/Curated vs Bloated/Accumulated) -->
+    <div class="ec-panel">
+      <p class="ec-panel-title fx-in" style="--d:300">
+        Curated vs. Overloaded Context Across Studies
+      </p>
+      <svg
+        class="ec-svg"
+        viewBox="0 0 320 236"
+        role="img"
+        aria-label="Grouped bar chart comparing task success under curated lean context versus overloaded or sharded context across four empirical studies: LongMemEval (300 tokens vs 113k tokens), NoLiMa (1k vs 32k latent match), Multi-Turn Sharding (single-turn vs sharded history with a 39 percent drop), and Tool Loadout (curated 19 tools vs sprawling 46+ tools)."
+      >
+        <!-- Grid lines -->
+        <g class="ec-grid" aria-hidden="true">
+          <line x1="40" y1="40" x2="300" y2="40"></line>
+          <line x1="40" y1="88" x2="300" y2="88"></line>
+          <line x1="40" y1="136" x2="300" y2="136"></line>
+        </g>
+
+        <!-- Axes -->
+        <line x1="40" y1="24" x2="40" y2="180" class="ec-axis-line"></line>
+        <line x1="40" y1="180" x2="302" y2="180" class="ec-axis-line"></line>
+
+        <text x="34" y="44" text-anchor="end" class="ec-axis-sub">
+          90%
+        </text>
+        <text x="34" y="92" text-anchor="end" class="ec-axis-sub">
+          60%
+        </text>
+        <text x="34" y="140" text-anchor="end" class="ec-axis-sub">
+          30%
+        </text>
+
+        <!-- Group 1: LongMemEval (300 tok vs 113k tok) -->
+        <g class="fx-growy" style="--d:550">
+          <rect
+            x="52"
+            y="44"
+            width="18"
+            height="136"
+            rx="2"
+            class="ec-area"
+            data-c="teal"
+          ></rect>
+          <rect
+            x="73"
+            y="98"
+            width="18"
+            height="82"
+            rx="2"
+            class="ec-area"
+            data-c="coral"
+          ></rect>
+        </g>
+        <text x="72" y="196" text-anchor="middle" class="ec-axis-sub">
+          LongMem
+        </text>
+
+        <!-- Group 2: NoLiMa (1k vs 32k latent) -->
+        <g class="fx-growy" style="--d:750">
+          <rect
+            x="116"
+            y="42"
+            width="18"
+            height="138"
+            rx="2"
+            class="ec-area"
+            data-c="teal"
+          ></rect>
+          <rect
+            x="137"
+            y="108"
+            width="18"
+            height="72"
+            rx="2"
+            class="ec-area"
+            data-c="coral"
+          ></rect>
+        </g>
+        <text x="136" y="196" text-anchor="middle" class="ec-axis-sub">
+          NoLiMa
+        </text>
+
+        <!-- Group 3: Sharded Multi-Turn (-39% clash drop) -->
+        <g class="fx-growy" style="--d:950">
+          <rect
+            x="180"
+            y="40"
+            width="18"
+            height="140"
+            rx="2"
+            class="ec-area"
+            data-c="teal"
+          ></rect>
+          <rect
+            x="201"
+            y="96"
+            width="18"
+            height="84"
+            rx="2"
+            class="ec-area"
+            data-c="coral"
+          ></rect>
+        </g>
+        <text x="200" y="196" text-anchor="middle" class="ec-axis-sub">
+          Multi-Turn
+        </text>
+
+        <!-- Group 4: Tool Sprawl (19/curated vs 46+ tools) -->
+        <g class="fx-growy" style="--d:1150">
+          <rect
+            x="244"
+            y="46"
+            width="18"
+            height="134"
+            rx="2"
+            class="ec-area"
+            data-c="teal"
+          ></rect>
+          <rect
+            x="265"
+            y="114"
+            width="18"
+            height="66"
+            rx="2"
+            class="ec-area"
+            data-c="coral"
+          ></rect>
+        </g>
+        <text x="264" y="196" text-anchor="middle" class="ec-axis-sub">
+          Tool Sprawl
+        </text>
+
+        <!-- Legend -->
+        <rect
+          x="44"
+          y="213"
+          width="9"
+          height="9"
+          rx="2"
+          class="ec-area"
+          data-c="teal"
+        ></rect>
+        <text x="58" y="221" class="ec-axis-sub">
+          Curated / focused
+        </text>
+
+        <rect
+          x="168"
+          y="213"
+          width="9"
+          height="9"
+          rx="2"
+          class="ec-area"
+          data-c="coral"
+        ></rect>
+        <text x="182" y="221" class="ec-axis-sub">
+          Bloated / accumulated
+        </text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Middle Panel: Anatomy of a Running Agent's Context Window -->
+  <div class="ec-rot-window fx-in" style="--d:1350">
+    <div class="ec-rot-window-head">
+      <span class="ec-rot-window-title">
+        Anatomy of a 1-Hour Legacy Migration Window (Finite Attention Budget)
+      </span>
+      <span class="fx-chip" data-c="coral" data-wrap>
+        Every token competes for n² pairwise attention
+      </span>
+    </div>
+
+    <div
+      class="fx-track"
+      role="img"
+      aria-label="Segmented bar showing what fills a running agent context window: System and task prompt 5 percent, AGENTS.md and 46 tool definitions 11 percent, 1 hour of message history 28 percent, raw tool outputs and logs 53 percent, and a poisoned self-note 3 percent."
+    >
+      <div
+        class="fx-seg fx-grow"
+        data-c="blue"
+        style="--w:5%;--d:1450"
+        title="System + Task Prompt (5%)"
+      ></div>
+      <div
+        class="fx-seg fx-grow"
+        data-c="purple"
+        style="--w:11%;--d:1550"
+        title="AGENTS.md + 46 Tool Definitions (11%)"
+      ></div>
+      <div
+        class="fx-seg fx-grow"
+        data-c="amber"
+        style="--w:28%;--d:1650"
+        title="Message History: 1 hr of past agent actions (28%)"
+      ></div>
+      <div
+        class="fx-seg fx-grow"
+        data-c="coral"
+        style="--w:53%;--d:1750"
+        title="Tool Results: file dumps, test logs, schemas (53%)"
+      ></div>
+      <div
+        class="fx-seg fx-grow"
+        data-c="grey"
+        style="--w:3%;--d:1850"
+        title="Poisoned Agent Note (3%)"
+      ></div>
+    </div>
+
+    <div class="ec-rot-legend">
+      <span class="ec-rot-key" data-c="blue">
+        <i></i>Prompt (5%)
+      </span>
+      <span class="ec-rot-key" data-c="purple">
+        <i></i>AGENTS.md + 46 Tools (11%)
+      </span>
+      <span class="ec-rot-key" data-c="amber">
+        <i></i>Action History (28%)
+      </span>
+      <span class="ec-rot-key" data-c="coral">
+        <i></i>Raw Tool Outputs &amp; Logs (53%)
+      </span>
+      <span class="ec-rot-key" data-c="grey">
+        <i></i>Poisoned Self-Note (3%)
+      </span>
+    </div>
+  </div>
+
+  <!-- Bottom Grid: The 4 Failure Modes & Subtractive Fixes -->
+  <div class="ec-rot-grid">
+    {failureModes.map((item, idx) => (
+      <div
+        class="ec-rot-card fx-in"
+        data-c={item.c}
+        style={`--d:${1900 + idx * 150}`}
+      >
+        <div class="ec-rot-card-head">
+          <span class="ec-rot-card-title">{item.title}</span>
+          <span class="fx-chip" data-c={item.fixColor} data-wrap>
+            {item.fix}
+          </span>
+        </div>
+        <small>{item.sub}</small>
+      </div>
+    ))}
+  </div>
+</div>

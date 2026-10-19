@@ -1,0 +1,206 @@
+---
+// Reinertsen-style Asymmetric Payoff Function & Batch Risk comparison (payoff.jpg + batch-sizes.jpg).
+---
+
+<div class="ec-split">
+  <div class="ec-panel">
+    <p class="ec-panel-title fx-in" style="--d:0">
+      Asymmetric Payoff in Legacy Production
+    </p>
+    <svg
+      class="ec-svg"
+      viewBox="0 0 320 240"
+      role="img"
+      aria-label="Payoff function curve showing asymmetric risk in production software: upside above the target invariant line plateaus quickly, while shortfall below the target invariant line plunges steeply into unlimited downside cost."
+    >
+      <!-- Axes -->
+      <line x1="42" y1="24" x2="42" y2="206" class="ec-axis-line" />
+      <line x1="42" y1="112" x2="298" y2="112" class="ec-axis-line" />
+      <line x1="176" y1="30" x2="176" y2="202" class="ec-Guide" data-c="grey" />
+
+      <text x="26" y="42" text-anchor="middle" class="ec-axis-title">
+        +
+      </text>
+      <text x="20" y="116" text-anchor="middle" class="ec-axis-sub">
+        Payoff
+      </text>
+      <text x="26" y="196" text-anchor="middle" class="ec-axis-title">
+        −
+      </text>
+      <text x="176" y="218" text-anchor="middle" class="ec-axis-title">
+        Target: Invariants Intact
+      </text>
+
+      <!-- Downside curve (left of target: steep drop) -->
+      <path
+        class="ec-curve fx-draw"
+        data-c="coral"
+        pathLength="1"
+        style="--d:300;--dur:0.9s"
+        d="M 58 196 C 102 184, 144 152, 176 112"
+      />
+
+      <!-- Upside curve (right of target: rapid plateau) -->
+      <path
+        class="ec-curve fx-draw"
+        data-c="teal"
+        pathLength="1"
+        style="--d:850;--dur:0.8s"
+        d="M 176 112 C 194 74, 214 64, 288 62"
+      />
+
+      <circle
+        cx="176"
+        cy="112"
+        r="4.5"
+        class="ec-dot fx-pop"
+        data-c="green"
+        style="--d:750"
+      />
+
+      <text
+        x="108"
+        y="72"
+        text-anchor="middle"
+        class="ec-note fx-in"
+        data-c="coral"
+        style="--d:1150"
+      >
+        Unbounded downside
+      </text>
+      <text
+        x="108"
+        y="86"
+        text-anchor="middle"
+        class="ec-note-sub fx-in"
+        style="--d:1150"
+      >
+        (dropped invariant or lock
+      </text>
+      <text
+        x="108"
+        y="98"
+        text-anchor="middle"
+        class="ec-note-sub fx-in"
+        style="--d:1150"
+      >
+        = settlement / billing loss)
+      </text>
+
+      <text
+        x="242"
+        y="138"
+        text-anchor="middle"
+        class="ec-note fx-in"
+        data-c="teal"
+        style="--d:1400"
+      >
+        Capped upside
+      </text>
+      <text
+        x="242"
+        y="152"
+        text-anchor="middle"
+        class="ec-note-sub fx-in"
+        style="--d:1400"
+      >
+        (refactoring working paths
+      </text>
+      <text
+        x="242"
+        y="164"
+        text-anchor="middle"
+        class="ec-note-sub fx-in"
+        style="--d:1400"
+      >
+        yields bounded gains)
+      </text>
+    </svg>
+  </div>
+
+  <div class="ec-panel">
+    <p class="ec-panel-title fx-in" style="--d:1650">
+      Batch Size of Risk: Rewrite vs. In-Place
+    </p>
+    <svg
+      class="ec-svg"
+      viewBox="0 0 320 240"
+      role="img"
+      aria-label="Side-by-side comparison of Batch Size and Unverified Risk. Left: Full Rewrite creates a large shaded triangle of unverified risk. Right: Bounded In-Place Steps keep the shaded risk triangles small along the diagonal."
+    >
+      <!-- Left sub-chart: Full Rewrite (Large Batch) -->
+      <text x="90" y="28" text-anchor="middle" class="ec-axis-title">
+        Full Rewrite
+      </text>
+      <line x1="30" y1="42" x2="30" y2="182" class="ec-axis-line" />
+      <line x1="30" y1="182" x2="150" y2="182" class="ec-axis-line" />
+      <!-- Shaded large batch risk area -->
+      <polygon
+        class="ec-area fx-pop"
+        data-c="coral"
+        style="--d:1900"
+        points="30,182 90,112 90,182"
+      />
+      <polygon
+        class="ec-area fx-pop"
+        data-c="coral"
+        style="--d:2100"
+        points="90,112 146,48 146,112"
+      />
+      <line
+        x1="30"
+        y1="182"
+        x2="146"
+        y2="48"
+        class="ec-curve fx-draw"
+        data-c="coral"
+        pathLength="1"
+        style="--d:1800;--dur:0.8s"
+      />
+      <text x="90" y="200" text-anchor="middle" class="ec-note-sub">
+        All invariants risked in one cutover
+      </text>
+
+      <!-- Right sub-chart: In-Place Steps (Small Batches) -->
+      <text x="242" y="28" text-anchor="middle" class="ec-axis-title">
+        In-Place Steps
+      </text>
+      <line x1="182" y1="42" x2="182" y2="182" class="ec-axis-line" />
+      <line x1="182" y1="182" x2="302" y2="182" class="ec-axis-line" />
+      <!-- Small staircase triangles -->
+      <polygon
+        class="ec-area fx-pop"
+        data-c="teal"
+        style="--d:2350"
+        points="182,182 201,160 201,182 220,138 220,160 239,116 239,138 258,94 258,116 277,72 277,94 298,48 298,72"
+      />
+      <line
+        x1="182"
+        y1="182"
+        x2="298"
+        y2="48"
+        class="ec-curve fx-draw"
+        data-c="teal"
+        pathLength="1"
+        style="--d:2250;--dur:0.8s"
+      />
+      <text x="242" y="200" text-anchor="middle" class="ec-note-sub">
+        1 bounded step verified at a time
+      </text>
+
+      <!-- Legend -->
+      <rect
+        x="48"
+        y="215"
+        width="10"
+        height="10"
+        rx="2"
+        class="ec-area"
+        data-c="coral"
+      />
+      <text x="64" y="224" class="ec-axis-sub">
+        Shaded area = unverified risk in flight
+      </text>
+    </svg>
+  </div>
+</div>

@@ -505,7 +505,7 @@
 .fx .tr-flow > .fx-group,
 .fx .tr-flow > .tr-stack {
   flex: 0 1 auto;
-  min-width: 8.25rem;
+  min-width: 0;
 }
 
 .fx .tr-group-body {
@@ -1056,15 +1056,17 @@
 
 .fx .pl-out {
   display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
+  align-items: baseline;
+  gap: 0.35rem;
   color: var(--c);
   font: 600 0.75rem/1.35 var(--font-mono);
-  white-space: nowrap;
+  white-space: normal;
+  min-width: 0;
 }
 
 .fx .pl-out::before {
   content: "";
+  flex: 0 0 0.45rem;
   width: 0.45rem;
   height: 0.45rem;
   border-radius: 50%;
@@ -1175,10 +1177,9 @@
 
 .fx .pl-routing {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) 1.6rem minmax(0, 1fr) 1.6rem minmax(
-      0,
-      1.6fr
-    );
+  grid-template-columns:
+    minmax(0, 0.85fr) 1.5rem minmax(0, 0.85fr)
+    1.5rem minmax(0, 1.65fr);
   align-items: center;
   gap: 0;
 }
@@ -1192,11 +1193,13 @@
 .fx .pl-branches {
   display: grid;
   gap: 0.7rem;
+  min-width: 0;
 }
 
 .fx .pl-branch {
   display: grid;
   gap: 0.35rem;
+  min-width: 0;
   padding: 0.6rem 0.75rem;
   border: 1px solid color-mix(in oklab, var(--c) 45%, transparent);
   border-left: 3px solid var(--c);
@@ -1205,7 +1208,8 @@
 }
 
 .fx .pl-branch .fx-node {
-  justify-self: start;
+  justify-self: stretch;
+  max-width: 100%;
 }
 
 .fx .pl-when {
@@ -1663,5 +1667,284 @@
 
   .fx .sb-req i {
     grid-column: 2;
+  }
+}
+
+/* ==========================================================================
+   7. Reinertsen-Style Economic & Causal Flow Diagrams (.ec-*)
+   ========================================================================== */
+
+.fx .ec-chart {
+  width: 100%;
+}
+
+.fx .ec-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.fx .ec-grid line {
+  stroke: var(--fx-line);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+.fx .ec-axes line,
+.fx .ec-axis-line {
+  stroke: var(--fx-wire);
+  stroke-width: 1.5;
+}
+
+.fx .ec-axis-title {
+  fill: var(--fx-ink);
+  font: 600 12px/1.2 var(--font-sans);
+}
+
+.fx .ec-axis-sub {
+  fill: var(--fx-muted);
+  font: 400 10.5px/1.2 var(--font-mono);
+}
+
+.fx .ec-curve {
+  fill: none;
+  stroke: var(--c);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+.fx .ec-curve-total {
+  stroke-width: 2.8;
+}
+
+.fx .ec-curve-label {
+  fill: var(--c);
+  font: 600 11.5px/1.2 var(--font-sans);
+}
+
+.fx .ec-curve-label-strong {
+  font-weight: 700;
+}
+
+.fx .ec-Guide {
+  stroke: var(--c);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 3;
+}
+
+.fx .ec-dot {
+  fill: var(--c);
+}
+
+.fx .ec-badge {
+  fill: var(--c);
+  font: 600 11px/1.2 var(--font-mono);
+}
+
+.fx .ec-note {
+  fill: var(--c);
+  font: 600 11px/1.2 var(--font-sans);
+}
+
+.fx .ec-note-sub {
+  fill: var(--fx-muted);
+  font: 400 9.5px/1.2 var(--font-mono);
+}
+
+.fx .ec-area {
+  fill: color-mix(in oklab, var(--c) 32%, transparent);
+  stroke: color-mix(in oklab, var(--c) 70%, transparent);
+  stroke-width: 1;
+}
+
+.fx .ec-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.fx .ec-panel {
+  border: 1px solid var(--fx-line);
+  border-radius: 0.6rem;
+  background: var(--fx-card);
+  padding: 0.75rem 0.85rem 0.6rem;
+  min-width: 0;
+}
+
+.fx .ec-panel-title {
+  color: var(--fx-ink);
+  font: 600 0.85rem/1.3 var(--font-sans);
+  margin: 0 0 0.35rem;
+  text-align: center;
+}
+
+@container (max-width: 38rem) {
+  .fx .ec-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Fan-out diagram (Figure 3-1 "The Effect of Queues" style) */
+.fx .ec-fan {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) 1.75rem minmax(0, 1.35fr);
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fx .ec-fan-root {
+  align-self: center;
+}
+
+.fx .ec-fan-spine {
+  position: relative;
+  justify-self: center;
+  width: 1.5px;
+  height: 82%;
+  background: var(--fx-wire);
+}
+
+.fx .ec-fan-spine::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.8rem;
+  width: 0.8rem;
+  height: 1.5px;
+  background: var(--fx-wire);
+}
+
+.fx .ec-fan-list {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.fx .ec-fan-item {
+  position: relative;
+  min-width: 0;
+}
+
+.fx .ec-fan-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1.35rem;
+  width: 1.15rem;
+  height: 1.5px;
+  background: var(--fx-wire);
+}
+
+.fx .ec-fan-item::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3.5px);
+  left: -0.3rem;
+  border: 4px solid transparent;
+  border-left: 6px solid var(--fx-wire);
+}
+
+@container (max-width: 36rem) {
+  .fx .ec-fan {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fx .ec-fan-spine,
+  .fx .ec-fan-item::before,
+  .fx .ec-fan-item::after {
+    display: none;
+  }
+}
+
+/* Context Rot & Window Anatomy (.ec-rot-*) */
+.fx .ec-rot-stack {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.fx .ec-rot-window {
+  border: 1px solid var(--fx-line);
+  border-radius: 0.6rem;
+  background: var(--fx-card);
+  padding: 0.75rem 0.9rem;
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.fx .ec-rot-window-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+}
+
+.fx .ec-rot-window-title {
+  color: var(--fx-ink);
+  font: 600 0.84rem/1.3 var(--font-sans);
+}
+
+.fx .ec-rot-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  align-items: center;
+}
+
+.fx .ec-rot-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font: 400 0.72rem/1.3 var(--font-mono);
+  color: var(--fx-muted);
+}
+
+.fx .ec-rot-key i {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--c) 65%, transparent);
+  border: 1px solid var(--c);
+  display: inline-block;
+}
+
+.fx .ec-rot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.fx .ec-rot-card {
+  border: 1px solid var(--fx-line);
+  border-left: 3px solid var(--c);
+  border-radius: 0.55rem;
+  background: var(--fx-card);
+  padding: 0.65rem 0.8rem;
+  display: grid;
+  gap: 0.3rem;
+  align-content: start;
+  min-width: 0;
+}
+
+.fx .ec-rot-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.fx .ec-rot-card-title {
+  color: var(--fx-ink);
+  font: 600 0.85rem/1.25 var(--font-sans);
+}
+
+@container (max-width: 38rem) {
+  .fx .ec-rot-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

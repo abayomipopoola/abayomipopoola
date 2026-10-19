@@ -42,14 +42,7 @@ const {
   </style>
 </slot>
 <div class="astro-social-share">
-  {
-    buttons.map((ShareButton: any) => (
-      <ShareButton
-        url={url}
-        description={description}
-        via={via}
-        title={title}
-      />
-    ))
-  }
+  {buttons.map((ShareButton: any) => (
+    <ShareButton url={url} description={description} via={via} title={title} />
+  ))}
 </div>

@@ -10,15 +10,13 @@ const { posts } = Astro.props;
 const groupedPosts = groupPostsByYear(posts);
 ---
 
-{
-  groupedPosts.map(({ year, posts }) => (
-    <div class="mb-8">
-      <h2 class="mb-4 text-2xl font-bold">{year}</h2>
-      <div>
-        {posts.map((post) => (
-          <PostItem post={post} />
-        ))}
-      </div>
+{groupedPosts.map(({ year, posts }) => (
+  <div class="mb-8">
+    <h2 class="mb-4 text-2xl font-bold">{year}</h2>
+    <div>
+      {posts.map((post) => (
+        <PostItem post={post} />
+      ))}
     </div>
-  ))
-}
+  </div>
+))}

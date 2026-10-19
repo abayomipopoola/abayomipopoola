@@ -58,9 +58,7 @@ const minutesRead = getReadingTime(post);
               <div class="date-time">
                 <div class="shrink-0 text-xs text-zinc-600">
                   <FormatDate date={displayDate} />
-                  <span
-                    class="mx-0.5 inline-block size-[3.4px] rounded-full bg-current align-middle"
-                  ></span>
+                  <span class="mx-0.5 inline-block size-[3.4px] rounded-full bg-current align-middle"></span>
                   {minutesRead}
                 </div>
               </div>
@@ -68,57 +66,49 @@ const minutesRead = getReadingTime(post);
             </div>
           </div>
           <div class="overflow-hidden py-3">
-            {
-              coverImage && (
-                <Image
-                  class="m-0 w-full rounded-2xl! lg:mb-2"
-                  src={coverImage}
-                  alt={title}
-                  loading="eager"
-                />
-              )
-            }
+            {coverImage && (
+              <Image
+                class="m-0 w-full rounded-2xl! lg:mb-2"
+                src={coverImage}
+                alt={title}
+                loading="eager"
+              />
+            )}
           </div>
           <Content />
-          {
-            tags && tags.length > 0 && (
-              <div class="tags-highlight flex gap-2 capitalize">
-                {tags.map((tag) => (
-                  <TagPill tag={tag} />
-                ))}
-              </div>
-            )
-          }
+          {tags && tags.length > 0 && (
+            <div class="tags-highlight flex gap-2 capitalize">
+              {tags.map((tag) => (
+                <TagPill tag={tag} />
+              ))}
+            </div>
+          )}
         </Prose>
       </article>
       <div class="mx-[25%] mb-8 border-b-4 border-double py-4"></div>
       <nav class="prev-next mb-8">
         <ul class="flex list-none flex-wrap justify-between p-0">
           <li>
-            {
-              prev && (
-                <a
-                  href={getPostHref(prev)}
-                  rel="prev"
-                  class="text-[var(--link-color)]"
-                >
-                  ← {prev.data.title}
-                </a>
-              )
-            }
+            {prev && (
+              <a
+                href={getPostHref(prev)}
+                rel="prev"
+                class="text-[var(--link-color)]"
+              >
+                ← {prev.data.title}
+              </a>
+            )}
           </li>
           <li>
-            {
-              next && (
-                <a
-                  href={getPostHref(next)}
-                  rel="next"
-                  class="text-[var(--link-color)]"
-                >
-                  {next.data.title} →
-                </a>
-              )
-            }
+            {next && (
+              <a
+                href={getPostHref(next)}
+                rel="next"
+                class="text-[var(--link-color)]"
+              >
+                {next.data.title} →
+              </a>
+            )}
           </li>
         </ul>
       </nav>

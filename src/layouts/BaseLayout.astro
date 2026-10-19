@@ -50,20 +50,18 @@ gtag("config", ${JSON.stringify(GTAG_TRACKING_ID)});
     </div>
     <Footer />
     <!-- Google tag (gtag.js) -->
-    {
-      GTAG_TRACKING_ID && (
-        <>
-          <script
-            type="text/partytown"
-            is:inline
-            async
-            src={
-              "https://www.googletagmanager.com/gtag/js?id=" + GTAG_TRACKING_ID
-            }
-          />
-          <script type="text/partytown" is:inline set:html={gtagInitScript} />
-        </>
-      )
-    }
+    {GTAG_TRACKING_ID && (
+      <>
+        <script
+          type="text/partytown"
+          is:inline
+          async
+          src={
+            "https://www.googletagmanager.com/gtag/js?id=" + GTAG_TRACKING_ID
+          }
+        />
+        <script type="text/partytown" is:inline set:html={gtagInitScript} />
+      </>
+    )}
   </body>
 </html>

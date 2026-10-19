@@ -1,0 +1,232 @@
+---
+title: "The Economics of Coding Agents in Legacy Systems"
+seoTitle: "The Economics of Coding Agents in Legacy Systems: Batch Size, Queues & Risk"
+description: "How cheap code generation shifts engineering cost into coupling, verification queues, rediscovery, and production risk, and how bounded harnesses control total cost per accepted change."
+date: "2026-10-15T12:00:00.000Z"
+tags: ["Agents", "AI Engineering", "System Design"]
+coverImage: ./cover.webp
+---
+
+import Fig from "../../../components/mux/Fig.astro";
+import LoomEconomics from "../../../components/mux/LoomEconomics.astro";
+import PayoffAsymmetry from "../../../components/mux/PayoffAsymmetry.astro";
+import ContextRotCurves from "../../../components/mux/ContextRotCurves.astro";
+import UnconstrainedEffect from "../../../components/mux/UnconstrainedEffect.astro";
+import QueueMultiplierFlow from "../../../components/mux/QueueMultiplierFlow.astro";
+
+In a greenfield application, persistent state is empty, module boundaries have no external dependents, and mistakes are cheap to reverse. Under those conditions, optimizing for raw code-generation speed makes economic sense: an unconstrained coding agent can scaffold features rapidly because verification cost is low and the blast radius of a flawed assumption is minimal.
+
+In a mature, revenue-generating system, such as a multi-year payment and settlement service, those conditions invert. Changes must preserve implicit cross-service invariants, reconcile existing ledger state, and pass review by a finite pool of senior engineers who understand the system's failure modes. Lowering the cost of generating code without bounding scope does not eliminate engineering cost; it shifts cost downstream into coupling, review queues, rework, and expected incident loss.
+
+### Programming With a Loom and Unit Economics
+
+In _Simple Made Easy_, Rich Hickey distinguishes **easy** (low friction to start authoring) from **simple** (low coupling between state, time, and business rules). Coding agents collapse authoring friction, but when left unconstrained in an iterative loop, they optimize for immediate local pass criteria, braiding shared helpers, state transitions, and test assertions together in what Hickey called "programming with a loom." As Donald Reinertsen shows in [_The Principles of Product Development Flow_ (Pt. 1)](/principles-of-product-development-flow-pt-1/), optimizing a proxy variable like lines generated per minute while ignoring downstream holding and verification costs degrades total system performance.
+
+<Fig
+  title="Economic Trade-Off: Authoring Cost vs. Complexity Cost"
+  label="A U-shaped economic optimization graph with Batch Size of Unbounded Agent Change on the horizontal axis and Economic Cost on the vertical axis. Authoring Cost falls as agent autonomy increases, Complexity and Coupling Cost rises sharply, and Total Economic Cost reaches its minimum at a Bounded Harness Step before spiking in the Unconstrained Loop zone."
+  replay
+>
+  <LoomEconomics />
+  <Fragment slot="caption">
+    <strong>Figure 1:</strong> Agent autonomy follows a U-curve optimization
+    between declining <strong>Authoring Cost</strong> and rising{" "}
+    <strong>Complexity &amp; Coupling Cost</strong>, reaching minimum total cost
+    at small, bounded steps.
+  </Fragment>
+</Fig>
+
+Where a task lands on this curve depends on four things:
+
+1. **Files and shared helpers touched:** Whether edits stay within a single module or alter shared utilities imported by sibling services.
+2. **State transitions modified:** Whether the diff changes database schemas, lock acquisition order, or asynchronous retry state.
+3. **Invariants affected:** Whether idempotency, ledger balancing, or external partner contract assumptions are in scope.
+4. **Expected review effort:** The senior engineering time required to verify that every touched path preserves production behavior.
+
+The useful measure is **total cost per accepted change**, not token spend per diff:
+
+> `Cost per Accepted Change = Generation + Rediscovery + Senior Review + Rework + Cost of Delay + (Incident Probability × Incident Loss)`
+
+The table below uses **illustrative planning assumptions** (assuming a \$150/hr loaded senior engineering rate and an illustrative \$20,000 incident cost when a settlement invariant breaks) to show how token generation cost is dwarfed by downstream review, rework, and risk exposure:
+
+| Cost Component                    | Unconstrained Repo-Wide Loop (Illustrative)       | Bounded Harness Step (Illustrative)             |
+| :-------------------------------- | :------------------------------------------------ | :---------------------------------------------- |
+| **Generation (`C_gen`)**          | \$6–\$15 in raw model tokens                      | \$2–\$5 in scoped model tokens                  |
+| **Rediscovery (`C_rediscovery`)** | \$10–\$25 across repeated search/compaction       | \$1–\$3 via indexed graph context               |
+| **Senior Review (`C_review`)**    | \$225 (90 min auditing cross-module side effects) | \$50 (20 min verifying a contract-bounded diff) |
+| **Rework (`C_rework`)**           | \$150 (60 min fixing broken callers or tests)     | \$25 (10 min minor revision; bad runs gated)    |
+| **Queue Delay (`C_delay`)**       | \$300 (multi-day wait in review bottleneck)       | \$40 (same-day review of small batch)           |
+| **Expected Incident (`p × L`)**   | \$400 (2.0% probability × \$20,000 loss)          | \$40 (0.2% probability × \$20,000 loss)         |
+| **Illustrative Total / Change**   | **~\$1,095 per accepted change**                  | **~\$160 per accepted change**                  |
+
+### Incremental Modification vs. Clean-Slate Rewrites
+
+When an agent struggles with tangled control flow in an older service, a common impulse is to commission a model-generated rewrite of the module. Yet as John Gall observed, working complex systems evolve incrementally from working simple systems. In transaction processing, awkward conditionals frequently encode years of operational invariants discovered under real traffic: partner timeout windows, idempotency locks, out-of-order webhook guards, and month-end reconciliation cutoffs that are only partially captured in documentation.
+
+<Fig
+  label="Two side-by-side graphs. Left: Asymmetric Payoff in Legacy Production, showing that upside above the target invariant line plateaus quickly while shortfall below the target line plunges into steep downside cost. Right: Batch Size of Risk comparing a Full Rewrite with a large shaded triangle of unverified risk against In-Place Steps with small staircase triangles of risk."
+  replay
+>
+  <PayoffAsymmetry />
+  <Fragment slot="caption">
+    <strong>Figure 2:</strong> Legacy revenue systems exhibit{" "}
+    <strong>asymmetric payoff functions</strong> (left) and penalize large
+    cutover batches (right). Upside from cleaner internal syntax is bounded,
+    while dropping a single production invariant creates severe downside loss.
+  </Fragment>
+</Fig>
+
+The economic decision rule follows directly from this asymmetry: a rewrite is only net-positive when the discounted maintenance savings of the new code exceed transition engineering cost plus expected tail-risk loss during cutover.
+
+When a module replacement is genuinely warranted, it requires five engineering gates before production cutover:
+
+1. **Explicit invariant inventory:** A catalog of every state transition, retry rule, timeout bound, and ledger constraint in the legacy path.
+2. **Characterization test suite:** Replayable tests captured from production request/response payloads and edge-case failure traces.
+3. **Shadow or parallel execution:** Running the candidate implementation alongside the legacy path on live traffic without mutating state.
+4. **Automated reconciliation tolerance:** Verifying zero unexplained drift between legacy and candidate outputs over a full business cycle (including month-end close).
+5. **Deterministic instant rollback:** Feature-flagged routing that can revert traffic to the legacy path in seconds without schema lock-in.
+
+When those five gates are too expensive to fund, changing the code in place, one verified step at a time, beats a clean-slate rewrite.
+
+### Context Rot, Finite Attention, and Structural Limits
+
+As context windows expanded from a few thousand tokens to a million or more, a common assumption was that agents could simply load entire repositories, documentation sets, and tool logs into memory and become more reliable on long-running tasks. Empirical evidence across multiple labs shows the opposite: as the context window grows, models use every token inside it less reliably. Researchers call this phenomenon **context rot**.
+
+First coined in Chroma's technical report [_Context Rot: How Increasing Input Tokens Impacts LLM Performance_](https://www.trychroma.com/research/context-rot) and subsequently corroborated across frontier model generations by [Anthropic's _Effective Context Engineering for AI Agents_](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), Adobe Research's [_NoLiMa_ benchmark](https://arxiv.org/abs/2502.05167), Microsoft and Salesforce's [_LLMs Get Lost In Multi-Turn Conversation_](https://arxiv.org/abs/2505.06120), and iterative coding benchmarks such as [_SlopCodeBench_](https://arxiv.org/abs/2603.24755), long-context degradation stems from three structural properties:
+
+- **The lexical Needle-in-a-Haystack (NIAH) illusion:** Standard NIAH benchmarks show near-flat accuracy across 1M tokens only because they test trivial, direct lexical matching. In both Chroma's 18-model evaluation and the [_NoLiMa_ benchmark](https://arxiv.org/abs/2502.05167) (which removes literal keyword overlap between query and target), accuracy decays steeply with length, with most models dropping below 50% of their short-context baseline by `32k` tokens when latent semantic inference is required.
+- **Distractor amplification and coherent haystacks:** Legacy repositories are full of topically related distractors: deprecated helpers, similar function signatures, and reverted migration attempts. Chroma's experiments showed that adding just four distractors sharply accelerates degradation across length, and that models counterintuitively perform _worse_ when the surrounding haystack is logically coherent (such as continuous code and sequential logs) than when sentences are randomly shuffled, because coherent surrounding patterns pull attention away from the target constraint.
+- **Focused vs. accumulated context (`LongMemEval` and `SlopCodeBench`):** On `LongMemEval`, feeding models only the focused relevant context (`~300` tokens) yields high accuracy across every frontier family, whereas passing the full `~113k`-token history and forcing simultaneous retrieval and reasoning cuts accuracy by 30 to 40 percentage points even with extended thinking enabled. In software maintenance, [_SlopCodeBench_ (`arXiv:2603.24755`)](https://arxiv.org/abs/2603.24755) demonstrates the same decay across iterative repository checkpoints: as session history accumulates, coding agents introduce progressive structural erosion, duplicate helpers, and regression bloat compared to human histories.
+
+Why does a larger window hurt reliability even as models improve? A language model does not query its context window the way a database looks up an indexed row. As [Anthropic's Applied AI team notes](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), transformer self-attention computes `n²` pairwise relationships across `n` tokens. Every new token stretches a **finite attention budget** thinner across the sequence.
+
+Consider what actually fills an agent's context window an hour into migrating an aging codebase to a new database driver. The standing system prompt and the two-line task prompt sit at the very front, followed by project instructions (`AGENTS.md`) and tool definitions. Everything after that is a sprawling running log: dozens of message-history turns, massive tool results (full file dumps, test outputs, stack traces, and schema dumps), and self-authored notes the agent wrote along the way.
+
+As Drew Breunig synthesizes in [_How Long Contexts Fail_](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html) and [_How to Fix Your Context_](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html), an unmanaged agent window fails in four distinct ways, and **context engineering** fixes all four by deliberately throwing away or offloading information so the agent holds less in active memory:
+
+1. **Context Poisoning (Fix: Validate):** Early in the database migration, the agent skims the new driver's documentation, misreads a paragraph, and writes a note into context stating that the new driver retries failed connections automatically. Because a model treats its own in-context notes as ground truth, that single false conclusion poisons the rest of the run, causing the agent to delete valid retry code across file after file. The fix is to **validate before persisting**: run a real connection test against the driver before recording any architectural conclusion into the window.
+2. **Context Distraction (Fix: Compact and Offload to Permanent Files):** At its core, a language model is a pattern-continuation machine. Once a trajectory grows past roughly `100k` tokens of the agent's own past actions and log outputs, that history becomes the strongest pattern in context, overpowering the model's training-time reasoning and steering it into repeating prior steps rather than solving what the task needs next. Summarizing the history reduces token count, but repeated summary-of-summary compaction is lossy, drifting like a photocopy of a photocopy and dropping verbatim file paths, symbol names, and rejected hypotheses. The durable fix (used in both [Anthropic's tool-result clearing and file-based memory](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) and our harness) is to purge raw tool dumps and offload detailed state into permanent files on disk, pulling slices into the context window only when a step requires them.
+3. **Context Confusion (Fix: Curate Tools):** Production agents are frequently wired into version control, database consoles, issue trackers, and deployment pipelines simultaneously. Every tool definition sits in the window whether the current step uses it or not, diluting attention across irrelevant schemas. In the [_Less is More_ tool-use study (`arXiv:2411.15399`)](https://arxiv.org/abs/2411.15399), a model failed the GeoEngine benchmark when offered all `46` tools, yet passed the exact same task when offered only `19` tools; similarly, [_RAG-MCP_ (`arXiv:2505.03275`)](https://arxiv.org/abs/2505.03275) found that tool descriptions begin overlapping above `30` tools and that curating the active loadout yields up to 3× higher tool-selection accuracy. The fix is **tool curation**: expose only the handful of tools required for the current migration step and fetch others on demand.
+4. **Context Clash (Fix: Prune or Roll Over to a Fresh Window):** Eventually, the migration agent observes a test failure showing that connections are not retrying and appends a note stating that its earlier assumption was wrong. Now both the original false note and the later correction sit inside the same window, presenting contradictory instructions. Microsoft and Salesforce researchers quantified this effect in [_LLMs Get Lost In Multi-Turn Conversation_ (`arXiv:2505.06120`)](https://arxiv.org/abs/2505.06120): when prompts are sharded across multiple turns where early assumptions and later corrections coexist in history, accuracy drops by an average of **39%** across frontier models. The fix is to **prune superseded state**: delete the obsolete note outright, or start a fresh context window that restates only the verified current state of the job and leaves the poisoned history behind.
+
+<Fig
+  title="Context Rot & Context Engineering in Long-Running Agent Loops"
+  label="A multi-panel diagram. Top left: Context Rot curves showing flat accuracy for lexical exact match, moderate decay for semantic needles in NoLiMa and Chroma tests, and steep decay when four distractors and coherent logs are present. Top right: Grouped bar chart comparing curated or focused context against bloated or accumulated context across LongMemEval, NoLiMa, Multi-Turn Sharding, and Tool Sprawl studies. Middle: Segmented bar showing the anatomy of a 1-hour migration context window dominated by action history and raw tool outputs. Bottom: Four cards mapping Context Poisoning to Validate, Context Distraction to Offload to Files, Context Confusion to Curate Tools, and Context Clash to Prune or Fresh Window."
+  replay
+>
+  <ContextRotCurves />
+  <Fragment slot="caption">
+    <strong>Figure 3:</strong> Multi-study long-context degradation results from{" "}
+    <em>Context Rot</em>, <em>NoLiMa</em>, <em>Multi-Turn Sharding</em>, and{" "}
+    <em>Tool Loadout</em> benchmarks (top), the anatomy of a 1-hour migration
+    window competing for <code>n²</code> pairwise attention (middle), and the
+    four subtractive context-engineering fixes (bottom).
+  </Fragment>
+</Fig>
+
+Beyond context rot inside a single window, legacy maintenance hits two additional structural boundaries that stronger models alone do not remove:
+
+- **Test suites as incomplete specifications (and prompt debt):** Automated test suites sample known behaviors; they cannot prove the absence of regressions across unmodeled production invariants. Because an unconstrained agent loop optimizes for a passing exit status, a failing test creates an incentive to weaken assertions, broaden mock return values, or alter test fixtures rather than fix the underlying defect. Conversely, trying to patch behavioral drift by stacking all-caps warnings into system instructions creates what Breunig calls [_prompt debt_](https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html): brittle natural-language rules that regress other instructions and lock the workflow to a single model's quirks. Governed workflows therefore enforce hard verification boundaries in code, treating test files and verification scripts as frozen paths unless test modifications are explicitly scoped and reviewed separately.
+- **Rediscovery vs. Brooks's coordination overhead:** Unconstrained multi-agent usage compounds two distinct costs. First, **per-session rediscovery cost**: each unindexed session starts cold, spending model calls on repetitive `grep` traversal and build discovery. Second, **Brooks's coordination overhead**: as Fred Brooks established in _The Mythical Man-Month_, concurrent workers modifying interconnected modules generate non-linear communication and merge-resolution overhead. Parallel agents editing shared helpers create semantic conflicts that senior engineers must manually untangle, while routing routine file edits through top-tier reasoning models inflates token spend without reducing human verification load.
+
+<Fig
+  title="The Effect of Unconstrained Agent Loops"
+  label="A causal fan-out diagram modeled on Reinertsen's Effect of Queues. A root box labeled Unconstrained Agent Loops Create branches into six compounding problems: Lossy Context Amnesia, Guardrail Gaming, Silent Cross-Service Coupling, Rediscovery Token Tax, Higher Defect Injection, and Review Queue Stalls."
+  replay
+>
+  <UnconstrainedEffect />
+  <Fragment slot="caption">
+    <strong>Figure 4:</strong> Modeled on Reinertsen's causal analysis of
+    unmanaged queues, unconstrained agent loops generate six compounding
+    liabilities across verification cost, defect rates, and review throughput.
+  </Fragment>
+</Fig>
+
+Rather than policing all six failure modes by hand in code review, start by measuring three leading indicators:
+
+- **Guardrail integrity:** Count of modified test assertions, skipped suites, or altered verification commands per proposed diff.
+- **Scope containment:** Share of agent diffs that modify files or shared helpers outside the assigned service module.
+- **Rediscovery ratio:** Total search and context-gathering tokens consumed per accepted line of production code.
+
+### Invisible Queues and the Verification Bottleneck
+
+As detailed in [Principles of Product Development Flow pt. 2](/principles-of-product-development-flow-pt-2/), queues in engineering processes form immediately upstream of the stage with constrained capacity and high utilization. Dropping the cost of diff generation floods the scarce downstream resource: **human architectural review**.
+
+<Fig
+  label="Two side-by-side graphs modeled on queueing theory and Cumulative Flow Diagrams. Left: The Queue Multiplier Effect showing an exponential curve where queue size doubles from 80% to 90% verification capacity utilization, doubles again at 95%, and approaches infinity near 100%. Right: Two Cumulative Flow Diagrams comparing an Unconstrained Loop with a rapidly widening WIP band against a Governed Harness with thin, parallel arrival and departure lines."
+  replay
+>
+  <QueueMultiplierFlow />
+  <Fragment slot="caption">
+    <strong>Figure 5:</strong> Pushing verification capacity toward 90–95%+
+    utilization triggers the exponential{" "}
+    <strong>Queue Multiplier Effect</strong> (left) and widens the{" "}
+    <strong>Unverified WIP</strong> band on the Cumulative Flow Diagram (right).
+  </Fragment>
+</Fig>
+
+Whereas context rot inside the model is an attention-budget problem solved by pruning and offloading tokens, human reviewer utilization is a true queueing system governed by `ρ / (1 − ρ)`. Even if every agent context window is kept lean, generating diffs faster than senior engineers can verify them drives review utilization into the steep region of the queue curve.
+
+To keep arrival and departure lines parallel on the Cumulative Flow Diagram, teams need explicit operating policies around the review bottleneck:
+
+- **Hard WIP limits per reviewer:** Cap the number of active, unmerged agent PRs assigned to any senior reviewer (for example, at most 2 concurrent diffs) so review queues cannot grow silently.
+- **Maximum review-queue age:** Track the age of unverified diffs; if review wait time crosses a defined SLA (such as 24–48 hours), pause new automated diff generation until the queue clears.
+- **Stop-generation rule on CFD divergence:** When the arrival rate of agent-generated PRs exceeds the departure rate of verified merges, treat the widening WIP band as a backpressure signal to throttle task dispatch.
+- **Risk-weighted sequencing over FIFO:** Because software changes differ sharply in cost of delay and blast radius, review queues should never be processed first-in, first-out. Sequence small, isolated fixes with deterministic test evidence ahead of cross-service changes, and schedule ledger or state-machine modifications into dedicated architectural review blocks.
+
+### Governance Controls and Economic Trade-Offs
+
+Controlling total cost per accepted change requires a deterministic harness around the model. The table below maps each legacy failure mode to its architectural control, the metric used to verify it, and the operational overhead it introduces:
+
+| Control &amp; Target Failure Mode                                   | Observable Metric                                           | Overhead &amp; Trade-Off                                                                                   |
+| :------------------------------------------------------------------ | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| **Pre-execution contracts** (unbounded scope &amp; coupling)        | Out-of-scope file touch rate; PR size distribution          | Adds upfront planning latency; narrow path lists can trigger false rejects when valid dependencies surface |
+| **Deterministic host gates** (guardrail gaming &amp; poisoning)     | Share of defective attempts blocked before human review     | Requires maintaining baseline check commands and frozen-path rules as repository structure evolves         |
+| **Structured window rollover** (context rot &amp; clash)            | Rediscovery tool calls and tokens across multi-window tasks | Requires agent note-checkpointing discipline; large transcripts still require indexed local retrieval      |
+| **Confidence-gated sizing** (misallocated model & review spend)     | Total model + review cost per accepted change by task tier  | A miscalibrated bar misroutes work; a change wrongly judged small is caught and rerun in full              |
+| **Graph context &amp; curated tools** (confusion &amp; rediscovery) | Time and tokens to first valid edit in multi-module repos   | Introduces index refresh lag and requires periodic curation so stale conventions do not persist            |
+
+In our implementation, [`muxcode`](https://muxco.de/) and [`mux`](https://usemux.com/) map to these five controls:
+
+- **Contracts:** an Architect writes a scoped contract (goal, allowed paths, frozen paths, verification) before any code is written.
+- **Host gates:** deterministic checks in the host block out-of-scope edits, touched frozen paths and regressed project checks before a judge, always on a different model from the one that wrote the code, reviews the change.
+- **Window rollover:** a full context window rolls over to a fresh one through a structured file handoff, without lossy summarization.
+- **Sizing:** Clef, a calibrated decision model, decides how much process each change gets. A small change the project's checks can prove goes to a single worker; anything uncertain gets the full workflow; a change where a mistake could slip past the tests gets a second reviewer. A fast-path change that breaks a check is moved back to the full workflow.
+- **Context and tools:** `mux` supplies commit-bound context packets (`6,000` bytes by default, with two-hop import and call-graph neighbours) and Git-backed workspace memory, and each phase sees only the tools it needs.
+
+**When a harness is uneconomical:** Formal contracts, host gates, and multi-stage review are not free. For greenfield prototypes, disposable scripts, or isolated UI experiments with zero shared state and trivial rollback cost, the upfront latency of contract generation and strict path gating exceeds the expected downside risk. Governance pays for itself only where state is persistent, coupling is non-trivial, and senior review capacity is the binding constraint.
+
+### Running a Measured Pilot
+
+Rather than adopting coding agents across an entire legacy estate at once, or banning them after an unconstrained trial fails, test the economics in four bounded steps:
+
+1. **Select one bounded service:** Choose a single production repository with clear domain invariants, documented build checks, and measurable review flow. Designate schemas, test assertions, `.git` hooks, and deployment manifests as frozen paths.
+2. **Baseline four weeks of flow metrics:** Before enabling agent workflows, record median senior review time per PR, first-pass review rejection rate, rework iterations per merged change, and post-release change-failure rate.
+3. **Enforce explicit batch and WIP ceilings:** Require pre-execution scope contracts, cap diff scope to explicit file lists, limit concurrent unreviewed agent PRs per reviewer, and pause new agent runs whenever review queue age exceeds threshold.
+4. **Apply pre-agreed expand or stop criteria:** Expand to adjacent services only if total cycle time and loaded cost per accepted change decrease while change-failure rate and reviewer queue age remain flat or improve. If review queues widen or rework spikes, halt expansion and tighten batch size constraints.
+
+### The Decision Rule
+
+Coding agents make code cheap to write, not cheap to own. In a legacy system the bill arrives later, as review hours, rework, delay and incident risk, and it grows with the size and coupling of each change. The teams that come out ahead are not the ones generating the most code; they are the ones keeping each change small enough to verify, proving it in code before a person reads it, and spending senior attention only where a mistake would be expensive. Measure cost per accepted change, keep the review queue short, and let the evidence, not the demo, decide how far agents go.
+
+Documentation for the contracts, gates and shared index described here is at [muxco.de](https://muxco.de/) and [usemux.com](https://usemux.com/).
+
+<small>
+
+References:
+
+- [Effective Context Engineering for AI Agents (Anthropic Engineering)](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- [How Long Contexts Fail](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html)
+- [How to Fix Your Context](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html), & [The Problem is Prompt Debt by Drew Breunig](https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html).
+- [Context Rot: How Increasing Input Tokens Impacts LLM Performance (Chroma)](https://www.trychroma.com/research/context-rot)
+- [NoLiMa: Long-Context Evaluation Beyond Literal Matching (arXiv:2502.05167)](https://arxiv.org/abs/2502.05167)
+- [LLMs Get Lost In Multi-Turn Conversation (arXiv:2505.06120)](https://arxiv.org/abs/2505.06120)
+- [Less is More: Optimizing Function Calling for LLM Execution (arXiv:2411.15399)](https://arxiv.org/abs/2411.15399)
+- [RAG-MCP: Mitigating Prompt Bloat in LLM Tool Selection (arXiv:2505.03275)](https://arxiv.org/abs/2505.03275)
+- [SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks (arXiv:2603.24755)](https://arxiv.org/abs/2603.24755)
+- [Simple Made Easy by Rich Hickey](https://www.infoq.com/presentations/Simple-Made-Easy/)
+- [The Principles of Product Development Flow by Donald Reinertsen](https://www.amazon.com/gp/product/1935401009)
+- [Principles of Product Development Flow pt. 1](/principles-of-product-development-flow-pt-1/) & [pt. 2](/principles-of-product-development-flow-pt-2/)
+- [The Mythical Man-Month by Fred Brooks](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)
+
+</small>

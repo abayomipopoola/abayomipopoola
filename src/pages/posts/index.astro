@@ -11,8 +11,8 @@ const posts = await getAllBlogPosts();
   <div class="container">
     <div class="mb-8 flex justify-between gap-2">
       <h2 class="mb-2 text-2xl font-bold">{title}</h2>
-      <a href="/tags/" class="inline-block px-5 text-zinc-600 italic"
-        >Tags &raquo;
+      <a href="/tags/" class="inline-block px-5 text-zinc-600 italic">
+        Tags &raquo;
       </a>
     </div>
     <PostsByYear posts={posts} />
