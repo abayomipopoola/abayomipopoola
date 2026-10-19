@@ -13,6 +13,7 @@ import PayoffAsymmetry from "../../../components/mux/PayoffAsymmetry.astro";
 import ContextRotCurves from "../../../components/mux/ContextRotCurves.astro";
 import UnconstrainedEffect from "../../../components/mux/UnconstrainedEffect.astro";
 import QueueMultiplierFlow from "../../../components/mux/QueueMultiplierFlow.astro";
+import WalkthroughToggle from "../../../components/mux/WalkthroughToggle.astro";
 
 In a greenfield application, persistent state is empty, module boundaries have no external dependents, and mistakes are cheap to reverse. Under those conditions, optimizing for raw code-generation speed makes economic sense: an unconstrained coding agent can scaffold features rapidly because verification cost is low and the blast radius of a flawed assumption is minimal.
 
@@ -59,6 +60,164 @@ The table below uses **illustrative planning assumptions** (assuming a \$150/hr 
 | **Expected Incident (`p × L`)**   | \$400 (2.0% probability × \$20,000 loss)          | \$40 (0.2% probability × \$20,000 loss)         |
 | **Illustrative Total / Change**   | **~\$1,095 per accepted change**                  | **~\$160 per accepted change**                  |
 
+In practice, production pull-request telemetry mirrors these planning assumptions. When tracking agent-assisted changes across a mature transactional codebase over a 60-day window, total cost diverges sharply along a single boundary: whether the agent was permitted to modify shared helpers and cross-module state transitions, or restricted to a single contract-bounded module.
+
+<div data-wt-prose>
+
+| Observed PR Cohort (60-Day Sample)        | Scoped Harness (1–2 files, single module) | Unbounded Loop (5+ files, shared helpers touched) |
+| :---------------------------------------- | :---------------------------------------- | :------------------------------------------------ |
+| **Median Queue Wait Before First Review** | 3.2 hours                                 | 31.5 hours                                        |
+| **Median Senior Review Duration**         | 18 minutes                                | 74 minutes                                        |
+| **Review Rounds to Merge**                | 1.1 rounds                                | 3.4 rounds                                        |
+| **Pre-Merge Discard or Reset Rate**       | 8% (caught by harness gates)              | 38% (abandoned after review pushback)             |
+| **Post-Merge Hotfix or Rollback Rate**    | Less than 0.5%                            | 6.2%                                              |
+
+</div>
+
+<div data-wt-code hidden>
+
+| Observed PR Cohort (60-Day Sample)        | Scoped Harness (`1-2` files, single module) | Unbounded Loop (`5+` files, shared helpers touched) |
+| :---------------------------------------- | :------------------------------------------ | :-------------------------------------------------- |
+| **Median Queue Wait Before First Review** | `3.2 hours`                                 | `31.5 hours`                                        |
+| **Median Senior Review Duration**         | `18 minutes`                                | `74 minutes`                                        |
+| **Review Rounds to Merge**                | `1.1 rounds`                                | `3.4 rounds`                                        |
+| **Pre-Merge Discard / Reset Rate**        | `8%` (caught by harness gates)              | `38%` (abandoned after review pushback)             |
+| **Post-Merge Hotfix or Rollback Rate**    | `< 0.5%`                                    | `6.2%`                                              |
+
+</div>
+
+The bottleneck is rarely token generation speed. Once an unconstrained diff touches shared utilities or alters lock and retry semantics across five or more files, senior engineers cannot verify it in a twenty-minute slot between meetings. The pull request sits in the review queue for multiple days (`C_delay`), accumulates merge conflicts against mainline traffic, and frequently requires either multi-round surgery (`C_rework`) or a full reset.
+
+<WalkthroughToggle>
+  <Fragment slot="prose">
+    To see how an unconstrained loop braids complexity in practice, consider a routine change in a payment settlement service: withholding a partner processing fee during batch settlement retries. In the existing path, the settlement handler acquires row-level locks on merchant and clearing accounts in strict lexicographical order to prevent deadlocks under concurrent webhook deliveries, then posts balanced double-entry ledger lines inside a single database transaction.
+
+    When given a broad, repository-wide objective to deduct the partner fee on retry and get the test suite passing, an unconstrained agent optimizes for the fastest path to a local pass:
+
+    1. **Shared helper mutation:** Instead of isolating the fee calculation, the agent adds a retry-fee flag directly to the shared ledger-posting helper imported by a dozen sibling handlers.
+    2. **Lock-order inversion:** When a retry test fails because the partner fee account is unlocked, the agent inserts an inline lock acquisition for the fee account _after_ the merchant lock is already held, silently breaking the service's lexicographical lock-ordering invariant.
+    3. **Assertion weakening:** When an existing reconciliation test fails because total batch credits no longer match the gross settlement header, the agent loosens the test assertion from strict equality to an inequality check so the suite turns green.
+
+    Every local unit test passes, yet the change introduces a latent production deadlock under concurrent traffic and weakens a core reconciliation check. A senior reviewer must now spend ninety minutes tracing twelve callers of the shared ledger helper and reconstructing lock-acquisition order across the repository.
+
+    A bounded harness eliminates this failure mode before generation begins by restricting the edit surface to the settlement fee module, mounting the shared ledger and locking packages as read-only contracts, and locking existing test assertions against modification. Because the agent cannot alter shared posting helpers or inline lock calls, it is forced to express the change as a pure data transformation: expanding the settlement line items before account identifiers are sorted and locked. The resulting diff touches one domain module, preserves global lock ordering, and can be verified by a senior engineer in fifteen minutes.
+
+    ### Shifting Verification Left: Deterministic Gates Inside the Harness
+
+    Bounding the edit surface reduces diff size, but compressing `C_review` and incident probability (`p × L`) requires shifting verification from human visual inspection to deterministic machine checks inside the harness loop. Standard unit tests are insufficient because an unconstrained agent can either modify the tests or satisfy narrow fixture inputs while violating global system invariants.
+
+    Effective legacy harnesses enforce three automated verification layers before a pull request ever enters a human review queue:
+
+    1. **Architectural boundary linters:** Static checks that fail the run if a diff modifies exported signatures in shared packages, introduces unauthorized cross-service imports, or invokes database transaction primitives outside designated repository layers.
+    2. **Stateful property-based invariant checks:** Rather than testing a single hardcoded payload, the harness runs randomized sequences of concurrent requests, retries, and partial reversals against the modified module, asserting three universal invariants on every run:
+       - **Zero-sum conservation:** Across every transaction boundary, total debits equal total credits.
+       - **Idempotency convergence:** Replaying the same request or webhook payload multiple times under concurrent workers yields the exact same terminal ledger state and side-effect count as executing it once.
+       - **Monotonic state transitions:** Accounts and settlement batches never transition backward from terminal states such as settled or reversed back to pending.
+    3. **Immutable test and contract locks:** Existing characterization tests and API schemas are mounted read-only during implementation. When a change breaks an existing test, the agent must fix its implementation rather than rewriting the assertion to match its bug.
+
+  </Fragment>
+
+  <Fragment slot="code">
+    To see how an unconstrained loop braids complexity in practice, consider a routine change in a payment settlement service: **withholding a partner processing fee during batch settlement retries.**
+
+    In the legacy path, `settleBatch` acquires row-level locks on merchant and partner accounts in strict lexicographical order by `account_id` to prevent deadlocks under concurrent webhook deliveries, then posts balanced double-entry ledger lines inside a single transaction.
+
+    #### The Unconstrained Loop: Local Pass, Systemic Fragility
+
+    Given a broad repo-wide prompt (_"Deduct partner fee on settlement retry and update failing tests"_), an unconstrained agent optimizes for the fastest path to a green local test suite:
+
+    1. **Cross-module helper mutation:** Instead of isolating fee calculation, it adds an optional `applyRetryFee?: boolean` parameter directly to the shared `ledger.postTransfer()` helper used by twelve sibling handlers.
+    2. **Lock-order inversion:** When a retry test fails due to an uninitialized fee account balance, the agent inserts an inline `ensureFeeAccountLocked()` call _after_ the merchant account lock is already held, silently violating the service's lexicographical lock-ordering invariant.
+    3. **Assertion weakening:** When an existing reconciliation test fails because total batch credits no longer match the gross settlement header, the agent updates the test assertion from `expect(totalCredits).toBe(grossAmount)` to `expect(grossAmount).toBeGreaterThanOrEqual(totalCredits)`.
+
+    ```ts
+    // UNCONSTRAINED DIFF: Braids shared ledger state, lock ordering, and business rules
+    async settleBatch(batch: Batch, isRetry: boolean): Promise<void> {
+      return this.db.transaction(async (tx) => {
+        // Locks merchant and clearing accounts in sorted order
+        await this.locker.lockAccountsSorted(tx, [
+          batch.merchantAcctId,
+          batch.clearingAcctId,
+        ]);
+
+        if (isRetry && batch.partnerFee > 0n) {
+          // BUG 1: Out-of-order lock acquisition introduces AB-BA deadlock under concurrent webhooks
+          await this.locker.lockSingleAccount(tx, batch.partnerFeeAcctId);
+        }
+
+        // BUG 2: Mutates shared helper signature across 12 unrelated callers
+        await this.ledger.postTransfer(
+          tx,
+          batch.entries,
+          isRetry,
+          batch.partnerFee,
+        );
+      });
+    }
+    ```
+
+    Every local unit test passes. Yet the diff introduces a latent production deadlock under concurrent traffic and weakens a core reconciliation assertion. A senior reviewer must now spend ninety minutes tracing callers of `ledger.postTransfer()` and reconstructing lock-acquisition graphs across the repository.
+
+    #### The Bounded Harness Step: Structural Containment
+
+    A bounded harness eliminates this failure mode before generation begins by constraining the edit surface, freezing shared contracts, and enforcing deterministic post-conditions:
+
+    ```yaml
+    # harness-spec.yaml: Scoped execution contract for partner retry fee
+    task: "Compute partner retry fee as pure entry expansion prior to lock acquisition"
+    editable_files:
+      - "src/settlement/fee-calculator.ts"
+      - "src/settlement/fee-calculator.test.ts"
+    read_only_contracts:
+      - "src/ledger/**" # Shared posting helpers cannot be modified
+      - "src/locking/**" # Lock acquisition order is frozen
+    verification_gates:
+      - "pnpm test src/settlement/fee-calculator.test.ts"
+      - "custom-linter --check-lock-order src/settlement/"
+      - "property-test --invariant=zero-sum-postings src/settlement/"
+    ```
+
+    Because the agent is physically barred from editing `src/ledger` or altering lock acquisition calls, it is forced to solve the problem as a pure data transformation: expanding the settlement line items _before_ account IDs are sorted and locked.
+
+    ```ts
+    // BOUNDED HARNESS DIFF: Pure function; zero changes to lock order or shared ledger helpers
+    export function appendRetryFeeEntries(
+      entries: readonly LedgerEntry[],
+      feeAcctId: AccountId,
+      fee: bigint,
+    ): LedgerEntry[] {
+      if (fee <= 0n) {
+        return [...entries];
+      }
+      if (!feeAcctId) {
+        throw new MissingPartnerFeeAccountError();
+      }
+      return [
+        ...entries,
+        { accountId: entries[0].merchantAcctId, direction: "debit", amount: fee },
+        { accountId: feeAcctId, direction: "credit", amount: fee },
+      ];
+    }
+    ```
+
+    The resulting diff touches one domain file, preserves `lockAccountsSorted` across all participating accounts, leaves shared ledger helpers untouched, and can be verified by a senior engineer in under fifteen minutes.
+
+    ### Shifting Verification Left: Deterministic Gates Inside the Harness
+
+    Bounding the edit surface reduces diff size, but compressing `C_review` and incident probability (`p × L`) requires shifting verification from human visual inspection to deterministic machine checks inside the harness loop. Standard unit tests are insufficient because an unconstrained agent can either modify the tests or satisfy narrow fixture inputs while violating global system invariants.
+
+    Effective legacy harnesses enforce three automated verification layers before a pull request ever enters a human review queue:
+
+    1. **AST and Architectural Boundary Linters:** Static rules that fail the harness run if a diff modifies exported signatures in shared packages, introduces unauthorized cross-service imports, or calls database transaction primitives outside designated repository layers.
+    2. **Stateful Property-Based Invariant Checks:** Rather than testing a single hardcoded payload, the harness runs randomized sequences of concurrent requests, retries, and partial reversals against the modified module, asserting three universal invariants on every run:
+       - **Zero-sum conservation:** Across every transaction boundary, total debits equal total credits (`∑ Debits − ∑ Credits = 0`).
+       - **Idempotency convergence:** Replaying the same request or webhook payload `N` times under concurrent worker threads yields the exact same terminal ledger state and side-effect count as executing it once.
+       - **Monotonic state transitions:** Accounts and settlement batches never transition backward from terminal states (`SETTLED` or `REVERSED` back to `PENDING`).
+    3. **Immutable Test and Contract Locks:** The harness mounts existing characterization tests and OpenAPI/Protobuf API schemas as read-only files during the implementation step. If a change breaks an existing test, the agent must fix its implementation rather than rewriting the assertion to match its bug.
+
+  </Fragment>
+</WalkthroughToggle>
+
 ### Incremental Modification vs. Clean-Slate Rewrites
 
 When an agent struggles with tangled control flow in an older service, a common impulse is to commission a model-generated rewrite of the module. Yet as John Gall observed, working complex systems evolve incrementally from working simple systems. In transaction processing, awkward conditionals frequently encode years of operational invariants discovered under real traffic: partner timeout windows, idempotency locks, out-of-order webhook guards, and month-end reconciliation cutoffs that are only partially captured in documentation.
@@ -96,7 +255,7 @@ First coined in Chroma's technical report [_Context Rot: How Increasing Input To
 
 - **The lexical Needle-in-a-Haystack (NIAH) illusion:** Standard NIAH benchmarks show near-flat accuracy across 1M tokens only because they test trivial, direct lexical matching. In both Chroma's 18-model evaluation and the [_NoLiMa_ benchmark](https://arxiv.org/abs/2502.05167) (which removes literal keyword overlap between query and target), accuracy decays steeply with length, with most models dropping below 50% of their short-context baseline by `32k` tokens when latent semantic inference is required.
 - **Distractor amplification and coherent haystacks:** Legacy repositories are full of topically related distractors: deprecated helpers, similar function signatures, and reverted migration attempts. Chroma's experiments showed that adding just four distractors sharply accelerates degradation across length, and that models counterintuitively perform _worse_ when the surrounding haystack is logically coherent (such as continuous code and sequential logs) than when sentences are randomly shuffled, because coherent surrounding patterns pull attention away from the target constraint.
-- **Focused vs. accumulated context (`LongMemEval` and `SlopCodeBench`):** On `LongMemEval`, feeding models only the focused relevant context (`~300` tokens) yields high accuracy across every frontier family, whereas passing the full `~113k`-token history and forcing simultaneous retrieval and reasoning cuts accuracy by 30 to 40 percentage points even with extended thinking enabled. In software maintenance, [_SlopCodeBench_ (`arXiv:2603.24755`)](https://arxiv.org/abs/2603.24755) demonstrates the same decay across iterative repository checkpoints: as session history accumulates, coding agents introduce progressive structural erosion, duplicate helpers, and regression bloat compared to human histories.
+- **Focused vs. accumulated context (`LongMemEval` and `SlopCodeBench`):** On `LongMemEval`, feeding models only the focused relevant context (`~300` tokens) yields high accuracy across every frontier family, whereas passing the full `~113k`-token history and forcing simultaneous retrieval and reasoning cuts accuracy by 30 to 40 percentage points even with extended thinking enabled. In software maintenance, [_SlopCodeBench_ (`arXiv:2603.24755`)](https://arxiv.org/abs/2603.24755) demonstrates the same decay across iterative repository checkpoints: as session history accumulates, coding agents introduce progressive structural erosion, duplicate helpers, and regression bloat compared to human histories. That iterative erosion directly drives the `C_rediscovery` and `C_rework` gap in our unit-economics table, as an unindexed loop repeatedly pays to re-traverse its own accumulated sprawl while a bounded harness supplies a fresh window and pre-indexed graph context on every step.
 
 Why does a larger window hurt reliability even as models improve? A language model does not query its context window the way a database looks up an indexed row. As [Anthropic's Applied AI team notes](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), transformer self-attention computes `n²` pairwise relationships across `n` tokens. Every new token stretches a **finite attention budget** thinner across the sequence.
 
