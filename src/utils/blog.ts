@@ -29,7 +29,7 @@ export const sortBlogPosts = (posts: BlogPost[]) =>
 export const getAllBlogPosts = async () =>
   sortBlogPosts(await getCollection("blog"));
 
-export const getRecentBlogPosts = async (limit = 8) =>
+export const getRecentBlogPosts = async (limit = 15) =>
   (await getAllBlogPosts()).slice(0, limit);
 
 export const getPostHref = (post: BlogPost) => `/${post.id}/`;
