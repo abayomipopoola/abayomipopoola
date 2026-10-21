@@ -1,0 +1,143 @@
+---
+import type { MarkdownHeading } from "astro";
+
+interface Props {
+  headings: MarkdownHeading[];
+  mode?: "sidebar" | "mobile";
+}
+
+const { headings, mode = "sidebar" } = Astro.props;
+
+// Filter to top-level section headings (h2 and h3). If a post has >= 2 h2/h3
+// headings, use those for a clean, scannable ToC; otherwise include h4s.
+const h2AndH3 = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const tocHeadings =
+  h2AndH3.length >= 2
+    ? h2AndH3
+    : headings.filter((h) => h.depth >= 2 && h.depth <= 4);
+
+const minDepth = tocHeadings.reduce(
+  (min, h) => Math.min(min, h.depth),
+  tocHeadings[0]?.depth ?? 3,
+);
+---
+
+{tocHeadings.length >= 2 && mode === "sidebar" && (
+  <aside
+    class="toc-sidebar hidden xl:block"
+    aria-label="Table of Contents"
+    data-toc-sidebar
+  >
+    <nav class="toc-nav">
+      <p class="toc-title">Table of Contents</p>
+      <ul class="toc-list">
+        {tocHeadings.map((heading, idx) => (
+          <li
+            class:list={[
+              "toc-item",
+              heading.depth > minDepth && "toc-item-sub",
+            ]}
+          >
+            <a
+              href={`#${heading.slug}`}
+              class:list={["toc-link", idx === 0 && "is-active"]}
+              data-toc-link={heading.slug}
+              title={heading.text}
+            >
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </aside>
+)}
+
+{tocHeadings.length >= 2 && mode === "mobile" && (
+  <nav
+    class="toc-mobile not-prose my-5 xl:hidden"
+    aria-label="Table of Contents"
+  >
+    <p class="toc-title">Table of Contents</p>
+    <ul class="toc-mobile-list">
+      {tocHeadings.map((heading) => (
+        <li
+          class:list={[
+            "toc-mobile-item",
+            heading.depth > minDepth && "toc-mobile-item-sub",
+          ]}
+        >
+          <a href={`#${heading.slug}`} class="toc-mobile-link">
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
+
+{tocHeadings.length >= 2 && mode === "sidebar" && <script is:inline>
+  (() => {
+    const initToc = () => {
+      const links = Array.from(document.querySelectorAll("[data-toc-link]"));
+      if (links.length === 0) return;
+
+      const slugs = links
+        .map((l) => l.getAttribute("data-toc-link"))
+        .filter(Boolean);
+      const headingEls = slugs
+        .map((slug) => document.getElementById(slug))
+        .filter(Boolean);
+
+      if (headingEls.length === 0) return;
+
+      let activeSlug = slugs[0];
+
+      const setActive = (slug) => {
+        if (!slug || slug === activeSlug) return;
+        activeSlug = slug;
+        for (const link of links) {
+          const isMatch = link.getAttribute("data-toc-link") === slug;
+          link.classList.toggle("is-active", isMatch);
+        }
+      };
+
+      const updateOnScroll = () => {
+        const threshold = 130;
+        let current = headingEls[0].id;
+        for (const el of headingEls) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= threshold) {
+            current = el.id;
+          } else {
+            break;
+          }
+        }
+        setActive(current);
+      };
+
+      let ticking = false;
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!ticking) {
+            window.requestAnimationFrame(() => {
+              updateOnScroll();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        },
+        { passive: true },
+      );
+
+      updateOnScroll();
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initToc, { once: true });
+    } else {
+      initToc();
+    }
+  })();
+</script>}

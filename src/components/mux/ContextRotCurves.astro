@@ -2,34 +2,39 @@
 // Digest of Chroma's "Context Rot" empirical curves and corroborating
 // benchmarks (LongMemEval, NoLiMa, Multi-Turn Sharding, Tool Sprawl, SlopCodeBench)
 // paired with the Agent Context Window Anatomy & 4 Failure Modes / Subtractive Fixes.
+import katex from "katex";
+
+const tex = (expr: string) =>
+  katex.renderToString(expr, { throwOnError: false, output: "htmlAndMathml" });
+
 const failureModes = [
   {
-    title: "1. Context Poisoning",
+    titleHtml: `1. Context Poisoning ${tex("\\rightarrow")} ${tex("C_{\\text{rework}}")}, ${tex("(p \\times L)")}`,
     fix: "Fix: Validate",
     c: "coral",
     fixColor: "teal",
-    sub: "False conclusion in self-notes (e.g. 'new DB driver auto-retries') is treated as ground truth, deleting valid retry logic across files. Run a real test before persisting notes.",
+    sub: "Unverified self-note ('upstream locks accounts') is treated as ground truth, stripping sort() from settleBatch. Validate claims with a deterministic check before persisting notes.",
   },
   {
-    title: "2. Context Distraction",
+    titleHtml: `2. Context Distraction ${tex("\\rightarrow")} ${tex("C_{\\text{redisc}}")}, ${tex("C_{\\text{review}}")}`,
     fix: "Fix: Offload to Files",
     c: "amber",
     fixColor: "teal",
-    sub: "An hour of past actions dominates pattern continuation over reasoning. Avoid lossy 'photocopy of a photocopy' summaries; store detailed state on disk and load on demand.",
+    sub: "Lossy auto-compaction ('photocopy of a photocopy') drops minor-unit and lock-ordering constraints. Purge raw dumps; store detailed state on disk and load graph slices on demand.",
   },
   {
-    title: "3. Context Confusion",
+    titleHtml: `3. Context Confusion ${tex("\\rightarrow")} ${tex("C_{\\text{gen}}")}, ${tex("C_{\\text{review}}")}`,
     fix: "Fix: Curate (19 vs. 46 tools)",
     c: "purple",
     fixColor: "teal",
-    sub: "Tool sprawl dilutes attention across unused schemas (failing at 46 tools where 19 pass; >30 tools in RAG-MCP). Expose only the handful of tools the step requires.",
+    sub: "Tool sprawl dilutes attention across unused schemas (failing at 46 tools where 19 pass; >30 tools in RAG-MCP). Scope tools strictly to the current execution phase.",
   },
   {
-    title: "4. Context Clash",
+    titleHtml: `4. Context Clash ${tex("\\rightarrow")} ${tex("C_{\\text{redisc}}")}, ${tex("C_{\\text{rework}}")}`,
     fix: "Fix: Prune / Fresh Window",
     c: "coral",
     fixColor: "teal",
-    sub: "Early wrong assumptions and later corrections coexist in the prompt (-39% in sharded multi-turn tests). Delete superseded state outright or roll over to a clean window.",
+    sub: "Failed settleBatch attempt diffs and compiler errors remain in transcript (-39% in sharded multi-turn tests), causing retry oscillation. Roll over to a clean window per step.",
   },
 ];
 ---
@@ -395,7 +400,7 @@ const failureModes = [
         style={`--d:${1900 + idx * 150}`}
       >
         <div class="ec-rot-card-head">
-          <span class="ec-rot-card-title">{item.title}</span>
+          <span class="ec-rot-card-title" set:html={item.titleHtml} />
           <span class="fx-chip" data-c={item.fixColor} data-wrap>
             {item.fix}
           </span>

@@ -3,6 +3,7 @@ import { satteri } from "@astrojs/markdown-satteri";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import { autoNewTabExternalLinks } from "./src/autoNewTabExternalLinks";
+import { katexMathPlugin } from "./src/katexMathPlugin";
 import partytown from "@astrojs/partytown";
 import tailwindcss from "@tailwindcss/vite";
 
@@ -82,8 +83,16 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), partytown()],
 
   markdown: {
+    syntaxHighlight: {
+      type: "shiki",
+      excludeLangs: ["math"],
+    },
     processor: satteri({
+      features: {
+        math: { singleDollarTextMath: false },
+      },
       hastPlugins: [
+        katexMathPlugin(),
         autoNewTabExternalLinks({ domain: new URL(site).hostname }),
       ],
     }),

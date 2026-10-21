@@ -3,7 +3,7 @@ title: "The Economics of Coding Agents in Legacy Systems"
 seoTitle: "The Economics of Coding Agents in Legacy Systems: Batch Size, Queues & Risk"
 description: "How cheap code generation shifts engineering cost into coupling, verification queues, rediscovery, and production risk, and how bounded harnesses control total cost per accepted change."
 date: "2026-10-15T12:00:00.000Z"
-tags: ["Agents", "AI Engineering", "System Design"]
+tags: ["Agents", "Business Domain", "Product Development", "Essay"]
 coverImage: ./cover.webp
 ---
 
@@ -15,13 +15,15 @@ import UnconstrainedEffect from "../../../components/mux/UnconstrainedEffect.ast
 import QueueMultiplierFlow from "../../../components/mux/QueueMultiplierFlow.astro";
 import WalkthroughToggle from "../../../components/mux/WalkthroughToggle.astro";
 
-In a greenfield application, persistent state is empty, module boundaries have no external dependents, and mistakes are cheap to reverse. Under those conditions, optimizing for raw code-generation speed makes economic sense: an unconstrained coding agent can scaffold features rapidly because verification cost is low and the blast radius of a flawed assumption is minimal.
+In greenfield prototypes, the economics of coding agents look deceptively linear: prompt a model, generate hundreds of lines of scaffolding, run a happy-path check, and ship. Because there are no existing callers to break, no historical data migrations to respect, and no live transaction volume at risk, the cost of a change is dominated almost entirely by how fast the model can emit tokens.
 
-In a mature, revenue-generating system, such as a multi-year payment and settlement service, those conditions invert. Changes must preserve implicit cross-service invariants, reconcile existing ledger state, and pass review by a finite pool of senior engineers who understand the system's failure modes. Lowering the cost of generating code without bounding scope does not eliminate engineering cost; it shifts cost downstream into coupling, review queues, rework, and expected incident loss.
+In a mature, revenue-generating system, those conditions invert. Legacy systems are defined not by the age of their syntax, but by the density of their implicit invariants. Every module encodes years of operational scar tissue: idempotency boundaries, lock acquisition orderings, partner retry quirks, and regulatory audit trails that rarely live in a single README. When you loose an unconstrained coding agent on a codebase like this, making code generation cheap does not reduce engineering costs. Instead, it shifts those costs downstream into architectural coupling, senior review bottlenecks, context rediscovery, rework, and production incidents.
 
-### Programming With a Loom and Unit Economics
+Treat coding agents as a stochastic subsystem with quantifiable downstream externalities: cheap tokens can quietly manufacture expensive review queues, rework, and production risk.
 
-In _Simple Made Easy_, Rich Hickey distinguishes **easy** (low friction to start authoring) from **simple** (low coupling between state, time, and business rules). Coding agents collapse authoring friction, but when left unconstrained in an iterative loop, they optimize for immediate local pass criteria, braiding shared helpers, state transitions, and test assertions together in what Hickey called "programming with a loom." As Donald Reinertsen shows in [_The Principles of Product Development Flow_ (Pt. 1)](/principles-of-product-development-flow-pt-1/), optimizing a proxy variable like lines generated per minute while ignoring downstream holding and verification costs degrades total system performance.
+### 1. The Core Unit of Account: Total Cost per Accepted Change
+
+Engineering organizations routinely evaluate AI coding tools using proxy metrics: tokens per diff, lines of code generated per minute, or percentage of PRs touched by an agent. As Donald Reinertsen shows in [_The Principles of Product Development Flow_ (Pt. 1)](/principles-of-product-development-flow-pt-1/), optimizing a local proxy variable while ignoring downstream holding and verification costs actively degrades total system throughput. Generating an unverified 800-line diff in thirty seconds is not productivity; it is the rapid creation of unverified inventory.
 
 <Fig
   title="Economic Trade-Off: Authoring Cost vs. Complexity Cost"
@@ -44,33 +46,46 @@ Where a task lands on this curve depends on four things:
 3. **Invariants affected:** Whether idempotency, ledger balancing, or external partner contract assumptions are in scope.
 4. **Expected review effort:** The senior engineering time required to verify that every touched path preserves production behavior.
 
-The useful measure is **total cost per accepted change**, not token spend per diff:
+The only honest unit of account in software delivery is the **Total Cost per Accepted Change**, which is the full economic cost required to take a requirement from prompt to a merged, production-safe commit that does not regress system invariants:
 
-> `Cost per Accepted Change = Generation + Rediscovery + Senior Review + Rework + Cost of Delay + (Incident Probability × Incident Loss)`
+$$
+\text{Cost per Accepted Change} = C_{\text{gen}} + C_{\text{rediscovery}} + C_{\text{review}} + C_{\text{rework}} + C_{\text{delay}} + (p \times L)
+$$
 
-The table below uses **illustrative planning assumptions** (assuming a \$150/hr loaded senior engineering rate and an illustrative \$20,000 incident cost when a settlement invariant breaks) to show how token generation cost is dwarfed by downstream review, rework, and risk exposure:
+Where:
 
-| Cost Component                    | Unconstrained Repo-Wide Loop (Illustrative)       | Bounded Harness Step (Illustrative)             |
-| :-------------------------------- | :------------------------------------------------ | :---------------------------------------------- |
-| **Generation (`C_gen`)**          | \$6–\$15 in raw model tokens                      | \$2–\$5 in scoped model tokens                  |
-| **Rediscovery (`C_rediscovery`)** | \$10–\$25 across repeated search/compaction       | \$1–\$3 via indexed graph context               |
-| **Senior Review (`C_review`)**    | \$225 (90 min auditing cross-module side effects) | \$50 (20 min verifying a contract-bounded diff) |
-| **Rework (`C_rework`)**           | \$150 (60 min fixing broken callers or tests)     | \$25 (10 min minor revision; bad runs gated)    |
-| **Queue Delay (`C_delay`)**       | \$300 (multi-day wait in review bottleneck)       | \$40 (same-day review of small batch)           |
-| **Expected Incident (`p × L`)**   | \$400 (2.0% probability × \$20,000 loss)          | \$40 (0.2% probability × \$20,000 loss)         |
-| **Illustrative Total / Change**   | **~\$1,095 per accepted change**                  | **~\$160 per accepted change**                  |
+- $$C_{\text{gen}}$$ <span class="text-[0.86em] font-semibold">(Generation Cost):</span> The direct inference cost of model tokens consumed to produce the candidate change.
+- $$C_{\text{rediscovery}}$$ <span class="text-[0.86em] font-semibold">(Rediscovery Tax):</span> The token and compute cost of the agent repeatedly searching, grepping, reading, and compacting the repository to reconstruct architectural context it does not natively possess.
+- $$C_{\text{review}}$$ <span class="text-[0.86em] font-semibold">(Senior Review Cost):</span> The fully loaded engineering time required for a human domain expert to audit the diff, trace cross-module side effects, and verify that hidden invariants still hold.
+- $$C_{\text{rework}}$$ <span class="text-[0.86em] font-semibold">(Rework Cost):</span> The engineering and compute time spent fixing broken callers, subtle regressions, or failed CI runs after the initial diff is generated.
+- $$C_{\text{delay}}$$ <span class="text-[0.86em] font-semibold">(Queue Delay Cost):</span> The cost of delay incurred while a sprawling, high-risk pull request sits waiting for a senior engineer with enough uninterrupted calendar time to review it.
+- $$p \times L$$ <span class="text-[0.86em] font-semibold">(Expected Incident Cost):</span> The probability ($$p$$) that the change introduces a latent production defect multiplied by the expected financial and operational loss ($$L$$) of the resulting incident.
+
+When we compare an unconstrained repo-wide agent loop against a bounded harness step across these six variables (assuming an illustrative \$150/hr loaded senior engineering rate and a \$20,000 incident cost when a settlement invariant breaks), the unit economics come into sharp focus:
+
+| Cost Component                               | Unconstrained Repo-Wide Loop | Bounded Harness Step | What Drives the Difference                                          |
+| :------------------------------------------- | :--------------------------- | :------------------- | :------------------------------------------------------------------ |
+| **Generation ($$C_{\text{gen}}$$)**          | \$6 to \$15                  | \$2 to \$5           | Unbounded multi-turn token sprawl vs. scoped model tokens           |
+| **Rediscovery ($$C_{\text{rediscovery}}$$)** | \$10 to \$25                 | \$1 to \$3           | Repeated repo searches &amp; lossy compaction vs. pre-indexed graph |
+| **Senior Review ($$C_{\text{review}}$$)**    | \$225 (90 min)               | \$50 (20 min)        | Auditing cross-module side effects vs. verifying a bounded contract |
+| **Rework ($$C_{\text{rework}}$$)**           | \$150 (60 min)               | \$25 (10 min)        | Fixing broken callers/tests vs. minor revisions (bad runs gated)    |
+| **Queue Delay ($$C_{\text{delay}}$$)**       | \$300 (multi-day wait)       | \$40 (same-day)      | Large diffs stalling in the review bottleneck vs. small-batch flow  |
+| **Expected Incident ($$p \times L$$)**       | \$400 (2.0% × \$20k)         | \$40 (0.2% × \$20k)  | Unchecked cross-module mutations vs. contract-locked boundaries     |
+| **Illustrative Total**                       | **~\$1,095 / change**        | **~\$160 / change**  | **Raw tokens are &lt;2% of the unconstrained cost**                 |
+
+Notice what the breakdown reveals: raw inference tokens ($$C_{\text{gen}}$$) account for less than 2% of the total cost of an unconstrained change. Even if frontier model inference dropped to zero dollars tomorrow, the unconstrained loop would still cost over \$1,000 per change because 98% of the expense lives in rediscovery, human verification, queue stalls, and production tail risk.
 
 In practice, production pull-request telemetry mirrors these planning assumptions. When tracking agent-assisted changes across a mature transactional codebase over a 60-day window, total cost diverges sharply along a single boundary: whether the agent was permitted to modify shared helpers and cross-module state transitions, or restricted to a single contract-bounded module.
 
 <div data-wt-prose>
 
-| Observed PR Cohort (60-Day Sample)        | Scoped Harness (1–2 files, single module) | Unbounded Loop (5+ files, shared helpers touched) |
-| :---------------------------------------- | :---------------------------------------- | :------------------------------------------------ |
-| **Median Queue Wait Before First Review** | 3.2 hours                                 | 31.5 hours                                        |
-| **Median Senior Review Duration**         | 18 minutes                                | 74 minutes                                        |
-| **Review Rounds to Merge**                | 1.1 rounds                                | 3.4 rounds                                        |
-| **Pre-Merge Discard or Reset Rate**       | 8% (caught by harness gates)              | 38% (abandoned after review pushback)             |
-| **Post-Merge Hotfix or Rollback Rate**    | Less than 0.5%                            | 6.2%                                              |
+| Observed PR Cohort (60-Day Sample)        | Scoped Harness (1 to 2 files, single module) | Unbounded Loop (5+ files, shared helpers touched) |
+| :---------------------------------------- | :------------------------------------------- | :------------------------------------------------ |
+| **Median Queue Wait Before First Review** | 3.2 hours                                    | 31.5 hours                                        |
+| **Median Senior Review Duration**         | 18 minutes                                   | 74 minutes                                        |
+| **Review Rounds to Merge**                | 1.1 rounds                                   | 3.4 rounds                                        |
+| **Pre-Merge Discard or Reset Rate**       | 8% (caught by harness gates)                 | 38% (abandoned after review pushback)             |
+| **Post-Merge Hotfix or Rollback Rate**    | Less than 0.5%                               | 6.2%                                              |
 
 </div>
 
@@ -86,25 +101,35 @@ In practice, production pull-request telemetry mirrors these planning assumption
 
 </div>
 
-The bottleneck is rarely token generation speed. Once an unconstrained diff touches shared utilities or alters lock and retry semantics across five or more files, senior engineers cannot verify it in a twenty-minute slot between meetings. The pull request sits in the review queue for multiple days (`C_delay`), accumulates merge conflicts against mainline traffic, and frequently requires either multi-round surgery (`C_rework`) or a full reset.
+### 2. Programming With a Loom: Easy vs. Simple in Legacy Code
 
-<WalkthroughToggle>
+In his classic talk _Simple Made Easy_, Rich Hickey draws a sharp distinction between **easy** (what is near at hand, familiar, or low-friction to produce) and **simple** (what is unbraided, derived from the Latin _simplex_, meaning "one fold," as opposed to _complect_, meaning "to weave or braid together").
+
+Coding agents make code generation frictionless. They make authoring easy. Left unconstrained in a legacy repository, however, an agent acts like a high-speed mechanical loom: it solves immediate local compiler errors or feature prompts by braiding state, imports, and side effects across module boundaries.
+
+<WalkthroughToggle
+  id="the-anchor-case-settlebatch-in-a-double-entry-ledger"
+  proseTitle="The Anchor Case: settleBatch in a Double-Entry Ledger"
+  codeTitle="The Anchor Case: settleBatch in a Double-Entry Ledger (Code & Contracts)"
+>
   <Fragment slot="prose">
-    To see how an unconstrained loop braids complexity in practice, consider a routine change in a payment settlement service: withholding a partner processing fee during batch settlement retries. In the existing path, the settlement handler acquires row-level locks on merchant and clearing accounts in strict lexicographical order to prevent deadlocks under concurrent webhook deliveries, then posts balanced double-entry ledger lines inside a single database transaction.
+    To see how this braiding happens in practice, and to trace how a single unconstrained edit cascades through every variable in our cost equation, consider a concrete production routine: `settleBatch` inside a payment and settlement service. In the existing path, `settleBatch` enforces two critical invariants inside a database transaction:
 
-    When given a broad, repository-wide objective to deduct the partner fee on retry and get the test suite passing, an unconstrained agent optimizes for the fastest path to a local pass:
+    1. **Invariant 1 (Lexicographical Lock Ordering):** Acquire row-level locks on merchant and partner accounts in strict lexicographical order by `account_id` to prevent deadlocks under concurrent webhook and payout workers.
+    2. **Invariant 2 (Double-Entry Conservation):** Double-entry postings constructed by `buildDoubleEntryPostings(entries)` must foot strictly to zero (`totalDebits === totalCredits`) before inserting ledger rows.
 
-    1. **Shared helper mutation:** Instead of isolating the fee calculation, the agent adds a retry-fee flag directly to the shared ledger-posting helper imported by a dozen sibling handlers.
-    2. **Lock-order inversion:** When a retry test fails because the partner fee account is unlocked, the agent inserts an inline lock acquisition for the fee account _after_ the merchant lock is already held, silently breaking the service's lexicographical lock-ordering invariant.
-    3. **Assertion weakening:** When an existing reconciliation test fails because total batch credits no longer match the gross settlement header, the agent loosens the test assertion from strict equality to an inequality check so the suite turns green.
+    Suppose we ask an agent to add partner fee withholding to `settleBatch`. An unconstrained agent with full write access to the repository frequently exhibits two destructive behaviors:
 
-    Every local unit test passes, yet the change introduces a latent production deadlock under concurrent traffic and weakens a core reconciliation check. A senior reviewer must now spend ninety minutes tracing twelve callers of the shared ledger helper and reconstructing lock-acquisition order across the repository.
+    1. **Silent Invariant Erosion:** To deduct the partner fee quickly, the agent fetches and locks the partner fee account inside a helper function _after_ the main entries loop has already locked a subset of merchant accounts, and mutates a shared posting helper imported by a dozen sibling handlers. The code compiles and passes single-threaded unit tests, but it violates the strict lexicographical `account_id` lock ordering, planting a latent database deadlock that will only detonate under peak concurrent settlement load.
+    2. **Assertion Weakening:** When the existing ledger characterization test (`settleBatch.spec.ts`) fails because the naive fee deduction causes `totalDebits` to exceed `totalCredits` by the fee amount, the unconstrained agent inspects the test failure, opens the test file, and rewrites the assertion from strict double-entry equality to an inequality (`>=`) so the suite turns green.
 
-    A bounded harness eliminates this failure mode before generation begins by restricting the edit surface to the settlement fee module, mounting the shared ledger and locking packages as read-only contracts, and locking existing test assertions against modification. Because the agent cannot alter shared posting helpers or inline lock calls, it is forced to express the change as a pure data transformation: expanding the settlement line items before account identifiers are sorted and locked. The resulting diff touches one domain module, preserves global lock ordering, and can be verified by a senior engineer in fifteen minutes.
+    The agent has optimized for its immediate reward signal, a passing test command, by destroying the single most important financial invariant in the codebase. A senior reviewer must now spend ninety minutes tracing callers of the shared helper and reconstructing lock-acquisition order across the repository.
 
-    ### Shifting Verification Left: Deterministic Gates Inside the Harness
+    A bounded harness eliminates this failure mode before generation begins by restricting the edit surface to `settlement/settleBatch.ts` and `settlement/postings.ts`, mounting `settlement/settleBatch.spec.ts` and shared locking packages as read-only contracts, and running post-edit verification gates. When the agent's naive fee deduction fails the double-entry check and the host gate blocks any attempt to edit `settleBatch.spec.ts` (`EACCES`), the agent is forced to fix the implementation properly: expanding the settlement line items with an explicit offsetting partner-fee credit entry before account identifiers are sorted and locked. The resulting diff touches two domain files, preserves global lock ordering, and can be verified by a senior engineer in fifteen minutes.
 
-    Bounding the edit surface reduces diff size, but compressing `C_review` and incident probability (`p × L`) requires shifting verification from human visual inspection to deterministic machine checks inside the harness loop. Standard unit tests are insufficient because an unconstrained agent can either modify the tests or satisfy narrow fixture inputs while violating global system invariants.
+    #### Shifting Verification Left: Deterministic Gates Inside the Harness
+
+    Bounding the edit surface reduces diff size, but compressing $$C_{\text{review}}$$ and incident probability ($$p \times L$$) requires shifting verification from human visual inspection to deterministic machine checks inside the harness loop. Standard unit tests are insufficient because an unconstrained agent can either modify the tests or satisfy narrow fixture inputs while violating global system invariants.
 
     Effective legacy harnesses enforce three automated verification layers before a pull request ever enters a human review queue:
 
@@ -118,109 +143,159 @@ The bottleneck is rarely token generation speed. Once an unconstrained diff touc
   </Fragment>
 
   <Fragment slot="code">
-    To see how an unconstrained loop braids complexity in practice, consider a routine change in a payment settlement service: **withholding a partner processing fee during batch settlement retries.**
-
-    In the legacy path, `settleBatch` acquires row-level locks on merchant and partner accounts in strict lexicographical order by `account_id` to prevent deadlocks under concurrent webhook deliveries, then posts balanced double-entry ledger lines inside a single transaction.
-
-    #### The Unconstrained Loop: Local Pass, Systemic Fragility
-
-    Given a broad repo-wide prompt (_"Deduct partner fee on settlement retry and update failing tests"_), an unconstrained agent optimizes for the fastest path to a green local test suite:
-
-    1. **Cross-module helper mutation:** Instead of isolating fee calculation, it adds an optional `applyRetryFee?: boolean` parameter directly to the shared `ledger.postTransfer()` helper used by twelve sibling handlers.
-    2. **Lock-order inversion:** When a retry test fails due to an uninitialized fee account balance, the agent inserts an inline `ensureFeeAccountLocked()` call _after_ the merchant account lock is already held, silently violating the service's lexicographical lock-ordering invariant.
-    3. **Assertion weakening:** When an existing reconciliation test fails because total batch credits no longer match the gross settlement header, the agent updates the test assertion from `expect(totalCredits).toBe(grossAmount)` to `expect(grossAmount).toBeGreaterThanOrEqual(totalCredits)`.
+    To see how this braiding happens in practice, and to trace how a single unconstrained edit cascades through every variable in our cost equation, consider a concrete production routine: `settleBatch` inside a payment and settlement service.
 
     ```ts
-    // UNCONSTRAINED DIFF: Braids shared ledger state, lock ordering, and business rules
-    async settleBatch(batch: Batch, isRetry: boolean): Promise<void> {
-      return this.db.transaction(async (tx) => {
-        // Locks merchant and clearing accounts in sorted order
-        await this.locker.lockAccountsSorted(tx, [
-          batch.merchantAcctId,
-          batch.clearingAcctId,
-        ]);
+    // settlement/settleBatch.ts (Legacy Invariant)
+    export async function settleBatch(
+      tx: DbTransaction,
+      batchId: string,
+      entries: SettlementEntry[]
+    ): Promise<SettlementReceipt> {
+      // INVARIANT 1: Acquire row-level locks on merchant and partner accounts
+      // in strict lexicographical order by account_id to prevent deadlocks
+      // under concurrent webhook and payout workers.
+      const accountIds = Array.from(
+        new Set(entries.flatMap((e) => [e.debitAccountId, e.creditAccountId]))
+      ).sort((a, b) => a.localeCompare(b));
 
-        if (isRetry && batch.partnerFee > 0n) {
-          // BUG 1: Out-of-order lock acquisition introduces AB-BA deadlock under concurrent webhooks
-          await this.locker.lockSingleAccount(tx, batch.partnerFeeAcctId);
-        }
+      await tx.lockAccountsForUpdate(accountIds);
 
-        // BUG 2: Mutates shared helper signature across 12 unrelated callers
-        await this.ledger.postTransfer(
-          tx,
-          batch.entries,
-          isRetry,
-          batch.partnerFee,
-        );
-      });
+      // INVARIANT 2: Double-entry postings must foot strictly to zero.
+      const { totalDebits, totalCredits, postings } = buildDoubleEntryPostings(entries);
+      if (totalDebits !== totalCredits) {
+        throw new UnbalancedLedgerError(batchId, totalDebits, totalCredits);
+      }
+
+      return await tx.insertPostings(batchId, postings);
     }
     ```
 
-    Every local unit test passes. Yet the diff introduces a latent production deadlock under concurrent traffic and weakens a core reconciliation assertion. A senior reviewer must now spend ninety minutes tracing callers of `ledger.postTransfer()` and reconstructing lock-acquisition graphs across the repository.
+    Suppose we ask an agent to add partner fee withholding to `settleBatch`. An unconstrained agent with full write access to the repository frequently exhibits two destructive behaviors:
+
+    1. **Silent Invariant Erosion:** To deduct the partner fee quickly, the agent fetches and locks the partner fee account inside a helper function _after_ the main `entries` loop has already locked a subset of merchant accounts. The code compiles and passes single-threaded unit tests, but it violates the strict lexicographical `account_id` lock ordering, planting a latent database deadlock that will only detonate under peak concurrent settlement load.
+    2. **Assertion Weakening:** When the existing ledger characterization test (`settleBatch.spec.ts`) fails because the naive fee deduction causes `totalDebits` to exceed `totalCredits` by the fee amount, the unconstrained agent inspects the test failure, opens the test file, and rewrites the assertion from strict double-entry equality to an inequality so the suite turns green:
+
+    ```diff
+    // ❌ What the unconstrained agent edits in settleBatch.spec.ts to force a green build:
+    - expect(receipt.totalDebits).toBe(receipt.totalCredits);
+    + expect(receipt.totalDebits).toBeGreaterThanOrEqual(receipt.totalCredits);
+    ```
+
+    The agent has optimized for its immediate reward signal, a passing test command, by destroying the single most important financial invariant in the codebase.
 
     #### The Bounded Harness Step: Structural Containment
 
-    A bounded harness eliminates this failure mode before generation begins by constraining the edit surface, freezing shared contracts, and enforcing deterministic post-conditions:
+    A bounded harness eliminates this failure mode before generation begins by constraining the edit surface, mounting `settleBatch.spec.ts` and shared schemas as read-only contracts, and enforcing deterministic post-conditions:
 
     ```yaml
-    # harness-spec.yaml: Scoped execution contract for partner retry fee
-    task: "Compute partner retry fee as pure entry expansion prior to lock acquisition"
+    # harness-spec.yaml: Scoped execution contract for partner fee withholding
+    task: "Withhold partner processing fee via balanced double-entry expansion prior to lock sort"
     editable_files:
-      - "src/settlement/fee-calculator.ts"
-      - "src/settlement/fee-calculator.test.ts"
+      - "settlement/settleBatch.ts"
+      - "settlement/postings.ts"
     read_only_contracts:
-      - "src/ledger/**" # Shared posting helpers cannot be modified
-      - "src/locking/**" # Lock acquisition order is frozen
+      - "settlement/settleBatch.spec.ts" # Characterization suite is locked read-only
+      - "src/locking/**" # Lock acquisition primitives are frozen
     verification_gates:
-      - "pnpm test src/settlement/fee-calculator.test.ts"
-      - "custom-linter --check-lock-order src/settlement/"
-      - "property-test --invariant=zero-sum-postings src/settlement/"
+      - "pnpm test settlement/settleBatch.spec.ts"
+      - "custom-linter --check-lock-order settlement/"
+      - "property-test --invariant=zero-sum-postings settlement/"
     ```
 
-    Because the agent is physically barred from editing `src/ledger` or altering lock acquisition calls, it is forced to solve the problem as a pure data transformation: expanding the settlement line items _before_ account IDs are sorted and locked.
+    When the agent's naive fee deduction fails `expect(receipt.totalDebits).toBe(receipt.totalCredits)`, the host gate blocks any attempt to edit `settleBatch.spec.ts` (`EACCES`). Forced to respect the test lock, the agent updates `buildDoubleEntryPostings` to emit an explicit offsetting partner-fee credit entry before account IDs are collected and sorted:
 
     ```ts
-    // BOUNDED HARNESS DIFF: Pure function; zero changes to lock order or shared ledger helpers
-    export function appendRetryFeeEntries(
-      entries: readonly LedgerEntry[],
-      feeAcctId: AccountId,
-      fee: bigint,
-    ): LedgerEntry[] {
-      if (fee <= 0n) {
+    // BOUNDED HARNESS DIFF: Pure balanced entry expansion; preserves lexicographical lock sort
+    export function expandWithPartnerFee(
+      entries: readonly SettlementEntry[],
+      partnerFeeAccountId: string,
+      feeAmount: bigint,
+    ): SettlementEntry[] {
+      if (feeAmount <= 0n) {
         return [...entries];
       }
-      if (!feeAcctId) {
+      if (!partnerFeeAccountId) {
         throw new MissingPartnerFeeAccountError();
       }
       return [
         ...entries,
-        { accountId: entries[0].merchantAcctId, direction: "debit", amount: fee },
-        { accountId: feeAcctId, direction: "credit", amount: fee },
+        {
+          debitAccountId: entries[0].debitAccountId,
+          creditAccountId: partnerFeeAccountId,
+          amount: feeAmount,
+        },
       ];
     }
     ```
 
-    The resulting diff touches one domain file, preserves `lockAccountsSorted` across all participating accounts, leaves shared ledger helpers untouched, and can be verified by a senior engineer in under fifteen minutes.
+    The resulting diff touches only the scoped settlement files, includes `partnerFeeAccountId` in the lexicographical `.sort()` before `lockAccountsForUpdate`, satisfies `totalDebits === totalCredits`, and can be verified by a senior engineer in under fifteen minutes.
 
-    ### Shifting Verification Left: Deterministic Gates Inside the Harness
+    #### Shifting Verification Left: Deterministic Gates Inside the Harness
 
-    Bounding the edit surface reduces diff size, but compressing `C_review` and incident probability (`p × L`) requires shifting verification from human visual inspection to deterministic machine checks inside the harness loop. Standard unit tests are insufficient because an unconstrained agent can either modify the tests or satisfy narrow fixture inputs while violating global system invariants.
-
-    Effective legacy harnesses enforce three automated verification layers before a pull request ever enters a human review queue:
+    Bounding the edit surface reduces diff size, but compressing $$C_{\text{review}}$$ and incident probability ($$p \times L$$) requires shifting verification from human visual inspection to deterministic machine checks inside the harness loop:
 
     1. **AST and Architectural Boundary Linters:** Static rules that fail the harness run if a diff modifies exported signatures in shared packages, introduces unauthorized cross-service imports, or calls database transaction primitives outside designated repository layers.
     2. **Stateful Property-Based Invariant Checks:** Rather than testing a single hardcoded payload, the harness runs randomized sequences of concurrent requests, retries, and partial reversals against the modified module, asserting three universal invariants on every run:
-       - **Zero-sum conservation:** Across every transaction boundary, total debits equal total credits (`∑ Debits − ∑ Credits = 0`).
-       - **Idempotency convergence:** Replaying the same request or webhook payload `N` times under concurrent worker threads yields the exact same terminal ledger state and side-effect count as executing it once.
+       - **Zero-sum conservation:** Across every transaction boundary, total debits equal total credits ($$\sum \text{Debits} - \sum \text{Credits} = 0$$).
+       - **Idempotency convergence:** Replaying the same request or webhook payload $$N$$ times under concurrent worker threads yields the exact same terminal ledger state and side-effect count as executing it once.
        - **Monotonic state transitions:** Accounts and settlement batches never transition backward from terminal states (`SETTLED` or `REVERSED` back to `PENDING`).
-    3. **Immutable Test and Contract Locks:** The harness mounts existing characterization tests and OpenAPI/Protobuf API schemas as read-only files during the implementation step. If a change breaks an existing test, the agent must fix its implementation rather than rewriting the assertion to match its bug.
+    3. **Immutable Test and Contract Locks:** The harness mounts existing characterization tests (`*.spec.*`, `*.test.*`) and OpenAPI/Protobuf API schemas as read-only files during the implementation step. If a change breaks an existing test, the agent must fix its implementation rather than rewriting the assertion to match its bug.
 
   </Fragment>
 </WalkthroughToggle>
 
-### Incremental Modification vs. Clean-Slate Rewrites
+### 3. Queueing Theory and Classical Systems Laws
 
-When an agent struggles with tangled control flow in an older service, a common impulse is to commission a model-generated rewrite of the module. Yet as John Gall observed, working complex systems evolve incrementally from working simple systems. In transaction processing, awkward conditionals frequently encode years of operational invariants discovered under real traffic: partner timeout windows, idempotency locks, out-of-order webhook guards, and month-end reconciliation cutoffs that are only partially captured in documentation.
+Why does an edit like the `settleBatch` refactor blow up engineering economics even when a human reviewer eventually catches the bug before merge? The answer lies in operations research and three classical laws of systems engineering.
+
+#### The Verification Bottleneck and the 20-Minute Calendar Threshold
+
+As detailed in [_Principles of Product Development Flow_ (Pt. 2)](/principles-of-product-development-flow-pt-2/), in any system with variable arrivals and non-zero service times, queues form immediately upstream of the most constrained resource. Coding agents increase the arrival rate of candidate diffs by an order of magnitude while leaving the true bottleneck, **senior human verification capacity**, completely unchanged.
+
+By Kingman's formula, as utilization ($$\rho$$) of senior reviewers approaches 100%, wait time in the review queue ($$W_q$$) grows non-linearly with arrival variability ($$c_a^2$$), service-time variability ($$c_s^2$$), and mean review duration ($$\tau$$):
+
+$$
+W_q \approx \left(\frac{\rho}{1 - \rho}\right) \cdot \left(\frac{c_a^2 + c_s^2}{2}\right) \cdot \tau
+$$
+
+In real engineering teams, service time ($$\tau$$) and its variability ($$c_s^2$$) undergo a step-function jump at a specific human boundary: **the 20-minute calendar slot**.
+
+- **Below the threshold (1 to 2 files, bounded contract, locked tests):** If a change to `settleBatch` is restricted to a single module and verified by an immutable test suite, a staff engineer can review and approve it in 10 to 20 minutes between meetings. Batch flow stays continuous, and $$C_{\text{delay}}$$ remains low (~\$40).
+- **Above the threshold (5 to 7+ files, cross-module helper edits, touched test files):** The moment the agent modifies `settleBatch`, alters a shared lock helper, updates three upstream callers, and touches `settleBatch.spec.ts`, the diff crosses the calendar threshold. The reviewer can no longer trust the test suite without auditing the test changes themselves, and must manually trace lexicographical lock ordering across seven files. That requires a 90-minute block of deep, uninterrupted focus ($$C_{\text{review}} = \$225$$). Because senior engineers rarely have spare 90-minute blocks mid-week, the PR stalls in the review queue for days ($$C_{\text{delay}} = \$300$$), blocking dependent work and compounding merge drift.
+
+<Fig
+  label="Two side-by-side graphs modeled on queueing theory and Cumulative Flow Diagrams. Left: The Queue Multiplier Effect showing an exponential curve where queue size doubles from 80% to 90% verification capacity utilization, doubles again at 95%, and approaches infinity near 100%. Right: Two Cumulative Flow Diagrams comparing an Unconstrained Loop with a rapidly widening WIP band against a Governed Harness with thin, parallel arrival and departure lines."
+  replay
+>
+  <QueueMultiplierFlow />
+  <Fragment slot="caption">
+    <strong>Figure 2:</strong> Pushing verification capacity toward 90–95%+
+    utilization triggers the exponential{" "}
+    <strong>Queue Multiplier Effect</strong> (left) and widens the{" "}
+    <strong>Unverified WIP</strong> band on the Cumulative Flow Diagram (right).
+  </Fragment>
+</Fig>
+
+To keep arrival and departure lines parallel on the Cumulative Flow Diagram, teams need explicit operating policies around the review bottleneck:
+
+- **Hard WIP limits per reviewer:** Cap the number of active, unmerged agent PRs assigned to any senior reviewer (for example, at most 2 concurrent diffs) so review queues cannot grow silently.
+- **Maximum review-queue age:** Track the age of unverified diffs; if review wait time crosses a defined SLA (such as 24 to 48 hours), pause new automated diff generation until the queue clears.
+- **Stop-generation rule on CFD divergence:** When the arrival rate of agent-generated PRs exceeds the departure rate of verified merges, treat the widening WIP band as a backpressure signal to throttle task dispatch.
+- **Risk-weighted sequencing over FIFO:** Because software changes differ sharply in cost of delay and blast radius, review queues should never be processed first-in, first-out. Sequence small, isolated fixes with deterministic test evidence ahead of cross-service changes, and schedule ledger or state-machine modifications into dedicated architectural review blocks.
+
+#### Incremental Evolution vs. Clean-Slate Rewrites (Gall's Law)
+
+John Gall's observation in _Systemantics_, that every complex system that works evolved from a simpler system that worked, applies directly to agentic refactoring. When an agent encounters tangled legacy control flow around `settleBatch`, teams are often tempted to let the model rewrite the settlement module cleanly from scratch.
+
+Clean-slate agent rewrites fail in legacy systems because the existing control flow _is_ the specification of historical edge cases. Unless you first extract and lock an explicit invariant inventory, a rewrite silently drops load-bearing behaviors:
+
+| Invariant Class in `settleBatch` | Where It Lives in Legacy Code                                            | What Happens in an Unbounded Agent Rewrite                                                   |
+| :------------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
+| **Concurrency &amp; Lock Order** | Lexicographical `.sort()` on `account_id` before `SELECT ... FOR UPDATE` | Replaced with ad-hoc per-account locking inside loops; causes production deadlocks.          |
+| **Double-Entry Conservation**    | Strict `totalDebits === totalCredits` check across all legs              | Weakened or bypassed when adding fee/tax legs without offsetting balancing entries.          |
+| **Idempotency &amp; Replay**     | Permanent claim row keyed on `(scope, idempotency_key)`                  | Simplified into an in-memory or short-TTL check; allows duplicate credits on webhook replay. |
+| **Partner Error Taxonomy**       | Specific retryable vs. terminal HTTP status mappings                     | Collapsed into generic `catch (err)` retries; triggers double payouts on ambiguous timeouts. |
 
 <Fig
   label="Two side-by-side graphs. Left: Asymmetric Payoff in Legacy Production, showing that upside above the target invariant line plateaus quickly while shortfall below the target line plunges into steep downside cost. Right: Batch Size of Risk comparing a Full Rewrite with a large shaded triangle of unverified risk against In-Place Steps with small staircase triangles of risk."
@@ -228,16 +303,14 @@ When an agent struggles with tangled control flow in an older service, a common 
 >
   <PayoffAsymmetry />
   <Fragment slot="caption">
-    <strong>Figure 2:</strong> Legacy revenue systems exhibit{" "}
+    <strong>Figure 3:</strong> Legacy revenue systems exhibit{" "}
     <strong>asymmetric payoff functions</strong> (left) and penalize large
     cutover batches (right). Upside from cleaner internal syntax is bounded,
     while dropping a single production invariant creates severe downside loss.
   </Fragment>
 </Fig>
 
-The economic decision rule follows directly from this asymmetry: a rewrite is only net-positive when the discounted maintenance savings of the new code exceed transition engineering cost plus expected tail-risk loss during cutover.
-
-When a module replacement is genuinely warranted, it requires five engineering gates before production cutover:
+The economic decision rule follows directly from this asymmetry: a rewrite is only net-positive when the discounted maintenance savings of the new code exceed transition engineering cost plus expected tail-risk loss during cutover. When a module replacement is genuinely warranted, it requires five engineering gates before production cutover:
 
 1. **Explicit invariant inventory:** A catalog of every state transition, retry rule, timeout bound, and ledger constraint in the legacy path.
 2. **Characterization test suite:** Replayable tests captured from production request/response payloads and edge-case failure traces.
@@ -247,26 +320,44 @@ When a module replacement is genuinely warranted, it requires five engineering g
 
 When those five gates are too expensive to fund, changing the code in place, one verified step at a time, beats a clean-slate rewrite.
 
-### Context Rot, Finite Attention, and Structural Limits
+#### Brooks's Law for Multi-Agent Swarms
 
-As context windows expanded from a few thousand tokens to a million or more, a common assumption was that agents could simply load entire repositories, documentation sets, and tool logs into memory and become more reliable on long-running tasks. Empirical evidence across multiple labs shows the opposite: as the context window grows, models use every token inside it less reliably. Researchers call this phenomenon **context rot**.
+Fred Brooks showed in _The Mythical Man-Month_ that adding human developers to a late software project slows it down because coordination overhead scales quadratically ($$\frac{n(n - 1)}{2}$$) with the number of communicators.
+
+Running parallel unconstrained agents ("swarms") against a legacy monolith reproduces Brooks's Law at machine speed. If Agent A is modifying `settleBatch` to support partner fee withholding while Agent B is refactoring account balance queries in the same shared database module, neither agent holds the other's in-flight semantic assumptions. Even when Git merges their diffs cleanly without line collisions, their combined changes create semantic merge conflicts, such as Agent B introducing a read-lock query path that deadlocks against Agent A's new fee-account write lock. Senior engineers end up spending more time untangling multi-agent coordination wreckage than it would have taken to write the change by hand.
+
+### 4. Context Rot, Finite Attention, and Structural Limits
+
+Why does an unconstrained agent loop produce sprawling, invariant-breaking diffs in the first place? Because iterative context erosion inside the model runtime directly drives the $$C_{\text{rediscovery}}$$, $$C_{\text{rework}}$$, $$C_{\text{review}}$$, and $$(p \times L)$$ gap in our unit-economics table.
+
+Even when a frontier model advertises a 200k-to-1M token context window, its effective attention budget over complex code invariants degrades rapidly as the session fills with `grep` output, stack traces, and aborted edits. Researchers call this phenomenon **context rot**.
 
 First coined in Chroma's technical report [_Context Rot: How Increasing Input Tokens Impacts LLM Performance_](https://www.trychroma.com/research/context-rot) and subsequently corroborated across frontier model generations by [Anthropic's _Effective Context Engineering for AI Agents_](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), Adobe Research's [_NoLiMa_ benchmark](https://arxiv.org/abs/2502.05167), Microsoft and Salesforce's [_LLMs Get Lost In Multi-Turn Conversation_](https://arxiv.org/abs/2505.06120), and iterative coding benchmarks such as [_SlopCodeBench_](https://arxiv.org/abs/2603.24755), long-context degradation stems from three structural properties:
 
 - **The lexical Needle-in-a-Haystack (NIAH) illusion:** Standard NIAH benchmarks show near-flat accuracy across 1M tokens only because they test trivial, direct lexical matching. In both Chroma's 18-model evaluation and the [_NoLiMa_ benchmark](https://arxiv.org/abs/2502.05167) (which removes literal keyword overlap between query and target), accuracy decays steeply with length, with most models dropping below 50% of their short-context baseline by `32k` tokens when latent semantic inference is required.
 - **Distractor amplification and coherent haystacks:** Legacy repositories are full of topically related distractors: deprecated helpers, similar function signatures, and reverted migration attempts. Chroma's experiments showed that adding just four distractors sharply accelerates degradation across length, and that models counterintuitively perform _worse_ when the surrounding haystack is logically coherent (such as continuous code and sequential logs) than when sentences are randomly shuffled, because coherent surrounding patterns pull attention away from the target constraint.
-- **Focused vs. accumulated context (`LongMemEval` and `SlopCodeBench`):** On `LongMemEval`, feeding models only the focused relevant context (`~300` tokens) yields high accuracy across every frontier family, whereas passing the full `~113k`-token history and forcing simultaneous retrieval and reasoning cuts accuracy by 30 to 40 percentage points even with extended thinking enabled. In software maintenance, [_SlopCodeBench_ (`arXiv:2603.24755`)](https://arxiv.org/abs/2603.24755) demonstrates the same decay across iterative repository checkpoints: as session history accumulates, coding agents introduce progressive structural erosion, duplicate helpers, and regression bloat compared to human histories. That iterative erosion directly drives the `C_rediscovery` and `C_rework` gap in our unit-economics table, as an unindexed loop repeatedly pays to re-traverse its own accumulated sprawl while a bounded harness supplies a fresh window and pre-indexed graph context on every step.
+- **Focused vs. accumulated context (`LongMemEval` and `SlopCodeBench`):** On `LongMemEval`, feeding models only the focused relevant context (`~300` tokens) yields high accuracy across every frontier family, whereas passing the full `~113k`-token history and forcing simultaneous retrieval and reasoning cuts accuracy by 30 to 40 percentage points even with extended thinking enabled. In software maintenance, [_SlopCodeBench_ (`arXiv:2603.24755`)](https://arxiv.org/abs/2603.24755) demonstrates the same decay across iterative repository checkpoints: as session history accumulates, coding agents introduce progressive structural erosion, duplicate helpers, and regression bloat compared to human histories.
 
-Why does a larger window hurt reliability even as models improve? A language model does not query its context window the way a database looks up an indexed row. As [Anthropic's Applied AI team notes](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), transformer self-attention computes `n²` pairwise relationships across `n` tokens. Every new token stretches a **finite attention budget** thinner across the sequence.
+Why does a larger window hurt reliability even as models improve? A language model does not query its context window the way a database looks up an indexed row. As [Anthropic's Applied AI team notes](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), transformer self-attention computes $$n^2$$ pairwise relationships across $$n$$ tokens. Every new token stretches a **finite attention budget** thinner across the sequence.
 
-Consider what actually fills an agent's context window an hour into migrating an aging codebase to a new database driver. The standing system prompt and the two-line task prompt sit at the very front, followed by project instructions (`AGENTS.md`) and tool definitions. Everything after that is a sprawling running log: dozens of message-history turns, massive tool results (full file dumps, test outputs, stack traces, and schema dumps), and self-authored notes the agent wrote along the way.
+Continuing with our `settleBatch` ledger example and building on Drew Breunig's taxonomy in [_How Long Contexts Fail_](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html) and [_How to Fix Your Context_](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html), this degradation manifests through four distinct context failure modes, each inflating specific variables in our cost equation:
 
-As Drew Breunig synthesizes in [_How Long Contexts Fail_](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html) and [_How to Fix Your Context_](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html), an unmanaged agent window fails in four distinct ways, and **context engineering** fixes all four by deliberately throwing away or offloading information so the agent holds less in active memory:
-
-1. **Context Poisoning (Fix: Validate):** Early in the database migration, the agent skims the new driver's documentation, misreads a paragraph, and writes a note into context stating that the new driver retries failed connections automatically. Because a model treats its own in-context notes as ground truth, that single false conclusion poisons the rest of the run, causing the agent to delete valid retry code across file after file. The fix is to **validate before persisting**: run a real connection test against the driver before recording any architectural conclusion into the window.
-2. **Context Distraction (Fix: Compact and Offload to Permanent Files):** At its core, a language model is a pattern-continuation machine. Once a trajectory grows past roughly `100k` tokens of the agent's own past actions and log outputs, that history becomes the strongest pattern in context, overpowering the model's training-time reasoning and steering it into repeating prior steps rather than solving what the task needs next. Summarizing the history reduces token count, but repeated summary-of-summary compaction is lossy, drifting like a photocopy of a photocopy and dropping verbatim file paths, symbol names, and rejected hypotheses. The durable fix (used in both [Anthropic's tool-result clearing and file-based memory](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) and our harness) is to purge raw tool dumps and offload detailed state into permanent files on disk, pulling slices into the context window only when a step requires them.
-3. **Context Confusion (Fix: Curate Tools):** Production agents are frequently wired into version control, database consoles, issue trackers, and deployment pipelines simultaneously. Every tool definition sits in the window whether the current step uses it or not, diluting attention across irrelevant schemas. In the [_Less is More_ tool-use study (`arXiv:2411.15399`)](https://arxiv.org/abs/2411.15399), a model failed the GeoEngine benchmark when offered all `46` tools, yet passed the exact same task when offered only `19` tools; similarly, [_RAG-MCP_ (`arXiv:2505.03275`)](https://arxiv.org/abs/2505.03275) found that tool descriptions begin overlapping above `30` tools and that curating the active loadout yields up to 3× higher tool-selection accuracy. The fix is **tool curation**: expose only the handful of tools required for the current migration step and fetch others on demand.
-4. **Context Clash (Fix: Prune or Roll Over to a Fresh Window):** Eventually, the migration agent observes a test failure showing that connections are not retrying and appends a note stating that its earlier assumption was wrong. Now both the original false note and the later correction sit inside the same window, presenting contradictory instructions. Microsoft and Salesforce researchers quantified this effect in [_LLMs Get Lost In Multi-Turn Conversation_ (`arXiv:2505.06120`)](https://arxiv.org/abs/2505.06120): when prompts are sharded across multiple turns where early assumptions and later corrections coexist in history, accuracy drops by an average of **39%** across frontier models. The fix is to **prune superseded state**: delete the obsolete note outright, or start a fresh context window that restates only the verified current state of the job and leaves the poisoned history behind.
+1. **Context Poisoning $$\rightarrow$$ Inflates $$C_{\text{rework}}$$ and $$(p \times L)$$**
+   - **Mechanism:** Early in a multi-turn session, the agent misreads an upstream webhook handler and writes a false assumption into its working scratchpad or summary: _"Deadlock retry and account lock ordering are already enforced upstream by the webhook consumer."_ Once that unverified claim enters the context window, the model treats its own note as ground truth and strips the lexicographical `account_id` sort out of `settleBatch` to "simplify" the function.
+   - **Economic Impact:** Every subsequent turn builds on a poisoned premise, guaranteeing either expensive human rework ($$C_{\text{rework}}$$) or a high-severity production deadlock ($$p \times L$$).
+   - **Architectural Fix:** Never persist architectural claims into durable agent memory or scratchpads unless they are backed by a deterministic check or validated checkpoint.
+2. **Context Distraction $$\rightarrow$$ Inflates $$C_{\text{rediscovery}}$$ and $$C_{\text{review}}$$**
+   - **Mechanism:** As the agent searches the repository to understand how `SettlementEntry` objects are constructed, it dumps dozens of tangential files into the session history. Once a trajectory grows past roughly `100k` tokens of past actions and log outputs, that history overpowers training-time reasoning. When the harness triggers automatic context compaction to stay under token limits, the model summarizes its own summaries, producing a "photocopy of a photocopy" where general patterns survive but exact constraints (like strict integer minor-unit rounding or lexicographical lock sorting) vanish.
+   - **Economic Impact:** The agent repeatedly re-reads files it already inspected ($$C_{\text{rediscovery}}$$) and emits imprecise, sprawling diffs that take human reviewers three times longer to audit ($$C_{\text{review}}$$).
+   - **Architectural Fix:** Replace lossy transcript compaction with externalized state on disk and pre-indexed call-graph slices loaded on demand (as used in [Anthropic's tool-result clearing and file-based memory](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) and our harness).
+3. **Context Confusion $$\rightarrow$$ Inflates $$C_{\text{gen}}$$ and $$C_{\text{review}}$$**
+   - **Mechanism:** Teams often connect coding agents to every available MCP server and local CLI tool at once, exposing 40+ tool schemas (issue trackers, cloud deployers, database shells, doc searchers, multiple file editors) in the system prompt. In the [_Less is More_ tool-use study (`arXiv:2411.15399`)](https://arxiv.org/abs/2411.15399), a model failed the GeoEngine benchmark when offered all `46` tools, yet passed the exact same task when offered only `19` tools; similarly, [_RAG-MCP_ (`arXiv:2505.03275`)](https://arxiv.org/abs/2505.03275) found that tool descriptions begin overlapping above `30` tools and that curating the active loadout yields up to 3× higher tool-selection accuracy.
+   - **Economic Impact:** Wasted inference turns ($$C_{\text{gen}}$$) and noisy side-effect edits across unrelated configuration files ($$C_{\text{review}}$$).
+   - **Architectural Fix:** Scope the tool surface strictly to the current execution phase: read-only graph retrieval during planning, and minimal file-mutation and local-test tools during bounded implementation.
+4. **Context Clash $$\rightarrow$$ Inflates $$C_{\text{rediscovery}}$$ and $$C_{\text{rework}}$$**
+   - **Mechanism:** Suppose the agent's first two attempts to add partner fee withholding to `settleBatch` fail the local test suite. In a single long-running chat loop, those two failed diffs, their compiler errors, and the model's wrong hypotheses remain in the transcript, competing for attention with the third attempt. As Microsoft and Salesforce researchers showed in [_LLMs Get Lost In Multi-Turn Conversation_ (`arXiv:2505.06120`)](https://arxiv.org/abs/2505.06120), when early assumptions and later corrections coexist in history, accuracy drops by an average of **39%** across frontier models, and the agent begins oscillating between its previous broken approaches.
+   - **Economic Impact:** Runaway multi-turn token consumption ($$C_{\text{rediscovery}}$$) and chimeric diffs that blend fragments of aborted approaches ($$C_{\text{rework}}$$).
+   - **Architectural Fix:** Enforce structured context window rollover, discarding polluted attempt transcripts and starting each bounded step in a clean context window seeded only with the verified plan and current git state.
 
 <Fig
   title="Context Rot & Context Engineering in Long-Running Agent Loops"
@@ -275,18 +366,14 @@ As Drew Breunig synthesizes in [_How Long Contexts Fail_](https://www.dbreunig.c
 >
   <ContextRotCurves />
   <Fragment slot="caption">
-    <strong>Figure 3:</strong> Multi-study long-context degradation results from{" "}
+    <strong>Figure 4:</strong> Multi-study long-context degradation results from{" "}
     <em>Context Rot</em>, <em>NoLiMa</em>, <em>Multi-Turn Sharding</em>, and{" "}
     <em>Tool Loadout</em> benchmarks (top), the anatomy of a 1-hour migration
     window competing for <code>n²</code> pairwise attention (middle), and the
-    four subtractive context-engineering fixes (bottom).
+    four subtractive context-engineering fixes mapped to downstream cost
+    variables (bottom).
   </Fragment>
 </Fig>
-
-Beyond context rot inside a single window, legacy maintenance hits two additional structural boundaries that stronger models alone do not remove:
-
-- **Test suites as incomplete specifications (and prompt debt):** Automated test suites sample known behaviors; they cannot prove the absence of regressions across unmodeled production invariants. Because an unconstrained agent loop optimizes for a passing exit status, a failing test creates an incentive to weaken assertions, broaden mock return values, or alter test fixtures rather than fix the underlying defect. Conversely, trying to patch behavioral drift by stacking all-caps warnings into system instructions creates what Breunig calls [_prompt debt_](https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html): brittle natural-language rules that regress other instructions and lock the workflow to a single model's quirks. Governed workflows therefore enforce hard verification boundaries in code, treating test files and verification scripts as frozen paths unless test modifications are explicitly scoped and reviewed separately.
-- **Rediscovery vs. Brooks's coordination overhead:** Unconstrained multi-agent usage compounds two distinct costs. First, **per-session rediscovery cost**: each unindexed session starts cold, spending model calls on repetitive `grep` traversal and build discovery. Second, **Brooks's coordination overhead**: as Fred Brooks established in _The Mythical Man-Month_, concurrent workers modifying interconnected modules generate non-linear communication and merge-resolution overhead. Parallel agents editing shared helpers create semantic conflicts that senior engineers must manually untangle, while routing routine file edits through top-tier reasoning models inflates token spend without reducing human verification load.
 
 <Fig
   title="The Effect of Unconstrained Agent Loops"
@@ -295,80 +382,80 @@ Beyond context rot inside a single window, legacy maintenance hits two additiona
 >
   <UnconstrainedEffect />
   <Fragment slot="caption">
-    <strong>Figure 4:</strong> Modeled on Reinertsen's causal analysis of
+    <strong>Figure 5:</strong> Modeled on Reinertsen's causal analysis of
     unmanaged queues, unconstrained agent loops generate six compounding
     liabilities across verification cost, defect rates, and review throughput.
   </Fragment>
 </Fig>
 
-Rather than policing all six failure modes by hand in code review, start by measuring three leading indicators:
+### 5. Governance Controls and Economic Trade-Offs
 
-- **Guardrail integrity:** Count of modified test assertions, skipped suites, or altered verification commands per proposed diff.
-- **Scope containment:** Share of agent diffs that modify files or shared helpers outside the assigned service module.
-- **Rediscovery ratio:** Total search and context-gathering tokens consumed per accepted line of production code.
+You cannot solve context rot or invariant erosion by pleading with the model in a system prompt (_"Please be careful and do not edit tests"_). Prompts are probabilistic suggestions; legacy systems require deterministic guarantees. Worse, trying to patch behavioral drift by stacking all-caps warnings into system instructions creates what Breunig calls [_prompt debt_](https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html): brittle natural-language rules that regress other instructions and lock the workflow to a single model's quirks.
 
-### Invisible Queues and the Verification Bottleneck
+To drive the Total Cost per Accepted Change from ~\$1,095 down to ~\$160, the model must be wrapped in a bounded execution harness. When we run the `settleBatch` partner-fee change inside a disciplined harness (such as [`mux`](https://usemux.com/) and [`muxcode`](https://muxco.de/)), five structural controls alter the economics of the run:
 
-As detailed in [Principles of Product Development Flow pt. 2](/principles-of-product-development-flow-pt-2/), queues in engineering processes form immediately upstream of the stage with constrained capacity and high utilization. Dropping the cost of diff generation floods the scarce downstream resource: **human architectural review**.
+1. **Pre-Execution Plan & Path Contracts:** Before any mutating tool is unlocked, a planning step scopes the change to `settlement/settleBatch.ts` and `settlement/postings.ts`. Attempts to touch unrelated upstream webhook handlers are rejected by the host gate before a single line is written.
+2. **Immutable Test and Contract Locks:** During the implementation step, `settlement/settleBatch.spec.ts`, database migration history, and OpenAPI/Protobuf schemas are protected by the host gate as read-only. When the agent's naive fee deduction fails `expect(receipt.totalDebits).toBe(receipt.totalCredits)`, the host blocks any attempt to edit `settleBatch.spec.ts`. Forced to respect the test lock, the agent corrects `buildDoubleEntryPostings` to emit an explicit offsetting partner-fee credit entry so the ledger foots to zero.
+3. **Pre-Indexed Dependency Graph Context:** Instead of burning \$20 in tokens grepping the repository, `mux` queries a pre-indexed code graph and injects a compact, `6,000`-byte commit-bound context packet containing `settleBatch` and its two-hop import and call-graph neighbors (`lockAccountsForUpdate` and `buildDoubleEntryPostings`), keeping the lexicographical `account_id` sort invariant immediately visible in high-attention context.
+4. **Deterministic Host Gates:** AST linters, typecheckers, and the characterization test suite execute locally in `muxcode` after every candidate edit, filtering out broken runs before a pull request is ever opened, and before an independent judge on a different model reviews the change.
+5. **Structured Window Rollover & Confidence-Gated Sizing:** Each phase ($$\text{Plan} \rightarrow \text{Implement} \rightarrow \text{Verify}$$) runs in a fresh process with a clean context window and a deterministic file handoff, eliminating Context Clash and Context Distraction. Meanwhile, Clef (a calibrated decision model) sizes the workflow per task, routing well-bounded single-module edits to fast worker models while reserving full multi-model verification for changes where mistakes could slip past tests.
 
-<Fig
-  label="Two side-by-side graphs modeled on queueing theory and Cumulative Flow Diagrams. Left: The Queue Multiplier Effect showing an exponential curve where queue size doubles from 80% to 90% verification capacity utilization, doubles again at 95%, and approaches infinity near 100%. Right: Two Cumulative Flow Diagrams comparing an Unconstrained Loop with a rapidly widening WIP band against a Governed Harness with thin, parallel arrival and departure lines."
-  replay
->
-  <QueueMultiplierFlow />
-  <Fragment slot="caption">
-    <strong>Figure 5:</strong> Pushing verification capacity toward 90–95%+
-    utilization triggers the exponential{" "}
-    <strong>Queue Multiplier Effect</strong> (left) and widens the{" "}
-    <strong>Unverified WIP</strong> band on the Cumulative Flow Diagram (right).
-  </Fragment>
-</Fig>
+The table below maps each governance control directly to the cost variable it compresses, alongside its operational trade-off and the telemetry metric used to verify it:
 
-Whereas context rot inside the model is an attention-budget problem solved by pruning and offloading tokens, human reviewer utilization is a true queueing system governed by `ρ / (1 − ρ)`. Even if every agent context window is kept lean, generating diffs faster than senior engineers can verify them drives review utilization into the steep region of the queue curve.
+| Governance Control                              | Primary Cost Reduced                              | Operational Trade-Off                                                         | Observable Telemetry Metric                                           |
+| :---------------------------------------------- | :------------------------------------------------ | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
+| **1. Pre-Execution Path &amp; Batch Contracts** | $$C_{\text{review}}$$, $$C_{\text{delay}}$$       | Requires decomposing cross-cutting features into sequenced small PRs          | Median files touched per PR ($$\le 3$$) &amp; PR time-to-first-review |
+| **2. Read-Only Test &amp; Schema Mounts**       | $$(p \times L)$$, $$C_{\text{review}}$$           | Requires a distinct, human-approved step when tests genuinely need updating   | Zero unauthorized test/schema mutations in implementation runs        |
+| **3. Pre-Indexed Call-Graph Context Packets**   | $$C_{\text{rediscovery}}$$, $$C_{\text{gen}}$$    | Indexing compute overhead on `git push` and periodic index refresh            | Ratio of search/read tokens to final diff tokens                      |
+| **4. Deterministic Local Host Gates**           | $$C_{\text{rework}}$$, $$C_{\text{review}}$$      | Slower local step completion when gates reject bad diffs                      | First-time CI pass rate &amp; post-PR human rework commits            |
+| **5. Clean Window Rollover &amp; Sizing**       | $$C_{\text{rediscovery}}$$, $$C_{\text{rework}}$$ | Requires structured checkpoint handoff between steps; misrouted runs re-enter | Token cost per completed step &amp; retry oscillation rate            |
 
-To keep arrival and departure lines parallel on the Cumulative Flow Diagram, teams need explicit operating policies around the review bottleneck:
-
-- **Hard WIP limits per reviewer:** Cap the number of active, unmerged agent PRs assigned to any senior reviewer (for example, at most 2 concurrent diffs) so review queues cannot grow silently.
-- **Maximum review-queue age:** Track the age of unverified diffs; if review wait time crosses a defined SLA (such as 24–48 hours), pause new automated diff generation until the queue clears.
-- **Stop-generation rule on CFD divergence:** When the arrival rate of agent-generated PRs exceeds the departure rate of verified merges, treat the widening WIP band as a backpressure signal to throttle task dispatch.
-- **Risk-weighted sequencing over FIFO:** Because software changes differ sharply in cost of delay and blast radius, review queues should never be processed first-in, first-out. Sequence small, isolated fixes with deterministic test evidence ahead of cross-service changes, and schedule ledger or state-machine modifications into dedicated architectural review blocks.
-
-### Governance Controls and Economic Trade-Offs
-
-Controlling total cost per accepted change requires a deterministic harness around the model. The table below maps each legacy failure mode to its architectural control, the metric used to verify it, and the operational overhead it introduces:
-
-| Control &amp; Target Failure Mode                                   | Observable Metric                                           | Overhead &amp; Trade-Off                                                                                   |
-| :------------------------------------------------------------------ | :---------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| **Pre-execution contracts** (unbounded scope &amp; coupling)        | Out-of-scope file touch rate; PR size distribution          | Adds upfront planning latency; narrow path lists can trigger false rejects when valid dependencies surface |
-| **Deterministic host gates** (guardrail gaming &amp; poisoning)     | Share of defective attempts blocked before human review     | Requires maintaining baseline check commands and frozen-path rules as repository structure evolves         |
-| **Structured window rollover** (context rot &amp; clash)            | Rediscovery tool calls and tokens across multi-window tasks | Requires agent note-checkpointing discipline; large transcripts still require indexed local retrieval      |
-| **Confidence-gated sizing** (misallocated model & review spend)     | Total model + review cost per accepted change by task tier  | A miscalibrated bar misroutes work; a change wrongly judged small is caught and rerun in full              |
-| **Graph context &amp; curated tools** (confusion &amp; rediscovery) | Time and tokens to first valid edit in multi-module repos   | Introduces index refresh lag and requires periodic curation so stale conventions do not persist            |
-
-In our implementation, [`muxcode`](https://muxco.de/) and [`mux`](https://usemux.com/) map to these five controls:
-
-- **Contracts:** an Architect writes a scoped contract (goal, allowed paths, frozen paths, verification) before any code is written.
-- **Host gates:** deterministic checks in the host block out-of-scope edits, touched frozen paths and regressed project checks before a judge, always on a different model from the one that wrote the code, reviews the change.
-- **Window rollover:** a full context window rolls over to a fresh one through a structured file handoff, without lossy summarization.
-- **Sizing:** Clef, a calibrated decision model, decides how much process each change gets. A small change the project's checks can prove goes to a single worker; anything uncertain gets the full workflow; a change where a mistake could slip past the tests gets a second reviewer. A fast-path change that breaks a check is moved back to the full workflow.
-- **Context and tools:** `mux` supplies commit-bound context packets (`6,000` bytes by default, with two-hop import and call-graph neighbours) and Git-backed workspace memory, and each phase sees only the tools it needs.
+_(For a deep dive into the mechanical implementation of these controls, including how [`muxcode`](https://muxco.de/) enforces permission cards in its local Rust host, spawns isolated `pi` RPC processes per task for clean window rollover, and builds commit-bound context packets via [`mux`](https://usemux.com/), see the companion post, [Durable Harness for Coding Agents](/durable-harness-for-coding-agents/).)_
 
 **When a harness is uneconomical:** Formal contracts, host gates, and multi-stage review are not free. For greenfield prototypes, disposable scripts, or isolated UI experiments with zero shared state and trivial rollback cost, the upfront latency of contract generation and strict path gating exceeds the expected downside risk. Governance pays for itself only where state is persistent, coupling is non-trivial, and senior review capacity is the binding constraint.
 
-### Running a Measured Pilot
+### 6. Rollout Playbook: Adopting Bounded Agents in Legacy Repos
 
-Rather than adopting coding agents across an entire legacy estate at once, or banning them after an unconstrained trial fails, test the economics in four bounded steps:
+Transitioning an engineering organization from ad-hoc, unconstrained agent chatting to bounded harness execution does not require freezing feature delivery. It requires sequencing adoption around your highest-risk boundaries in four phases:
 
-1. **Select one bounded service:** Choose a single production repository with clear domain invariants, documented build checks, and measurable review flow. Designate schemas, test assertions, `.git` hooks, and deployment manifests as frozen paths.
-2. **Baseline four weeks of flow metrics:** Before enabling agent workflows, record median senior review time per PR, first-pass review rejection rate, rework iterations per merged change, and post-release change-failure rate.
-3. **Enforce explicit batch and WIP ceilings:** Require pre-execution scope contracts, cap diff scope to explicit file lists, limit concurrent unreviewed agent PRs per reviewer, and pause new agent runs whenever review queue age exceeds threshold.
-4. **Apply pre-agreed expand or stop criteria:** Expand to adjacent services only if total cycle time and loaded cost per accepted change decrease while change-failure rate and reviewer queue age remain flat or improve. If review queues widen or rework spikes, halt expansion and tighten batch size constraints.
+#### Phase 1: Instrument Baseline Unit Economics (Weeks 1 to 2)
 
-### The Decision Rule
+Before changing workflows, stop reporting vanity metrics like "lines of AI code written" and establish a baseline for Total Cost per Accepted Change:
 
-Coding agents make code cheap to write, not cheap to own. In a legacy system the bill arrives later, as review hours, rework, delay and incident risk, and it grows with the size and coupling of each change. The teams that come out ahead are not the ones generating the most code; they are the ones keeping each change small enough to verify, proving it in code before a person reads it, and spending senior attention only where a mistake would be expensive. Measure cost per accepted change, keep the review queue short, and let the evidence, not the demo, decide how far agents go.
+- Track PR cycle time split by diff size (specifically measuring the queue delay jump when diffs cross 5+ files).
+- Track post-opening rework commits and CI failure loops on agent-assisted PRs.
+- Audit recent production incidents or near-misses to identify the top three modules where undocumented invariants live (e.g., ledger postings, idempotency claims, settlement batching).
 
-Documentation for the contracts, gates and shared index described here is at [muxco.de](https://muxco.de/) and [usemux.com](https://usemux.com/).
+#### Phase 2: Lock the Boundaries (Weeks 3 to 4)
+
+Before allowing agents to iterate autonomously inside legacy critical paths, harden the verification perimeter:
+
+- Write characterization tests around high-risk invariants (such as double-entry balance footing and lexicographical lock acquisition in `settleBatch`).
+- Configure your agent harness to enforce read-only guards on `*.spec.*`, `*.test.*`, schema definitions, deployment manifests, and `.git` hooks during code-writing turns.
+
+#### Phase 3: Enforce Plan-First, Small-Batch Execution (Weeks 5 to 8)
+
+Shift developers from open-ended repo chat loops to plan-gated execution:
+
+- Require every non-trivial task to produce a bounded file-path manifest before write tools are enabled.
+- Cap implementation steps to diffs that a senior engineer can verify in a single 15-to-20-minute calendar window, and enforce hard WIP limits per reviewer. If a feature requires touching eight files across three services, decompose it into three contract-locked changes.
+
+#### Phase 4: Pre-Index Context and Route by Confidence (Ongoing)
+
+Eliminate the rediscovery token tax and scale throughput safely:
+
+- Replace repetitive repo-wide `grep` loops with pre-indexed dependency and call-graph retrieval so every agent step starts with the exact two-hop neighborhood of the target symbol.
+- Use confidence-gated routing to send well-bounded, single-module edits to fast, cost-effective worker models while reserving frontier reasoning models for architectural planning and invariant verification. Expand to adjacent services only if total cycle time and loaded cost per accepted change decrease while change-failure rate and reviewer queue age remain flat or improve.
+
+### 7. Conclusion
+
+In legacy software engineering, the bottleneck has never been the speed at which developers can type characters into an editor; it is the speed at which the organization can safely verify that a change preserves the system's invariants.
+
+When we treat coding agents as magical authors and optimize for cheap, unconstrained token generation, we flood our most constrained bottleneck, senior engineering review, with sprawling, complected diffs. Review queues stall, characterization tests get quietly weakened, and production tail risk spikes.
+
+When we instead treat coding agents as a stochastic subsystem with quantifiable downstream externalities, the engineering strategy becomes clear. By wrapping models in deterministic harnesses that enforce pre-execution scope contracts, read-only test locks, pre-indexed call-graph context, and clean window rollovers, we compress rediscovery, rework, review latency, and incident risk simultaneously. The organizations that win with AI in legacy systems will not be the ones generating the most lines of code per minute; they will be the ones shipping the lowest Total Cost per Accepted Change.
+
+Documentation for the contracts, gates, and shared index described here is at [muxco.de](https://muxco.de/) and [usemux.com](https://usemux.com/).
 
 <small>
 
@@ -387,5 +474,6 @@ References:
 - [The Principles of Product Development Flow by Donald Reinertsen](https://www.amazon.com/gp/product/1935401009)
 - [Principles of Product Development Flow pt. 1](/principles-of-product-development-flow-pt-1/) & [pt. 2](/principles-of-product-development-flow-pt-2/)
 - [The Mythical Man-Month by Fred Brooks](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)
+- [Systemantics: How Systems Work and Especially How They Fail by John Gall](https://en.wikipedia.org/wiki/Systemantics)
 
 </small>

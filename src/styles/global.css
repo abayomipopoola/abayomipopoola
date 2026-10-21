@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "katex/dist/katex.min.css";
 @plugin "@tailwindcss/typography";
 
 /*
@@ -152,5 +153,120 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
+  }
+
+  /* Table of Contents (Desktop Left Sidebar & Mobile Inline Block) */
+  .toc-sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(100% + 2.5rem);
+    width: 14rem;
+  }
+
+  @media (min-width: 1440px) {
+    .toc-sidebar {
+      right: calc(100% + 3.5rem);
+      width: 15.5rem;
+    }
+  }
+
+  .toc-nav {
+    position: sticky;
+    top: 2.5rem;
+    max-height: calc(100vh - 5rem);
+    overflow-y: auto;
+    font-family: var(--font-sans);
+    padding-right: 0.25rem;
+  }
+
+  .toc-title {
+    font-family: var(--font-sans) !important;
+    font-size: 0.875rem !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    color: var(--link-color) !important;
+    margin: 0 0 0.6rem 0 !important;
+    padding-left: 0.65rem;
+  }
+
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .toc-item-sub {
+    padding-left: 0.65rem;
+  }
+
+  .toc-link {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: #3f3f46;
+    text-decoration: none;
+    padding: 0.35rem 0.65rem;
+    border-left: 2.5px solid transparent;
+    border-radius: 0 0.375rem 0.375rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition:
+      color 140ms ease,
+      background-color 140ms ease,
+      border-color 140ms ease;
+  }
+
+  .toc-link:hover {
+    color: var(--link-color);
+  }
+
+  .toc-link.is-active {
+    color: var(--link-color);
+    font-weight: 600;
+    border-left-color: var(--link-color);
+    background-color: rgba(16, 117, 153, 0.08);
+  }
+
+  .toc-mobile {
+    font-family: var(--font-sans);
+    padding: 0.15rem 0 0.35rem;
+  }
+
+  .toc-mobile .toc-title {
+    padding-left: 0;
+    font-size: 0.8125rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .toc-mobile-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 0.55rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.32rem;
+  }
+
+  .toc-mobile-item-sub {
+    padding-left: 0.65rem;
+  }
+
+  .toc-mobile-link {
+    font-family: var(--font-sans);
+    font-size: 0.78125rem;
+    line-height: 1.4;
+    color: #52525b !important;
+    text-decoration: none;
+    transition: color 140ms ease;
+  }
+
+  .toc-mobile-link:hover {
+    color: var(--link-color) !important;
   }
 }
