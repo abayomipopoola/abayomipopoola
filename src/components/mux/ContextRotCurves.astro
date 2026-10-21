@@ -44,13 +44,13 @@ const failureModes = [
     <!-- Left Chart: Chroma Context Rot Curves (Similarity & Distractors vs Input Length) -->
     <div class="ec-panel">
       <p class="ec-panel-title fx-in" style="--d:0">
-        Context Rot: Accuracy vs. Input Tokens
+        Context Rot: Accuracy vs. Input Tokens (Schematic)
       </p>
       <svg
         class="ec-svg"
         viewBox="0 0 320 236"
         role="img"
-        aria-label="Line chart of LLM accuracy against input token length from 1k to 1M tokens. Lexical exact match stays flat near 96 percent, semantic needles with zero distractors decay notably with length, and adding 4 distractors in coherent text causes steep degradation."
+        aria-label="Schematic line chart illustrating directional LLM accuracy trends against input token length from 1k to 1M tokens. Lexical exact match stays nearly flat, semantic needles with zero distractors decay notably with length, and adding 4 distractors in coherent text causes steep degradation."
       >
         <!-- Grid lines -->
         <g class="ec-grid" aria-hidden="true">
@@ -65,13 +65,13 @@ const failureModes = [
 
         <!-- Y-axis labels -->
         <text x="36" y="40" text-anchor="end" class="ec-axis-sub">
-          100%
+          High
         </text>
         <text x="36" y="90" text-anchor="end" class="ec-axis-sub">
-          65%
+          Mid
         </text>
         <text x="36" y="140" text-anchor="end" class="ec-axis-sub">
-          30%
+          Low
         </text>
 
         <!-- X-axis log ticks -->
@@ -165,13 +165,13 @@ const failureModes = [
     <!-- Right Chart: Corroborating Benchmarks (Lean/Curated vs Bloated/Accumulated) -->
     <div class="ec-panel">
       <p class="ec-panel-title fx-in" style="--d:300">
-        Curated vs. Overloaded Context Across Studies
+        Curated vs. Overloaded Context (Schematic)
       </p>
       <svg
         class="ec-svg"
         viewBox="0 0 320 236"
         role="img"
-        aria-label="Grouped bar chart comparing task success under curated lean context versus overloaded or sharded context across four empirical studies: LongMemEval (300 tokens vs 113k tokens), NoLiMa (1k vs 32k latent match), Multi-Turn Sharding (single-turn vs sharded history with a 39 percent drop), and Tool Loadout (curated 19 tools vs sprawling 46+ tools)."
+        aria-label="Schematic grouped bar chart illustrating directional task success under curated lean context versus overloaded or sharded context inspired by LongMemEval, NoLiMa, Multi-Turn Sharding, and Tool Loadout studies (bar heights are illustrative, not pooled across benchmarks)."
       >
         <!-- Grid lines -->
         <g class="ec-grid" aria-hidden="true">
@@ -185,13 +185,13 @@ const failureModes = [
         <line x1="40" y1="180" x2="302" y2="180" class="ec-axis-line"></line>
 
         <text x="34" y="44" text-anchor="end" class="ec-axis-sub">
-          90%
+          High
         </text>
         <text x="34" y="92" text-anchor="end" class="ec-axis-sub">
-          60%
+          Mid
         </text>
         <text x="34" y="140" text-anchor="end" class="ec-axis-sub">
-          30%
+          Low
         </text>
 
         <!-- Group 1: LongMemEval (300 tok vs 113k tok) -->

@@ -75,29 +75,29 @@ When we compare an unconstrained repo-wide agent loop against a bounded harness 
 
 Notice what the breakdown reveals: raw inference tokens ($$C_{\text{gen}}$$) account for less than 2% of the total cost of an unconstrained change. Even when a larger cross-cutting requirement must be decomposed into three sequential bounded harness steps ($$3 \times \$160 = \$480$$, plus \~\$30 in amortized contract setup and graph indexing), the decomposed workflow still cuts expected delivery cost by more than half compared to a single unconstrained repo-wide loop (\~\$1,095), primarily by compressing review stalls and tail-risk exposure under these assumptions.
 
-Observational pull-request telemetry from our own workflows reflects this divergence. Across 142 agent-assisted pull requests tracked over a 60-day window in a transactional codebase, changes that were decomposed and gated inside a single-module harness step (1 to 2 files) moved through human verification an order of magnitude faster than unconstrained runs allowed to touch 5+ files and shared helpers:
+Observational pull-request telemetry from our own workflows reflects this divergence. Across 142 agent-assisted pull requests tracked over a 60-day window in a transactional codebase, changes that were decomposed and gated inside a single-module harness step (1 to 2 files, $$n = 89$$) waited nearly ten times less for initial human review (3.2 hours vs. 31.5 hours, \~9.8×) and required roughly one-fourth the active review time (18 minutes vs. 74 minutes, \~4.1×) compared with unconstrained runs allowed to touch 5+ files and shared helpers ($$n = 53$$):
 
 <div data-wt-prose>
 
-| Observed PR Cohort (60-Day Sample)        | Scoped Harness (1 to 2 files, single module) | Unbounded Loop (5+ files, shared helpers touched) |
-| :---------------------------------------- | :------------------------------------------- | :------------------------------------------------ |
-| **Median Queue Wait Before First Review** | 3.2 hours                                    | 31.5 hours                                        |
-| **Median Senior Review Duration**         | 18 minutes                                   | 74 minutes                                        |
-| **Review Rounds to Merge**                | 1.1 rounds                                   | 3.4 rounds                                        |
-| **Pre-Merge Discard or Reset Rate**       | 8% (caught by harness gates)                 | 38% (abandoned after review pushback)             |
-| **Post-Merge Hotfix or Rollback Rate**    | Less than 0.5%                               | 6.2%                                              |
+| Observed PR Cohort (60-Day Sample, $$N = 142$$) | Scoped Harness (1 to 2 files, single module, $$n = 89$$) | Unbounded Loop (5+ files, shared helpers touched, $$n = 53$$) |
+| :---------------------------------------------- | :------------------------------------------------------- | :------------------------------------------------------------ |
+| **Median Queue Wait Before First Review**       | 3.2 hours                                                | 31.5 hours                                                    |
+| **Median Senior Review Duration**               | 18 minutes                                               | 74 minutes                                                    |
+| **Review Rounds to Merge**                      | 1.1 rounds                                               | 3.4 rounds                                                    |
+| **Pre-Merge Discard or Reset Rate**             | 7.9% (7 / 89, caught by harness gates)                   | 37.7% (20 / 53, abandoned after review pushback)              |
+| **Post-Merge Hotfix or Rollback Rate**          | 0% (0 / 82 merged)                                       | 6.1% (2 / 33 merged)                                          |
 
 </div>
 
 <div data-wt-code hidden>
 
-| Observed PR Cohort (60-Day Sample)        | Scoped Harness (`1-2` files, single module) | Unbounded Loop (`5+` files, shared helpers touched) |
-| :---------------------------------------- | :------------------------------------------ | :-------------------------------------------------- |
-| **Median Queue Wait Before First Review** | `3.2 hours`                                 | `31.5 hours`                                        |
-| **Median Senior Review Duration**         | `18 minutes`                                | `74 minutes`                                        |
-| **Review Rounds to Merge**                | `1.1 rounds`                                | `3.4 rounds`                                        |
-| **Pre-Merge Discard / Reset Rate**        | `8%` (caught by harness gates)              | `38%` (abandoned after review pushback)             |
-| **Post-Merge Hotfix or Rollback Rate**    | `< 0.5%`                                    | `6.2%`                                              |
+| Observed PR Cohort (60-Day Sample, `N = 142`) | Scoped Harness (`1-2` files, single module, `n = 89`) | Unbounded Loop (`5+` files, shared helpers touched, `n = 53`) |
+| :-------------------------------------------- | :---------------------------------------------------- | :------------------------------------------------------------ |
+| **Median Queue Wait Before First Review**     | `3.2 hours`                                           | `31.5 hours`                                                  |
+| **Median Senior Review Duration**             | `18 minutes`                                          | `74 minutes`                                                  |
+| **Review Rounds to Merge**                    | `1.1 rounds`                                          | `3.4 rounds`                                                  |
+| **Pre-Merge Discard / Reset Rate**            | `7.9%` (`7 / 89`, caught by harness gates)            | `37.7%` (`20 / 53`, abandoned after review pushback)          |
+| **Post-Merge Hotfix or Rollback Rate**        | `0%` (`0 / 82` merged)                                | `6.1%` (`2 / 33` merged)                                      |
 
 </div>
 
@@ -135,7 +135,7 @@ Coding agents make code generation frictionless. They make authoring easy. Left 
 
     The agent has optimized for its immediate reward signal, a passing test command, by destroying the single most important financial invariant in the codebase. A senior reviewer must now spend ninety minutes tracing callers of the shared helper and reconstructing lock-acquisition order across the repository.
 
-    A bounded harness blocks this reward-hacking path before a PR is opened. By restricting edits to `settlement/settleBatch.ts` and `settlement/postings.ts`, locking `settlement/settleBatch.spec.ts` as read-only, and running a property-based zero-sum invariant gate (`totalDebits === totalCredits`), the host rejects any attempt to weaken the test or bypass double-entry conservation. Forced to satisfy the invariant, the agent implements proper net fee withholding: splitting each gross settlement entry into a net merchant credit (`amount - feeAmount`) and an offsetting partner-fee credit (`feeAmount`) against the original settlement debit before account identifiers are sorted and locked. The resulting diff touches two domain files, preserves global lock ordering, and can be verified by a senior engineer in fifteen minutes.
+    A bounded harness blocks this reward-hacking path before a PR is opened. By restricting edits to `settlement/settleBatch.ts` and `settlement/postings.ts`, locking `settlement/settleBatch.spec.ts` as read-only, and running a property-based zero-sum invariant gate (`totalDebits === totalCredits`), the host rejects any attempt to weaken the test or bypass double-entry conservation. Forced to satisfy the invariant, the agent implements proper net fee withholding on the primary merchant payout entry: splitting that gross settlement entry into a net merchant credit (`primary.amount - feeAmount`) and an offsetting partner-fee credit (`feeAmount`) against the original settlement debit (while preserving any remaining batch entries) before account identifiers are sorted and locked. The resulting diff touches two domain files, preserves global lock ordering, and can be verified by a senior engineer in fifteen minutes.
 
     #### Shifting Verification Left: Deterministic Gates Inside the Harness
 
@@ -201,7 +201,7 @@ Coding agents make code generation frictionless. They make authoring easy. Left 
 
     #### The Bounded Harness Step: Structural Containment
 
-    A bounded harness eliminates this failure mode before generation begins by constraining the edit surface, mounting `settleBatch.spec.ts` and shared schemas as read-only contracts, and enforcing deterministic post-conditions:
+    A bounded harness blocks this reward-hacking path before a pull request is opened by constraining the edit surface, mounting `settleBatch.spec.ts` and shared schemas as read-only contracts, and enforcing deterministic post-conditions:
 
     ```yaml
     # harness-spec.yaml: Scoped execution contract for partner fee withholding
@@ -218,7 +218,7 @@ Coding agents make code generation frictionless. They make authoring easy. Left 
       - "property-test --invariant=zero-sum-postings settlement/"
     ```
 
-    When the agent's naive fee deduction fails `UnbalancedLedgerError` or `expect(receipt.totalDebits).toBe(receipt.totalCredits)`, the host gate blocks any attempt to edit `settleBatch.spec.ts` (`EACCES`) and enforces zero-sum conservation. Forced to satisfy the invariant, the agent implements proper net fee withholding, splitting the gross settlement entry into a net merchant credit (`primary.amount - feeAmount`) and an offsetting partner-fee credit (`feeAmount`) before account IDs are collected and sorted:
+    When the agent's naive fee deduction fails `UnbalancedLedgerError` or `expect(receipt.totalDebits).toBe(receipt.totalCredits)`, the host gate blocks any attempt to edit `settleBatch.spec.ts` (`EACCES`) and enforces zero-sum conservation. Forced to satisfy the invariant, the agent implements proper net fee withholding on the primary merchant payout entry, splitting that gross settlement entry into a net merchant credit (`primary.amount - feeAmount`) and an offsetting partner-fee credit (`feeAmount`) while preserving any remaining batch entries before account IDs are collected and sorted:
 
     ```ts
     // BOUNDED HARNESS DIFF: Balanced net-settlement split; withholds fee from gross payout
@@ -284,7 +284,7 @@ $$
 W_q \approx \left(\frac{\rho}{1 - \rho}\right) \cdot \left(\frac{c_a^2 + c_s^2}{2}\right) \cdot \tau
 $$
 
-In real engineering teams, service time ($$\tau$$) and its variability ($$c_s^2$$) undergo a step-function jump at a specific human boundary: **the 20-minute calendar slot**.
+In our experience on engineering teams, service time ($$\tau$$) and its variability ($$c_s^2$$) often exhibit a practical scheduling discontinuity around a familiar human heuristic: **the 20-minute calendar gap between meetings**.
 
 - **Below the threshold (1 to 2 files, bounded contract, locked tests):** If a change to `settleBatch` is restricted to a single module and verified by an immutable test suite, a staff engineer can review and approve it in 10 to 20 minutes between meetings. Batch flow stays continuous, and $$C_{\text{delay}}$$ remains low (\~\$40).
 - **Above the threshold (5 to 7+ files, cross-module helper edits, touched test files):** The moment the agent modifies `settleBatch`, alters a shared lock helper, updates three upstream callers, and touches `settleBatch.spec.ts`, the diff crosses the calendar threshold. The reviewer can no longer trust the test suite without auditing the test changes themselves, and must manually trace lexicographical lock ordering across seven files. That requires a 90-minute block of deep, uninterrupted focus ($$C_{\text{review}} = \$225$$). Because senior engineers rarely have spare 90-minute blocks mid-week, the PR stalls in the review queue for days ($$C_{\text{delay}} = \$300$$), blocking dependent work and compounding merge drift.
@@ -353,7 +353,7 @@ Running parallel unconstrained agents ("swarms") against a legacy monolith repro
 
 ### 4. Context Rot, Finite Attention, and Structural Limits
 
-Why does an unconstrained agent loop rack up \~\$1,095 in downstream costs instead of \~\$160, producing sprawling, invariant-breaking diffs in the first place? Because iterative context erosion inside the model runtime directly inflates $$C_{\text{rediscovery}}$$, $$C_{\text{rework}}$$, $$C_{\text{review}}$$, and $$(p \times L)$$ in our Section 1 unit-economics equation.
+Why does an unconstrained agent loop rack up \~\$1,095 in illustrative downstream costs instead of \~\$160 per bounded step (\~\$510 across a three-step feature), producing sprawling, invariant-breaking diffs in the first place? Because iterative context erosion inside the model runtime directly inflates $$C_{\text{rediscovery}}$$, $$C_{\text{rework}}$$, $$C_{\text{review}}$$, and $$(p \times L)$$ in our Section 1 unit-economics equation.
 
 Even when a frontier model advertises a 200k-to-1M token context window, its effective attention budget over complex code invariants degrades rapidly as the session fills with `grep` output, stack traces, and aborted edits. Researchers call this phenomenon **context rot**.
 
@@ -361,7 +361,7 @@ First coined in Chroma's technical report [_Context Rot: How Increasing Input To
 
 - **The lexical Needle-in-a-Haystack (NIAH) illusion:** Standard NIAH benchmarks show near-flat accuracy across 1M tokens only because they test trivial, direct lexical matching. In both Chroma's 18-model evaluation and the [_NoLiMa_ benchmark](https://arxiv.org/abs/2502.05167) (which removes literal keyword overlap between query and target), accuracy decays steeply with length, with most models dropping below 50% of their short-context baseline by `32k` tokens when latent semantic inference is required.
 - **Distractor amplification and coherent haystacks:** Legacy repositories are full of topically related distractors: deprecated helpers, similar function signatures, and reverted migration attempts. Chroma's experiments showed that adding just four distractors sharply accelerates degradation across length, and that models counterintuitively perform _worse_ when the surrounding haystack is logically coherent (such as continuous code and sequential logs) than when sentences are randomly shuffled, because coherent surrounding patterns pull attention away from the target constraint.
-- **Focused vs. full context (`LongMemEval`) and iterative workspace erosion (`SlopCodeBench`):** On `LongMemEval`, Chroma found that feeding models only the focused relevant context (`~300` tokens) consistently outperforms passing the full `~113k`-token history, where simultaneous retrieval and reasoning reduces accuracy by 6 to 40 percentage points depending on the model family and thinking configuration (for example, \~6 percentage points on Gemini 2.5 Pro with thinking enabled versus 30+ percentage points on several non-thinking configurations). Crucially, even resetting the chat transcript between tasks does not prevent degradation if the codebase itself erodes: in [_SlopCodeBench_ (`arXiv:2603.24755`)](https://arxiv.org/abs/2603.24755), each checkpoint runs in a fresh container with no prior conversation history, yet agents still exhibit progressive structural erosion, cyclomatic bloat, and duplicate helpers as they iterate on their own prior workspace commits.
+- **Focused vs. full context (`LongMemEval`) and iterative workspace erosion (`SlopCodeBench`):** On `LongMemEval`, Chroma found that feeding models only the focused relevant context (`~300` tokens) consistently outperforms passing the full `~113k`-token history, though the magnitude of the drop depends on the model family and thinking configuration (for example, `96%` focused vs. `90%` full, a 6-percentage-point drop, on Gemini 2.5 Pro with thinking enabled, compared with `92%` vs. `38%`, a 54-percentage-point drop, on Claude Opus 4 non-thinking and `89%` vs. `38%`, a 51-percentage-point drop, on Claude Sonnet 4 non-thinking). Crucially, even resetting the chat transcript between tasks does not prevent degradation if the codebase itself erodes: in [_SlopCodeBench_ (`arXiv:2603.24755`)](https://arxiv.org/abs/2603.24755), each checkpoint runs in a fresh container with no prior conversation history, yet agents still exhibit progressive structural erosion, cyclomatic bloat, and duplicate helpers as they iterate on their own prior workspace commits.
 
 Why does a larger window hurt reliability even as models improve? A language model does not query its context window the way a database looks up an indexed row. As [Anthropic's Applied AI team notes](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents), transformer self-attention computes $$n^2$$ pairwise relationships across $$n$$ tokens. Every new token stretches a **finite attention budget** thinner across the sequence.
 
@@ -386,17 +386,19 @@ Continuing with our `settleBatch` ledger example and building on Drew Breunig's 
 
 <Fig
   title="Context Rot & Context Engineering in Long-Running Agent Loops"
-  label="A multi-panel diagram. Top left: Context Rot curves showing flat accuracy for lexical exact match, moderate decay for semantic needles in NoLiMa and Chroma tests, and steep decay when four distractors and coherent logs are present. Top right: Grouped bar chart comparing curated or focused context against bloated or accumulated context across LongMemEval, NoLiMa, Multi-Turn Sharding, and Tool Sprawl studies. Middle: Segmented bar showing an illustrative anatomy of a 1-hour migration context window dominated by action history and raw tool outputs. Bottom: Four cards mapping Context Poisoning to Validate, Context Distraction to Offload to Files, Context Confusion to Curate Tools, and Context Clash to Prune or Fresh Window."
+  label="A multi-panel schematic diagram. Top left: Schematic Context Rot curves illustrating flat accuracy for lexical exact match, moderate decay for semantic needles in NoLiMa and Chroma tests, and steep decay when four distractors and coherent logs are present. Top right: Schematic grouped bar chart illustrating curated or focused context versus bloated or accumulated context inspired by LongMemEval, NoLiMa, Multi-Turn Sharding, and Tool Sprawl studies (bar heights are illustrative, not pooled benchmark measurements). Middle: Segmented bar showing an illustrative anatomy of a 1-hour migration context window dominated by action history and raw tool outputs. Bottom: Four cards mapping Context Poisoning to Validate, Context Distraction to Offload to Files, Context Confusion to Curate Tools, and Context Clash to Prune or Fresh Window."
   replay
 >
   <ContextRotCurves />
   <Fragment slot="caption">
-    <strong>Figure 4:</strong> Representative long-context degradation trends
-    drawn from <em>Context Rot</em>, <em>NoLiMa</em>,{" "}
-    <em>Multi-Turn Sharding</em>, and <em>Tool Loadout</em> studies (top), an
-    illustrative anatomy of a 1-hour migration window competing for{" "}
-    <code>n²</code> pairwise attention (middle), and the four subtractive
-    context-engineering fixes mapped to downstream cost variables (bottom).
+    <strong>Figure 4:</strong> Schematic summary of long-context degradation
+    patterns inspired by <em>Context Rot</em>, <em>NoLiMa</em>,{" "}
+    <em>Multi-Turn Sharding</em>, and <em>Tool Loadout</em> studies (top; curve
+    shapes and bar heights are illustrative rather than pooled benchmark
+    measurements), an illustrative anatomy of a 1-hour migration window
+    competing for <code>n²</code> pairwise attention (middle), and the four
+    subtractive context-engineering fixes mapped to downstream cost variables
+    (bottom).
   </Fragment>
 </Fig>
 
@@ -417,13 +419,13 @@ Continuing with our `settleBatch` ledger example and building on Drew Breunig's 
 
 You cannot solve context rot or invariant erosion by pleading with the model in a system prompt (_"Please be careful and do not edit tests"_). Prompts are probabilistic suggestions; legacy systems require deterministic guarantees. Worse, trying to patch behavioral drift by stacking all-caps warnings into system instructions creates what Breunig calls [_prompt debt_](https://www.dbreunig.com/2026/06/22/the-problem-is-prompt-debt.html): brittle natural-language rules that regress other instructions and lock the workflow to a single model's quirks.
 
-To drive the Total Cost per Accepted Change from \~\$1,095 down to \~\$160, the model must be wrapped in a bounded execution harness. When we run the `settleBatch` partner-fee change inside a disciplined harness (such as [`mux`](https://usemux.com/) and [`muxcode`](https://muxco.de/)), five structural controls alter the economics of the run:
+To bring the illustrative cost from \~\$1,095 for an unconstrained loop down to \~\$160 per bounded step (\~\$510 across a three-step feature), the model must be wrapped in a bounded execution harness. When we run the `settleBatch` partner-fee change inside a disciplined harness (such as [`mux`](https://usemux.com/) and [`muxcode`](https://muxco.de/)), five structural controls alter the economics of the run:
 
 1. **Pre-Execution Plan & Path Contracts:** Before any mutating tool is unlocked, a planning step scopes the change to `settlement/settleBatch.ts` and `settlement/postings.ts`. Attempts to touch unrelated upstream webhook handlers are rejected by the host gate before a single line is written.
-2. **Immutable Test and Contract Locks:** During the implementation step, `settlement/settleBatch.spec.ts`, database migration history, and OpenAPI/Protobuf schemas are protected by the host gate as read-only. When the agent's naive fee deduction fails `UnbalancedLedgerError` or `expect(receipt.totalDebits).toBe(receipt.totalCredits)`, the host blocks any attempt to edit `settleBatch.spec.ts` and runs a property-based zero-sum invariant gate. Forced to satisfy the invariant, the agent splits the gross settlement entry into a net merchant credit (`primary.amount - feeAmount`) and an offsetting partner-fee credit (`feeAmount`) so the ledger foots to zero.
+2. **Immutable Test and Contract Locks:** During the implementation step, `settlement/settleBatch.spec.ts`, database migration history, and OpenAPI/Protobuf schemas are protected by the host gate as read-only. When the agent's naive fee deduction fails `UnbalancedLedgerError` or `expect(receipt.totalDebits).toBe(receipt.totalCredits)`, the host blocks any attempt to edit `settleBatch.spec.ts` and runs a property-based zero-sum invariant gate. Forced to satisfy the invariant, the agent splits the primary gross settlement entry into a net merchant credit (`primary.amount - feeAmount`) and an offsetting partner-fee credit (`feeAmount`) so the ledger foots to zero.
 3. **Pre-Indexed Dependency Graph Context:** Instead of burning \$20 in tokens grepping the repository, `mux` queries a pre-indexed code graph and injects a compact, `6,000`-byte commit-bound context packet containing `settleBatch` and its two-hop import and call-graph neighbors (`lockAccountsForUpdate` and `buildDoubleEntryPostings`), keeping the lexicographical `account_id` sort invariant immediately visible in high-attention context.
 4. **Deterministic Host Gates:** AST linters, typecheckers, and the characterization test suite execute locally in `muxcode` after every candidate edit, filtering out broken runs before a pull request is ever opened, and before an independent judge on a different model reviews the change.
-5. **Structured Window Rollover & Confidence-Gated Sizing:** Each phase ($$\text{Plan} \rightarrow \text{Implement} \rightarrow \text{Verify}$$) runs in a fresh process with a clean context window and a deterministic file handoff, eliminating Context Clash and Context Distraction. Meanwhile, Clef (a calibrated decision model) sizes the workflow per task, routing well-bounded single-module edits to fast worker models while reserving full multi-model verification for changes where mistakes could slip past tests.
+5. **Structured Window Rollover & Confidence-Gated Sizing:** Each phase ($$\text{Plan} \rightarrow \text{Implement} \rightarrow \text{Verify}$$) runs in a fresh process with a clean context window and a deterministic file handoff, clearing prior attempt transcripts to reduce transcript-level Context Clash and Context Distraction. Meanwhile, Clef (a calibrated decision model) sizes the workflow per task, routing well-bounded single-module edits to fast worker models while reserving full multi-model verification for changes where mistakes could slip past tests.
 
 The table below maps each governance control directly to the cost variable it compresses, alongside its operational trade-off and the telemetry metric used to verify it:
 
@@ -467,7 +469,7 @@ Shift developers from open-ended repo chat loops to plan-gated execution:
 
 #### Phase 4: Pre-Index Context and Route by Confidence (Ongoing)
 
-Eliminate the rediscovery token tax and scale throughput safely:
+Compress the rediscovery token tax and scale throughput safely:
 
 - Replace repetitive repo-wide `grep` loops with pre-indexed dependency and call-graph retrieval so every agent step starts with the exact two-hop neighborhood of the target symbol.
 - Use confidence-gated routing to send well-bounded, single-module edits to fast, cost-effective worker models while reserving frontier reasoning models for architectural planning and invariant verification. Expand to adjacent services only if total cycle time and loaded cost per accepted change decrease while change-failure rate and reviewer queue age remain flat or improve.
